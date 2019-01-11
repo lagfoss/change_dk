@@ -28,7 +28,7 @@
 <div class="case_area">
 
 <div class="case">
-	<?php
+	<!-- <?php
 
 	$images = get_field('case_slider');
 
@@ -52,7 +52,7 @@
 	            <?php endforeach; ?>
 	        </ul>
 	    </div>
-	<?php endif; ?>
+	<?php endif; ?> -->
 
 </div>
 </div>
