@@ -7,6 +7,20 @@ body {
   background-color: #f2f2f2;
 }
 
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.eot');
+  src: url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.woff2') format('woff2'),
+       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.woff') format('woff'),
+       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.ttf') format('truetype'),
+       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg'),
+       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 a {
   color: inherit;
 }
@@ -52,11 +66,26 @@ header {
   margin-top: 0;
   width: 100%;
   height: 900px;
+  overflow: hidden;
 }
 
 .hero img {
   top: 0;
   width: 100%;
+}
+
+.hero_title {
+  width: 428.8px;
+  height: 133px;
+  text-shadow: 0 2px 0 #111517;
+  font-family: 'BebasNeue-Regular';
+  font-size: 83px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: normal;
+  color: #f2f2f2;
 }
 
 .hero_info {
