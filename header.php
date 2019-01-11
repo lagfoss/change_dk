@@ -9,22 +9,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 
-  <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/flexslider.css" type="text/css">
-  <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
-  <script
-			  src="http://code.jquery.com/jquery-3.3.1.slim.js"
-			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-			  crossorigin="anonymous"></script>
+    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/flexslider.css" type="text/css">
+    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
-  <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.flexslider.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.flexslider.js"></script>
 
-  <script type="text/javascript" charset="utf-8">
-    $(window).load(function() {
-      $('.flexslider').flexslider();
-    });
-  </script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+    </script>
+
   <?php wp_head(); ?>
 </head>
 
@@ -51,9 +49,6 @@
 
   </header>
   <section class="content_area">
-
-
-
    <!-- Header content -->
 
 

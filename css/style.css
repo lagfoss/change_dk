@@ -154,8 +154,12 @@ header {
 
 /*Case area*/
 
-.case {
+.case_area {
   height: 900px;
+}
+
+.case {
+  width: 50%;
 }
 
 /*Footer*/
