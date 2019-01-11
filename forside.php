@@ -14,7 +14,6 @@
 		<h1><?php the_field('hero_title'); ?></h1>
 		<p><?php the_field('hero_tekst'); ?></p>
 		<a class="hero_button" href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?></a>
-		<span class="Fill-1"></span>
 	</div>
 
 </div>
