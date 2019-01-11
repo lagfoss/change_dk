@@ -7,19 +7,6 @@ body {
   background-color: #f2f2f2;
 }
 
-@font-face {
-  font-family: 'BebasNeue-Regular';
-  src: url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.eot');
-  src: url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.woff2') format('woff2'),
-       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.woff') format('woff'),
-       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.ttf') format('truetype'),
-       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg'),
-       url('<?php echo get_bloginfo('template_directory'); ?>/font/BebasNeue-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 
 a {
   color: inherit;
@@ -44,15 +31,15 @@ header {
 }
 
 .SoMe div {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
 }
 
 
 /*Logo og menu*/
 .navbar {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
   padding-left: 0;
   padding-right: 0;
 }
