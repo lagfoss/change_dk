@@ -28,7 +28,6 @@
 <div class="case_area">
 
 <div class="case">
-
 	<?php
 
 	$images = get_field('case_slider');
@@ -47,9 +46,9 @@
 	    <div id="carousel" class="flexslider">
 	        <ul class="slides">
 	            <?php foreach( $images as $image ): ?>
-	                <li>
-	                    <!-- <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /> -->
-	                </li>
+	                <!-- <li>
+	                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	                </li> -->
 	            <?php endforeach; ?>
 	        </ul>
 	    </div>

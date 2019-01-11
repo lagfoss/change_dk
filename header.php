@@ -22,6 +22,7 @@
         $('.flexslider').flexslider();
       });
     </script>
+
   <?php wp_head(); ?>
 </head>
 
@@ -48,7 +49,6 @@
 
   </header>
   <section class="content_area">
-
 
 
    <!-- Header content -->
