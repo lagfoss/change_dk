@@ -12,19 +12,8 @@
   <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css" rel="stylesheet">
   <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
-
-
-
-
-
   <?php wp_head(); ?>
-
-
-
 </head>
-
-
-
 
 <body>
   <header class="position-fixed">
@@ -46,11 +35,13 @@
     wp_nav_menu($menuargs);
     ?>
   </ul>
-  </nav>
 
   </header>
 
   <section class="content_area">
+
+
+
 
    <!-- Header content -->
 
