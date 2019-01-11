@@ -66,6 +66,22 @@ header {
   margin-left: 160px;
 }
 
+.Rectangle {
+  width: 185px;
+  height: 62px;
+  border-radius: 5px;
+}
+
+.calltoaction {
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: inherit;
+  border-color: #e54c00;
+  width: 185px;
+  height: 62px;
+  border-radius: 5px;
+}
+
 .hero_button {
   width: 106px;
   height: 19px;
@@ -78,11 +94,12 @@ header {
   letter-spacing: normal;
   text-align: center;
   color: #f2f2f2;
-  border: solid 1px #e54c00;
-  border-radius: 5px;
-  padding: 15px 25px;
-  text-decoration: none;
-  cursor: pointer;
+}
+
+.Stroke---Text-White {
+  width: 185px;
+  height: 62px;
+  object-fit: contain;
 }
 
 .Fill-1 {
