@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 
+<!-- Hero -->
 <div class="hero">
 
 	<?php $hero_image = get_field( 'hero_image' ); ?>
