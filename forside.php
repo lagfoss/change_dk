@@ -25,6 +25,8 @@
 
 </div>
 
+<div class="case_area">
+
 <div class="case">
 
 	<?php
@@ -46,13 +48,14 @@
 	        <ul class="slides">
 	            <?php foreach( $images as $image ): ?>
 	                <li>
-	                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	                    <!-- <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /> -->
 	                </li>
 	            <?php endforeach; ?>
 	        </ul>
 	    </div>
 	<?php endif; ?>
 
+</div>
 </div>
 
 <?php get_footer(); ?>
