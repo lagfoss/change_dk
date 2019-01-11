@@ -96,12 +96,15 @@ header {
   text-decoration: none;
 }
 
-.hero_title {
-  z-index: 2;
-}
-
 .test {
   color:black;
+}
+
+
+/*Case area*/
+
+.case {
+  height: 900px;
 }
 
 /*Footer*/
