@@ -4,7 +4,7 @@
 
 <!-- Hero image, text and call to action -->
 
-<div class="hero">
+<div class="container hero">
 
 	<?php $hero_image = get_field( 'hero_image' ); ?>
 	<?php if ( $hero_image ) { ?>
@@ -19,6 +19,13 @@
 		<button class="calltoaction" type="button" name="button">
 			<a class="hero_button" href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?> &#8594;</a>
 		</button>
+
+<div class="test">
+	<img src="img/play-circle-copy.svg"
+     class="play-circle-Copy">
+		<p class="Watch">Watch our:</p>
+		<p class="Showreel">Showreel</p>
+</div>
 	</div>
 
 
