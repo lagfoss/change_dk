@@ -4,7 +4,7 @@
 
 <!-- Hero image, text and call to action -->
 
-<div class="container hero">
+<div class="hero">
 
 	<?php $hero_image = get_field( 'hero_image' ); ?>
 	<?php if ( $hero_image ) { ?>
