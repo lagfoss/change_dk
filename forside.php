@@ -19,6 +19,11 @@
 		<button class="calltoaction" type="button" name="button">
 			<a class="hero_button" href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?> &#8594;</a>
 		</button>
+	<img src="img/play-circle-copy.svg"
+     class="play-circle-Copy">
+		<p class="Watch">Watch our:</p>
+		<p class="Showreel">Showreel</p>
+</div>
 	</div>
 
 
@@ -28,7 +33,7 @@
 <div class="case_area">
 
 <div class="case">
-	<!-- <?php
+<!--	<?php
 
 	$images = get_field('case_slider');
 
@@ -47,13 +52,14 @@
 	        <ul class="slides">
 	            <?php foreach( $images as $image ): ?>
 	                <!-- <li>
+	                <li>
 	                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                </li> -->
+	                </li>
 	            <?php endforeach; ?>
 	        </ul>
 	    </div>
-	<?php endif; ?> -->
-
+	<?php endif; ?>
+-->
 </div>
 </div>
 

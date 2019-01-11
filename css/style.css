@@ -47,6 +47,11 @@ header {
 
 /*Hero image*/
 
+.container {
+  margin: 0;
+  padding: 0;
+}
+
 .hero {
   position: relative;
   top: 0;
@@ -115,6 +120,36 @@ header {
 .hero_button:hover {
   color: #f2f2f2;
   text-decoration: none;
+}
+
+.test {
+  padding-right:1000px;
+}
+
+.Watch {
+  width: 96px;
+  height: 39px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.17;
+  letter-spacing: normal;
+  color: #f2f2f2;
+}
+
+.Showreel {
+  width: 114px;
+  height: 39px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #f2f2f2;
 }
 
 /*Case area*/
