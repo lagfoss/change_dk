@@ -79,6 +79,7 @@ header {
   width: 185px;
   height: 62px;
   border-radius: 5px;
+  border-style: solid;
 }
 
 .hero_button {
@@ -95,27 +96,10 @@ header {
   color: #f2f2f2;
 }
 
-.Stroke---Text-White {
-  width: 185px;
-  height: 62px;
-  object-fit: contain;
-}
-
-.Fill-1 {
-  width: 14.6px;
-  height: 9px;
-  background-color: #f2f2f2;
-}
-
 .hero_button:hover {
   color: #f2f2f2;
   text-decoration: none;
 }
-
-.test {
-  color:black;
-}
-
 
 /*Case area*/
 
