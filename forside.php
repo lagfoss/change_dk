@@ -5,7 +5,8 @@
 <!-- Hero image, text and call to action -->
 
 
-
+<div class="hero">
+<div class="sliding-panel-fade-screen"></div>
 <div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
 
 	<div class=" hero_info">
