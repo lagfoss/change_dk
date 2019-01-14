@@ -168,7 +168,13 @@ header {
 }
 
 .case img {
-  width: 40%;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+}
+
+.case ul {
+  list-style-type: none;
 }
 
 /*Footer*/

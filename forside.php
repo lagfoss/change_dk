@@ -44,20 +44,17 @@
 				?>
 
 				<li class="slide">
+					<div class="col-8 order-2">
 
-					<?php if( $link ): ?>
-						<a href="<?php echo $link; ?>">
-					<?php endif; ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 
-					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+					</div>
 
-					<?php if( $link ): ?>
-						</a>
-					<?php endif; ?>
-
+					<div class="col-4 order-1">
 					<?php echo $title; ?>
 					<?php echo $category; ?>
 					<?php echo $text; ?>
+				</div>
 
 				</li>
 
