@@ -37,9 +37,11 @@
 				<?php while( have_rows('case_slider') ): the_row();
 
 				// vars
-				$image = get_sub_field('case_image');
-				$content = get_sub_field('case_title, case_category, case_text');
+				$title = get_sub_field('case_title');
+				$category = get_sub_field('case_category');
+				$text = get_sub_field('case_text');
 				$link = get_sub_field('case_button');
+				$image = get_sub_field('case_image');
 
 				?>
 
@@ -55,7 +57,9 @@
 						</a>
 					<?php endif; ?>
 
-		    	<?php echo $content; ?>
+					<?php echo $title; ?>
+					<?php echo $category; ?>
+					<?php echo $text; ?>
 
 				</li>
 

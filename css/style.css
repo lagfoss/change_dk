@@ -164,10 +164,11 @@ header {
 
 .case_area {
   height: 900px;
+  width: 100%;
 }
 
-.case {
-  width: 50%;
+.case img {
+  width: 40%;
 }
 
 /*Footer*/
