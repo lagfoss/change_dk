@@ -31,8 +31,15 @@ header {
 }
 
 .SoMe div {
+  margin-top: 1.5%;
   margin-left: 3.5%;
   margin-right: 3.5%;
+  display: -webkit-inline-box;
+}
+
+#SoMecalendar {
+  color: #e54c00;
+  text-decoration: underline;
 }
 
 
@@ -67,8 +74,8 @@ header {
 }
 
 .hero_title {
-  width: 428.8px;
-  height: 133px;
+  max-width: 30%;
+  max-height: 20%;
   text-shadow: 0 2px 0 #111517;
   font-family: 'bebas-neue', sans-serif;
   font-size: 83px;
@@ -123,7 +130,10 @@ header {
 }
 
 .test {
-  padding-right:1000px;
+    left: 60%;
+    bottom: 45%;
+    position: absolute;
+    display: block;
 }
 
 .Watch {
@@ -172,3 +182,15 @@ header {
   font-size: 13px;
   font-weight: 300;
 }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

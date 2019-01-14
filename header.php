@@ -31,8 +31,8 @@
     <!-- Sociale medier -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
-        <div class="col-6-float-left align-self-center">Tekst</div>
-        <div class="col-6-float-right align-self-center">Sociale medier iconer</div>
+        <div class="col-6-float-left align-self-center"><p>Gratis SoMe kalender: </p><a id="SoMecalendar" href="#">Content calendar</a></div>
+        <div class="col-6-float-right align-self-center"> Sociale medier iconer</div>
       </div>
     </div>
 
@@ -46,7 +46,6 @@
     wp_nav_menu($menuargs);
     ?>
   </ul>
-
   </header>
   <section class="content_area">
 
