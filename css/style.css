@@ -162,15 +162,27 @@ header {
   width: 100%;
 }
 
-.case img {
-  margin-right: 160px;
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
-}
-
 .case ul {
   list-style-type: none;
+}
+
+.case_info {
+    margin-left: 12%;
+}
+
+.case_img {
+  margin-right: 12%;
+}
+
+.case img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: -30px 30px 30px -5px rgba(0, 0, 0, 0.4);
+}
+
+.cat {
+  text-transform: uppercase;
+  text-align: right;
 }
 
 /*Footer*/

@@ -16,7 +16,7 @@
 	</div>
 
 <div class="row watchourshowreel">
-	<img src="images/play-circle-copy.svg"
+	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
      class="play-circle-Copy">
 		<p class="Watch">Watch our:</p>
 		<p class="Showreel">Showreel</p>
@@ -24,9 +24,9 @@
 
 </div>
 
-<div class="container-fluid case_area">
+<div class="case_area">
 
-	<div class="case">
+	<div class="container-fluid  case">
 
 		<?php if( have_rows('case_slider') ): ?>
 
@@ -38,22 +38,27 @@
 				$title = get_sub_field('case_title');
 				$category = get_sub_field('case_category');
 				$text = get_sub_field('case_text');
-				$link = get_sub_field('case_button');
+				$button = get_sub_field('case_button_text');
+				$link = get_sub_field('case_button_url');
 				$image = get_sub_field('case_image');
 
 				?>
 
 				<li class="slide">
-					<div class="">
+					<div class="row">
+						<div class="col-7 order-2 case_img">
 
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 
 					</div>
 
-					<div class="">
-					<?php echo $title; ?>
-					<?php echo $category; ?>
-					<?php echo $text; ?>
+					<div class="col-3 order-1 case_info">
+						<p>CASE:</p>
+					<h2><?php echo $title; ?></h2>
+					<p class="cat"><?php echo $category; ?></p>
+					<p><?php echo $text; ?><p>
+						<button type="button" name="button"><a class="hero_button" href="<?php echo $link; ?>"><?php echo $button; ?> &#8594;</a></button>
+				</div>
 				</div>
 
 				</li>
