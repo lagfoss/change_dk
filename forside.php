@@ -26,6 +26,13 @@
 				<p class="Watch">Watch our:</p>
 				<p class="Showreel">Showreel</p>
 		</div>
+
+<div class="watchourshowreel">
+	<img src="images/play-circle-copy.svg"
+     class="play-circle-Copy">
+		<p class="Watch">Watch our:</p>
+		<p class="Showreel">Showreel</p>
+</div>
 	</div>
 
 
