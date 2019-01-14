@@ -21,7 +21,6 @@
 		</button>
 	</div>
 
-
 <div class="watchourshowreel">
 	<img src="images/play-circle-copy.svg"
      class="play-circle-Copy">
