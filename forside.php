@@ -24,9 +24,9 @@
 
 </div>
 
-<div class="case_area container-fluid">
+<div class="container-fluid case_area">
 
-	<div class="row case">
+	<div class="case">
 
 		<?php if( have_rows('case_slider') ): ?>
 
@@ -44,13 +44,13 @@
 				?>
 
 				<li class="slide">
-					<div class="col-8 order-2">
+					<div class="">
 
 						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 
 					</div>
 
-					<div class="col-4 order-1">
+					<div class="">
 					<?php echo $title; ?>
 					<?php echo $category; ?>
 					<?php echo $text; ?>
