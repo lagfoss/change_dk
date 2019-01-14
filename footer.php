@@ -20,6 +20,9 @@
 </div>
 
 </body>
+<script type="text/javascript" src="public_html/wp-content/themes/change_dk/js/javascript.js">
+
+</script>
 </html>
 
 
