@@ -71,7 +71,7 @@ add_action('wp_print_styles', 'startwordpress_google_fonts');
 
 
 
-// Register a custom post type called “case”.
+// Register a custom post type called "case".
 // @see get_post_type_labels() for label keys.
 
 function my_cases() {

@@ -39,6 +39,8 @@
 
 <?php endif; ?>
 
+
+
 <?php
    $params = array('posts_per_page' => 10,'orderby' => 'menu_order',
    'order' => 'ASC', 'post_type' => 'products');
