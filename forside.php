@@ -6,12 +6,7 @@
 
 
 
-<div class="hero">
-
-	<?php $hero_image = get_field( 'hero_image' ); ?>
-	<?php if ( $hero_image ) { ?>
-		<img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>" />
-	<?php } ?>
+<div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
 
 	<div class=" hero_info">
 		<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
@@ -35,6 +30,40 @@
 
 	<div class="container-fluid case">
 
+		<?php if( have_rows('case_slider') ): ?>
+
+			<ul class="slides">
+
+				<?php while( have_rows('case_slider') ): the_row();
+
+				// vars
+				$image = get_sub_field('case_image');
+				$content = get_sub_field('case_title, case_category, case_text');
+				$link = get_sub_field('case_button');
+
+				?>
+
+				<li class="slide">
+
+					<?php if( $link ): ?>
+						<a href="<?php echo $link; ?>">
+					<?php endif; ?>
+
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+
+					<?php if( $link ): ?>
+						</a>
+					<?php endif; ?>
+
+		    	<?php echo $content; ?>
+
+				</li>
+
+			<?php endwhile; ?>
+
+		</ul>
+
+		<?php endif; ?>
 	</div>
 </div>
 
