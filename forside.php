@@ -11,7 +11,7 @@
 		<img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>" />
 	<?php } ?>
 
-	<div class="container-fluid hero_info">
+	<div class="hero_info">
 
 		<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 		<p><?php the_field('hero_tekst'); ?></p>
@@ -20,12 +20,12 @@
 			<a class="hero_button" href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?> &#8594;</a>
 		</button>
 
-		<div class="container-fluid test">
-		<img src="img/play-circle-copy.svg"
+<div class="test">
+	<img src="images/play-circle-copy.svg"
      class="play-circle-Copy">
 		<p class="Watch">Watch our:</p>
 		<p class="Showreel">Showreel</p>
-		</div>
+</div>
 	</div>
 
 
@@ -34,34 +34,33 @@
 
 <div class="case_area">
 
-<div class="case">
-<!--	<?php
+	<div class="case">
+		<?php
 
-	$images = get_field('case_slider');
+			$images = get_field('case_slider');
 
-	if( $images ): ?>
+			if( $images ): ?>
 	    <div id="slider" class="flexslider">
-	        <ul class="slides">
-	            <?php foreach( $images as $image ): ?>
-	                <li>
-	                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                    <p><?php echo $image['caption']; ?></p>
-	                </li>
-	            <?php endforeach; ?>
-	        </ul>
+	    	<ul class="slides">
+	      	<?php foreach( $images as $image ): ?>
+	        	<li>
+	          	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+	            <p><?php echo $image['caption']; ?></p>
+	        	</li>
+	      	<?php endforeach; ?>
+	      </ul>
 	    </div>
 	    <div id="carousel" class="flexslider">
-	        <ul class="slides">
-	            <?php foreach( $images as $image ): ?>
-	                <li>
-	                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                </li>
-	            <?php endforeach; ?>
-	        </ul>
+	    	<ul class="slides">
+	      	<?php foreach( $images as $image ): ?>
+	        	<li>
+	          	<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	          </li>
+	      	<?php endforeach; ?>
+	      </ul>
 	    </div>
-	<?php endif; ?>
--->
-</div>
+		<?php endif; ?>
+	</div>
 </div>
 
 <?php get_footer(); ?>
