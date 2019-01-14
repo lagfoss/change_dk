@@ -12,6 +12,7 @@
 	<?php } ?>
 
 	<div class="col hero_info">
+	<div class="hero_info">
 
 		<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 		<p><?php the_field('hero_tekst'); ?></p>
@@ -25,6 +26,13 @@
 				<p class="Watch">Watch our:</p>
 				<p class="Showreel">Showreel</p>
 		</div>
+
+<div class="test">
+	<img src="images/play-circle-copy.svg"
+     class="play-circle-Copy">
+		<p class="Watch">Watch our:</p>
+		<p class="Showreel">Showreel</p>
+</div>
 	</div>
 
 
@@ -33,34 +41,9 @@
 
 <div class="case_area">
 
-<div class="case">
-<!--	<?php
+	<div class="container-fluid case">
 
-	$images = get_field('case_slider');
-
-	if( $images ): ?>
-	    <div id="slider" class="flexslider">
-	        <ul class="slides">
-	            <?php foreach( $images as $image ): ?>
-	                <li>
-	                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                    <p><?php echo $image['caption']; ?></p>
-	                </li>
-	            <?php endforeach; ?>
-	        </ul>
-	    </div>
-	    <div id="carousel" class="flexslider">
-	        <ul class="slides">
-	            <?php foreach( $images as $image ): ?>
-	                <li>
-	                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	                </li>
-	            <?php endforeach; ?>
-	        </ul>
-	    </div>
-	<?php endif; ?>
--->
-</div>
+	</div>
 </div>
 
 <?php get_footer(); ?>

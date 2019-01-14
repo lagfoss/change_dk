@@ -48,8 +48,6 @@
   </ul>
   </header>
   <section class="content_area">
-
-
    <!-- Header content -->
 
 
