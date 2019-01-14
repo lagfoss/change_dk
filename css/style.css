@@ -53,11 +53,6 @@ header {
 
 /*Hero image*/
 
-.container {
-  margin: 0;
-  padding: 0;
-}
-
 .hero {
   position: relative;
   top: 0;
@@ -168,6 +163,7 @@ header {
 }
 
 .case img {
+  margin-right: 160px;
   width: 80%;
   border-radius: 10px;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);

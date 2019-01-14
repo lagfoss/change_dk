@@ -24,9 +24,9 @@
 
 </div>
 
-<div class="case_area">
+<div class="case_area container-fluid">
 
-	<div class="container-fluid case">
+	<div class="row case">
 
 		<?php if( have_rows('case_slider') ): ?>
 
