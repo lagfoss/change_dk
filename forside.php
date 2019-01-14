@@ -18,7 +18,7 @@
 		<p><?php the_field('hero_tekst'); ?></p>
 
 		<button class="calltoaction" type="button" name="button">
-			<a class="hero_button" href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?> &#8594;</a>
+			<a class="hero_button" href="<?php the_field('her_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
 		</button>
 		<div class="row test">
 			<img src="images/play-circle-copy.svg"
