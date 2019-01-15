@@ -55,6 +55,7 @@ header {
 
 .hero {
   position: relative;
+  display: flex;
   top: 0;
   margin-top: 0;
   width: 100%;
@@ -183,8 +184,10 @@ header {
   text-align: right;
 }
 
+.ourprocess {
+}
+
 .process {
-  float: inherit;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 300;
@@ -193,6 +196,11 @@ header {
   line-height: 1.63;
   letter-spacing: normal;
   color: var(--almost-black);
+}
+
+.process-box {
+  display: -webkit-inline-box;
+  padding-bottom: 40px;
 }
 
 .process-steps {
@@ -205,11 +213,15 @@ header {
   font-stretch: normal;
   line-height: 0.88;
   letter-spacing: normal;
-  text-align: center;
-  color: #e3e3e3;
+  color: #e54c00;
   text-decoration: line-through;
-  display: -webkit-inline-box;
+  color: #e;
+  display: block;
 }
+
+  .inner {
+    color: #e3e3e3;
+  }
 
 .process-content {
   width: 477px;
@@ -222,7 +234,12 @@ header {
   line-height: 1.63;
   letter-spacing: normal;
   color: var(--almost-black);
-  display: -webkit-inline-box;
+  display: block;
+  padding-left: 40px;
+}
+
+.process-title {
+  
 }
 
 #process-headline {

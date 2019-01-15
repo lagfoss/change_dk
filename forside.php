@@ -15,7 +15,7 @@
 		</button>
 	</div>
 
-<div class="col watchourshowreel">
+<div class="watchourshowreel">
 	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
      class="play-circle-Copy">
 		<p class="Watch">Watch our:</p>
@@ -76,10 +76,27 @@
 
 	<div class="container-fluid process">
 		<h2 id="process-headline">VORES PROCESS</h2>
-		<div class="col">
-			<p class="process-steps">1</p>
+		<div class="process-box col">
+			<p class="process-steps"><span class="inner">1</span></p>
 			<div class="process-content">
-				<p>Analyser: <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				<h6 class="process-title">Analysér:</h6>
+				<p>Med udgangspunkt i research og opstartsmøde, analyserer vi organisationens målgrupper, platforme, medier og interne forhold. Vi identificerer muligheder og trusler, og udarbejder anbefalinger.</p>
+			</div>
+		</div>
+
+		<div class="process-box col">
+			<p class="process-steps"><span class="inner">2</span></p>
+			<div class="process-content">
+				<h6 class="process-title">Design:</h6>
+				<p>På baggrund af anbefalingerne fra analysen og organisationens forretningsstrategi, designer vi en løsning, der understøtter dine målsætninger med budskaber og aktiviteter.</p>
+			</div>
+		</div>
+
+		<div class="process-box col">
+			<span class="process-steps"><span class="inner">3</span></span>
+			<div class="process-content">
+				<h6 class="process-title">Kommunikér:</h6>
+				<p>Vi implementerer løsningen og sikrer at du kommer i mål med det færdigudviklede design - om du vælger os eller andre til eksekveringen, eller ønsker at stå for det hele selv.</p>
 			</div>
 		</div>
 	</div>
