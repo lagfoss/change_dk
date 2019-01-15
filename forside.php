@@ -15,7 +15,7 @@
 		</button>
 	</div>
 
-<div class="row watchourshowreel">
+<div class="col watchourshowreel">
 	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
      class="play-circle-Copy">
 		<p class="Watch">Watch our:</p>
@@ -69,6 +69,19 @@
 		<?php endif; ?>
 
 
+	</div>
+</div>
+
+<div class="ourprocess">
+
+	<div class="container-fluid process">
+		<h2 id="process-headline">VORES PROCESS</h2>
+		<div class="col">
+			<p class="process-steps">1</p>
+			<div class="process-content">
+				<p>Analyser: <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+			</div>
+		</div>
 	</div>
 </div>
 
