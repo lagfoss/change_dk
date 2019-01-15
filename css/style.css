@@ -184,6 +184,8 @@ header {
   text-align: right;
 }
 
+/* Process sektion */
+
 .ourprocess {
 }
 
@@ -239,7 +241,7 @@ header {
 }
 
 .process-title {
-  
+
 }
 
 #process-headline {
@@ -254,6 +256,62 @@ header {
  letter-spacing: normal;
  color: var(--almost-black);
 }
+
+/* Hvad kan vi gøre for dig? Sektion */
+
+  #wcwd-header {
+  width: 290px;
+  height: 80px;
+  font-family: 'bebas-neue',sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.86;
+  letter-spacing: normal;
+  color: var(--almost-black);
+  }
+
+  .wcwd-headline {
+    width: 255px;
+  height: 23px;
+  font-family: 'bebas-neue',sans-serif;
+  font-size: 31px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--almost-black);
+  }
+
+  .wcwd-paragraf {
+  width: 290px;
+  height: 104px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: var(--almost-black);
+  }
+
+  .wcwd-content {
+    max-width: 270px;
+    padding: 15px;
+  }
+
+  .hover {
+    margin-left: 10%;
+  }
+
+  .hover:hover {
+    background-color: pink;
+    box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+  }
+
 
 /*Footer*/
 

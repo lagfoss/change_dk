@@ -72,7 +72,7 @@
 	</div>
 </div>
 
-
+<section>
 
 <div class="ourprocess">
 
@@ -102,6 +102,66 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+</section>
+
+<div class="what-can-we-do">
+	<div class="row">
+			<div class="col-sm">
+						<div class="col-sm-12">
+							<h2 id="wcwd-header">HVAD KAN VI <br>GØRE FOR DIG?</h2>
+							<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+				</div>
+			<div class="col-sm hover">
+
+					</a>
+					<div class="wcwd-content col-sm-12">
+						<h6 class="wcwd-headline">BRANDSTRATEGI</h6>
+						<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+			</div>
+		<div class="col-sm hover">
+
+				</a>
+				<div class="wcwd-content col-sm-12">
+					<h6 class="wcwd-headline">KOMMUNIKATIONSDESIGN</h6>
+					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				</div>
+		</div>
+
+		<div class="col-sm hover">
+
+				</a>
+				<div class="wcwd-content col-sm-12">
+					<h6 class="wcwd-headline">SOCIAL MEDIA</h6>
+					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				</div>
+		</div>
+
+		<div class="col-sm hover">
+
+				</a>
+				<div class="wcwd-content col-sm-12">
+					<h6 class="wcwd-headline">PRESSEMEDDELELSE</h6>
+					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				</div>
+		</div>
+
+		<div class="col-sm hover">
+
+				</a>
+				<div class="wcwd-content col-sm-12">
+					<h6 class="wcwd-headline">KOMMUNIKATIOSSTRATEGI</h6>
+					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				</div>
+		</div>
+
+		<button class="calltoaction" type="button" name="button">
+			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
+		</button>
+</div>
 </div>
 
 <?php get_footer(); ?>
