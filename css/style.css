@@ -378,7 +378,7 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-#phonenumberfooter {
+.phone_number {
   font-family: 'bebas-neue',sans-serif;
   font-size: 51px;
   color: #e54c00;
@@ -407,13 +407,12 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-#MailFooter {
+.footer_mail {
   color: #e54c00;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
   font-weight: bold;
 }
-
 
 .cvr {
   height: 30px;

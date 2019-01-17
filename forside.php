@@ -167,7 +167,6 @@
 <button class="calltoaction" type="button" name="button">
 	<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a>
 </button>
-
 </div>
 
 <?php get_footer(); ?>
