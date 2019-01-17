@@ -2,28 +2,24 @@
 
 <footer>
   <div class="FooterProject">
-    <h2 id="NeedASuccessfulProject">NEED A SUCCESSFUL PROJECT?</h2>
+    <h2 class="footer_project"><?php the_field('footer_project'); ?></h2>
   <a class="CallToActionFooter" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
   </div>
 
   <div class="letstalkfooter">
-    <h4>LETS TALK!</h4>
-    <h2 id="phonenumberfooter">+45 25 70 20 19</h2>
+    <?php the_field('footer_lets_talk'); ?>
+    <p class="phone_number"><?php the_field('phone_number'); ?></p>
   </div>
 
   <div class="SoMefooter">
     <?php if( get_field('someicons') ): ?>
-
     <img src="<?php the_field('someicons'); ?>" />
-
     <?php endif; ?>
   </div>
 
   <div class="ContactFooter">
-    <p id="MailFooter">KONTAKT@CHANGE.DK</p>
-    <p>Edisonsvej 2,</p>
-    <p>5000 Odense C,</p>
-    <p>Denmark</p>
+   <p class="footer_mail"><?php the_field('footer_mail'); ?></p>
+    <p class="footer_address"><?php the_field('footer_address'); ?></p>
   </div>
 
 </footer>
