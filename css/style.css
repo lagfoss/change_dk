@@ -10,7 +10,7 @@ body {
   font-weight: 300;
   line height: 26px;
   letter spacing: 0px;
-  color: white;
+  color: #111517;
 }
 
 h1.big {
@@ -34,9 +34,11 @@ h2 {
   font-size: 50px;
   line height: 43px;
   letter spacing: 0px;
-  color: #111517;
 }
 
+p.white{
+  color: #ffffff;
+}
 
 a {
   color: inherit;
@@ -235,7 +237,6 @@ header {
   line-height: 0.88;
   color: #e54c00;
   text-decoration: line-through;
-  color: #e;
   display: block;
 }
 
@@ -363,7 +364,7 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.phone_number {
+#phonenumberfooter {
   font-family: 'bebas-neue',sans-serif;
   font-size: 51px;
   color: #e54c00;
@@ -392,7 +393,7 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.footer_mail {
+#MailFooter {
   color: #e54c00;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
@@ -403,7 +404,6 @@ header {
 .cvr {
   height: 30px;
   background-color: #e3e3e3;
-  color: #111517;
   font-size: 13px;
   font-weight: 300;
 }
