@@ -324,9 +324,6 @@ header {
   padding: 15px;
 }
 
-.hover {
-}
-
 .hover:hover {
   background-color: pink;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
