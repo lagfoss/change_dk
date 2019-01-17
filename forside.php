@@ -16,9 +16,8 @@
 	</div>
 
 <div class="watchourshowreel">
-	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
+	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
      class="play-circle-Copy">
-
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
@@ -75,10 +74,14 @@
 
 <section>
 
-<div class="ourprocess">
+<div class="container-fluid">
+<div class="row ourprocess">
+	<div class="col-6">
+		<?php the_field('process_image'); ?>
+	</div>
 
-	<div class="container-fluid process">
-		<h2 id="process-headline">VORES PROCESS</h2>
+	<div class="col-6 process">
+		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
 		<div class="process-box col">
 			<p class="process-steps"><span class="inner">1</span></p>
 			<div class="process-content">
@@ -103,6 +106,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
 </section>
