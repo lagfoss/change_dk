@@ -6,10 +6,15 @@
 body {
   background-color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line height: 26px;
+  letter spacing: 0px;
+  color: #111517;
 }
 
 h1.big {
-  font-family: BebasNeue;
+  font-family: 'bebas-neue', sans-serif;
   font-size: 140px;
   line height: 120px;
   letter spacing: 0px;
@@ -17,11 +22,22 @@ h1.big {
 }
 
 h1 {
-  font-family: BebasNeue;
+  font-family: 'bebas-neue', sans-serif;
   font-size: 83px;
   line height: 73px;
   letter spacing: 0px;
   color: white;
+}
+
+h2 {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 50px;
+  line height: 43px;
+  letter spacing: 0px;
+}
+
+p.white{
+  color: #ffffff;
 }
 
 a {
@@ -103,11 +119,7 @@ header {
   max-width: 30%;
   max-height: 20%;
   text-shadow: 0 2px 0 #111517;
-  font-family: 'bebas-neue', sans-serif;
-  font-size: 83px;
   line-height: 0.88;
-  letter-spacing: normal;
-  color: #f2f2f2;
 }
 
 .hero_info {
@@ -137,7 +149,6 @@ header {
   width: 106px;
   height: 19px;
   font-size: 16px;
-  font-weight: 500;
   text-align: center;
   color: #f2f2f2;
 }
@@ -202,7 +213,6 @@ header {
   text-align: right;
 }
 
-/*Footer*/
 
 -/* Process sektion */
 
@@ -227,7 +237,6 @@ header {
   line-height: 0.88;
   color: #e54c00;
   text-decoration: line-through;
-  color: #e;
   display: block;
 }
 
@@ -303,6 +312,9 @@ header {
   font-size: 50px;
 }
 
+
+/*Footer*/
+
 .FooterProject {
   width: 100%;
   height: 290px;
@@ -320,7 +332,6 @@ header {
 
 .CallToActionFooter {
   font-size: 16px;
-  font-weight: 500;
   text-decoration: none;
   padding: 15px 65px;
   background-color: inherit;
@@ -349,13 +360,13 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.phone_number {
+#phonenumberfooter {
   font-family: 'bebas-neue',sans-serif;
   font-size: 51px;
   color: #e54c00;
 }
 
-.SoMefooter { 
+.SoMefooter {
   text-align: center;
   width: 100%;
   height: 24px;
@@ -378,7 +389,7 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.footer_mail {
+#MailFooter {
   color: #e54c00;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
@@ -389,7 +400,6 @@ header {
 .cvr {
   height: 30px;
   background-color: #e3e3e3;
-  color: #111517;
   font-size: 13px;
   font-weight: 300;
 }
