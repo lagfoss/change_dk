@@ -306,8 +306,25 @@ header {
 }
 
 .hover:hover {
-  background-color: pink;
+  background-color: white;
+  border-radius: 5px;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+}
+
+.wcwd_button {
+  width: 106px;
+  height: 19px;
+  text-align: center;
+  color: black;
+}
+
+.wcwd_button_text {
+  color: black;
+}
+
+.wcwd_button:hover {
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
 -#NeedASuccessfulProject {
