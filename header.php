@@ -27,14 +27,14 @@
         <div class="col-6-float-left align-self-center"><?php the_field('header_text'); ?> <a id="SoMecalendar" href="<?php the_field('header_url'); ?>"><?php the_field('header_url_text'); ?></a></div>
         <div class="col-6-float-right align-self-center">
           <?php if( have_rows('header_some') ): ?>
-            <ul class="header_some_icon">
+            <ul>
               <?php while( have_rows('header_some') ): the_row();
               // vars
                 $image = get_sub_field('header_some_icon');
                 $link = get_sub_field('header_some_url');
               ?>
 
-              <li>
+              <li class="header_some_icon">
                 <?php if( $link ): ?>
                   <a href="<?php echo $link; ?>" target="_blank">
                     <?php endif; ?>

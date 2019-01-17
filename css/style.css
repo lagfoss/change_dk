@@ -33,11 +33,11 @@ header {
 .SoMe div {
   margin-left: 3.5%;
   margin-right: 3.5%;
-  display: -webkit-inline-box;
 }
 
 .SoMe ul {
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 .SoMe li {
@@ -49,10 +49,14 @@ header {
   text-decoration: underline;
 }
 
-.header_some_icon img {
+.header_some_icon {
   height: 15px;
   width: auto;
-  margin-right: 0;
+  margin:auto 0 auto 40px;
+}
+
+.header_some_icon img {
+  height: 100%;
 }
 
 
