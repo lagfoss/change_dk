@@ -27,7 +27,7 @@
         <div class="col-6-float-left align-self-center"><?php the_field('header_text'); ?> <a id="SoMecalendar" href="<?php the_field('header_url'); ?>"><?php the_field('header_url_text'); ?></a></div>
         <div class="col-6-float-right align-self-center">
           <?php if( have_rows('header_some') ): ?>
-            <ul>
+            <ul class="header_some_icon">
               <?php while( have_rows('header_some') ): the_row();
               // vars
                 $image = get_sub_field('header_some_icon');

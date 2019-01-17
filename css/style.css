@@ -41,7 +41,7 @@ header {
 }
 
 .SoMe li {
-  display: block;
+  display: inline-block;
 }
 
 #SoMecalendar {
@@ -50,7 +50,7 @@ header {
 }
 
 .header_some_icon {
-  height: 33%;
+  height: 15px;
   margin-right: 0;
   margin-left: 3,5%;
 }
