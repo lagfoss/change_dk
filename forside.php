@@ -16,8 +16,9 @@
 	</div>
 
 <div class="watchourshowreel">
-	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
+	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
      class="play-circle-Copy">
+
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
@@ -74,14 +75,10 @@
 
 <section>
 
-<div class="container-fluid">
-<div class="row ourprocess">
-	<div class="col-6">
-		<?php the_field('process_image'); ?>
-	</div>
+<div class="ourprocess">
 
-	<div class="col-6 process">
-		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
+	<div class="container-fluid process">
+		<h2 id="process-headline">VORES PROCESS</h2>
 		<div class="process-box col">
 			<p class="process-steps"><span class="inner">1</span></p>
 			<div class="process-content">
@@ -106,7 +103,6 @@
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 
 </section>
@@ -152,8 +148,6 @@
 		</div>
 
 		<div class="col-sm hover">
-
-				</a>
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('pressemeddelelse_img') ): ?>
 					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
@@ -164,8 +158,6 @@
 		</div>
 
 		<div class="col-sm hover">
-
-				</a>
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('kommunikationsstrategi_img') ): ?>
 					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
