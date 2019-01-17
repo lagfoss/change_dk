@@ -36,7 +36,7 @@ h2 {
   letter spacing: 0px;
 }
 
-p.white{
+.white{
   color: #ffffff;
 }
 
@@ -148,7 +148,6 @@ header {
 .hero_button {
   width: 106px;
   height: 19px;
-  font-size: 16px;
   text-align: center;
   color: #f2f2f2;
 }
@@ -169,7 +168,6 @@ header {
   width: 96px;
   height: 39px;
   font-size: 18px;
-  font-weight: 300;
   line-height: 2.17;
   color: #f2f2f2;
 }
@@ -270,7 +268,7 @@ header {
 
 /* Hvad kan vi gøre for dig? Sektion */
 
-.wcwd_header {
+#wcwd-header {
   width: 290px;
   height: 80px;
   font-family: 'bebas-neue',sans-serif;
@@ -279,7 +277,7 @@ header {
   line-height: 0.86;
 }
 
-.wcwd_headline {
+.wcwd-headline {
   width: 255px;
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
@@ -287,7 +285,7 @@ header {
   font-weight: bold;
 }
 
-.wcwd-text {
+.wcwd-paragraf {
   width: 290px;
   height: 104px;
   font-size: 16px;
@@ -306,10 +304,6 @@ header {
 .hover:hover {
   background-color: pink;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
-}
-
-.wcwd_img {
-  width: 1000px;
 }
 
 -#NeedASuccessfulProject {
