@@ -24,8 +24,29 @@
     <!-- Sociale medier -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
-        <div class="col-6-float-left align-self-center">Gratis SoMe kalender: <a id="SoMecalendar" href="#">Content calendar</a></div>
-        <div class="col-6-float-right align-self-center"> Sociale medier iconer</div>
+        <div class="col-6-float-left align-self-center"><?php the_field('header_text'); ?> <a id="SoMecalendar" href="<?php the_field('header_url'); ?>"><?php the_field('header_url_text'); ?></a></div>
+        <div class="col-6-float-right align-self-center">
+          <?php if( have_rows('header_some') ): ?>
+            <ul>
+              <?php while( have_rows('header_some') ): the_row();
+              // vars
+                $image = get_sub_field('header_some_icon');
+                $link = get_sub_field('header_some_url');
+              ?>
+
+              <li>
+                <?php if( $link ): ?>
+                  <a href="<?php echo $link; ?>" target="_blank">
+                    <?php endif; ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                    <?php if( $link ): ?>
+                  </a>
+                <?php endif; ?>
+              </li>
+            <?php endwhile; ?>
+          </ul>
+          <?php endif; ?>
+        </div>
       </div>
     </div>
 
