@@ -358,10 +358,17 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-#phonenumberfooter {
+.phone_number {
   font-family: 'bebas-neue',sans-serif;
   font-size: 51px;
   color: #e54c00;
+  display: block;
+}
+
+.phone_number:hover {
+  text-decoration: none;
+  color: #e54c00;
+  cursor: pointer;
 }
 
 .SoMefooter {
@@ -385,15 +392,30 @@ header {
   padding-bottom: 200px;
   background-color: #f2f2f2;
   border-bottom: solid 2px #e3e3e3;
+  display: block;
 }
 
-#MailFooter {
+.footer_mail {
   color: #e54c00;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
   font-weight: bold;
 }
 
+.footer_mail:hover {
+  color: #e54c00;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'bebas-neue',sans-serif;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.footer_address:hover {
+  text-decoration: none;
+  color: black;
+
+}
 
 .cvr {
   height: 30px;
