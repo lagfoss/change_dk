@@ -146,8 +146,6 @@
 		</div>
 
 		<div class="col-sm hover">
-
-				</a>
 				<div class="wcwd-content col-sm-12">
 					<h6 class="wcwd_headline"><?php the_field('pressemeddelelse_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('pressemeddelelse_text'); ?></p>
@@ -155,8 +153,6 @@
 		</div>
 
 		<div class="col-sm hover">
-
-				</a>
 				<div class="wcwd-content col-sm-12">
 					<h6 class="wcwd_headline"><?php the_field('kommunikationsstrategi_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('kommunikationsstrategi_text'); ?></p>
