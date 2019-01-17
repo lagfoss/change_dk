@@ -18,8 +18,8 @@
 <div class="watchourshowreel">
 	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
      class="play-circle-Copy">
-		<p class="Watch">Watch our:</p>
-		<p class="Showreel">Showreel</p>
+		<p class=" white Watch">Watch our:</p>
+		<p class="white Showreel">Showreel</p>
 </div>
 
 </div>
@@ -52,10 +52,10 @@
 		      </div>
 
 		      <div class="col-3 order-1 case_info">
-		        <p>CASE:</p>
+		        <p class="ablack">CASE:</p>
 		      <h2><?php echo $title; ?></h2>
 		      <p class="cat"><?php echo $category; ?></p>
-		      <p><?php echo $text; ?><p>
+		      <p class="ablack"><?php echo $text; ?><p>
 		        <button type="button" name="button"><a class="hero_button" href="<?php echo $link; ?>"><?php echo $button; ?> &#8594;</a></button>
 		    </div>
 		    </div>
@@ -118,16 +118,16 @@
 
 					</a>
 					<div class="wcwd-content col-sm-12">
-						<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
-						<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
+						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
+						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
 					</div>
 			</div>
 		<div class="col-sm hover">
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
-					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
+					<h6 class="wcwd_headline"><?php the_field('kommunikationsdesign_header'); ?></h6>
+					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>
 				</div>
 		</div>
 
@@ -135,8 +135,8 @@
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
-					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
+					<h6 class="wcwd_headline"><?php the_field('social_media_header'); ?></h6>
+					<p class="wcwd_text"><?php the_field('social_media_text'); ?></p>
 				</div>
 		</div>
 
@@ -144,8 +144,8 @@
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
-					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
+					<h6 class="wcwd_headline"><?php the_field('pressemeddelelse_header'); ?></h6>
+					<p class="wcwd_text"><?php the_field('pressemeddelelse_text'); ?></p>
 				</div>
 		</div>
 
@@ -153,8 +153,8 @@
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
-					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
+					<h6 class="wcwd_headline"><?php the_field('kommunikationsstrategi_header'); ?></h6>
+					<p class="wcwd_text"><?php the_field('kommunikationsstrategi_text'); ?></p>
 				</div>
 		</div>
 
