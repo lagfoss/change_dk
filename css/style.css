@@ -212,9 +212,12 @@ header {
 }
 
 
--/* Process sektion */
+/* Process sektion */
 
 .ourprocess {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .process {
@@ -268,10 +271,7 @@ header {
 
 /* Hvad kan vi gøre for dig? Sektion */
 
-.test {
-}
-
-.wcwd_header {
+#wcwd-header {
   width: 290px;
   height: 80px;
   font-family: 'bebas-neue',sans-serif;
@@ -280,7 +280,7 @@ header {
   line-height: 0.86;
 }
 
-.wcwd_headline {
+.wcwd-headline {
   width: 255px;
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
@@ -288,7 +288,7 @@ header {
   font-weight: bold;
 }
 
-.wcwd_text {
+.wcwd-paragraf {
   width: 290px;
   height: 104px;
   font-size: 16px;
@@ -301,11 +301,7 @@ header {
 }
 
 .hover {
-  margin-left: 7%;
-}
-
-.hover1 {
-  margin-left: 7%;
+  margin-left: 10%;
 }
 
 .hover:hover {
@@ -365,17 +361,10 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.phone_number {
+#phonenumberfooter {
   font-family: 'bebas-neue',sans-serif;
   font-size: 51px;
   color: #e54c00;
-  display: block;
-}
-
-.phone_number:hover {
-  text-decoration: none;
-  color: #e54c00;
-  cursor: pointer;
 }
 
 .SoMefooter {
@@ -399,30 +388,15 @@ header {
   padding-bottom: 200px;
   background-color: #f2f2f2;
   border-bottom: solid 2px #e3e3e3;
-  display: block;
 }
 
-.footer_mail {
+#MailFooter {
   color: #e54c00;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
   font-weight: bold;
 }
 
-.footer_mail:hover {
-  color: #e54c00;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: 'bebas-neue',sans-serif;
-  font-size: 31px;
-  font-weight: bold;
-}
-
-.footer_address:hover {
-  text-decoration: none;
-  color: black;
-
-}
 
 .cvr {
   height: 30px;
