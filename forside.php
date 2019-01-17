@@ -16,9 +16,8 @@
 	</div>
 
 <div class="watchourshowreel">
-	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
+	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
      class="play-circle-Copy">
-
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
@@ -46,7 +45,7 @@
 
 		    <li class="slide">
 		      <div class="row">
-		        <div class="col-7 order-2 case_img style="background-image:url(<?php the_field('hero_image'); ?>);"">
+		        <div class="col-7 order-2 case_img">
 
 		        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 
@@ -73,12 +72,13 @@
 	</div>
 </div>
 
-<section>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-6 ourprocess" style="background-image:url(<?php the_field('process_image'); ?>);">
+	</div>
 
-<div class="ourprocess">
-
-	<div class="container-fluid process">
-		<h2 id="process-headline">VORES PROCESS</h2>
+	<div class="col-6 process">
+		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
 		<div class="process-box col">
 			<p class="process-steps"><span class="inner">1</span></p>
 			<div class="process-content">
@@ -104,44 +104,42 @@
 		</div>
 	</div>
 </div>
+</div>
 
-</section>
 
 <div class="what-can-we-do">
-	<div class="row test">
-			<div class="col-sm hover1">
+
+	<div class="row">
+			<div class="col-sm">
 						<div class="col-sm-12">
 							<h2 class="wcwd_header"><?php the_field('wcwd_header'); ?></h2>
 							<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 						</div>
 				</div>
+			<div class="col-sm hover">
 
-			<div class="col-sm hover">
+					</a>
+					<div class="wcwd-content col-sm-12">
+						<?php if( get_field('brandstrategi_img') ): ?>
+						<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
+						<?php endif; ?>
+						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
+						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
+					</div>
+			</div>
+		<div class="col-sm hover">
+
+				</a>
 				<div class="wcwd-content col-sm-12">
-					<?php if( get_field('brandstrategi_img') ): ?>
-					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
-					<?php endif; ?>
-					<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
-					<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
-				</div>
-		</div>
-			<div class="col-sm hover">
-				<div class="wcwd-content col-sm-12">
-					<?php if( get_field('kommunikationsdesign_img') ): ?>
-					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
-					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('kommunikationsdesign_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>
 				</div>
 		</div>
-	</div>
 
-<div class="row test">
 		<div class="col-sm hover">
+
+				</a>
 				<div class="wcwd-content col-sm-12">
-					<?php if( get_field('social_media_img') ): ?>
-					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
-					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('social_media_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('social_media_text'); ?></p>
 				</div>
@@ -149,9 +147,6 @@
 
 		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
-					<?php if( get_field('pressemeddelelse_img') ): ?>
-					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
-					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('pressemeddelelse_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('pressemeddelelse_text'); ?></p>
 				</div>
@@ -159,18 +154,18 @@
 
 		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
-					<?php if( get_field('kommunikationsstrategi_img') ): ?>
-					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
-					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('kommunikationsstrategi_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('kommunikationsstrategi_text'); ?></p>
 				</div>
 		</div>
-	</div>
+
+		<button class="calltoaction" type="button" name="button">
+			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
+		</button>
 </div>
 
 <button class="calltoaction" type="button" name="button">
-	<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a> 
+	<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a>
 </button>
 
 </div>
