@@ -118,16 +118,16 @@
 
 					</a>
 					<div class="wcwd-content col-sm-12">
-						<h6 class="wcwd-headline">BRANDSTRATEGI</h6>
-						<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
+						<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 					</div>
 			</div>
 		<div class="col-sm hover">
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd-headline">KOMMUNIKATIONSDESIGN</h6>
-					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
+					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 				</div>
 		</div>
 
@@ -135,8 +135,8 @@
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd-headline">SOCIAL MEDIA</h6>
-					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
+					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 				</div>
 		</div>
 
@@ -144,8 +144,8 @@
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd-headline">PRESSEMEDDELELSE</h6>
-					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
+					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 				</div>
 		</div>
 
@@ -153,8 +153,8 @@
 
 				</a>
 				<div class="wcwd-content col-sm-12">
-					<h6 class="wcwd-headline">KOMMUNIKATIOSSTRATEGI</h6>
-					<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<h6 class="wcwd_headline"><?php the_field('wcwd_headline'); ?></h6>
+					<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 				</div>
 		</div>
 
