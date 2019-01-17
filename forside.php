@@ -108,27 +108,24 @@
 </section>
 
 <div class="what-can-we-do">
-	<div class="row">
-			<div class="col-sm">
+	<div class="row test">
+			<div class="col-sm hover1">
 						<div class="col-sm-12">
 							<h2 class="wcwd_header"><?php the_field('wcwd_header'); ?></h2>
 							<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 						</div>
 				</div>
+
 			<div class="col-sm hover">
-
-					</a>
-					<div class="wcwd-content col-sm-12">
-						<?php if( get_field('brandstrategi_img') ): ?>
-						<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
-						<?php endif; ?>
-						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
-						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
-					</div>
-			</div>
-		<div class="col-sm hover">
-
-				</a>
+				<div class="wcwd-content col-sm-12">
+					<?php if( get_field('brandstrategi_img') ): ?>
+					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
+					<?php endif; ?>
+					<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
+					<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
+				</div>
+		</div>
+			<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('kommunikationsdesign_img') ): ?>
 					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
@@ -137,10 +134,10 @@
 					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>
 				</div>
 		</div>
+	</div>
 
+<div class="row test">
 		<div class="col-sm hover">
-
-				</a>
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('social_media_img') ): ?>
 					<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
@@ -173,11 +170,11 @@
 					<p class="wcwd_text"><?php the_field('kommunikationsstrategi_text'); ?></p>
 				</div>
 		</div>
-
-		<button class="calltoaction" type="button" name="button">
-			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
-		</button>
+	</div>
 </div>
+<button class="calltoaction" type="button" name="button">
+	<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
+</button>
 </div>
 
 <?php get_footer(); ?>

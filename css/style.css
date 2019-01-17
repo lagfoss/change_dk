@@ -268,7 +268,10 @@ header {
 
 /* Hvad kan vi gøre for dig? Sektion */
 
-#wcwd-header {
+.test {
+}
+
+.wcwd_header {
   width: 290px;
   height: 80px;
   font-family: 'bebas-neue',sans-serif;
@@ -277,7 +280,7 @@ header {
   line-height: 0.86;
 }
 
-.wcwd-headline {
+.wcwd_headline {
   width: 255px;
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
@@ -285,7 +288,7 @@ header {
   font-weight: bold;
 }
 
-.wcwd-paragraf {
+.wcwd_text {
   width: 290px;
   height: 104px;
   font-size: 16px;
@@ -298,7 +301,11 @@ header {
 }
 
 .hover {
-  margin-left: 10%;
+  margin-left: 7%;
+}
+
+.hover1 {
+  margin-left: 7%;
 }
 
 .hover:hover {
