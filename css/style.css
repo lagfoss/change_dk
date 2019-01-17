@@ -33,11 +33,11 @@ header {
 .SoMe div {
   margin-left: 3.5%;
   margin-right: 3.5%;
-  display: -webkit-inline-box;
 }
 
 .SoMe ul {
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 .SoMe li {
@@ -49,10 +49,14 @@ header {
   text-decoration: underline;
 }
 
-.header_some_icon img {
+.header_some_icon {
   height: 15px;
   width: auto;
-  margin-right: 0;
+  margin:auto 0 auto 40px;
+}
+
+.header_some_icon img {
+  height: 100%;
 }
 
 
@@ -276,7 +280,7 @@ header {
 
 /* Hvad kan vi gøre for dig? Sektion */
 
-#wcwd-header {
+.wcwd_header {
   width: 290px;
   height: 80px;
   font-family: 'bebas-neue',sans-serif;
@@ -289,7 +293,7 @@ header {
   color: var(--almost-black);
 }
 
-.wcwd-headline {
+.wcwd_headline {
   width: 255px;
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
@@ -302,7 +306,7 @@ header {
   color: var(--almost-black);
 }
 
-.wcwd-paragraf {
+.wcwd_text {
   width: 290px;
   height: 104px;
   font-family: Montserrat;
@@ -321,7 +325,6 @@ header {
 }
 
 .hover {
-  margin-left: 10%;
 }
 
 .hover:hover {
