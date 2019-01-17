@@ -110,8 +110,8 @@
 	<div class="row">
 			<div class="col-sm">
 						<div class="col-sm-12">
-							<h2 id="wcwd-header">HVAD KAN VI <br>GØRE FOR DIG?</h2>
-							<p class="wcwd-paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h2 class="wcwd_header"><?php the_field('wcwd_header'); ?></h2>
+							<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 						</div>
 				</div>
 			<div class="col-sm hover">
