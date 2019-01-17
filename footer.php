@@ -8,7 +8,7 @@
 
   <div class="letstalkfooter">
     <?php the_field('footer_lets_talk'); ?>
-    <p class="phone_number"><?php the_field('phone_number'); ?></p>
+    <a href="tel:+4525702019" class="phone_number"><?php the_field('phone_number'); ?></a>
   </div>
 
   <div class="SoMefooter">
@@ -18,8 +18,8 @@
   </div>
 
   <div class="ContactFooter">
-   <p class="footer_mail"><?php the_field('footer_mail'); ?></p>
-    <p class="footer_address"><?php the_field('footer_address'); ?></p>
+   <a href="mailto:kontakt@change.dk" class="footer_mail"><?php the_field('footer_mail'); ?></a>
+    <a href="https://goo.gl/maps/wdmzCRN1RVL2" class="footer_address"><?php the_field('footer_address'); ?></a>
   </div>
 
 </footer>
