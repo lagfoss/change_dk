@@ -90,9 +90,6 @@ header {
   text-shadow: 0 2px 0 #111517;
   font-family: 'bebas-neue', sans-serif;
   font-size: 83px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.88;
   letter-spacing: normal;
   color: #f2f2f2;
@@ -127,10 +124,6 @@ header {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #f2f2f2;
 }
@@ -153,10 +146,7 @@ header {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 2.17;
-  letter-spacing: normal;
   color: #f2f2f2;
 }
 
@@ -166,10 +156,7 @@ header {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.63;
-  letter-spacing: normal;
   color: #f2f2f2;
 }
 
@@ -213,12 +200,6 @@ header {
 .process {
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.63;
-  letter-spacing: normal;
-  color: var(--almost-black);
 }
 
 .process-box {
@@ -232,10 +213,7 @@ header {
   font-family: 'bebas-neue',sans-serif;
   font-size: 83px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.88;
-  letter-spacing: normal;
   color: #e54c00;
   text-decoration: line-through;
   color: #e;
@@ -252,11 +230,7 @@ header {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.63;
-  letter-spacing: normal;
-  color: var(--almost-black);
   display: block;
   padding-left: 40px;
 }
@@ -271,57 +245,44 @@ header {
   font-family: 'bebas-neue', sans-serif;
   font-size: 50px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.86;
-  letter-spacing: normal;
   color: var(--almost-black);
 }
 
 /* Hvad kan vi gøre for dig? Sektion */
 
-.wcwd_header {
+#wcwd-header {
   width: 290px;
   height: 80px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 50px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.86;
-  letter-spacing: normal;
-  color: var(--almost-black);
 }
 
-.wcwd_headline {
+.wcwd-headline {
   width: 255px;
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  color: var(--almost-black);
 }
 
-.wcwd_text {
+.wcwd-paragraf {
   width: 290px;
   height: 104px;
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.63;
-  letter-spacing: normal;
-  color: var(--almost-black);
 }
 
 .wcwd-content {
   max-width: 270px;
   padding: 15px;
+}
+
+.hover {
+  margin-left: 10%;
 }
 
 .hover:hover {
@@ -344,21 +305,14 @@ header {
   font-family: 'bebas-neue', sans-serif;
   font-size: 50px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.86;
-  letter-spacing: normal;
   text-align: center;
-  color: var(--almost-black);
 }
 
 .CallToActionFooter {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
   text-decoration: none;
   padding: 15px 65px;
   background-color: inherit;
@@ -382,11 +336,6 @@ header {
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: var(--almost-black);
   padding-top: 50px;
   padding-bottom: 200px;
   background-color: #f2f2f2;
@@ -417,10 +366,6 @@ header {
   font-family: Montserrat;
   font-size: 19px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   padding-top: 50px;
   padding-bottom: 200px;
   background-color: #f2f2f2;
@@ -432,10 +377,6 @@ header {
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 
