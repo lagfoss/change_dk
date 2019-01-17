@@ -53,10 +53,10 @@
 		      </div>
 
 		      <div class="col-3 order-1 case_info">
-		        <p class="ablack">CASE:</p>
+		        <p>CASE:</p>
 		      <h2><?php echo $title; ?></h2>
 		      <p class="cat"><?php echo $category; ?></p>
-		      <p class="ablack"><?php echo $text; ?><p>
+		      <p><?php echo $text; ?><p>
 		        <button type="button" name="button"><a class="hero_button" href="<?php echo $link; ?>"><?php echo $button; ?> &#8594;</a></button>
 		    </div>
 		    </div>
