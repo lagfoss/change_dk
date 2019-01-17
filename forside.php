@@ -8,7 +8,7 @@
 
 	<div class=" hero_info">
 		<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
-		<p><?php the_field('hero_text'); ?></p>
+		<p class="white"><?php the_field('hero_text'); ?></p>
 
 		<button class="calltoaction" type="button" name="button">
 			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
@@ -18,7 +18,8 @@
 <div class="watchourshowreel">
 	<img src="<?php echo get_bloginfo('template_directory'); ?>/images/play-circle-copy.svg"
      class="play-circle-Copy">
-		<p class=" white Watch">Watch our:</p>
+
+		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
 
@@ -52,10 +53,10 @@
 		      </div>
 
 		      <div class="col-3 order-1 case_info">
-		        <p class="ablack">CASE:</p>
+		        <p>CASE:</p>
 		      <h2><?php echo $title; ?></h2>
 		      <p class="cat"><?php echo $category; ?></p>
-		      <p class="ablack"><?php echo $text; ?><p>
+		      <p><?php echo $text; ?><p>
 		        <button type="button" name="button"><a class="hero_button" href="<?php echo $link; ?>"><?php echo $button; ?> &#8594;</a></button>
 		    </div>
 		    </div>
@@ -118,6 +119,9 @@
 
 					</a>
 					<div class="wcwd-content col-sm-12">
+						<?php if( get_field('brandstrategi_img') ): ?>
+						<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
+						<?php endif; ?>
 						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
 						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
 					</div>
