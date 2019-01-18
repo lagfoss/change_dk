@@ -294,11 +294,13 @@ header {
 
 .hover:hover {
   background-color: white;
+  border-radius: 5px;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
 }
 
 .wcwd_section {
   margin-left: 5%;
+  padding: 20px;
 }
 
 .wcwd_calltoaction {
@@ -314,6 +316,7 @@ header {
 
 .wcwd_button {
   text-align: center;
+  padding-top: 10px;
 }
 
 -#NeedASuccessfulProject {
