@@ -42,14 +42,14 @@
 
 		    ?>
 				<div class="row">
-		        <div class="col-8 order-2 case_img">
+		        <div class="col-7 order-2 case_img">
 
 		        <img src="<?php echo $cimage['url']; ?>" alt="<?php echo $cimage['alt'] ?>" />
 
 		      </div>
 
 		      <div class="col-4 order-1 case_info">
-		        <p>CASE:</p>
+		        <p style="font-weight:bold;">CASE:</p>
 		      <h2><?php echo $ctitle; ?></h2>
 		      <p class="cat"><?php echo $ccategory; ?></p>
 		      <p><?php echo $ctext; ?><p>
@@ -71,7 +71,7 @@
 	</div>
 
 	<div class="col-6 process">
-		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
+		<h2><?php the_field('process_title'); ?></h2>
 
 			<?php if( have_rows('process') ): ?>
 
@@ -162,11 +162,9 @@
 		</div>
 
 </div>
-<div class="wcwd_button">
-	<button class="wcwd_calltoaction" type="button" name="button">
-		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a>
-	</button>
-</div>
+		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
+		<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+		<?php endif; ?></a>
 </div>
 
 <?php get_footer(); ?>
