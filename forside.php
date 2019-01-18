@@ -17,7 +17,7 @@
 
 <div class="watchourshowreel">
 	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
-     class="play-circle-Copy">
+     class="play-circle-Copy" style="width:50px;">
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
@@ -79,17 +79,17 @@
 
 	<div class="col-6 process">
 		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
-		<div class="row">
+
 			<?php if( have_rows('process') ): ?>
 
 					<?php while( have_rows('process') ): the_row();
 						// vars
-						$number = get_sub_field('process_number');
+						$processnumber = get_sub_field('process_number');
 						$processtitle = get_sub_field('process_single_title');
 						$procestext = get_sub_field('process_text');
 					?>
-
-			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $number; ?></div></div>
+			<div class="row">
+			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $processnumber; ?></div></div>
     	<div class="col-10 font-weight-bold">
       	<?php echo $processtitle; ?>
       	<div class="row">
@@ -107,21 +107,6 @@
 </div>
 
 
-<div class="process-box col">
-	<p class="process-steps"><span class="inner">2</span></p>
-	<div class="process-content">
-		<h6 class="process-title">Design:</h6>
-		<p>På baggrund af anbefalingerne fra analysen og organisationens forretningsstrategi, designer vi en løsning, der understøtter dine målsætninger med budskaber og aktiviteter.</p>
-	</div>
-</div>
-
-<div class="process-box col">
-	<span class="process-steps"><span class="inner">3</span></span>
-	<div class="process-content">
-		<h6 class="process-title">Kommunikér:</h6>
-		<p>Vi implementerer løsningen og sikrer at du kommer i mål med det færdigudviklede design - om du vælger os eller andre til eksekveringen, eller ønsker at stå for det hele selv.</p>
-	</div>
-</div>
 
 <div class="what-can-we-do">
 
@@ -136,7 +121,7 @@
 			<div class="col-sm hover">
 					<div class="wcwd-content col-sm-12">
 						<?php if( get_field('brandstrategi_img') ): ?>
-						<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
+						<img src="<?php the_field('brandstrategi_img'); ?>" />
 						<?php endif; ?>
 						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
 						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
@@ -145,6 +130,9 @@
 
 		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
+					<?php if( get_field('kommunikationsdesign_img') ): ?>
+					<img src="<?php the_field('kommunikationsdesign_img'); ?>" />
+					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('kommunikationsdesign_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>
 				</div>
