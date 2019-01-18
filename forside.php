@@ -118,8 +118,8 @@
 
 			<div class="col-sm hover">
 					<div class="wcwd-content col-sm-12">
-						<?php if( get_field('brandstrategi_img') ): ?> 
-						<img class="test" src="<?php the_field('brandstrategi_img'); ?>" />
+						<?php if( get_field('brandstrategi_img') ): ?>
+						<img class="wcwd_img" src="<?php the_field('brandstrategi_img'); ?>" />
 						<?php endif; ?>
 						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
 						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
@@ -129,7 +129,7 @@
 		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('kommunikationsdesign_img') ): ?>
-					<img class="test" src="<?php the_field('kommunikationsdesign_img'); ?>" />
+					<img class="wcwd_img" src="<?php the_field('kommunikationsdesign_img'); ?>" />
 					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('kommunikationsdesign_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>
@@ -141,7 +141,7 @@
 		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('social_media_img') ): ?>
-					<img class="test" src="<?php the_field('social_media_img'); ?>" />
+					<img class="wcwd_img" src="<?php the_field('social_media_img'); ?>" />
 					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('social_media_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('social_media_text'); ?></p>
@@ -151,7 +151,7 @@
 		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('pressemeddelelse_img') ): ?>
-					<img class="test" src="<?php the_field('pressemeddelelse_img'); ?>" />
+					<img class="wcwd_img" src="<?php the_field('pressemeddelelse_img'); ?>" />
 					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('pressemeddelelse_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('pressemeddelelse_text'); ?></p>
@@ -161,7 +161,7 @@
 		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
 					<?php if( get_field('kommunikationsstrategi_img') ): ?>
-					<img class="test" src="<?php the_field('kommunikationsstrategi_img'); ?>" />
+					<img class="wcwd_img" src="<?php the_field('kommunikationsstrategi_img'); ?>" />
 					<?php endif; ?>
 					<h6 class="wcwd_headline"><?php the_field('kommunikationsstrategi_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('kommunikationsstrategi_text'); ?></p>
