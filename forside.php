@@ -162,7 +162,7 @@
 		</div>
 
 </div>
-	<div class="row">
+	<div class="row justify-content-center">
 		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
 		<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
 		<?php endif; ?></a>
