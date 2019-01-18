@@ -106,9 +106,7 @@
 	</div>
 </div>
 
-
-
-<div class="what-can-we-do">
+<div class="container-fluid">
 
 	<div class="row wcwd_section">
 			<div class="col-sm">
