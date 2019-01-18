@@ -11,9 +11,26 @@
     <a href="tel:<?php the_field('phone_number'); ?>" class="phone_number"><?php the_field('phone_number'); ?></a>
   </div>
 
-  <div class="SoMefooter">
-    <?php if( get_field('someicons') ): ?>
-    <img src="<?php the_field('someicons'); ?>" />
+  <div class="container-fluid SoMefooter">
+    <?php if( have_rows('footer_some') ): ?>
+      <ul>
+        <?php while( have_rows('footer_some') ): the_row();
+        // vars
+          $footsomeimage = get_sub_field('footer_some_icon');
+          $footsomelink = get_sub_field('footer_some_url');
+        ?>
+
+        <li class="footer_some_icon">
+          <?php if( $footsomelink ): ?>
+            <a href="<?php echo $footsomelink; ?>" target="_blank">
+              <?php endif; ?>
+              <img src="<?php echo $footsomeimage['url']; ?>" alt="<?php echo $footsomeimage['alt'] ?>" />
+              <?php if( $footsomelink ): ?>
+            </a>
+          <?php endif; ?>
+        </li>
+      <?php endwhile; ?>
+    </ul>
     <?php endif; ?>
   </div>
 

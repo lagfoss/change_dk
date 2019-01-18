@@ -397,6 +397,15 @@ header {
   border-bottom: solid 2px #e3e3e3;
 }
 
+.SoMefooter ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.SoMefooter li {
+  display: inline-block;
+}
+
 .ContactFooter {
   text-align: center;
   width: 100%;
