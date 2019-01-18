@@ -19,7 +19,7 @@
 
 <div class="watchourshowreel">
 	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
-     class="play-circle-Copy" style="width:50px;">
+     class="playcircle" style="width:50px;">
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
