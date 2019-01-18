@@ -29,16 +29,16 @@
             <ul>
               <?php while( have_rows('header_some') ): the_row();
               // vars
-                $image = get_sub_field('header_some_icon');
-                $link = get_sub_field('header_some_url');
+                $someimage = get_sub_field('header_some_icon');
+                $somelink = get_sub_field('header_some_url');
               ?>
 
               <li class="header_some_icon">
-                <?php if( $link ): ?>
-                  <a href="<?php echo $link; ?>" target="_blank">
+                <?php if( $somelink ): ?>
+                  <a href="<?php echo $somelink; ?>" target="_blank">
                     <?php endif; ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-                    <?php if( $link ): ?>
+                    <img src="<?php echo $someimage['url']; ?>" alt="<?php echo $someimage['alt'] ?>" />
+                    <?php if( $somelink ): ?>
                   </a>
                 <?php endif; ?>
               </li>

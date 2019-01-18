@@ -22,14 +22,13 @@
     <a href="https://goo.gl/maps/wdmzCRN1RVL2" class="footer_address"><?php the_field('footer_address'); ?></a>
   </div>
 
-</footer>
 <div class="container-fluid">
   <div class="row justify-content-center cvr">
     <div class="align-self-center">Change Aps &#9474; CVR: 37197351</div>
   </div>
 </div>
 
-
+</footer>
 
 
 
