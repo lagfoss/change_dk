@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.row, .container, .container-fluid, .col, .col-6 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
@@ -52,6 +57,7 @@ header {
   top:0;
   width: 100%
 }
+
 
 /*Sociale medier og tekst i toppen*/
 .SoMe {
