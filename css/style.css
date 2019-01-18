@@ -224,11 +224,11 @@ header {
 
 /* Process sektion */
 
-.ourprocess {
+.process-img {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-clip: padding-box;
+  background-clip: content-box;
   padding: 10px;
 }
 
@@ -241,6 +241,10 @@ header {
   font-weight: bold;
   line-height: 0.88;
   color: #e54c00;
+}
+
+.ourprocess {
+  margin-top: 10px;
 }
 
 .dash {
@@ -323,6 +327,7 @@ header {
 
 .wcwd_img {
   width: 44px;
+  width: 70px;
 }
 
 
@@ -388,11 +393,7 @@ header {
 .SoMefooter {
   text-align: center;
   width: 100%;
-  height: 24px;
-  color: var(--almost-black);
-  padding-top: 50px;
-  padding-bottom: 200px;
-  background-color: #f2f2f2;
+  height: 130px;
   border-bottom: solid 2px #e3e3e3;
 }
 
@@ -404,7 +405,6 @@ header {
   font-weight: 500;
   padding-top: 50px;
   padding-bottom: 200px;
-  background-color: #f2f2f2;
   border-bottom: solid 2px #e3e3e3;
 }
 
