@@ -105,10 +105,10 @@ header {
   padding-right: 0;
 }
 
-.playcircle {
-  width:100px;
+.play-circle-Copy {
+  width:50px;
+  cursor: pointer;
 }
-
 
 /*Hero image*/
 
@@ -320,6 +320,7 @@ header {
 
 .wcwd_button {
   text-align: center;
+  padding-top: 10px;
   margin: 100px 0px 105px 0px;
 }
 
@@ -388,7 +389,6 @@ header {
 }
 
 .phone_number:hover {
-  text-decoration: none;
   color: #e54c00;
 }
 
@@ -427,7 +427,6 @@ header {
 }
 
 .footer_mail:hover {
-  text-decoration: none;
   color: #e54c00;
 }
 
