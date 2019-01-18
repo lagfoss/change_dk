@@ -173,7 +173,9 @@
 </div>
 <div class="wcwd_button">
 	<button class="wcwd_calltoaction" type="button" name="button">
-		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a>
+		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
+		<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+		<?php endif; ?></a>
 	</button>
 </div>
 </div>

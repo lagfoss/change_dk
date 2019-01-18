@@ -3,7 +3,11 @@
 <footer>
   <div class="FooterProject">
     <h2 class="footer_project"><?php the_field('footer_project'); ?></h2>
-  <a class="CallToActionFooter" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
+  <a class="CallToActionFooter" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?>
+
+  <?php if( get_field('calltoaction_arrow_right') ): ?>
+  <img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+  <?php endif; ?></a>
   </div>
 
   <div class="letstalkfooter">
