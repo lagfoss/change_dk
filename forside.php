@@ -90,10 +90,10 @@
 					?>
 			<div class="row">
 			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $processnumber; ?></div></div>
-    	<div class="col-10 font-weight-bold">
+    	<div class="col-11 font-weight-bold">
       	<?php echo $processtitle; ?>
       	<div class="row">
-        	<div class="col-6 font-weight-normal"><?php echo $procestext; ?></div>
+        	<div class="col-11 font-weight-normal"><?php echo $procestext; ?></div>
       	</div>
     	</div>
 		<?php endwhile; ?>

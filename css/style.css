@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.row, .container, .container-fluid, .col, .col-6 {
+.row, .container, .container-fluid, .col, .col-1, .col-6, .col-11 {
   margin: 0;
   padding: 0;
 }
@@ -228,6 +228,8 @@ header {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-clip: padding-box;
+  padding: 10px;
 }
 
 .process-steps {
@@ -245,14 +247,12 @@ header {
   position: absolute;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #f2f2f2;
-  text-align: center;
   z-index: 2;
 }
 
 .inner {
   position: relative;
   color: #e3e3e3;
-  text-align: center;
   z-index: 1;
 }
 
