@@ -239,19 +239,21 @@ header {
   position: absolute;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #f2f2f2;
+  text-align: center;
   z-index: 2;
 }
 
 .inner {
   position: relative;
   color: #e3e3e3;
+  text-align: center;
   z-index: 1;
 }
 
 
 /* Hvad kan vi gøre for dig? Sektion */
 
-#wcwd-header {
+.wcwd_header {
   width: 290px;
   height: 80px;
   font-family: 'bebas-neue',sans-serif;
@@ -260,7 +262,7 @@ header {
   line-height: 0.86;
 }
 
-.wcwd-headline {
+.wcwd_headline {
   width: 255px;
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
@@ -280,17 +282,13 @@ header {
   padding: 15px;
 }
 
-.hover {
-  margin-left: 10%;
-}
-
-.hover1 {
-  margin-left: 10%;
-}
-
 .hover:hover {
   background-color: white;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+}
+
+.wcwd_section {
+  margin-left: 5%;
 }
 
 -#NeedASuccessfulProject {

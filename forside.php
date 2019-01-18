@@ -89,7 +89,7 @@
 						$procestext = get_sub_field('process_text');
 					?>
 
-			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $number; ?></div></div>
+			<div class="col-1 process-steps"><div class="dash">&#8213;</div><div class="inner"><?php echo $number; ?></div></div>
     	<div class="col-10 font-weight-bold">
       	<?php echo $processtitle; ?>
       	<div class="row">
@@ -125,16 +125,15 @@
 
 <div class="what-can-we-do">
 
-	<div class="row">
+	<div class="row wcwd_section">
 			<div class="col-sm">
 						<div class="col-sm-12 hover1">
 							<h2 class="wcwd_header"><?php the_field('wcwd_header'); ?></h2>
 							<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 						</div>
 				</div>
-			<div class="col-sm hover fade">
 
-					</a>
+			<div class="col-sm hover">
 					<div class="wcwd-content col-sm-12">
 						<?php if( get_field('brandstrategi_img') ): ?>
 						<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
@@ -150,10 +149,10 @@
 					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>
 				</div>
 		</div>
+	</div>
 
+	<div class="row wcwd_section">
 		<div class="col-sm hover">
-
-				</a>
 				<div class="wcwd-content col-sm-12">
 					<h6 class="wcwd_headline"><?php the_field('social_media_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('social_media_text'); ?></p>
