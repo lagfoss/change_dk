@@ -116,7 +116,7 @@
 							<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 						</div>
 				</div>
-			<div class="col-sm hover">
+			<div class="col-sm hover fade">
 
 					</a>
 					<div class="wcwd-content col-sm-12">
