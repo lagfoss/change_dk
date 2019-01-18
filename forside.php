@@ -26,12 +26,9 @@
 
 </div>
 
-<div class="case_area">
-
 	<div class="container-fluid  case">
 		<?php if( have_rows('case_slider') ): ?>
 
-		  <ul class="slides">
 
 		    <?php while( have_rows('case_slider') ): the_row();
 
@@ -44,16 +41,14 @@
 		    $cimage = get_sub_field('case_image');
 
 		    ?>
-
-		    <li class="slide">
-		      <div class="row">
-		        <div class="col-7 order-2 case_img">
+				<div class="row">
+		        <div class="col-8 order-2 case_img">
 
 		        <img src="<?php echo $cimage['url']; ?>" alt="<?php echo $cimage['alt'] ?>" />
 
 		      </div>
 
-		      <div class="col-3 order-1 case_info">
+		      <div class="col-4 order-1 case_info">
 		        <p>CASE:</p>
 		      <h2><?php echo $ctitle; ?></h2>
 		      <p class="cat"><?php echo $ccategory; ?></p>
@@ -62,17 +57,13 @@
 		    </div>
 		    </div>
 
-		    </li>
-
 		  <?php endwhile; ?>
 
-		</ul>
 
 		<?php endif; ?>
 
 
 	</div>
-</div>
 
 <div class="container-fluid">
 <div class="row">
