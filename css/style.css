@@ -167,26 +167,22 @@ header {
   border-radius: 5px;
 }
 
-.calltoaction {
+.hero_button {
   text-decoration: none;
   padding: 15px 25px;
   background-color: inherit;
   border-color: #e54c00;
   width: 185px;
-  height: 62px;
+  height: 60px;
   border-radius: 5px;
   border-style: solid;
-}
-
-.hero_button {
-  width: 106px;
-  height: 19px;
+  border-width: 2px;
   text-align: center;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .hero_button:hover {
-  color: #f2f2f2;
+  color: #fff;
   text-decoration: none;
 }
 
