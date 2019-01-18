@@ -509,22 +509,24 @@ animation-delay: 1s;
   margin: 20px;
 }
 
-.wcwd_calltoaction {
+.wcwd_button {
   text-decoration: none;
   padding: 15px 25px;
   background-color: inherit;
   border-color: black;
   width: 185px;
-  height: 62px;
+  height: 60px;
   border-radius: 5px;
   border-style: solid;
+  border-width: 2px;
+  border-color: #111517;
 }
 
-.wcwd_button {
-  text-align: center;
-  padding-top: 10px;
-  margin: 100px 0px 105px 0px;
+.wcwd_button:hover {
+  text-decoration: none;
+  color: #111517;
 }
+
 
 .wcwd_img {
   width: 44px;
