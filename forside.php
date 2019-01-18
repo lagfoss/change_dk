@@ -11,7 +11,9 @@
 		<p class="white"><?php the_field('hero_text'); ?></p>
 
 		<button class="calltoaction" type="button" name="button">
-			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
+			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
+			<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+			<?php endif; ?></a>
 		</button>
 	</div>
 
