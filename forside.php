@@ -74,7 +74,7 @@
 
 <div class="container-fluid">
 <div class="row">
-	<div class="col-6 ourprocess" style="background-image:url(<?php the_field('process_image'); ?>);">
+	<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
 	</div>
 
 	<div class="col-6 process">
@@ -88,7 +88,7 @@
 						$processtitle = get_sub_field('process_single_title');
 						$procestext = get_sub_field('process_text');
 					?>
-			<div class="row">
+			<div class="row ourprocess">
 			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $processnumber; ?></div></div>
     	<div class="col-11 font-weight-bold">
       	<?php echo $processtitle; ?>

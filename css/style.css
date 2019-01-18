@@ -224,11 +224,10 @@ header {
 
 /* Process sektion */
 
-.ourprocess {
+.process-img {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-clip: padding-box;
   padding: 10px;
 }
 
@@ -241,6 +240,11 @@ header {
   font-weight: bold;
   line-height: 0.88;
   color: #e54c00;
+}
+
+.ourprocess {
+  margin-top: 10px;
+
 }
 
 .dash {
