@@ -12,14 +12,15 @@
 
 		<button class="calltoaction" type="button" name="button">
 			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
-			<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+			<img src="<?php the_field('calltoaction_arrow_right'); ?>" />
 			<?php endif; ?></a>
 		</button>
 	</div>
 
 <div class="watchourshowreel">
 	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
-     class="play-circle-Copy" style="width:50px;">
+     class="play-circle-Copy">
+		 
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
@@ -76,7 +77,7 @@
 
 <div class="container-fluid">
 <div class="row">
-	<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
+	<div class="col-6 ourprocess" style="background-image:url(<?php the_field('process_image'); ?>);">
 	</div>
 
 	<div class="col-6 process">
@@ -90,7 +91,7 @@
 						$processtitle = get_sub_field('process_single_title');
 						$procestext = get_sub_field('process_text');
 					?>
-			<div class="row ourprocess">
+			<div class="row">
 			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $processnumber; ?></div></div>
     	<div class="col-11 font-weight-bold">
       	<?php echo $processtitle; ?>
@@ -173,9 +174,7 @@
 </div>
 <div class="wcwd_button">
 	<button class="wcwd_calltoaction" type="button" name="button">
-		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
-		<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
-		<?php endif; ?></a>
+		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a>
 	</button>
 </div>
 </div>
