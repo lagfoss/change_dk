@@ -79,7 +79,7 @@
 
 	<div class="col-6 process">
 		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
-		<div class="row">
+
 			<?php if( have_rows('process') ): ?>
 
 					<?php while( have_rows('process') ): the_row();
@@ -88,7 +88,7 @@
 						$processtitle = get_sub_field('process_single_title');
 						$procestext = get_sub_field('process_text');
 					?>
-
+			<div class="row">
 			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $number; ?></div></div>
     	<div class="col-10 font-weight-bold">
       	<?php echo $processtitle; ?>
@@ -107,21 +107,6 @@
 </div>
 
 
-<div class="process-box col">
-	<p class="process-steps"><span class="inner">2</span></p>
-	<div class="process-content">
-		<h6 class="process-title">Design:</h6>
-		<p>På baggrund af anbefalingerne fra analysen og organisationens forretningsstrategi, designer vi en løsning, der understøtter dine målsætninger med budskaber og aktiviteter.</p>
-	</div>
-</div>
-
-<div class="process-box col">
-	<span class="process-steps"><span class="inner">3</span></span>
-	<div class="process-content">
-		<h6 class="process-title">Kommunikér:</h6>
-		<p>Vi implementerer løsningen og sikrer at du kommer i mål med det færdigudviklede design - om du vælger os eller andre til eksekveringen, eller ønsker at stå for det hele selv.</p>
-	</div>
-</div>
 
 <div class="what-can-we-do">
 
@@ -174,10 +159,11 @@
 		</div>
 
 </div>
-
-<button class="calltoaction" type="button" name="button">
-	<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a>
-</button>
+<div class="wcwd_button">
+	<button class="wcwd_calltoaction" type="button" name="button">
+		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> &#8594;</a>
+	</button>
+</div>
 </div>
 
 <?php get_footer(); ?>
