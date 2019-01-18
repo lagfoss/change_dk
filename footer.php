@@ -15,7 +15,9 @@
     <a href="tel:<?php the_field('phone_number'); ?>" class="phone_number"><?php the_field('phone_number'); ?></a>
   </div>
 
-  <div class="container-fluid SoMefooter">
+  <div class="container-fluid ">
+    <div class="row SoMefooter">
+      <div class="col align-self-center">
     <?php if( have_rows('footer_some') ): ?>
       <ul>
         <?php while( have_rows('footer_some') ): the_row();
@@ -36,6 +38,8 @@
       <?php endwhile; ?>
     </ul>
     <?php endif; ?>
+  </div>
+  </div>
   </div>
 
   <div class="ContactFooter">
