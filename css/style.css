@@ -272,6 +272,7 @@ header {
   font-size: 50px;
   font-weight: bold;
   line-height: 0.86;
+  margin-top: 10%;
 }
 
 .wcwd_headline {
@@ -291,13 +292,14 @@ header {
 
 .wcwd-content {
   max-width: 270px;
-  padding: 15px;
+  margin: 15px;
 }
 
 .hover:hover {
   background-color: white;
   border-radius: 5px;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+  transition: 0.8s;
 }
 
 .wcwd_section {
@@ -318,7 +320,7 @@ header {
 
 .wcwd_button {
   text-align: center;
-  padding-top: 10px;
+  margin: 100px 0px 105px 0px;
 }
 
 -#NeedASuccessfulProject {
