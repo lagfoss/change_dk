@@ -228,6 +228,7 @@ header {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-clip: content-box;
   padding: 10px;
 }
 
@@ -244,7 +245,6 @@ header {
 
 .ourprocess {
   margin-top: 10px;
-
 }
 
 .dash {
@@ -325,7 +325,7 @@ header {
   font-size: 50px;
 }
 
-.wcwd_img { 
+.wcwd_img {
   width: 70px;
 }
 
