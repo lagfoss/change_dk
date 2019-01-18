@@ -10,11 +10,9 @@
 		<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 		<p class="white"><?php the_field('hero_text'); ?></p>
 
-		<button class="calltoaction" type="button" name="button">
 			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
 			<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
 			<?php endif; ?></a>
-		</button>
 	</div>
 
 <div class="watchourshowreel">
@@ -162,10 +160,9 @@
 		</div>
 
 </div>
-		
 	<div class="row justify-content-center">
-		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
-		<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+		<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('wcwd_button_icon') ): ?>
+		<img class="" src="<?php the_field('wcwd_button_icon'); ?>" />
 		<?php endif; ?></a>
 	</div>
 </div>
