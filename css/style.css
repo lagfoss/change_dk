@@ -220,16 +220,8 @@ header {
   background-repeat: no-repeat;
 }
 
-.process {
-  font-size: 16px;
-}
-
-.process-box {
-  display: -webkit-inline-box;
-  padding-bottom: 40px;
-}
-
 .process-steps {
+  z-index: 2;
   width: 33px;
   height: 73px;
   font-family: 'bebas-neue',sans-serif;
@@ -237,37 +229,21 @@ header {
   font-weight: bold;
   line-height: 0.88;
   color: #e54c00;
-  text-decoration: line-through;
-  display: block;
+}
+
+.dash {
+  position: absolute;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #f2f2f2;
+  z-index: 2;
 }
 
 .inner {
+  position: relative;
   color: #e3e3e3;
+  z-index: 1;
 }
 
-.process-content {
-  width: 477px;
-  height: 127.2px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.63;
-  display: block;
-  padding-left: 40px;
-}
-
-.process-title {
-
-}
-
-#process-headline {
-  width: 239px;
-  height: 43px;
-  font-family: 'bebas-neue', sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 0.86;
-  color: var(--almost-black);
-}
 
 /* Hvad kan vi gøre for dig? Sektion */
 
@@ -288,7 +264,7 @@ header {
   font-weight: bold;
 }
 
-.wcwd-paragraf {
+.wcwd_text {
   width: 290px;
   height: 104px;
   font-size: 16px;
@@ -305,25 +281,8 @@ header {
 }
 
 .hover:hover {
-  background-color: white;
-  border-radius: 5px;
+  background-color: pink;
   box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
-}
-
-.wcwd_button {
-  width: 106px;
-  height: 19px;
-  text-align: center;
-  color: black;
-}
-
-.wcwd_button_text {
-  color: black;
-}
-
-.wcwd_button:hover {
-  color: #f2f2f2;
-  text-decoration: none;
 }
 
 -#NeedASuccessfulProject {

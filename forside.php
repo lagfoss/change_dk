@@ -34,12 +34,12 @@
 		    <?php while( have_rows('case_slider') ): the_row();
 
 		    // vars
-		    $title = get_sub_field('case_title');
-		    $category = get_sub_field('case_category');
-		    $text = get_sub_field('case_text');
-		    $button = get_sub_field('case_button_text');
-		    $link = get_sub_field('case_button_url');
-		    $image = get_sub_field('case_image');
+		    $ctitle = get_sub_field('case_title');
+		    $ccategory = get_sub_field('case_category');
+		    $ctext = get_sub_field('case_text');
+		    $cbutton = get_sub_field('case_button_text');
+		    $clink = get_sub_field('case_button_url');
+		    $cimage = get_sub_field('case_image');
 
 		    ?>
 
@@ -47,16 +47,16 @@
 		      <div class="row">
 		        <div class="col-7 order-2 case_img">
 
-		        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+		        <img src="<?php echo $cimage['url']; ?>" alt="<?php echo $cimage['alt'] ?>" />
 
 		      </div>
 
 		      <div class="col-3 order-1 case_info">
 		        <p>CASE:</p>
-		      <h2><?php echo $title; ?></h2>
-		      <p class="cat"><?php echo $category; ?></p>
-		      <p><?php echo $text; ?><p>
-		        <button type="button" name="button"><a class="hero_button" href="<?php echo $link; ?>"><?php echo $button; ?> &#8594;</a></button>
+		      <h2><?php echo $ctitle; ?></h2>
+		      <p class="cat"><?php echo $ccategory; ?></p>
+		      <p><?php echo $ctext; ?><p>
+		        <button type="button" name="button"><a class="hero_button" href="<?php echo $clink; ?>"><?php echo $cbutton; ?> &#8594;</a></button>
 		    </div>
 		    </div>
 
@@ -79,33 +79,49 @@
 
 	<div class="col-6 process">
 		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
-		<div class="process-box col">
-			<p class="process-steps"><span class="inner">1</span></p>
-			<div class="process-content">
-				<h6 class="process-title">Analysér:</h6>
-				<p>Med udgangspunkt i research og opstartsmøde, analyserer vi organisationens målgrupper, platforme, medier og interne forhold. Vi identificerer muligheder og trusler, og udarbejder anbefalinger.</p>
+		<div class="row">
+			<?php if( have_rows('process') ): ?>
+
+					<?php while( have_rows('process') ): the_row();
+						// vars
+						$number = get_sub_field('process_number');
+						$processtitle = get_sub_field('process_single_title');
+						$procestext = get_sub_field('process_text');
+					?>
+
+			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $number; ?></div></div>
+    	<div class="col-10 font-weight-bold">
+      	<?php echo $processtitle; ?>
+      	<div class="row">
+        	<div class="col-6 font-weight-normal"><?php echo $procestext; ?></div>
+      	</div>
+    	</div>
+		<?php endwhile; ?>
+
+<?php endif; ?>
 			</div>
+
 		</div>
 
-		<div class="process-box col">
-			<p class="process-steps"><span class="inner">2</span></p>
-			<div class="process-content">
-				<h6 class="process-title">Design:</h6>
-				<p>På baggrund af anbefalingerne fra analysen og organisationens forretningsstrategi, designer vi en løsning, der understøtter dine målsætninger med budskaber og aktiviteter.</p>
-			</div>
-		</div>
-
-		<div class="process-box col">
-			<span class="process-steps"><span class="inner">3</span></span>
-			<div class="process-content">
-				<h6 class="process-title">Kommunikér:</h6>
-				<p>Vi implementerer løsningen og sikrer at du kommer i mål med det færdigudviklede design - om du vælger os eller andre til eksekveringen, eller ønsker at stå for det hele selv.</p>
-			</div>
-		</div>
 	</div>
 </div>
+
+
+<div class="process-box col">
+	<p class="process-steps"><span class="inner">2</span></p>
+	<div class="process-content">
+		<h6 class="process-title">Design:</h6>
+		<p>På baggrund af anbefalingerne fra analysen og organisationens forretningsstrategi, designer vi en løsning, der understøtter dine målsætninger med budskaber og aktiviteter.</p>
+	</div>
 </div>
 
+<div class="process-box col">
+	<span class="process-steps"><span class="inner">3</span></span>
+	<div class="process-content">
+		<h6 class="process-title">Kommunikér:</h6>
+		<p>Vi implementerer løsningen og sikrer at du kommer i mål med det færdigudviklede design - om du vælger os eller andre til eksekveringen, eller ønsker at stå for det hele selv.</p>
+	</div>
+</div>
 
 <div class="what-can-we-do">
 
@@ -159,9 +175,6 @@
 				</div>
 		</div>
 
-		<button class="calltoaction" type="button" name="button">
-			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> &#8594;</a>
-		</button>
 </div>
 
 <button class="calltoaction" type="button" name="button">
