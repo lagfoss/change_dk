@@ -71,7 +71,7 @@
 	</div>
 
 	<div class="col-6 process">
-		<h2 id="process-headline"><?php the_field('process_title'); ?></h2>
+		<h2><?php the_field('process_title'); ?></h2>
 
 			<?php if( have_rows('process') ): ?>
 
