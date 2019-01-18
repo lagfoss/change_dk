@@ -253,6 +253,10 @@ header {
 
 /* Hvad kan vi gøre for dig? Sektion */
 
+.what-can-we-do {
+  width:-webkit-fill-available;
+}
+
 .wcwd_header {
   width: 290px;
   height: 80px;
@@ -289,6 +293,21 @@ header {
 
 .wcwd_section {
   margin-left: 5%;
+}
+
+.wcwd_calltoaction {
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: inherit;
+  border-color: black;
+  width: 185px;
+  height: 62px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.wcwd_button {
+  text-align: center;
 }
 
 -#NeedASuccessfulProject {
