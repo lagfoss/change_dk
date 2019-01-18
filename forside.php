@@ -51,7 +51,9 @@
 		      <h2><?php echo $ctitle; ?></h2>
 		      <p class="cat"><?php echo $ccategory; ?></p>
 		      <p><?php echo $ctext; ?><p>
-		        <button type="button" name="button"><a class="hero_button" href="<?php echo $clink; ?>"><?php echo $cbutton; ?> &#8594;</a></button>
+		      	<a class="case_button" href="<?php echo $clink; ?>"><?php echo $cbutton; ?><?php if( get_field('case_button_icon') ): ?>
+						<img class="" src="<?php the_field('case_button_icon'); ?>" />
+						<?php endif; ?></a>
 		    </div>
 		    </div>
 
