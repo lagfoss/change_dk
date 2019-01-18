@@ -19,7 +19,7 @@
 
   <div class="ContactFooter">
    <a href="mailto:<?php the_field('footer_mail'); ?>" class="footer_mail"><?php the_field('footer_mail'); ?></a>
-    <a href="https://goo.gl/maps/wdmzCRN1RVL2" class="footer_address"><?php the_field('footer_address'); ?></a>
+    <a href="<?php the_field('google_maps_link'); ?>" class="footer_address"><?php the_field('footer_address'); ?></a>
   </div>
 
 <div class="container-fluid">
