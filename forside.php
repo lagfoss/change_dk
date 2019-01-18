@@ -17,7 +17,7 @@
 
 <div class="watchourshowreel">
 	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
-     class="play-circle-Copy">
+     class="play-circle-Copy" style="width:50px;">
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
 </div>
@@ -84,12 +84,12 @@
 
 					<?php while( have_rows('process') ): the_row();
 						// vars
-						$number = get_sub_field('process_number');
+						$processnumber = get_sub_field('process_number');
 						$processtitle = get_sub_field('process_single_title');
 						$procestext = get_sub_field('process_text');
 					?>
 			<div class="row">
-			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $number; ?></div></div>
+			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $processnumber; ?></div></div>
     	<div class="col-10 font-weight-bold">
       	<?php echo $processtitle; ?>
       	<div class="row">
@@ -121,7 +121,7 @@
 			<div class="col-sm hover">
 					<div class="wcwd-content col-sm-12">
 						<?php if( get_field('brandstrategi_img') ): ?>
-						<img src="<?php the_field('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/linkedin.svg'); ?>" />
+						<img src="<?php the_field('brandstrategi_img'); ?>" />
 						<?php endif; ?>
 						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
 						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
