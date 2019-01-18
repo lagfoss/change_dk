@@ -89,7 +89,7 @@
 						$procestext = get_sub_field('process_text');
 					?>
 
-			<div class="col-1 process-steps"><div class="dash">&#8213;</div><div class="inner"><?php echo $number; ?></div></div>
+			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $number; ?></div></div>
     	<div class="col-10 font-weight-bold">
       	<?php echo $processtitle; ?>
       	<div class="row">
