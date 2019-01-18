@@ -110,6 +110,23 @@ header {
   cursor: pointer;
 }
 
+.playcircle:hover {
+  animation: shadow-pulse 1s infinite;
+  border-radius: 50px;
+}
+
+@keyframes shadow-pulse
+{
+  0% {box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);}
+  100% {box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);}
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);}
+  100% {box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);}
+}
+
 /*Hero image*/
 
 .hero {
@@ -303,8 +320,8 @@ header {
 }
 
 .wcwd_section {
-  margin-left: 5%;
-  margin: 20px;
+  margin-left: 10%;
+  padding: 20px;
 }
 
 .wcwd_calltoaction {
