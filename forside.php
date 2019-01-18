@@ -127,7 +127,7 @@
 
 	<div class="row">
 			<div class="col-sm">
-						<div class="col-sm-12">
+						<div class="col-sm-12 hover1">
 							<h2 class="wcwd_header"><?php the_field('wcwd_header'); ?></h2>
 							<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
 						</div>
@@ -143,9 +143,8 @@
 						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
 					</div>
 			</div>
-		<div class="col-sm hover">
 
-				</a>
+		<div class="col-sm hover">
 				<div class="wcwd-content col-sm-12">
 					<h6 class="wcwd_headline"><?php the_field('kommunikationsdesign_header'); ?></h6>
 					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>

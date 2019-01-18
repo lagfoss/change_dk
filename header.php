@@ -52,7 +52,7 @@
  <!-- Menu/Nav -->
   <ul class="navbar">
     <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="">
+          <img class="playcircle" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="">
         </a>
     <?php
     $menuargs = array('container' => 'nav', 'container_class' => 'main-nav');
