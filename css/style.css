@@ -44,6 +44,7 @@ h2 {
 
 .white{
   color: #ffffff;
+  width: 600px;
 }
 
 a {
@@ -113,9 +114,6 @@ header {
 
 
 /* Nav start */
-
-
-
 .b-a {
    transition: all .25s;
    content: "";
@@ -196,15 +194,13 @@ color: #e54c00;
 transition: all .15s;
 letter-spacing: 2px;
 border: 1px solid rgba(255, 255, 255, .15);
-}
+}}}
 
-   }
-}
 
-#nav_job {
-font-family: Montserrat;
-font-size: 17px;
-font-weight: 300;
+.some_icons_nav {
+  list-style-type: none;
+    display: flex;
+    flex-flow: row;
 }
 
 /* Nav slut */
@@ -476,6 +472,16 @@ font-weight: 300;
   border-color: #111517;
 }
 
+.slide{
+     position: relative;
+     z-index: 1;
+}
+.slider-content{
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     z-index: 100;
+}
 
 /*Footer*/
 
