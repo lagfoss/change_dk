@@ -13,6 +13,11 @@
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
+    <script
+			  src="http://code.jquery.com/jquery-3.3.1.slim.js"
+			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+			  crossorigin="anonymous"></script>
 
   <?php wp_head(); ?>
 
