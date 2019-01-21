@@ -176,7 +176,15 @@
     <?php endforeach;?>
 </ul>
 
-			
+<div class="owl-carousel">
+<div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div>
+</div>
 		</div>
 		<div class="col-5">
 				<h2><?php the_field('know_us_title'); ?></h2>
