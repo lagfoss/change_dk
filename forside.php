@@ -24,7 +24,7 @@
 
 </div>
 
-	<!--<div class="container-fluid  case">
+	<div class="container-fluid  case">
 	<div class="row">
 			<?php
 
@@ -57,7 +57,7 @@
 			?>
 
 	</div>
-	</div>-->
+	</div>
 
 <div class="container-fluid">
 <div class="row">
@@ -163,28 +163,49 @@
 	</div>
 </div>
 
+
+<div class="container-fluid ">
+	<div class="row SoMefooter">
+		<div class="col align-self-center">
+			<div id="owl-demo" class="owl-carousel owl-theme autoplay">
+	<?php if( have_rows('firma_slider') ): ?>
+		<ul>
+			<?php while( have_rows('firma_slider') ): the_row();
+			// vars
+				$firmaimage = get_sub_field('firma_icon');
+				$firmalink = get_sub_field('firma_url');
+			?>
+			<li class="firma_icon">
+				<?php if( $firmalink ): ?>
+					<a href="<?php echo $firmalink; ?>" target="_blank">
+						<?php endif; ?>
+						<img src="<?php echo $firmaimage['url']; ?>" alt="<?php echo $firmaimage['alt'] ?>" />
+						<?php if( $firmalink ): ?>
+					</a>
+				<?php endif; ?>
+			</li>
+		<?php endwhile; ?>
+	</ul>
+	<?php endif; ?>
+</div>
+</div>
+</div>
+</div>
+
+
 <div class="container_fluid">
 	<div class="row know_us">
 		<div class="col-7">
-			<ul id="owl-demo" class="owl-carousel owl-theme">
+			<div id="owl-demo" class="owl-carousel owl-theme">
 	<?php
 	$images = get_field('know_us_gallery');
 	foreach ($images as $image):?>
-		<li>
+		<div>
 			<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	    </li>
+	    </div>
     <?php endforeach;?>
-</ul>
-
-<div class="owl-carousel">
-<div> Your Content </div>
-<div> Your Content </div>
-<div> Your Content </div>
-<div> Your Content </div>
-<div> Your Content </div>
-<div> Your Content </div>
-<div> Your Content </div>
 </div>
+
 		</div>
 		<div class="col-5">
 				<h2><?php the_field('know_us_title'); ?></h2>

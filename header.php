@@ -13,11 +13,9 @@
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
-    <script
-			  src="http://code.jquery.com/jquery-3.3.1.slim.js"
-			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-			  crossorigin="anonymous"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery-3.3.1.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.min.js"></script>
 
   <?php wp_head(); ?>
 
@@ -66,13 +64,13 @@
           <li><a href="#">KONTAKT</a></li>
           <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
           <?php if( have_rows('nav_some') ): ?>
-        	<ul class="row slides">
+        	<ul class="row slides1">
         	<?php while( have_rows('nav_some') ): the_row();
         		// vars
         		$image = get_sub_field('some_icons_nav');
         		$link = get_sub_field('nav_some_url');
         		?>
-        		<li class="slide">
+        		<li class="slide1">
         			<?php if( $link ): ?>
         				<a href="<?php echo $link; ?>">
         			<?php endif; ?>
