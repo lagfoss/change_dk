@@ -163,4 +163,23 @@
 	</div>
 </div>
 
+<div class="container_fluid">
+	<div class="row know_us">
+		<div class="col-7">
+
+		</div>
+		<div class="col-5">
+				<h2><?php the_field('know_us_title'); ?></h2>
+				<p><?php the_field('know_us_text'); ?></p>
+
+					<a class="know_button" href="<?php the_field('know_us_button_url'); ?>"><?php the_field('know_us_button_text'); ?> <?php if( get_field('know_us_button_icon') ): ?>
+					<img class="" src="<?php the_field('know_us_button_icon'); ?>" />
+					<?php endif; ?></a>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
 <?php get_footer(); ?>

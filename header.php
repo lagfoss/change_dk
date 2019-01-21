@@ -8,10 +8,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/owl.theme.default.min.css">
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <?php wp_head(); ?>
 
@@ -49,6 +50,26 @@
     </div>
 
  <!-- Menu/Nav -->
+ <div class="menu-collapsed">
+    <div class="bar">&#9776;</div>
+    <nav>
+       <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact Us</a></li>
+       </ul>
+    </nav>
+ </div>
+
+ <script type="text/javascript">
+ jQuery(document).ready(function($){
+ $(".menu-collapsed").click(function() {
+ $(this).toggleClass("menu-expanded");
+  });
+  });
+  </script>
+
 
 
 
@@ -61,8 +82,8 @@
     $menuargs = array('container' => 'nav', 'container_class' => 'main-nav');
     wp_nav_menu($menuargs);
     ?>
-  </ul>
--->
+  </ul> -->
+
 
 
 
