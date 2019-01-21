@@ -24,7 +24,7 @@
 
 </div>
 
-	<div class="container-fluid  case">
+	<!--<div class="container-fluid  case">
 	<div class="row">
 			<?php
 
@@ -57,7 +57,7 @@
 			?>
 
 	</div>
-	</div>
+	</div>-->
 
 <div class="container-fluid">
 <div class="row">
@@ -166,7 +166,17 @@
 <div class="container_fluid">
 	<div class="row know_us">
 		<div class="col-7">
+			<ul id="owl-demo" class="owl-carousel owl-theme">
+	<?php
+	$images = get_field('know_us_gallery');
+	foreach ($images as $image):?>
+		<li>
+			<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	    </li>
+    <?php endforeach;?>
+</ul>
 
+			
 		</div>
 		<div class="col-5">
 				<h2><?php the_field('know_us_title'); ?></h2>

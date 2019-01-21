@@ -476,6 +476,17 @@ font-weight: 300;
   border-color: #111517;
 }
 
+.slide{
+     position: relative;
+     z-index: 1;
+}
+.slider-content{
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     z-index: 100;
+}
+
 /*Footer*/
 
 .FooterProject {
