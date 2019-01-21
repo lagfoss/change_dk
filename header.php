@@ -49,6 +49,26 @@
     </div>
 
  <!-- Menu/Nav -->
+ <div class="menu-collapsed">
+    <div class="bar">&#9776;</div>
+    <nav>
+       <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact Us</a></li>
+       </ul>
+    </nav>
+ </div>
+
+ <script type="text/javascript">
+ jQuery(document).ready(function($){
+ $(".menu-collapsed").click(function() {
+ $(this).toggleClass("menu-expanded");
+  });
+  });
+  </script>
+
 
 
 
@@ -61,8 +81,8 @@
     $menuargs = array('container' => 'nav', 'container_class' => 'main-nav');
     wp_nav_menu($menuargs);
     ?>
-  </ul>
--->
+  </ul> -->
+
 
 
 
