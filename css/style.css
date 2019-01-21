@@ -460,6 +460,23 @@ header {
 }
 
 
+.know_us {
+  margin: 60px auto 60px auto;
+}
+
+.know_button {
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: inherit;
+  border-color: black;
+  width: 185px;
+  height: 60px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #111517;
+}
+
 /*Footer*/
 
 .FooterProject {
