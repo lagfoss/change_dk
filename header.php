@@ -54,11 +54,34 @@
     <div class="bar">&#9776;</div>
     <nav>
        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">YDELSER</a></li>
+          <li><a href="#">CASES</a></li>
+          <li><a href="#">OM CHANGE</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">KONTAKT</a></li>
+          <li><a id="nav_job" href="#">Job</a></li>
        </ul>
+
+       <?php if( have_rows('footer_some') ): ?>
+         <ul>
+           <?php while( have_rows('footer_some') ): the_row();
+           // vars
+             $footsomeimage = get_sub_field('footer_some_icon');
+             $footsomelink = get_sub_field('footer_some_url');
+           ?>
+
+           <li class="footer_some_icon">
+             <?php if( $footsomelink ): ?>
+               <a href="<?php echo $footsomelink; ?>" target="_blank">
+                 <?php endif; ?>
+                 <img src="<?php echo $footsomeimage['url']; ?>" alt="<?php echo $footsomeimage['alt'] ?>" />
+                 <?php if( $footsomelink ): ?>
+               </a>
+             <?php endif; ?>
+           </li>
+         <?php endwhile; ?>
+       </ul>
+       <?php endif; ?>
     </nav>
  </div>
 

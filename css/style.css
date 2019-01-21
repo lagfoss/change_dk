@@ -112,22 +112,25 @@ header {
 }
 
 
+/* Nav start */
+
+
 
 .b-a {
    transition: all .25s;
    content: "";
    position: absolute;
-   left: 0;
+   right: 0;
    height: 6px;
    width: 30px;
    border-radius: 15px;
-   background-color: rgba(255, 255, 255, 0.95);
+   background-color: black;
 }
 .menu-collapsed {
    transition: all .25s;
    position: fixed;
-   top: 10px;
-   left: 9px;
+   top: 400px;
+   left: 98%;
    height: 36px;
    width: 36px;
    z-index: 1;
@@ -160,55 +163,51 @@ header {
 }
 .menu-expanded {
    transition: all .25s;
+   font-family: 'bebas-neue',sans-serif;
    text-align: center;
-   line-height: 200px;
+   line-height: 50px;
    height: 100%;
    width: 100%;
    border-radius: 0px;
    top: 0;
    left: 0;
-   background-color: rgba(0, 0, 0, 0.85);
+   background-color: #f2f2f2;
 }
-   .menu-expanded ul {
-      transition: all 0s;
-      position: relative;
-      left: 0;
-      z-index: 2;
-   }
-   .menu-expanded a {
-      transition: all .15s;
-      text-decoration: none;
-      font-size: 2em;
-      padding: 5px;
-      color: #fff;
-      display:block;
-      &:hover {
-         background-color: white;
-         transition: all .15s;
-         letter-spacing: 2px;
-         color:#333;
-         border: 1px solid rgba(255, 255, 255, .15);
-      }
-   }
-   .bar {
-      background-color: transparent;
-      transition: all .25s;
-      &:before {
-         @extend .b-a-expanded;
-         transform: rotate(45deg);
-      }
-      &:after {
-         @extend .b-a-expanded;
-         transform: rotate(-45deg);
-      }
-   }
-}
-.row {
-   padding-top:150px;
+.menu-expanded ul {
+  transition: all 0s;
+  position: relative;
+  left: 0;
+  z-index: 2;
 }
 
+.menu-expanded a {
+transition: all .15s;
+font-size: 2em;
+padding: 5px;
+color: black;
+display:block;
+text-align: right;
+margin: 15px 497px;
 
+&:hover {
+background-color: white;
+text-decoration: underline;
+color: #e54c00;
+transition: all .15s;
+letter-spacing: 2px;
+border: 1px solid rgba(255, 255, 255, .15);
+}
 
+   }
+}
+
+#nav_job {
+font-family: Montserrat;
+font-size: 17px;
+font-weight: 300;
+}
+
+/* Nav slut */
 
 
 .playcircle {
