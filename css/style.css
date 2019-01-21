@@ -224,10 +224,6 @@ header {
 }
 
 .case_img {
-
-}
-
-.case img {
   width: 60%;
   border-radius: 10px;
   box-shadow: -30px 30px 30px -5px rgba(0, 0, 0, 0.4);
