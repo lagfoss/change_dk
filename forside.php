@@ -25,44 +25,38 @@
 </div>
 
 	<div class="container-fluid  case">
-		<?php if( have_rows('case_slider') ): ?>
+	<div class="row">
+			<?php
 
+			if( have_rows('case_slider') ):
 
-		    <?php while( have_rows('case_slider') ): the_row();
+			    while( have_rows('case_slider') ) : the_row();
 
-		    // vars
-		    $ctitle = get_sub_field('case_title');
-		    $ccategory = get_sub_field('case_category');
-		    $ctext = get_sub_field('case_text');
-		    $cbutton = get_sub_field('case_button_text');
-		    $clink = get_sub_field('case_button_url');
-		    $cimage = get_sub_field('case_image');
+			        ?>
 
-		    ?>
-				<div class="row">
-		        <div class="col-7 order-2 case_img">
+							<div class="col-4 case_info">
+								<p style="font-weight:bold;">CASE:</p>
+							<h2><?php the_sub_field('case_title'); ?></h2>
+							<p class="cat"><?php the_sub_field('case_category'); ?></p>
+							<p><?php the_sub_field('case_text'); ?><p>
+								<a class="case_button" href="<?php the_sub_field('case_button_url'); ?>"><?php the_sub_field('case_button_text'); ?><?php if( get_field('case_button_icon') ): ?>
+								<img class="" src="<?php the_field('case_button_icon'); ?>" />
+								<?php endif; ?></a>
+						</div>
 
-		        <img src="<?php echo $cimage['url']; ?>" alt="<?php echo $cimage['alt'] ?>" />
+						<div class="col-7 case_img" style="background-image:url(<?php the_sub_field('case_image'); ?>);">
 
-		      </div>
+						</div>
 
-		      <div class="col-4 order-1 case_info">
-		        <p style="font-weight:bold;">CASE:</p>
-		      <h2><?php echo $ctitle; ?></h2>
-		      <p class="cat"><?php echo $ccategory; ?></p>
-		      <p><?php echo $ctext; ?><p>
-		      	<a class="case_button" href="<?php echo $clink; ?>"><?php echo $cbutton; ?><?php if( get_field('case_button_icon') ): ?>
-						<img class="" src="<?php the_field('case_button_icon'); ?>" />
-						<?php endif; ?></a>
-		    </div>
-		    </div>
+					<?php
 
-		  <?php endwhile; ?>
+			    endwhile;
 
+			endif;
 
-		<?php endif; ?>
+			?>
 
-
+	</div>
 	</div>
 
 <div class="container-fluid">
