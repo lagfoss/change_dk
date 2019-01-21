@@ -49,7 +49,10 @@
     </div>
 
  <!-- Menu/Nav -->
-  <ul class="navbar">
+
+
+
+<!--  <ul class="navbar">
     <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>">
       <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="">
     </a>
@@ -59,6 +62,8 @@
     wp_nav_menu($menuargs);
     ?>
   </ul>
+-->
+
 
 
   </header>

@@ -106,18 +106,21 @@ header {
   padding-right: 0;
 }
 
-+.NavLogo {
+.NavLogo {
   display: flex;
   float: left;
 }
 
+
+
+
 .playcircle {
-  width:50px;
+  width: 50px;
   cursor: pointer;
 }
 
 .playcircle:hover {
-  animation: shadow-pulse 1s infinite;
+  animation: shadow-pulse 3s infinite;
   border-radius: 50px;
 }
 

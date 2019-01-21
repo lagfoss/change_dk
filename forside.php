@@ -25,6 +25,7 @@
 </div>
 
 	<div class="container-fluid  case">
+		<div class="row">
 		<?php if( have_rows('case_slider') ): ?>
 
 
@@ -63,6 +64,29 @@
 		<?php endif; ?>
 
 
+	</div>
+	<div class="row">
+		<?php
+
+// check if the repeater field has rows of data
+if( have_rows('case_slider') ):
+
+// loop through the rows of data
+	while ( have_rows('case_slider') ) : the_row();
+
+			// display a sub field value
+
+
+	endwhile;
+
+else :
+
+	// no rows found
+
+endif;
+
+?>
+	</div>
 	</div>
 
 <div class="container-fluid">
