@@ -448,15 +448,32 @@ border: 1px solid rgba(255, 255, 255, .15);
   color: #111517;
 }
 
-
 .wcwd_img {
   width: 44px;
   width: 70px;
 }
 
 
+.logo_slider {
+  height: 130px;
+  border-bottom: solid 2px #e3e3e3;
+}
+
+.logo_slider img {
+  height: 50px;
+}
+
+
 .know_us {
   margin: 60px auto 60px auto;
+}
+
+.know_us_gallery img {
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: -30px 30px 30px -5px rgba(0, 0, 0, 0.4);
+  padding: 0 20px 0 20px;
 }
 
 .know_button {
@@ -472,16 +489,6 @@ border: 1px solid rgba(255, 255, 255, .15);
   border-color: #111517;
 }
 
-.slide{
-     position: relative;
-     z-index: 1;
-}
-.slider-content{
-     position: absolute;
-     top: 20px;
-     left: 20px;
-     z-index: 100;
-}
 
 /*Footer*/
 

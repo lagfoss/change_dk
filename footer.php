@@ -64,7 +64,7 @@
   });
   var owl = $('.autoplay');
   owl.owlCarousel({
-      items:2,
+      items:3,
       loop:true,
       margin:10,
       autoplay:true,

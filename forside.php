@@ -164,8 +164,8 @@
 </div>
 
 
-<div class="container-fluid ">
-	<div class="row SoMefooter">
+<div class="container-fluid">
+	<div class="row logo_slider">
 		<div class="col align-self-center">
 					<div class="owl-carousel owl-theme autoplay">
 						<?php
@@ -188,7 +188,7 @@
 	<?php
 	$images = get_field('know_us_gallery');
 	foreach ($images as $image):?>
-		<div>
+		<div class="know_us_gallery">
 			<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
 	    </div>
     <?php endforeach;?>
