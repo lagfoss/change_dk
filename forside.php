@@ -181,10 +181,10 @@
 </div>
 
 
-<div class="container">
+<div class="container-fluid">
 	<div class="row know_us">
 		<div class="col-7">
-			<div class="owl-carousel owl-theme autowidth">
+			<div class="col-11 owl-carousel owl-theme autowidth">
 	<?php
 	$images = get_field('know_us_gallery');
 	foreach ($images as $image):?>
@@ -195,7 +195,8 @@
 </div>
 
 		</div>
-		<div class="col-4 align-self-center justify-content-center">
+		<div class="col-5">
+			<div class="col-11">
 				<h2><?php the_field('know_us_title'); ?></h2>
 				<p><?php the_field('know_us_text'); ?></p>
 
@@ -203,10 +204,10 @@
 					<img class="" src="<?php the_field('know_us_button_icon'); ?>" />
 					<?php endif; ?></a>
 			</div>
+			</div>
 		</div>
 
 	</div>
 
-</div>
 
 <?php get_footer(); ?>
