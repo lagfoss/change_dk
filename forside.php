@@ -167,27 +167,15 @@
 <div class="container-fluid ">
 	<div class="row SoMefooter">
 		<div class="col align-self-center">
-	<?php if( have_rows('firma_slider') ): ?>
 					<div class="owl-carousel owl-theme autoplay">
-		<ul>
-			<?php while( have_rows('firma_slider') ): the_row();
-			// vars
-				$firmaimage = get_sub_field('firma_icon');
-				$firmalink = get_sub_field('firma_url');
-			?>
-			<li class="firma_icon">
-				<?php if( $firmalink ): ?>
-					<a href="<?php echo $firmalink; ?>" target="_blank">
-						<?php endif; ?>
-						<img src="<?php echo $firmaimage['url']; ?>" alt="<?php echo $firmaimage['alt'] ?>" />
-						<?php if( $firmalink ): ?>
-					</a>
-				<?php endif; ?>
-			</li>
-		<?php endwhile; ?>
-	</ul>
+						<?php
+						$images = get_field('firma_slider');
+						foreach ($images as $image):?>
+							<div>
+								<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+						    </div>
+					    <?php endforeach;?>
 	</div>
-	<?php endif; ?>
 </div>
 </div>
 </div>

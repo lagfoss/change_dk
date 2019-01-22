@@ -58,7 +58,21 @@
 
 
 
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+  });
+  var owl = $('.autoplay');
+  owl.owlCarousel({
+      items:2,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true
+  });
 
+</script>
 </body>
 
 </html>
