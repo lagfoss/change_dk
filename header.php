@@ -56,13 +56,33 @@
  <div class="menu-collapsed">
     <div class="bar">&#9776;</div>
     <nav>
-       <ul>
-          <li><a href="#">YDELSER</a></li>
+       <ul class="test">
+         <?php if(get_field('nav_links')): ?>
+        	<ul class="test">
+
+        	<?php while(has_sub_field('nav_links')): ?>
+        		<li> <?php the_sub_field('nav_links_text'); ?>,
+                 <?php the_sub_field('nav_links_url'); ?>,</li>
+
+        	<?php endwhile; ?>
+        	</ul> 
+          <?php endif; ?>
+
+
+
+        <!--  <li><a href="#">YDELSER</a></li>
           <li><a href="#">CASES</a></li>
           <li><a href="#">OM CHANGE</a></li>
           <li><a href="#">BLOG</a></li>
           <li><a href="#">KONTAKT</a></li>
-          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
+          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li> -->
+
+
+
+
+
+
+
           <?php if( have_rows('nav_some') ): ?>
         	<ul class="row slides1">
         	<?php while( have_rows('nav_some') ): the_row();
@@ -83,6 +103,7 @@
         	<?php endwhile; ?>
         	</ul>
         <?php endif; ?>
+        <p><?php the_field('nav_address'); ?></p>
        </ul>
     </nav>
  </div>
@@ -98,11 +119,11 @@
 
 
 
-<!--  <ul class="navbar">
+  <ul class="navbar">
     <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>">
       <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="">
     </a>
-
+<!--
     <?php
     $menuargs = array('container' => 'nav', 'container_class' => 'main-nav');
     wp_nav_menu($menuargs);

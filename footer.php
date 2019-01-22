@@ -54,10 +54,6 @@
 </div>
 
 </footer>
-
-
-
-
 <script type="text/javascript">
   $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
@@ -82,7 +78,10 @@
 
 </script>
 </body>
+<script type="text/javascript" src="public_html/wp-content/themes/change_dk/js/javascript.js">
 
+
+</script>
 </html>
 
 

@@ -192,6 +192,9 @@
 			<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
 	    </div>
     <?php endforeach;?>
+</ul>
+
+
 </div>
 
 		</div>
