@@ -13,9 +13,9 @@
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery-3.3.1.min.js"></script>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
 
   <?php wp_head(); ?>
 

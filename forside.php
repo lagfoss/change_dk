@@ -167,8 +167,8 @@
 <div class="container-fluid ">
 	<div class="row SoMefooter">
 		<div class="col align-self-center">
-			<div id="owl-demo" class="owl-carousel owl-theme autoplay">
 	<?php if( have_rows('firma_slider') ): ?>
+					<div class="owl-carousel owl-theme autoplay">
 		<ul>
 			<?php while( have_rows('firma_slider') ): the_row();
 			// vars
@@ -186,8 +186,8 @@
 			</li>
 		<?php endwhile; ?>
 	</ul>
+	</div>
 	<?php endif; ?>
-</div>
 </div>
 </div>
 </div>
@@ -196,7 +196,7 @@
 <div class="container_fluid">
 	<div class="row know_us">
 		<div class="col-7">
-			<div id="owl-demo" class="owl-carousel owl-theme">
+			<div class="owl-carousel owl-theme">
 	<?php
 	$images = get_field('know_us_gallery');
 	foreach ($images as $image):?>
