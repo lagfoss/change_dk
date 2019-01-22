@@ -68,6 +68,7 @@
       items:4,
       loop:true,
       margin:10,
+      center: false,
       autoplay:true,
       autoplayTimeout:1000,
       autoplayHoverPause:true
