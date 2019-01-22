@@ -24,7 +24,7 @@
 
 </div>
 
-	<!--<div class="container-fluid  case">
+	<div class="container-fluid  case">
 	<div class="row">
 			<?php
 
@@ -57,7 +57,7 @@
 			?>
 
 	</div>
-	</div>-->
+	</div>
 
 <div class="container-fluid">
 <div class="row">
@@ -76,7 +76,7 @@
 						$procestext = get_sub_field('process_text');
 					?>
 			<div class="row ourprocess">
-			<div class="col-1 process-steps"><div class="dash">&#8212;</div><div class="inner"><?php echo $processnumber; ?></div></div>
+			<div class="col-1 process-steps"><div class="inner"><?php echo $processnumber; ?><div class="dash"></div></div></div>
     	<div class="col-11 font-weight-bold">
       	<?php echo $processtitle; ?>
       	<div class="row">
@@ -163,22 +163,43 @@
 	</div>
 </div>
 
-<div class="container_fluid">
+
+<div class="container-fluid">
+	<div class="row logo_slider">
+		<div class="col align-self-center">
+					<div class="owl-carousel owl-theme autoplay">
+						<?php
+						$images = get_field('firma_slider');
+						foreach ($images as $image):?>
+							<div>
+								<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+						    </div>
+					    <?php endforeach;?>
+	</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
 	<div class="row know_us">
 		<div class="col-7">
-			<ul id="owl-demo" class="owl-carousel owl-theme">
+			<div class="col-11 owl-carousel owl-theme autowidth">
 	<?php
 	$images = get_field('know_us_gallery');
 	foreach ($images as $image):?>
-		<li>
+		<div class="know_us_gallery">
 			<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	    </li>
+	    </div>
     <?php endforeach;?>
 </ul>
 
-			
+
+</div>
+
 		</div>
 		<div class="col-5">
+			<div class="col-11">
 				<h2><?php the_field('know_us_title'); ?></h2>
 				<p><?php the_field('know_us_text'); ?></p>
 
@@ -186,10 +207,10 @@
 					<img class="" src="<?php the_field('know_us_button_icon'); ?>" />
 					<?php endif; ?></a>
 			</div>
+			</div>
 		</div>
 
 	</div>
 
-</div>
 
 <?php get_footer(); ?>

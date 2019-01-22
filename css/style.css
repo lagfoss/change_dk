@@ -42,6 +42,14 @@ h2 {
   letter spacing: 0px;
 }
 
+h3 {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
 .white{
   color: #ffffff;
   width: 600px;
@@ -220,7 +228,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
 }
- 
+
 /* Nav slut */
 
 
@@ -253,7 +261,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   top: 0;
   margin-top: 0;
   width: 100%;
-  height: 900px;
+  height: 100vh;
   background-color: rgba(0,0,0,0.3);
   background-blend-mode: darken;
   background-position: center;
@@ -374,44 +382,42 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .process-steps {
-  z-index: 2;
-  width: 33px;
-  height: 73px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 83px;
-  font-weight: bold;
   line-height: 0.88;
   color: #e54c00;
 }
 
 .ourprocess {
-  margin-top: 10px;
-}
-
-.dash {
-  position: absolute;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #f2f2f2;
-  z-index: 2;
+  margin-top: 30px;
 }
 
 .inner {
   position: relative;
   color: #e3e3e3;
-  z-index: 1;
+  text-align: center;
+  padding-right: 25px;
+}
+
+.dash {
+  position: absolute;
+  height: 12px;
+  width: 40px;
+  top: 30px;
+  background-color: #e54c00;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #f2f2f2;
 }
 
 
 /* Hvad kan vi gøre for dig? Sektion */
-
-
 
 .wcwd_header {
   width: 290px;
   height: 80px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 50px;
-  font-weight: bold;
   line-height: 0.86;
   margin-top: 10%;
 }
@@ -421,7 +427,6 @@ border: 1px solid rgba(255, 255, 255, .15);
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
-  font-weight: bold;
 }
 
 .wcwd_text {

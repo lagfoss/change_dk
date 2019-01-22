@@ -54,11 +54,29 @@
 </div>
 
 </footer>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+  });
 
+  var owl = $('.autoplay');
+  owl.owlCarousel({
+      items:4,
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:4000,
+      autoplayHoverPause:true,
+      dots:false
+  });
 
+  var owl = $('.autowidth');
+  owl.owlCarousel({
+    autoWidth:true,
+    rtl: true
+})
 
-
-
+</script>
 </body>
 <script type="text/javascript" src="public_html/wp-content/themes/change_dk/js/javascript.js">
 
