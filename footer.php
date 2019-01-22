@@ -12,7 +12,7 @@
 
   <div class="letstalkfooter">
     <?php the_field('footer_lets_talk'); ?>
-    <a href="tel:<?php the_field('phone_number'); ?>" class="phone_number"><?php the_field('phone_number'); ?></a>
+    <h2><a href="tel:<?php the_field('phone_number'); ?>" class="phone_number"><?php the_field('phone_number'); ?></a></h2>
   </div>
 
   <div class="container-fluid ">
