@@ -21,43 +21,4 @@
 
  }
 
-});
-
-
-	jQuery(function($){
-	    $(document).ready(function(){
-	        var owl = $(".owl-carousel").owlCarousel({
-	            items: 1,
-	            slideSpeed: 900,
-	            pagination: true,
-	            autoplay: true,
-	            autoplayTimeout: 3500,
-	            autoplayHoverPause: true,
-	            addClassActive: true,
-	            singleItem: true,
-	        }).data('owlCarousel');
-
-	        $('.owl-item').click(function(){
-	            owl.next();
-	        })
-
-	        setInterval(function(){
-	            owl.next();
-	        }, 6000);
-	    });
-	})
 });*/
-
-  $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-  });
-
-  var owl = $('.autoplay');
-  owl.owlCarousel({
-      items:2,
-      loop:true,
-      margin:10,
-      autoplay:true,
-      autoplayTimeout:1000,
-      autoplayHoverPause:true
-  });
