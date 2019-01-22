@@ -456,6 +456,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .logo_slider {
   height: 130px;
+  border-top: solid 2px #e3e3e3;
   border-bottom: solid 2px #e3e3e3;
 }
 
@@ -469,7 +470,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .know_us_gallery img {
-  height: 100%;
+  height: 80px;
   width: auto;
   border-radius: 10px;
   box-shadow: -30px 30px 30px -5px rgba(0, 0, 0, 0.4);
