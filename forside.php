@@ -24,8 +24,8 @@
 
 </div>
 
-	<div class="container-fluid  case">
-	<div class="row">
+	<div class="container-fluid case">
+	<div class="row modul_margin">
 			<?php
 
 			if( have_rows('case_slider') ):
@@ -64,7 +64,7 @@
 	<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
 	</div>
 
-	<div class="col-6 process">
+	<div class="col-6">
 		<h2><?php the_field('process_title'); ?></h2>
 
 			<?php if( have_rows('process') ): ?>
@@ -93,7 +93,7 @@
 	</div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid do_for_u">
 
 	<div class="row wcwd_section">
 			<div class="col-sm">

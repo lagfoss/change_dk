@@ -2,7 +2,7 @@
 
 <footer>
   <div class="FooterProject">
-    <h2 class="footer_project"><?php the_field('footer_project'); ?></h2>
+    <h2><?php the_field('footer_project'); ?></h2>
   <a class="CallToActionFooter" href="<?php the_field('footer_button_url'); ?>"><?php the_field('footer_button_text'); ?>
 
   <?php if( get_field('footer_button_icon') ): ?>
