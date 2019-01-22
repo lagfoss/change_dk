@@ -183,7 +183,7 @@
 
 <div class="container_fluid">
 	<div class="row know_us">
-		<div class="col-7">
+		<div class="col-6">
 			<div class="owl-carousel owl-theme">
 	<?php
 	$images = get_field('know_us_gallery');
@@ -195,7 +195,7 @@
 </div>
 
 		</div>
-		<div class="col-5">
+		<div class="col-4 align-self-center justify-content-center">
 				<h2><?php the_field('know_us_title'); ?></h2>
 				<p><?php the_field('know_us_text'); ?></p>
 
