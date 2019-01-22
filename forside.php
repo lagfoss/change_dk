@@ -181,10 +181,10 @@
 </div>
 
 
-<div class="container_fluid">
+<div class="container">
 	<div class="row know_us">
-		<div class="col-6">
-			<div class="owl-carousel owl-theme">
+		<div class="col-7">
+			<div class="owl-carousel owl-theme autowidth">
 	<?php
 	$images = get_field('know_us_gallery');
 	foreach ($images as $image):?>
