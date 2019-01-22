@@ -127,12 +127,11 @@ header {
 .menu-collapsed {
    transition: all .25s;
    position: fixed;
-   top: 400px;
+   top: 100px;
    left: 98%;
    height: 36px;
    width: 36px;
    z-index: 1;
-   cursor: pointer;
  }
 
    .menu-collapsed ul {
@@ -146,13 +145,16 @@ header {
    position: absolute;
    right: 12px;
    top: 24px;
+   cursor: pointer;
    &:before {
       @extend .b-a;
       top: -8px;
+      cursor: pointer;
    }
    &:after {
       @extend .b-a;
       top: 8px;
+      cursor: pointer;
    }
 }
 .b-a-expanded {
@@ -166,7 +168,6 @@ header {
    line-height: 50px;
    height: 100%;
    width: 100%;
-   border-radius: 0px;
    top: 0;
    left: 0;
    background-color: #f2f2f2;
@@ -184,7 +185,7 @@ font-size: 2em;
 padding: 5px;
 color: black;
 display:block;
-text-align: right;
+text-align: left;
 margin: 15px 497px;
 
 &:hover {
@@ -192,17 +193,34 @@ background-color: white;
 text-decoration: underline;
 color: #e54c00;
 transition: all .15s;
-letter-spacing: 2px;
 border: 1px solid rgba(255, 255, 255, .15);
 }}}
 
 
 .some_icons_nav {
   list-style-type: none;
-    display: flex;
-    flex-flow: row;
+  display: flex;
+  flex-flow: row;
+  width: 20px;
 }
 
+.test {
+  list-style-type: none;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.slide1 {
+  list-style-type: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.slides1 {
+  display: -webkit-inline-box;
+  border-bottom: solid #e54c00;
+}
+ 
 /* Nav slut */
 
 
@@ -448,15 +466,37 @@ border: 1px solid rgba(255, 255, 255, .15);
   color: #111517;
 }
 
-
 .wcwd_img {
   width: 44px;
   width: 70px;
 }
 
 
+.logo_slider {
+  height: 130px;
+  border-top: solid 2px #e3e3e3;
+  border-bottom: solid 2px #e3e3e3;
+  margin: 60px auto 60px auto;
+}
+
+.logo_slider img {
+  height: 50px;
+}
+
+
 .know_us {
   margin: 60px auto 60px auto;
+}
+
+.know_us_gallery {
+  padding: 10px;
+}
+
+.know_us_gallery img {
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: -20px 20px 20px -5px rgba(0, 0, 0, 0.4);
+  margin: 0 20px 0 20px;
 }
 
 .know_button {
@@ -472,16 +512,6 @@ border: 1px solid rgba(255, 255, 255, .15);
   border-color: #111517;
 }
 
-.slide{
-     position: relative;
-     z-index: 1;
-}
-.slider-content{
-     position: absolute;
-     top: 20px;
-     left: 20px;
-     z-index: 100;
-}
 
 /*Footer*/
 
@@ -564,7 +594,6 @@ border: 1px solid rgba(255, 255, 255, .15);
   width: 100%;
   height: 24px;
   font-size: 19px;
-  font-weight: 500;
   padding-top: 50px;
   padding-bottom: 200px;
   border-bottom: solid 2px #e3e3e3;
@@ -575,10 +604,16 @@ border: 1px solid rgba(255, 255, 255, .15);
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .footer_mail:hover {
   color: #e54c00;
+}
+
+.footer_address {
+  padding-top: 10px;
+  line-height: 10px;
 }
 
 .footer_address:hover {

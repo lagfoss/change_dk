@@ -8,16 +8,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/owl.carousel.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/owl.theme.default.css">
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
-    <script
-			  src="http://code.jquery.com/jquery-3.3.1.slim.js"
-			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-			  crossorigin="anonymous"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
 
   <?php wp_head(); ?>
 
@@ -58,21 +56,41 @@
  <div class="menu-collapsed">
     <div class="bar">&#9776;</div>
     <nav>
-       <ul>
-          <li><a href="#">YDELSER</a></li>
+       <ul class="test">
+         <?php if(get_field('nav_links')): ?>
+        	<ul class="test">
+
+        	<?php while(has_sub_field('nav_links')): ?>
+        		<li> <?php the_sub_field('nav_links_text'); ?>,
+                 <?php the_sub_field('nav_links_url'); ?>,</li>
+
+        	<?php endwhile; ?>
+        	</ul> 
+          <?php endif; ?>
+
+
+
+        <!--  <li><a href="#">YDELSER</a></li>
           <li><a href="#">CASES</a></li>
           <li><a href="#">OM CHANGE</a></li>
           <li><a href="#">BLOG</a></li>
           <li><a href="#">KONTAKT</a></li>
-          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
+          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li> -->
+
+
+
+
+
+
+
           <?php if( have_rows('nav_some') ): ?>
-        	<ul class="row slides">
+        	<ul class="row slides1">
         	<?php while( have_rows('nav_some') ): the_row();
         		// vars
         		$image = get_sub_field('some_icons_nav');
         		$link = get_sub_field('nav_some_url');
         		?>
-        		<li class="slide">
+        		<li class="slide1">
         			<?php if( $link ): ?>
         				<a href="<?php echo $link; ?>">
         			<?php endif; ?>
@@ -85,6 +103,7 @@
         	<?php endwhile; ?>
         	</ul>
         <?php endif; ?>
+        <p><?php the_field('nav_address'); ?></p>
        </ul>
     </nav>
  </div>
@@ -100,11 +119,11 @@
 
 
 
-<!--  <ul class="navbar">
+  <ul class="navbar">
     <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>">
       <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="">
     </a>
-
+<!--
     <?php
     $menuargs = array('container' => 'nav', 'container_class' => 'main-nav');
     wp_nav_menu($menuargs);

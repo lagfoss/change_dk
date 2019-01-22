@@ -23,6 +23,26 @@ $(‘a[href*=“#”]:not([href=“#”])‘).click(function() {
 
 });
 
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
-});
+
+	jQuery(function($){
+	    $(document).ready(function(){
+	        var owl = $(".owl-carousel").owlCarousel({
+	            items: 1,
+	            slideSpeed: 900,
+	            pagination: true,
+	            autoplay: true,
+	            autoplayTimeout: 3500,
+	            autoplayHoverPause: true,
+	            addClassActive: true,
+	            singleItem: true,
+	        }).data('owlCarousel');
+
+	        $('.owl-item').click(function(){
+	            owl.next();
+	        })
+
+	        setInterval(function(){
+	            owl.next();
+	        }, 6000);
+	    });
+	})
