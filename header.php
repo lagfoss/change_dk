@@ -54,7 +54,7 @@
 
  <!-- Menu/Nav -->
  <div class="menu-collapsed">
-    <div class="bar">&#9776;</div>
+    <div class="bar menubtn2"><span></span></div>
     <nav>
        <ul class="test">
          <?php if(get_field('nav_links')): ?>
@@ -124,6 +124,12 @@
  $(this).toggleClass("menu-expanded");
   });
   });
+  </script>
+
+  <script type="text/javascript">
+  $('.menubtn2').on('click', function(){
+$(this).toggleClass('close2');
+});
   </script>
 
 
