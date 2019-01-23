@@ -232,7 +232,7 @@ width:75%;
    }
    &:after {
       @extend .b-a;
-      top: 8px; 
+      top: 8px;
    }
 }
 */
@@ -506,7 +506,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 .dash {
   position: absolute;
   height: 12px;
-  width: 40px;
+  width: 50px;
   top: 30px;
   background-color: #e54c00;
   border-style: solid;
