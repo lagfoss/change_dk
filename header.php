@@ -53,8 +53,8 @@
     </div>
 
  <!-- Menu/Nav -->
- <div class="menu-collapsed">
-    <div class="bar menubtn"><span></span></div>
+ <div class="container-fluid menu-collapsed">
+       <div class="bar menubtn"><span></span></div>
     <nav>
        <ul class="test">
          <?php if(get_field('nav_links')): ?>
@@ -68,11 +68,38 @@
           <?php endif; ?>
           <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 40%;" href="https://www.google.dk/?hl=da">Job</a></li>
 
-          <?php if( get_field('nav_job_link') ): ?>
+          <?php
 
-        	<?php // do something ?>
+    $posts = get_posts(array(
+    	'meta_query' => array(
+    		array(
+    			'key' => 'enable_sidebar',
+    			'compare' => '=',
+    			'value' => '1'
+    		)
+    	)
+    ));
 
-          <?php endif; ?>
+    if( $posts ): ?>
+
+    	<ul>
+
+    	<?php foreach( $posts as $post ):
+
+    		setup_postdata( $post )
+
+    		?>
+    		<li>
+    			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    		</li>
+
+    	<?php endforeach; ?>
+
+    	</ul>
+
+    	<?php wp_reset_postdata(); ?>
+
+    <?php endif; ?>
 
 
         <!--  <li><a href="#">YDELSER</a></li>
