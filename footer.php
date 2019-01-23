@@ -79,6 +79,9 @@
     rtl: true
 })
 
+</script>
+</body>
+
 </html>
 
 
