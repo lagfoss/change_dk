@@ -21,30 +21,24 @@
 
 
 	<?php if( have_rows('showreel') ): ?>
-		<ul class="slides">
 		<?php while( have_rows('showreel') ): the_row();
 			// vars
 			$image = get_sub_field('showreel_img');
 			$content = get_sub_field('showreel_watch_our');
-			$link = get_sub_field('showreel_showreel');
+			$content2 = get_sub_field('showreel_showreel');
 			?>
-			<li class="Showreel watchourshowreel">
-				<?php if( $link ): ?>
-					<a href="<?php echo $link; ?>">
-				<?php endif; ?>
+			<li class="watchourshowreel">
+
 					<img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
 
-				<?php if( $link ): ?>
-					</a>
-				<?php endif; ?>
-
 			  <p class="Watch"><?php echo $content; ?></p>
+				<p class="Showreel"><?php echo $content2; ?></p>
 
 			</li>
 
 		<?php endwhile; ?>
 
-		</ul>
+
 
 	<?php endif; ?>
 

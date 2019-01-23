@@ -285,6 +285,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .nav_address p {
   font-size: 16px;
+  margin-left: 27%;
 }
 
 .slides1 {
@@ -388,14 +389,14 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .Watch {
-  width: 96px;
+  width: 100px;
   height: 39px;
   font-size: 18px;
   line-height: 2.17;
   color: #f2f2f2;
-  position:fixed;
-  margin-left: 5%;
-  margin-bottom: 20%;
+  position:absolute;
+  margin-left: 78px;
+  bottom: 8px;
 }
 
 .Showreel {
@@ -405,6 +406,10 @@ border: 1px solid rgba(255, 255, 255, .15);
   font-weight: 500;
   line-height: 1.63;
   color: #f2f2f2;
+  margin-left: 78px;
+  position: absolute;
+  bottom: 0.1px;
+  top: 26px;
 }
 
 .playcircle {

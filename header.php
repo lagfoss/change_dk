@@ -26,14 +26,14 @@
     <!-- Sociale medier -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
-        <div class="col-6-float-left align-self-center"><?php the_field('header_text'); ?> <a id="SoMecalendar" href="<?php the_field('header_url'); ?>"><?php the_field('header_url_text'); ?></a></div>
+        <div class="col-6-float-left align-self-center"><?php the_field('header_text', 'option'); ?> <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>"><?php the_field('header_url_text' , 'option'); ?></a></div>
         <div class="col-6-float-right align-self-center">
           <?php if( have_rows('header_some') ): ?>
             <ul>
               <?php while( have_rows('header_some') ): the_row();
               // vars
-                $someimage = get_sub_field('header_some_icon');
-                $somelink = get_sub_field('header_some_url');
+                $someimage = get_sub_field('header_some_icon', 'option');
+                $somelink = get_sub_field('header_some_url', 'option');
               ?>
 
               <li class="header_some_icon">
@@ -64,19 +64,9 @@
         		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url'); ?>"><?php the_sub_field('nav_links_text'); ?></a></li>
 
         	<?php endwhile; ?>
+        	</ul>
           <?php endif; ?>
-
-
-          <?php if(get_field('nav_job_link')): ?>
-
-           <?php while(has_sub_field('nav_job_link')): ?>
-             <li> <a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 90%;" href="<?php the_sub_field('job_link'); ?>"><?php the_sub_field('job'); ?></a></li>
-
-           <?php endwhile; ?>
-           <?php endif; ?>
-
-
-  <!--        <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 40%;" href="https://www.google.dk/?hl=da">Job</a></li> -->
+          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 40%;" href="https://www.google.dk/?hl=da">Job</a></li>
 
           <?php
 
