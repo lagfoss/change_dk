@@ -64,9 +64,19 @@
         		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url', 'option'); ?>"><?php the_sub_field('nav_links_text', 'option'); ?></a></li>
 
         	<?php endwhile; ?>
-        	</ul>
           <?php endif; ?>
-          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 40%;" href="https://www.google.dk/?hl=da">Job</a></li>
+
+
+          <?php if(get_field('nav_job_link')): ?>
+
+           <?php while(has_sub_field('nav_job_link')): ?>
+             <li> <a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 90%;" href="<?php the_sub_field('job_link'); ?>"><?php the_sub_field('job'); ?></a></li>
+
+           <?php endwhile; ?>
+           <?php endif; ?>
+
+
+  <!--        <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 40%;" href="https://www.google.dk/?hl=da">Job</a></li> -->
 
           <?php
 

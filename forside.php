@@ -15,12 +15,48 @@
 			<?php endif; ?></a>
 	</div>
 
+
+
+
+
+
+	<?php if( have_rows('showreel') ): ?>
+		<ul class="slides">
+		<?php while( have_rows('showreel') ): the_row();
+			// vars
+			$image = get_sub_field('showreel_img');
+			$content = get_sub_field('showreel_watch_our');
+			$link = get_sub_field('showreel_showreel');
+			?>
+			<li class="Showreel watchourshowreel">
+				<?php if( $link ): ?>
+					<a href="<?php echo $link; ?>">
+				<?php endif; ?>
+					<img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+
+				<?php if( $link ): ?>
+					</a>
+				<?php endif; ?>
+
+			  <p class="Watch"><?php echo $content; ?></p>
+
+			</li>
+
+		<?php endwhile; ?>
+
+		</ul>
+
+	<?php endif; ?>
+
+
+
+<!--
 <div class="watchourshowreel">
 	<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
      class="playcircle" style="width:50px;">
 		<p class="white Watch">Watch our:</p>
 		<p class="white Showreel">Showreel</p>
-</div>
+</div> -->
 
 </div>
 
@@ -192,6 +228,9 @@
 			<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
 	    </div>
     <?php endforeach;?>
+</ul>
+
+
 </div>
 
 		</div>

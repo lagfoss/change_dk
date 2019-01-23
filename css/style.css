@@ -285,14 +285,13 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .nav_address p {
   font-size: 16px;
-  margin-left: 27%;
 }
 
 .slides1 {
   list-style-type: none;
   padding: 10px;
   display: -webkit-inline-box;
-  border-bottom: solid #e54c00; 
+  border-bottom: solid #e54c00;
 }
 
 .slide1 {
@@ -394,6 +393,9 @@ border: 1px solid rgba(255, 255, 255, .15);
   font-size: 18px;
   line-height: 2.17;
   color: #f2f2f2;
+  position:fixed;
+  margin-left: 5%;
+  margin-bottom: 20%;
 }
 
 .Showreel {
@@ -406,7 +408,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .playcircle {
-  width: 50px;
+  width: 67.5px;
   cursor: pointer;
 }
 
