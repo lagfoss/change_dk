@@ -110,7 +110,7 @@
         	<?php endwhile; ?>
         	</ul>
         <?php endif; ?>
-        <a href="<?php the_field('google_maps_link'); ?>" class="footer_address"><?php the_field('footer_address'); ?></a>
+        <a href="<?php the_field('google_maps_link'); ?>" class="nav_address"><?php the_field('footer_address'); ?></a>
 
       <!--  <p class="nav_address"><?php the_field('nav_address'); ?></p> -->
        </ul>
