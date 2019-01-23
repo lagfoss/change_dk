@@ -58,7 +58,7 @@
     <nav>
        <ul class="test">
          <?php if(get_field('nav_links')): ?>
-        	<ul style="list-style-type: none; left: 5%;">
+        	<ul>
 
         	<?php while(has_sub_field('nav_links')): ?>
         		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url'); ?>"><?php the_sub_field('nav_links_text'); ?></a></li>

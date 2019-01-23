@@ -195,9 +195,7 @@ padding: 5px;
 color: black;
 display:block;
 text-align: left;
-margin: 15px ;
-text-align: right;
-margin: 15px 497px;
+margin: 15px;
 
 &:hover {
 background-color: white;
