@@ -122,74 +122,71 @@ header {
 
 
 /* Nav start */
-
-.menubtn2  {
+.menubtn  {
   display:block;
   position: absolute;
   width:50px;
   height:35px;
-  left:40%;
+  left:50%;
   top:50%;
   margin-top:0;
   cursor:pointer;
-
-
-
 }
 
-
-.menubtn2 span,
-.menubtn2::before,
-.menubtn2::after {
+.menubtn span,
+.menubtn::before,
+.menubtn::after {
   display: block;
   position: absolute;
   width:100%;
   height:5px;
-  left:0;
+  right:0;
   background:#555555;
   transition:all 0.2s ease-in-out;
-  -webkit-transition:all 0.5s cubic-bezier(1,.01,.35,.95);
-  -moz-transition:all 0.5s cubic-bezier(1,.01,.35,.95);
-  -ms-transition:all 0.5s cubic-bezier(1,.01,.35,.95);
-  -o-transition:all 0.5s cubic-bezier(1,.01,.35,.95);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -ms-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
   border-radius:3px;
  }
 
-.menubtn2 span {
+.menubtn span {
   top:50%;
   margin-top:-2px;
 }
 
-.menubtn2::before,
-.menubtn2::after {
+.menubtn::before,
+.menubtn::after {
   content:"";
 }
-
-.menubtn2::before {
+.menubtn::before {
   top:0;
-
 }
-
-.menubtn2::after {
+.menubtn::after {
   bottom:0;
-
+}
+.menubtn.close span {
+  opacity:0;
+  right:100%;
 }
 
-.menubtn2.close2 span {
- width:50%;
-     -webkit-transition-delay: 0.1s; /* Safari */
-   transition-delay: 0.1s;
+.menubtn.close::before {
+  top:15px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.menubtn2.close2::before {
-width:25%;
+.menubtn.close::after {
+  top:15px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
-.menubtn2.close2::after {
-width:75%;
-     -webkit-transition-delay: 0.2s; /* Safari */
-   transition-delay: 0.2s;
-}
+
 
 .b-a {
    transition: all .25s;

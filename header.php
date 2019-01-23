@@ -54,7 +54,7 @@
 
  <!-- Menu/Nav -->
  <div class="menu-collapsed">
-    <div class="bar menubtn2"><span></span></div>
+    <div class="bar menubtn"><span></span></div>
     <nav>
        <ul class="test">
          <?php if(get_field('nav_links')): ?>
