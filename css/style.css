@@ -137,6 +137,8 @@ header {
    position: fixed;
    top: 55px;
    left: 97%;
+   top: 400px;
+   left: 98%;
    height: 36px;
    width: 36px;
    z-index: 1;
@@ -194,6 +196,8 @@ color: black;
 display:block;
 text-align: left;
 margin: 15px ;
+text-align: right;
+margin: 15px 497px;
 
 &:hover {
 background-color: white;
@@ -250,7 +254,6 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 /* Nav slut */
-
 
 /*Hero image*/
 
@@ -513,6 +516,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .logo_slider img {
   height: 50px;
+  margin:auto 0 auto 150px;
 }
 
 
@@ -521,13 +525,13 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .know_us_gallery {
-  padding: 10px;
+  padding: 20px 10px 30px 10px;
 }
 
 .know_us_gallery img {
-  height: 400px;
+  height: 500px;
   border-radius: 10px;
-  box-shadow: -20px 20px 20px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
   margin: 0 20px 0 20px;
 }
 
@@ -556,6 +560,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   padding: 60px 0 90px 0;
   background-color: #e9e9e9;
   text-align: center;
+  margin-top: 60px;
 }
 
 .FooterProject h2{

@@ -182,7 +182,7 @@
 
 
 <div class="container-fluid">
-	<div class="row know_us">
+	<div class="row know_us align-items-center">
 		<div class="col-7">
 			<div class="col-11 owl-carousel owl-theme autowidth">
 	<?php
@@ -196,7 +196,7 @@
 
 		</div>
 		<div class="col-5">
-			<div class="col-11">
+			<div class="col-10">
 				<h2><?php the_field('know_us_title'); ?></h2>
 				<p><?php the_field('know_us_text'); ?></p>
 

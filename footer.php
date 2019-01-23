@@ -2,8 +2,8 @@
 
 <footer>
   <div class="FooterProject">
-    <h2 class="footer_project"><?php the_field('footer_project'); ?></h2>
-  <a class="CallToActionFooter" href="<?php the_field('footer_button_url'); ?>"><?php the_field('footer_button_text'); ?>
+    <h2><?php the_field('footer_project'); ?></h2>
+  <a class="footer_button" href="<?php the_field('footer_button_url'); ?>"><?php the_field('footer_button_text'); ?>
 
   <?php if( get_field('footer_button_icon') ): ?>
   <img class="" src="<?php the_field('footer_button_icon'); ?>" />
@@ -12,10 +12,10 @@
 
   <div class="letstalkfooter">
     <?php the_field('footer_lets_talk'); ?>
-    <a href="tel:<?php the_field('phone_number'); ?>" class="phone_number"><?php the_field('phone_number'); ?></a>
+    <h2><a href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a></h2>
   </div>
 
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <div class="row SoMefooter">
       <div class="col align-self-center">
     <?php if( have_rows('footer_some') ): ?>
@@ -42,8 +42,8 @@
   </div>
   </div>
 
-  <div class="ContactFooter">
-   <a href="mailto:<?php the_field('footer_mail'); ?>" class="footer_mail"><?php the_field('footer_mail'); ?></a>
+  <div class="container-fluid ContactFooter">
+   <h3><a href="mailto:<?php the_field('footer_mail'); ?>" class="footer_mail"><?php the_field('footer_mail'); ?></a></h3>
     <a href="<?php the_field('google_maps_link'); ?>" class="footer_address"><?php the_field('footer_address'); ?></a>
   </div>
 
