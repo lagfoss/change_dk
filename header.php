@@ -58,16 +58,21 @@
     <nav>
        <ul class="test">
          <?php if(get_field('nav_links')): ?>
-        	<ul class="test">
+        	<ul style="list-style-type: none; left: 5%;">
 
         	<?php while(has_sub_field('nav_links')): ?>
-        		<li> <?php the_sub_field('nav_links_text'); ?>,
-                 <?php the_sub_field('nav_links_url'); ?>,</li>
+        		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url'); ?>"><?php the_sub_field('nav_links_text'); ?></a></li>
 
         	<?php endwhile; ?>
-        	</ul> 
+        	</ul>
           <?php endif; ?>
+          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
 
+          <?php if( get_field('nav_job_link') ): ?>
+
+        	<?php // do something ?>
+
+          <?php endif; ?>
 
 
         <!--  <li><a href="#">YDELSER</a></li>
@@ -83,12 +88,14 @@
 
 
 
+
+          <div class="something">
           <?php if( have_rows('nav_some') ): ?>
         	<ul class="row slides1">
         	<?php while( have_rows('nav_some') ): the_row();
         		// vars
         		$image = get_sub_field('some_icons_nav');
-        		$link = get_sub_field('nav_some_url');
+        		$link = get_sub_field('some_url_nav');
         		?>
         		<li class="slide1">
         			<?php if( $link ): ?>
@@ -103,8 +110,9 @@
         	<?php endwhile; ?>
         	</ul>
         <?php endif; ?>
-        <p><?php the_field('nav_address'); ?></p>
+        <p class="nav_address"><?php the_field('nav_address'); ?></p>
        </ul>
+       </div>
     </nav>
  </div>
 
