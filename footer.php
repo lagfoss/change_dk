@@ -2,17 +2,18 @@
 
 <footer>
   <div class="FooterProject">
-    <h2><?php the_field('footer_project, option'); ?></h2>
-  <a class="footer_button" href="<?php the_field('footer_button_url, option'); ?>"><?php the_field('footer_button_text, option'); ?>
 
-  <?php if( get_field('footer_button_icon, option') ): ?>
-  <img class="" src="<?php the_field('footer_button_icon, option'); ?>" />
+    <h2><?php the_field('footer_project', 'option'); ?></h2>
+  <a class="footer_button" href="<?php the_field('footer_button_url', 'option'); ?>"><?php the_field('footer_button_text', 'option'); ?>
+
+  <?php if( get_field('footer_button_icon', 'option') ): ?>
+  <img class="" src="<?php the_field('footer_button_icon', 'option'); ?>" />
   <?php endif; ?></a>
   </div>
 
   <div class="letstalkfooter">
-    <?php the_field('footer_lets_talk, option'); ?>
-    <h2><a href="tel:<?php the_field('phone_number, option'); ?>"><?php the_field('phone_number, option'); ?></a></h2>
+    <?php the_field('footer_lets_talk', 'option'); ?>
+    <h2><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></h2>
   </div>
 
   <div class="container-fluid">
@@ -22,8 +23,9 @@
       <ul>
         <?php while( have_rows('footer_some') ): the_row();
         // vars
-          $footsomeimage = get_sub_field('footer_some_icon, option');
-          $footsomelink = get_sub_field('footer_some_url, option');
+
+          $footsomeimage = get_sub_field('footer_some_icon', 'option');
+          $footsomelink = get_sub_field('footer_some_url', 'option');
         ?>
 
         <li class="footer_some_icon">
@@ -43,8 +45,9 @@
   </div>
 
   <div class="container-fluid ContactFooter">
-   <h3><a href="mailto:<?php the_field('footer_mail, option'); ?>" class="footer_mail"><?php the_field('footer_mail, option'); ?></a></h3>
-    <a href="<?php the_field('google_maps_link, option'); ?>" class="footer_address"><?php the_field('footer_address, option'); ?></a>
+   <h3><a href="mailto:<?php the_field('footer_mail', 'option'); ?>" class="footer_mail"><?php the_field('footer_mail', 'option'); ?></a></h3>
+    <a href="<?php the_field('google_maps_link', 'option'); ?>" class="footer_address"><?php the_field('footer_address', 'option'); ?></a>
+
   </div>
 
 <div class="container-fluid">
