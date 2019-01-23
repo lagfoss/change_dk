@@ -580,10 +580,10 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 
 .logo_slider {
-  height: 130px;
   border-top: solid 2px #e3e3e3;
   border-bottom: solid 2px #e3e3e3;
   margin: 60px auto 60px auto;
+  padding: 100px 0 100px 0;
 }
 
 .logo_slider img {
