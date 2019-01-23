@@ -214,11 +214,8 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .nav_address {
-  margin-right: 15px;
   font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: 30px;
+  font-size: 10px;
 }
 
 .slides1 {
@@ -236,6 +233,13 @@ border: 1px solid rgba(255, 255, 255, .15);
 .test {
   list-style-type: none;
   margin-top: 10%;
+  margin-left: 40%;
+}
+
+.test1 {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 30%;
 }
 
 .nav_links {

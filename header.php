@@ -58,7 +58,7 @@
     <nav>
        <ul class="test">
          <?php if(get_field('nav_links')): ?>
-        	<ul>
+        	<ul class="test1">
 
         	<?php while(has_sub_field('nav_links')): ?>
         		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url'); ?>"><?php the_sub_field('nav_links_text'); ?></a></li>
@@ -66,7 +66,7 @@
         	<?php endwhile; ?>
         	</ul>
           <?php endif; ?>
-          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
+          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 40%;" href="https://www.google.dk/?hl=da">Job</a></li>
 
           <?php if( get_field('nav_job_link') ): ?>
 
@@ -110,7 +110,9 @@
         	<?php endwhile; ?>
         	</ul>
         <?php endif; ?>
-        <p class="nav_address"><?php the_field('nav_address'); ?></p>
+        <a href="<?php the_field('google_maps_link'); ?>" class="footer_address"><?php the_field('footer_address'); ?></a>
+
+      <!--  <p class="nav_address"><?php the_field('nav_address'); ?></p> -->
        </ul>
        </div>
     </nav>
