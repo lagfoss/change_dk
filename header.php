@@ -26,14 +26,14 @@
     <!-- Sociale medier -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
-        <div class="col-6-float-left align-self-center"><?php the_field('header_text'); ?> <a id="SoMecalendar" href="<?php the_field('header_url'); ?>"><?php the_field('header_url_text'); ?></a></div>
+        <div class="col-6-float-left align-self-center"><?php the_field('header_text', 'option'); ?> <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>"><?php the_field('header_url_text' , 'option'); ?></a></div>
         <div class="col-6-float-right align-self-center">
-          <?php if( have_rows('header_some') ): ?>
+          <?php if( have_rows('header_some', 'option') ): ?>
             <ul>
-              <?php while( have_rows('header_some') ): the_row();
+              <?php while( have_rows('header_some', 'option') ): the_row();
               // vars
-                $someimage = get_sub_field('header_some_icon');
-                $somelink = get_sub_field('header_some_url');
+                $someimage = get_sub_field('header_some_icon', 'option');
+                $somelink = get_sub_field('header_some_url', 'option');
               ?>
 
               <li class="header_some_icon">
@@ -57,11 +57,11 @@
        <div class="bar menubtn"><span></span></div>
     <nav>
        <ul class="test">
-         <?php if(get_field('nav_links')): ?>
+         <?php if(get_field('nav_links', 'option')): ?>
         	<ul class="test1">
 
-        	<?php while(has_sub_field('nav_links')): ?>
-        		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url'); ?>"><?php the_sub_field('nav_links_text'); ?></a></li>
+        	<?php while(has_sub_field('nav_links', 'option')): ?>
+        		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url', 'option'); ?>"><?php the_sub_field('nav_links_text', 'option'); ?></a></li>
 
         	<?php endwhile; ?>
         	</ul>
@@ -117,12 +117,12 @@
 
 
           <div class="something">
-          <?php if( have_rows('nav_some') ): ?>
+          <?php if( have_rows('nav_some', 'option') ): ?>
         	<ul class="row slides1">
-        	<?php while( have_rows('nav_some') ): the_row();
+        	<?php while( have_rows('nav_some', 'option') ): the_row();
         		// vars
-        		$image = get_sub_field('some_icons_nav');
-        		$link = get_sub_field('some_url_nav');
+        		$image = get_sub_field('some_icons_nav', 'option');
+        		$link = get_sub_field('some_url_nav', 'option');
         		?>
         		<li class="slide1">
         			<?php if( $link ): ?>
@@ -137,9 +137,9 @@
         	<?php endwhile; ?>
         	</ul>
         <?php endif; ?>
-        <a href="<?php the_field('google_maps_link'); ?>" class="nav_address"><?php the_field('footer_address'); ?></a>
+        <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
 
-      <!--  <p class="nav_address"><?php the_field('nav_address'); ?></p> -->
+      <!--  <p class="nav_address"><?php the_field('nav_address', 'option'); ?></p> -->
        </ul>
        </div>
     </nav>
