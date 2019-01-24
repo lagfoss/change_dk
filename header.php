@@ -26,7 +26,10 @@
     <!-- Sociale medier -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
-        <div class="col-6-float-left align-self-center"><?php the_field('header_text', 'option'); ?> <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>"><?php the_field('header_url_text' , 'option'); ?></a></div>
+        <div class="col-6-float-left align-self-center">
+           <?php the_field('header_text', 'option'); ?> 
+          <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>">
+          <?php the_field('header_url_text' , 'option'); ?></a></div>
         <div class="col-6-float-right align-self-center">
           <?php if( have_rows('header_some', 'option') ): ?>
             <ul>
@@ -149,15 +152,18 @@
  jQuery(document).ready(function($){
  $(".menu-collapsed").click(function() {
  $(this).toggleClass("menu-expanded");
-  });
-  });
+ });
+ });
+ $('.menubtn').on('click', function(){
+ $(this).toggleClass('close');
+ });
   </script>
-
+<!--
   <script type="text/javascript">
   $('.menubtn').on('click', function(){
   $(this).toggleClass('close');
   });
-  </script>
+</script> -->
 
 
   <ul class="navbar">

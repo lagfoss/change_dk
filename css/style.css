@@ -139,7 +139,7 @@ header {
   position: absolute;
   width:100%;
   height: 4px;
-  background: pink;
+  background: black;
 
   transition:all 0.2s ease-in-out;
   -webkit-transition:all 0.2s ease-in-out;
