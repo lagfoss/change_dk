@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-  <div class="container-fluid">
+  <div class="container-fluid om_intro">
     <div class="row">
 
 	  </div>
