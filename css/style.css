@@ -139,7 +139,7 @@ header {
   position: absolute;
   width:100%;
   height: 4px;
-  background: pink;
+  background: black;
 
   transition:all 0.2s ease-in-out;
   -webkit-transition:all 0.2s ease-in-out;
@@ -295,13 +295,13 @@ border: 1px solid rgba(255, 255, 255, .15);
   list-style-type: none;
 }
 
-.test {
+.nav_wrapper {
   list-style-type: none;
   margin-top: 10%;
-  margin-left: 40%;
+  margin-left: 40%; 
 }
 
-.test1 {
+.links_wrapper {
   display: inline-block;
   list-style-type: none;
   margin-right: 30%;
