@@ -61,7 +61,7 @@
     <nav>
        <ul class="nav_wrapper">
          <?php if(get_field('nav_links', 'option')): ?>
-        	<ul class="links_wrapper"> 
+        	<ul class="links_wrapper">
 
         	<?php while(has_sub_field('nav_links', 'option')): ?>
         		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url', 'option'); ?>"><?php the_sub_field('nav_links_text', 'option'); ?></a></li>
@@ -131,7 +131,7 @@
         			<?php if( $link ): ?>
         				<a href="<?php echo $link; ?>">
         			<?php endif; ?>
-        				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+        				<img style="width:20px; height:20px;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
         			<?php if( $link ): ?>
         				</a>
         			<?php endif; ?>
