@@ -27,7 +27,7 @@
 			$content = get_sub_field('showreel_watch_our');
 			$content2 = get_sub_field('showreel_showreel');
 			?>
-			<li class="watchourshowreel">
+			<li class=" watchourshowreel">
 
 					<img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
 

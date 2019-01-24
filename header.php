@@ -27,7 +27,7 @@
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
         <div class="col-6-float-left align-self-center">
-           <?php the_field('header_text', 'option'); ?>
+            <?php the_field('header_text', 'option'); ?>
           <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>">
           <?php the_field('header_url_text' , 'option'); ?></a></div>
         <div class="col-6-float-right align-self-center">
@@ -168,7 +168,7 @@
 
   <ul class="navbar">
     <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>">
-      <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="">
+      <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
     </a>
 <!--
     <?php

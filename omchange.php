@@ -13,8 +13,7 @@
         <div class="stroke"></div>
       </div>
     </div>
-    <div class="row">
-      <div class="intro_boxes">
+    <div class="row justify-content-center intro_boxes">
         <?php if( have_rows('om_intro_boxes') ): ?>
 
             <?php while( have_rows('om_intro_boxes') ): the_row();
@@ -24,16 +23,32 @@
               $introtext = get_sub_field('intro_box_text');
               $introlink = get_sub_field('intro_box_link');
             ?>
-        <a href="<?php echo $introlink; ?>" class="intro_box">
+        <a class="intro_box" href="<?php echo $introlink; ?>">
         	<img src="<?php echo $introimage['url']; ?>" alt="<?php echo $introimage['alt'] ?>"/>
           <h3><?php echo $introtitle; ?></h3>
           <p><?php echo $introtext; ?></p>
       	</a>
   		<?php endwhile; ?>
-
-  <?php endif; ?>
+      <?php endif; ?>
 
       </div>
+
+ <div class="omchange_calltoaction">
+   <?php if( get_field('call_to_action_intro') ): ?>
+
+  	<img src="<?php the_field('call_to_action_intro'); ?>" />
+
+    <?php endif; ?>
+   <span class="omchange_calltoaction"></span>
+ </div>
+
+
+
+
+
+
+
+
     </div>
   </div>
 
