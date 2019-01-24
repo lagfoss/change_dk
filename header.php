@@ -131,7 +131,7 @@
         			<?php if( $link ): ?>
         				<a href="<?php echo $link; ?>">
         			<?php endif; ?>
-        				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+        				<img style="width:20px; height:20px;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
         			<?php if( $link ): ?>
         				</a>
         			<?php endif; ?>
