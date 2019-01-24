@@ -139,7 +139,7 @@ header {
   position: absolute;
   width:100%;
   height: 4px;
-  background: black;
+  background: pink;
 
   transition:all 0.2s ease-in-out;
   -webkit-transition:all 0.2s ease-in-out;
@@ -156,7 +156,6 @@ header {
 
 .menubtn::before,
 .menubtn::after {
-
   content:"";
 }
 
@@ -185,7 +184,7 @@ header {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
- 
+
 
 
 .b-a {
@@ -250,7 +249,7 @@ header {
 }
 
 .menu-expanded a {
-transition: all .15s;
+transition: all .5s;
 font-size: 2em;
 padding: 5px;
 color: black;
@@ -382,7 +381,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .watchourshowreel {
-    left: 75%;
+    left: 67%;
     bottom: 45%;
     position: absolute;
     display: block;
@@ -536,6 +535,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   height: 23px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
+  padding: 20px 0px;
 }
 
 .wcwd_text {
@@ -543,6 +543,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   height: 104px;
   font-size: 16px;
   line-height: 1.63;
+  padding: 15px 0px;
 }
 
 .wcwd-content {
@@ -565,6 +566,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 .wcwd_button {
   text-decoration: none;
   padding: 15px 25px;
+  margin-top: 60px;
   background-color: inherit;
   border-color: black;
   width: 185px;
