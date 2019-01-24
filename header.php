@@ -27,7 +27,7 @@
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
         <div class="col-6-float-left align-self-center">
-           <?php the_field('header_text', 'option'); ?> 
+           <?php the_field('header_text', 'option'); ?>
           <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>">
           <?php the_field('header_url_text' , 'option'); ?></a></div>
         <div class="col-6-float-right align-self-center">
@@ -59,9 +59,9 @@
  <div class="container-fluid menu-collapsed">
        <div class="bar menubtn"><span></span></div>
     <nav>
-       <ul class="test">
+       <ul class="nav_wrapper">
          <?php if(get_field('nav_links', 'option')): ?>
-        	<ul class="test1">
+        	<ul class="links_wrapper"> 
 
         	<?php while(has_sub_field('nav_links', 'option')): ?>
         		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url', 'option'); ?>"><?php the_sub_field('nav_links_text', 'option'); ?></a></li>
