@@ -13,8 +13,7 @@
         <div class="stroke"></div>
       </div>
     </div>
-    <div class="row">
-      <div class="row intro_boxes">
+    <div class="row justify-content-center intro_boxes">
         <?php if( have_rows('om_intro_boxes') ): ?>
 
             <?php while( have_rows('om_intro_boxes') ): the_row();

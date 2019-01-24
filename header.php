@@ -61,7 +61,7 @@
     <nav>
        <ul class="nav_wrapper">
          <?php if(get_field('nav_links', 'option')): ?>
-        	<ul class="links_wrapper"> 
+        	<ul class="links_wrapper">
 
         	<?php while(has_sub_field('nav_links', 'option')): ?>
         		<li> <a class="nav_links" href="<?php the_sub_field('nav_links_url', 'option'); ?>"><?php the_sub_field('nav_links_text', 'option'); ?></a></li>
@@ -168,7 +168,7 @@
 
   <ul class="navbar">
     <a class="navbar-brand" href="<?php echo get_bloginfo( 'wpurl' );?>">
-      <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="">
+      <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
     </a>
 <!--
     <?php

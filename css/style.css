@@ -298,7 +298,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 .nav_wrapper {
   list-style-type: none;
   margin-top: 10%;
-  margin-left: 40%; 
+  margin-left: 40%;
 }
 
 .links_wrapper {
@@ -677,11 +677,15 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .intro_box {
   text-decoration: none;
+  max-width: 255px;
   padding: 55px 35px;
+  background-color: #ffffff;
+  margin: 15px;
 }
 
 .intro_box:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 /*OM CHANGE slut*/
