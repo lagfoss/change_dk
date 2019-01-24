@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="intro_boxes">
+      <div class="row intro_boxes">
         <?php if( have_rows('om_intro_boxes') ): ?>
 
             <?php while( have_rows('om_intro_boxes') ): the_row();
@@ -24,7 +24,7 @@
               $introtext = get_sub_field('intro_box_text');
               $introlink = get_sub_field('intro_box_link');
             ?>
-        <a href="<?php echo $introlink; ?>" class="intro_box">
+        <a class="intro_box" href="<?php echo $introlink; ?>">
         	<img src="<?php echo $introimage['url']; ?>" alt="<?php echo $introimage['alt'] ?>"/>
           <h3><?php echo $introtitle; ?></h3>
           <p><?php echo $introtext; ?></p>
