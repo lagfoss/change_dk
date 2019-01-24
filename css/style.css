@@ -323,6 +323,10 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 /* Nav slut */
 
+
+/*FORSIDE*/
+
+
 /*Hero image*/
 
 .hero {
@@ -628,8 +632,20 @@ border: 1px solid rgba(255, 255, 255, .15);
   color: inherit;
 }
 
+/* FORSIDE slut */
 
-/*Footer*/
+
+/*OM CHANGE*/
+
+
+/*Om Intro*/
+
+
+
+/*OM CHANGE slut*/
+
+
+/*FOOTER*/
 
 .FooterProject {
   padding: 60px 0 90px 0;

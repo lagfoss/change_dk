@@ -1,8 +1,8 @@
-<?php /* Template Name: Om Change */ ?>
+<?php /* Template Name: Kontakt */ ?>
 
 <?php get_header(); ?>
 
-  <div class="container-fluid om_intro">
+  <div class="container-fluid">
     <div class="row">
 
 	  </div>

@@ -19,9 +19,9 @@
   <div class="container-fluid">
     <div class="row SoMefooter">
       <div class="col align-self-center">
-    <?php if( have_rows('footer_some') ): ?>
+    <?php if( have_rows('footer_some', 'option') ): ?>
       <ul>
-        <?php while( have_rows('footer_some') ): the_row();
+        <?php while( have_rows('footer_some', 'option') ): the_row();
         // vars
 
           $footsomeimage = get_sub_field('footer_some_icon', 'option');
