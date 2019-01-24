@@ -648,19 +648,21 @@ border: 1px solid rgba(255, 255, 255, .15);
 /*Om Intro*/
 
 .om_intro {
-  height: 100vh;
+
 }
 
 .om_intro_title {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 150px;
 }
 
 .om_intro_title h2 {
   text-align: center;
   width: 35%;
+  line-height: 0.9;
   margin: auto;
   padding: 0;
+  margin: 20px auto 30px auto;
 }
 
 .stroke_position {
@@ -669,7 +671,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .stroke {
   height: 5px;
-  width: 60px;
+  width: 65px;
   background-color: #e54c00;
   border-radius: 4px;
   margin: 20px auto 20px auto;
@@ -677,7 +679,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 
 .intro_boxes {
-  margin: auto;
+  margin: 60px auto 100px auto;
 }
 
 .intro_box {
