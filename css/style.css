@@ -185,7 +185,7 @@ header {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
- 
+
 
 
 .b-a {
@@ -640,7 +640,32 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 /*Om Intro*/
 
+.om_intro {
+  height: 100vh;
+}
 
+.om_intro_title {
+  width: 100%;
+}
+
+.om_intro_title h2 {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  padding: 0;
+}
+
+.stroke_position {
+  width: 100%;
+}
+
+.stroke {
+  height: 5px;
+  width: 60px;
+  background-color: #e54c00;
+  border-radius: 4px;
+  margin: 20px auto 20px auto;
+}
 
 /*OM CHANGE slut*/
 
