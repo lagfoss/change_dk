@@ -648,12 +648,14 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .om_intro_title {
   width: 100%;
+  margin-top: 150px;
 }
 
 .om_intro_title h2 {
   text-align: center;
+  line-height: 0.9;
   width: 30%;
-  margin: auto;
+  margin: 20px auto 30px auto;
   padding: 0;
 }
 
@@ -663,7 +665,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .stroke {
   height: 5px;
-  width: 60px;
+  width: 65px;
   background-color: #e54c00;
   border-radius: 4px;
   margin: 20px auto 20px auto;
