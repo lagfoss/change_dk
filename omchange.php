@@ -29,10 +29,26 @@
           <p><?php echo $introtext; ?></p>
       	</a>
   		<?php endwhile; ?>
-
-  <?php endif; ?>
+      <?php endif; ?>
 
       </div>
+
+ <div class="omchange_calltoaction">
+   <?php if( get_field('call_to_action_intro') ): ?>
+
+  	<img src="<?php the_field('call_to_action_intro'); ?>" />
+
+    <?php endif; ?>
+   <span class="omchange_calltoaction"></span>
+ </div>
+
+
+
+
+
+
+
+
     </div>
   </div>
 

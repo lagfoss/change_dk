@@ -27,7 +27,7 @@
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
         <div class="col-6-float-left align-self-center">
-           <?php the_field('header_text', 'option'); ?>
+            <?php the_field('header_text', 'option'); ?>
           <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>">
           <?php the_field('header_url_text' , 'option'); ?></a></div>
         <div class="col-6-float-right align-self-center">
