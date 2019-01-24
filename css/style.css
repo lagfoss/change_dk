@@ -198,16 +198,12 @@ header {
    border-radius: 15px;
    background-color: black;
 }
+
 .menu-collapsed {
    transition: all .25s;
    position: fixed;
-   top: 55px;
-   height: 36px;
-   width: 36px;
    z-index: 1;
-   cursor: pointer;
  }
-
  .menu-collapsed ul {
   transition: all 0s;
   position: fixed;
