@@ -30,13 +30,14 @@
       	</a>
   		<?php endwhile; ?>
       <?php endif; ?>
+      <div class="arrow_down">
+        <?php if( get_field('call_to_action_intro') ): ?>
+        <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+        <?php endif; ?></a>
+      </div>
     </div>
 
-    <div class="">
-      <?php if( get_field('call_to_action_intro') ): ?>
-      <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
-      <?php endif; ?></a>
-    </div>
+
   </div>
 
   <div class="container-fluid vores_process">
@@ -114,6 +115,18 @@
         <div class="stroke"></div>
       </div>
     </div>
+    <div class="row logo_slider">
+  		<div class="col align-self-center">
+  		  <div class="owl-carousel owl-theme autoplay">
+  				<?php
+  					$images = get_field('firma_slider');
+  					foreach ($images as $image):?>
+  				<div>
+  					<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+  				</div>
+  				  <?php endforeach;?>
+  	    </div>
+      </div>
 
 
   </div>

@@ -677,9 +677,9 @@ border: 1px solid rgba(255, 255, 255, .15);
   margin: 30px auto 20px auto;
 }
 
-
 .intro_boxes {
   margin: 60px auto 100px auto;
+  position: relative;
 }
 
 .intro_box {
@@ -703,11 +703,15 @@ border: 1px solid rgba(255, 255, 255, .15);
   background-color: white;
 }
 
+.arrow_down {
+  position: absolute;
+  bottom: 0;
+}
+
 .omchange_calltoaction {
   background: #e54c00;
-  padding: 30px 20px;
   width: 60px;
-  border-radius: 50px;
+  border-radius: 50%;
   text-align: center;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
