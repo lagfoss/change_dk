@@ -1,5 +1,6 @@
 <?php /* Template Name: Om Change */ ?>
 <body <?php body_class(whitebg); ?>>
+
 <?php get_header(); ?>
 
   <div class="container-fluid om_intro">
@@ -72,7 +73,7 @@
           <h3 class="steps_header"><?php echo $stepsheader; ?></h3>
           <p class="steps_text" style="text-align:left;"><?php echo $stepstext; ?></p>
         </div>
-      </a> 
+      </a>
     <?php endwhile; ?>
     <?php endif; ?>
 

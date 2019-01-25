@@ -59,18 +59,7 @@
 </footer>
 <script type="text/javascript">
 
-  $(window).scroll(function() {
-    var windowHeight = $(window).height();
-    var scroll = $(window).scrollTop();
-    if (scroll >= windowHeight) {
 
-    $(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
-	} else {
-
-    $(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
-  }
-
-});
 
 $(document).ready(function() {
   $('.whitebg .logoimg').attr('src', '<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg');
