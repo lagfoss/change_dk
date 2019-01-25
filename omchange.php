@@ -31,25 +31,30 @@
   		<?php endwhile; ?>
       <?php endif; ?>
 
+    </div>
+
+    <div class="omchange_calltoaction">
+      <?php if( get_field('call_to_action_intro') ): ?>
+
+  	  <img src="<?php the_field('call_to_action_intro'); ?>" />
+
+      <?php endif; ?>
+      <span class="omchange_calltoaction"></span>
+    </div>
+
+  </div>
+
+  <div class="container-fluid vores_process">
+    <div class="row">
+      <div class="om_intro_title">
+        <h2><?php the_field('vores_process_title'); ?></h2>
+        <p><?php the_field('vores_process_text'); ?></p>
       </div>
-
- <div class="omchange_calltoaction">
-   <?php if( get_field('call_to_action_intro') ): ?>
-
-  	<img src="<?php the_field('call_to_action_intro'); ?>" />
-
-    <?php endif; ?>
-   <span class="omchange_calltoaction"></span>
- </div>
-
-
-
-
-
-
-
+    </div>
+    <div class="row">
 
     </div>
+
   </div>
 
 <?php get_footer(); ?>
