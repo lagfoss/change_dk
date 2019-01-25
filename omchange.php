@@ -108,7 +108,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="">
+      <div class="om_slider_title">
         <h2><?php the_field('om_slider_title'); ?></h2>
       </div>
     </div>
