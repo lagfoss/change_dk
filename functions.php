@@ -70,6 +70,13 @@ function startwordpress_google_fonts() {
 add_action('wp_print_styles', 'startwordpress_google_fonts');
 
 
+add_filter( 'body_class', 'my_class_names' );
+function my_class_names( $classes ) {
+    // add 'class-name' to the $classes array
+    $classes[] = 'whitebg';
+    // return the $classes array
+    return $classes;
+}
 
 // Register a custom post type called "case".
 // @see get_post_type_labels() for label keys.

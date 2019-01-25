@@ -1,5 +1,5 @@
 <?php /* Template Name: Ydelser */ ?>
-
+<body <?php body_class(whitebg); ?>>
 <?php get_header(); ?>
 
   <div class="container-fluid">
