@@ -30,18 +30,13 @@
       	</a>
   		<?php endwhile; ?>
       <?php endif; ?>
-
     </div>
 
-    <div class="omchange_calltoaction">
+    <div class="">
       <?php if( get_field('call_to_action_intro') ): ?>
-
-  	  <img src="<?php the_field('call_to_action_intro'); ?>" />
-
-      <?php endif; ?>
-      <span class="omchange_calltoaction"></span>
+      <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+      <?php endif; ?></a>
     </div>
-
   </div>
 
   <div class="container-fluid vores_process">
@@ -51,7 +46,29 @@
         <p><?php the_field('vores_process_text'); ?></p>
       </div>
     </div>
+
+
+
+
+
+    <!-- Steps start -->
     <div class="row">
+
+      <?php if( have_rows('steps') ): ?>
+          <?php while( have_rows('steps') ): the_row();
+            // vars
+            $stepsimage = get_sub_field('steps_img');
+            $stepsheader = get_sub_field('steps_header');
+            $stepstext = get_sub_field('steps_text');
+            $stepslink = get_sub_field('stepslink');
+          ?>
+      <a class="steps_box" href="<?php echo $stepslink; ?>">
+        <img class="steps_img" src="<?php echo $stepsimage['url']; ?>" alt="<?php echo $stepsimage['alt'] ?>"/>
+        <h3><?php echo $stepsheader; ?></h3>
+        <p><?php echo $stepstext; ?></p>
+      </a>
+    <?php endwhile; ?>
+    <?php endif; ?>
 
     </div>
 
