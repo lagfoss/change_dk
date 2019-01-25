@@ -1,6 +1,5 @@
 <?php /* Template Name: Om Change */ ?>
 <body <?php body_class(whitebg); ?>>
-
 <?php get_header(); ?>
 
   <div class="container-fluid om_intro">
