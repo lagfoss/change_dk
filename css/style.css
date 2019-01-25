@@ -715,15 +715,17 @@ border: 1px solid rgba(255, 255, 255, .15);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+/*Intro slut*/
 
+/*Vores process*/
 
-.vores_process p {
+.vores_process {
   text-align: center;
   max-width: 600px;
   margin: 0 auto 10px auto;
 }
 
-/* Intro/Vores process slut */
+/* Vores process slut */
 
 /* Steps start */
 
