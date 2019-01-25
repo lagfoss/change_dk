@@ -41,7 +41,7 @@
 
   <div class="container-fluid vores_process">
     <div class="row">
-      <div class="om_intro_title">
+      <div class="vores_process">
         <h2><?php the_field('vores_process_title'); ?></h2>
         <p><?php the_field('vores_process_text'); ?></p>
       </div>
@@ -109,7 +109,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="">
-        <h2></h2>
+        <h2><?php the_field('om_slider_title'); ?></h2>
       </div>
     </div>
     <div class="row">
