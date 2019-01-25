@@ -710,7 +710,9 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .omchange_calltoaction {
   background: #e54c00;
-  width: 60px;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
   border-radius: 50%;
   text-align: center;
   -webkit-transform: rotate(90deg);
@@ -759,7 +761,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .steps_box_right {
   margin-left: 5%;
-} 
+}
 
 .steps_box img {
   display: inline-block;
