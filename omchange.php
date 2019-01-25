@@ -57,7 +57,7 @@
       <?php if( have_rows('steps_left_aligned') ): ?>
           <?php while( have_rows('steps_left_aligned') ): the_row();
             // vars
-            $stepsimage = get_sub_field('steps_img');
+            $stepsimage = get_sub_field('steps_img_left_aligned');
             $stepsheader = get_sub_field('steps_header');
             $stepstext = get_sub_field('steps_text');
             $stepslink = get_sub_field('stepslink');
@@ -83,7 +83,7 @@
       <?php if( have_rows('steps_right_aligned') ): ?>
           <?php while( have_rows('steps_right_aligned') ): the_row();
             // vars
-            $stepsimage = get_sub_field('steps_img');
+            $stepsimage = get_sub_field('steps_img_right_aligned');
             $stepsheader = get_sub_field('steps_header');
             $stepstext = get_sub_field('steps_text');
             $stepslink = get_sub_field('stepslink');

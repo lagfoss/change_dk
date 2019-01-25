@@ -746,7 +746,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   background-color: #e54c00;
 }
 
-.steps_box p h3 img:hover {
+.steps_box p h3 img:hover { 
   display: none;
 }
 
