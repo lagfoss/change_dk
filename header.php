@@ -168,7 +168,7 @@
 
   <ul class="navbar">
     <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-      <img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
+      <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
     </a>
 <!--
     <?php
