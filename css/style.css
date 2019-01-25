@@ -737,37 +737,52 @@ border: 1px solid rgba(255, 255, 255, .15);
   border-radius: 5px;
   margin-right: 100px;
   background-color: white;
+  width: 500px;
 }
 
 .om_change_steps-right {
   border-radius: 5px;
   margin-left: 100px;
   background-color: white;
+  width:500px;
+  margin: 100px 200px;
 }
+
+.steps_box_left .steps_box_right {
+  display: -webkit-inline-box;
+  width: 600px;
+}
+
+.steps_box_left {
+  margin-right: 5%;
+}
+
+.steps_box_right {
+  margin-left: 5%;
+} 
 
 .steps_box img {
   display: inline-block;
-  margin-bottom: 80px;
   z-index: 1;
 }
+
 
 .steps_box:hover {
   text-decoration: none;
   color: inherit;
-  background-color: #e54c00;
+/*  background-color: #e54c00; */
 }
 
 .steps_box p h3 img:hover {
   display: none;
 }
-
 .steps_img {
   width: 100px;
   height: 100px;
 }
 
 .steps_textbox {
-  display: inline-block;
+  display: block;
   text-align: left;
   padding: 30px;
 }
