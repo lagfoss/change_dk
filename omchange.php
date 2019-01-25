@@ -30,13 +30,14 @@
       	</a>
   		<?php endwhile; ?>
       <?php endif; ?>
+      <div class="arrow_down">
+        <?php if( get_field('call_to_action_intro') ): ?>
+        <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+        <?php endif; ?></a>
+      </div>
     </div>
 
-    <div class="">
-      <?php if( get_field('call_to_action_intro') ): ?>
-      <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
-      <?php endif; ?></a>
-    </div>
+
   </div>
 
   <div class="container-fluid vores_process">
