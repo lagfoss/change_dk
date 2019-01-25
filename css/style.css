@@ -729,15 +729,20 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 /* Steps start */
 
-.om_change_steps {
+.om_change_steps-left {
   border-radius: 5px;
-  margin: 100px 200px;
+  margin-right: 100px;
+  background-color: white;
+}
+
+.om_change_steps-right {
+  border-radius: 5px;
+  margin-left: 100px;
   background-color: white;
 }
 
 .steps_box img {
   display: inline-block;
-  margin: 10px auto 10px auto;
   margin-bottom: 80px;
   z-index: 1;
 }
@@ -748,7 +753,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   background-color: #e54c00;
 }
 
-.steps_box p h3 img:hover { 
+.steps_box p h3 img:hover {
   display: none;
 }
 

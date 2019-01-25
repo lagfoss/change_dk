@@ -46,13 +46,13 @@
         <p><?php the_field('vores_process_text'); ?></p>
       </div>
     </div>
-
+</div>
 
 
 
 
     <!-- Steps start -->
-    <div class="row justify-content-center om_change_steps">
+    <div class="row justify-content-center om_change_steps_left">
 
       <?php if( have_rows('steps_left_aligned') ): ?>
           <?php while( have_rows('steps_left_aligned') ): the_row();
@@ -61,8 +61,7 @@
             $stepsheader = get_sub_field('steps_header');
             $stepstext = get_sub_field('steps_text');
             $stepslink = get_sub_field('stepslink');
-            $stepsnumber = get_sub_field('steps_number');
-          ?>
+            $stepsnumber = get_sub_field('steps_number'); ?>
       <a class="steps_box row" href="<?php echo $stepslink; ?>">
         <img class="steps_img" src="<?php echo $stepsimage['url']; ?>" alt="<?php echo $stepsimage['alt'] ?>"/>
 
@@ -78,7 +77,7 @@
 
     </div>
 
-    <div class="row justify-content-center om_change_steps">
+    <div class="row justify-content-center om_change_steps_right">
 
       <?php if( have_rows('steps_right_aligned') ): ?>
           <?php while( have_rows('steps_right_aligned') ): the_row();
@@ -103,8 +102,6 @@
     <?php endif; ?>
 
     </div>
-
-  </div>
 
   <div class="container-fluid">
     <div class="row">
