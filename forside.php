@@ -249,7 +249,7 @@
 $(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight) {
+	if (scroll >= windowHeight - 80) {
 
 	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
 } else {
