@@ -1,6 +1,5 @@
 <?php /* Template Name: Om Change */ ?>
 <body <?php body_class(whitebg); ?>>
-
 <?php get_header(); ?>
 
   <div class="container-fluid om_intro">
@@ -104,6 +103,21 @@
     <?php endif; ?>
 
     </div>
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="">
+        <h2></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="stroke_position">
+        <div class="stroke"></div>
+      </div>
+    </div>
+
 
   </div>
 
