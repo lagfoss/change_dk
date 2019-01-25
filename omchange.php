@@ -80,4 +80,19 @@
 
   </div>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="">
+        <h2></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="stroke_position">
+        <div class="stroke"></div>
+      </div>
+    </div>
+
+
+  </div>
+
 <?php get_footer(); ?>
