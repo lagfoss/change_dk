@@ -104,21 +104,6 @@
 
     <?php endif; ?>
 
-
-        <!--  <li><a href="#">YDELSER</a></li>
-          <li><a href="#">CASES</a></li>
-          <li><a href="#">OM CHANGE</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">KONTAKT</a></li>
-          <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li> -->
-
-
-
-
-
-
-
-
           <div class="something">
           <?php if( have_rows('nav_some', 'option') ): ?>
         	<ul class="row slides1">
@@ -141,14 +126,12 @@
         	</ul>
         <?php endif; ?>
         <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
-
-      <!--  <p class="nav_address"><?php the_field('nav_address', 'option'); ?></p> -->
+        </div>
        </ul>
-       </div>
     </nav>
  </div>
 
- <script type="text/javascript">
+ <script>
  jQuery(document).ready(function($){
  $(".menu-collapsed").click(function() {
  $(this).toggleClass("menu-expanded");
@@ -159,7 +142,7 @@
  });
   </script>
 <!--
-  <script type="text/javascript">
+  <script>
   $('.menubtn').on('click', function(){
   $(this).toggleClass('close');
   });
@@ -170,12 +153,8 @@
     <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
       <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
     </a>
-<!--
-    <?php
-    $menuargs = array('container' => 'nav', 'container_class' => 'main-nav');
-    wp_nav_menu($menuargs);
-    ?>
-  </ul> -->
+
+  </ul>
 
 
 
@@ -183,13 +162,3 @@
   </header>
   <section class="content_area">
    <!-- Header content -->
-
-
-
-
-    <!-- Content 1 -->
-
-
-
-
-    <!-- Content 2 -->
