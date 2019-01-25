@@ -671,14 +671,15 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .stroke {
   height: 5px;
-  width: 65px;
+  width: 60px;
   background-color: #e54c00;
   border-radius: 4px;
   margin: 30px auto 20px auto;
 }
 
 .intro_boxes {
-  margin: 60px auto 100px auto;
+  margin: 60px auto 90px auto;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -710,7 +711,9 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .omchange_calltoaction {
   background: #e54c00;
-  width: 60px;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
   border-radius: 50%;
   text-align: center;
   -webkit-transform: rotate(90deg);
@@ -759,7 +762,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .steps_box_right {
   margin-left: 5%;
-} 
+}
 
 .steps_box img {
   display: inline-block;
