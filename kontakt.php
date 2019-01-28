@@ -1,7 +1,8 @@
 <?php /* Template Name: Kontakt */ ?>
-<body <?php body_class(whitebg); ?>>
-<?php get_header(); ?>
 
+<?php get_header(); ?>
+<body <?php body_class(whitebg); ?>>
+  
   <div class="container-fluid">
     <div class="row">
 
