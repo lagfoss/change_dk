@@ -36,8 +36,9 @@
         <?php endif; ?></a>
       </div>
     </div>
-
   </div>
+
+  <!-- Vores process -->
 
   <div class="container-fluid vores_process">
     <div class="row">
@@ -46,10 +47,6 @@
         <p><?php the_field('vores_process_text'); ?></p>
       </div>
     </div>
-  </div>
-
-
-
 
     <!-- Steps start -->
     <div class="row justify-content-center om_change_steps_left">
@@ -92,16 +89,19 @@
       <a class="steps_box_right row" href="<?php echo $stepslink; ?>">
         <img class="steps_img" src="<?php echo $stepsimage['url']; ?>" alt="<?php echo $stepsimage['alt'] ?>"/>
 
-      <!--    <div class=" steps_number row" ><div class="steps_number_inner"> -->
-            <?php echo $stepsnumber; ?></div></div>
+      <!--    <div class=" steps_number row" ><div class="steps_number_inner">
+            <?php echo $stepsnumber; ?></div></div>-->
         <div class="steps_textbox">
           <h3 class="steps_header"><?php echo $stepsheader; ?></h3>
           <p class="steps_text" style="text-align:left;"><?php echo $stepstext; ?></p>
         </div>
       </a>
-    <?php endwhile; ?>
-  <?php endif; ?>
+      <?php endwhile; ?>
+      <?php endif; ?>
     </div>
+  </div>
+
+<!-- Slider -->
 
   <div class="container-fluid">
     <div class="row">
