@@ -56,7 +56,7 @@
       <?php while ( have_rows('steps_box') ) : the_row();
         $stepsimage = get_sub_field('steps_img'); ?>
 
-      <div id="section" class="om_steps">
+      <div id="steps" class="om_steps ">
       	<div class="om_steps_content">
       		<div id="steps_img" class="half">
             <img src="<?php echo $stepsimage['url']; ?>"
