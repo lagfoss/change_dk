@@ -50,7 +50,26 @@
     </div>
 
     <!-- Steps start -->
-    <div class="row justify-content-center om_change_steps_left">
+    <div class="row">
+
+      <?php if( have_rows('steps_box') ): ?>
+      <?php while ( have_rows('steps_box') ) : the_row();
+        $stepsimage = get_sub_field('steps_img'); ?>
+
+      <div id="section" class="om_steps">
+      	<div class="om_steps_content">
+      		<div id="halfimg" class="half">
+            <img src="<?php echo $stepsimage['url']; ?>"
+              alt="<?php echo $stepsimage['alt'] ?>"/>
+      		</div>
+      		<div id="halftext" class="half">
+      			<h2><?php the_sub_field('steps_title'); ?></h2>
+      			<?php the_sub_field('steps_text'); ?>
+      		</div>
+      	</div>
+      </div>
+      <?php endwhile; ?>
+      <?php else : endif; ?>
 
       <?php if( have_rows('steps_box') ): ?>
           <?php while( have_rows('steps_box') ): the_row();
