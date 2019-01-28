@@ -741,21 +741,25 @@ border: 1px solid rgba(255, 255, 255, .15);
 .om_steps {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e54c00;
 }
 
 .om_steps_content {
-  width: 60%;
   overflow: hidden;
-  background-color: #ffffff;
-  border-radius: 5px;
 }
 
 .om_steps:nth-last-of-type(odd) {
-  margin: 0 15% 0 auto;
+  margin: 0 15% 50px 30%;
 }
 
 .om_steps:nth-last-of-type(even) {
-  margin: 0 auto 0 15%;
+  margin: 0 30% 50px 15%;
 }
 
 .half {
@@ -774,7 +778,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 #steps_text {
   width: 70%;
-  margin-top: 50px;
+  padding: 40px;
 }
 
 .half:nth-of-type(odd) {
