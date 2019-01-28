@@ -41,7 +41,7 @@
 
   <!-- Vores process -->
 
-  <div class="container-fluid vores_process">
+  <div class="container-fluid">
     <div class="row">
       <div class="vores_process">
         <h2><?php the_field('vores_process_title'); ?></h2>
@@ -56,13 +56,13 @@
       <?php while ( have_rows('steps_box') ) : the_row();
         $stepsimage = get_sub_field('steps_img'); ?>
 
-      <div id="section" class="om_steps">
+      <div id="section" class="col-12 om_steps">
       	<div class="om_steps_content">
-      		<div id="halfimg" class="half">
+      		<div id="steps_img" class="half">
             <img src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
-      		<div id="halftext" class="half">
+      		<div id="steps_text" class="half">
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<?php the_sub_field('steps_text'); ?>
       		</div>
