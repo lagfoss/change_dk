@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 <body <?php body_class(whitebg); ?>>
-  
+
   <div class="container-fluid om_intro">
     <div class="row">
       <div class="om_intro_title">
@@ -60,8 +60,8 @@
             $stepstext = get_sub_field('steps_text');
             $stepslink = get_sub_field('stepslink');
             $stepsnumber = get_sub_field('steps_number'); ?>
-      <a class="steps_box_left row" href="<?php echo $stepslink; ?>">
-        <img class="steps_img" src="<?php echo $stepsimage['url']; ?>" alt="<?php echo $stepsimage['alt'] ?>"/>
+      <a class="steps_box row" href="<?php echo $stepslink; ?>">
+        <img class="steps_img" id="slide" src="<?php echo $stepsimage['url']; ?>" alt="<?php echo $stepsimage['alt'] ?>"/>
 
       <!--    <div class=" steps_number row" ><div class="steps_number_inner">
             <?php echo $stepsnumber; ?></div></div> -->
@@ -73,32 +73,6 @@
     <?php endwhile; ?>
     <?php endif; ?>
 
-    </div>
-
-
-    <div class="row justify-content-center om_change_steps_right">
-
-      <?php if( have_rows('steps_right_aligned') ): ?>
-          <?php while( have_rows('steps_right_aligned') ): the_row();
-            // vars
-            $stepsimage = get_sub_field('steps_img_right_aligned');
-            $stepsheader = get_sub_field('steps_header');
-            $stepstext = get_sub_field('steps_text');
-            $stepslink = get_sub_field('stepslink');
-            $stepsnumber = get_sub_field('steps_number');
-          ?>
-      <a class="steps_box_right row" href="<?php echo $stepslink; ?>">
-        <img class="steps_img" src="<?php echo $stepsimage['url']; ?>" alt="<?php echo $stepsimage['alt'] ?>"/>
-
-      <!--    <div class=" steps_number row" ><div class="steps_number_inner">
-            <?php echo $stepsnumber; ?></div></div>-->
-        <div class="steps_textbox">
-          <h3 class="steps_header"><?php echo $stepsheader; ?></h3>
-          <p class="steps_text" style="text-align:left;"><?php echo $stepstext; ?></p>
-        </div>
-      </a>
-      <?php endwhile; ?>
-      <?php endif; ?>
     </div>
   </div>
 
