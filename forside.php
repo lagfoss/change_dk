@@ -4,9 +4,9 @@
 
 <!-- Hero image, text and call to action -->
 
-	<div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
+	<div class="row hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
 
-		<div class=" hero_info">
+		<div class="hero_info">
 			<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 			<p class="white"><?php the_field('hero_text'); ?></p>
 
@@ -96,7 +96,7 @@
 					<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
-				
+
 			</div>
 
 		</div>

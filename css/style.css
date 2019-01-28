@@ -740,7 +740,6 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .om_steps {
   width: 100%;
-  min-height: 100px;
   overflow: hidden;
 }
 
@@ -751,7 +750,6 @@ border: 1px solid rgba(255, 255, 255, .15);
 .om_steps_content {
   width: 60%;
   margin: 0 auto;
-  min-height: 100px;
   overflow: hidden;
 }
 
@@ -774,11 +772,11 @@ border: 1px solid rgba(255, 255, 255, .15);
 	float: right;
 }
 
-#section:nth-of-type(odd) #steps_img {
-	float: left;
-}
-#section:nth-of-type(odd) #steps_text {
+#section:nth-of-type(even) #steps_img {
 	float: right;
+}
+#section:nth-of-type(even) #steps_text {
+	float: left;
 }
 
 .steps_box .steps_box_right {
