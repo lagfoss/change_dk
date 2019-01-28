@@ -15,6 +15,7 @@
 				<?php endif; ?></a>
 		</div>
 
+		<!-- Showreel on hero -->
 		<?php if( have_rows('showreel') ): ?>
 		<?php while( have_rows('showreel') ): the_row();
 			// vars
@@ -31,21 +32,13 @@
 
 			</li>
 
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 
-	<?php endif; ?>
-
-
-		<!--
-		<div class="watchourshowreel">
-			<img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/play-circle-copy.png"
-     	class="playcircle" style="width:50px;">
-			<p class="white Watch">Watch our:</p>
-			<p class="white Showreel">Showreel</p>
-		</div> -->
+		<?php endif; ?>
 
 	</div>
 
+	<!-- CASE SLIDER -->
 	<div class="container-fluid case">
 		<div class="row modul_margin">
 			<?php
@@ -75,8 +68,10 @@
 		</div>
 	</div>
 
+	<!-- Process steps -->
 	<div class="container-fluid">
 		<div class="row">
+
 			<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
 			</div>
 
@@ -101,10 +96,13 @@
 					<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
+				
 			</div>
+
 		</div>
 	</div>
 
+	<!-- Section med hvad vi gøre -->
 	<div class="container-fluid do_for_u">
 
 		<div class="row wcwd_section">
@@ -175,7 +173,7 @@
 		</div>
 	</div>
 
-
+	<!-- Slider med firma logoer (klienter?) -->
 		<div class="container-fluid">
 			<div class="row logo_slider">
 				<div class="col align-self-center">
@@ -192,41 +190,41 @@
 			</div>
 		</div>
 
+	<!-- Image carousel and get to know us -->
+	<div class="container-fluid">
+		<div class="row know_us align-items-center">
+			<div class="col-7">
 
-<div class="container-fluid">
-	<div class="row know_us align-items-center">
-		<div class="col-7">
-			<div class="col-11 owl-carousel owl-theme autowidth">
-	<?php
-	$images = get_field('know_us_gallery');
-	foreach ($images as $image):?>
-		<div class="know_us_gallery">
-			<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	    </div>
-    <?php endforeach;?>
-</ul>
+				<!-- Image carousel -->
+				<div class="col-11 owl-carousel owl-theme autowidth">
+					<?php
+						$images = get_field('know_us_gallery');
+						foreach ($images as $image):?>
+					<div class="know_us_gallery">
+						<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	    		</div>
+    			<?php endforeach;?>
+				</div>
+			</div>
 
-
-</div>
-
-		</div>
-		<div class="col-5">
-			<div class="col-10">
-				<h2><?php the_field('know_us_title'); ?></h2>
-				<p><?php the_field('know_us_text'); ?></p>
+			<!-- Know us text -->
+			<div class="col-5">
+				<div class="col-10">
+					<h2><?php the_field('know_us_title'); ?></h2>
+					<p><?php the_field('know_us_text'); ?></p>
 
 					<a class="know_button" href="<?php the_field('know_us_button_url'); ?>"><?php the_field('know_us_button_text'); ?> <?php if( get_field('know_us_button_icon') ): ?>
 					<img class="" src="<?php the_field('know_us_button_icon'); ?>" />
 					<?php endif; ?></a>
-			</div>
+				</div>
 			</div>
 		</div>
-
 	</div>
 
 
 <?php get_footer(); ?>
 
+<!-- Logo transition script -->
 <script type="text/javascript">
 $(window).scroll(function() {
 	var windowHeight = $(window).height();
