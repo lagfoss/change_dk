@@ -52,11 +52,11 @@
     <!-- Steps start -->
     <div class="row justify-content-center om_change_steps_left">
 
-      <?php if( have_rows('steps_left_aligned') ): ?>
-          <?php while( have_rows('steps_left_aligned') ): the_row();
+      <?php if( have_rows('steps_box') ): ?>
+          <?php while( have_rows('steps_box') ): the_row();
             // vars
-            $stepsimage = get_sub_field('steps_img_left_aligned');
-            $stepsheader = get_sub_field('steps_header');
+            $stepsimage = get_sub_field('steps_img');
+            $stepsheader = get_sub_field('steps_title');
             $stepstext = get_sub_field('steps_text');
             $stepslink = get_sub_field('stepslink');
             $stepsnumber = get_sub_field('steps_number'); ?>
