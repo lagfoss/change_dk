@@ -746,14 +746,28 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 /* Steps start */
 
-.om_steps {
-  position: relative;
-  width: 100%;
-}
-
 .arrow_left {
   position: absolute;
-  top: 0;
+  width: 100%;
+  margin-left: 25%;
+}
+
+.arrow_left img {
+  width: 75%
+}
+
+.arrow_right {
+  position: absolute;
+  width: 100%;
+  margin-right: 25%;
+}
+
+.arrow_right img {
+  width: 75%
+}
+
+.om_steps {
+  position: relative;
   width: 100%;
 }
 
@@ -816,13 +830,15 @@ border: 1px solid rgba(255, 255, 255, .15);
 	float: right;
 }
 
-#steps:nth-of-type(even) #steps_img {
+.om_steps_content:nth-of-type(even) #steps_img {
 	float: right;
 }
-#steps:nth-of-type(even) #steps_text {
-	float: left;
-}
 
+
+.om_steps_content:hover {
+  text-decoration: none;
+  color: #111517;
+}
 
 #slide {
     position: absolute;

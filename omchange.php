@@ -56,11 +56,12 @@
       <?php while ( have_rows('steps_box') ) : the_row();
         $stepsimage = get_sub_field('steps_img'); ?>
 
-
-
       <a href="<?php the_sub_field('steps_link'); ?>" class="om_steps">
         <div class="arrow_left">
           <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
+        </div>
+        <div class="arrow_right">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
         </div>
         <div class="steps_number">
           <?php the_sub_field('steps_number'); ?>
