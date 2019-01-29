@@ -757,7 +757,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .om_steps_content {
   overflow: hidden;
-  margin-bottom: 50px;
+  position: relative;
   box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.1);
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -768,11 +768,11 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .om_steps:nth-last-of-type(odd) {
-  margin: 0 15% 50px 40%;
+  margin: 0 15% 0 40%;
 }
 
 .om_steps:nth-last-of-type(even) {
-  margin: 0 40% 50px 15%;
+  margin: 0 40% 0 15%;
 }
 
 .half {
@@ -813,18 +813,25 @@ border: 1px solid rgba(255, 255, 255, .15);
   color: inherit;
 }
 
-/*#slide {
+.om_steps_content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#slide {
     position: absolute;
     width: 100%;
-    height: 100px;
+    left: -100%;
+    height: inherit;
     background: #e54c00;
-    transition: 1s;
+    transition: 1.5s;
+    overflow: hidden;
 }
 
 .om_steps_content:hover #slide {
-    transition: 1s;
+    transition: 1.5s;
     left: 0;
-}*/
+}
 
 
 /* Steps slut */
