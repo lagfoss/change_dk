@@ -832,17 +832,20 @@ border: 1px solid rgba(255, 255, 255, .15);
 .half:nth-of-type(odd) {
 	float: left;
 }
+
 .half:nth-of-type(even) {
 	float: right;
 }
 
-#steps:nth-of-type(even) #steps_img {
+.om_steps_content:nth-of-type(even) #steps_img {
 	float: right;
 }
-#steps:nth-of-type(even) #steps_text {
-	float: left;
-}
 
+
+.om_steps_content:hover {
+  text-decoration: none;
+  color: #111517;
+}
 
 #slide {
     position: absolute;
