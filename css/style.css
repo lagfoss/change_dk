@@ -114,6 +114,10 @@ header {
 
 }
 
+.menu-burger-menu-container {
+
+}
+
 .menu {
   list-style-type: none;
   font-family: 'bebas-neue',sans-serif;
@@ -123,26 +127,17 @@ header {
   color: #e54c00;
 }
 
-.menu:hover {
-
-}
-
-.menu-item {
-
-}
-
-.menu-item:hover {
+.menu-item a:hover {
   color: #e54c00;
   text-decoration: line-through;
 }
-
-
 
 .navbar {
   margin-left: 3.5%;
   margin-right: 3.5%;
   padding-left: 0;
   padding-right: 0;
+  display: block;
 }
 
 .NavLogo {
@@ -263,6 +258,9 @@ header {
   position: relative;
   left: 0;
   z-index: 2;
+  margin-top: 60px;
+  padding: 0;
+  margin-top: 10%;
 }
 
 .menu-expanded a {
@@ -316,12 +314,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   list-style-type: none;
   margin-top: 10%;
   margin-left: 40%;
-}
-
-.links_wrapper {
-  display: inline-block;
-  list-style-type: none;
-  margin-right: 30%;
+  display: block;
 }
 
 .nav_links {
@@ -339,7 +332,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .something {
-  text-align: center;
+  width: 300px;
 }
 
 /* Nav slut */
