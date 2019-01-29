@@ -810,12 +810,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .om_steps_content:hover {
   text-decoration: none;
-  color: inherit;
-}
-
-.om_steps_content a {
-  text-decoration: none;
-  color: inherit;
+  color: #111517;
 }
 
 #slide {
