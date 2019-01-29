@@ -213,7 +213,7 @@ header {
 
 
 
-.b-a { 
+.b-a {
    transition: all .25s;
    content: "";
    position: absolute;
@@ -761,8 +761,8 @@ border: 1px solid rgba(255, 255, 255, .15);
   position: absolute;
   width: 90%;
   right: 0;
-  margin-right: 30%;
-  margin-top: -30%;
+  margin-right: 35%;
+  margin-top: -29%;
   z-index: -1;
 }
 
