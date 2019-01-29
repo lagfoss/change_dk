@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body> 
   <header class="position-fixed">
     <!-- Sociale medier -->
     <div class="container-fluid">
