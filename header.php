@@ -68,7 +68,15 @@
 
         <div>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-        <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
+
+        <?php if( 'yes' == get_field('job_available')) : ?>
+          <span>hello</span>
+
+        <!-- <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li> -->
+        <?php else : ?>
+          <span>goodbye</span>
+
+        <?php endif; ?>
         </div>
 
         <div class="something">
@@ -107,13 +115,13 @@
       });
 
       $('.menubtn').on('click', function(){
-        $(this).toggleClass('close');
+        $(this).toggleClass('close','menubtn');
       });
 
     </script>
     </nav>
         <!-- Menu/Nav slut -->
-        
+
 
   </header>
     <section class="content_area">
