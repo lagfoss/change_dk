@@ -110,6 +110,34 @@ header {
 
 
 /*Logo og menu*/
+#menu-burger-menu {
+
+}
+
+.menu {
+  list-style-type: none;
+  font-family: 'bebas-neue',sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #e54c00;
+}
+
+.menu:hover {
+
+}
+
+.menu-item {
+
+}
+
+.menu-item:hover {
+  color: #e54c00;
+  text-decoration: line-through;
+}
+
+
+
 .navbar {
   margin-left: 3.5%;
   margin-right: 3.5%;
@@ -124,6 +152,7 @@ header {
 
 
 /* Nav start */
+
 .menubtn  {
   position: fixed;
   top: 0;
@@ -211,22 +240,8 @@ header {
   left: -9000px;
    }
 }
-/*
-.bar {
-   @extend .b-a;
-   position: absolute;
-   right: 12px;
-   top: 24px;
-   &:before {
-      @extend .b-a;
-      top: -8px;
-   }
-   &:after {
-      @extend .b-a;
-      top: 8px;
-   }
-}
-*/
+
+
 .b-a-expanded {
    transition: all .25s;
    top: -0px;
@@ -738,14 +753,28 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 /* Steps start */
 
-.om_steps {
-  position: relative;
-  width: 100%;
-}
-
 .arrow_left {
   position: absolute;
-  top: 0;
+  width: 100%;
+  margin-left: 25%;
+}
+
+.arrow_left img {
+  width: 75%
+}
+
+.arrow_right {
+  position: absolute;
+  width: 100%;
+  margin-right: 25%;
+}
+
+.arrow_right img {
+  width: 75%
+}
+
+.om_steps {
+  position: relative;
   width: 100%;
 }
 
