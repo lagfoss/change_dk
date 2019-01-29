@@ -807,16 +807,16 @@ border: 1px solid rgba(255, 255, 255, .15);
   margin: auto;
 }
 
-#steps_img {
+.steps_img {
   width: 30%;
   padding: 30px;
 }
 
-#steps_img img {
+.steps_img img {
   width: 90%;
 }
 
-#steps_text {
+.steps_text {
   width: 70%;
   padding: 30px;
 }
@@ -824,15 +824,16 @@ border: 1px solid rgba(255, 255, 255, .15);
 .half:nth-of-type(odd) {
 	float: left;
 }
-
 .half:nth-of-type(even) {
 	float: right;
 }
 
-.om_steps_content:nth-of-type(even) #steps_img {
+.om_steps:nth-of-type(even) .steps_img {
 	float: right;
 }
-
+.om_steps:nth-of-type(even) .steps_text {
+	float: left;
+}
 
 .om_steps_content:hover {
   text-decoration: none;
