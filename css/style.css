@@ -266,7 +266,7 @@ header {
 .menu-expanded a {
 transition: all .5s;
 font-size: 2em;
-padding: 5px;
+padding: 2px;
 color: black;
 display:block;
 text-align: left;
@@ -295,15 +295,14 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .nav_address p {
   font-size: 16px;
-  margin-left: 27%;
 }
 
 .slides1 {
   list-style-type: none;
-  padding: 10px;
+  margin-left: 6%;
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
-}
+} 
 
 .slide1 {
   padding: 10px;
@@ -312,8 +311,8 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .nav_wrapper {
   list-style-type: none;
-  margin-top: 10%;
-  margin-left: 40%;
+  margin-top: 6%;
+  margin-left: 60%;
   display: block;
 }
 
