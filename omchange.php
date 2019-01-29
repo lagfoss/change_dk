@@ -58,11 +58,14 @@
 
 
       <a href="<?php the_sub_field('steps_link'); ?>" class="om_steps">
+        <div class="arrow_left">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
+        </div>
         <div class="steps_number">
           <?php the_sub_field('steps_number'); ?>
         </div>
         <div id="steps" class="om_steps_content">
-          <img id="slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg" alt="">
+          <img id="slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
   				<div id="steps_img" class="half">
             <img src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
