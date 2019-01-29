@@ -21,7 +21,7 @@
 
 </head>
 
-<body> 
+<body>
   <header class="position-fixed">
     <!-- Sociale medier -->
     <div class="container-fluid">
@@ -55,9 +55,22 @@
       </div>
     </div>
 
+
     <!-- Menu/Nav -->
     <div class="container-fluid menu-collapsed">
-       <div class="bar menubtn"><span></span></div>
+      <div class="bar menubtn"><span></span></div>
+      <nav>
+        <ul class="navbar">
+          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
+            <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
+          </a>
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
+        </ul>
+
+
+
+      <!-- <div class="bar menubtn"><span></span></div>
        <nav>
          <ul class="nav_wrapper">
            <?php if(get_field('nav_links', 'option')): ?>
@@ -133,9 +146,10 @@
           </div>
         </ul>
       </nav>
+      -->
     </div>
 
-    <script>
+  <!--  <script>
       jQuery(document).ready(function($){
         $(".menu-collapsed").click(function() {
           $(this).toggleClass("menu-expanded");
@@ -145,15 +159,11 @@
       $('.menubtn').on('click', function(){
         $(this).toggleClass('close');
       });
-    </script>
+    </script> -->
 
-    <ul class="navbar">
-      <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
-      </a>
 
-    </ul>
 
+    </nav>
   </header>
     <section class="content_area">
       <!-- Header content -->

@@ -57,11 +57,12 @@
         $stepsimage = get_sub_field('steps_img'); ?>
 
 
-      <div id="steps" class="om_steps ">
+      <a id="steps" class="om_steps">
+        <img id="slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg"" alt="">
         <div class="steps_number">
           <?php the_sub_field('steps_number'); ?>
         </div>
-      	<div class="om_steps_content" id="slide">
+      	<div class="om_steps_content">
       		<div id="steps_img" class="half">
             <img src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
@@ -71,7 +72,7 @@
       			<?php the_sub_field('steps_text'); ?>
       		</div>
       	</div>
-      </div>
+      </a>
       <?php endwhile; ?>
       <?php else : endif; ?>
 
