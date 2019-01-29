@@ -821,10 +821,17 @@ border: 1px solid rgba(255, 255, 255, .15);
   padding: 30px;
 }
 
-.half:nth-of-type(odd) {
+.steps_dots {
+  position: absolute;
+  width: 40%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.half:nth-of-type(odd), .om_steps:nth-of-type(odd) .steps_dots {
 	float: left;
 }
-.half:nth-of-type(even) {
+.half:nth-of-type(even), .om_steps:nth-of-type(even) .steps_dots {
 	float: right;
 }
 
