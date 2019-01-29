@@ -213,7 +213,7 @@ header {
 
 
 
-.b-a {
+.b-a { 
    transition: all .25s;
    content: "";
    position: absolute;
@@ -235,7 +235,6 @@ header {
   left: -9000px;
    }
 }
-
 
 .b-a-expanded {
    transition: all .25s;
@@ -302,7 +301,7 @@ border: 1px solid rgba(255, 255, 255, .15);
   margin-left: 6%;
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
-} 
+}
 
 .slide1 {
   padding: 10px;

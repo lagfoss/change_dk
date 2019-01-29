@@ -23,7 +23,7 @@
 
 <body>
   <header class="position-fixed">
-    <!-- Sociale medier -->
+    <!-- Content calendar og Sociale medier start -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
         <div class="col-6-float-left align-self-center">
@@ -54,9 +54,10 @@
         </div>
       </div>
     </div>
+    <!-- Content calendar og Sociale medier slut -->
 
 
-    <!-- Menu/Nav -->
+    <!-- Menu/Nav start -->
     <nav>
       <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
@@ -96,87 +97,6 @@
           <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
         </div>
         </ul>
-
-
-
-
-      <!-- <div class="bar menubtn"><span></span></div>
-       <nav>
-         <ul class="nav_wrapper">
-           <?php if(get_field('nav_links', 'option')): ?>
-        	   <ul class="links_wrapper">
-
-        	      <?php while(has_sub_field('nav_links', 'option')): ?>
-        		    <li> <a class="nav_links" href="<?php the_sub_field('nav_links_url', 'option'); ?>">
-                  <?php the_sub_field('nav_links_text', 'option'); ?></a>
-                </li>
-
-        	     <?php endwhile; ?>
-        	   </ul>
-              <?php endif; ?>
-            <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat; display: inline-block; margin-right: 40%;" href="https://www.google.dk/?hl=da">Job</a></li>
-
-          <?php
-
-        $posts = get_posts(array(
-    	     'meta_query' => array(
-    		       array(
-    			     'key' => 'enable_sidebar',
-    			     'compare' => '=',
-    			     'value' => '1'
-    		       )
-    	        )
-            ));
-
-            if( $posts ): ?>
-
-          <ul>
-
-    	     <?php foreach( $posts as $post ):
-
-    		    setup_postdata( $post )
-    		    ?>
-
-    		    <li>
-    			   <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-    		    </li>
-
-    	     <?php endforeach; ?>
-
-    	    </ul>
-
-          <?php wp_reset_postdata(); ?>
-
-          <?php endif; ?>
-
-          <div class="something">
-            <?php if( have_rows('nav_some', 'option') ): ?>
-            <ul class="row slides1">
-              <?php while( have_rows('nav_some', 'option') ): the_row();
-        		    // vars
-        		  $image = get_sub_field('some_icons_nav', 'option');
-        		  $link = get_sub_field('some_url_nav', 'option');
-        		  ?>
-
-              <li class="slide1">
-        			  <?php if( $link ): ?>
-        				<a href="<?php echo $link; ?>">
-        			    <?php endif; ?>
-                  <img style="width:20px; height:20px;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-        			    <?php if( $link ): ?>
-        				</a>
-        			  <?php endif; ?>
-        		    <?php echo $content; ?>
-        		  </li>
-
-              <?php endwhile; ?>
-            </ul>
-            <?php endif; ?>
-            <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
-          </div>
-        </ul>
-      </nav>
-      -->
     </div>
 
    <script>
@@ -189,11 +109,12 @@
       $('.menubtn').on('click', function(){
         $(this).toggleClass('close');
       });
+
     </script>
-
-
-
     </nav>
+        <!-- Menu/Nav slut -->
+        
+
   </header>
     <section class="content_area">
       <!-- Header content -->
