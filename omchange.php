@@ -63,7 +63,9 @@
         <div class="arrow_right">
           <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
         </div>
-        <div class="steps_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+        <div class="steps_dots_right" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+        </div>
+        <div class="steps_dots_left" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
         </div>
         <div class="steps_number">
           <?php the_sub_field('steps_number'); ?>
