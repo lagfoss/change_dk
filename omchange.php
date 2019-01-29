@@ -68,11 +68,11 @@
         </div>
         <div id="steps" class="om_steps_content">
           <img id="slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
-  				<div id="steps_img" class="half">
+  				<div id="" class="half steps_img">
             <img src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
-      		<div id="steps_text" class="half">
+      		<div id="" class="half steps_text">
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<?php the_sub_field('steps_text'); ?>
       		</div>
