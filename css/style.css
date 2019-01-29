@@ -746,29 +746,30 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 /* Steps start */
 
-.arrow_left {
-  position: absolute;
+.om_steps {
+  position: relative;
   width: 100%;
-  margin-left: 25%;
 }
 
-.arrow_left img {
-  width: 75%
+.arrow_left {
+  position: absolute;
+  width: 90%;
+  margin-left: 30%;
+  margin-top: -27%;
+  z-index: -1;
 }
 
 .arrow_right {
   position: absolute;
-  width: 100%;
-  margin-right: 25%;
+  width: 90%;
+  right: 0;
+  margin-right: 30%;
+  margin-top: -30%;
+  z-index: -1;
 }
 
-.arrow_right img {
-  width: 75%
-}
-
-.om_steps {
-  position: relative;
-  width: 100%;
+.arrow_left img, .arrow_right img {
+  width: 100%
 }
 
 .steps_number {
@@ -796,11 +797,11 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .om_steps:nth-last-of-type(odd) {
-  margin: 0 15% 0 40%;
+  margin: 0 15% 13% 40%;
 }
 
 .om_steps:nth-last-of-type(even) {
-  margin: 0 40% 0 15%;
+  margin: 0 40% 14% 15%;
 }
 
 .half {
@@ -829,9 +830,22 @@ border: 1px solid rgba(255, 255, 255, .15);
 	float: right;
 }
 
+.om_steps:nth-of-type(odd) .arrow_right {
+	display: none;
+}
+
+.om_steps:nth-of-type(even) .arrow_left {
+	display: none;
+}
+
+.om_steps:nth-of-type(1) .arrow_left {
+	display: none;
+}
+
 .om_steps:nth-of-type(even) .steps_img {
 	float: right;
 }
+
 .om_steps:nth-of-type(even) .steps_text {
 	float: left;
 }
@@ -865,7 +879,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 .om_slider_title {
   text-align: center;
   width: 100%;
-  margin: 150px auto 20px auto;
+  margin: 0 auto 20px auto;
 }
 
 /*OM CHANGE slut*/
