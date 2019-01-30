@@ -213,7 +213,7 @@ header {
 
 
 
-.b-a { 
+.b-a {
    transition: all .25s;
    content: "";
    position: absolute;
@@ -640,6 +640,10 @@ border: 1px solid rgba(255, 255, 255, .15);
   border-style: solid;
   border-width: 2px;
   border-color: #111517;
+}
+
+.owl-dot.active {
+  outline: none;
 }
 
 .know_button:hover {
