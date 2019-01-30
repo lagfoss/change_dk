@@ -69,7 +69,7 @@
 	</div>
 
 	<!-- Process steps -->
-	<div class="container-fluid wrapper">
+	<div class="container-fluid">
 		<div class="row">
 
 			<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
@@ -86,7 +86,12 @@
 						$procestext = get_sub_field('process_text');
 					?>
 				<div class="row ourprocess">
-					<div class="col-1 process-steps"><div class="inner"><?php echo $processnumber; ?><div class="dash"></div></div></div>
+					<div class="col-1 process-steps">
+						<div class="inner">
+							<?php echo $processnumber; ?>
+							<div class="dash"></div>
+						</div>
+					</div>
     			<div class="col-11 font-weight-bold">
       			<?php echo $processtitle; ?>
       			<div class="row">
