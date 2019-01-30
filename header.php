@@ -68,8 +68,8 @@
       </div>
       <div class="container-fluid">
         <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="close" onclick="closeNav()"><div>&times;</div></a>
           <div class="overlay-content">
-            <a href="javascript:void(0)" class="close" onclick="closeNav()"> <div class="close"></div> </a>
           <div>
 
           <div class="nav_wrapper">
