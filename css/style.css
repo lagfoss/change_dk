@@ -642,6 +642,10 @@ border: 1px solid rgba(255, 255, 255, .15);
   border-color: #111517;
 }
 
+.owl-dot.active {
+  outline: none;
+}
+
 .know_button:hover {
   text-decoration: none;
   color: inherit;

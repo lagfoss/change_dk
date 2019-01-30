@@ -1,8 +1,9 @@
 </section>
 
 <footer>
-  <div class="FooterProject">
+      <!-- Need a successfull project start -->
 
+  <div class="FooterProject">
     <h2><?php the_field('footer_project', 'option'); ?></h2>
   <a class="footer_button" href="<?php the_field('footer_button_url', 'option'); ?>"><?php the_field('footer_button_text', 'option'); ?>
 
@@ -10,11 +11,16 @@
   <img class="" src="<?php the_field('footer_button_icon', 'option'); ?>" />
   <?php endif; ?></a>
   </div>
+  <!-- Need a successfull project slut -->
 
+  <!-- lets talk start -->
   <div class="letstalkfooter">
     <?php the_field('footer_lets_talk', 'option'); ?>
     <h2><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></h2>
   </div>
+  <!-- lets talk slut -->
+
+  <!-- sociale medier footer start -->
 
   <div class="container-fluid">
     <div class="row SoMefooter">
@@ -43,18 +49,26 @@
   </div>
   </div>
   </div>
+  <!-- sociale medier footer slut -->
+
+  <!-- kontakt information footer start -->
 
   <div class="container-fluid ContactFooter">
    <h3><a href="mailto:<?php the_field('footer_mail', 'option'); ?>" class="footer_mail"><?php the_field('footer_mail', 'option'); ?></a></h3>
     <a href="<?php the_field('google_maps_link', 'option'); ?>" class="footer_address"><?php the_field('footer_address', 'option'); ?></a>
 
   </div>
+  <!-- kontakt information footer slut -->
 
-<div class="container-fluid">
-  <div class="row justify-content-center cvr">
-    <div class="align-self-center">Change Aps &#9474; CVR: 37197351</div>
+  <!-- aps start -->
+
+  <div class="container-fluid">
+    <div class="row justify-content-center cvr">
+      <div class="align-self-center">Change Aps &#9474; CVR: 37197351</div>
+    </div>
   </div>
-</div>
+  <!-- aps slut -->
+
 
 </footer>
 <script type="text/javascript">
