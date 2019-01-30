@@ -19,6 +19,14 @@ body {
   color: #111517;
 }
 
+.wrapper {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left:  15px;
+}
+
 /*FONTS*/
 
 h1.big {
@@ -199,20 +207,15 @@ header {
 
 
 .menubtn  {
-  display:block;
-  position: absolute;
-  width:50px;
-  height:35px;
-  right: 2%;
-  top: 60%;
-  margin-top:0;
-  cursor:pointer;
-  width: 26px;
-  height: 22px;
   z-index: 100;
-
+  position: fixed;
+  top: 0;
+  width:18px;
+  height: 20px;
+  cursor:pointer;
+  top: 9%;
+  left: 95%;
 }
-
 
 .menubtn span,
 .menubtn::before,
@@ -220,9 +223,9 @@ header {
   display: block;
   position: absolute;
   width:100%;
-  height:5px;
-  right:0;
-  background:#555555;
+  height: 4px;
+  background: grey;
+
   transition:all 0.2s ease-in-out;
   -webkit-transition:all 0.2s ease-in-out;
   -moz-transition:all 0.2s ease-in-out;
@@ -243,17 +246,12 @@ header {
 
 .menubtn::before {
   top:0;
-
 }
-
 .menubtn::after {
   bottom:0;
-
 }
-
 .menubtn.close span {
   opacity:0;
-  right:100%;
 }
 
 .menubtn.close::before {
@@ -270,6 +268,19 @@ header {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+
+
+.b-a {
+   transition: all .25s;
+   content: "";
+   position: absolute;
+   right: 0;
+   height: 6px;
+   width: 30px;
+   border-radius: 15px;
+   background-color: black;
 }
  /*
 .menu-collapsed {
@@ -728,7 +739,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .om_intro_title h2 {
   text-align: center;
-  width: 35%;
+  width: 50%;
   line-height: 0.9;
   margin: auto;
   padding: 0;
@@ -749,12 +760,12 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .om_intro_dots {
   position: absolute;
-  width: 41%;
-  height: 35%;
+  width: 55%;
+  height: 33%;
   background-repeat: repeat;
   background-size: auto;
-  right: 29%;
-  top: 71%;
+  right: 22%;
+  top: 74%;
   z-index: -1;
 }
 
@@ -777,6 +788,12 @@ border: 1px solid rgba(255, 255, 255, .15);
 .intro_box img {
   display: block;
   margin: 10px auto 10px auto;
+}
+
+.intro_box p {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
 }
 
 .intro_box:hover {
@@ -810,7 +827,7 @@ border: 1px solid rgba(255, 255, 255, .15);
 .vores_process {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 140px auto;
 }
 
 /* Vores process slut */

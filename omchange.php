@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <body <?php body_class(whitebg); ?>>
 
-  <div class="container-fluid om_intro">
+  <div class="container-fluid om_intro wrapper">
     <div class="row">
       <div class="om_intro_title">
         <h2><?php the_field('om_intro_title'); ?></h2>
@@ -43,7 +43,7 @@
 
   <!-- Vores process -->
 
-  <div class="container-fluid">
+  <div class="container-fluid wrapper">
     <div class="row">
       <div class="vores_process">
         <h2><?php the_field('vores_process_title'); ?></h2>
@@ -92,7 +92,7 @@
 
 <!-- Slider -->
 
-  <div class="container-fluid">
+  <div class="container-fluid wrapper">
     <div class="row">
       <div class="om_slider_title">
         <h2><?php the_field('om_slider_title'); ?></h2>
