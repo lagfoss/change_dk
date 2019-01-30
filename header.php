@@ -62,51 +62,74 @@
       <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
       </a>
-      <div class="container-fluid menu-collapsed">
-        <div class="bar menubtn"><span></span></div>
-        <ul class="navbar nav_wrapper">
 
-        <div>
-        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+      <span class="menubtn" onclick="openNav()"></span>
 
-        <?php if( 'yes' == get_field('job_available')) : ?>
-          <span>hello</span>
 
-        <!-- <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li> -->
-        <?php else : ?>
-          <span>goodbye</span>
+      <div class="container-fluid">
+        <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <div>
+          <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
-        <?php endif; ?>
-        </div>
+          <?php if(get_field('job_available')): ?>
+            <p>hello</p>
+           <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
 
-        <div class="something">
-          <?php if( have_rows('nav_some', 'option') ): ?>
-          <div class="row slides1">
-            <?php while( have_rows('nav_some', 'option') ): the_row();
-              // vars
-            $image = get_sub_field('some_icons_nav', 'option');
-            $link = get_sub_field('some_url_nav', 'option');
-            ?>
+          <?php else: ?>
+            <p>goodbye</p>
 
-            <li class="slide1">
-              <?php if( $link ): ?>
-              <a href="<?php echo $link; ?>">
-                <?php endif; ?>
-                <img style="width:20px; height:20px;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-                <?php if( $link ): ?>
-              </a>
-              <?php endif; ?>
-              <?php echo $content; ?>
-            </li>
-
-            <?php endwhile; ?>
-          </div>
           <?php endif; ?>
-          <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
+
         </div>
-        </ul>
+
+          <div class="something">
+            <?php if( have_rows('nav_some', 'option') ): ?>
+            <div class="row slides1">
+              <?php while( have_rows('nav_some', 'option') ): the_row();
+                // vars
+              $image = get_sub_field('some_icons_nav', 'option');
+              $link = get_sub_field('some_url_nav', 'option');
+              ?>
+
+              <li class="slide1">
+                <?php if( $link ): ?>
+                <a href="<?php echo $link; ?>">
+                  <?php endif; ?>
+                  <img style="width:20px; height:20px;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                  <?php if( $link ): ?>
+                </a>
+                <?php endif; ?>
+                <?php echo $content; ?>
+              </li>
+
+              <?php endwhile; ?>
+            </div>
+            <?php endif; ?>
+            <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
+          </div>
+        </div>
+        </div>
+
+        <script type="text/javascript">
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+          }
+
+          function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+          }
+
+          $('.menubtn').on('click', function(){
+            $(this).toggleClass('close','menubtn');
+          });
+        </script>
+
     </div>
 
+
+<!--
    <script>
       jQuery(document).ready(function($){
         $(".menu-collapsed").click(function() {
@@ -114,11 +137,8 @@
         });
       });
 
-      $('.menubtn').on('click', function(){
-        $(this).toggleClass('close','menubtn');
-      });
 
-    </script>
+    </script> -->
     </nav>
         <!-- Menu/Nav slut -->
 
