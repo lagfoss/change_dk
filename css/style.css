@@ -19,6 +19,14 @@ body {
   color: #111517;
 }
 
+.wrapper {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left:  15px;
+}
+
 /*FONTS*/
 
 h1.big {
@@ -188,20 +196,15 @@ header {
 
 
 .menubtn  {
-  display:block;
-  position: absolute;
-  width:50px;
-  height:35px;
-  right: 2%;
-  top: 60%;
-  margin-top:0;
-  cursor:pointer;
-  width: 26px;
-  height: 22px;
   z-index: 100;
-
+  position: fixed;
+  top: 0;
+  width:18px;
+  height: 20px;
+  cursor:pointer;
+  top: 9%;
+  left: 95%;
 }
-
 
 .menubtn span,
 .menubtn::before,
@@ -209,9 +212,9 @@ header {
   display: block;
   position: absolute;
   width:100%;
-  height:5px;
-  right:0;
-  background:#555555;
+  height: 4px;
+  background: grey;
+
   transition:all 0.2s ease-in-out;
   -webkit-transition:all 0.2s ease-in-out;
   -moz-transition:all 0.2s ease-in-out;
@@ -233,14 +236,11 @@ header {
 .menubtn::before {
   top:0;
 }
-
 .menubtn::after {
   bottom:0;
 }
-
 .menubtn.close span {
   opacity:0;
-  right:100%;
 }
 
 .menubtn.close::before {
@@ -258,6 +258,79 @@ header {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+<<<<<<< HEAD
+
+
+
+.b-a {
+   transition: all .25s;
+   content: "";
+   position: absolute;
+   right: 0;
+   height: 6px;
+   width: 30px;
+   border-radius: 15px;
+   background-color: black;
+}
+ /*
+.menu-collapsed {
+   transition: all .25s;
+   position: fixed;
+   z-index: 1;
+ }
+ .menu-collapsed ul {
+  transition: all 0s;
+  position: fixed;
+  left: -9000px;
+   }
+}
+
+.b-a-expanded {
+   transition: all .25s;
+   top: -0px;
+}
+.menu-expanded {
+   transition: all .25s;
+   font-family: 'bebas-neue',sans-serif;
+   text-align: center;
+   line-height: 20px;
+   height: 100%;
+   width: 100%;
+   border-radius: 0px;
+   top: 0;
+   left: 0;
+   background-color: #f2f2f2;
+}
+.menu-expanded ul {
+  transition: all 0s;
+  position: relative;
+  left: 0;
+  z-index: 2;
+  margin-top: 60px;
+  padding: 0;
+  margin-top: 10%;
+}
+
+.menu-expanded a {
+transition: all .5s;
+font-size: 2em;
+padding: 2px;
+color: black;
+display:block;
+text-align: left;
+margin: 15px;
+
+&:hover {
+background-color: white;
+text-decoration: line-through;
+color: #e54c00;
+transition: all .15s;
+letter-spacing: 2px;
+border: 1px solid rgba(255, 255, 255, .15);
+}}}
+ */
+=======
+>>>>>>> daa7143cb7f0ab723e95adb08b3644f98edd257f
 
 .some_icons_nav {
   list-style-type: none;
@@ -658,7 +731,7 @@ header {
 
 .om_intro_title h2 {
   text-align: center;
-  width: 35%;
+  width: 50%;
   line-height: 0.9;
   margin: auto;
   padding: 0;
@@ -679,12 +752,12 @@ header {
 
 .om_intro_dots {
   position: absolute;
-  width: 41%;
-  height: 35%;
+  width: 55%;
+  height: 33%;
   background-repeat: repeat;
   background-size: auto;
-  right: 29%;
-  top: 71%;
+  right: 22%;
+  top: 74%;
   z-index: -1;
 }
 
@@ -707,6 +780,12 @@ header {
 .intro_box img {
   display: block;
   margin: 10px auto 10px auto;
+}
+
+.intro_box p {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
 }
 
 .intro_box:hover {
@@ -740,7 +819,7 @@ header {
 .vores_process {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 140px auto;
 }
 
 /* Vores process slut */
