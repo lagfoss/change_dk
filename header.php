@@ -63,15 +63,18 @@
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
       </a>
 
-
+      <div onclick="openNav()" class="menubtn">
+        <span></span>
+      </div>
       <div class="container-fluid">
         <div id="myNav" class="overlay">
-          <div onclick="openNav()" class="menubtn">
-            <span></span>
-          </div>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
+          <div class="overlay-content">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()"> <div class="close"></div> </a>
           <div>
+
+          <div class="nav_wrapper">
+
+
           <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
           <?php if(get_field('job_available')): ?>
@@ -83,7 +86,7 @@
 
           <?php endif; ?>
 
-        </div>
+
 
           <div class="something">
             <?php if( have_rows('nav_some', 'option') ): ?>
@@ -109,6 +112,8 @@
             </div>
             <?php endif; ?>
             <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
+            </div>
+          </div>
           </div>
         </div>
         </div>
