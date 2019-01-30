@@ -138,6 +138,10 @@ header {
   padding: 5px;
 }
 
+.menu-item a {
+  font-size: 42px;
+}
+
 .menu-item a:hover {
   color: #e54c00;
   text-decoration: line-through;
@@ -228,6 +232,7 @@ header {
   width:100%;
   height: 4px;
   background: grey;
+
   transition:all 0.2s ease-in-out;
   -webkit-transition:all 0.2s ease-in-out;
   -moz-transition:all 0.2s ease-in-out;
@@ -274,8 +279,8 @@ header {
 
 .some_icons_nav {
   list-style-type: none;
-  display: flex;
-  flex-flow: row;
+    display: flex;
+    flex-flow: row;
 }
 
 .nav_address {
@@ -289,6 +294,7 @@ header {
 
 .slides1 {
   list-style-type: none;
+  margin-left: 6%;
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
 }
@@ -300,10 +306,9 @@ header {
 
 .nav_wrapper {
   list-style-type: none;
-  margin-top: 12%;
+  margin-top: 6%;
   margin-left: 60%;
   display: block;
-  text-align: left;
 }
 
 .nav_links {
@@ -774,8 +779,8 @@ header {
 .arrow_left {
   position: absolute;
   width: 90%;
-  margin-left: 30%;
-  margin-top: -27%;
+  margin-left: 25%;
+  margin-top: -28%;
   z-index: -1;
 }
 
@@ -783,8 +788,8 @@ header {
   position: absolute;
   width: 90%;
   right: 0;
-  margin-right: 30%;
-  margin-top: -29%;
+  margin-right: 25%;
+  margin-top: -31%;
   z-index: -1;
 }
 
@@ -817,11 +822,11 @@ header {
 }
 
 .om_steps:nth-last-of-type(even) {
-  margin: 0 5% 19% 30%;
+  margin: 0 5% 21% 30%;
 }
 
 .om_steps:nth-last-of-type(odd) {
-  margin: 0 30% 20% 5%;
+  margin: 0 30% 23% 5%;
 }
 
 .half {
@@ -845,12 +850,12 @@ header {
 
 .steps_dots_right {
   position: absolute;
-  width: 60%;
-  height: 120%;
+  width: 66%;
+  height: 125%;
   background-repeat: repeat;
   background-size: auto;
-  right: -3%;
-  bottom: -12%;
+  right: -5%;
+  bottom: -14%;
   z-index: -1;
 }
 
