@@ -69,7 +69,7 @@
 	</div>
 
 	<!-- Process steps -->
-	<div class="container-fluid">
+	<div class="container-fluid wrapper">
 		<div class="row">
 
 			<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
@@ -109,7 +109,7 @@
 	</div>
 
 	<!-- Section med hvad vi gøre -->
-	<div class="container-fluid do_for_u">
+	<div class="container-fluid do_for_u wrapper">
 
 		<div class="row wcwd_section">
 			<div class="col-sm">
@@ -197,7 +197,7 @@
 		</div>
 
 	<!-- Image carousel and get to know us -->
-	<div class="container-fluid">
+	<div class="container-fluid wrapper">
 		<div class="row know_us align-items-center">
 			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
 	    </div>
