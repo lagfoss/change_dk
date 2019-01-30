@@ -616,6 +616,18 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .know_us {
   margin: 60px auto 60px auto;
+  position: relative;
+}
+
+.know_us_dots {
+  position: absolute;
+  width: 60%;
+  height: 120%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  left: 15%;
+  top: 0;
+  z-index: -1;
 }
 
 .know_us_gallery {
