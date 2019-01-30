@@ -14,6 +14,8 @@
         <div class="stroke"></div>
       </div>
     </div>
+    <div class="om_intro_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+    </div>
     <div class="row justify-content-center intro_boxes">
         <?php if( have_rows('om_intro_boxes') ): ?>
 
