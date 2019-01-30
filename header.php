@@ -63,14 +63,12 @@
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
       </a>
 
-      <div onclick="openNav()" class="menubtn">
-        <span></span>
-      </div>
-
-
 
       <div class="container-fluid">
         <div id="myNav" class="overlay">
+          <div onclick="openNav()" class="menubtn">
+            <span></span>
+          </div>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <div>
