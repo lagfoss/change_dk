@@ -136,6 +136,10 @@ header {
   color: #e54c00;
 }
 
+.menu-item a {
+  font-size: 42px;
+}
+
 .menu-item a:hover {
   color: #e54c00;
   text-decoration: line-through;
