@@ -63,7 +63,9 @@
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
       </a>
 
-      <span class="menubtn" onclick="openNav()"></span>
+      <div onclick="openNav()" class="menubtn">
+        <span></span>
+      </div>
 
 
       <div class="container-fluid">
