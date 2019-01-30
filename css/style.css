@@ -167,10 +167,8 @@ header {
 
 .overlay-content {
   position: relative;
-  top: 25%;
-  width: 100%;
+
   text-align: center;
-  margin-top: 30px;
 }
 
 .overlay a {
@@ -184,15 +182,6 @@ header {
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
-
-@media screen and (max-height: 750px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
 }
 
 
