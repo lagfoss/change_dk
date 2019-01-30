@@ -621,11 +621,11 @@ border: 1px solid rgba(255, 255, 255, .15);
 
 .know_us_dots {
   position: absolute;
-  width: 44%;
-  height: 100%;
+  width: 43%;
+  height: 102%;
   background-repeat: repeat;
   left: 10%;
-  top: 0;
+  top: -1%;
   z-index: -1;
 }
 
