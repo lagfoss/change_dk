@@ -842,8 +842,8 @@ border: 1px solid rgba(255, 255, 255, .15);
 .arrow_left {
   position: absolute;
   width: 90%;
-  margin-left: 30%;
-  margin-top: -27%;
+  margin-left: 25%;
+  margin-top: -28%;
   z-index: -1;
 }
 
@@ -851,8 +851,8 @@ border: 1px solid rgba(255, 255, 255, .15);
   position: absolute;
   width: 90%;
   right: 0;
-  margin-right: 30%;
-  margin-top: -29%;
+  margin-right: 25%;
+  margin-top: -31%;
   z-index: -1;
 }
 
@@ -885,11 +885,11 @@ border: 1px solid rgba(255, 255, 255, .15);
 }
 
 .om_steps:nth-last-of-type(even) {
-  margin: 0 5% 19% 30%;
+  margin: 0 5% 21% 30%;
 }
 
 .om_steps:nth-last-of-type(odd) {
-  margin: 0 30% 20% 5%;
+  margin: 0 30% 23% 5%;
 }
 
 .half {
