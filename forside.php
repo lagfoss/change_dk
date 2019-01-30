@@ -39,7 +39,7 @@
 	</div>
 
 	<!-- CASE SLIDER -->
-	<div class="container-fluid case">
+	<div class="container-fluid case wrapper">
 		<div class="row modul_margin">
 			<?php
 
@@ -69,7 +69,7 @@
 	</div>
 
 	<!-- Process steps -->
-	<div class="container-fluid">
+	<div class="container-fluid wrapper">
 		<div class="row">
 
 			<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
