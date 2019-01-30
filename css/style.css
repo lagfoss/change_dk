@@ -175,8 +175,10 @@ header {
 
 .overlay-content {
   position: relative;
-
+  top: 25%;
+  width: 100%;
   text-align: center;
+  margin-top: 30px;
 }
 
 .overlay a {
@@ -190,6 +192,15 @@ header {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+@media screen and (max-height: 750px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
 
 
@@ -258,7 +269,6 @@ header {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-<<<<<<< HEAD
 
 
 
@@ -329,8 +339,6 @@ letter-spacing: 2px;
 border: 1px solid rgba(255, 255, 255, .15);
 }}}
  */
-=======
->>>>>>> daa7143cb7f0ab723e95adb08b3644f98edd257f
 
 .some_icons_nav {
   list-style-type: none;
