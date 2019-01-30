@@ -98,9 +98,10 @@
         			<div class="col-11 font-weight-normal"><?php echo $procestext; ?></div>
       			</div>
     			</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
+
 				</div>
+			<?php endwhile; ?>
+			<?php endif; ?>
 
 			</div>
 
