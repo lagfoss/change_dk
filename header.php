@@ -73,15 +73,20 @@
           <div class="nav_wrapper">
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
-          <?php if(get_field('job_available')): ?>
-            <p>hello</p>
-           <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
+            <!-- Job link til/fra -->
+            <?php
+            if( get_field('job_available', 'option') )
+              $value = get_field('job_available', 'option');
+              ?>
+              <?php  if( $value == true ) : ?>
 
-          <?php else: ?>
-            <p>goodbye</p>
+                <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
 
-          <?php endif; ?>
+              <?php else : ?>
+                <span></span>
+              <?php endif; ?>
 
+            <!-- Social media link -->
             <?php if( have_rows('nav_some', 'option') ): ?>
             <div class="row nav_some_wrapper">
               <?php while( have_rows('nav_some', 'option') ): the_row();
@@ -99,7 +104,7 @@
                 </a>
                 <?php endif; ?>
                 <?php echo $content; ?>
-              </li> 
+              </li>
 
               <?php endwhile; ?>
             </div>

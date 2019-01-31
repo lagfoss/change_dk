@@ -16,25 +16,38 @@
 		</div>
 
 		<!-- Showreel on hero -->
-		<?php if( have_rows('showreel') ): ?>
-		<?php while( have_rows('showreel') ): the_row();
-			// vars
-			$image = get_sub_field('showreel_img');
-			$content = get_sub_field('showreel_watch_our');
-			$content2 = get_sub_field('showreel_showreel');
+		<!-- Showreel on hero -->
+		<?php
+		if( get_field('showreel_toggle') )
+			$value = get_field('showreel_toggle');
 			?>
-			<li class=" watchourshowreel">
+			<?php  if( $value == true ) : ?>
 
-				<img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
 
-			  <p class="Watch"><?php echo $content; ?></p>
-				<p class="Showreel"><?php echo $content2; ?></p>
+				<?php if( have_rows('showreel') ): ?>
+				<?php while( have_rows('showreel') ): the_row();
+					// vars
+					$image = get_sub_field('showreel_img');
+					$content = get_sub_field('showreel_watch_our');
+					$content2 = get_sub_field('showreel_showreel');
+					?>
+					<li class=" watchourshowreel">
 
-			</li>
+						<img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
 
-			<?php endwhile; ?>
+						<p class="Watch"><?php echo $content; ?></p>
+						<p class="Showreel"><?php echo $content2; ?></p>
 
-		<?php endif; ?>
+					</li>
+
+					<?php endwhile; ?>
+
+				<?php endif; ?>
+
+
+			<?php else : ?>
+				<span></span>
+			<?php endif; ?>
 
 	</div>
 
@@ -111,7 +124,6 @@
 	<!-- Section med hvad vi gøre -->
 	<div class="container-fluid do_for_u wrapper">
 		<div class="row justify-content-center">
-
 			<div class="col-sm-4 wcwd-content">
 					<h2><?php the_field('wcwd_header'); ?></h2>
 					<p><?php the_field('wcwd_text'); ?></p>
