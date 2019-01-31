@@ -58,24 +58,25 @@
 
 
     <!-- Menu/Nav start -->
+    <div id="primaryNav">
     <nav>
       <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
       </a>
 
-      <div onclick="openNav()" class="menubtn">
-        <span></span>
-      </div>
       <div class="container-fluid">
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="close" onclick="closeNav()"><div>&times;</div></a>
-          <div class="overlay-content">
-          <div>
 
+
+               <div class="menubtn">
+              <span></span>
+              </div>
+
+        <div id="popUpNav" class="overlay" >
+          <div class="overlay-content">
           <div class="nav_wrapper">
 
 
-          <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
           <?php if(get_field('job_available')): ?>
             <p>hello</p>
@@ -114,25 +115,36 @@
             <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
             </div>
           </div>
-          </div>
         </div>
         </div>
+      </div>
 
         <script type="text/javascript">
-        function openNav() {
-          document.getElementById("myNav").style.width = "100%";
-          }
+          function openNav() {
+          menubtn.classList.add("is-active");
+          document.getElementById("popUpNav").style.width = "100%";
+            }
 
-          function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-          }
+            function closeNav() {
+              menubtn.classList.remove("is-active");
+              document.getElementById("popUpNav").style.width = "0%";
+            }
 
+            var menubtn = document.querySelector(".menubtn");
+
+            menubtn.addEventListener('click', () => menubtn.classList.contains('is-active') ? closeNav() : openNav());
+
+
+
+
+
+            closeNav();
           $('.menubtn').on('click', function(){
             $(this).toggleClass('close','menubtn');
           });
         </script>
 
-    </div>
+
 
 
 <!--
@@ -146,6 +158,7 @@
 
     </script> -->
     </nav>
+    </div>
         <!-- Menu/Nav slut -->
 
 
