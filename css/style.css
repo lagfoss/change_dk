@@ -276,7 +276,7 @@ header {
   text-decoration: none;
   color: inherit;
 }
- 
+
 .nav_some_wrapper {
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
@@ -468,7 +468,7 @@ header {
 
 /* Process sektion */
 
-.process-img {
+.process_img {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -476,7 +476,7 @@ header {
   padding: 10px;
 }
 
-.process-steps {
+.process_steps {
   font-family: 'bebas-neue',sans-serif;
   font-size: 83px;
   line-height: 0.88;
@@ -491,7 +491,6 @@ header {
   position: relative;
   color: #e3e3e3;
   text-align: center;
-  padding-right: 25px;
 }
 
 .dash {
@@ -503,6 +502,10 @@ header {
   border-style: solid;
   border-width: 4px;
   border-color: #f2f2f2;
+}
+
+.process_steps_text {
+  margin-left: 20px;
 }
 
 
@@ -522,19 +525,8 @@ header {
 }
 
 .wcwd_headline {
-  width: 255px;
-  height: 23px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
-  padding: 20px 0px;
-}
-
-.wcwd_text {
-  width: 290px;
-  height: 104px;
-  font-size: 16px;
-  line-height: 1.63;
-  padding: 15px 0px;
 }
 
 .wcwd-content {

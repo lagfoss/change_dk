@@ -72,7 +72,7 @@
 	<div class="container-fluid wrapper">
 		<div class="row">
 
-			<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
+			<div class="col-6 process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
 			</div>
 
 			<div class="col-6">
@@ -86,16 +86,16 @@
 						$procestext = get_sub_field('process_text');
 					?>
 				<div class="row ourprocess">
-					<div class="col-1 process-steps">
+					<div class="col-1 process_steps">
 						<div class="inner">
 							<?php echo $processnumber; ?>
 							<div class="dash"></div>
 						</div>
 					</div>
-    			<div class="col-11 font-weight-bold">
+    			<div class="col-10 font-weight-bold process_steps_text">
       			<?php echo $processtitle; ?>
       			<div class="row">
-        			<div class="col-11 font-weight-normal"><?php echo $procestext; ?></div>
+        			<div class="font-weight-normal"><?php echo $procestext; ?></div>
       			</div>
     			</div>
 
@@ -114,8 +114,8 @@
 		<div class="row wcwd_section">
 			<div class="col-sm">
 				<div class="col-sm-12 hover1">
-						<h2 class="wcwd_header"><?php the_field('wcwd_header'); ?></h2>
-						<p class="wcwd_text"><?php the_field('wcwd_text'); ?></p>
+						<h2><?php the_field('wcwd_header'); ?></h2>
+						<p><?php the_field('wcwd_text'); ?></p>
 				</div>
 			</div>
 
@@ -124,7 +124,7 @@
 						<?php if( get_field('brandstrategi_img') ): ?>
 						<img class="wcwd_img" src="<?php the_field('brandstrategi_img'); ?>" />
 						<?php endif; ?>
-						<h6 class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></h6>
+						<div class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></div>
 						<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
 					</div>
 			</div>
@@ -134,8 +134,8 @@
 					<?php if( get_field('kommunikationsdesign_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('kommunikationsdesign_img'); ?>" />
 					<?php endif; ?>
-					<h6 class="wcwd_headline"><?php the_field('kommunikationsdesign_header'); ?></h6>
-					<p class="wcwd_text"><?php the_field('kommunikationsdesign_text'); ?></p>
+					<div class="wcwd_headline"><?php the_field('kommunikationsdesign_header'); ?></div>
+					<p><?php the_field('kommunikationsdesign_text'); ?></p>
 				</div>
 			</div>
 		</div>
@@ -146,8 +146,8 @@
 					<?php if( get_field('social_media_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('social_media_img'); ?>" />
 					<?php endif; ?>
-					<h6 class="wcwd_headline"><?php the_field('social_media_header'); ?></h6>
-					<p class="wcwd_text"><?php the_field('social_media_text'); ?></p>
+					<div class="wcwd_headline"><?php the_field('social_media_header'); ?></div>
+					<p><?php the_field('social_media_text'); ?></p>
 				</div>
 			</div>
 
@@ -156,8 +156,8 @@
 					<?php if( get_field('pressemeddelelse_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('pressemeddelelse_img'); ?>" />
 					<?php endif; ?>
-					<h6 class="wcwd_headline"><?php the_field('pressemeddelelse_header'); ?></h6>
-					<p class="wcwd_text"><?php the_field('pressemeddelelse_text'); ?></p>
+					<div class="wcwd_headline"><?php the_field('pressemeddelelse_header'); ?></div>
+					<p><?php the_field('pressemeddelelse_text'); ?></p>
 				</div>
 			</div>
 
@@ -166,8 +166,8 @@
 					<?php if( get_field('kommunikationsstrategi_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('kommunikationsstrategi_img'); ?>" />
 					<?php endif; ?>
-					<h6 class="wcwd_headline"><?php the_field('kommunikationsstrategi_header'); ?></h6>
-					<p class="wcwd_text"><?php the_field('kommunikationsstrategi_text'); ?></p>
+					<div class="wcwd_headline"><?php the_field('kommunikationsstrategi_header'); ?></div>
+					<p><?php the_field('kommunikationsstrategi_text'); ?></p>
 				</div>
 			</div>
 
