@@ -361,13 +361,13 @@ header {
 
 .hero_info {
     position: absolute;
-    top: 38%;
+    top: 32%;
     margin-left: 12%;
     width: 100%;
 }
 
 .hero_text {
-  width: 50%;
+  width: 600px;
 }
 
 .hero_button {
@@ -391,6 +391,7 @@ header {
 
 .watchourshowreel {
     bottom: 45%;
+    margin-left: 40%;
     position: absolute;
     display: block;
 }

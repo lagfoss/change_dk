@@ -5,7 +5,7 @@
 <!-- Hero image, text and call to action -->
 
 	<div class="row hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
-		<div class="col-sm-8">
+		<div class="col-sm-6">
 		<div class="hero_info">
 			<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
@@ -17,7 +17,7 @@
 		</div>
 
 		<!-- Showreel on hero -->
-		<div class="col-sm-4">
+		<div class="col-sm-6">
 		<?php
 		if( get_field('showreel_toggle') )
 			$value = get_field('showreel_toggle');
