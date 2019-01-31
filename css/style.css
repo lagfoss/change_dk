@@ -292,6 +292,7 @@ header {
   list-style-type: none;
   margin-left: 60%;
   display: block;
+  width: 250px;
 }
 
 .nav_links {

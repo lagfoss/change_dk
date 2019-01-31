@@ -73,27 +73,20 @@
           <div class="nav_wrapper">
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
+            <!-- Job link til/fra -->
             <?php
             if( get_field('job_available', 'option') )
               $value = get_field('job_available', 'option');
               ?>
               <?php  if( $value == true ) : ?>
-                <p>
-                  Rani er en nar
-                </p>
-              <?php else : ?>
-                <p>
-                  Rani er stadig en nar
-                </p>
 
+                <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
+
+              <?php else : ?>
+                <span></span>
               <?php endif; ?>
 
-
-
-        <!-- Job link
-           <li class="nav_job"><a style="font-size: 16px;font-family: Montserrat;" href="https://www.google.dk/?hl=da">Job</a></li>
-         -->
-
+            <!-- Social media link -->
             <?php if( have_rows('nav_some', 'option') ): ?>
             <div class="row nav_some_wrapper">
               <?php while( have_rows('nav_some', 'option') ): the_row();
