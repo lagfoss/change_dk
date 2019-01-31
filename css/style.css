@@ -171,7 +171,7 @@ header {
 /* Nav start */
 
 .overlay {
-  height: 100%;
+  height: 100vh;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -208,7 +208,7 @@ header {
   width:18px;
   height: 20px;
   cursor:pointer;
-  top: 9%;
+  top: 60%;
   left: 95%;
 }
 
