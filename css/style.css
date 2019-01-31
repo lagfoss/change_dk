@@ -515,23 +515,9 @@ header {
   margin: 120px auto 60px auto;
 }
 
-.wcwd_header {
-  width: 290px;
-  height: 80px;
-  font-family: 'bebas-neue',sans-serif;
-  font-size: 50px;
-  line-height: 0.86;
-  margin-top: 10%;
-}
-
-.wcwd_headline {
-  font-family: 'bebas-neue',sans-serif;
-  font-size: 31px;
-}
-
 .wcwd-content {
-  max-width: 270px;
-  padding: 15px;
+  padding: 30px;
+  min-width: 350px;
 }
 
 .hover:hover {
@@ -541,9 +527,9 @@ header {
   transition: 0.8s;
 }
 
-.wcwd_section {
-  margin-left: 10%;
-  padding: 20px;
+.wcwd_headline {
+  font-family: 'bebas-neue',sans-serif;
+  font-size: 31px;
 }
 
 .wcwd_button {
