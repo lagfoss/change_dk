@@ -276,7 +276,7 @@ header {
   text-decoration: none;
   color: inherit;
 }
- 
+
 .nav_some_wrapper {
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
@@ -525,19 +525,8 @@ header {
 }
 
 .wcwd_headline {
-  width: 255px;
-  height: 23px;
   font-family: 'bebas-neue',sans-serif;
   font-size: 31px;
-  padding: 20px 0px;
-}
-
-.wcwd_text {
-  width: 290px;
-  height: 104px;
-  font-size: 16px;
-  line-height: 1.63;
-  padding: 15px 0px;
 }
 
 .wcwd-content {
