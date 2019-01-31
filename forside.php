@@ -201,7 +201,7 @@
 		<div class="row know_us align-items-center wrapper">
 			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
 	    </div>
-			<div class="col-7">
+			<div class="col-8">
 
 				<!-- Image carousel -->
 				<div class="col-11 owl-carousel owl-theme autowidth">
@@ -216,15 +216,13 @@
 			</div>
 
 			<!-- Know us text -->
-			<div class="col-5">
-				<div class="col-10">
+			<div class="col-4">
 					<h2><?php the_field('know_us_title'); ?></h2>
 					<p><?php the_field('know_us_text'); ?></p>
 
 					<a class="know_button" href="<?php the_field('know_us_button_url'); ?>"><?php the_field('know_us_button_text'); ?> <?php if( get_field('know_us_button_icon') ): ?>
 					<img class="" src="<?php the_field('know_us_button_icon'); ?>" />
 					<?php endif; ?></a>
-				</div>
 			</div>
 		</div>
 	</div>
