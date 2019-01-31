@@ -86,10 +86,10 @@
 	<div class="container-fluid wrapper">
 		<div class="row">
 
-			<div class="col-6 process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
+			<div class="col-md-6 process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
 			</div>
 
-			<div class="col-6">
+			<div class="col-md-6">
 				<h2><?php the_field('process_title'); ?></h2>
 				<?php if( have_rows('process') ): ?>
 
@@ -200,7 +200,7 @@
 		<div class="row know_us align-items-center wrapper">
 			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
 	    </div>
-			<div class="col-8">
+			<div class="col-md-8">
 
 				<!-- Image carousel -->
 				<div class="col-11 owl-carousel owl-theme autowidth">
@@ -215,7 +215,7 @@
 			</div>
 
 			<!-- Know us text -->
-			<div class="col-4">
+			<div class="col-md-4">
 					<h2><?php the_field('know_us_title'); ?></h2>
 					<p><?php the_field('know_us_text'); ?></p>
 

@@ -73,7 +73,12 @@
 </footer>
 <script type="text/javascript">
 
-
+// grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init();
 
 $(document).ready(function() {
   $('.whitebg .logoimg').attr('src', '<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg');
