@@ -79,9 +79,7 @@
               $value = get_field('job_available', 'option');
               ?>
               <?php  if( $value == true ) : ?>
-
                 <li class="nav_job"><a href="https://www.google.dk/?hl=da">Job</a></li>
-
               <?php else : ?>
                 <span></span>
               <?php endif; ?>
