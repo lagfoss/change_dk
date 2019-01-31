@@ -73,6 +73,29 @@
 </footer>
 <script type="text/javascript">
 
+function isNavVisible(nav) {
+  return ( menubtn.classList.contains('active') ? true : false );
+}
+
+var header = document.querySelector("header");
+var nav = document.getElementById('popUpNav');
+
+var options = {
+  onUnpin: function() {
+    if ( isNavVisible(nav) ) {
+      this.elem.classList.remove(this.classes.unpinned);
+      this.elem.classList.add(this.classes.pinned);
+    }
+    else {
+      this.elem.classList.add(this.classes.unpinned);
+      this.elem.classList.remove(this.classes.pinned);
+    }
+  }
+};
+
+var headroom = new Headroom(header, options);
+headroom.init();
+
 // grab an element
 var myElement = document.querySelector("header");
 // construct an instance of Headroom, passing the element
