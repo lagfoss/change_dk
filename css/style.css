@@ -171,7 +171,7 @@ header {
 /* Nav start */
 
 .overlay {
-  height: 100vh;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -208,7 +208,7 @@ header {
   width:18px;
   height: 20px;
   cursor:pointer;
-  top: 60%;
+  top: 9%;
   left: 95%;
 }
 
@@ -363,6 +363,7 @@ header {
     position: absolute;
     top: 38%;
     margin-left: 12%;
+    width: 100%;
 }
 
 .hero_text {
@@ -389,7 +390,7 @@ header {
 }
 
 .watchourshowreel {
-    bottom: 45%; 
+    bottom: 45%;
     position: absolute;
     display: block;
 }
