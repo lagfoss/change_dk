@@ -365,10 +365,8 @@ header {
     margin-left: 12%;
 }
 
-.Rectangle {
-  width: 185px;
-  height: 62px;
-  border-radius: 5px;
+.hero_text {
+  width: 50%;
 }
 
 .hero_button {
@@ -391,8 +389,7 @@ header {
 }
 
 .watchourshowreel {
-    left: 67%;
-    bottom: 45%;
+    bottom: 45%; 
     position: absolute;
     display: block;
 }

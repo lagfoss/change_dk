@@ -5,24 +5,24 @@
 <!-- Hero image, text and call to action -->
 
 	<div class="row hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
-
+		<div class="col-sm-8">
 		<div class="hero_info">
 			<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
-			<p class="white"><?php the_field('hero_text'); ?></p>
+			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
 
 			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
 				<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
 				<?php endif; ?></a>
 		</div>
+		</div>
 
 		<!-- Showreel on hero -->
-		<!-- Showreel on hero -->
+		<div class="col-sm-4">
 		<?php
 		if( get_field('showreel_toggle') )
 			$value = get_field('showreel_toggle');
 			?>
 			<?php  if( $value == true ) : ?>
-
 
 				<?php if( have_rows('showreel') ): ?>
 				<?php while( have_rows('showreel') ): the_row();
@@ -31,24 +31,19 @@
 					$content = get_sub_field('showreel_watch_our');
 					$content2 = get_sub_field('showreel_showreel');
 					?>
-					<li class=" watchourshowreel">
-
+					<div class="watchourshowreel">
 						<img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
-
 						<p class="Watch"><?php echo $content; ?></p>
 						<p class="Showreel"><?php echo $content2; ?></p>
-
-					</li>
+					</div>
 
 					<?php endwhile; ?>
-
 				<?php endif; ?>
-
 
 			<?php else : ?>
 				<span></span>
 			<?php endif; ?>
-
+		</div>
 	</div>
 
 	<!-- CASE SLIDER -->
