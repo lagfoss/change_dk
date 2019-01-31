@@ -63,19 +63,14 @@
       <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
       </a>
-
       <div class="container-fluid">
-
-
-               <div class="menubtn">
-              <span></span>
-              </div>
+        <div class="menubtn">
+          <span></span>
+        </div>
 
         <div id="popUpNav" class="overlay" >
           <div class="overlay-content">
           <div class="nav_wrapper">
-
-
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
           <?php if(get_field('job_available')): ?>
@@ -87,18 +82,15 @@
 
           <?php endif; ?>
 
-
-
-          <div class="something">
             <?php if( have_rows('nav_some', 'option') ): ?>
-            <div class="row slides1">
+            <div class="row nav_some_wrapper">
               <?php while( have_rows('nav_some', 'option') ): the_row();
                 // vars
               $image = get_sub_field('some_icons_nav', 'option');
               $link = get_sub_field('some_url_nav', 'option');
               ?>
 
-              <li class="slide1">
+              <li class="nav_some">
                 <?php if( $link ): ?>
                 <a href="<?php echo $link; ?>">
                   <?php endif; ?>
@@ -113,50 +105,33 @@
             </div>
             <?php endif; ?>
             <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
-            </div>
+
           </div>
         </div>
         </div>
       </div>
 
         <script type="text/javascript">
+        /* Åben/luk menu navigation  */
           function openNav() {
           menubtn.classList.add("is-active");
           document.getElementById("popUpNav").style.width = "100%";
-            }
+          }
 
-            function closeNav() {
-              menubtn.classList.remove("is-active");
-              document.getElementById("popUpNav").style.width = "0%";
-            }
+          function closeNav() {
+            menubtn.classList.remove("is-active");
+            document.getElementById("popUpNav").style.width = "0%";
+          }
 
-            var menubtn = document.querySelector(".menubtn");
+          var menubtn = document.querySelector(".menubtn");
+          menubtn.addEventListener('click', () => menubtn.classList.contains('is-active') ? closeNav() : openNav());
 
-            menubtn.addEventListener('click', () => menubtn.classList.contains('is-active') ? closeNav() : openNav());
-
-
-
-
-
-            closeNav();
+          /* Burger menu animation  */
+          closeNav();
           $('.menubtn').on('click', function(){
-            $(this).toggleClass('close','menubtn');
+          $(this).toggleClass('close','menubtn');
           });
         </script>
-
-
-
-
-<!--
-   <script>
-      jQuery(document).ready(function($){
-        $(".menu-collapsed").click(function() {
-          $(this).toggleClass("menu-expanded");
-        });
-      });
-
-
-    </script> -->
     </nav>
     </div>
         <!-- Menu/Nav slut -->
