@@ -99,7 +99,7 @@
                 </a>
                 <?php endif; ?>
                 <?php echo $content; ?>
-              </li>
+              </li> 
 
               <?php endwhile; ?>
             </div>
