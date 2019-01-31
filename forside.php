@@ -24,7 +24,6 @@
 			?>
 			<?php  if( $value == true ) : ?>
 
-
 				<?php if( have_rows('showreel') ): ?>
 				<?php while( have_rows('showreel') ): the_row();
 					// vars
@@ -32,19 +31,14 @@
 					$content = get_sub_field('showreel_watch_our');
 					$content2 = get_sub_field('showreel_showreel');
 					?>
-					<li class="watchourshowreel">
-
+					<div class="watchourshowreel">
 						<img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
-
 						<p class="Watch"><?php echo $content; ?></p>
 						<p class="Showreel"><?php echo $content2; ?></p>
-
-					</li>
+					</div>
 
 					<?php endwhile; ?>
-
 				<?php endif; ?>
-
 
 			<?php else : ?>
 				<span></span>
