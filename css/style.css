@@ -118,9 +118,6 @@ header {
 
 
 /*Logo og menu*/
-#menu-burger-menu {
-
-}
 
 .menu-burger-menu-container {
   font-size: 42px;
@@ -650,9 +647,6 @@ header {
   border-color: #111517;
 }
 
-.owl-dot.active {
-  outline: none;
-}
 
 .know_button:hover {
   text-decoration: none;
