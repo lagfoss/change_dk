@@ -72,7 +72,7 @@
 	<div class="container-fluid wrapper">
 		<div class="row">
 
-			<div class="col-6 process-img" style="background-image:url(<?php the_field('process_image'); ?>);">
+			<div class="col-6 process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
 			</div>
 
 			<div class="col-6">
@@ -86,16 +86,16 @@
 						$procestext = get_sub_field('process_text');
 					?>
 				<div class="row ourprocess">
-					<div class="col-1 process-steps">
+					<div class="col-1 process_steps">
 						<div class="inner">
 							<?php echo $processnumber; ?>
 							<div class="dash"></div>
 						</div>
 					</div>
-    			<div class="col-11 font-weight-bold">
+    			<div class="col-10 font-weight-bold process_steps_text">
       			<?php echo $processtitle; ?>
       			<div class="row">
-        			<div class="col-11 font-weight-normal"><?php echo $procestext; ?></div>
+        			<div class="font-weight-normal"><?php echo $procestext; ?></div>
       			</div>
     			</div>
 
