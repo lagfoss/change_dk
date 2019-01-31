@@ -86,16 +86,22 @@
 						$procestext = get_sub_field('process_text');
 					?>
 				<div class="row ourprocess">
-					<div class="col-1 process-steps"><div class="inner"><?php echo $processnumber; ?><div class="dash"></div></div></div>
+					<div class="col-1 process-steps">
+						<div class="inner">
+							<?php echo $processnumber; ?>
+							<div class="dash"></div>
+						</div>
+					</div>
     			<div class="col-11 font-weight-bold">
       			<?php echo $processtitle; ?>
       			<div class="row">
         			<div class="col-11 font-weight-normal"><?php echo $procestext; ?></div>
       			</div>
     			</div>
-					<?php endwhile; ?>
-					<?php endif; ?>
+
 				</div>
+			<?php endwhile; ?>
+			<?php endif; ?>
 
 			</div>
 
@@ -103,7 +109,7 @@
 	</div>
 
 	<!-- Section med hvad vi gøre -->
-	<div class="container-fluid do_for_u">
+	<div class="container-fluid do_for_u wrapper">
 
 		<div class="row wcwd_section">
 			<div class="col-sm">
@@ -191,7 +197,7 @@
 		</div>
 
 	<!-- Image carousel and get to know us -->
-	<div class="container-fluid">
+	<div class="container-fluid wrapper">
 		<div class="row know_us align-items-center">
 			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
 	    </div>
