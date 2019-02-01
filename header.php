@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <header class="position-fixed headroom">
+  <header class="position-fixed">
     <!-- Content calendar og Sociale medier start -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
@@ -59,8 +59,8 @@
 
 
     <!-- Menu/Nav start -->
-    <div id="primaryNav">
     <nav>
+      <div id="primaryNav">
       <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
       </a>
@@ -137,8 +137,8 @@
           });
 
         </script>
+      </div>
     </nav>
-    </div>
         <!-- Menu/Nav slut -->
 
 
