@@ -195,11 +195,11 @@ nav {
 .menubtn  {
   z-index: 100;
   position: fixed;
-  width:18px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   cursor:pointer;
   right: 3.5%;
-  top:80px;
+  top: 84px;
 }
 
 .close {
