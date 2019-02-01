@@ -329,8 +329,8 @@ nav {
   height: 30px;
   width: 250px;
   margin-left: 170px;
-  top: 50%;
-  left: 50%;
+  top: 100px;
+  right: -18%;
   transform: translate(-50%, -50%);
 }
 

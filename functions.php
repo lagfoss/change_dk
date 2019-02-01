@@ -37,6 +37,8 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'post-formats' );
 add_theme_support( 'menus' );
 add_theme_support( 'widgets' );
+//Search
+add_theme_support('html5',array('search-form'));
 
 
 function NAME_script_enqueue() {
