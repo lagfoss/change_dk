@@ -337,7 +337,7 @@ nav {
   height: 20px;
   width: 0;
   margin-left: 170px;
-  top: 94px;
+  top: 88px;
   right: 5%;
   padding-right: 20px;
   transform: translate(-50%, -50%);
@@ -367,15 +367,15 @@ input {
   transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
-  -webkit-transform: translate(-100%, -40%);
-  -ms-transform: translate(-100%, -40%);
-  transform: translate(-100%, -40%);
+  -webkit-transform: translate(-100%, 0%);
+  -ms-transform: translate(-100%, 0%);
+  transform: translate(-100%, 0%);
 }
 
 .search {
   background: none;
   position: absolute;
-  top: 1px;
+  top: 5px;
   left: 6px;
   height: 20px;
   width: 20px;
@@ -387,9 +387,9 @@ input {
   cursor: pointer;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  -webkit-transform: translate(-100%, -40%);
-  -ms-transform: translate(-100%, -40%);
-  transform: translate(-100%, -40%);
+  -webkit-transform: translate(-100%, 0%);
+  -ms-transform: translate(-100%, 0%);
+  transform: translate(-100%, 0%);
 }
 
 .search:before {
@@ -401,7 +401,7 @@ input {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  margin-top: 12px;
+  margin-top: 7px;
   margin-left: 3px;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -456,9 +456,9 @@ input {
   transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
   -webkit-transition-delay: 0.4s, 0s, 0.4s;
   transition-delay: 0.4s, 0s, 0.4s;
-  -webkit-transform: translate(-100%, -40%);
-  -ms-transform: translate(-100%, -40%);
-  transform: translate(-100%, -40%);
+  -webkit-transform: translate(-100%, 0%);
+  -ms-transform: translate(-100%, 0%);
+  transform: translate(-100%, 0%);
 }
 
 /*Search form slut */
