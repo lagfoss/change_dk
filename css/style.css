@@ -78,16 +78,6 @@ header {
   width: 100%
 }
 
-.headroom {
-    will-change: transform;
-    transition: transform 200ms linear;
-}
-.headroom--pinned {
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
 
 /*Sociale medier og tekst i toppen*/
 .SoMe {
@@ -155,9 +145,10 @@ header {
   text-decoration: line-through;
 }
 
-.navbar {
+nav {
   margin-left: 3.5%;
   margin-right: 3.5%;
+  margin-top: 30px;
   padding-left: 0;
   padding-right: 0;
   display: block;
@@ -177,7 +168,7 @@ header {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: white;
+  background-color: #f8f8f8;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -204,12 +195,11 @@ header {
 .menubtn  {
   z-index: 100;
   position: fixed;
-  top: 0;
   width:18px;
   height: 20px;
   cursor:pointer;
-  top: 60%;
-  left: 95%;
+  right: 3.5%;
+  top:80px;
 }
 
 .menubtn span,
@@ -598,7 +588,7 @@ header {
   width: 55%;
   height: 95%;
   background-repeat: repeat;
-  left: 6%;
+  left: 5%;
   top: -1%;
   z-index: -1;
 }
