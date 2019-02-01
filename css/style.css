@@ -952,6 +952,7 @@ nav {
 
 .letstalkfooter a:hover {
   color: #e54c00;
+  text-decoration: none;
 }
 
 .SoMefooter {
@@ -984,6 +985,7 @@ nav {
 
 .footer_mail:hover {
   color: #e54c00;
+  text-decoration: none;
 }
 
 .footer_address p {
