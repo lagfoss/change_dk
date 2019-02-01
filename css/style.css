@@ -353,11 +353,10 @@ nav {
     position: absolute;
     top: 32%;
     margin-left: 12%;
-    width: 100%;
 }
 
 .hero_text {
-  width: 600px;
+  width: 485px;
 }
 
 .hero_button {
@@ -952,6 +951,7 @@ nav {
 
 .letstalkfooter a:hover {
   color: #e54c00;
+  text-decoration: none;
 }
 
 .SoMefooter {
@@ -984,6 +984,7 @@ nav {
 
 .footer_mail:hover {
   color: #e54c00;
+  text-decoration: none;
 }
 
 .footer_address p {
@@ -1003,41 +1004,75 @@ nav {
 }
 
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  h1 {
-    font-size: 10px;
-  }
 
-  .hero_text .white {
-    width: 10px;
-  }
 
- }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  .hero_text .white {
-    width: 20px;
-  }
- }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (max-width: 992px) {
   h1 {
-  font-size: 30px;
+  font-size: 60px;
   }
 
-  .hero_text .white {
-    width: 30px;
+  .hero_text  {
+    font-size: 15px;
+    width: 250px;
   }
 
+}
 
- }
+ /* Medium devices (tablets, 768px and up) */
+ @media screen and (max-width: 780px) {
+    h1  {
+     font-size: 40px;
+   }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+   .hero_text {
+     font-size: 20px;
+     width: 200px;
+   }
+
+   .watchourshowreel {
+     position: absolute;
+     display: block;
+     margin-left: 12%;
+   }
+}
+
+  @media screen and (max-width: 540px) {
+     h1 {
+       font-size: 50px;
+       margin-top: 15px;
+     }
+
+     .hero_text {
+       font-size: 20px;
+       width: 250px;
+     }
+
+     .SoMe {
+       text-align: center;
+       display: block;
+     }
+
+}
+
+
+/* Small devices () */
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 45px;
+    margin-top: 25px;
+  }
+
+  .hero_text {
+    font-size: 15px;
+    width: 225px;
+  }
+
+  .SoMe {
+    text-align: center;
+    display: block;
+  }
+
+} 
