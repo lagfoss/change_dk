@@ -136,6 +136,17 @@
           $(this).toggleClass('close','menubtn');
           });
 
+          function expand() {
+            $(".search").toggleClass("searchclose");
+            $(".input").toggleClass("square");
+            if ($('.search').hasClass('searchclose')) {
+              $('input').focus();
+            } else {
+              $('input').blur();
+            }
+          }
+          $('button').on('click', expand);
+
         </script>
       </div>
     </nav>
