@@ -446,7 +446,7 @@ input {
 .square {
   box-sizing: border-box;
   padding: 0 20px 0 10px;
-  width: 200px;
+  width: 205px;
   height: 30px;
   border: 1px solid #f2f2f2;
   border-radius: 5px;
@@ -489,7 +489,6 @@ input {
   max-height: 20%;
   text-shadow: 0 2px 0 #111517;
   line-height: 0.88;
-  padding-bottom: 5px;
 }
 
 .hero_info {
@@ -500,7 +499,6 @@ input {
 
 .hero_text {
   width: 485px;
-  padding-bottom: 10px;
 }
 
 .hero_button {
@@ -523,7 +521,7 @@ input {
 }
 
 .watchourshowreel {
-    bottom: 50%;
+    bottom: 45%;
     margin-left: 40%;
     position: absolute;
     display: block;
