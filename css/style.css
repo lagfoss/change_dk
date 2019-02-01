@@ -1218,4 +1218,8 @@ input {
     display: block;
   }
 
+  .nav_wrapper {
+    padding-left: 55%;
+  }
+
 }
