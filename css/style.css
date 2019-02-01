@@ -337,7 +337,7 @@ nav {
   height: 20px;
   width: 0;
   margin-left: 170px;
-  top: 95px;
+  top: 94px;
   right: 5%;
   padding-right: 20px;
   transform: translate(-50%, -50%);
@@ -367,9 +367,9 @@ input {
   transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+  -webkit-transform: translate(-100%, -40%);
+  -ms-transform: translate(-100%, -40%);
+  transform: translate(-100%, -40%);
 }
 
 .search {
@@ -387,9 +387,9 @@ input {
   cursor: pointer;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+  -webkit-transform: translate(-100%, -40%);
+  -ms-transform: translate(-100%, -40%);
+  transform: translate(-100%, -40%);
 }
 
 .search:before {
@@ -456,9 +456,9 @@ input {
   transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
   -webkit-transition-delay: 0.4s, 0s, 0.4s;
   transition-delay: 0.4s, 0s, 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+  -webkit-transform: translate(-100%, -40%);
+  -ms-transform: translate(-100%, -40%);
+  transform: translate(-100%, -40%);
 }
 
 /*Search form slut */
