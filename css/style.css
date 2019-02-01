@@ -78,16 +78,6 @@ header {
   width: 100%
 }
 
-.headroom {
-    will-change: transform;
-    transition: transform 200ms linear;
-}
-.headroom--pinned {
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
 
 /*Sociale medier og tekst i toppen*/
 .SoMe {
@@ -155,7 +145,7 @@ header {
   text-decoration: line-through;
 }
 
-.navbar {
+nav {
   margin-left: 3.5%;
   margin-right: 3.5%;
   padding-left: 0;
@@ -204,12 +194,10 @@ header {
 .menubtn  {
   z-index: 100;
   position: fixed;
-  top: 0;
   width:18px;
   height: 20px;
   cursor:pointer;
-  top: 60%;
-  left: 95%;
+  right: 3.5%;
 }
 
 .menubtn span,
@@ -1014,13 +1002,40 @@ header {
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+  h1 {
+    font-size: 10px;
+  }
+
+  .hero_text .white {
+    width: 10px;
+  }
+
+ }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .hero_text .white {
+    width: 20px;
+  }
+ }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+  h1 {
+  font-size: 30px;
+  }
+
+  .hero_text .white {
+    width: 30px;
+  }
+
+
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
