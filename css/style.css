@@ -1157,12 +1157,13 @@ input {
  /* Medium devices (tablets, 768px and up) */
  @media screen and (max-width: 780px) {
     h1  {
-     font-size: 40px;
+     font-size: 65px;
    }
 
    .hero_text {
-     font-size: 20px;
-     width: 200px;
+     font-size: 16px;
+     width: 365px;
+     padding-bottom: 25px;
    }
 
    .watchourshowreel {
@@ -1174,32 +1175,33 @@ input {
 
   @media screen and (max-width: 540px) {
      h1 {
-       font-size: 50px;
-       margin-top: 15px;
+       font-size: 65px;
+       margin-top: 20px;
      }
 
      .hero_text {
-       font-size: 20px;
-       width: 250px;
+       font-size: 16px;
+       width: 330px;
      }
 
      .SoMe {
        text-align: center;
        display: block;
+       height: 50px;
      }
 
 }
 
 
 /* Small devices () */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   h1 {
     font-size: 45px;
     margin-top: 25px;
   }
 
   .hero_text {
-    font-size: 15px;
+    font-size: 16px;
     width: 225px;
   }
 
@@ -1208,4 +1210,4 @@ input {
     display: block;
   }
 
-} 
+}
