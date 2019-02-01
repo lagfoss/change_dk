@@ -446,7 +446,7 @@ input {
 .square {
   box-sizing: border-box;
   padding: 0 20px 0 10px;
-  width: 250px;
+  width: 210px;
   height: 30px;
   border: 2px solid #f2f2f2;
   border-radius: 10px;
@@ -521,7 +521,7 @@ input {
 }
 
 .watchourshowreel {
-    bottom: 45%;
+    bottom: 51%;
     margin-left: 40%;
     position: absolute;
     display: block;
