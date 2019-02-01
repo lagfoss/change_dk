@@ -333,12 +333,13 @@ nav {
 /* Search form */
 
 #search_form {
-  position: absolute;
+  position: fixed;
   height: 30px;
-  width: 250px;
+  width: 0;
   margin-left: 170px;
   top: 100px;
-  right: -18%;
+  right: 5%;
+  padding-right: 30px;
   transform: translate(-50%, -50%);
 }
 
@@ -1181,28 +1182,11 @@ input {
    }
 }
 
-  @media screen and (max-width: 540px) {
-     h1 {
-       font-size: 65px;
-       margin-top: 20px;
-     }
 
-     .hero_text {
-       font-size: 16px;
-       width: 330px;
-     }
-
-     .SoMe {
-       text-align: center;
-       display: block;
-       height: 50px;
-     }
-
-}
 
 
 /* Small devices () */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   h1 {
     font-size: 45px;
     margin-top: 25px;
