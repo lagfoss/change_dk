@@ -489,6 +489,7 @@ input {
   max-height: 20%;
   text-shadow: 0 2px 0 #111517;
   line-height: 0.88;
+  padding-bottom: 5px;
 }
 
 .hero_info {
@@ -499,6 +500,7 @@ input {
 
 .hero_text {
   width: 485px;
+  padding-bottom: 10px;
 }
 
 .hero_button {
@@ -521,7 +523,7 @@ input {
 }
 
 .watchourshowreel {
-    bottom: 51%;
+    bottom: 50%;
     margin-left: 40%;
     position: absolute;
     display: block;
