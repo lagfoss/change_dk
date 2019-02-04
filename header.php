@@ -82,7 +82,7 @@
            $("#cf_onclick").click(function() {
            $('.nav_logo').toggleClass('nav_logo-active');
             });
-           </script>
+           </script> 
 
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
