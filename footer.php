@@ -3,7 +3,7 @@
 <footer>
       <!-- Need a successfull project start -->
 
-  <div class="FooterProject">
+  <div class="footer_project">
     <h2><?php the_field('footer_project', 'option'); ?></h2>
   <a class="footer_button" href="<?php the_field('footer_button_url', 'option'); ?>"><?php the_field('footer_button_text', 'option'); ?>
 
@@ -14,7 +14,7 @@
   <!-- Need a successfull project slut -->
 
   <!-- lets talk start -->
-  <div class="letstalkfooter">
+  <div class="letstalk_footer">
     <?php the_field('footer_lets_talk', 'option'); ?>
     <h2><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></h2>
   </div>
@@ -23,7 +23,7 @@
   <!-- sociale medier footer start -->
 
   <div class="container-fluid">
-    <div class="row SoMefooter">
+    <div class="row SoMe_footer">
       <div class="col align-self-center">
     <?php if( have_rows('footer_some', 'option') ): ?>
       <ul>
@@ -53,7 +53,7 @@
 
   <!-- kontakt information footer start -->
 
-  <div class="container-fluid ContactFooter">
+  <div class="container-fluid contact_footer">
    <h3><a href="mailto:<?php the_field('footer_mail', 'option'); ?>" class="footer_mail"><?php the_field('footer_mail', 'option'); ?></a></h3>
     <a href="<?php the_field('google_maps_link', 'option'); ?>" class="footer_address"><?php the_field('footer_address', 'option'); ?></a>
 

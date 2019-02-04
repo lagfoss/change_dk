@@ -29,7 +29,7 @@
       <div class="row justify-content-between SoMe">
         <div class="col-6-float-left align-self-center">
             <?php the_field('header_text', 'option'); ?>
-          <a id="SoMecalendar" href="<?php the_field('header_url', 'option'); ?>">
+          <a id="SoMe_calendar" href="<?php the_field('header_url', 'option'); ?>">
           <?php the_field('header_url_text' , 'option'); ?></a></div>
         <div class="col-6-float-right align-self-center">
           <?php if( have_rows('header_some', 'option') ): ?>
@@ -71,7 +71,7 @@
         </div>
 
         <div id="popUpNav" class="overlay" >
-          <div class="overlay-content">
+          <div class="overlay_content">
           <div class="nav_wrapper">
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
