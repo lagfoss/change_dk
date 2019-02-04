@@ -34,7 +34,13 @@
 						<p class="showreel"><?php the_field('showreel_title'); ?></p>
 					</div>
 					<div id="modal" class="modal" style="display:none;">
-					  <?php the_field('showreel_video'); ?>
+					  <?php the_field('showreel_video');
+							$params = array(
+    					'controls'    => 0,
+    					'hd'        => 1,
+    					'autoplay'    => 1
+							);
+ 						?>
 					</div>
 
 			<?php else : ?>

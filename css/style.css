@@ -202,7 +202,7 @@ nav {
 .menubtn  {
   z-index: 100;
   position: fixed;
-  width: 22px;
+  width: 18px;
   height: 18px;
   cursor:pointer;
   right: 3.5%;
@@ -255,7 +255,7 @@ nav {
 }
 
 .menubtn.close::before {
-  top:10px;
+  top:15px;
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -263,7 +263,7 @@ nav {
 }
 
 .menubtn.close::after {
-  top:10px;
+  top:15px;
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
