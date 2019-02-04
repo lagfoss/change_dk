@@ -35,7 +35,7 @@
       <?php endif; ?>
       <div class="arrow_down">
         <?php if( get_field('call_to_action_intro') ): ?>
-        <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+      <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
         <?php endif; ?></a>
       </div>
     </div>
@@ -46,10 +46,18 @@
   <div class="container-fluid wrapper">
     <div class="row">
       <div class="vores_process">
-        <h2><?php the_field('vores_process_title'); ?></h2>
+        <h2 ><?php the_field('vores_process_title'); ?></h2>
         <p><?php the_field('vores_process_text'); ?></p>
       </div>
     </div>
+
+    <script type="text/javascript">
+    $(".omchange_calltoaction").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".vores_process").offset().top - 180},
+      'slow');
+    });
+    </script>
 
     <!-- Steps start -->
     <div class="row">

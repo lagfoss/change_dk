@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
@@ -1189,6 +1193,10 @@ input {
    }
 }
 
+  .om_steps_content {
+    display: grid;
+  }
+
 
 /* Small devices () */
 @media screen and (max-width: 420px) {
@@ -1208,7 +1216,43 @@ input {
   }
 
   .nav_wrapper {
-    padding-left: 55%;
+    padding-left: 0%;
+  }
+
+}
+
+/* Tiny devices () */
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 45px;
+    margin-top: 25px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero_text {
+    font-size: 16px;
+    width: 225px;
+  }
+
+  .SoMe {
+    text-align: center;
+    display: block;
+  }
+
+  .nav_wrapper {
+  position: absolute;
+  left: -35px;
+  }
+
+  .watchourshowreel {
+    top: 60%;
+  }
+
+  .Watch {
+    top: 0%;
   }
 
 }
