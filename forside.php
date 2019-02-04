@@ -25,11 +25,12 @@
 			<?php  if( $value == true ) : ?>
 
 					<div class="watchourshowreel">
-						<a href="<?php the_field('hero_button_url'); ?>"><?php if( get_field('showreel_icon') ): ?>
-							<img class="playcircle" src="<?php the_field('showreel_icon'); ?>" />
-							<?php endif; ?></a>
+						<a href="#modal" class="open-modal" rel="modal:open nofollow">dffsf</a>
 						<p class="watch"><?php the_field('showreel_text'); ?></p>
 						<p class="showreel"><?php the_field('showreel_title'); ?></p>
+					</div>
+					<div id="modal" class="modal">
+					  <?php the_field('showreel_video'); ?>
 					</div>
 
 			<?php else : ?>
@@ -229,32 +230,6 @@ $(window).scroll(function() {
 	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
 }
 
-});
-
-
-$(document).ready(function() {
-
-// Gets the video src from the data-src on each button
-
-var $videoSrc;
-$('.video-btn').click(function() {
-    $videoSrc = $(this).data( "src" );
-});
-console.log($videoSrc);
-
-// when the modal is opened autoplay it
-$('#myModal').on('shown.bs.modal', function (e) {
-
-// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-$("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
-})
-
-// stop playing the youtube video when I close the modal
-$('#myModal').on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#video").attr('src',$videoSrc);
-})
-// document ready
 });
 
 
