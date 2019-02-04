@@ -29,7 +29,7 @@
 						<p class="watch"><?php the_field('showreel_text'); ?></p>
 						<p class="showreel"><?php the_field('showreel_title'); ?></p>
 					</div>
-					<div id="modal" class="modal">
+					<div id="modal" class="modal" style="display:none;">
 					  <?php the_field('showreel_video'); ?>
 					</div>
 
