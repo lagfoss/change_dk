@@ -33,8 +33,8 @@
 					?>
 					<div class="watchourshowreel">
 						<a href="#myModal" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk"><img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"></a>
-						<p class="Watch"><?php echo $content; ?></p>
-						<p class="Showreel"><?php echo $content2; ?></p>
+						<p class="watch"><?php echo $content; ?></p>
+						<p class="showreel"><?php echo $content2; ?></p>
 					</div>
 
 					<?php endwhile; ?>
