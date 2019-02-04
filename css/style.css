@@ -1375,8 +1375,6 @@ $button-padding: 12px 26px;
   }
 
 
-}
-
 /* Tiny devices () */
 @media screen and (max-width: 360px) {
 
