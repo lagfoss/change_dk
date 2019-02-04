@@ -1177,6 +1177,18 @@ input {
     width: 430px;
   }
 
+  #slide {
+    position: absolute;
+    display: flex;
+    width: 200%;
+    left: -200%;
+    height: 100%;
+    padding: 100px 40%;
+    background: #e54c00;
+    transition: 3s;
+    overflow: hidden;
+  }
+
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -1200,10 +1212,13 @@ input {
    .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left {
      display: none;
    }
-}
 
-  .om_steps_content {
-  }
+
+     #slide {
+       display: none;
+     }
+
+}
 
 
 /* Small devices () */
@@ -1226,6 +1241,12 @@ input {
   .nav_wrapper {
     padding-left: 0%;
   }
+
+
+    #slide {
+      display: none;
+    }
+
 
 }
 
