@@ -1211,4 +1211,8 @@ input {
     padding-left: 55%;
   }
 
+  .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left {
+    display: none;
+  }
+
 }
