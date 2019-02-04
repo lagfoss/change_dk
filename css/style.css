@@ -648,7 +648,7 @@ $button-padding: 12px 26px;
       cursor: pointer;
     }
   }
-  
+
   #modal-link a {
     background-color: $button-background;
     color: $button-font-color;

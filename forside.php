@@ -25,11 +25,11 @@
 			<?php  if( $value == true ) : ?>
 
 					<div class="watchourshowreel">
-						<a href="#modal" class="open-modal" rel="modal:open nofollow" style="display:none;">dffsf</a>
+						<a href="#modal" class="open-modal" rel="modal:open nofollow">dffsf</a>
 						<p class="watch"><?php the_field('showreel_text'); ?></p>
 						<p class="showreel"><?php the_field('showreel_title'); ?></p>
 					</div>
-					<div id="modal" class="modal">
+					<div id="modal" class="modal" style="display:none;">
 					  <?php the_field('showreel_video'); ?>
 					</div>
 
