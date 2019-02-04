@@ -350,6 +350,7 @@ nav {
 
 #search_form {
   position: absolute;
+  z-index: 1000;
   height: 20px;
   width: 0;
   margin-left: 170px;
@@ -374,10 +375,10 @@ input {
   box-sizing: border-box;
   width: 15px;
   height: 15px;
-  border: 2px solid #f2f2f2;
+  border: 2px solid grey;
   border-radius: 50%;
   background: none;
-  color: #f2f2f2;
+  color: grey;
   outline: 0;
   -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
   transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
@@ -413,7 +414,7 @@ input {
   position: absolute;
   width: 7px;
   height: 2px;
-  background-color: #f2f2f2;
+  background-color: grey;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -437,7 +438,7 @@ input {
   height: 1px;
   margin-top: -1px;
   margin-left: -13px;
-  background-color: #f2f2f2;
+  background-color: grey;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -450,7 +451,7 @@ input {
   position: absolute;
   width: 15px;
   height: 1px;
-  background-color: #f2f2f2;
+  background-color: grey;
   margin-top: -1px;
   margin-left: -13px;
   cursor: pointer;
@@ -464,7 +465,7 @@ input {
   padding: 0 20px 0 10px;
   width: 205px;
   height: 30px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid grey;
   border-radius: 5px;
   background: none;
   outline: 0;
@@ -476,6 +477,7 @@ input {
   -ms-transform: translate(-100%, 0%);
   transform: translate(-100%, 0%);
 }
+
 
 /*Search form slut */
 
