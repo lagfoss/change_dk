@@ -162,11 +162,20 @@ nav {
 /* Nav start */
 
 .nav_logo {
-  transition: property
-            duration 4s
-            timing-function
-            delay;
-}
+  position: fixed;
+  top: 3%;
+  left: 3%;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  -ms-transition: all 5s ease;
+  transition: all 5s ease;
+  opacity: 0;
+ }
+
+ .nav_logo-active {
+   opacity: 1;
+ }
 
 .overlay {
   height: 100vh;
@@ -648,7 +657,7 @@ $button-padding: 12px 26px;
       cursor: pointer;
     }
   }
-  
+
   #modal-link a {
     background-color: $button-background;
     color: $button-font-color;
