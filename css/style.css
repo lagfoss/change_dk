@@ -1198,7 +1198,6 @@ input {
 }
 
   .om_steps_content {
-    display: grid;
   }
 
 
@@ -1227,13 +1226,17 @@ input {
 
 /* Tiny devices () */
 @media screen and (max-width: 360px) {
-  h1 {
-    font-size: 45px;
-    margin-top: 25px;
-  }
 
   .hero {
     width: 100%;
+  }
+
+  header {
+    width: 95.5%;
+  }
+
+  .menubtn {
+    right: 5.5%
   }
 
   .hero_text {
@@ -1252,7 +1255,7 @@ input {
   }
 
   .watchourshowreel {
-    top: 60%;
+    top: 35%;
   }
 
   .Watch {
