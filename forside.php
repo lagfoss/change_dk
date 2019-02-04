@@ -24,21 +24,13 @@
 			?>
 			<?php  if( $value == true ) : ?>
 
-				<?php if( have_rows('showreel') ): ?>
-				<?php while( have_rows('showreel') ): the_row();
-					// vars
-					$image = get_sub_field('showreel_img');
-					$content = get_sub_field('showreel_watch_our');
-					$content2 = get_sub_field('showreel_showreel');
-					?>
 					<div class="watchourshowreel">
-						<a href="#myModal" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk"><img class="playcircle" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"></a>
-						<p class="Watch"><?php echo $content; ?></p>
-						<p class="Showreel"><?php echo $content2; ?></p>
+						<a href="<?php the_field('hero_button_url'); ?>"><?php if( get_field('showreel_icon') ): ?>
+							<img class="playcircle" src="<?php the_field('showreel_icon'); ?>" />
+							<?php endif; ?></a>
+						<p class="watch"><?php the_field('showreel_text'); ?></p>
+						<p class="showreel"><?php the_field('showreel_title'); ?></p>
 					</div>
-
-					<?php endwhile; ?>
-				<?php endif; ?>
 
 			<?php else : ?>
 				<span></span>
