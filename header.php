@@ -136,6 +136,8 @@
           lastScroll = newScroll;
         });
 
+
+
         /* Åben/luk menu navigation  */
           function openNav() {
           menubtn.classList.add("is-active");

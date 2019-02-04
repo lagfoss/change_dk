@@ -11,7 +11,7 @@
 			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
 
 			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
-				<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+				<img class="1" src="<?php the_field('calltoaction_arrow_right'); ?>" />
 				<?php endif; ?></a>
 		</div>
 		</div>
@@ -47,6 +47,7 @@
 	</div>
 
 	<!-- CASE SLIDER -->
+
 	<div class="container-fluid case wrapper">
 		<div class="row modul_margin">
 			<?php
@@ -237,4 +238,17 @@ $(window).scroll(function() {
 }
 
 });
+
+$(".hero_button").click(function() {
+	$('html,body').animate({
+	scrollTop: $(".modul_margin").offset().top - 100},
+	'slow');
+});
+
+$(".wcwd_button").click(function() {
+	$('html,body').animate({
+	scrollTop: $(".FooterProject").offset().top - 10},
+	'slow');
+});
+
 </script>
