@@ -48,7 +48,15 @@ function NAME_script_enqueue() {
 
 add_action( 'wp_enqueue_scripts', 'NAME_script_enqueue');
 
-
+// Load modal script
+function load_javascript_file() {
+ $active = get_field('active', 'option');
+  if($active == "yes") {
+   wp_register_script('modal', get_template_directory_uri() . '/js/jquery.modal.min.js', 'jquery', '', true);
+   wp_enqueue_script('modal');
+  }
+}
+add_action('wp_enqueue_scripts', 'load_javascript_file' );
 
 function register_my_menus() {
   register_nav_menus(
