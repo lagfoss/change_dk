@@ -25,7 +25,7 @@
 			<?php  if( $value == true ) : ?>
 
 					<div class="watchourshowreel">
-						<a href="<?php the_field('hero_button_url'); ?>"><?php if( get_field('showreel_icon') ): ?>
+							<a href="<?php the_field('hero_button_url'); ?>"><?php if( get_field('showreel_icon') ): ?>
 							<img class="playcircle" src="<?php the_field('showreel_icon'); ?>" />
 							<?php endif; ?></a>
 						<p class="watch"><?php the_field('showreel_text'); ?></p>

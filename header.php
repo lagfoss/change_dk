@@ -61,18 +61,23 @@
     <!-- Menu/Nav start -->
     <nav>
       <div id="primaryNav">
-      <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="">
-      </a>
+         <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
+        <img class="" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
+
+
       <div class="container-fluid">
         <?php get_search_form(); ?>
-        <div class="menubtn">
+        <div id="cf_onclick" class="menubtn">
           <span></span>
         </div>
 
         <div id="popUpNav" class="overlay" >
           <div class="overlay_content">
           <div class="nav_wrapper">
+
+            <a class="nav_logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
+           <img class="" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt=""></a>
+
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
             <!-- Job link til/fra -->

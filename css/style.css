@@ -83,6 +83,7 @@ header {
 }
 
 
+
 /*Sociale medier og tekst i toppen*/
 .SoMe {
   height: 45px;
@@ -159,6 +160,13 @@ nav {
 }
 
 /* Nav start */
+
+.nav_logo {
+  transition: property
+            duration 4s
+            timing-function
+            delay;
+}
 
 .overlay {
   height: 100vh;
