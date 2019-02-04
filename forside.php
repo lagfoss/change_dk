@@ -11,7 +11,7 @@
 			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
 
 			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
-				<img class="" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+				<img class="1" src="<?php the_field('calltoaction_arrow_right'); ?>" />
 				<?php endif; ?></a>
 		</div>
 		</div>
@@ -47,6 +47,7 @@
 	</div>
 
 	<!-- CASE SLIDER -->
+
 	<div class="container-fluid case wrapper">
 		<div class="row modul_margin">
 			<?php
@@ -119,12 +120,12 @@
 	<!-- Section med hvad vi gøre -->
 	<div class="container-fluid do_for_u wrapper">
 		<div class="row justify-content-center">
-			<div class="col-sm-4 wcwd-content">
+			<div class="col-sm-4 wcwd_content">
 					<h2><?php the_field('wcwd_header'); ?></h2>
 					<p><?php the_field('wcwd_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd-content">
+			<div class="col-sm-4 hover wcwd_content">
 					<?php if( get_field('brandstrategi_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('brandstrategi_img'); ?>" />
 					<?php endif; ?>
@@ -132,7 +133,7 @@
 					<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd-content">
+			<div class="col-sm-4 hover wcwd_content">
 				<?php if( get_field('kommunikationsdesign_img') ): ?>
 				<img class="wcwd_img" src="<?php the_field('kommunikationsdesign_img'); ?>" />
 				<?php endif; ?>
@@ -140,7 +141,7 @@
 				<p><?php the_field('kommunikationsdesign_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd-content">
+			<div class="col-sm-4 hover wcwd_content">
 				<?php if( get_field('social_media_img') ): ?>
 				<img class="wcwd_img" src="<?php the_field('social_media_img'); ?>" />
 				<?php endif; ?>
@@ -148,7 +149,7 @@
 				<p><?php the_field('social_media_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd-content">
+			<div class="col-sm-4 hover wcwd_content">
 					<?php if( get_field('pressemeddelelse_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('pressemeddelelse_img'); ?>" />
 					<?php endif; ?>
@@ -156,7 +157,7 @@
 					<p><?php the_field('pressemeddelelse_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd-content">
+			<div class="col-sm-4 hover wcwd_content">
 				<?php if( get_field('kommunikationsstrategi_img') ): ?>
 				<img class="wcwd_img" src="<?php the_field('kommunikationsstrategi_img'); ?>" />
 				<?php endif; ?>
@@ -263,4 +264,18 @@ $('#myModal').on('hide.bs.modal', function (e) {
 })
 // document ready
 });
+
+
+$(".hero_button").click(function() {
+	$('html,body').animate({
+	scrollTop: $(".modul_margin").offset().top - 100},
+	'slow');
+});
+
+$(".wcwd_button").click(function() {
+	$('html,body').animate({
+	scrollTop: $(".FooterProject").offset().top - 10},
+	'slow');
+});
+
 </script>
