@@ -54,7 +54,7 @@
     <script type="text/javascript">
     $(".omchange_calltoaction").click(function() {
   $('html,body').animate({
-      scrollTop: $(".vores_process").offset().top - 180},
+      scrollTop: $(".vores_process").offset().top - 160},
       'slow');
     });
     </script>
