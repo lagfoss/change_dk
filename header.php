@@ -181,6 +181,19 @@
           $('.nav_logo').toggleClass('nav_logo-active');
            });
 
+           $(".menubtn").click(function() {
+           $('.menubtn').toggleClass('pos_fix');
+           $('.search_form').toggleClass('pos_fix');
+            });
+
+           /* $(document).ready(function() {
+
+             $(".menubtn").on("click", function() {
+               $("#search_form").css("position", "fixed")
+               $(".menubtn").css("position", "fixed")
+             });
+           });*/
+
         </script>
       </div>
     </nav>
