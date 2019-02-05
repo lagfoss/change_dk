@@ -67,10 +67,38 @@
 
 
       <div class="container-fluid">
-        <?php get_search_form(); ?>
+        <span class="example header"> <?php get_search_form(); ?> </span>
+
+        <script type="text/javascript">
+        function toggleClass(el, className) {
+        var el = document.querySelectorAll(el);
+
+        for (i = 0; i < el.length; i++) {
+
+          if (el[i].classList) {
+            el[i].classList.toggle(className);
+          } else {
+              var classes = el[i].className.split(' ');
+              var existingIndex = -1;
+              for (var j = classes.length; j--;) {
+                if (classes[j] === className)
+                  existingIndex = j;
+              }
+
+              if (existingIndex >= 0)
+                classes.splice(existingIndex, 1);
+              else
+                classes.push(className);
+
+            el[i].className = classes.join(' ');
+          }
+        }
+        }
+
+        </script>
 
 
-        <div id="cf_onclick" class="menubtn">
+        <div onclick="toggleClass('.example', 'header')" id="cf_onclick" class="menubtn">
           <span></span>
         </div>
 
@@ -89,7 +117,7 @@
               $value = get_field('job_available', 'option');
               ?>
               <?php  if( $value == true ) : ?>
-                <li class="nav_job"><a href="https://www.google.dk/?hl=da">Job</a></li>
+                <li class="nav_job"><a href="<?php the_field('job_link', 'option'); ?>"><?php the_field('job', 'option'); ?></a></li>
               <?php else : ?>
                 <span></span>
               <?php endif; ?>
