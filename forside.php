@@ -263,7 +263,7 @@ $(window).scroll(function() {
 
 $(".hero_button").click(function() {
 	$('html,body').animate({
-	scrollTop: $(".modul_margin").offset().top - 100},
+	scrollTop: $(".case").offset().top - 100},
 	'slow');
 });
 
