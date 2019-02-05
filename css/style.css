@@ -216,7 +216,7 @@ nav {
 }
 
 .overlay_content {
-  position: fixed;
+  position: relative;
   top: 20%;
   width: 100%;
   height: 100%;
