@@ -204,21 +204,23 @@ nav {
 }
 
 .overlay {
-  height: 100vh;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: #f8f8f8;
-  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
 }
 
 .overlay_content {
-  position: relative;
+  position: fixed;
   top: 20%;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .overlay a {
