@@ -81,12 +81,6 @@
             <a class="nav_logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
            <img class="nav_logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt=""></a>
 
-           <script type="text/javascript">
-           $("#cf_onclick").click(function() {
-           $('.nav_logo').toggleClass('nav_logo-active');
-            });
-           </script>
-
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
             <!-- Job link til/fra -->
@@ -182,6 +176,10 @@
             }
           }
           $('button').on('click', expand);
+
+          $("#cf_onclick").click(function() {
+          $('.nav_logo').toggleClass('nav_logo-active');
+           });
 
         </script>
       </div>
