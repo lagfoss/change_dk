@@ -1112,21 +1112,23 @@ input {
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
+    border-radius: 0px 0px 30px 0px
   }
 
-  .stroke_position {
+  .stroke_position_ydelser {
     width: 100%;
   }
 
-  .stroke {
+  .stroke_ydelser {
     height: 5px;
     width: 60px;
     background-color: #e54c00;
     border-radius: 4px;
-    margin: 30px auto 20px auto;
+    margin: 30px 1px;
   }
 
-  .h1_hero_ydelser {
+    .h1_hero_ydelser {
+    font-size: 61px;
     max-width: 100%;
     max-height: 20%;
     text-shadow: 0 2px 0 #111517;
@@ -1134,17 +1136,27 @@ input {
   }
 
   .calltoaction_hero_ydelser {
+    position: absolute;
+    top: 47%;
+    margin-left: 40%;
     text-decoration: none;
-    padding: 15px 25px;
-    background-color: inherit;
-    border-color: #e54c00;
-    width: 185px;
-    height: 60px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    width: 63px;
+    height: 65px;
+    border-radius: 10px;
     text-align: center;
     color: #ffffff;
+    transform: rotate(90deg);
+  }
+
+  .ydelser_main_content_overskrift {
+    text-align: center;
+  }
+
+  .ydelser_main_content_text {
+    text-align: center;
   }
 
 /* YDELSER slut */
