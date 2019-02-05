@@ -1151,13 +1151,19 @@ input {
     transform: rotate(90deg);
   }
 
-  .ydelser_main_content_overskrift {
+  .komme_uden_om_det {
     text-align: center;
+    display: block;
   }
 
   .ydelser_main_content_text {
-    text-align: center;
+    width: 475px;
+    font-weight: 300;
+    color: #999999;
+    display: inline-block;
+
   }
+
 
 /* YDELSER slut */
 

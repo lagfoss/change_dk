@@ -23,9 +23,12 @@
 
 
   <div class="container-fluid">
-    <div class="row">
+    <div class="row komme_uden_om_det">
       <h2 class="ydelser_main_content_overskrift"> <?php the_field('ydelser_main_content_overskrift') ?> </h2>
       <p class="ydelser_main_content_text"> <?php the_field('ydelser_main_content_text') ?> </p>
+      <div class="stroke_position">
+        <div class="stroke"></div>
+      </div>
   	</div>
   </div>
 
