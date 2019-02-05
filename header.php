@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <header class="position-fixed">
+  <header class="position-fixed header">
     <!-- Content calendar og Sociale medier start -->
     <div class="container-fluid">
       <div class="row justify-content-between SoMe">
@@ -126,7 +126,7 @@
 
         <script type="text/javascript">
 
-        var header = $('header'),
+        var header = $('.header'),
         headerHeight = header.height(),
         treshold = 0,
         lastScroll = 0;
