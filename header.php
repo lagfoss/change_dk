@@ -183,10 +183,7 @@
            $(".menubtn").click(function() {
            $('.menubtn').toggleClass('pos_fix');
            $('.search_form').toggleClass('pos_fix');
-           $('.close').toggleClass('bg_black');
-           $('.menubtn').toggleClass('bg_black');
            $('.input').toggleClass('out_black');
-           $('.search::before').toggleClass('out_black');
             });
 
             $(".menubtn").click(function(){
