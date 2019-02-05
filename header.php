@@ -63,11 +63,13 @@
     <nav>
       <div id="primaryNav">
          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-        <img class="" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
+        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
 
 
       <div class="container-fluid">
         <?php get_search_form(); ?>
+
+
         <div id="cf_onclick" class="menubtn">
           <span></span>
         </div>
@@ -83,7 +85,7 @@
            $("#cf_onclick").click(function() {
            $('.nav_logo').toggleClass('nav_logo-active');
             });
-           </script> 
+           </script>
 
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
