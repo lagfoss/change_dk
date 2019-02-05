@@ -1,7 +1,6 @@
 <?php /* Template Name: Ydelser */ ?>
 
 <?php get_header(); ?>
-<body <?php body_class(whitebg); ?>>
 
   <div class="container-fluid">
     <div class="row background_img_ydelser" style="background-image:url(<?php the_field('background_img_ydelser'); ?>);">
@@ -32,4 +31,39 @@
   	</div>
   </div>
 
+  <!-- Slider med firma logoer (klienter?) -->
+    <div class="container-fluid">
+      <div class="row logo_slider">
+        <div class="col align-self-center">
+          <div class="owl-carousel owl-theme autoplay">
+            <?php
+            $images = get_field('firma_slider');
+            foreach ($images as $image):?>
+              <div>
+                <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                </div>
+              <?php endforeach;?>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <?php get_footer(); ?>
+
+<script type="text/javascript">
+
+/* Logo transition script */
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+} else {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+}
+
+});
+
+</script>
