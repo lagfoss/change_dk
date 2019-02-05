@@ -8,6 +8,7 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 
 	acf_add_options_sub_page('General');
+	acf_add_options_sub_page('Cases');
 	acf_add_options_sub_page('Header');
 	acf_add_options_sub_page('Footer');
 
@@ -97,30 +98,30 @@ function my_class_names( $classes ) {
 
 function my_cases() {
    $labels = array(
-       'name'                  => _x( 'Produkter', 'Post type general name', 'textdomain' ),
-       'singular_name'         => _x( 'Produkt', 'Post type singular name', 'textdomain' ),
-       'menu_name'             => _x( 'Produkter', 'Admin Menu text', 'textdomain' ),
-       'name_admin_bar'        => _x( 'Produkt', 'Add New on Toolbar', 'textdomain' ),
+       'name'                  => _x( 'Cases', 'Post type general name', 'textdomain' ),
+       'singular_name'         => _x( 'Case', 'Post type singular name', 'textdomain' ),
+       'menu_name'             => _x( 'Cases', 'Admin Menu text', 'textdomain' ),
+       'name_admin_bar'        => _x( 'Case', 'Add New on Toolbar', 'textdomain' ),
        'add_new'               => __( 'Add New', 'textdomain' ),
-       'add_new_item'          => __( 'Add New Produkt', 'textdomain' ),
-       'new_item'              => __( 'New Produkt', 'textdomain' ),
-       'edit_item'             => __( 'Edit Produkt', 'textdomain' ),
-       'view_item'             => __( 'View Produkt', 'textdomain' ),
-       'all_items'             => __( 'All Produkter', 'textdomain' ),
-       'search_items'          => __( 'Search Produkter', 'textdomain' ),
-       'parent_item_colon'     => __( 'Parent Produkter:', 'textdomain' ),
-       'not_found'             => __( 'No Produkter found.', 'textdomain' ),
-       'not_found_in_trash'    => __( 'No Produkter found in Trash.', 'textdomain' ),
-       'featured_image'        => _x( 'Produkter Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
+       'add_new_item'          => __( 'Add New Case', 'textdomain' ),
+       'new_item'              => __( 'New Case', 'textdomain' ),
+       'edit_item'             => __( 'Edit Case', 'textdomain' ),
+       'view_item'             => __( 'View Case', 'textdomain' ),
+       'all_items'             => __( 'All Cases', 'textdomain' ),
+       'search_items'          => __( 'Search Cases', 'textdomain' ),
+       'parent_item_colon'     => __( 'Parent Cases:', 'textdomain' ),
+       'not_found'             => __( 'No Cases found.', 'textdomain' ),
+       'not_found_in_trash'    => __( 'No Cases found in Trash.', 'textdomain' ),
+       'featured_image'        => _x( 'Cases Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
        'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
        'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
        'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-       'archives'              => _x( 'Produkter archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
-       'insert_into_item'      => _x( 'Insert into Produkt', 'Overrides the “Insert into post”/“Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
-       'uploaded_to_this_item' => _x( 'Uploaded to this Produkt', 'Overrides the “Uploaded to this post”/“Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
+       'archives'              => _x( 'Cases archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
+       'insert_into_item'      => _x( 'Insert into Case', 'Overrides the “Insert into post”/“Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
+       'uploaded_to_this_item' => _x( 'Uploaded to this Case', 'Overrides the “Uploaded to this post”/“Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
        'filter_items_list'     => _x( 'Filter cases list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/“Filter pages list”. Added in 4.4', 'textdomain' ),
-       'items_list_navigation' => _x( 'Produkter list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/“Pages list navigation”. Added in 4.4', 'textdomain' ),
-       'items_list'            => _x( 'Produkter list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/“Pages list”. Added in 4.4', 'textdomain' ),
+       'items_list_navigation' => _x( 'Cases list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/“Pages list navigation”. Added in 4.4', 'textdomain' ),
+       'items_list'            => _x( 'Cases list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/“Pages list”. Added in 4.4', 'textdomain' ),
    );
 
    $args = array(
@@ -146,6 +147,12 @@ register_post_type( 'cases', $args );
 }
 
 add_action( 'init', 'my_cases' );
+
+add_filter('use_block_editor_for_post_type', 'd4p_32752_completly_disable_block_editor');
+function d4p_32752_completly_disable_block_editor($use_block_editor) {
+  return false;
+}
+
 
 
 ?>

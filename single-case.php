@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Cases
+Template Post Type: cases
+*/
+?>
 <?php if( have_rows('case_slider') ): ?>
 
   <ul class="slides">
