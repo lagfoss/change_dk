@@ -67,18 +67,10 @@
 
 
       <div class="container-fluid">
-        <span class="example header"> <?php get_search_form(); ?> </span>
-
-        <script type="text/javascript">
-        $(".menubtn").click(function(){
-            $(".header").stop();
-        });
-        );
-
-        </script>
+        <?php get_search_form(); ?>
 
 
-        <div onclick="toggleClass('.example', '.header')" id="cf_onclick" class="menubtn">
+        <div id="cf_onclick" class="menubtn">
           <span></span>
         </div>
 
