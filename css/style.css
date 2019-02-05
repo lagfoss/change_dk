@@ -508,6 +508,15 @@ input {
   position: fixed;
 }
 
+.bg_black {
+  background: #111517;
+}
+
+.out_black {
+  border-color: #111517;
+  color: #111517;
+}
+
 /*Search form slut */
 /*Header slut*/
 /*FORSIDE*/
