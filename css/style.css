@@ -566,6 +566,7 @@ input {
 
 .hero_button {
   text-decoration: none;
+  font-weight: 500;
   padding: 15px 25px;
   background-color: inherit;
   border-color: #e54c00;
@@ -580,6 +581,7 @@ input {
 
 .hero_button:hover {
   color: #fff;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -684,6 +686,7 @@ input {
 
 .case_button {
   text-decoration: none;
+  font-weight: 500;
   padding: 15px 25px;
   background-color: inherit;
   border-color: black;
@@ -697,6 +700,7 @@ input {
 
 .case_button:hover {
   text-decoration: none;
+  font-weight: 500;
   color: #111517;
 }
 
@@ -778,6 +782,7 @@ input {
 
 .wcwd_button {
   text-decoration: none;
+  font-weight: 500;
   padding: 15px 25px;
   margin-top: 60px;
   background-color: inherit;
@@ -792,6 +797,7 @@ input {
 
 .wcwd_button:hover {
   text-decoration: none;
+  font-weight: 500;
   color: #111517;
 }
 
@@ -854,6 +860,7 @@ input {
 
 .know_button {
   text-decoration: none;
+  font-weight: 500;
   padding: 15px 25px;
   background-color: inherit;
   border-color: black;
@@ -867,6 +874,7 @@ input {
 
 .know_button:hover {
   text-decoration: none;
+  font-weight: 500;
   color: inherit;
 }
 
@@ -1214,6 +1222,7 @@ input {
 
   .ydelser_button {
     text-decoration: none;
+    font-weight: 500;
     padding: 15px 25px;
     background-color: inherit;
     background-color: #e54c00;
@@ -1222,11 +1231,12 @@ input {
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-    box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
   }
 
   .ydelser_button:hover{
     text-decoration: none;
+    font-weight: 500;
     color: white;
   }
 
@@ -1257,6 +1267,7 @@ input {
 
 .footer_button {
   text-decoration: none;
+  font-weight: 500;
   padding: 15px 65px;
   background-color: inherit;
   color: white;
@@ -1269,6 +1280,7 @@ input {
 
 .footer_button:hover {
   text-decoration: none;
+  font-weight: 500;
   color: white;
   box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
   transform: scale(0.97);
