@@ -581,7 +581,6 @@ input {
 
 .hero_button:hover {
   color: #fff;
-  font-weight: 500;
   text-decoration: none;
 }
 
@@ -700,7 +699,6 @@ input {
 
 .case_button:hover {
   text-decoration: none;
-  font-weight: 500;
   color: #111517;
 }
 
@@ -797,7 +795,6 @@ input {
 
 .wcwd_button:hover {
   text-decoration: none;
-  font-weight: 500;
   color: #111517;
 }
 
@@ -874,7 +871,6 @@ input {
 
 .know_button:hover {
   text-decoration: none;
-  font-weight: 500;
   color: inherit;
 }
 
@@ -1259,7 +1255,6 @@ input {
 
   .ydelser_button:hover{
     text-decoration: none;
-    font-weight: 500;
     color: white;
     box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
     transform: scale(0.97);
@@ -1300,7 +1295,6 @@ input {
 
 .footer_button:hover {
   text-decoration: none;
-  font-weight: 500;
   color: white;
   box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
   transform: scale(0.97);
