@@ -1256,6 +1256,7 @@ input {
   .ydelser_button:hover{
     text-decoration: none;
     color: white;
+    padding: 14px 24px;
     box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
     transform: scale(0.97);
     -webkit-transform: scale(0.98);
@@ -1290,12 +1291,13 @@ input {
   background-color: #e54c00;
   border-radius: 5px;
   border-style: solid;
-  box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
 .footer_button:hover {
   text-decoration: none;
   color: white;
+  padding: 14px 64px;
   box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
   transform: scale(0.97);
   -webkit-transform: scale(0.98);
