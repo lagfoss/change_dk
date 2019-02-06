@@ -197,12 +197,6 @@
            $('.input').toggleClass('out_black');
             });
 
-            $(".menubtn").click(function(){
-              $(".menubtn::before").css("background", "#111517");
-              $(".search::before").css("color", "#111517");
-              $(".search::before").css("border-color", "#111517");
-            });
-
         </script>
       </div>
     </nav>

@@ -310,6 +310,7 @@ nav {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  background-color: #111517;
 }
 
 .menubtn.close::after {
@@ -318,6 +319,7 @@ nav {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  background-color: #111517;
 }
 
 .some_icons_nav {
@@ -453,7 +455,7 @@ input {
   position: absolute;
   width: 7px;
   height: 2px;
-  background-color:grey;
+  background-color: #111517;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -521,13 +523,9 @@ input {
   position: fixed;
 }
 
-.bg_black {
-  background: grey;
-}
-
 .out_black {
-  border-color: grey;
-  color: grey;
+  border-color: #111517;
+  color: #111517;
 }
 
 /*Search form slut */
