@@ -201,14 +201,6 @@ nav {
 
 .nav_logo-active {
   opacity: 1;
-  top: 82px;
-  left: 3.5%;
-  -webkit-transition: all 5s ease;
-  -moz-transition: all 5s ease;
-  -o-transition: all 5s ease;
-  -ms-transition: all 5s ease;
-  transition: all 5s ease;
-  opacity: 0;
 }
 
 .overlay {
@@ -737,13 +729,19 @@ input {
 }
 
 /* Hvad kan vi gøre for dig? Sektion */
-.do_for_u {
-  margin: 120px auto 100px auto;
+.hvad_kan_vi { 
+  margin: 30px auto 100px auto;
 }
 
-.wcwd_content {
+.ydelser_content {
+  display: flex;
   padding: 30px;
-  min-width: 350px;
+}
+
+.ydelser_content_wrapper {
+  min-width: 315px;
+  padding: 20px 145px 20px 25px;
+  margin-left: 7%;
 }
 
 .hover:hover {
@@ -753,7 +751,7 @@ input {
   transition: 0.8s;
 }
 
-.wcwd_headline {
+.ydelser_headline {
   font-family: 'bebas-neue', sans-serif;
   font-size: 31px;
 }
@@ -777,9 +775,13 @@ input {
   color: #111517;
 }
 
-.wcwd_img {
+.ydelser_img {
   width: 44px;
   width: 70px;
+}
+
+.ydelser_text {
+  width: 280px;
 }
 
 /*Hvad kan vi gøre for dig? Sektion slut*/
@@ -1178,7 +1180,47 @@ input {
     font-weight: 300;
     color: #999999;
     display: inline-block;
+  }
 
+  .wcwd_content {
+    padding: 30px;
+    min-width: 350px;
+  }
+
+  .hover:hover {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+    transition: 0.8s;
+  }
+
+  .wcwd_headline {
+    font-family: 'bebas-neue', sans-serif;
+    font-size: 31px;
+  }
+
+  .wcwd_button {
+    text-decoration: none;
+    padding: 15px 25px;
+    margin-top: 60px;
+    background-color: inherit;
+    border-color: black;
+    width: 185px;
+    height: 60px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #111517;
+  }
+
+  .wcwd_button:hover {
+    text-decoration: none;
+    color: #111517;
+  }
+
+  .wcwd_img {
+    width: 44px;
+    width: 70px;
   }
 
 

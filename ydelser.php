@@ -18,43 +18,7 @@
           <?php endif; ?></a>
       </div>
   	</div>
-    <div class="row">
-      <div class="col-sm-4">
-        <?php if( have_rows('ydelser_buttons') ): ?>
 
-        	<?php while( have_rows('ydelser_buttons') ): the_row();
-
-        		// vars
-        		$image = get_sub_field('image');
-        		$content = get_sub_field('content');
-        		$link = get_sub_field('link');
-
-        		?>
-
-        		<li class="slide">
-
-        			<?php if( $link ): ?>
-        				<a href="<?php echo $link; ?>">
-        			<?php endif; ?>
-
-        				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-
-        			<?php if( $link ): ?>
-        				</a>
-        			<?php endif; ?>
-
-        		    <?php echo $content; ?>
-
-        		</li>
-
-        	<?php endwhile; ?>
-
-        	</ul>
-
-        <?php endif; ?>
-      </div>
-
-    </div>
   </div>
 
 
@@ -68,13 +32,35 @@
   	</div>
   </div>
 
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-sm-4 ydelser_content">
+        <?php if( have_rows('ydelser_buttons') ): ?>
+
+          <?php while( have_rows('ydelser_buttons') ): the_row();
+            $image = get_sub_field('ydelser_img');
+            $header = get_sub_field('ydelser_header');
+            $text = get_sub_field('ydelser_text');
+            ?>
+            <div class="hover ydelser_content_wrapper">
+                <img class="ydelser_img" src="<?php echo $image; ?>" alt="" />
+                <div class="ydelser_headline"><?php echo $header; ?></div>
+                <div class="ydelser_text"><?php echo $text; ?></div>
+            </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Slider med firma logoer (klienter?) -->
     <div class="container-fluid">
       <div class="row logo_slider">
         <div class="col align-self-center">
           <div class="owl-carousel owl-theme autoplay">
             <?php
-            $images = get_field('firma_slider');
+            $images = get_field('firma_slider', 'option');
             foreach ($images as $image):?>
               <div>
                 <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
