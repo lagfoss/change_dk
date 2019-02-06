@@ -14,10 +14,47 @@
   		</div>
       <div class="col-md-6">
         <a class="" href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
-          <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" /> 
+          <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
           <?php endif; ?></a>
       </div>
   	</div>
+    <div class="row">
+      <div class="col-sm-4">
+        <?php if( have_rows('ydelser_buttons') ): ?>
+
+        	<?php while( have_rows('ydelser_buttons') ): the_row();
+
+        		// vars
+        		$image = get_sub_field('image');
+        		$content = get_sub_field('content');
+        		$link = get_sub_field('link');
+
+        		?>
+
+        		<li class="slide">
+
+        			<?php if( $link ): ?>
+        				<a href="<?php echo $link; ?>">
+        			<?php endif; ?>
+
+        				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+
+        			<?php if( $link ): ?>
+        				</a>
+        			<?php endif; ?>
+
+        		    <?php echo $content; ?>
+
+        		</li>
+
+        	<?php endwhile; ?>
+
+        	</ul>
+
+        <?php endif; ?>
+      </div>
+
+    </div>
   </div>
 
 
