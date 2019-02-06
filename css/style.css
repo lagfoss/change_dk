@@ -207,7 +207,7 @@ nav {
 /* Nav start */
 .nav_logo {
   position: fixed;
-  top: 82px;
+  top: 38px;
   left: 3.5%;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
@@ -260,7 +260,7 @@ nav {
   height: 18px;
   cursor: pointer;
   right: 3.5%;
-  top: 84px;
+  top: 38px;
 }
 
 .close {
@@ -400,7 +400,7 @@ nav {
   height: 20px;
   width: 0;
   margin-left: 170px;
-  top: 88px;
+  top: 42px;
   right: 5%;
   padding-right: 20px;
   transform: translate(-50%, -50%);
