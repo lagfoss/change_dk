@@ -15,7 +15,7 @@
   		</div>
       <div class="col-md-6">
         <a class="" href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
-          <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
+          <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" /> 
           <?php endif; ?></a>
       </div>
   	</div>
