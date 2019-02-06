@@ -74,7 +74,7 @@
         <div class="col align-self-center">
           <div class="owl-carousel owl-theme autoplay">
             <?php
-            $images = get_field('firma_slider');
+            $images = get_field('firma_slider', 'option');
             foreach ($images as $image):?>
               <div>
                 <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
