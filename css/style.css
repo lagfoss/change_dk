@@ -117,7 +117,7 @@ button span .owl-theme .owl-dots .owl-dot
 /*HEADER*/
 header {
   z-index: 100;
-  top: 0;
+  top: 20px;
   width: 100%
 }
 

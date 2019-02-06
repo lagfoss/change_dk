@@ -146,7 +146,7 @@
 
           // normalize treshold range
           treshold = (treshold+diff>headerHeight) ? headerHeight : treshold+diff;
-          treshold = (treshold < 0) ? 0 : treshold;
+          treshold = (treshold < 0) ? -20 : treshold;
 
           header.css('top', (-treshold)+'px');
 
