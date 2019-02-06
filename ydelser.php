@@ -33,7 +33,7 @@
   </div>
 
   <div class="container-fluid wrapper">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center buttons_wrapper">
         <?php if( have_rows('ydelser_buttons') ): ?>
 
           <?php while( have_rows('ydelser_buttons') ): the_row();
@@ -52,13 +52,12 @@
               <div class="stroke_ydelser"></div>
             </div>
             <h2><?php the_field('ydelser_contact_button_header')  ?></h2>
-            <button class="ydelser_button">
-              <a href="<?php the_field('ydelser_contact_button_url'); ?>">
-              <?php the_field('ydelser_contact_button_text'); ?></a>
-
+              <a class="ydelser_button" href="<?php the_field('ydelser_contact_button_url');?>">
+              <?php the_field('ydelser_contact_button_text'); ?>
               <?php if( get_field('ydelser_contact_button_arrow') ): ?>
               <img class="1" src="<?php the_field('ydelser_contact_button_arrow'); ?>" />
-            <?php endif; ?></button>
+              </a>
+            <?php endif; ?>
           </div>
         <?php endif; ?>
 
