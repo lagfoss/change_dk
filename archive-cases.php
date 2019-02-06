@@ -1,5 +1,6 @@
 <?php get_header();?>
-
+<body <?php body_class(whitebg); ?>>
+  
 <div class="row">
   <div class="wrapper cases_wrap">
     <div class="col">
@@ -25,7 +26,8 @@ $query = new WP_Query($params);
         $query->the_post(); ?>
 
                   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-                  <a class="case_card_link" href="<?php the_permalink(); ?>"><div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+                  <a class="case_card_link" href="<?php the_permalink(); ?>">
+                    <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
 
                         <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
@@ -34,11 +36,7 @@ $query = new WP_Query($params);
 
                         <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
 
-                        <div class="category">
-                        <h3></h3>
-                        <?php the_category(); ?>
-                        <?php the_tags( ' ' ); ?>
-                        </div>
+
 
 
 
