@@ -24,41 +24,39 @@
 </head>
 
 <body>
-  <header class="position-fixed header">
-    <!-- Content calendar og Sociale medier start -->
-    <div class="container-fluid">
-      <div class="row justify-content-between SoMe">
-        <div class="col-6-float-left align-self-center">
-            <?php the_field('header_text', 'option'); ?>
-          <a id="SoMe_calendar" href="<?php the_field('header_url', 'option'); ?>">
-          <?php the_field('header_url_text' , 'option'); ?></a></div>
-        <div class="col-6-float-right align-self-center">
-          <?php if( have_rows('header_some', 'option') ): ?>
-            <ul>
-              <?php while( have_rows('header_some', 'option') ): the_row();
-              // vars
-                $someimage = get_sub_field('header_some_icon', 'option');
-                $somelink = get_sub_field('header_some_url', 'option');
-              ?>
+  <!-- Content calendar og Sociale medier start -->
+  <div class="container-fluid pre_header">
+    <div class="row justify-content-between SoMe">
+      <div class="col-6-float-left align-self-center">
+          <?php the_field('header_text', 'option'); ?>
+        <a id="SoMe_calendar" href="<?php the_field('header_url', 'option'); ?>">
+        <?php the_field('header_url_text' , 'option'); ?></a></div>
+      <div class="col-6-float-right align-self-center">
+        <?php if( have_rows('header_some', 'option') ): ?>
+          <ul>
+            <?php while( have_rows('header_some', 'option') ): the_row();
+            // vars
+              $someimage = get_sub_field('header_some_icon', 'option');
+              $somelink = get_sub_field('header_some_url', 'option');
+            ?>
 
-              <li class="header_some_icon">
-                <?php if( $somelink ): ?>
-                  <a href="<?php echo $somelink; ?>" target="_blank">
-                    <?php endif; ?>
-                    <img src="<?php echo $someimage['url']; ?>" alt="<?php echo $someimage['alt'] ?>" />
-                    <?php if( $somelink ): ?>
-                  </a>
-                <?php endif; ?>
-              </li>
-            <?php endwhile; ?>
-          </ul>
-          <?php endif; ?>
-        </div>
+            <li class="header_some_icon">
+              <?php if( $somelink ): ?>
+                <a href="<?php echo $somelink; ?>" target="_blank">
+                  <?php endif; ?>
+                  <img src="<?php echo $someimage['url']; ?>" alt="<?php echo $someimage['alt'] ?>" />
+                  <?php if( $somelink ): ?>
+                </a>
+              <?php endif; ?>
+            </li>
+          <?php endwhile; ?>
+        </ul>
+        <?php endif; ?>
       </div>
     </div>
-    <!-- Content calendar og Sociale medier slut -->
-
-
+  </div>
+  <!-- Content calendar og Sociale medier slut -->
+  <header class="position-fixed header">
     <!-- Menu/Nav start -->
     <nav>
       <div id="primaryNav">

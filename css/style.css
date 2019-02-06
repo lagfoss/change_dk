@@ -122,6 +122,11 @@ header {
 }
 
 /*Sociale medier og tekst i toppen*/
+.pre_header {
+  position: absolute;
+  z-index: 101;
+}
+
 .SoMe {
   height: 45px;
   background-color: rgba(87, 92, 94, 0.5);
