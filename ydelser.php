@@ -43,8 +43,8 @@
             ?>
             <div class="hover col-sm-4 wcwd_content">
                 <img class="wcwd_img" src="<?php echo $image; ?>" alt="" />
-                <div class="wcwd_headline"><?php echo $header; ?></div>
-                <div class="wcwd_text"><?php echo $text; ?></div>
+                <h3><?php echo $header; ?></h3>
+                <p><?php echo $text; ?></p>
             </div>
           <?php endwhile; ?>
           <div id="ydelser_contact" class="col-sm-4 wcwd_content">
