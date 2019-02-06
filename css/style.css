@@ -345,10 +345,11 @@ nav {
 .nav_some_wrapper {
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
+  width: 212px;
 }
 
 .nav_some {
-  padding: 5px 20px 13px 0px;
+  padding: 5px 35px 15px 0px;
   list-style-type: none;
   text-align: left;
 }
@@ -374,7 +375,7 @@ nav {
 }
 
 .nav_job a {
-  font-size: 16px;
+  font-size: 17px;
   font-family: Montserrat;
   padding-bottom: 5px;
 }
@@ -430,8 +431,8 @@ input {
 .search {
   background: none;
   position: absolute;
-  top: 5px;
-  left: 6px;
+  top: 4px;
+  left: 5px;
   height: 20px;
   width: 20px;
   padding: 0;
@@ -473,25 +474,25 @@ input {
   content: "";
   position: absolute;
   width: 15px;
-  height: 1px;
-  margin-top: -1px;
-  margin-left: -13px;
+  height: 2px;
+  margin-top: 0px;
+  margin-left: -16px;
   background-color: grey;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-}
+} 
 
 .searchclose:after {
   content: "";
   position: absolute;
   width: 15px;
-  height: 1px;
+  height: 2px;
   background-color: grey;
-  margin-top: -1px;
-  margin-left: -13px;
+  margin-top: 0px;
+  margin-left: -16px;
   cursor: pointer;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -521,12 +522,12 @@ input {
 }
 
 .bg_black {
-  background: #111517;
+  background: grey;
 }
 
 .out_black {
-  border-color: #111517;
-  color: #111517;
+  border-color: grey;
+  color: grey;
 }
 
 /*Search form slut */
@@ -1238,11 +1239,6 @@ input {
     text-decoration: none;
     font-weight: 500;
     color: white;
-    box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
-    transform: scale(0.97);
-    -webkit-transform: scale(0.98);
-    -moz-transform: scale(0.98);
-    -o-transform: scale(0.98);
   }
 
   .buttons_wrapper {
@@ -1347,7 +1343,7 @@ input {
 }
 
 .footer_address p {
-  font-size: 20px;
+  font-size: 19px;
   margin-top: 40px;
 }
 
