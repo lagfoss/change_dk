@@ -151,7 +151,7 @@
 					<img class="wcwd_img" src="<?php the_field('brandstrategi_img'); ?>" />
 					<?php endif; ?>
 					<div class="wcwd_headline"><?php the_field('brandstrategi_header'); ?></div>
-					<p class="wcwd_text"><?php the_field('brandstrategi_text'); ?></p>
+					<p><?php the_field('brandstrategi_text'); ?></p>
 			</div>
 
 			<div class="col-sm-4 hover wcwd_content">
