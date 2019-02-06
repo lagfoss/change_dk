@@ -128,7 +128,7 @@
               <?php endwhile; ?>
             </div>
             <?php endif; ?>
-            <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('footer_address', 'option'); ?></a>
+            <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('nav_address', 'option'); ?></a>
 
           </div>
         </div>
