@@ -48,6 +48,9 @@
             </div>
           <?php endwhile; ?>
           <div id="ydelser_contact" class="col-sm-4 wcwd_content">
+            <div class="ydelser_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+
+            </div>
             <div class="stroke_position_ydelser">
               <div class="stroke_ydelser"></div>
             </div>
