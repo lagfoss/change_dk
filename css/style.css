@@ -4,7 +4,10 @@
 }
 
 .row, .container, .container-fluid, .col, .col-1, .col-2, .col-3, .col-4, .col-5,
-.col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+.col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2,
+.col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+.col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   margin: 0;
   padding: 0;
 }
@@ -549,6 +552,7 @@ input {
 
 .hero_text {
   width: 485px;
+  padding-bottom: 40px;
 }
 
 .hero_button {
@@ -797,10 +801,10 @@ input {
 
 .know_us_dots {
   position: absolute;
-  width: 55%;
+  width: 45%;
   height: 95%;
   background-repeat: repeat;
-  left: 5%;
+  left: 8%;
   top: -1%;
   z-index: -1;
 }
@@ -814,6 +818,14 @@ input {
   border-radius: 10px;
   box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
   margin: 0 20px 0 20px;
+}
+
+.know_us_content {
+  max-width: 400px;
+}
+
+.know_us_content p {
+  padding-bottom: 20px;
 }
 
 .know_button {
@@ -1188,12 +1200,11 @@ input {
 }
 
 .footer_project h2 {
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 
 .footer_button {
   text-decoration: none;
-  margin-top: 60px;
   padding: 15px 65px;
   background-color: inherit;
   color: white;
@@ -1211,10 +1222,13 @@ input {
 
 .letstalk_footer {
   text-align: center;
+  margin: 70px auto 70px auto;
+}
+
+.letstalk_footer p {
+  text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-  background-color: #f2f2f2;
-  margin: 70px auto 70px auto;
 }
 
 .letstalk_footer a {
@@ -1322,6 +1336,10 @@ input {
 
   #slide {
     display: none;
+  }
+
+  .know_us_content {
+    margin: 20px auto;
   }
 }
 

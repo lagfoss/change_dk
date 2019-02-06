@@ -213,10 +213,10 @@
 
 	<!-- Image carousel and get to know us -->
 	<div class="container-fluid">
-		<div class="row know_us align-items-center wrapper">
+		<div class="row know_us align-items-center">
 			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
 	    </div>
-			<div class="col-md-8">
+			<div class="col-md-7">
 
 				<!-- Image carousel -->
 				<div class="col-11 owl-carousel owl-theme autowidth">
@@ -231,7 +231,7 @@
 			</div>
 
 			<!-- Know us text -->
-			<div class="col-md-4">
+			<div class="col-md-5 know_us_content">
 					<h2><?php the_field('know_us_title'); ?></h2>
 					<p><?php the_field('know_us_text'); ?></p>
 
