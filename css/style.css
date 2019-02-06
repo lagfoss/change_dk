@@ -1212,6 +1212,29 @@ input {
     display: inline-block;
   }
 
+  .buttons_wrapper {
+    margin-top: 70px;
+  }
+
+  .buttons_wrapper h2 {
+    margin-bottom: 30px;
+  }
+
+  #ydelser_contact {
+    position: relative;
+    padding: 0px 30px;
+  }
+
+  .ydelser_dots {
+    position: absolute;
+    width: 17%;
+    height: 19%;
+    background-repeat: repeat;
+    right: 19%;
+    bottom: 47%;
+    z-index: -1;
+  }
+
   .ydelser_button {
     text-decoration: none;
     padding: 15px 25px;
@@ -1233,14 +1256,6 @@ input {
     -webkit-transform: scale(0.98);
     -moz-transform: scale(0.98);
     -o-transform: scale(0.98);
-  }
-
-  .buttons_wrapper {
-    margin-top: 90px;
-  }
-
-  #ydelser_contact {
-    padding: 0px 30px;
   }
 
 /* YDELSER slut */
@@ -1392,7 +1407,7 @@ input {
     margin-left: 12%;
   }
 
-  .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left {
+  .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
     display: none;
   }
 
