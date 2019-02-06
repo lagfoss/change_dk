@@ -83,6 +83,17 @@
 
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
+
+            <script>
+            $(function(){
+              $('a').each(function() {
+                if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('current');
+                }
+              });
+            });
+          </script>
+
             <!-- Job link til/fra -->
             <?php
             if( get_field('job_available', 'option') )
