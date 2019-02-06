@@ -43,7 +43,7 @@
             ?>
             <div class="hover col-sm-4 wcwd_content">
                 <img class="wcwd_img" src="<?php echo $image; ?>" alt="" />
-                <div class="wcwd_headline"><?php echo $header; ?></div>
+                <h3><?php echo $header; ?></h3>
                 <div class="wcwd_text"><?php echo $text; ?></div>
             </div>
           <?php endwhile; ?>
