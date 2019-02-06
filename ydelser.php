@@ -32,7 +32,7 @@
   	</div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid wrapper">
     <div class="row justify-content-center">
         <?php if( have_rows('ydelser_buttons') ): ?>
 
@@ -47,6 +47,19 @@
                 <div class="wcwd_text"><?php echo $text; ?></div>
             </div>
           <?php endwhile; ?>
+          <div id="ydelser_contact" class="col-sm-4 wcwd_content">
+            <div class="stroke_position_ydelser">
+              <div class="stroke_ydelser"></div>
+            </div>
+            <h2><?php the_field('ydelser_contact_button_header')  ?></h2>
+            <button class="ydelser_button">
+              <a href="<?php the_field('ydelser_contact_button_url'); ?>">
+              <?php the_field('ydelser_contact_button_text'); ?></a>
+
+              <?php if( get_field('ydelser_contact_button_arrow') ): ?>
+              <img class="1" src="<?php the_field('ydelser_contact_button_arrow'); ?>" />
+            <?php endif; ?></button>
+          </div>
         <?php endif; ?>
 
     </div>
@@ -69,6 +82,16 @@
       </div>
     </div>
 
+
+      <div class="container-fluid">
+        <div class="row komme_uden_om_det">
+          <h2 class="ydelser_main_content_overskrift"> <?php the_field('ydelser_main_content_overskrift') ?> </h2>
+          <p class="ydelser_main_content_text"> <?php the_field('ydelser_main_content_text') ?> </p>
+          <div class="stroke_position">
+            <div class="stroke"></div>
+          </div>
+      	</div>
+      </div>
 <?php get_footer(); ?>
 
 <script type="text/javascript">
