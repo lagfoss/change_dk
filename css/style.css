@@ -1399,6 +1399,11 @@ input {
   .know_us_content {
     margin: 20px auto;
   }
+
+  .calltoaction_hero_ydelser {
+    top: 0%;
+    margin-left: 12%;
+  }
 }
 
 /* Small devices () */
