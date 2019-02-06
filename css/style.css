@@ -582,7 +582,6 @@ input {
 
 .hero_button:hover {
   color: #fff;
-  font-weight: 500;
   text-decoration: none;
 }
 
@@ -701,7 +700,6 @@ input {
 
 .case_button:hover {
   text-decoration: none;
-  font-weight: 500;
   color: #111517;
 }
 
@@ -798,7 +796,6 @@ input {
 
 .wcwd_button:hover {
   text-decoration: none;
-  font-weight: 500;
   color: #111517;
 }
 
@@ -875,7 +872,6 @@ input {
 
 .know_button:hover {
   text-decoration: none;
-  font-weight: 500;
   color: inherit;
 }
 
@@ -1222,27 +1218,27 @@ input {
   }
 
   .buttons_wrapper {
-    margin-top: 70px;
-  }
+      margin-top: 70px;
+    }
 
-  .buttons_wrapper h2 {
-    margin-bottom: 30px;
-  }
+    .buttons_wrapper h2 {
+      margin-bottom: 30px;
+    }
 
-  #ydelser_contact {
-    position: relative;
-    padding: 0px 30px;
-  }
+    #ydelser_contact {
+      position: relative;
+      padding: 0px 30px;
+    }
 
-  .ydelser_dots {
-    position: absolute;
-    width: 17%;
-    height: 19%;
-    background-repeat: repeat;
-    right: 19%;
-    bottom: 47%;
-    z-index: -1;
-  }
+    .ydelser_dots {
+      position: absolute;
+      width: 17%;
+      height: 19%;
+      background-repeat: repeat;
+      right: 19%;
+      bottom: 47%;
+      z-index: -1;
+    }
 
   .ydelser_button {
     text-decoration: none;
