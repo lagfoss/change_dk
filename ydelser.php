@@ -34,7 +34,6 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-sm-4 ydelser_content">
         <?php if( have_rows('ydelser_buttons') ): ?>
 
           <?php while( have_rows('ydelser_buttons') ): the_row();
@@ -42,14 +41,13 @@
             $header = get_sub_field('ydelser_header');
             $text = get_sub_field('ydelser_text');
             ?>
-            <div class="hover ydelser_content_wrapper">
-                <img class="ydelser_img" src="<?php echo $image; ?>" alt="" />
-                <div class="ydelser_headline"><?php echo $header; ?></div>
-                <div class="ydelser_text"><?php echo $text; ?></div>
+            <div class="hover col-sm-4 wcwd_content">
+                <img class="wcwd_img" src="<?php echo $image; ?>" alt="" />
+                <div class="wcwd_headline"><?php echo $header; ?></div>
+                <div class="wcwd_text"><?php echo $text; ?></div>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
-      </div>
 
     </div>
   </div>
