@@ -114,6 +114,11 @@ a:hover {
   border: none;
 }
 
+button span .owl-theme .owl-dots .owl-dot
+ {
+  outline: none;
+}
+
 /*Fonts slut*/
 /*HEADER*/
 header {
@@ -1167,8 +1172,8 @@ input {
   }
 
   .stroke_ydelser {
-    height: 5px;
-    width: 60px;
+    height: 3px;
+    width: 30px;
     background-color: #e54c00;
     border-radius: 4px;
     margin: 30px 1px;
@@ -1178,20 +1183,19 @@ input {
     font-size: 61px;
     max-width: 100%;
     max-height: 20%;
-    text-shadow: 0 2px 0 #111517;
     line-height: 0.88;
   }
 
   .calltoaction_hero_ydelser {
     position: absolute;
-    top: 47%;
-    margin-left: 40%;
+    top: 48%;
+    margin-left: 35%;
     text-decoration: none;
     padding: 15px 20px;
     background-color: #ffffff;
     border-color: #ffffff;
-    width: 63px;
-    height: 65px;
+    width: 58px;
+    height: 60px;
     border-radius: 10px;
     text-align: center;
     color: #ffffff;
