@@ -501,6 +501,20 @@ input {
   transform: translate(-100%, 0%);
 }
 
+
+.pos_fix {
+  position: fixed;
+}
+
+.bg_black {
+  background: #111517;
+}
+
+.out_black {
+  border-color: #111517;
+  color: #111517;
+}
+
 /*Search form slut */
 /*Header slut*/
 /*FORSIDE*/
@@ -1064,14 +1078,14 @@ input {
   width: 200%;
   left: -200%;
   height: 100%;
-  padding: 100px 40%;
+  padding: 90px 40%;
   background: #e54c00;
-  transition: 3s;
+  transition: 2s;
   overflow: hidden;
 }
 
 .om_steps_content:hover #slide {
-  transition: 3s;
+  transition: 2s;
   left: -50%;
 }
 
@@ -1266,7 +1280,7 @@ input {
     height: 100%;
     padding: 100px 40%;
     background: #e54c00;
-    transition: 3s;
+    transition: 2s;
     overflow: hidden;
   }
 }

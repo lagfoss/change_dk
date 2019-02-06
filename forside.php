@@ -245,8 +245,10 @@
 
 <?php get_footer(); ?>
 
-<!-- Logo transition script -->
+
 <script type="text/javascript">
+
+/* Logo transition script */
 $(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scroll = $(window).scrollTop();

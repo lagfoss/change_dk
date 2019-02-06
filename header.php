@@ -145,7 +145,6 @@
         });
 
 
-
         /* Åben/luk menu navigation  */
           function openNav() {
           menubtn.classList.add("is-active");
@@ -184,15 +183,14 @@
            $(".menubtn").click(function() {
            $('.menubtn').toggleClass('pos_fix');
            $('.search_form').toggleClass('pos_fix');
+           $('.input').toggleClass('out_black');
             });
 
-           /* $(document).ready(function() {
-
-             $(".menubtn").on("click", function() {
-               $("#search_form").css("position", "fixed")
-               $(".menubtn").css("position", "fixed")
-             });
-           });*/
+            $(".menubtn").click(function(){
+              $(".menubtn::before").css("background", "#111517");
+              $(".search::before").css("color", "#111517");
+              $(".search::before").css("border-color", "#111517");
+            });
 
         </script>
       </div>
