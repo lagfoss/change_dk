@@ -349,7 +349,7 @@ nav {
 }
 
 .nav_some {
-  padding: 5px 35px 15px 0px;
+  padding: 5px 30px 15px 0px;
   list-style-type: none;
   text-align: left;
 }
@@ -1156,113 +1156,113 @@ input {
 
 /* YDELSER start */
 
-  .background_img_ydelser {
-    position: relative;
-    top: 0;
-    margin-top: 0;
-    margin-bottom: 120px;
-    width: 100%;
-    height: 700px;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-    border-radius: 0px 0px 30px 0px
-  }
+.background_img_ydelser {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  margin-bottom: 120px;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 0px 30px 0px
+}
 
-  .stroke_position_ydelser {
-    width: 100%;
-  }
+.stroke_position_ydelser {
+  width: 100%;
+}
 
-  .stroke_ydelser {
-    height: 3px;
-    width: 30px;
-    background-color: #e54c00;
-    border-radius: 4px;
-    margin: 30px 1px;
-  }
+.stroke_ydelser {
+  height: 3px;
+  width: 30px;
+  background-color: #e54c00;
+  border-radius: 4px;
+  margin: 30px 1px;
+}
 
-    .h1_hero_ydelser {
-    font-size: 61px;
-    max-width: 100%;
-    max-height: 20%;
-    line-height: 0.88;
-  }
+.h1_hero_ydelser {
+  font-size: 61px;
+  max-width: 100%;
+  max-height: 20%;
+  line-height: 0.88;
+}
 
-  .calltoaction_hero_ydelser {
-    position: absolute;
-    top: 48%;
-    margin-left: 35%;
-    text-decoration: none;
-    padding: 15px 20px;
-    background-color: #ffffff;
-    border-color: #ffffff;
-    width: 58px;
-    height: 60px;
-    border-radius: 10px;
-    text-align: center;
-    color: #ffffff;
-    transform: rotate(90deg);
-  }
+.calltoaction_hero_ydelser {
+  position: absolute;
+  top: 48%;
+  margin-left: 35%;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  width: 58px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
 
-  .komme_uden_om_det {
-    text-align: center;
-    display: block;
-  }
+.komme_uden_om_det {
+  text-align: center;
+  display: block;
+}
 
-  .ydelser_main_content_text {
-    width: 475px;
-    font-weight: 300;
-    color: #999999;
-    display: inline-block;
-  }
+.ydelser_main_content_text {
+  width: 475px;
+  font-weight: 300;
+  color: #999999;
+  display: inline-block;
+}
 
-  .buttons_wrapper {
-      margin-top: 70px;
-    }
+.buttons_wrapper {
+  margin-top: 70px;
+}
 
-    .buttons_wrapper h2 {
-      margin-bottom: 30px;
-    }
+.buttons_wrapper h2 {
+  margin-bottom: 30px;
+}
 
-    #ydelser_contact {
-      position: relative;
-      padding: 0px 30px;
-    }
+#ydelser_contact {
+  position: relative;
+  padding: 0px 30px;
+}
 
-    .ydelser_dots {
-      position: absolute;
-      width: 17%;
-      height: 19%;
-      background-repeat: repeat;
-      right: 19%;
-      bottom: 47%;
-      z-index: -1;
-    }
+.ydelser_dots {
+  position: absolute;
+  width: 17%;
+  height: 19%;
+  background-repeat: repeat;
+  right: 19%;
+  bottom: 47%;
+  z-index: -1;
+}
 
-  .ydelser_button {
-    text-decoration: none;
-    font-weight: 500;
-    padding: 15px 25px;
-    background-color: inherit;
-    background-color: #e54c00;
-    width: 185px;
-    height: 60px;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
-  }
+.ydelser_button {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px 25px;
+  background-color: inherit;
+  background-color: #e54c00;
+  width: 185px;
+  height: 60px;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
+}
 
-  .ydelser_button:hover{
-    text-decoration: none;
-    color: white;
-    padding: 14px 24px;
-    box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
-    transform: scale(0.97);
-    -webkit-transform: scale(0.98);
-    -moz-transform: scale(0.98);
-    -o-transform: scale(0.98);
+.ydelser_button:hover{
+  text-decoration: none;
+  color: white;
+  padding: 14px 24px;
+  box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
+  transform: scale(0.97);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -o-transform: scale(0.98);
 }
 
 /* YDELSER slut */
