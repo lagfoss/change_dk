@@ -746,52 +746,61 @@ input {
 /* Hvad kan vi gøre for dig? Sektion */
 
 
-  .do_for_u {
-  margin: 120px auto 100px auto;
-  }
+.do_for_u {
+  margin: 300px auto 100px auto;
+}
 
-  .wcwd_content {
-    padding: 30px;
-    min-width: 350px;
-  }
+.wcwd_content {
+  margin: 10px;
+  padding: 20px;
+  max-width: 320px;
+  min-height: 300px;
+}
 
-  .hover:hover {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
-    transition: 0.8s;
-  }
+.wcwd_intro {
+  padding: 40px 20px;
+}
 
-  .wcwd_headline {
-    font-family: 'bebas-neue', sans-serif;
-    font-size: 31px;
-  }
+.wcwd_intro h2 {
+  max-width: 270px;
+}
 
-  .wcwd_button {
-    text-decoration: none;
-    padding: 15px 25px;
-    margin-top: 60px;
-    background-color: inherit;
-    border-color: black;
-    width: 185px;
-    height: 60px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #111517;
-  }
+.hover:hover {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -30px 30px 40px -5px rgba(0, 0, 0, 0.12);
+  transition: 0.8s;
+}
 
-  .wcwd_button:hover {
-    text-decoration: none;
-    color: #111517;
-  }
+.wcwd_content h3 {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 31px;
+  text-align: left;
+}
 
-  .wcwd_img {
-    width: 44px;
-    width: 70px;
-  }
+.wcwd_button {
+  text-decoration: none;
+  padding: 15px 25px;
+  margin-top: 60px;
+  background-color: inherit;
+  border-color: black;
+  width: 185px;
+  height: 60px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #111517;
+}
 
+.wcwd_button:hover {
+  text-decoration: none;
+  color: #111517;
+}
 
+.wcwd_img {
+  height: 80px;
+  padding: 15px;
+}
 
 
 /*Hvad kan vi gøre for dig? Sektion slut*/
