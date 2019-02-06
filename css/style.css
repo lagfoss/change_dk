@@ -108,10 +108,6 @@ a {
   color: inherit;
 }
 
-a:hover {
-  color: inherit;
-}
-
 button span .owl-theme .owl-dots .owl-dot
  {
   outline: none;
@@ -1221,18 +1217,16 @@ input {
     padding: 15px 25px;
     background-color: inherit;
     background-color: #e54c00;
-    border: none;
     width: 185px;
     height: 60px;
     border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
     text-align: center;
     color: #ffffff;
   }
 
-  .ydelser_button a:hover{
+  .ydelser_button:hover{
     text-decoration: none;
+    color: white;
   }
 
   #ydelser_contact {
