@@ -460,7 +460,22 @@ input {
   transform: translate(-100%, 0%);
 }
 
-.search:before {
+.pseudo_search:before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  background-color: grey;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 7px;
+  margin-left: 3px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.active_search:before {
   content: "";
   position: absolute;
   width: 7px;

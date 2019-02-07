@@ -56,17 +56,17 @@
     </div>
   </div>
   <!-- Content calendar og Sociale medier slut -->
+
   <header class="position-fixed header">
+
     <!-- Menu/Nav start -->
     <nav>
       <div id="primaryNav">
          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
 
-
       <div class="container-fluid">
         <?php get_search_form(); ?>
-
 
         <div id="cf_onclick" class="menubtn">
           <span></span>
@@ -80,17 +80,6 @@
            <img class="nav_logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt=""></a>
 
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-
-
-            <script>
-            $(function(){
-              $('a').each(function() {
-                if ($(this).prop('href') == window.location.href) {
-                  $(this).addClass('current');
-                }
-              });
-            });
-          </script>
 
             <!-- Job link til/fra -->
             <?php
@@ -135,6 +124,7 @@
 
         <script type="text/javascript">
 
+        // Gør at header vises og forsvinder med scroll
         var header = $('.header'),
         headerHeight = header.height(),
         treshold = 0,
@@ -174,6 +164,7 @@
           $(this).toggleClass('close','menubtn');
           });
 
+          //Search animation
           function expand() {
             $(".search").toggleClass("searchclose");
             $(".input").toggleClass("square");
@@ -185,15 +176,35 @@
           }
           $('button').on('click', expand);
 
+          $(function(){
+            $('a').each(function() {
+              if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('current');
+              }
+            });
+          });
+
           $("#cf_onclick").click(function() {
           $('.nav_logo').toggleClass('nav_logo-active');
            });
 
+           //Skifter mellem forskellige classes ved at trykke på menu knappen
            $(".menubtn").click(function() {
-           $('.menubtn').toggleClass('pos_fix');
-           $('.search_form').toggleClass('pos_fix');
-           $('.input').toggleClass('out_black');
-           $('.pre_header').toggleClass('display_no');
+             $('.menubtn').toggleClass('pos_fix');
+             $('.search_form').toggleClass('pos_fix');
+             $('.input').toggleClass('out_black');
+             $('.pre_header').toggleClass('display_no');
+
+             $('.search').slideUp(function() {
+               var search = $(this);
+               if(search.hasClass('pseudo_search')) {
+                 search.removeClass('pseudo_search');
+                 search.addClass('active_search');
+               } else {
+                 search.removeClass('active_search');
+                 search.addClass('pseudo_search');
+               }
+             }).slideDown();
             });
 
         </script>
