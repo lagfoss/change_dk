@@ -1428,7 +1428,7 @@ input {
   font-size: 13px;
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 992px and down) */
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 83px;
@@ -1437,6 +1437,10 @@ input {
   .hero_text {
     font-size: 16px;
     width: 430px;
+  }
+
+  .watch, .showreel {
+    margin-left: 20px;
   }
 
   #slide {
@@ -1452,10 +1456,14 @@ input {
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and down) */
 @media screen and (max-width: 769px) {
   h1 {
     font-size: 65px;
+  }
+
+  .hero_info {
+    margin: 200px auto 0 auto;
   }
 
   .hero_text {
@@ -1465,8 +1473,7 @@ input {
   }
 
   .watchourshowreel {
-    position: absolute;
-    display: block;
+    margin-top: 265px;
   }
 
   .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
@@ -1487,6 +1494,17 @@ input {
   }
 }
 
+/* Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) */
+@media screen and (max-width: 575px) {
+  .hero_info {
+    margin-top: 100px;
+  }
+
+  .watchourshowreel {
+    margin-top: 50px;
+  }
+}
+
 /* Small devices () */
 @media screen and (max-width: 420px) {
   h1 {
@@ -1494,9 +1512,17 @@ input {
     margin-top: 25px;
   }
 
+  .hero_info {
+    margin-top: 100px;
+  }
+
   .hero_text {
     font-size: 16px;
     width: 225px;
+  }
+
+  .watchourshowreel {
+    margin-top: 50px;
   }
 
   .SoMe {

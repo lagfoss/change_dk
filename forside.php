@@ -7,7 +7,7 @@
 	<div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
 		<div class="container-fluid wrapper">
 			<div class="row">
-		<div class="col-md-6">
+		<div class="col-sm-6">
 		<div class="hero_info">
 			<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
@@ -19,7 +19,7 @@
 		</div>
 
 		<!-- Showreel on hero -->
-		<div class="col-md-6">
+		<div class="col-sm-6">
 		<?php
 		if( get_field('showreel_toggle') )
 			$value = get_field('showreel_toggle');
@@ -27,14 +27,14 @@
 			<?php  if( $value == true ) : ?>
 
 					<div class="row justify-content-center watchourshowreel">
-						<div class="col-md-2">
+						<div class="col-2">
 						<a href="#modal" class="open-modal" rel="modal:open nofollow">
 							<?php if( get_field('showreel_icon') ): ?>
 							<img class="playcircle" src="<?php the_field('showreel_icon'); ?>" />
 							<?php endif; ?>
 						</a>
 						</div>
-						<div class="col-md-2">
+						<div class="col-2">
 						<p class="watch"><?php the_field('showreel_text'); ?></p>
 						<p class="showreel"><?php the_field('showreel_title'); ?></p>
 						</div>
