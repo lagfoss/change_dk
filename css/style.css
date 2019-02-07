@@ -538,6 +538,10 @@ input {
   color: #111517;
 }
 
+.display_no {
+  display: none;
+}
+
 /*Search form slut */
 /*Header slut*/
 /*FORSIDE*/
