@@ -7,7 +7,9 @@
 .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2,
 .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
 .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4,
-.col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+.col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
+.col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   margin: 0;
   padding: 0;
 }
@@ -649,7 +651,6 @@ input {
 }
 
 .watchourshowreel {
-  display: block;
   margin-top: 130px;
 }
 
@@ -674,25 +675,22 @@ input {
 }
 
 .watch {
+  margin: 12px 0 0 0;
   width: 100px;
-  height: 39px;
+  height: 34px;
   font-size: 18px;
-  line-height: 2.17;
+  line-height: 1;
   color: #f2f2f2;
-  margin-left: 78px;
-  bottom: 8px;
 }
 
 .showreel {
+  margin: 0;
   width: 114px;
-  height: 39px;
+  height: 34px;
   font-size: 24px;
   font-weight: 500;
-  line-height: 1.63;
+  line-height: 0;
   color: #f2f2f2;
-  margin-left: 78px;
-  bottom: 0.1px;
-  top: 26px;
 }
 
 .playcircle {

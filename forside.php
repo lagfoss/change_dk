@@ -26,14 +26,18 @@
 			?>
 			<?php  if( $value == true ) : ?>
 
-					<div class="watchourshowreel">
+					<div class="row watchourshowreel">
+						<div class="col-md-2">
 						<a href="#modal" class="open-modal" rel="modal:open nofollow">
 							<?php if( get_field('showreel_icon') ): ?>
 							<img class="playcircle" src="<?php the_field('showreel_icon'); ?>" />
 							<?php endif; ?>
 						</a>
+						</div>
+						<div class="col-md-2">
 						<p class="watch"><?php the_field('showreel_text'); ?></p>
 						<p class="showreel"><?php the_field('showreel_title'); ?></p>
+						</div>
 					</div>
 					<div id="modal" class="modal" style="display:none;">
 					  <?php
