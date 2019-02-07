@@ -426,7 +426,7 @@ input {
   box-sizing: border-box;
   width: 15px;
   height: 15px;
-  border: 2px solid grey;
+  border: 2px solid;
   border-radius: 50%;
   background: none;
   color: grey;
@@ -497,17 +497,11 @@ input {
   transition-delay: 0.4s;
 }
 
-.pseudo_searchclose:before {
-  background-color: grey;
-}
 
 .pseudo_searchclose:after {
   background-color: grey;
 }
 
-.active_searchclose:before {
-  background-color: #111517;
-}
 
 .active_searchclose:after {
   background-color: #111517;
@@ -545,7 +539,7 @@ input {
   padding: 0 20px 0 10px;
   width: 205px;
   height: 30px;
-  border: 1px solid grey;
+  border: 1px solid;
   border-radius: 5px;
   background: none;
   outline: 0;
