@@ -195,7 +195,7 @@
              $('.input').toggleClass('out_black');
              $('.pre_header').toggleClass('display_no');
 
-             $('.search').slideUp(function() {
+             $('.search').slideUp(10, function() {
                var search = $(this);
                if(search.hasClass('pseudo_search')) {
                  search.removeClass('pseudo_search');
@@ -204,7 +204,7 @@
                  search.removeClass('active_search');
                  search.addClass('pseudo_search');
                }
-             }).slideDown();
+             }).slideDown(10);
             });
 
         </script>
