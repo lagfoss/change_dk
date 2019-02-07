@@ -4,7 +4,9 @@
 
 <!-- Hero image, text and call to action -->
 
-	<div class="row hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
+	<div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
+		<div class="container-fluid wrapper">
+			<div class="row">
 		<div class="col-md-6">
 		<div class="hero_info">
 			<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
@@ -64,6 +66,8 @@
 			<?php else : ?>
 				<span></span>
 			<?php endif; ?>
+		</div>
+	</div>
 		</div>
 	</div>
 

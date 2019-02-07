@@ -612,17 +612,15 @@ input {
   background-size: cover;
 }
 
+.hero_info {
+  margin-top: 130px;
+}
+
 .hero_title {
   max-width: 30%;
   max-height: 20%;
   text-shadow: 0 2px 0 #111517;
   line-height: 0.88;
-}
-
-.hero_info {
-  position: absolute;
-  top: 32%;
-  margin-left: 12%;
 }
 
 .hero_text {
@@ -651,10 +649,8 @@ input {
 }
 
 .watchourshowreel {
-  bottom: 45%;
-  margin-left: 40%;
-  position: absolute;
   display: block;
+  margin-top: 130px;
 }
 
 .blocker {
@@ -683,7 +679,6 @@ input {
   font-size: 18px;
   line-height: 2.17;
   color: #f2f2f2;
-  position: absolute;
   margin-left: 78px;
   bottom: 8px;
 }
@@ -696,7 +691,6 @@ input {
   line-height: 1.63;
   color: #f2f2f2;
   margin-left: 78px;
-  position: absolute;
   bottom: 0.1px;
   top: 26px;
 }
@@ -1475,7 +1469,6 @@ input {
   .watchourshowreel {
     position: absolute;
     display: block;
-    margin-left: 12%;
   }
 
   .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
@@ -1547,13 +1540,6 @@ input {
     left: -35px;
   }
 
-  .watchourshowreel {
-    top: 50%;
-  }
-
-  .watch {
-    top: 0%;
-  }
 }
 
 /*========= CASES =========*/
