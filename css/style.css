@@ -560,6 +560,16 @@ input {
   transform: translate(-100%, 0%);
 }
 
+.page-id-490 .menubtn:before, .page-id-490 .menubtn span, .page-id-490 .menubtn:after,
+.page-id-490 .pseudo_search:before {
+  background-color: #111517;
+}
+
+.page-id-490 .input {
+  border-color: #111517;
+  color: #111517;
+}
+
 .pos_fix {
   position: fixed;
 }
