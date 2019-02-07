@@ -287,6 +287,10 @@ nav {
   border-radius: 3px;
 }
 
+.menu_black:before, .menu_black span, .menu_black:after {
+  background-color: #111517;
+}
+
 .menubtn span {
   top: 50%;
   margin-top: -2px;

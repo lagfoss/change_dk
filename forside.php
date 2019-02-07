@@ -282,6 +282,16 @@ $(".search").addClass("search_black");
     }
 });
 
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+$(".menubtn").addClass("menu_black");
+    } else {
+        $(".menubtn").removeClass("menu_black");
+    }
+});
+
 $(".hero_button").click(function() {
 	$('html,body').animate({
 	scrollTop: $(".case").offset().top - 100},
