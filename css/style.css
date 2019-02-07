@@ -475,6 +475,10 @@ input {
   transition: 0.2s ease-in-out;
 }
 
+.search_black:before {
+  background-color: #111517;
+}
+
 .active_search:before {
   content: "";
   position: absolute;
@@ -557,6 +561,11 @@ input {
 }
 
 .out_black {
+  border-color: #111517;
+  color: #111517;
+}
+
+.out_black2 {
   border-color: #111517;
   color: #111517;
 }

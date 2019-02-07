@@ -262,6 +262,25 @@ $(window).scroll(function() {
 
 });
 
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+$(".input").addClass("out_black2");
+    } else {
+        $(".input").removeClass("out_black2");
+    }
+});
+
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+$(".search").addClass("search_black");
+    } else {
+        $(".search").removeClass("search_black");
+    }
+});
 
 $(".hero_button").click(function() {
 	$('html,body').animate({
