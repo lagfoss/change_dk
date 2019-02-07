@@ -99,10 +99,9 @@
 <script type="text/javascript">
 
 /* Logo transition script */
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
 
 	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
 } else {
@@ -110,6 +109,33 @@ $(window).scroll(function() {
 	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
 }
 
+});
+
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
+$(".input").addClass("out_black2");
+    } else {
+        $(".input").removeClass("out_black2");
+    }
+});
+
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
+$(".search").addClass("search_black");
+    } else {
+        $(".search").removeClass("search_black");
+    }
+});
+
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
+$(".menubtn").addClass("menu_black");
+    } else {
+        $(".menubtn").removeClass("menu_black");
+    }
 });
 
 </script>
