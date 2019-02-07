@@ -361,6 +361,11 @@ nav {
   text-align: left;
 }
 
+.nav_some img {
+  width:20px;
+  height:20px;
+}
+
 .nav_wrapper {
   list-style-type: none;
   margin-left: 60%;
