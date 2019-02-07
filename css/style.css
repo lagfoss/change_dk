@@ -132,7 +132,13 @@ header {
   background-color: rgba(87, 92, 94, 0.5);
   color: #ffffff;
   font-size: 12px;
+  font-weight: 400;
 }
+
+.page-id-490 .SoMe {
+  color: #111517;
+}
+
 
 .SoMe div {
   margin-left: 3.5%;
