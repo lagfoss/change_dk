@@ -166,9 +166,9 @@
 
           //Search animation
           function expand() {
-            $(".search").toggleClass("searchclose");
+            $(".search").toggleClass("searchclose", "pseudo_searchclose");
             $(".input").toggleClass("square");
-            if ($('.search').hasClass('searchclose')) {
+            if ($('.search').hasClass('searchclose', 'pseudo_searchclose')) {
               $('input').focus();
             } else {
               $('input').blur();
@@ -195,6 +195,7 @@
              $('.input').toggleClass('out_black');
              $('.pre_header').toggleClass('display_no');
 
+             //Skifter farve på :before & :after i search
              $('.search').slideUp(10, function() {
                var search = $(this);
                if(search.hasClass('pseudo_search')) {
@@ -203,6 +204,16 @@
                } else {
                  search.removeClass('active_search');
                  search.addClass('pseudo_search');
+               }
+             }).slideDown(10);
+             $('.searchclose').slideUp(10, function() {
+               var search = $(this);
+               if(search.hasClass('pseudo_searchclose')) {
+                 search.removeClass('pseudo_searchclose');
+                 search.addClass('active_searchclose');
+               } else {
+                 search.removeClass('active_searchclose');
+                 search.addClass('pseudo_searchclose');
                }
              }).slideDown(10);
             });
