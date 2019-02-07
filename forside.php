@@ -26,7 +26,7 @@
 			?>
 			<?php  if( $value == true ) : ?>
 
-					<div class="row watchourshowreel">
+					<div class="row justify-content-center watchourshowreel">
 						<div class="col-md-2">
 						<a href="#modal" class="open-modal" rel="modal:open nofollow">
 							<?php if( get_field('showreel_icon') ): ?>
