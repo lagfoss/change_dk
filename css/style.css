@@ -1509,6 +1509,7 @@ input {
   .watchourshowreel {
     margin-top: 50px;
     float: left;
+    margin-left: -20px;
   }
 
   .watch, .showreel {
@@ -1525,7 +1526,6 @@ input {
 
   .hero_info {
     margin: 100px auto 0;
-
   }
 
   .hero_text {
@@ -1535,6 +1535,7 @@ input {
 
   .watchourshowreel {
     margin-top: 50px;
+    margin-left: -65px;
   }
 
   .SoMe {
