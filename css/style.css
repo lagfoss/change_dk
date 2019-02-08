@@ -1547,6 +1547,14 @@ input {
     box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
   }
+
+  .om_steps:nth-last-of-type(even) {
+    margin: 0 5% 21% 5%;
+  }
+
+  .om_steps:nth-last-of-type(odd) {
+    margin: 0 5% 23% 5%;
+  }
 }
 
 /*========= Small devices () =========*/
@@ -1568,7 +1576,7 @@ input {
     top: 78px;
     top: 25px;
   }
-  
+
   .hero_info {
     margin: 100px auto 0;
   }
@@ -1596,7 +1604,11 @@ input {
   }
 
   .background_img_ydelser {
-    height: 480px;
+    height: 510px;
+  }
+
+  .know_us {
+    text-align: center;
   }
 
   .know_us_gallery img {
@@ -1638,14 +1650,6 @@ input {
     border-radius: 10px;
     box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
-  }
-
-  .om_steps:nth-last-of-type(even) {
-    margin: 0 5% 21% 5%;
-  }
-
-  .om_steps:nth-last-of-type(odd) {
-    margin: 0 5% 23% 5%;
   }
 }
 
