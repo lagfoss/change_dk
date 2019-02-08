@@ -365,6 +365,7 @@ nav {
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
   width: 212px;
+  margin-top: 40px;
 }
 
 .nav_some {
