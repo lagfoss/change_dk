@@ -2,8 +2,9 @@
 
 <?php get_header(); ?>
 
-  <div class="container-fluid">
-    <div class="row background_img_ydelser" style="background-image:url(<?php the_field('background_img_ydelser'); ?>);">
+  <div class="hero background_img_ydelser" style="background-image:url(<?php the_field('background_img_ydelser'); ?>);">
+  <div class="container-fluid wrapper">
+    <div class="row">
   		<div class="col-md-6">
         <div class="hero_info">
           <div class="stroke_position_ydelser">
@@ -20,6 +21,7 @@
   	</div>
 
   </div>
+</div>
 
 
   <div class="container-fluid">
