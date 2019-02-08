@@ -5,7 +5,7 @@
   <div class="hero background_img_ydelser" style="background-image:url(<?php the_field('background_img_ydelser'); ?>);">
   <div class="container-fluid wrapper">
     <div class="row">
-  		<div class="col-md-6">
+  		<div class="col-sm-6">
         <div class="hero_info">
           <div class="stroke_position_ydelser">
             <div class="stroke_ydelser"></div>
@@ -13,7 +13,7 @@
           <h1 class="h1_hero_ydelser"><?php the_field('h1_hero_ydelser'); ?></h1>
         </div>
   		</div>
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <a class="" href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
           <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
           <?php endif; ?></a>
