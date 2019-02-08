@@ -1485,7 +1485,7 @@ input {
 
   .know_us_content {
     margin: 20px auto;
-  } 
+  }
 
 }
 
@@ -1552,17 +1552,6 @@ input {
 
 /* Tiny devices () */
 @media screen and (max-width: 360px) {
-  .hero {
-    width: 100%;
-  }
-
-  header {
-    width: 95.5%;
-  }
-
-  .menubtn {
-    right: 5.5%
-  }
 
   .hero_text {
     font-size: 16px;
