@@ -1493,10 +1493,17 @@ input {
 @media screen and (max-width: 575px) {
   .hero_info {
     margin: 100px 10% 0;
+    float: left;
   }
 
   .watchourshowreel {
     margin-top: 50px;
+    float: left;
+    margin-left: -20px;
+  }
+
+  .watch, .showreel {
+    margin-left: 40px;
   }
 }
 
@@ -1509,7 +1516,6 @@ input {
 
   .hero_info {
     margin: 100px auto 0;
-
   }
 
   .hero_text {
@@ -1519,6 +1525,7 @@ input {
 
   .watchourshowreel {
     margin-top: 50px;
+    margin-left: -65px;
   }
 
   .SoMe {
