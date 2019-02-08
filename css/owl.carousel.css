@@ -236,12 +236,3 @@
   height: 100%;
   width: 100%;
 }
-
-@media screen and (max-width: 575px) {
-  .know_us_gallery img {
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
-    margin: 0 20px 0 20px;
-  }
-}

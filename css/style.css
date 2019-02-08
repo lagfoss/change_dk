@@ -1581,6 +1581,10 @@ input {
     box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
   }
+
+  .square {
+    width: 180px;
+  }
 }
 
 /* Tiny devices () */
@@ -1608,7 +1612,7 @@ input {
     margin: 0 20px 0 20px;
   }
 
-} 
+}
 
 /*========= CASES =========*/
 .case_card_link {
