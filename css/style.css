@@ -1506,6 +1506,16 @@ input {
 
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
 @media screen and (max-width: 575px) {
+  .SoMe {
+    height: 55px;
+    text-align: center;
+    display: block;
+  }
+
+  .header_some_icon {
+    margin: auto 20px auto 20px
+  }
+
   .hero_info {
     margin: 100px 10% 0;
     float: left;
@@ -1536,10 +1546,6 @@ input {
     margin-top: 25px;
   }
 
-  .SoMe {
-    height: 55px;
-  }
-
   header {
     top: 25px;
   }
@@ -1556,11 +1562,6 @@ input {
   .watchourshowreel {
     margin-top: 50px;
     margin-left: -65px;
-  }
-
-  .SoMe {
-    text-align: center;
-    display: block;
   }
 
   .nav_wrapper {

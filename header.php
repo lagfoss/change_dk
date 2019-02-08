@@ -27,11 +27,11 @@
   <!-- Content calendar og Sociale medier start -->
   <div class="container-fluid pre_header">
     <div class="row justify-content-between SoMe">
-      <div class="col-6-float-left align-self-center">
+      <div class="col-sm-6-float-left align-self-center">
           <?php the_field('header_text', 'option'); ?>
         <a id="SoMe_calendar" href="<?php the_field('header_url', 'option'); ?>">
         <?php the_field('header_url_text' , 'option'); ?></a></div>
-      <div class="col-6-float-right align-self-center">
+      <div class="col-sm-6-float-right align-self-center">
         <?php if( have_rows('header_some', 'option') ): ?>
           <ul>
             <?php while( have_rows('header_some', 'option') ): the_row();
