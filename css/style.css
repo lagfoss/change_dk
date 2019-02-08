@@ -1268,7 +1268,6 @@ input {
 }
 
 .ydelser_main_content_text {
-  width: 475px;
   font-weight: 300;
   color: #999999;
   display: inline-block;
@@ -1486,16 +1485,7 @@ input {
 
   .know_us_content {
     margin: 20px auto;
-  }
-
-  .calltoaction_hero_ydelser {
-    top: 0%;
-    margin-left: 12%;
-  }
-
-  .calltoaction_hero_ydelser {
-    top: -60%;
-  }
+  } 
 
 }
 
@@ -1538,6 +1528,10 @@ input {
 
   .nav_wrapper {
     padding-left: 0%;
+  }
+
+  .calltoaction_hero_ydelser {
+    margin-left: 0;
   }
 }
 
