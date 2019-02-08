@@ -659,19 +659,30 @@ input {
 }
 
 .modal {
-  max-width: 100%;
   position: relative;
-  width: auto;
-  height: auto;
-  padding: 30px;
+  max-width: 700px;
+  max-height: 600px;
+  min-width: 75%;
+  min-height: 50%;
   background-color: #f2f2f2;
   box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.4);
-  overflow: visible;
+  overflow: hidden;
 }
 
 .modal a.close-modal {
   top: 2px;
   right: 2px;
+}
+
+.modal iframe,
+.modal object,
+.modal embed {
+	position: absolute;
+  top: 0;
+  left: 0;
+	width: 100%;
+	height: 100%;
+  padding: 20px;
 }
 
 .watch {
