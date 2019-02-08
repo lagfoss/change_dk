@@ -322,7 +322,7 @@ nav {
 }
 
 .menubtn.close::before {
-  top: 5px;
+  top: 4px;
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -331,7 +331,7 @@ nav {
 }
 
 .menubtn.close::after {
-  top: 5px;
+  top: 4px;
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -1248,7 +1248,7 @@ input {
 
 .calltoaction_hero_ydelser {
   position: absolute;
-  top: 48%;
+  top: 82%;
   margin-left: 35%;
   text-decoration: none;
   padding: 15px 20px;
@@ -1492,6 +1492,11 @@ input {
     top: 0%;
     margin-left: 12%;
   }
+
+  .calltoaction_hero_ydelser {
+    top: -60%;
+  }
+
 }
 
 /* Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) */
@@ -1520,6 +1525,7 @@ input {
 
   .hero_info {
     margin: 100px auto 0;
+
   }
 
   .hero_text {
@@ -1545,6 +1551,8 @@ input {
 @media screen and (max-width: 360px) {
   .hero {
     width: 100%;
+    margin-left: 12%;
+
   }
 
   header {
