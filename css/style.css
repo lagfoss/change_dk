@@ -1502,8 +1502,7 @@ input {
 /* Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) */
 @media screen and (max-width: 575px) {
   .hero_info {
-    margin: 100px 95px 0;
-
+    margin: 100px 10% 0;
   }
 
   .watchourshowreel {
