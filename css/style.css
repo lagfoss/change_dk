@@ -1524,6 +1524,14 @@ input {
     margin-top: 25px;
   }
 
+  .SoMe {
+    height: 55px;
+  }
+
+  header {
+    top: 25px;
+  }
+
   .hero_info {
     margin: 100px auto 0;
   }
@@ -1552,8 +1560,6 @@ input {
 @media screen and (max-width: 360px) {
   .hero {
     width: 100%;
-    margin-left: 12%;
-
   }
 
   header {
