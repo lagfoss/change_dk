@@ -662,7 +662,7 @@ input {
   position: relative;
   max-width: 700px;
   max-height: 600px;
-  min-width: 75%;
+  min-width: 60%;
   min-height: 50%;
   background-color: #f2f2f2;
   box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.4);
@@ -1486,6 +1486,10 @@ input {
     margin-top: 265px;
   }
 
+  .modal {
+    max-height: 400px;
+  }
+
   .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
     display: none;
   }
@@ -1577,6 +1581,10 @@ input {
   .nav_wrapper {
     position: absolute;
     left: -35px;
+  }
+
+  .modal {
+    max-height: 300px;
   }
 
 }
