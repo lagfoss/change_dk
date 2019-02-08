@@ -1557,9 +1557,18 @@ input {
   }
 
   header {
-    top: 25px;
+    top: 35px;
   }
 
+  .nav_logo {
+    top: 73px;
+  }
+
+  .pos_fix {
+    top: 78px;
+    top: 25px;
+  }
+  
   .hero_info {
     margin: 100px auto 0;
   }
