@@ -62,7 +62,7 @@ body {
   justify-content: center;
 }
 
-/*========= FONTS =========*/
+/*FONTS*/
 h1.big {
   font-family: 'bebas-neue', sans-serif;
   font-size: 140px;
@@ -115,15 +115,15 @@ button span .owl-theme .owl-dots .owl-dot
   outline: none;
 }
 
-/*========= Fonts slut =========*/
-/*========= HEADER =========*/
+/*Fonts slut*/
+/*HEADER*/
 header {
   z-index: 100;
   top: 20px;
   width: 100%
 }
 
-/*========= Sociale medier og tekst i toppen =========*/
+/*Sociale medier og tekst i toppen*/
 .pre_header {
   position: absolute;
   z-index: 101;
@@ -171,7 +171,7 @@ header {
   height: 100%;
 }
 
-/*========= Logo og menu =========*/
+/*Logo og menu*/
 .menu-burger-menu-container {
   font-size: 42px;
   color: black;
@@ -212,7 +212,11 @@ nav {
   display: block;
 }
 
-/*========= Nav start =========*/
+.logo {
+
+}
+
+/* Nav start */
 .nav_logo {
   position: fixed;
   top: 58px;
@@ -409,8 +413,8 @@ nav {
   text-decoration: none;
 }
 
-/*========= Nav slut =========*/
-/*========= Search form =========*/
+/* Nav slut */
+/* Search form */
 .search_form {
   position: absolute;
   z-index: 1000;
@@ -597,10 +601,10 @@ input {
   display: none;
 }
 
-/*========= Search form slut =========*/
-/*========= Header slut =========*/
-/*========= FORSIDE =========*/
-/*========= Hero image =========*/
+/*Search form slut */
+/*Header slut*/
+/*FORSIDE*/
+/*Hero image*/
 .hero {
   position: relative;
   top: 0;
@@ -734,7 +738,7 @@ input {
   }
 }
 
-/*========= Case area =========*/
+/*Case area*/
 .case {
   margin: 0px auto 120px auto;
 }
@@ -771,7 +775,7 @@ input {
   color: #111517;
 }
 
-/*========= Process sektion =========*/
+/* Process sektion */
 .process_img {
   background-position: center;
   background-size: contain;
@@ -812,7 +816,7 @@ input {
   margin-left: 20px;
 }
 
-/*========= Hvad kan vi gøre for dig? Sektion =========*/
+/* Hvad kan vi gøre for dig? Sektion */
 
 
 .do_for_u {
@@ -873,9 +877,9 @@ input {
 }
 
 
-/*========= Hvad kan vi gøre for dig? Sektion slut =========*/
+/*Hvad kan vi gøre for dig? Sektion slut*/
 
-/*========= Logo slider =========*/
+/*Logo slider*/
 .logo_slider {
   border-top: solid 2px #e3e3e3;
   border-bottom: solid 2px #e3e3e3;
@@ -888,8 +892,8 @@ input {
   margin: auto 0 auto 150px;
 }
 
-/*========= Logo slider slut =========*/
-/*========= Know us med gallery =========*/
+/*Logo slider slut*/
+/*Know us med gallery*/
 .know_us {
   margin: 60px auto 150px auto;
   position: relative;
@@ -943,10 +947,10 @@ input {
   color: inherit;
 }
 
-/*========= Know us med gallery slut =========*/
-/*========= FORSIDE slut =========*/
-/*========= OM CHANGE =========*/
-/*========= Om Intro =========*/
+/*Know us med gallery slut*/
+/* FORSIDE slut */
+/*OM CHANGE*/
+/*Om Intro*/
 .om_intro {
   position: relative;
 }
@@ -1046,16 +1050,16 @@ input {
   transform: rotate(90deg);
 }
 
-/*========= Intro slut =========*/
-/*========= Vores process =========*/
+/*Intro slut*/
+/*Vores process*/
 .vores_process {
   text-align: center;
   max-width: 600px;
   margin: 0 auto 140px auto;
 }
 
-/*========= Vores process slut =========*/
-/*========= Steps start =========*/
+/* Vores process slut */
+/* Steps start */
 .om_steps {
   position: relative;
   width: 100%;
@@ -1212,17 +1216,17 @@ input {
   left: -50%;
 }
 
-/*========= Steps slut =========*/
-/*========= Om Change slider =========*/
+/* Steps slut */
+/*Om Change slider*/
 .om_slider_title {
   text-align: center;
   width: 100%;
   margin: 0 auto 20px auto;
 }
 
-/*========= OM CHANGE slut =========*/
+/*OM CHANGE slut*/
 
-/*========= YDELSER start =========*/
+/* YDELSER start */
 
 .background_img_ydelser {
   position: relative;
@@ -1332,9 +1336,9 @@ input {
   -o-transform: scale(0.98);
 }
 
-/*========= YDELSER slut =========*/
+/* YDELSER slut */
 
-/*========= FOOTER =========*/
+/*FOOTER*/
 .footer_project {
   padding: 60px 0 90px 0;
   background-color: #e9e9e9;
@@ -1438,7 +1442,7 @@ input {
   font-size: 13px;
 }
 
-/*========= Large devices (desktops, 992px and down) =========*/
+/* Large devices (desktops, 992px and down) */
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 83px;
@@ -1473,7 +1477,7 @@ input {
   }
 }
 
-/*========= Medium devices (tablets, 768px and down) =========*/
+/* Medium devices (tablets, 768px and down) */
 @media screen and (max-width: 769px) {
   h1 {
     font-size: 65px;
@@ -1506,18 +1510,8 @@ input {
   }
 }
 
-/*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
+/* Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) */
 @media screen and (max-width: 575px) {
-  .SoMe {
-    height: 55px;
-    text-align: center;
-    display: block;
-  }
-
-  .header_some_icon {
-    margin: auto 20px auto 20px
-  }
-
   .hero_info {
     margin: 100px 10% 0;
     float: left;
@@ -1541,15 +1535,27 @@ input {
   }
 }
 
-/*========= Small devices () =========*/
+/* Small devices () */
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 45px;
     margin-top: 25px;
   }
 
+  .SoMe {
+    height: 55px;
+  }
+
   header {
-    top: 25px;
+    top: 35px;
+  }
+
+  .nav_logo {
+    top: 73px;
+  }
+
+  .pos_fix {
+    top: 78px;
   }
 
   .hero_info {
@@ -1564,6 +1570,11 @@ input {
   .watchourshowreel {
     margin-top: 50px;
     margin-left: -65px;
+  }
+
+  .SoMe {
+    text-align: center;
+    display: block;
   }
 
   .nav_wrapper {
@@ -1594,8 +1605,12 @@ input {
   }
 }
 
-/*========= Tiny devices () =========*/
+/* Tiny devices () */
 @media screen and (max-width: 360px) {
+
+  .logo {
+    top: 50px;
+  }
 
   .hero_text {
     font-size: 16px;
