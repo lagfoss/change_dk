@@ -1453,6 +1453,13 @@ input {
     margin-left: 20px;
   }
 
+  .know_us_dots {
+    display: none;
+  }
+  .know_us_content {
+    margin: 20px auto;
+  }
+
   #slide {
     position: absolute;
     display: flex;
@@ -1490,18 +1497,13 @@ input {
     max-height: 400px;
   }
 
-  .know_us_dots, .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
+  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
     display: none;
   }
 
   #slide {
     display: none;
   }
-
-  .know_us_content {
-    margin: 20px auto;
-  }
-
 }
 
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
