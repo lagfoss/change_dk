@@ -265,7 +265,7 @@ nav {
   z-index: 100;
   position: absolute;
   width: 22px;
-  height: 18px;
+  height: 19px;
   cursor: pointer;
   right: 3.5%;
   top: 38px;
@@ -1282,6 +1282,7 @@ input {
 
 .ydelser_main_content_text {
   font-weight: 300;
+  max-width: 435px;
   color: #999999;
   display: inline-block;
 }
@@ -1499,6 +1500,10 @@ input {
     max-height: 400px;
   }
 
+  .do_for_u {
+    margin: 100px auto 100px auto;
+  }
+
   .logo_slider {
     padding: 50px 0 50px 0;
   }
@@ -1527,7 +1532,7 @@ input {
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
 @media screen and (max-width: 575px) {
   .SoMe {
-    height: 55px;
+    height: 51px;
     text-align: center;
     display: block;
   }
@@ -1573,12 +1578,16 @@ input {
   .om_steps:nth-last-of-type(odd) {
     margin: 0 5% 23% 5%;
   }
+
+  .nav_wrapper {
+    margin-left: 50%;
+  }
 }
 
 /*========= Small devices () =========*/
 @media screen and (max-width: 420px) {
   h1 {
-    font-size: 45px;
+    font-size: 55px;
     margin-top: 25px;
   }
 
@@ -1587,11 +1596,7 @@ input {
   }
 
   .nav_logo {
-    top: 73px;
-  }
-
-  .pos_fix {
-    top: 78px;
+    top: 58px;
   }
 
   .hero_info {
@@ -1609,7 +1614,7 @@ input {
   }
 
   .nav_wrapper {
-    padding-left: 0%;
+    margin-left: 40%;
   }
 
   .calltoaction_hero_ydelser {
