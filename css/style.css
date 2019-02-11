@@ -365,6 +365,7 @@ nav {
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
   width: 212px;
+  margin-top: 40px;
 }
 
 .nav_some {
@@ -885,7 +886,7 @@ input {
 
 .logo_slider img {
   height: 50px;
-  margin: auto 0 auto 150px;
+  margin: auto 50px auto 100px;
 }
 
 /*========= Logo slider slut =========*/
@@ -1497,6 +1498,14 @@ input {
     max-height: 400px;
   }
 
+  .logo_slider {
+    padding: 50px 0 50px 0;
+  }
+
+  .logo_slider img {
+    height: 30px;
+  }
+
   .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
     display: none;
   }
@@ -1539,6 +1548,14 @@ input {
 
   .watch, .showreel {
     margin-left: 40px;
+  }
+
+  .logo_slider {
+    padding: 40px 0 40px 0;
+  }
+
+  .logo_slider img {
+    height: 20px;
   }
 
   .know_us_gallery img {

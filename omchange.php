@@ -51,14 +51,6 @@
       </div>
     </div>
 
-    <script type="text/javascript">
-    $(".omchange_calltoaction").click(function() {
-  $('html,body').animate({
-      scrollTop: $(".vores_process").offset().top - 120},
-      'slow');
-    });
-    </script>
-
     <!-- Steps start -->
     <div class="row">
 
@@ -127,3 +119,11 @@
   </div>
 
 <?php get_footer(); ?>
+
+<script type="text/javascript">
+$(".omchange_calltoaction").click(function() {
+$('html,body').animate({
+  scrollTop: $(".vores_process").offset().top - 120},
+  'slow');
+});
+</script>
