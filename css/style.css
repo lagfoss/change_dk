@@ -1510,7 +1510,7 @@ input {
 
   .logo_slider img {
     height: 30px;
-  }
+  } 
 
   .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
     display: none;
