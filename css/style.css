@@ -1499,6 +1499,10 @@ input {
     max-height: 400px;
   }
 
+  .do_for_u {
+    margin: 100px auto 100px auto;
+  }
+
   .logo_slider {
     padding: 50px 0 50px 0;
   }
@@ -1527,7 +1531,7 @@ input {
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
 @media screen and (max-width: 575px) {
   .SoMe {
-    height: 55px;
+    height: 51px;
     text-align: center;
     display: block;
   }
@@ -1573,12 +1577,16 @@ input {
   .om_steps:nth-last-of-type(odd) {
     margin: 0 5% 23% 5%;
   }
+
+  .nav_wrapper {
+    margin-left: 50%;
+  }
 }
 
 /*========= Small devices () =========*/
 @media screen and (max-width: 420px) {
   h1 {
-    font-size: 45px;
+    font-size: 55px;
     margin-top: 25px;
   }
 
@@ -1605,7 +1613,7 @@ input {
   }
 
   .nav_wrapper {
-    padding-left: 0%;
+    margin-left: 40%;
   }
 
   .calltoaction_hero_ydelser {
