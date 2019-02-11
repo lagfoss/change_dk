@@ -13,38 +13,41 @@
 <div class="row flex">
   <div class="flex_wrapper">
     <?php
-$params = array('posts_per_page' => 10,'orderby' => 'menu_order',
-'order' => 'ASC', 'post_type' => 'cases');
-$query = new WP_Query($params);
-?>
-
+    $params = array('posts_per_page' => 10,'orderby' => 'menu_order',
+    'order' => 'ASC', 'post_type' => 'cases');
+    $query = new WP_Query($params);
+    ?>
           <?php if ($query->have_posts()) : ?>
-
-
-
               <?php while ($query->have_posts()) :
-        $query->the_post(); ?>
+                $query->the_post(); ?>
 
                   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
                   <a class="case_card_link" href="<?php the_permalink(); ?>">
-                    <div id="" class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+                    <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
 
+                        <img id="cases_slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
+
+                        <div class="">
                         <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
                         <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endif; ?>
+                        </div>
+                        <div class="">
 
                         <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
+                        </div>
 
-                        <?php $categories = get_terms( 'category', array(
-                          'orderby'    => 'count',
-                          'hide_empty' => 0,
-                          ) ); ?>
-                          <p> <?php echo "$categories"; ?> </p>
+                        <div>
+                          <?php $categories = get_terms( 'category', array(
+                            'orderby'    => 'count',
+                            'hide_empty' => 0,
+                            ) ); ?>
+                            <p class="cases_indentitet"> <?php echo "$categories"; ?> </p>
+                        </div>
 
-
-
-
+                        <div class="">
+                        </div>
 
 
                 </div></a>
