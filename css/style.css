@@ -365,7 +365,7 @@ nav {
   display: -webkit-inline-box;
   border-bottom: solid #e54c00;
   width: 212px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .nav_some {
@@ -779,6 +779,7 @@ input {
   background-repeat: no-repeat;
   background-clip: content-box;
   padding: 10px;
+  min-height: 300px;
 }
 
 .process_steps {
