@@ -33,21 +33,18 @@
                         <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endif; ?>
                         </div>
-                        <div class="">
-
+                        
                         <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
+
+                        <div class="category_wrapper">
+                          <div class="cases_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+
+                          <?php the_category(); ?>
                         </div>
 
-                        <div>
-                          <?php $categories = get_terms( 'category', array(
-                            'orderby'    => 'count',
-                            'hide_empty' => 0,
-                            ) ); ?>
-                            <p class="cases_indentitet"> <?php echo "$categories"; ?> </p>
-                        </div>
 
-                        <div class="">
-                        </div>
+
+
 
 
                 </div></a>
