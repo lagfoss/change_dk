@@ -1675,6 +1675,49 @@ input {
   }
 }
 
+/*========= Height of devices =========*/
+@media screen and ( min-width: 770px ) and (max-height: 620px) {
+  .hero_info {
+    margin-top: 200px;
+  }
+
+  .watchourshowreel {
+    margin-top: 300px;
+  }
+}
+
+/*========= Height of devices =========*/
+@media screen and ( min-width: 500px ) and (max-height: 510px) {
+  .hero_info {
+    margin-top: 100px;
+  }
+
+  .watchourshowreel {
+    margin-top: 200px;
+  }
+}
+
+/*========= Height of devices =========*/
+@media screen and ( min-width: 500px ) and (max-height: 410px) {
+  h1 {
+    font-size: 55px;
+    margin-top: 25px;
+  }
+}
+
+/*========= Height of devices =========*/
+
+
+/*========= Height of devices =========*/
+@media screen and ( min-width: 500px ) and (max-height: 395px) {
+  h1 {
+    font-size: 40px;
+  }
+  .hero_text {
+    padding-bottom: 0;
+  }
+}
+
 /*========= CASES =========*/
 .case_card_link {
   width: 90%;
