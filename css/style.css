@@ -265,7 +265,7 @@ nav {
   z-index: 100;
   position: absolute;
   width: 22px;
-  height: 18px;
+  height: 19px;
   cursor: pointer;
   right: 3.5%;
   top: 38px;
@@ -1281,6 +1281,7 @@ input {
 
 .ydelser_main_content_text {
   font-weight: 300;
+  max-width: 435px;
   color: #999999;
   display: inline-block;
 }
@@ -1586,11 +1587,7 @@ input {
   }
 
   .nav_logo {
-    top: 73px;
-  }
-
-  .pos_fix {
-    top: 78px;
+    top: 58px;
   }
 
   .hero_info {
