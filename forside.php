@@ -77,7 +77,7 @@
 
 	<!-- CASE SLIDER -->
 
-	<div class="row flex">
+	<div class="row">
 	  <div class="">
 	    <?php
 	    $params = array('posts_per_page' => 2,'orderby' => 'menu_order',
@@ -89,20 +89,20 @@
 	                $query->the_post(); ?>
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-	                  <div class="row justify-content-center" href="<?php the_permalink(); ?>">
-											<div class="col-4">
+	                  <div class="row" href="<?php the_permalink(); ?>">
+											<div class="case_content_wrapper">
 												<div class="test">
+												<p>CASE:</p>
 												<h2 class=""><?php the_field('case_headline');?></h2>
 												<div class="cat"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
-												<p>Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. Non sint pork loin hamburger. Turducken velit andouille est pork belly esse ground round pork chop pancetta.<p>
+												<p style="width:250px">Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. <p>
 												<a class="wcwd_button" href="<?php the_field('case_call_to_action_url'); ?>"><?php the_field('case_call_to_action_text'); ?> <?php if( get_field('case_call_to_action_icon') ): ?>
 												<img class="" src="<?php the_field('case_call_to_action_icon'); ?>" />
 												<?php endif; ?></a>
 
 											</div>
 										</div>
-
-	                    <div class="case_img col-7"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+	                    <div class="case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
 
 	                </div></div>
@@ -116,6 +116,8 @@
 	                          <?php endif; ?>
 	  </div>
 	</div>
+
+</div>
 
 	<!-- Process steps -->
 	<div class="container-fluid wrapper">
