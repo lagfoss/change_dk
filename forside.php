@@ -77,33 +77,44 @@
 
 	<!-- CASE SLIDER -->
 
-	<div class="container-fluid case wrapper">
-		<div class="row modul_margin">
-			<?php
+	<div class="row flex">
+	  <div class="">
+	    <?php
+	    $params = array('posts_per_page' => 2,'orderby' => 'menu_order',
+	    'order' => 'ASC', 'post_type' => 'cases');
+	    $query = new WP_Query($params);
+	    ?>
+	          <?php if ($query->have_posts()) : ?>
+	              <?php while ($query->have_posts()) :
+	                $query->the_post(); ?>
 
-			if( have_rows('case_slider') ):
+	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+	                  <div class="row justify-content-center" href="<?php the_permalink(); ?>">
+											<div class="col-4">
+												<div class="test">
+												<h2 class=""><?php the_field('case_headline');?></h2>
+												<div class="cat"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+												<p>Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. Non sint pork loin hamburger. Turducken velit andouille est pork belly esse ground round pork chop pancetta.<p>
+												<a class="wcwd_button" href="<?php the_field('case_call_to_action_url'); ?>"><?php the_field('case_call_to_action_text'); ?> <?php if( get_field('case_call_to_action_icon') ): ?>
+												<img class="" src="<?php the_field('case_call_to_action_icon'); ?>" />
+												<?php endif; ?></a>
 
-			    while( have_rows('case_slider') ) : the_row();
+											</div>
+										</div>
 
-			        ?>
+	                    <div class="case_img col-7"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
-		<div class="col-4 case_info">
-			<p style="font-weight:bold;">CASE:</p>
-			<h2><?php the_sub_field('case_title'); ?></h2>
-			<p class="cat"><?php the_sub_field('case_category'); ?></p>
-			<p><?php the_sub_field('case_text'); ?><p>
-			<a class="case_button" href="<?php the_sub_field('case_button_url'); ?>"><?php the_sub_field('case_button_text'); ?><?php if( get_field('case_button_icon') ): ?>
-				<img class="" src="<?php the_field('case_button_icon'); ?>" />
-				<?php endif; ?></a>
-		</div>
 
-		<div class="col-7 case_img" style="background-image:url(<?php the_sub_field('case_image'); ?>);"></div>
-		<?php
-		   endwhile;
-			endif;
-			?>
+	                </div></div>
 
-		</div>
+	                <?php endwhile; ?>
+	                  <?php wp_reset_postdata(); ?>
+	                    <?php else:  ?>
+
+	                        <?php _e( 'No cases' ); ?>
+
+	                          <?php endif; ?>
+	  </div>
 	</div>
 
 	<!-- Process steps -->

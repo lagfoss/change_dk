@@ -13,7 +13,7 @@
 <div class="row flex">
   <div class="flex_wrapper">
     <?php
-    $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
+    $params = array('posts_per_page' => 5,'orderby' => 'menu_order',
     'order' => 'ASC', 'post_type' => 'cases');
     $query = new WP_Query($params);
     ?>
