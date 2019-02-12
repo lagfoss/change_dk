@@ -33,9 +33,14 @@ Template Post Type: cases
           $clientcategories = get_sub_field('case_client_categories');
 
 
-        elseif( get_row_layout() == 'download' ):
+        elseif( get_row_layout() == 'case_client_info' ):
 
-        	$file = get_sub_field('file');
+        	$clienturl = get_sub_field('case_client_url');
+          $clienturltext = get_sub_field('case_client_url_text');
+          $ = get_sub_field('case_client_');
+          $ = get_sub_field('case_client_');
+          $abouttitle = get_sub_field('case_about_client_title');
+          $about = get_sub_field('case_about_client');
 
         endif;
 
@@ -78,8 +83,16 @@ Template Post Type: cases
     </div>
     <div class="col-md-7">
       <?php echo $clientservice; ?><?php echo $clientcategories; ?>
+    </div>
+  </div>
+</div>
 
+<div class="container-fluid wrapper">
+  <div class="row">
+    <div class="col-md-5">
 
+    </div>
+    <div class="col-md-7">
 
     </div>
   </div>
