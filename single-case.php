@@ -118,8 +118,10 @@ Template Post Type: cases
 
 <div class="container-fluid wrapper">
   <div class="row">
-    <div class="col-md-5">
-
+    <div class="col-md-5"> <?php echo $image; ?>
+      <ul>
+        <li><img src="' . $image['url'] . '" alt="' . $image['alt'] . '" /></li>
+      </ul>
     </div>
     <div class="col-md-7">
 
