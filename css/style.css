@@ -743,7 +743,13 @@ input {
 .case_info {}
 
 .case_img {
-  width: 60%;
+  width: 900px;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-position: center !important;
+  margin-bottom: 50px;
   border-radius: 10px;
   box-shadow: -30px 30px 30px -5px rgba(0, 0, 0, 0.4);
 }
@@ -751,6 +757,10 @@ input {
 .cat {
   text-transform: uppercase;
   text-align: right;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #e54c00;
 }
 
 .case_button {
