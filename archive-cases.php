@@ -13,7 +13,7 @@
 <div class="row flex">
   <div class="flex_wrapper">
     <?php
-    $params = array('posts_per_page' => 10,'orderby' => 'menu_order',
+    $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
     'order' => 'ASC', 'post_type' => 'cases');
     $query = new WP_Query($params);
     ?>
@@ -33,7 +33,7 @@
                         <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endif; ?>
                         </div>
-                        
+
                         <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
 
                         <div class="category_wrapper">
