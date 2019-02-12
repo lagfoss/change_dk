@@ -37,10 +37,39 @@ Template Post Type: cases
 
         	$clienturl = get_sub_field('case_client_url');
           $clienturltext = get_sub_field('case_client_url_text');
-          $ = get_sub_field('case_client_');
-          $ = get_sub_field('case_client_');
+          /*$ = get_sub_field('case_client_');
+          $ = get_sub_field('case_client_');*/
           $abouttitle = get_sub_field('case_about_client_title');
           $about = get_sub_field('case_about_client');
+
+        elseif( get_row_layout() == 'case_client_image' ):
+
+        	$clienturl = get_sub_field('case_image');
+
+        elseif( get_row_layout() == 'case_goal' ):
+
+        	$pregoal = get_sub_field('case_pre_goal');
+          $goaltitle = get_sub_field('case_goal_title');
+          $goaltext = get_sub_field('case_goal_text');
+
+        elseif( get_row_layout() == 'case_strategi' ):
+
+        	$pregoal = get_sub_field('case_strategi_title');
+          $goaltitle = get_sub_field('case_strategi_text');
+        	// check if the nested repeater field has rows of data
+        	if( have_rows('case_strategi_box') ):
+			 	       echo '<ul>';
+			 	       // loop through the rows of data
+			         while ( have_rows('case_strategi_box') ) : the_row();
+					          $image = get_sub_field('case_strategi_icon');
+					          echo '<li><img src="' . $image['url'] . '" alt="' . $image['alt'] . '" /></li>';
+				       endwhile;
+				       echo '</ul>';
+          endif;
+
+        elseif( get_row_layout() == 'case_social_media' ):
+
+        	$clienturl = get_sub_field('case_image');
 
         endif;
 
