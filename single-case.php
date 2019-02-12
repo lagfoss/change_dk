@@ -24,6 +24,14 @@ Template Post Type: cases
         $clientname = get_sub_field('hero_client_name');
         $clienttitle = get_sub_field('hero_client_title');
 
+        elseif( get_row_layout() == 'case_client' ):
+
+        	$clientpre = get_sub_field('case_client_pre');
+          $clientlogo = get_sub_field('client_logo');
+          $clientname = get_sub_field('case_client_name');
+          $clientservice = get_sub_field('case_client_service');
+          $clientcategories = get_sub_field('case_client_categories');
+
         elseif( get_row_layout() == 'download' ):
 
         	$file = get_sub_field('file');
@@ -57,6 +65,19 @@ Template Post Type: cases
           <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
         <?php endif; ?></a>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid wrapper">
+  <div class="row">
+    <div class="col-md-5">
+      <?php echo $clientpre; ?>
+      <?php echo $clientlogo; ?><?php echo $clientname; ?>
+    </div>
+    <div class="col-md-7">
+      <?php echo $clientservice; ?>
+      <?php echo $clientcategories; ?>
     </div>
   </div>
 </div>
