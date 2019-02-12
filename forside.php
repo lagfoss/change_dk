@@ -90,7 +90,6 @@
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 	                  <div class="row" href="<?php the_permalink(); ?>">
-											<div class="case_content_wrapper">
 												<div class="test">
 												<p>CASE:</p>
 												<h2 class=""><?php the_field('case_headline');?></h2>
@@ -101,7 +100,6 @@
 												<?php endif; ?></a>
 
 											</div>
-										</div>
 	                    <div class="case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
 
