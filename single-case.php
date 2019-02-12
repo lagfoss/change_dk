@@ -21,7 +21,7 @@ Template Post Type: cases
         if ($heroimage) {
 	         $hero_bg = 'style="background-image: url(' . $heroimage['url'] . '); background-size:cover;"';
          }
-        $clientname = get_sub_field('hero_client_name');
+        $heroname = get_sub_field('hero_client_name');
         $clienttitle = get_sub_field('hero_client_title');
 
         elseif( get_row_layout() == 'case_client' ):
@@ -32,9 +32,15 @@ Template Post Type: cases
           $clientservice = get_sub_field('case_client_service');
           $clientcategories = get_sub_field('case_client_categories');
 
-        elseif( get_row_layout() == 'download' ):
 
-        	$file = get_sub_field('file');
+        elseif( get_row_layout() == 'case_client_info' ):
+
+        	$clienturl = get_sub_field('case_client_url');
+          $clienturltext = get_sub_field('case_client_url_text');
+          $ = get_sub_field('case_client_');
+          $ = get_sub_field('case_client_');
+          $abouttitle = get_sub_field('case_about_client_title');
+          $about = get_sub_field('case_about_client');
 
         endif;
 
@@ -55,7 +61,7 @@ Template Post Type: cases
         <div class="hero_info">
           <div class="stroke_position_ydelser">
             <div class="stroke_ydelser"></div>
-            <p class="white"><?php echo $clientname; ?></p>
+            <p class="white"><?php echo $heroname; ?></p>
           </div>
           <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
         </div>
@@ -73,11 +79,21 @@ Template Post Type: cases
   <div class="row">
     <div class="col-md-5">
       <?php echo $clientpre; ?>
-      <?php echo $clientlogo; ?><?php echo $clientname; ?>
+      <img src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/><?php echo $clientname; ?>
     </div>
     <div class="col-md-7">
-      <?php echo $clientservice; ?>
-      <?php echo $clientcategories; ?>
+      <?php echo $clientservice; ?><?php echo $clientcategories; ?>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid wrapper">
+  <div class="row">
+    <div class="col-md-5">
+
+    </div>
+    <div class="col-md-7">
+
     </div>
   </div>
 </div>
