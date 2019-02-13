@@ -76,7 +76,15 @@ Template Post Type: cases
 
   <?php elseif( get_row_layout() == 'case_client_image' ):
 
-        	$clienturl = get_sub_field('case_image'); ?>
+        	$clientimage = get_sub_field('case_image'); ?>
+
+          <div class="">
+            <div class="container-fluid wrapper">
+              <div class="row">
+                <img src="<?php echo $clientimage['url']; ?>" alt="<?php echo $clientimage['alt'] ?>"/>
+              </div>
+            </div>
+          </div>
 
   <?php elseif( get_row_layout() == 'case_goal' ):
 
