@@ -1501,7 +1501,16 @@ img.client_logo_neg {
 }
 
 .case_down {
-
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  width: 58px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  transform: rotate(90deg);
 }
 
 /*========= CASES hero slut =========*/

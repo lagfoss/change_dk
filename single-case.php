@@ -34,9 +34,9 @@ Template Post Type: cases
               </div>
               <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
             </div>
-            <div class="row case_down">
+            <div class="row">
                 <a class="" href="#">
-                  <img class="calltoaction_hero_ydelser" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
+                  <img class="case_down" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
                 </a>
               </div>
             </div>
