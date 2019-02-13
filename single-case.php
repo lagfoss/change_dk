@@ -22,7 +22,8 @@ Template Post Type: cases
 	         $hero_bg = 'style="background-image: url(' . $heroimage['url'] . '); background-size:cover;"';
          }
         $heroname = get_sub_field('hero_client_name');
-        $clienttitle = get_sub_field('hero_client_title'); ?>
+        $clienttitle = get_sub_field('hero_client_title');
+        $herobutton = get_sub_field('client_hero_button'); ?>
 
         <div class="hero" <?php echo $hero_bg; ?>>
           <div class="container-fluid wrapper">
@@ -34,9 +35,9 @@ Template Post Type: cases
               <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
             </div>
             <div class="row case_down">
-                <a class="" href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
-                  <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
-                <?php endif; ?></a>
+                <a class="" href="#">
+                  <img class="calltoaction_hero_ydelser" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
+                </a>
               </div>
             </div>
           </div>

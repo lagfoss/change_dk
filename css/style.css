@@ -1479,12 +1479,13 @@ img.client_logo_neg {
 /*========= CASES hero start =========*/
 
 .case_hero {
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 .stroke_position_case {
   width: 100%;
   height: 32px;
+  margin-bottom: 40px;
 }
 
 .stroke_case {
