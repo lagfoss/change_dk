@@ -22,24 +22,22 @@ Template Post Type: cases
 	         $hero_bg = 'style="background-image: url(' . $heroimage['url'] . '); background-size:cover;"';
          }
         $heroname = get_sub_field('hero_client_name');
-        $clienttitle = get_sub_field('hero_client_title'); ?>
+        $clienttitle = get_sub_field('hero_client_title');
+        $herobutton = get_sub_field('client_hero_button'); ?>
 
         <div class="hero" <?php echo $hero_bg; ?>>
           <div class="container-fluid wrapper">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="hero_info">
-                  <div class="stroke_position_ydelser">
-                    <div class="stroke_ydelser"></div>
-                    <p class="white"><?php echo $heroname; ?></p>
-                  </div>
-                  <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
-                </div>
+            <div class="case_hero">
+              <div class="row stroke_position_case">
+                <div class="stroke_case"></div>
+                <p class="hero_client"><?php echo $heroname; ?></p>
               </div>
-              <div class="col-sm-6">
-                <a class="" href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
-                  <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
-                <?php endif; ?></a>
+              <h1 class="h1_case"><?php echo $clienttitle; ?></h1>
+            </div>
+            <div class="row">
+                <a class="" href="#">
+                  <img class="case_down" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
+                </a>
               </div>
             </div>
           </div>
@@ -56,11 +54,18 @@ Template Post Type: cases
           <div class="container-fluid wrapper">
             <div class="row">
               <div class="col-md-5">
-                <?php echo $clientpre; ?>
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $clientpre; ?></p>
+                </div>
                 <img src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/><?php echo $clientname; ?>
               </div>
               <div class="col-md-7">
-                <?php echo $clientservice; ?><?php echo $clientcategories; ?>
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $clientservice; ?></p>
+                </div>
+                <?php echo $clientcategories; ?>
               </div>
             </div>
           </div>
@@ -100,21 +105,20 @@ Template Post Type: cases
           // check if the nested repeater field has rows of data
         	if( have_rows('case_strategi_box') ):
 			 	       // loop through the rows of data
-			         while ( have_rows('case_strategi_box') ) : the_row();
-					          $image = get_sub_field('case_strategi_icon'); ?>
+			         while ( have_rows('case_strategi_box') ) : the_row(); ?>
 
 
           <div class="container-fluid wrapper">
             <div class="row">
               <div class="col-md-5">
-                  <?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/>
+                <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
               </div>
               <div class="col-md-7">
               </div>
             </div>
           </div>
-        <?php	       endwhile;
-            endif; ?>
+        <?php	       endwhile; ?>
+          <?php	  endif; ?>
 
   <?php elseif( get_row_layout() == 'case_social_media' ):
 
