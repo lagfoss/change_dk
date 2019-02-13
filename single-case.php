@@ -100,21 +100,20 @@ Template Post Type: cases
           // check if the nested repeater field has rows of data
         	if( have_rows('case_strategi_box') ):
 			 	       // loop through the rows of data
-			         while ( have_rows('case_strategi_box') ) : the_row();
-					          $image = get_sub_field('case_strategi_icon'); ?>
+			         while ( have_rows('case_strategi_box') ) : the_row(); ?>
 
 
           <div class="container-fluid wrapper">
             <div class="row">
               <div class="col-md-5">
-                  <?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/>
+                <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
               </div>
               <div class="col-md-7">
               </div>
             </div>
           </div>
-        <?php	       endwhile;
-            endif; ?>
+        <?php	       endwhile; ?>
+          <?php	  endif; ?>
 
   <?php elseif( get_row_layout() == 'case_social_media' ):
 
