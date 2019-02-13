@@ -94,6 +94,7 @@ $(document).ready(function() {
       dots:false
   });
 
+
   var owl = $('.autowidth');
   owl.owlCarousel({
     autoWidth:true,
