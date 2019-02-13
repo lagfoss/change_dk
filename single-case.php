@@ -51,7 +51,7 @@ Template Post Type: cases
           $clientlogo = get_sub_field('client_logo');
           $clientname = get_sub_field('case_client_name');
           $clientservice = get_sub_field('case_client_service');
-          $clientcategories = the_category(); ?>
+          $clientcategories = get_sub_field('case_client_categories'); ?>
 
           <div class="container-fluid wrapper">
             <div class="row">
@@ -60,7 +60,7 @@ Template Post Type: cases
                 <img src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/><?php echo $clientname; ?>
               </div>
               <div class="col-md-7">
-                <?php echo $clientservice; ?>
+                <?php echo $clientservice; ?><?php echo $clientcategories; ?>
               </div>
             </div>
           </div>
@@ -86,16 +86,15 @@ Template Post Type: cases
 
   <?php elseif( get_row_layout() == 'case_strategi' ):
 
-        	$pregoal = get_sub_field('case_strategi_title');
-          $goaltitle = get_sub_field('case_strategi_text'); ?>
+        	$strategititle = get_sub_field('case_strategi_title');
+          $strategitext = get_sub_field('case_strategi_text');
 
-    <?php // check if the nested repeater field has rows of data
+          // check if the nested repeater field has rows of data
         	if( have_rows('case_strategi_box') ):
 			 	       // loop through the rows of data
 			         while ( have_rows('case_strategi_box') ) : the_row();
-					          $image = get_sub_field('case_strategi_icon');
-				       endwhile;
-          endif; ?>
+					          $image = get_sub_field('case_strategi_icon'); ?>
+
 
           <div class="container-fluid wrapper">
             <div class="row">
@@ -106,6 +105,8 @@ Template Post Type: cases
               </div>
             </div>
           </div>
+        <?php	       endwhile;
+            endif; ?>
 
   <?php elseif( get_row_layout() == 'case_social_media' ):
 
