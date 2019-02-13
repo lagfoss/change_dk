@@ -26,17 +26,14 @@ Template Post Type: cases
 
         <div class="hero" <?php echo $hero_bg; ?>>
           <div class="container-fluid wrapper">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="hero_info">
-                  <div class="stroke_position_ydelser">
-                    <div class="stroke_ydelser"></div>
-                    <p class="white"><?php echo $heroname; ?></p>
-                  </div>
-                  <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
-                </div>
+            <div class="row case_hero">
+              <div class="stroke_position_case">
+                <div class="stroke_case"></div>
+                <p class="white"><?php echo $heroname; ?></p>
               </div>
-              <div class="col-sm-6">
+              <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
+            </div>
+            <div class="row case_down">
                 <a class="" href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
                   <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
                 <?php endif; ?></a>

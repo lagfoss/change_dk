@@ -1258,7 +1258,7 @@ input {
 }
 
 .stroke_ydelser {
-  height: 3px;
+  height: 2px;
   width: 30px;
   background-color: #e54c00;
   border-radius: 4px;
@@ -1350,7 +1350,7 @@ input {
 
 /*========= YDELSER slut =========*/
 
-/*========= CASES start=========*/
+/*========= CASES forside start =========*/
 .case_card_link {
   width: 85%;
   display: table;
@@ -1472,8 +1472,31 @@ img.client_logo_neg {
   height: 30px;
 }
 
-/*========= CASES slut=========*/
+/*========= CASES forside slut =========*/
 
+/*========= CASES enkelt start =========*/
+
+.case_hero {
+  padding-top: 300px;
+}
+
+.stroke_position_case {
+  width: 100%;
+}
+
+.stroke_case {
+  height: 2px;
+  width: 30px;
+  background-color: #e54c00;
+  border-radius: 4px;
+  margin: 30px 1px;
+}
+
+.case_down {
+
+}
+
+/*========= CASES enkelt slut =========*/
 
 /*========= FOOTER =========*/
 .footer_project {
