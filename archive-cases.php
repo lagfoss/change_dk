@@ -12,6 +12,11 @@
 
 <div class="row flex">
   <div class="flex_wrapper">
+
+
+      <!-- Image carousel -->
+      <div class="col-11 owl-carousel owl-theme autowidth">
+
     <?php
     $params = array('posts_per_page' => 5,'orderby' => 'menu_order',
     'order' => 'ASC', 'post_type' => 'cases');
@@ -57,6 +62,5 @@
 
                           <?php endif; ?>
   </div>
-</div>
 
 <?php get_footer();?>

@@ -76,11 +76,12 @@
 	</div>
 
 	<!-- CASE SLIDER -->
+		  <div class="col-11 owl-carousel hello owl-theme">
 
-	<div class="row">
-	  <div class="">
+
+
 	    <?php
-	    $params = array('posts_per_page' => 2,'orderby' => 'menu_order',
+	    $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
 	    'order' => 'ASC', 'post_type' => 'cases');
 	    $query = new WP_Query($params);
 	    ?>
@@ -90,20 +91,23 @@
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 	                  <div class="row" href="<?php the_permalink(); ?>">
-												<div class="test">
+												<div class="col-4 test">
 												<p>CASE:</p>
 												<h2 class=""><?php the_field('case_headline');?></h2>
 												<div class="cat"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
 												<p style="width:250px">Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. <p>
-												<a class="wcwd_button" href="<?php the_field('case_call_to_action_url'); ?>"><?php the_field('case_call_to_action_text'); ?> <?php if( get_field('case_call_to_action_icon') ): ?>
-												<img class="" src="<?php the_field('case_call_to_action_icon'); ?>" />
-												<?php endif; ?></a>
+										<!--		<a class="wcwd_button" href="<?php the_field('case_call_to_action_url'); ?>"><?php the_field('case_call_to_action_text'); ?> <?php if( get_field('case_call_to_action_icon') ): ?>
+												<img class="" src="<?php the_field('case_call_to_action_icon'); ?>"
+											<?php endif; ?></a> -->
 
 											</div>
-	                    <div class="case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+
+												<div class="col-8 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>
 
 
-	                </div></div>
+
+
+								</div>
 
 	                <?php endwhile; ?>
 	                  <?php wp_reset_postdata(); ?>
@@ -112,10 +116,11 @@
 	                        <?php _e( 'No cases' ); ?>
 
 	                          <?php endif; ?>
-	  </div>
+
 	</div>
 
-</div>
+
+
 
 	<!-- Process steps -->
 	<div class="container-fluid wrapper">
