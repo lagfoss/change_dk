@@ -53,11 +53,13 @@ Template Post Type: cases
 
           <div class="container-fluid wrapper">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-md-5 stroke_position_case">
+                <div class="stroke_case"></div>
                 <?php echo $clientpre; ?>
                 <img src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/><?php echo $clientname; ?>
               </div>
-              <div class="col-md-7">
+              <div class="col-md-7 stroke_position_case">
+                <div class="stroke_case"></div>
                 <?php echo $clientservice; ?><?php echo $clientcategories; ?>
               </div>
             </div>
