@@ -26,10 +26,10 @@ Template Post Type: cases
 
         <div class="hero" <?php echo $hero_bg; ?>>
           <div class="container-fluid wrapper">
-            <div class="row case_hero">
-              <div class="stroke_position_case">
+            <div class="case_hero">
+              <div class="row stroke_position_case">
                 <div class="stroke_case"></div>
-                <p class="white"><?php echo $heroname; ?></p>
+                <p class="white hero_client"><?php echo $heroname; ?></p>
               </div>
               <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
             </div>
