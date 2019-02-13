@@ -1476,6 +1476,8 @@ img.client_logo_neg {
 
 /*========= CASES enkelt start =========*/
 
+/*========= CASES hero start =========*/
+
 .case_hero {
   padding-top: 300px;
 }
@@ -1501,9 +1503,12 @@ img.client_logo_neg {
 
 }
 
+/*========= CASES hero slut =========*/
+
 /*========= CASES enkelt slut =========*/
 
 /*========= FOOTER =========*/
+
 .footer_project {
   padding: 60px 0 90px 0;
   background-color: #e9e9e9;
