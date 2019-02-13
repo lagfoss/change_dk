@@ -63,3 +63,10 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #e54c00;
 }
+
+.hello .owl-dots  {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 25%;
+  margin-left: 100px;
+}

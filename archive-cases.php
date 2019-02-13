@@ -15,7 +15,6 @@
 
 
       <!-- Image carousel -->
-      <div class="col-11 owl-carousel owl-theme autowidth">
 
     <?php
     $params = array('posts_per_page' => 5,'orderby' => 'menu_order',
@@ -61,6 +60,6 @@
                         <?php _e( 'No cases' ); ?>
 
                           <?php endif; ?>
-  </div>
+
 
 <?php get_footer();?>
