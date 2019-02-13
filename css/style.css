@@ -1501,6 +1501,7 @@ img.client_logo_neg {
 }
 
 .case_down {
+  margin-top: 100px;
   text-decoration: none;
   padding: 15px 20px;
   background-color: #ffffff;
