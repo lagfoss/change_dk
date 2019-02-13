@@ -94,11 +94,20 @@ $(document).ready(function() {
       dots:false
   });
 
+  var owl = $('.hello');
+  owl.owlCarousel({
+    items:1
+  })
+
   var owl = $('.autowidth');
   owl.owlCarousel({
     autoWidth:true,
     rtl: true
 })
+
+
+
+
 
 </script>
 </body>
