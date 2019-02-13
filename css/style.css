@@ -1498,23 +1498,33 @@ img.client_logo_neg {
 
 .hero_client {
   margin-top: 3px;
+  color: #f2f2f2;
+}
+
+.h1_case {
+  font-size: 61px;
+  line-height: 1;
+  color: #f2f2f2;
 }
 
 .case_down {
   margin-top: 100px;
   text-decoration: none;
   padding: 15px 20px;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #f8f8f8;
   width: 58px;
   height: 60px;
   border-radius: 10px;
-  text-align: center;
-  color: #ffffff;
   transform: rotate(90deg);
 }
 
 /*========= CASES hero slut =========*/
+
+.pre_client {
+  margin-top: 3px;
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 17px;
+}
 
 /*========= CASES enkelt slut =========*/
 

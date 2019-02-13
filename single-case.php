@@ -30,9 +30,9 @@ Template Post Type: cases
             <div class="case_hero">
               <div class="row stroke_position_case">
                 <div class="stroke_case"></div>
-                <p class="white hero_client"><?php echo $heroname; ?></p>
+                <p class="hero_client"><?php echo $heroname; ?></p>
               </div>
-              <h1 class="h1_hero_ydelser"><?php echo $clienttitle; ?></h1>
+              <h1 class="h1_case"><?php echo $clienttitle; ?></h1>
             </div>
             <div class="row">
                 <a class="" href="#">
@@ -53,14 +53,19 @@ Template Post Type: cases
 
           <div class="container-fluid wrapper">
             <div class="row">
-              <div class="col-md-5 stroke_position_case">
-                <div class="stroke_case"></div>
-                <?php echo $clientpre; ?>
+              <div class="col-md-5">
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $clientpre; ?></p>
+                </div>
                 <img src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/><?php echo $clientname; ?>
               </div>
-              <div class="col-md-7 stroke_position_case">
-                <div class="stroke_case"></div>
-                <?php echo $clientservice; ?><?php echo $clientcategories; ?>
+              <div class="col-md-7">
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $clientservice; ?></p>
+                </div>
+                <?php echo $clientcategories; ?>
               </div>
             </div>
           </div>
