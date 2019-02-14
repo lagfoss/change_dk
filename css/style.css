@@ -1647,6 +1647,7 @@ img.client_logo_neg {
   margin-top: 3px;
   font-family: 'bebas-neue', sans-serif;
   font-size: 17px;
+  color: #111517;
 }
 
 .client_logo {
@@ -1664,6 +1665,10 @@ img.client_logo_neg {
   padding-top: 20px;
 }
 
+.case_goal p, .case_strategi p {
+  color: #999999;
+}
+
 .client_image {
   height: 700px;
   overflow: hidden;
@@ -1671,10 +1676,15 @@ img.client_logo_neg {
   margin-bottom: 150px;
 }
 
-.case_goal {
+.goal_line {
+  border-bottom: solid 2px #e3e3e3;
+  padding-bottom: 200px;
+  margin-bottom: 180px;
+}
+
+.case_goal, .case_strategi {
   width: 60%;
   margin: auto;
-
 }
 
 /*========= CASES enkelt slut =========*/

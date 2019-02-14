@@ -110,14 +110,16 @@ Template Post Type: cases
           $goaltitle = get_sub_field('case_goal_title');
           $goaltext = get_sub_field('case_goal_text'); ?>
 
-          <div class="container-fluid wrapper">
-            <div class="row case_goal">
-              <div class="row stroke_position_case">
-                <div class="stroke_case"></div>
-                <p class="pre_client"><?php echo $pregoal; ?></p>
+          <div class="container-fluid goal_line">
+            <div class="row wrapper">
+              <div class="case_goal">
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $pregoal; ?></p>
+                </div>
+                <h2 class=""><?php echo $goaltitle; ?></h2>
+                <p class=""><?php echo $goaltext; ?></p>
               </div>
-              <h2 class=""><?php echo $goaltitle; ?></h2>
-              <p class=""><?php echo $goaltext; ?></p>
             </div>
           </div>
 
@@ -133,12 +135,10 @@ Template Post Type: cases
 
 
           <div class="container-fluid wrapper">
-            <div class="row">
-              <div class="col-md-5">
+            <div class="row case_strategi">
+              <h2 class=""><?php echo $strategititle; ?></h2>
+              <p class=""><?php echo $strategitext; ?></p>
                 <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
-              </div>
-              <div class="col-md-7">
-              </div>
             </div>
           </div>
         <?php	       endwhile; ?>
