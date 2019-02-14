@@ -99,6 +99,12 @@ $(document).ready(function() {
     items:1
   })
 
+  var owl = $('.carousel_om_change');
+  owl.owlCarousel({
+    items: 2,
+    margin: 30,
+  })
+
   var owl = $('.autowidth');
   owl.owlCarousel({
     autoWidth:true,
