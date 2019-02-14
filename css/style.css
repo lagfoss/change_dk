@@ -1640,6 +1640,7 @@ img.client_logo_neg {
 .case_client {
   border-bottom: solid 2px #e3e3e3;
   padding-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .pre_client {
@@ -1667,6 +1668,13 @@ img.client_logo_neg {
   height: 700px;
   overflow: hidden;
   background-position: center;
+  margin-bottom: 150px;
+}
+
+.case_goal {
+  width: 60%;
+  margin: auto;
+
 }
 
 /*========= CASES enkelt slut =========*/

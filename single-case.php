@@ -102,17 +102,24 @@ Template Post Type: cases
   	         $clienti_bg = 'style="background-image: url(' . $clientimage['url'] . '); background-size:cover; background-position: center"';
            } ?>
 
-          <div class="client_image" <?php echo $clienti_bg; ?>>
-            <div class="container-fluid">
-              
-            </div>
-          </div>
+          <div class="container-fluid client_image" <?php echo $clienti_bg; ?>></div>
 
   <?php elseif( get_row_layout() == 'case_goal' ):
 
         	$pregoal = get_sub_field('case_pre_goal');
           $goaltitle = get_sub_field('case_goal_title');
           $goaltext = get_sub_field('case_goal_text'); ?>
+
+          <div class="container-fluid wrapper">
+            <div class="row case_goal">
+              <div class="row stroke_position_case">
+                <div class="stroke_case"></div>
+                <p class="pre_client"><?php echo $pregoal; ?></p>
+              </div>
+              <h2 class=""><?php echo $goaltitle; ?></h2>
+              <p class=""><?php echo $goaltext; ?></p>
+            </div>
+          </div>
 
   <?php elseif( get_row_layout() == 'case_strategi' ):
 
