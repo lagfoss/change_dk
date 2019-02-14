@@ -1512,8 +1512,8 @@ img.client_logo_neg {
   text-decoration: none;
   padding: 15px 20px;
   background-color: #f8f8f8;
-  width: 58px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 10px;
   transform: rotate(90deg);
 }
@@ -1524,6 +1524,15 @@ img.client_logo_neg {
   margin-top: 3px;
   font-family: 'bebas-neue', sans-serif;
   font-size: 17px;
+}
+
+.client_logo {
+  padding: 10px;
+  background-color: #f8f8f8;
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 }
 
 /*========= CASES enkelt slut =========*/

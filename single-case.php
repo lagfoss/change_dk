@@ -58,7 +58,10 @@ Template Post Type: cases
                   <div class="stroke_case"></div>
                   <p class="pre_client"><?php echo $clientpre; ?></p>
                 </div>
-                <img src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/><?php echo $clientname; ?>
+                <div class="row">
+                  <img class="client_logo" src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/>
+                  <?php echo $clientname; ?>
+                </div>
               </div>
               <div class="col-md-7">
                 <div class="row stroke_position_case">
