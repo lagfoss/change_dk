@@ -77,20 +77,34 @@ Template Post Type: cases
 
         	$clienturl = get_sub_field('case_client_url');
           $clienturltext = get_sub_field('case_client_url_text');
-          /*$ = get_sub_field('case_client_');
-          $ = get_sub_field('case_client_');*/
+          $clientcontact = get_sub_field('case_contact');
+          $clientcontacttext = get_sub_field('case_contact_text');
           $abouttitle = get_sub_field('case_about_client_title');
           $about = get_sub_field('case_about_client'); ?>
 
+          <div class="container-fluid wrapper">
+            <div class="row">
+              <div class="col-md-5">
+                <a href="<?php echo $clienturl; ?>" class="" target="_blank"><?php echo $clienturltext; ?></a>
+                <a href="mailto:<?php echo $clientcontact; ?>" class=""><?php echo $clientcontacttext; ?></a>
+              </div>
+              <div class="col-md-7">
+                <h2 class=""><?php echo $abouttitle; ?></h2>
+                <p class=""><?php echo $about; ?></p>
+              </div>
+            </div>
+          </div>
+
   <?php elseif( get_row_layout() == 'case_client_image' ):
 
-        	$clientimage = get_sub_field('case_image'); ?>
+        	$clientimage = get_sub_field('case_image');
+          if ($clientimage) {
+  	         $clienti_bg = 'style="background-image: url(' . $clientimage['url'] . '); background-size:cover; background-position: center"';
+           } ?>
 
-          <div class="">
-            <div class="container-fluid wrapper">
-              <div class="row">
-                <img src="<?php echo $clientimage['url']; ?>" alt="<?php echo $clientimage['alt'] ?>"/>
-              </div>
+          <div class="client_image" <?php echo $clienti_bg; ?>>
+            <div class="container-fluid">
+              
             </div>
           </div>
 
