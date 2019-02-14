@@ -60,7 +60,7 @@ Template Post Type: cases
                 </div>
                 <div class="row">
                   <img class="client_logo" src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/>
-                  <?php echo $clientname; ?>
+                  <p class="client_text"><?php echo $clientname; ?></p>
                 </div>
               </div>
               <div class="col-md-7">
@@ -68,7 +68,7 @@ Template Post Type: cases
                   <div class="stroke_case"></div>
                   <p class="pre_client"><?php echo $clientservice; ?></p>
                 </div>
-                <?php echo $clientcategories; ?>
+                <p class="client_text"><?php echo $clientcategories; ?></p>
               </div>
             </div>
           </div>
