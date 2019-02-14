@@ -51,8 +51,8 @@ Template Post Type: cases
           $clientservice = get_sub_field('case_client_service');
           $clientcategories = get_sub_field('case_client_categories'); ?>
 
-          <div class="container-fluid wrapper">
-            <div class="row">
+          <div class="container-fluid case_client">
+            <div class="row wrapper">
               <div class="col-md-5">
                 <div class="row stroke_position_case">
                   <div class="stroke_case"></div>
