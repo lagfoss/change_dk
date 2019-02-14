@@ -88,7 +88,7 @@ Template Post Type: cases
                 <a href="<?php echo $clienturl; ?>" class="" target="_blank"><?php echo $clienturltext; ?></a>
                 <a href="mailto:<?php echo $clientcontact; ?>" class=""><?php echo $clientcontacttext; ?></a>
               </div>
-              <div class="col-md-7">
+              <div class="col-md-7 client_about">
                 <h2 class=""><?php echo $abouttitle; ?></h2>
                 <p class=""><?php echo $about; ?></p>
               </div>
@@ -117,8 +117,10 @@ Template Post Type: cases
                   <div class="stroke_case"></div>
                   <p class="pre_client"><?php echo $pregoal; ?></p>
                 </div>
-                <h2 class=""><?php echo $goaltitle; ?></h2>
-                <p class=""><?php echo $goaltext; ?></p>
+                <div class="goal_text">
+                  <h2 class=""><?php echo $goaltitle; ?></h2>
+                  <p class=""><?php echo $goaltext; ?></p>
+                </div>
               </div>
             </div>
           </div>
@@ -126,23 +128,29 @@ Template Post Type: cases
   <?php elseif( get_row_layout() == 'case_strategi' ):
 
         	$strategititle = get_sub_field('case_strategi_title');
-          $strategitext = get_sub_field('case_strategi_text');
+          $strategitext = get_sub_field('case_strategi_text'); ?>
 
-          // check if the nested repeater field has rows of data
+          <div class="container-fluid goal_line">
+            <div class="wrapper">
+              <div class="row case_strategi">
+                <h2 class=""><?php echo $strategititle; ?></h2>
+                <p class=""><?php echo $strategitext; ?></p>
+              </div>
+
+    <?php // check if the nested repeater field has rows of data
         	if( have_rows('case_strategi_box') ):
 			 	       // loop through the rows of data
 			         while ( have_rows('case_strategi_box') ) : the_row(); ?>
 
-
-          <div class="container-fluid wrapper">
-            <div class="row case_strategi">
-              <h2 class=""><?php echo $strategititle; ?></h2>
-              <p class=""><?php echo $strategitext; ?></p>
+              <div class="case_strategi_img">
                 <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
-            </div>
-          </div>
+
         <?php	       endwhile; ?>
+              </div>
+
           <?php	  endif; ?>
+        </div>
+      </div>
 
   <?php elseif( get_row_layout() == 'case_social_media' ):
 
