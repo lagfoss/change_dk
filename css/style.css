@@ -1692,6 +1692,14 @@ img.client_logo_neg {
   margin-bottom: 120px;
 }
 
+.case_some_text img {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 45px;
+  height: auto;
+  padding: 5px;
+}
+
 /*========= CASES enkelt slut =========*/
 
 /*========= FOOTER =========*/
