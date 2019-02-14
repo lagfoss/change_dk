@@ -104,10 +104,10 @@
       </div>
     </div>
 
-    <div class="col-11 owl-carousel owl-theme autowidth">
+    <div class="col-12 owl-carousel owl-theme carousel_om_change">
 
   <?php
-  $params = array('posts_per_page' => 5,'orderby' => 'menu_order',
+  $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
   'order' => 'ASC', 'post_type' => 'cases');
   $query = new WP_Query($params);
   ?>
@@ -116,32 +116,23 @@
               $query->the_post(); ?>
 
                 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-                <a class="case_card_link" href="<?php the_permalink(); ?>">
-                  <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-
-
-                      <img id="cases_slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
+                <div class="omchange_card_link col-3" href="<?php the_permalink(); ?>">
+                  <div class="omchange_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
                       <div class="">
                       <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
-                      <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                      <img class="omchange_client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                       <?php endif; ?>
                       </div>
 
-                      <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
+                      <h3 class="omchange_card_h3"><?php the_field('case_headline');?></h3>
 
-                      <div class="category_wrapper">
-                        <div class="cases_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+                      <div class="omchange_category_wrapper">
+                        <div class="omchange_card_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
 
                         <?php the_category(); ?>
                       </div>
-
-
-
-
-
-
-              </div></a>
+              </div></div>
 
               <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
