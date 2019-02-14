@@ -156,8 +156,7 @@ Template Post Type: cases
 
           $presome = get_sub_field('case_pre_some');
           $sometitle = get_sub_field('case_some_title');
-          $sometext = get_sub_field('case_some_text');
-          $someicons = get_sub_field('case_some_icons'); ?>
+          $sometext = get_sub_field('case_some_text'); ?>
 
           <div class="container-fluid">
             <div class="wrapper">
