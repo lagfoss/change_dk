@@ -1664,7 +1664,7 @@ img.client_logo_neg {
   padding-top: 20px;
 }
 
-.client_about p, .goal_text p, .case_strategi p {
+.client_about p, .goal_text p, .case_strategi p, .case_some_text p {
   color: #999999;
 }
 
@@ -1681,7 +1681,7 @@ img.client_logo_neg {
   margin-bottom: 180px;
 }
 
-.case_goal, .case_strategi {
+.case_goal, .case_strategi, .case_some {
   width: 60%;
   margin: auto;
 }

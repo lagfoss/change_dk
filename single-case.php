@@ -154,7 +154,40 @@ Template Post Type: cases
 
   <?php elseif( get_row_layout() == 'case_social_media' ):
 
-        	$clienturl = get_sub_field('case_image'); ?>
+          $presome = get_sub_field('case_pre_some');
+          $sometitle = get_sub_field('case_some_title');
+          $sometext = get_sub_field('case_some_text');
+          $someicons = get_sub_field('case_some_icons'); ?>
+
+          <div class="container-fluid">
+            <div class="wrapper">
+              <div class="row case_some">
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $presome; ?></p>
+                </div>
+                <div class="case_some_text">
+                  <h2 class=""><?php echo $sometitle; ?></h2>
+                  <p class=""><?php echo $sometext; ?></p>
+                </div>
+              </div>
+
+    <?php // check if the nested repeater field has rows of data
+        	if( have_rows('case_strategi_box') ):
+			 	       // loop through the rows of data
+			         while ( have_rows('case_strategi_box') ) : the_row(); ?>
+
+              <div class="case_strategi_img">
+                <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
+
+        <?php	       endwhile; ?>
+              </div>
+
+          <?php	  endif; ?>
+        </div>
+      </div>
+
+
 
   <?php endif;
 
@@ -170,3 +203,51 @@ Template Post Type: cases
 
 
 <?php get_footer(); ?>
+
+<script type="text/javascript">
+
+/* Logo transition script */
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+} else {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+}
+
+});
+
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+$(".input").addClass("out_black2");
+    } else {
+        $(".input").removeClass("out_black2");
+    }
+});
+
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+$(".search").addClass("search_black");
+    } else {
+        $(".search").removeClass("search_black");
+    }
+});
+
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+$(".menubtn").addClass("menu_black");
+    } else {
+        $(".menubtn").removeClass("menu_black");
+    }
+});
+
+</script>
