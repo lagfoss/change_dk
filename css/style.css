@@ -1765,6 +1765,8 @@ img.client_logo_neg {
 
 .case_some_ex img {
   width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
 
 .case_some_ex:nth-last-of-type(even) {
@@ -1784,6 +1786,11 @@ img.client_logo_neg {
   max-width: 555px;
 }
 
+.rekru_video iframe {
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+}
+
 /*========= CASES rekrutering slut =========*/
 /*========= CASES branding start =========*/
 
@@ -1793,6 +1800,7 @@ img.client_logo_neg {
 /*========= CASES results start =========*/
 
 .case_results {
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 
