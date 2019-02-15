@@ -261,8 +261,8 @@ Template Post Type: cases
 
             <div class="container-fluid">
               <div class="row wrapper">
-                <div class="case_goal">
-                  <div class="goal_text">
+                <div class="case_results">
+                  <div class="results_text">
                     <h2 class="h2_case"><?php echo $resultitle; ?></h2>
                     <p><?php echo $resultext; ?></p>
                   </div>

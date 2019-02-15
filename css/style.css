@@ -1604,7 +1604,8 @@ img.client_logo_neg {
   margin-bottom: 15px;
 }
 
-.client_about p, .goal_text p, .case_strategi p, .case_some_text p, .rekru_text p {
+.client_about p, .goal_text p, .case_strategi p, .case_some_text p,
+.rekru_text p, .results_text p {
   color: #999999;
 }
 
@@ -1709,7 +1710,7 @@ img.client_logo_neg {
   margin-bottom: 180px;
 }
 
-.case_goal, .case_strategi, .case_some {
+.case_goal, .case_strategi, .case_some, .case_results {
   width: 60%;
   margin: auto;
 }
@@ -1765,9 +1766,13 @@ img.client_logo_neg {
 /*========= CASES branding start =========*/
 
 
+
 /*========= CASES branding slut =========*/
 /*========= CASES results start =========*/
 
+.case_results {
+  margin-bottom: 100px;
+}
 
 /*========= CASES results slut =========*/
 /*========= CASES enkelt slut =========*/
