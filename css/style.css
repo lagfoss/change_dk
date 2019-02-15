@@ -1689,7 +1689,7 @@ img.client_logo_neg {
   height: 700px;
   overflow: hidden;
   background-position: center;
-  margin-bottom: 150px;
+  margin: 120px 0 150px 0;
 }
 
 .goal_line {
