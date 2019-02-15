@@ -1646,6 +1646,8 @@ img.client_logo_neg {
 
 /*========= CASES hero slut =========*/
 
+/*========= CASES client start =========*/
+
 .case_client {
   border-bottom: solid 2px #e3e3e3;
   padding-bottom: 200px;
@@ -1673,6 +1675,9 @@ img.client_logo_neg {
   padding-top: 20px;
 }
 
+/*========= CASES client slut =========*/
+/*========= CASES about client start =========*/
+
 .case_link {
   font-size: 17px;
   border-bottom: 1px solid #111517;
@@ -1685,12 +1690,18 @@ img.client_logo_neg {
   color: inherit;
 }
 
+/*========= CASES about client slut =========*/
+/*========= CASES image start =========*/
+
 .client_image {
   height: 700px;
   overflow: hidden;
   background-position: center;
   margin: 120px 0 150px 0;
 }
+
+/*========= CASES image slut =========*/
+/*========= CASES goal start =========*/
 
 .goal_line {
   border-bottom: solid 2px #e3e3e3;
@@ -1702,6 +1713,9 @@ img.client_logo_neg {
   width: 60%;
   margin: auto;
 }
+
+/*========= CASES goal slut =========*/
+/*========= CASES strategi start =========*/
 
 .strategi_line {
   position: relative;
@@ -1729,6 +1743,9 @@ img.client_logo_neg {
   background-color: #f8f8f8;
 }
 
+/*========= CASES strategi slut =========*/
+/*========= CASES some start =========*/
+
 .case_some_text img {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -1737,10 +1754,22 @@ img.client_logo_neg {
   padding: 5px;
 }
 
+/*========= CASES some slut =========*/
+/*========= CASES rekrutering start =========*/
+
 .rekru_content {
   max-width: 555px;
 }
 
+/*========= CASES rekrutering slut =========*/
+/*========= CASES branding start =========*/
+
+
+/*========= CASES branding slut =========*/
+/*========= CASES results start =========*/
+
+
+/*========= CASES results slut =========*/
 /*========= CASES enkelt slut =========*/
 
 /*========= FOOTER =========*/
