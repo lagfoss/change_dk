@@ -178,19 +178,20 @@ Template Post Type: cases
                 </div>
               </div>
 
+              <div class="row justify-content-center">
     <?php // check if the nested repeater field has rows of data
         	if( have_rows('case_some_example') ):
 			 	       // loop through the rows of data
 			         while ( have_rows('case_some_example') ) : the_row(); ?>
 
-              <div class="">
-                 <?php the_sub_field(' case_some_example_title'); ?>
-                <img src="<?php the_sub_field(' case_some_example_image'); ?>" />
+                <div class="case_strategi_img">
+                  <img src="<?php the_sub_field('case_some_example_image'); ?>" />
+                </div>
+            <?php	       endwhile; ?>
 
-        <?php	       endwhile; ?>
+              <?php	  endif; ?>
+
               </div>
-
-          <?php	  endif; ?>
         </div>
       </div>
 
