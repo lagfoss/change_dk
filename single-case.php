@@ -182,9 +182,14 @@ Template Post Type: cases
     <?php // check if the nested repeater field has rows of data
         	if( have_rows('case_some_example') ):
 			 	       // loop through the rows of data
-			         while ( have_rows('case_some_example') ) : the_row(); ?>
+			         while ( have_rows('case_some_example') ) : the_row();
+                  $somexamptitle = get_sub_field('case_some_example_title'); ?>
 
                 <div class="case_strategi_img">
+                  <div class="row stroke_position_case">
+                    <div class="stroke_case"></div>
+                    <p class="pre_client"><?php echo $somexamptitle; ?></p>
+                  </div>
                   <img src="<?php the_sub_field('case_some_example_image'); ?>" />
                 </div>
             <?php	       endwhile; ?>
