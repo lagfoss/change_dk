@@ -1687,9 +1687,20 @@ img.client_logo_neg {
 }
 
 .strategi_line {
+  position: relative;
   border-bottom: solid 2px #e3e3e3;
   padding-bottom: 150px;
   margin-bottom: 120px;
+}
+
+.strategi_dots {
+  position: absolute;
+  width: 38%;
+  height: 33%;
+  background-repeat: repeat;
+  left: 31%;
+  top: 49%;
+  z-index: -1;
 }
 
 .case_strategi_img img {
@@ -1886,7 +1897,7 @@ img.client_logo_neg {
     height: 30px;
   }
 
-  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
+  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots, .strategi_dots {
     display: none;
   }
 

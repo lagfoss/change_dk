@@ -131,6 +131,8 @@ Template Post Type: cases
           $strategitext = get_sub_field('case_strategi_text'); ?>
 
           <div class="container-fluid strategi_line">
+            <div class="strategi_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+            </div>
             <div class="wrapper">
               <div class="row case_strategi">
                 <h2 class=""><?php echo $strategititle; ?></h2>
