@@ -1675,7 +1675,9 @@ img.client_logo_neg {
 
 .case_link {
   font-size: 17px;
-  text-decoration: underline;
+  border-bottom: .5px solid #111517;
+  padding-bottom: 3px;
+  margin-bottom: 40px;
 }
 
 .case_link:hover {

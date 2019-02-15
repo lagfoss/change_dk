@@ -85,8 +85,12 @@ Template Post Type: cases
           <div class="container-fluid wrapper">
             <div class="row">
               <div class="col-md-5">
-                <a href="<?php echo $clienturl; ?>" class="case_link" target="_blank"><?php echo $clienturltext; ?></a>
-                <a href="mailto:<?php echo $clientcontact; ?>" class="case_link"><?php echo $clientcontacttext; ?></a>
+                <div class="row">
+                  <a href="<?php echo $clienturl; ?>" class="case_link" target="_blank"><?php echo $clienturltext; ?></a>
+                </div>
+                <div class="row">
+                  <a href="mailto:<?php echo $clientcontact; ?>" class="case_link"><?php echo $clientcontacttext; ?></a>
+                </div>
               </div>
               <div class="col-md-7 client_about">
                 <h2 class="h2_case"><?php echo $abouttitle; ?></h2>
