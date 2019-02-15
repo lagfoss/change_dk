@@ -1593,6 +1593,21 @@ img.client_logo_neg {
 
 /*========= CASES enkelt start =========*/
 
+.h1_case {
+  font-size: 61px;
+  line-height: 1;
+  color: #f2f2f2;
+}
+
+.h2_case {
+  font-size: 41px;
+  margin-bottom: 15px;
+}
+
+.client_about p, .goal_text p, .case_strategi p, .case_some_text p {
+  color: #999999;
+}
+
 /*========= CASES hero start =========*/
 
 .case_hero {
@@ -1616,17 +1631,6 @@ img.client_logo_neg {
 .hero_client {
   margin-top: 3px;
   color: #f2f2f2;
-}
-
-.h1_case {
-  font-size: 61px;
-  line-height: 1;
-  color: #f2f2f2;
-}
-
-.h2_case {
-  font-size: 41px;
-  margin-bottom: 15px;
 }
 
 .case_down {
@@ -1669,8 +1673,14 @@ img.client_logo_neg {
   padding-top: 20px;
 }
 
-.client_about p, .goal_text p, .case_strategi p, .case_some_text p {
-  color: #999999;
+.case_link {
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.case_link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .client_image {
@@ -1714,6 +1724,7 @@ img.client_logo_neg {
   margin: 45px 25px 0 25px;
   border-radius: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
 }
 
 .case_some_text img {
