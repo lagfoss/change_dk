@@ -89,7 +89,7 @@ Template Post Type: cases
                 <a href="mailto:<?php echo $clientcontact; ?>" class=""><?php echo $clientcontacttext; ?></a>
               </div>
               <div class="col-md-7 client_about">
-                <h2 class=""><?php echo $abouttitle; ?></h2>
+                <h2 class="h2_case"><?php echo $abouttitle; ?></h2>
                 <p class=""><?php echo $about; ?></p>
               </div>
             </div>
@@ -118,7 +118,7 @@ Template Post Type: cases
                   <p class="pre_client"><?php echo $pregoal; ?></p>
                 </div>
                 <div class="goal_text">
-                  <h2 class=""><?php echo $goaltitle; ?></h2>
+                  <h2 class="h2_case"><?php echo $goaltitle; ?></h2>
                   <p class=""><?php echo $goaltext; ?></p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ Template Post Type: cases
             </div>
             <div class="wrapper">
               <div class="row case_strategi">
-                <h2 class=""><?php echo $strategititle; ?></h2>
+                <h2 class="h2_case"><?php echo $strategititle; ?></h2>
                 <p class=""><?php echo $strategitext; ?></p>
               </div>
               <div class="row justify-content-center">
@@ -169,7 +169,7 @@ Template Post Type: cases
                   <p class="pre_client"><?php echo $presome; ?></p>
                 </div>
                 <div class="case_some_text">
-                  <h2 class=""><?php echo $sometitle; ?></h2>
+                  <h2 class="h2_case"><?php echo $sometitle; ?></h2>
                   <p class=""><?php echo $sometext; ?></p>
                 </div>
               </div>

@@ -1624,6 +1624,11 @@ img.client_logo_neg {
   color: #f2f2f2;
 }
 
+.h2_case {
+  font-size: 41px;
+  margin-bottom: 15px;
+}
+
 .case_down {
   margin-top: 100px;
   text-decoration: none;
@@ -1689,24 +1694,24 @@ img.client_logo_neg {
 .strategi_line {
   position: relative;
   border-bottom: solid 2px #e3e3e3;
-  padding-bottom: 150px;
+  padding-bottom: 145px;
   margin-bottom: 120px;
 }
 
 .strategi_dots {
   position: absolute;
   width: 38%;
-  height: 33%;
+  height: 32%;
   background-repeat: repeat;
   left: 31%;
-  top: 49%;
+  top: 51%;
   z-index: -1;
 }
 
 .case_strategi_img img {
   width: 255px;
   height: 255px;
-  margin: auto 25px;
+  margin: 45px 25px 0 25px;
   border-radius: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
