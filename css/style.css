@@ -1675,7 +1675,7 @@ img.client_logo_neg {
 
 .case_link {
   font-size: 17px;
-  border-bottom: .5px solid #111517;
+  border-bottom: 1px solid #111517;
   padding-bottom: 3px;
   margin-bottom: 40px;
 }

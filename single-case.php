@@ -94,7 +94,7 @@ Template Post Type: cases
               </div>
               <div class="col-md-7 client_about">
                 <h2 class="h2_case"><?php echo $abouttitle; ?></h2>
-                <p class=""><?php echo $about; ?></p>
+                <p><?php echo $about; ?></p>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ Template Post Type: cases
                 </div>
                 <div class="goal_text">
                   <h2 class="h2_case"><?php echo $goaltitle; ?></h2>
-                  <p class=""><?php echo $goaltext; ?></p>
+                  <p><?php echo $goaltext; ?></p>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@ Template Post Type: cases
             <div class="wrapper">
               <div class="row case_strategi">
                 <h2 class="h2_case"><?php echo $strategititle; ?></h2>
-                <p class=""><?php echo $strategitext; ?></p>
+                <p><?php echo $strategitext; ?></p>
               </div>
               <div class="row justify-content-center">
     <?php // check if the nested repeater field has rows of data
@@ -174,7 +174,7 @@ Template Post Type: cases
                 </div>
                 <div class="case_some_text">
                   <h2 class="h2_case"><?php echo $sometitle; ?></h2>
-                  <p class=""><?php echo $sometext; ?></p>
+                  <p><?php echo $sometext; ?></p>
                 </div>
               </div>
 
