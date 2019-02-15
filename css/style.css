@@ -1794,7 +1794,9 @@ img.client_logo_neg {
 /*========= CASES rekrutering slut =========*/
 /*========= CASES branding start =========*/
 
-
+.brand_content {
+  max-width: 430px;
+}
 
 /*========= CASES branding slut =========*/
 /*========= CASES results start =========*/

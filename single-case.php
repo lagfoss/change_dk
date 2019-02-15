@@ -239,7 +239,7 @@ Template Post Type: cases
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-5 d-flex justify-content-end align-items-center">
-                  <div class="rekru_content">
+                  <div class="brand_content">
                     <div class="row stroke_position_case">
                       <div class="stroke_case"></div>
                       <p class="pre_client"><?php echo $prebrand; ?></p>
