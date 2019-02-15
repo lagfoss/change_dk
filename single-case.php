@@ -166,8 +166,8 @@ Template Post Type: cases
           $sometext = get_sub_field('case_some_text'); ?>
 
           <div class="container-fluid">
-            <div class="wrapper">
-              <div class="row case_some">
+            <div class="wrapper case_some">
+              <div class="row case_some_content">
                 <div class="row stroke_position_case">
                   <div class="stroke_case"></div>
                   <p class="pre_client"><?php echo $presome; ?></p>

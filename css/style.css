@@ -1710,7 +1710,7 @@ img.client_logo_neg {
   margin-bottom: 180px;
 }
 
-.case_goal, .case_strategi, .case_some, .case_results {
+.case_goal, .case_strategi, .case_some_content, .case_results {
   width: 60%;
   margin: auto;
 }
@@ -1747,6 +1747,10 @@ img.client_logo_neg {
 /*========= CASES strategi slut =========*/
 /*========= CASES some start =========*/
 
+.case_some {
+  margin-bottom: 200px;
+}
+
 .case_some_text img {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -1760,15 +1764,17 @@ img.client_logo_neg {
 }
 
 .case_some_ex img {
-
+  width: 300px;
 }
 
 .case_some_ex:nth-last-of-type(even) {
-  margin: 0 5% 21% 30%;
+  margin: 0 0 -15% 70%;
+  float: right;
 }
 
 .case_some_ex:nth-last-of-type(odd) {
-  margin: 0 30% 23% 5%;
+  margin: 0 70% 0 0;
+  float: left;
 }
 
 /*========= CASES some slut =========*/
