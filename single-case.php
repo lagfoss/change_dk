@@ -227,6 +227,48 @@ Template Post Type: cases
               </div>
             </div>
 
+    <?php elseif( get_row_layout() == 'case_branding' ):
+
+            $prebrand = get_sub_field('case_pre_branding');
+            $brandtitle = get_sub_field('case_branding_title');
+            $brandtext = get_sub_field('case_branding_text');
+            $brandgallery = get_sub_field('case_branding_gallery'); ?>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                  <div class="rekru_content">
+                    <div class="row stroke_position_case">
+                      <div class="stroke_case"></div>
+                      <p class="pre_client"><?php echo $prebrand; ?></p>
+                    </div>
+                    <div class="rekru_text">
+                      <h2 class="h2_case"><?php echo $brandtitle; ?></h2>
+                      <p><?php echo $brandtext; ?></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <?php echo $brandgallery; ?>
+                </div>
+              </div>
+            </div>
+
+    <?php elseif( get_row_layout() == 'case_results' ):
+
+            $resultitle = get_sub_field('case_results_title');
+            $resultext = get_sub_field('case_results_text'); ?>
+
+            <div class="container-fluid">
+              <div class="row wrapper">
+                <div class="case_goal">
+                  <div class="goal_text">
+                    <h2 class="h2_case"><?php echo $resultitle; ?></h2>
+                    <p><?php echo $resultext; ?></p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
