@@ -1604,7 +1604,7 @@ img.client_logo_neg {
   margin-bottom: 15px;
 }
 
-.client_about p, .goal_text p, .case_strategi p, .case_some_text p {
+.client_about p, .goal_text p, .case_strategi p, .case_some_text p, .rekru_text p {
   color: #999999;
 }
 
@@ -1735,6 +1735,10 @@ img.client_logo_neg {
   width: 45px;
   height: auto;
   padding: 5px;
+}
+
+.rekru_content {
+  max-width: 555px;
 }
 
 /*========= CASES enkelt slut =========*/

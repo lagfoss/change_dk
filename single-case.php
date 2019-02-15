@@ -209,14 +209,16 @@ Template Post Type: cases
 
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="row stroke_position_case">
-                    <div class="stroke_case"></div>
-                    <p class="pre_client"><?php echo $prerekru; ?></p>
-                  </div>
-                  <div class="goal_text">
-                    <h2 class="h2_case"><?php echo $rekrutitle; ?></h2>
-                    <p><?php echo $rekrutext; ?></p>
+                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                  <div class="rekru_content">
+                    <div class="row stroke_position_case">
+                      <div class="stroke_case"></div>
+                      <p class="pre_client"><?php echo $prerekru; ?></p>
+                    </div>
+                    <div class="rekru_text">
+                      <h2 class="h2_case"><?php echo $rekrutitle; ?></h2>
+                      <p><?php echo $rekrutext; ?></p>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
