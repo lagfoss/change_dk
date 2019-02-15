@@ -1692,6 +1692,14 @@ img.client_logo_neg {
   margin-bottom: 120px;
 }
 
+.case_strategi_img img {
+  width: 255px;
+  height: 255px;
+  margin: auto 25px;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+}
+
 .case_some_text img {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
   border-radius: 50%;

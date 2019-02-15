@@ -130,27 +130,28 @@ Template Post Type: cases
         	$strategititle = get_sub_field('case_strategi_title');
           $strategitext = get_sub_field('case_strategi_text'); ?>
 
-          <div class="container-fluid goal_line">
+          <div class="container-fluid strategi_line">
             <div class="wrapper">
               <div class="row case_strategi">
                 <h2 class=""><?php echo $strategititle; ?></h2>
                 <p class=""><?php echo $strategitext; ?></p>
               </div>
-
+              <div class="row justify-content-center">
     <?php // check if the nested repeater field has rows of data
         	if( have_rows('case_strategi_box') ):
 			 	       // loop through the rows of data
 			         while ( have_rows('case_strategi_box') ) : the_row(); ?>
 
-              <div class="case_strategi_img">
-                <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
+                <div class="case_strategi_img">
+                  <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
+                </div>
+            <?php	       endwhile; ?>
 
-        <?php	       endwhile; ?>
+              <?php	  endif; ?>
+
               </div>
-
-          <?php	  endif; ?>
-        </div>
-      </div>
+            </div>
+          </div>
 
   <?php elseif( get_row_layout() == 'case_social_media' ):
 
