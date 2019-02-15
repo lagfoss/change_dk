@@ -1763,6 +1763,14 @@ img.client_logo_neg {
 
 }
 
+.case_some_ex:nth-last-of-type(even) {
+  margin: 0 5% 21% 30%;
+}
+
+.case_some_ex:nth-last-of-type(odd) {
+  margin: 0 30% 23% 5%;
+}
+
 /*========= CASES some slut =========*/
 /*========= CASES rekrutering start =========*/
 
