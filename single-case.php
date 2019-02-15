@@ -222,7 +222,7 @@ Template Post Type: cases
                   </div>
                 </div>
                 <div class="col-md-6">
-
+                  <?php echo $rekruvideo; ?>
                 </div>
               </div>
             </div>
