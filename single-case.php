@@ -200,6 +200,32 @@ Template Post Type: cases
         </div>
       </div>
 
+    <?php elseif( get_row_layout() == 'case_rekrutering' ):
+
+            $prerekru = get_sub_field('case_pre_rekrutering');
+            $rekrutitle = get_sub_field('case_rekru_title');
+            $rekrutext = get_sub_field('case_rekru_text');
+            $rekruvideo = get_sub_field('case_rekru_embed'); ?>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row stroke_position_case">
+                    <div class="stroke_case"></div>
+                    <p class="pre_client"><?php echo $prerekru; ?></p>
+                  </div>
+                  <div class="goal_text">
+                    <h2 class="h2_case"><?php echo $rekrutitle; ?></h2>
+                    <p><?php echo $rekrutext; ?></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+              </div>
+            </div>
+
+
 
 
   <?php endif;
