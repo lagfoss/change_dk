@@ -18,12 +18,20 @@
 
     <?php
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    $params = array('posts_per_page' => 1, 'paged' => $paged,'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'cases',);
+    $params = array(
+     'posts_per_page' => 2,
+     'paged' => $paged,
+     'post_status' => 'publish',
+     'orderby' => 'publish_date',
+     'order' => 'DESC',
+     'post_type' => 'cases',
+   );
     $query = new WP_Query($params);
-    ?>
-          <?php if ($query->have_posts()) : ?>
-              <?php while ($query->have_posts()) :
-                $query->the_post(); ?>
+
+
+           if ($query->have_posts()) :
+               while ($query->have_posts()) : {
+                 $query->the_post();  } ?>
 
                   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
                   <a class="case_card_link" href="<?php the_permalink(); ?>">
@@ -54,25 +62,31 @@
                 </div></a>
 
                 <?php endwhile; ?>
+
+
+
                 <div class="pagination">
                 <?php
+
                     echo paginate_links( array(
                         'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
                         'total'        => $query->max_num_pages,
                         'current'      => max( 1, get_query_var( 'paged' ) ),
-                        'format'       => '?paged=%#%',
+                        'format'       => 'paged=%#%',
                         'show_all'     => true,
                         'type'         => 'plain',
                         'end_size'     => 2,
                         'mid_size'     => 1,
                         'prev_next'    => true,
-                        'prev_text'    => sprintf( '<i></i> %1$s', __( 'Newer Posts', 'text-domain' ) ),
-                        'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts', 'text-domain' ) ),
-                        'add_args'     => false,
+                        'prev_text'    => __( '/images/arrow_left.svg', 'text-domain' ) ,
+                        'next_text'    => __( '/images/arrow_right.svg', 'text-domain' ) ,
+                        'add_args'     => true,
                         'add_fragment' => '',
                     ) );
                 ?>
               </div>
+
+              <?php wp_reset_postdata(); ?>
 
                     <?php else:  ?>
 
