@@ -23,10 +23,7 @@
   <?php wp_head(); ?>
 
 </head>
-  <script>
-    window.sr = ScrollReveal();
-    sr.reveal('.reveal');
-  </script>
+
 <body>
   <!-- Content calendar og Sociale medier start -->
   <div class="container-fluid pre_header">
