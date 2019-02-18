@@ -18,11 +18,15 @@
     </script><script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.modal.min.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
   <?php wp_head(); ?>
 
 </head>
-
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.reveal');
+  </script>
 <body>
   <!-- Content calendar og Sociale medier start -->
   <div class="container-fluid pre_header">

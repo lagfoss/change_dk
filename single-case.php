@@ -82,7 +82,7 @@ Template Post Type: cases
           $abouttitle = get_sub_field('case_about_client_title');
           $about = get_sub_field('case_about_client'); ?>
 
-          <div class="container-fluid wrapper">
+          <div class="container-fluid wrapper client_info">
             <div class="row">
               <div class="col-md-5">
                 <div class="row">
@@ -239,7 +239,7 @@ Template Post Type: cases
             $brandgallery = get_sub_field('case_branding_gallery'); ?>
 
             <div class="container-fluid">
-              <div class="row">
+              <div class="row brand">
                 <div class="col-md-5 d-flex justify-content-end align-items-center">
                   <div class="brand_content">
                     <div class="row stroke_position_case">
@@ -342,5 +342,17 @@ $(".menubtn").addClass("menu_black");
         $(".menubtn").removeClass("menu_black");
     }
 });
+
+ScrollReveal().reveal('.case_client', { distance: '200px' });
+ScrollReveal().reveal('.client_info', { distance: '250px' });
+ScrollReveal().reveal('.client_image', { distance: '150px' });
+ScrollReveal().reveal('.goal_line', { distance: '250px' });
+ScrollReveal().reveal('.strategi_line', { distance: '200px' });
+ScrollReveal().reveal('.case_strategi_img', { distance: '200px' });
+ScrollReveal().reveal('.case_some', { distance: '200px' });
+ScrollReveal().reveal('.case_some_ex', { distance: '100px' });
+ScrollReveal().reveal('.rekru', { distance: '200px' });
+ScrollReveal().reveal('.brand', { distance: '200px' });
+ScrollReveal().reveal('.case_results', { distance: '200px' });
 
 </script>
