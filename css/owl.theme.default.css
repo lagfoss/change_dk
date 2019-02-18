@@ -73,12 +73,6 @@
     height:30px;
     ...
 }
-.owl-carousel .owl-nav .owl-prev{
-    background-image: url('<?php the_field('wcwd_button_icon'); ?>') no-repeat;
-}
-.owl-carousel .owl-nav .owl-next{
-    background: url('step_3_arrow.svg') no-repeat;
-}
 }
 
 .owl-carousel .owl-nav button.owl-next button.owl-prev {

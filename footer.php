@@ -103,7 +103,6 @@ $(document).ready(function() {
   var owl = $('.carousel_om_change');
   owl.owlCarousel({
     nav: true,
-    navText: ["",""],
     slideby: 1,
     dots: false,
     items: 2,
