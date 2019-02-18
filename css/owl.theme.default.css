@@ -7,6 +7,11 @@
  * 	Default theme - Owl Carousel CSS File
  */
 
+button.owl.active:active, button.owl.active:focus  {
+   outline: 0;
+   border: none;
+}
+
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
@@ -24,7 +29,7 @@
   border-radius: 3px;
 }
 .owl-theme .owl-nav [class*='owl-']:hover {
-  background: #869791;
+  background: inherit;
   color: #FFF;
   text-decoration: none;
 }
@@ -82,6 +87,13 @@
   margin-left: -30px;
   z-index: 2;
 }
+
+.owl-prev button:hover {
+  text-decoration: none;
+  background-color: pink;
+}
+
+
 .owl-carousel .owl-nav .owl-next{
   background: url('arrow_right.svg') no-repeat;
     margin-top: -200px;
@@ -90,10 +102,6 @@
     float: right;
 }
 
-.owl-carousel .owl-nav button.owl-next button.owl-prev {
-  font-size: 20px;
-  width: 20px;
-}
 
 .hello .owl-dots  {
   margin-top: 10px;
