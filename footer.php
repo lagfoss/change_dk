@@ -96,11 +96,16 @@ $(document).ready(function() {
 
   var owl = $('.hello');
   owl.owlCarousel({
-    items:1
+    items:1,
+    nav: false,
   })
 
   var owl = $('.carousel_om_change');
   owl.owlCarousel({
+    nav: true,
+    navText: ["",""],
+    slideby: 1,
+    dots: false,
     items: 2,
     margin: 30,
   })

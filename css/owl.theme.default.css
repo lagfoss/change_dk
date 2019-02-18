@@ -64,6 +64,28 @@
   background: #e54c00;
 }
 
+.owl-theme .owl-nav [class*='owl-'] {
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    //width, height
+    width:30px;
+    height:30px;
+    ...
+}
+.owl-carousel .owl-nav .owl-prev{
+    background-image: url('<?php the_field('wcwd_button_icon'); ?>') no-repeat;
+}
+.owl-carousel .owl-nav .owl-next{
+    background: url('step_3_arrow.svg') no-repeat;
+}
+}
+
+.owl-carousel .owl-nav button.owl-next button.owl-prev {
+  font-size: 20px;
+  width: 20px;
+}
+
 .hello .owl-dots  {
   margin-top: 10px;
   position: absolute;

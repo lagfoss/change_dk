@@ -76,6 +76,9 @@
 	</div>
 
 	<!-- CASE SLIDER -->
+	<a class="cases_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('wcwd_button_icon') ): ?>
+	<img class="" src="<?php the_field('wcwd_button_icon'); ?>" />
+	<?php endif; ?></a>
 		  <div class="col-11 owl-carousel hello owl-theme">
 	    <?php
 	    $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
