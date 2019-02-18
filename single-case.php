@@ -253,7 +253,13 @@ Template Post Type: cases
                   </div>
                 </div>
                 <div class="col-md-7">
-                  <?php echo $brandgallery; ?>
+				              <div class="">
+				            <?php foreach( $brandgallery as $brandgallery ): ?>
+				                <div>
+				                    <img src="<?php echo $brandgallery['url']; ?>"/>
+				                </div>
+				            <?php endforeach; ?>
+                  </div>
                 </div>
               </div>
             </div>
