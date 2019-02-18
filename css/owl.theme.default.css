@@ -51,7 +51,7 @@
 
 .owl-theme .owl-dots .owl-dot span {
   width: 30px;
-  height: 2px;
+  height: 1px;
   margin: 5px 7px;
   background: #999999;
   display: block;
@@ -72,12 +72,6 @@
     width:30px;
     height:30px;
     ...
-}
-.owl-carousel .owl-nav .owl-prev{
-    background-image: url('<?php the_field('wcwd_button_icon'); ?>') no-repeat;
-}
-.owl-carousel .owl-nav .owl-next{
-    background: url('step_3_arrow.svg') no-repeat;
 }
 }
 
