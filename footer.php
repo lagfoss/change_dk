@@ -100,9 +100,12 @@ $(document).ready(function() {
     nav: false,
   })
 
+  var templateDir = "<?php bloginfo('template_directory') ?>";
+
   var owl = $('.carousel_om_change');
   owl.owlCarousel({
     nav: true,
+    navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"], 
     slideby: 1,
     dots: false,
     items: 2,
