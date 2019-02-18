@@ -49,7 +49,8 @@ Template Post Type: cases
           $clientlogo = get_sub_field('client_logo');
           $clientname = get_sub_field('case_client_name');
           $clientservice = get_sub_field('case_client_service');
-          $clientcategories = get_sub_field('case_client_categories'); ?>
+          $clientcategories = the_category(); ?>
+
 
           <div class="container-fluid case_client">
             <div class="row wrapper">
