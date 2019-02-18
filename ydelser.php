@@ -140,4 +140,8 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
+ScrollReveal().reveal('.komme_uden_om_det', { distance: '250px' });
+ScrollReveal().reveal('.wcwd_content', { distance: '250px' });
+ScrollReveal().reveal('.logo_slider', { distance: '250px' });
+
 </script>

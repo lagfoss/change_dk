@@ -76,6 +76,7 @@
 	</div>
 
 	<!-- CASE SLIDER -->
+	<div class="case_slider"
 	<a class="cases_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('wcwd_button_icon') ): ?>
 	<img class="" src="<?php the_field('wcwd_button_icon'); ?>" />
 	<?php endif; ?></a>
@@ -112,6 +113,7 @@
 
 	                          <?php endif; ?>
 	</div>
+</div>
 
 	<!-- Process steps -->
 	<div class="container-fluid wrapper">
@@ -318,5 +320,9 @@ $(".wcwd_button").click(function() {
 	scrollTop: $(".FooterProject").offset().top - 10},
 	'slow');
 });
+
+ScrollReveal().reveal('.case_slider', { distance: '250px' });
+ScrollReveal().reveal('.wrapper', { distance: '250px' });
+ScrollReveal().reveal('.logo_slider', { distance: '250px' });
 
 </script>
