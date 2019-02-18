@@ -48,8 +48,7 @@ Template Post Type: cases
         	$clientpre = get_sub_field('case_client_pre');
           $clientlogo = get_sub_field('client_logo');
           $clientname = get_sub_field('case_client_name');
-          $clientservice = get_sub_field('case_client_service');
-          $clientcategories = the_category(); ?>
+          $clientservice = get_sub_field('case_client_service'); ?>
 
 
           <div class="container-fluid case_client">
@@ -69,7 +68,7 @@ Template Post Type: cases
                   <div class="stroke_case"></div>
                   <p class="pre_client"><?php echo $clientservice; ?></p>
                 </div>
-                <p class="client_text"><?php echo $clientcategories; ?></p>
+                <div class="client_cat"><?php the_category(); ?></div>
               </div>
             </div>
           </div>
