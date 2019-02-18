@@ -1811,8 +1811,23 @@ img.client_logo_neg {
 /*========= CASES some slut =========*/
 /*========= CASES rekrutering start =========*/
 
+.rekru {
+  position: relative;
+}
+
 .rekru_content {
-  max-width: 555px;
+  max-width: 515px;
+  margin-right: 40px;
+}
+
+.rekru_dots {
+  position: absolute;
+  width: 30%;
+  height: 120%;
+  background-repeat: repeat;
+  right: 0;
+  top: -11%;
+  z-index: -1;
 }
 
 .rekru_video iframe {
@@ -2014,7 +2029,7 @@ img.client_logo_neg {
     height: 30px;
   }
 
-  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots, .strategi_dots {
+  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots, .strategi_dots, .rekru_dots {
     display: none;
   }
 

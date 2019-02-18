@@ -208,7 +208,9 @@ Template Post Type: cases
             $rekruvideo = get_sub_field('case_rekru_embed'); ?>
 
             <div class="container-fluid">
-              <div class="row">
+              <div class="row rekru">
+                <div class="rekru_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+                </div>
                 <div class="col-md-6 d-flex justify-content-end align-items-center">
                   <div class="rekru_content">
                     <div class="row stroke_position_case">
