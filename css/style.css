@@ -1617,6 +1617,29 @@ img.client_logo_neg {
       z-index: 2;
  }
 
+ .pagination {
+   color: #e54c00;
+   padding: 10px;
+ }
+
+ .page-numbers.current {
+   color: #e54c00;
+   background-color: white;
+   padding: 20px 30px;
+   margin: 10px;
+   border: solid 1px;
+   border-radius: 10px;
+ }
+
+ .page-numbers {
+   color: #999999;
+   background-color: white;
+   padding: 20px 30px;
+   margin: 10px;
+   border: solid 1px;
+   border-radius: 10px;
+ }
+
 
 /*========= CASES forside slut =========*/
 
