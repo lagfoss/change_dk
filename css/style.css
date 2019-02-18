@@ -606,7 +606,7 @@ input {
   position: relative;
   top: 0;
   margin-top: 0;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
@@ -1622,6 +1622,22 @@ img.client_logo_neg {
 
 /*========= CASES enkelt start =========*/
 
+.h1_case {
+  font-size: 61px;
+  line-height: 1;
+  color: #f2f2f2;
+}
+
+.h2_case {
+  font-size: 41px;
+  margin-bottom: 15px;
+}
+
+.client_about p, .goal_text p, .case_strategi p, .case_some_text p,
+.rekru_text p, .results_text p {
+  color: #999999;
+}
+
 /*========= CASES hero start =========*/
 
 .case_hero {
@@ -1631,7 +1647,7 @@ img.client_logo_neg {
 .stroke_position_case {
   width: 100%;
   height: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .stroke_case {
@@ -1647,24 +1663,26 @@ img.client_logo_neg {
   color: #f2f2f2;
 }
 
-.h1_case {
-  font-size: 61px;
-  line-height: 1;
-  color: #f2f2f2;
-}
-
 .case_down {
   margin-top: 100px;
   text-decoration: none;
   padding: 15px 20px;
   background-color: #f8f8f8;
-  width: 58px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 10px;
   transform: rotate(90deg);
 }
 
 /*========= CASES hero slut =========*/
+
+/*========= CASES client start =========*/
+
+.case_client {
+  border-bottom: solid 2px #e3e3e3;
+  padding-bottom: 200px;
+  margin-bottom: 100px;
+}
 
 .pre_client {
   margin-top: 3px;
@@ -1672,6 +1690,152 @@ img.client_logo_neg {
   font-size: 17px;
 }
 
+.client_logo {
+  padding: 10px;
+  background-color: #f8f8f8;
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.1);
+}
+
+.client_text {
+  font-size: 19px;
+  padding-top: 20px;
+}
+
+/*========= CASES client slut =========*/
+/*========= CASES about client start =========*/
+
+.case_link {
+  font-size: 17px;
+  border-bottom: 1px solid #111517;
+  padding-bottom: 3px;
+  margin-bottom: 40px;
+}
+
+.case_link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*========= CASES about client slut =========*/
+/*========= CASES image start =========*/
+
+.client_image {
+  height: 700px;
+  overflow: hidden;
+  background-position: center;
+  margin: 120px 0 150px 0;
+}
+
+/*========= CASES image slut =========*/
+/*========= CASES goal start =========*/
+
+.goal_line {
+  border-bottom: solid 2px #e3e3e3;
+  padding-bottom: 200px;
+  margin-bottom: 180px;
+}
+
+.case_goal, .case_strategi, .case_some_content, .case_results {
+  width: 60%;
+  margin: auto;
+}
+
+/*========= CASES goal slut =========*/
+/*========= CASES strategi start =========*/
+
+.strategi_line {
+  position: relative;
+  border-bottom: solid 2px #e3e3e3;
+  padding-bottom: 145px;
+  margin-bottom: 120px;
+}
+
+.strategi_dots {
+  position: absolute;
+  width: 38%;
+  height: 32%;
+  background-repeat: repeat;
+  left: 31%;
+  top: 51%;
+  z-index: -1;
+}
+
+.case_strategi_img img {
+  width: 255px;
+  height: 255px;
+  margin: 45px 25px 0 25px;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+}
+
+/*========= CASES strategi slut =========*/
+/*========= CASES some start =========*/
+
+.case_some {
+  margin-bottom: 200px;
+}
+
+.case_some_text img {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 45px;
+  height: auto;
+  padding: 5px;
+}
+
+.case_some_ex {
+
+}
+
+.case_some_ex img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+}
+
+.case_some_ex:nth-last-of-type(even) {
+  margin: 0 0 -15% 70%;
+  float: right;
+}
+
+.case_some_ex:nth-last-of-type(odd) {
+  margin: 0 70% 0 0;
+  float: left;
+}
+
+/*========= CASES some slut =========*/
+/*========= CASES rekrutering start =========*/
+
+.rekru_content {
+  max-width: 555px;
+}
+
+.rekru_video iframe {
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+}
+
+/*========= CASES rekrutering slut =========*/
+/*========= CASES branding start =========*/
+
+.brand_content {
+  max-width: 430px;
+}
+
+/*========= CASES branding slut =========*/
+/*========= CASES results start =========*/
+
+.case_results {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+/*========= CASES results slut =========*/
 /*========= CASES enkelt slut =========*/
 
 /*========= FOOTER =========*/
@@ -1850,7 +2014,7 @@ img.client_logo_neg {
     height: 30px;
   }
 
-  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots {
+  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots, .strategi_dots {
     display: none;
   }
 
