@@ -144,6 +144,10 @@ $(document).ready(function() {
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('anm7w6fdv44n');
 
+ScrollReveal().reveal('.footer_project', { distance: '250px' });
+ScrollReveal().reveal('.letstalk_footer', { distance: '250px' });
+ScrollReveal().reveal('.SoMe_footer', { distance: '250px' });
+ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 
 </script>
 </body>

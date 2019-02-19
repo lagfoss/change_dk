@@ -5,7 +5,7 @@
 <!-- Hero image, text and call to action -->
 
 	<div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
-		<div class="container-fluid wrapper">
+		<div class="container-fluid wrapper load-hidden">
 			<div class="row">
 		<div class="col-sm-6">
 		<div class="hero_info">
@@ -76,7 +76,7 @@
 	</div>
 
 	<!-- CASE SLIDER -->
-	<div class="case_slider"
+	<div class="wrapper"
 	<a class="cases_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('wcwd_button_icon') ): ?>
 	<img class="" src="<?php the_field('wcwd_button_icon'); ?>" />
 	<?php endif; ?></a>
@@ -321,8 +321,8 @@ $(".wcwd_button").click(function() {
 	'slow');
 });
 
-ScrollReveal().reveal('.case_slider', { distance: '250px' });
 ScrollReveal().reveal('.wrapper', { distance: '250px' });
 ScrollReveal().reveal('.logo_slider', { distance: '250px' });
+ScrollReveal().reveal('.know_us', { distance: '250px' });
 
 </script>
