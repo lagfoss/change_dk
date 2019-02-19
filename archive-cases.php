@@ -14,7 +14,7 @@
   <div class="flex_wrapper">
 
 
-      <!-- Image carousel -->
+      <!-- Case images -->
 
     <?php
 
