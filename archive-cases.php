@@ -69,11 +69,19 @@
                       'end_size'     => 2,
                       'mid_size'     => 1,
                       'prev_next'    => true,
-                      'prev_text'    => (''),
-                      'next_text'    => ('') ,
+                      'prev_text'    => ("<img src='echo get_template_directory()/images/arrow_left.svg'>"),
+                      'next_text'    => ("<img src='echo get_template_directory()/images/arrow_right.svg'>") ,
                   ) );
               ?>
               </div>
+
+              <script type="text/javascript">
+              var prev = document.querySelector('prev');
+
+              prev.style.backgroundImage = '<?php echo get_template_directory() ?>/images/arrow_left.svg';
+
+              document.querySelector("prev").style.backgroundImage = '<?php echo get_template_directory() ?>/images/arrow_left.svg';
+              </script>
 
               <?php wp_reset_postdata(); ?>
 
