@@ -26,38 +26,37 @@
      'paged' => $paged,
      'orderby' => 'publish_date',
      'order' => 'DESC',
-   );
-   $wp_query = new WP_Query($args);
+      );
+
+      $wp_query = new WP_Query($args);
+      while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
+
+      <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+        <a class="case_card_link" href="<?php the_permalink(); ?>">
+          <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+
+          <img id="cases_slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
+
+          <div class="">
+            <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
+            <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <?php endif; ?>
+          </div>
+
+          <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
+
+          <div class="category_wrapper">
+          <div class="cases_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+
+          <?php the_category(); ?>
 
 
-               while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
-
-                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-                  <a class="case_card_link" href="<?php the_permalink(); ?>">
-                    <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-
-
-                        <img id="cases_slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
-
-                        <div class="">
-                        <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
-                        <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                        <?php endif; ?>
-                        </div>
-
-                        <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
-
-                        <div class="category_wrapper">
-                          <div class="cases_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
-
-                          <?php the_category(); ?>
-                        </div>
-
-                </div></a>
+          </div></div></a>
 
               <?php endwhile; ?>
 
               <div class="pagination">
+
               <?php
 
                   echo paginate_links( array(
@@ -70,22 +69,13 @@
                       'end_size'     => 2,
                       'mid_size'     => 1,
                       'prev_next'    => true,
-                      'prev_text'    => __( '/images/arrow_left.svg', 'text-domain' ) ,
-                      'next_text'    => __( '/images/arrow_right.svg', 'text-domain' ) ,
-                      'add_args'     => true,
-                      'add_fragment' => '',
+                      'prev_text'    => (''),
+                      'next_text'    => ('') ,
                   ) );
               ?>
               </div>
 
               <?php wp_reset_postdata(); ?>
-
-
-
-
-
-
-                          <?php ?>
 
 
 
