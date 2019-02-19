@@ -35,10 +35,9 @@ Template Post Type: cases
               <h1 class="h1_case"><?php echo $clienttitle; ?></h1>
             </div>
             <div class="row">
-                <a class="" href="#">
-                  <img class="case_down" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
-                </a>
-              </div>
+              <a class="" href="#">
+                <img class="case_down" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
+              </a>
             </div>
           </div>
         </div>
@@ -343,16 +342,10 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.case_client', { distance: '200px' });
-ScrollReveal().reveal('.client_info', { distance: '250px' });
-ScrollReveal().reveal('.client_image', { distance: '150px' });
-ScrollReveal().reveal('.goal_line', { distance: '250px' });
-ScrollReveal().reveal('.strategi_line', { distance: '200px' });
-ScrollReveal().reveal('.case_strategi_img', { distance: '200px' });
-ScrollReveal().reveal('.case_some', { distance: '200px' });
-ScrollReveal().reveal('.case_some_ex', { distance: '100px' });
-ScrollReveal().reveal('.rekru', { distance: '200px' });
-ScrollReveal().reveal('.brand', { distance: '200px' });
-ScrollReveal().reveal('.case_results', { distance: '200px' });
+ScrollReveal().reveal('.wrapper', { distance: '250px' });
+ScrollReveal().reveal('.client_image', { distance: '250px' });
+ScrollReveal().reveal('.case_some_ex', { distance: '250px' });
+ScrollReveal().reveal('.rekru', { distance: '250px' });
+ScrollReveal().reveal('.brand', { distance: '250px' });
 
 </script>
