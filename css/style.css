@@ -2089,6 +2089,7 @@ img.client_logo_neg {
   #slide {
     display: none;
   }
+
 }
 
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
@@ -2234,6 +2235,27 @@ img.client_logo_neg {
     border-radius: 10px;
     box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
+  }
+}
+
+/*========= Height of devices =========*/
+@media screen and (max-height: 640px) {
+
+  .case_hero {
+    padding-top: 150px;
+  }
+
+  .case_down {
+    margin-top: 50px;
+  }
+
+}
+
+/*========= Height of devices =========*/
+@media screen and (max-height: 580px) {
+
+  .case_down {
+    margin-top: 25px;
   }
 }
 
