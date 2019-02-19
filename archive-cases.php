@@ -18,16 +18,19 @@
 
     <?php
 
-      $loop = new WP_query (array(
-     'posts_per_page' => 2,
-     'paged' => get_query_var( 'paged' ),
+      global $wp_query;
+      $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+      $args = array(
+     'post_type' => 'cases',
+     'posts_per_page' => 4,
+     'paged' => $paged,
      'orderby' => 'publish_date',
      'order' => 'DESC',
-     'post_type' => 'cases',
-   ));
+   );
+   $wp_query = new WP_Query($args);
 
-           if ($loop->have_posts()) :
-               while ($loop->have_posts()) : $loop->the_post();  ?>
+
+               while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
 
                   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
                   <a class="case_card_link" href="<?php the_permalink(); ?>">
@@ -59,7 +62,7 @@
 
                   echo paginate_links( array(
                       'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
-                      'total'        => $loop->max_num_pages,
+                      'total'        => $wp_query->max_num_pages,
                       'current'      => max( 1, get_query_var( 'paged' ) ),
                       'format'       => 'paged=%#%',
                       'show_all'     => true,
@@ -77,11 +80,10 @@
 
               <?php wp_reset_postdata(); ?>
 
-                    <?php else:  ?>
 
-                        <?php _e( 'No cases' ); ?>
 
-                          <?php endif; ?>
+
+
 
                           <?php ?>
 
