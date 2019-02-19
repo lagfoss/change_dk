@@ -2116,8 +2116,14 @@ img.client_logo_neg {
     float: left;
   }
 
-  .rekru_content {
+  .rekru_content, .brand_content {
     max-width: 100%;
+  }
+
+  .brand_content {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
