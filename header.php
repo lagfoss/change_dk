@@ -67,7 +67,7 @@
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
 
       <div class="container-fluid">
-        <?php get_search_form(); ?>
+        <!-- <?php get_search_form(); ?> -->
 
         <div id="cf_onclick" class="menubtn">
           <span></span>
