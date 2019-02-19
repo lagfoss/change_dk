@@ -83,7 +83,7 @@ Template Post Type: cases
 
           <div class="container-fluid wrapper client_info">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-sm-5">
                 <div class="row">
                   <a href="<?php echo $clienturl; ?>" class="case_link" target="_blank"><?php echo $clienturltext; ?></a>
                 </div>
@@ -91,7 +91,7 @@ Template Post Type: cases
                   <a href="mailto:<?php echo $clientcontact; ?>" class="case_link"><?php echo $clientcontacttext; ?></a>
                 </div>
               </div>
-              <div class="col-md-7 client_about">
+              <div class="col-sm-7 client_about">
                 <h2 class="h2_case"><?php echo $abouttitle; ?></h2>
                 <p><?php echo $about; ?></p>
               </div>
@@ -210,7 +210,7 @@ Template Post Type: cases
               <div class="row rekru">
                 <div class="rekru_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
                 </div>
-                <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <div class="col-lg-6 d-flex justify-content-end align-items-center">
                   <div class="rekru_content">
                     <div class="row stroke_position_case">
                       <div class="stroke_case"></div>
@@ -222,7 +222,7 @@ Template Post Type: cases
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                   <div class="rekru_video">
                     <?php echo $rekruvideo; ?>
                   </div>
