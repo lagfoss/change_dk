@@ -1908,6 +1908,13 @@ img.client_logo_neg {
 }
 
 /*========= CASES results slut =========*/
+
+.next_case img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 /*========= CASES enkelt slut =========*/
 
 /*========= FOOTER =========*/

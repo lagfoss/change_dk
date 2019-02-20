@@ -293,11 +293,14 @@ Template Post Type: cases
 
 ?>
 
-<?php
-$next_post = get_adjacent_post(false, '', false);
-if(!empty($next_post)) {
-echo '<a href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">' . $next_post->post_title . get_the_post_thumbnail($next_post->ID) . '</a>'; } ?>
+<div class="container-fluid wrapper next_case">
 
+<?php $next_post = get_adjacent_post(false, '', false); ?>
+ <?php if ( !empty($next_post) ) {  ?>
+ 	<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?><?php echo get_the_post_thumbnail($next_post->ID)?></a>
+ <?php } ?>
+
+</div>
 <?php get_footer(); ?>
 
 <script type="text/javascript">
