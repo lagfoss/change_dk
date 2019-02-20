@@ -1561,6 +1561,7 @@ margin-left: 3%;
 .case_card_content {
   position: relative;
   overflow: hidden;
+  margin: auto;
   width: 900px;
   height: 400px;
   display: flex;
@@ -1909,10 +1910,8 @@ img.client_logo_neg {
 
 /*========= CASES results slut =========*/
 
-.next_case img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.next_case {
+  margin-bottom: 50px;
 }
 
 /*========= CASES enkelt slut =========*/
