@@ -252,13 +252,13 @@ Template Post Type: cases
                     </div>
                   </div>
                 </div>
-                <div class="col-md-7 owl-carousel "data-slider-id="1">
-                   <div class="brand_img_slider">
-				            <?php foreach( $brandgallery as $brandgallery ): ?>
-				                <div class="know_us_gallery">
-				                    <img src="<?php echo $brandgallery['url']; ?>"/>
-				                </div>
-				            <?php endforeach; ?>
+                <div class="col-md-7">
+                   <div class="brand_img_slider owl-carousel owl-theme carousel_2">
+                     <?php foreach( $brandgallery as $brandgallery ): ?>
+
+                            <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
+
+				            <?php endforeach; ?> 
                   </div>
                 </div>
               </div>
