@@ -1489,8 +1489,6 @@ img.omchange_client_logo_neg {
   margin: 40px;
 }
 
-
-
 #cases_slide {
   position: absolute;
       width: 200%;
@@ -1892,7 +1890,6 @@ img.client_logo_neg {
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
 
-
 /*========= CASES rekrutering slut =========*/
 /*========= CASES branding start =========*/
 
@@ -1904,9 +1901,6 @@ img.client_logo_neg {
   display: flex;
 }
 
-
-
-
 /*========= CASES branding slut =========*/
 /*========= CASES results start =========*/
 
@@ -1916,16 +1910,31 @@ img.client_logo_neg {
 }
 
 /*========= CASES results slut =========*/
+/*========= CASES FOOTER start =========*/
+
+.case_section {
+  background-color: #f2f2f2;
+  margin-bottom: 540px;
+  position: relative;
+  z-index: 3;
+}
+
 
 .next_case {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
   padding-right: 15px;
   padding-left: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
 
+/*========= CASES FOOTER slut =========*/
 /*========= CASES enkelt slut =========*/
 
 /*========= FOOTER =========*/
