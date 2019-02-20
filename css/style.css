@@ -1849,6 +1849,7 @@ img.client_logo_neg {
 
 .prev {
   background-color: transparent;
+  background-image: url('/images/arrow_right.svg');
 }
 
 .next {

@@ -112,14 +112,6 @@ $(document).ready(function() {
     margin: 30,
   })
 
-  var prev = document.querySelector('prev');
-
-  prev.style.backgroundImage = "<?php echo get_template_directory() ?>/images/arrow_left.svg"
-
-
-
-  document.querySelector("prev").style.backgroundImage = "<?php echo get_template_directory_uri() ?>/images/arrow_left.svg"
-
   var owl = $('.autowidth');
   owl.owlCarousel({
     autoWidth:true,
