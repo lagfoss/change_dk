@@ -35,8 +35,6 @@
         <a class="case_card_link" href="<?php the_permalink(); ?>">
           <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
-          <img id="cases_slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
-
           <div class="">
             <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
             <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
