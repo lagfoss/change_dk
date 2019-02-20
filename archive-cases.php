@@ -55,8 +55,13 @@
 
               <?php endwhile; ?>
 
-              <div class="pagination">
+              <?php
+              $leftarrow = "<?php echo get_template_directory_uri(); ?>/images/arrow_left.svg"
 
+               ?>
+
+
+              <div class="pagination">
               <?php
 
                   echo paginate_links( array(
@@ -69,8 +74,8 @@
                       'end_size'     => 2,
                       'mid_size'     => 1,
                       'prev_next'    => true,
-                      'prev_text'    => ("<img src='echo get_template_directory()/images/arrow_left.svg'>"),
-                      'next_text'    => ("<img src='echo get_template_directory()/images/arrow_right.svg'>"),
+                      'prev_text'    => ("<img src='$leftarrow'"),
+                      'next_image'    => ("<?php the_field('case_headline');?>"),
                   ) );
               ?>
               </div>

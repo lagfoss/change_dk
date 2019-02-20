@@ -5,7 +5,7 @@ Template Post Type: cases
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('case'); ?>
 
 <?php
 
@@ -251,10 +251,10 @@ Template Post Type: cases
                     </div>
                   </div>
                 </div>
-                <div class="col-md-7">
-				              <div class="">
+                <div class="col-md-7 owl-carousel "data-slider-id="1">
+                   <div class="brand_img_slider">
 				            <?php foreach( $brandgallery as $brandgallery ): ?>
-				                <div>
+				                <div class="know_us_gallery">
 				                    <img src="<?php echo $brandgallery['url']; ?>"/>
 				                </div>
 				            <?php endforeach; ?>
@@ -293,12 +293,32 @@ Template Post Type: cases
 
 ?>
 
-<?php
-$next_post = get_adjacent_post(false, '', false);
-if(!empty($next_post)) {
-echo '<a href="' . get_permalink($next_post->ID) . '" title="' . $next_post->post_title . '">' . $next_post->post_title . get_the_post_thumbnail($next_post->ID) . '</a>'; } ?>
+<div class="container-fluid wrapper next_case">
 
-<?php get_footer(); ?>
+<?php $next_post = get_adjacent_post(false, '', false); ?>
+ <?php if ( !empty($next_post) ) {  ?>
+ 	<a class="case_card_link" href="<?php echo get_permalink( $next_post->ID ); ?>">
+    <div class="case_card_content"  style="background: url('<?php echo get_the_post_thumbnail($next_post->ID)?>') no-repeat;">
+      <?php echo get_the_title( $next_post->ID ); ?></h2>
+      <div class="">
+        <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
+        <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+      </div>
+
+      <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
+
+      <div class="category_wrapper">
+      <div class="cases_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+
+      <?php the_category(); ?>
+
+
+      </div></div>
+  </a>
+ <?php } ?>
+
+</div>
 
 <script type="text/javascript">
 
