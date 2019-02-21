@@ -112,7 +112,8 @@ transform-style: flat!important;
 
 .carousel_2 .active.center .brand_img{
   height: 300px;
-  height: 150px;
+  position: absolute;
+  padding-left: 100px;
 }
 .owl-carousel .owl-item img.brand_img {
   height: 100%;
