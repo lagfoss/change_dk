@@ -149,7 +149,6 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
         }
     };
 
-    $.fn.owlCarousel.Constructor.Plugins.linked = Linked;
 
 })(window.Zepto || window.jQuery, window, document);
 
@@ -158,8 +157,8 @@ $(sync2).owlCarousel({
     nav: true,
     dots: false,
     loop:true,
-    items: 3,
-    margin: 30,
+    items: 2,
+    margin: 10,
     center: true,
     linked: sync2.prev()
 }).on('initialized.owl.carousel linked.to.owl.carousel', function() {
