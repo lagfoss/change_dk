@@ -1767,14 +1767,10 @@ img.client_logo_neg {
 }
 
 .brand_img {
-  padding: 20px 10px 30px 10px;
+  height: 1000%;
 }
 
 .brand_img img {
-  border-radius: 10px;
-  box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
-  margin: 0 20px 0 20px;
-  height: 100%;
 }
 
 /*========= CASES branding slut =========*/
