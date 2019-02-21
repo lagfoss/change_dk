@@ -13,7 +13,7 @@
         </div>
   	  </div>
       <div class="om_menu">
-        <div class="row">
+        <div class="row align-items-center">
             <?php if( get_field('box_process_image') ): ?>
           <a href="<?php the_field('box_process_link'); ?>"><img class="" src=" <?php the_field('box_process_image'); ?>" />
           <?php endif; ?><h3><?php the_field('box_process_title'); ?></h3></a>
@@ -52,15 +52,16 @@
         <div class="arrow_right">
           <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
         </div>
-        <div class="steps_number">
-          <?php the_sub_field('steps_number'); ?>
-        </div>
+
         <div id="steps" class="om_steps_content">
-  				<div id="" class="half steps_img">
+  				<div class="half steps_img">
             <img src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
       		<div id="" class="half steps_text">
+            <div class="steps_number">
+              <?php the_sub_field('steps_number'); ?>
+            </div>
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<?php the_sub_field('steps_text'); ?>
       		</div>
