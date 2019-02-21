@@ -1899,7 +1899,12 @@ img.client_logo_neg {
   max-width: 430px;
 }
 
+.brand_img_slider {
+  
+}
+
 .brand_img {
+  padding: 10px 30px;
 }
 
 /*========= CASES branding slut =========*/
