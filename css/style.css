@@ -1222,22 +1222,6 @@ input {
   color: #111517;
 }
 
-#slide {
-  position: absolute;
-  width: 200%;
-  left: -200%;
-  height: 100%;
-  padding: 90px 40%;
-  background: #e54c00;
-  transition: 2s;
-  overflow: hidden;
-}
-
-.om_steps_content:hover #slide {
-  transition: 2s;
-  left: -50%;
-}
-
 /*========= Steps slut =========*/
 /*========= Om Change slider =========*/
 
@@ -1253,24 +1237,6 @@ input {
 .omchange_card_link {
   display: table;
   margin: 40px 20px;
-}
-
-#cases_slide {
-  position: absolute;
-      width: 200%;
-      left: -200%;
-      height: 115%;
-      padding: 210px 50%;
-      background: #e54c00;
-      transition: 2s;
-      overflow: hidden;
-      z-index: 2;
-      margin-top: -8%;
-}
-
-.omchange_card_content:hover #cases_slide {
-  transition: 2s;
-  left: -50%;
 }
 
 .omchange_card_link:hover {
@@ -1489,23 +1455,6 @@ img.omchange_client_logo_neg {
   width: 85%;
   display: table;
   margin: 40px;
-}
-
-#cases_slide {
-  position: absolute;
-      width: 200%;
-      left: -200%;
-      height: 115%;
-      padding: 210px 50%;
-      background: #e54c00;
-      transition: 2s;omchange_card_content
-      z-index: 2;
-      margin-top: -8%;
-}
-
-.case_card_content:hover #cases_slide {
-  transition: 2s;
-  left: -50%;
 }
 
 .case_card_link:hover {
@@ -2074,18 +2023,6 @@ img.client_logo_neg {
     margin: 20px auto;
   }
 
-  #slide {
-    position: absolute;
-    display: flex;
-    width: 200%;
-    left: -200%;
-    height: 100%;
-    padding: 100px 40%;
-    background: #e54c00;
-    transition: 2s;
-    overflow: hidden;
-  }
-
   .rekru_content {
     margin: auto;
     padding-left: 15px;
@@ -2139,10 +2076,6 @@ img.client_logo_neg {
 
   .steps_text {
     width: 100%;
-  }
-
-  #slide {
-    display: none;
   }
 
   .case_goal, .case_strategi, .case_some_content, .case_results {

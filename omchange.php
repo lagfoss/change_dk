@@ -73,7 +73,6 @@
           <?php the_sub_field('steps_number'); ?>
         </div>
         <div id="steps" class="om_steps_content">
-          <img id="slide" src="<?php echo get_bloginfo('template_directory'); ?>/images/btn_arrow_white.svg">
   				<div id="" class="half steps_img">
             <img src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
@@ -132,7 +131,7 @@
 
                         <?php the_category(); ?>
                       </div>
-              </div></div> 
+              </div></div>
 
               <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
