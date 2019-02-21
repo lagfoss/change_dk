@@ -88,35 +88,29 @@ button.owl.active:active, button.owl.active:focus  {
 }
 
 
-.owl-carousel {
-margin: 50px auto;
-}
-
 .owl-carousel .owl-stage {
-   display: flex;
-   align-items: center;
-}
-
-.carousel_2 .current {
-border: 2px solid #639;
-box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .carousel_2 .current img {
-transform-style: flat!important;
+  transform-style: flat!important;
 }
 
-.carousel_2 .active.center + .active,
-.carousel_2 .active:first-child,
-.carousel_2 :not(.active) + .active {
- height: 500px;
+.carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
+  height: 600px;
+  width: auto;
+  padding: 20px;
 }
-
-.carousel_2 .active.center {
- height: 300px;
- width: 80%;
+.carousel_2 .active.center{
+  height: 200px;
+  width: auto;
 }
-
 .owl-item img {
   height: 100%;
+}
+
+.owl-item.active {
+  width: 0;
+  padding-left: 50px;
 }
