@@ -107,11 +107,13 @@ transform-style: flat!important;
 
 .carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
   height: 600px;
+  width: 400px;
 }
 
 .carousel_2 .active.center .brand_img{
   height: 300px;
+  height: 150px;
 }
-.owl-carousel .owl-item img {
+.owl-carousel .owl-item img.brand_img {
   height: 100%;
 }
