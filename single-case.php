@@ -249,14 +249,17 @@ Template Post Type: cases
                     <div class="rekru_text">
                       <h2 class="h2_case"><?php echo $brandtitle; ?></h2>
                       <p><?php echo $brandtext; ?></p>
+
                     </div>
                   </div>
                 </div>
                 <div class="col-md-7">
-                   <div class="brand_img_slider owl-carousel owl-theme carousel_2 mojn">
-                     <?php foreach( $brandgallery as $brandgallery ): ?>
-                       <img class="brand_img item" src="<?php echo $brandgallery['url'] ; ?>"/>
-				            <?php endforeach; ?>
+                   <div class="owl-carousel autowidth carousel_2">
+                      <?php foreach( $brandgallery as $brandgallery ): ?>
+                        <div class="">
+                        <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
+                        </div>
+                       <?php endforeach; ?>
                   </div>
                 </div>
               </div>
@@ -348,92 +351,4 @@ ScrollReveal().reveal('.client_image', { distance: '250px' });
 ScrollReveal().reveal('.case_some_ex', { distance: '250px' });
 ScrollReveal().reveal('.rekru', { distance: '250px' });
 ScrollReveal().reveal('.brand', { distance: '250px' });
-
-;(function($, window, document, undefined) {
-
-    var Linked = function(carousel) {
-
-        this._core = carousel;
-
-        this._handlers = {
-            'dragged.owl.carousel changed.owl.carousel': $.proxy(function(e) {
-                if (e.namespace && this._core.settings.linked) {
-                    this.update(e);
-                }
-            }, this),
-            'linked.to.owl.carousel': $.proxy(function(e, index, speed, standard, propagate) {
-                if (e.namespace && this._core.settings.linked) {
-                    this.toSlide(index, speed, propagate);
-                }
-            }, this)
-        };
-
-        this._core.$element.on(this._handlers);
-
-
-        this._core.options = $.extend({}, Linked.Defaults, this._core.options);
-    };
-
-    Linked.Defaults = {
-        linked: false
-    };
-
-    Linked.prototype.update = function(e) {
-        this.toSlide( e.relatedTarget.relative(e.item.index) );
-    };
-
-    Linked.prototype.toSlide = function(index, speed, propagate) {
-        var id = this._core.$element.attr('id'),
-            linked = typeof(this._core.settings.linked) === 'string' ? this._core.settings.linked.split(',') : this._core.settings.linked;
-
-        if ( typeof propagate == 'undefined' ) {
-            propagate = true;
-        }
-
-        index = index || 0;
-
-        if ( propagate ) {
-            $.each(linked, function(i, el){
-                $(el).trigger('linked.to.owl.carousel', [index, 300, true, false]);
-            });
-        } else {
-            this._core.$element.trigger('to.owl.carousel', [index, 300, true]);
-
-            if ( this._core.settings.current ) {
-                this._core._plugins.current.switchTo(index);
-            }
-        }
-    };
-
-    Linked.prototype.destroy = function() {
-        var handler, property;
-
-        for (handler in this._handlers) {
-            this.$element.off(handler, this._handlers[handler]);
-        }
-        for (property in Object.getOwnPropertyNames(this)) {
-            typeof this[property] != 'function' && (this[property] = null);
-        }
-    };
-
-    $.fn.owlCarousel.Constructor.Plugins.linked = Linked;
-
-})(window.Zepto || window.jQuery, window, document);
-
-var sync2 = $(".carousel_2");
-$('sync2').owlCarousel({
-    nav: true,
-    items: 2,
-    autoHeight: true,
-    loop:true,
-    dots: true,
-    stagePadding: 100,
-    center: true,
-    linked: sync2.prev()
-}).on('initialized.owl.carousel linked.to.owl.carousel', function() {
-    sync2.find('.owl-item.current').removeClass('current');
-    var current = sync2.find('.owl-item.active.center').length ? sync2.find('.owl-item.active') : sync2.find('.owl-item.active').eq(0);
-    current.addClass('current');
-
-});
 </script>
