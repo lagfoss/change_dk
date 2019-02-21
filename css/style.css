@@ -1915,11 +1915,19 @@ img.client_logo_neg {
 
 .case_section {
   background-color: #f2f2f2;
-  margin-bottom: 540px;
+  margin-bottom: 600px;
   position: relative;
   z-index: 3;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
 
+.case_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
 
 .next_case {
   margin-bottom: 100px;
@@ -1928,11 +1936,7 @@ img.client_logo_neg {
   max-width: 1140px;
   padding-right: 15px;
   padding-left: 15px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
+
 }
 
 /*========= CASES FOOTER slut =========*/
