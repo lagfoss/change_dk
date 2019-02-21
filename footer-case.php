@@ -156,10 +156,8 @@ var sync2 = $(".carousel_2");
 $(sync2).owlCarousel({
     nav: true,
     dots: false,
-    loop:true,
-    items: 2,
-    margin: 10,
-    center: true,
+    loop: true,
+    items: 4,
     linked: sync2.prev()
 }).on('initialized.owl.carousel linked.to.owl.carousel', function() {
     sync2.find('.owl-item.current').removeClass('current');
