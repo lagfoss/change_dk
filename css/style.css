@@ -992,11 +992,11 @@ input {
   text-align: center;
   font-size: 21px;
   font-family: 'bebas-neue', sans-serif;
-  display: inline;
 }
 
-.om_menu h3:hover {
+.intro_box:hover {
   text-decoration: none;
+  color: inherit;
   background-color: white;
   box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
   transform: scale(0.97);
@@ -1767,7 +1767,7 @@ img.client_logo_neg {
 }
 
 .brand_img {
-  height: 1000%;
+  height: 10%;
 }
 
 .brand_img img {
