@@ -90,7 +90,6 @@ button.owl.active:active, button.owl.active:focus  {
 
 .owl-carousel {
 margin: 50px auto;
-max-width: 100%;
 }
 
 .owl-carousel .owl-stage {
@@ -110,9 +109,14 @@ transform-style: flat!important;
 .carousel_2 .active.center + .active,
 .carousel_2 .active:first-child,
 .carousel_2 :not(.active) + .active {
- height: 650px;
+ height: 500px;
+ width: 110%;
 }
 
 .carousel_2 .active.center {
- height: 1px;
+ height: 300px;
+}
+
+.owl-item img {
+  height: 100%;
 }

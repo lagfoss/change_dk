@@ -233,13 +233,13 @@ $(sync2).owlCarousel({
     nav: true,
     loop:true,
     items: 2,
-    margin: 10,
+    margin: 30,
     center: true,
     linked: sync2.prev()
 }).on('initialized.owl.carousel linked.to.owl.carousel', function() {
     sync2.find('.owl-item.current').removeClass('current');
     var current = sync2.find('.owl-item.active.center').length ? sync2.find('.owl-item.active') : sync2.find('.owl-item.active').eq(0);
-    current.addClass('current');
+    current.addClass('current');  
 
 });
 
