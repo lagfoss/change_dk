@@ -18,10 +18,14 @@
           <a href="<?php the_field('box_process_link'); ?>"><img class="" src=" <?php the_field('box_process_image'); ?>" />
           <?php endif; ?><h3><?php the_field('box_process_title'); ?></h3></a>
 
-            <a class="intro_box" href="<?php echo $introlink; ?>">
-            	<img src="<?php echo $introimage['url']; ?>" alt="<?php echo $introimage['alt'] ?>"/>
-              <h3><?php echo $introtitle; ?></h3>
-          	</a>
+            <?php if( get_field('box_team_image') ): ?>
+          <a href="<?php the_field('box_team_link'); ?>"><img class="" src=" <?php the_field('box_team_image'); ?>" />
+          <?php endif; ?><h3><?php the_field('box_team_title'); ?></h3></a>
+
+            <?php if( get_field('box_job_image') ): ?>
+          <a href="<?php the_field('box_job_link'); ?>"><img class="" src=" <?php the_field('box_job_image'); ?>" />
+          <?php endif; ?><h3><?php the_field('box_job_title'); ?></h3></a>
+
           <div class="arrow_down">
             <?php if( get_field('call_to_action_intro') ): ?>
           <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
