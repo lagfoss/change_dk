@@ -296,32 +296,6 @@ Template Post Type: cases
 
 </div>
 
-<div class="container-fluid next_case">
-
-  <?php $next_post = get_adjacent_post(false, '', false); ?>
-  <?php if ( !empty($next_post) ) {  ?>
-  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
-    <a class="case_card_link" href="<?php echo get_permalink( $next_post->ID ); ?>">
-      <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-        <div class="">
-          <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
-            <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-          <?php endif; ?>
-        </div>
-
-     <h2 class="case_card_h2"><?php the_field('case_headline', $next_post->ID);?></h2>
-
-     <div class="category_wrapper">
-       <div class="cases_tags"><?php the_tags( ' ', ', ', '<br />', $next_post->ID); ?> </div>
-       <?php the_category(); ?>
-
-     </div>
-   </div>
- </a>
- <?php } ?>
-
-</div>
-
 <?php get_footer('case'); ?>
 
 
