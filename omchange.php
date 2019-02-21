@@ -1,20 +1,28 @@
 <?php /* Template Name: Om Change */ ?>
 
 <?php get_header(); ?>
-<body <?php body_class(whitebg); ?>>
+
+  <div class="hero background_img_ydelser" style="background-image:url(<?php the_field('omchange_hero'); ?>);">
+    <div class="container-fluid wrapper">
+      <div class="row">
+  		  <div class="col-sm-6">
+          <div class="hero_info">
+            <div class="stroke_position_ydelser">
+              <div class="stroke_ydelser"></div>
+            </div>
+            <h1 class="h1_hero_ydelser"><?php the_field('om_hero_title'); ?></h1>
+          </div>
+  		  </div>
+  	  </div>
+
+    </div>
+  </div>
 
   <div class="container-fluid om_intro wrapper">
-    <div class="row">
-      <div class="om_intro_title">
-        <h2><?php the_field('om_intro_title'); ?></h2>
-      </div>
-    </div>
     <div class="row">
       <div class="stroke_position">
         <div class="stroke"></div>
       </div>
-    </div>
-    <div class="om_intro_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
     </div>
     <div class="row justify-content-center intro_boxes">
         <?php if( have_rows('om_intro_boxes') ): ?>
@@ -64,10 +72,6 @@
         </div>
         <div class="arrow_right">
           <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
-        </div>
-        <div class="steps_dots_right" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
-        </div>
-        <div class="steps_dots_left" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
         </div>
         <div class="steps_number">
           <?php the_sub_field('steps_number'); ?>
@@ -147,6 +151,47 @@
 <?php get_footer(); ?>
 
 <script type="text/javascript">
+
+/* Logo transition script */
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+} else {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+}
+
+});
+
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
+$(".input").addClass("out_black2");
+    } else {
+        $(".input").removeClass("out_black2");
+    }
+});
+
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
+$(".search").addClass("search_black");
+    } else {
+        $(".search").removeClass("search_black");
+    }
+});
+
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
+$(".menubtn").addClass("menu_black");
+    } else {
+        $(".menubtn").removeClass("menu_black");
+    }
+});
+
 $(".omchange_calltoaction").click(function() {
 $('html,body').animate({
   scrollTop: $(".vores_process").offset().top - 120},
