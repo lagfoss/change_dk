@@ -1002,17 +1002,6 @@ input {
   margin: 30px auto 20px auto;
 }
 
-.om_intro_dots {
-  position: absolute;
-  width: 55%;
-  height: 33%;
-  background-repeat: repeat;
-  background-size: auto;
-  right: 22%;
-  top: 74%;
-  z-index: -1;
-}
-
 .intro_boxes {
   margin: 60px auto 240px auto;
   padding-bottom: 10px;
@@ -1156,36 +1145,6 @@ input {
 .steps_text {
   width: 70%;
   padding: 30px;
-}
-
-.steps_dots_right {
-  position: absolute;
-  width: 66%;
-  height: 125%;
-  background-repeat: repeat;
-  background-size: auto;
-  right: -5%;
-  bottom: -14%;
-  z-index: -1;
-}
-
-.steps_dots_left {
-  position: absolute;
-  width: 40%;
-  height: 85%;
-  background-repeat: repeat;
-  background-size: auto;
-  right: 66%;
-  bottom: -15%;
-  z-index: -1;
-}
-
-.om_steps:nth-of-type(even) .steps_dots_right {
-  display: none;
-}
-
-.om_steps:nth-of-type(odd) .steps_dots_left {
-  display: none;
 }
 
 .half:nth-of-type(odd) {
@@ -1848,7 +1807,7 @@ img.client_logo_neg {
 }
 
 .brand_img_slider {
-  
+
 }
 
 .brand_img {
@@ -2065,7 +2024,7 @@ img.client_logo_neg {
     height: 30px;
   }
 
-  .om_intro_dots, .steps_dots_right, .steps_dots_left, .ydelser_dots, .strategi_dots {
+ .ydelser_dots, .strategi_dots {
     display: none;
   }
 
