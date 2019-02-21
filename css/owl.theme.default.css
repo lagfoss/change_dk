@@ -110,11 +110,11 @@ transform-style: flat!important;
 .carousel_2 .active:first-child,
 .carousel_2 :not(.active) + .active {
  height: 500px;
- width: 110%;
 }
 
 .carousel_2 .active.center {
  height: 300px;
+ width: 80%;
 }
 
 .owl-item img {
