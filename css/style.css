@@ -141,7 +141,7 @@ header {
   font-weight: 400;
 }
 
-.page-id-490 .SoMe {
+.page-id-490 .SoMe, .post-type-archive .SoMe {
   color: #111517;
 }
 
@@ -574,7 +574,9 @@ input {
 }
 
 .page-id-490 .menubtn:before, .page-id-490 .menubtn span, .page-id-490 .menubtn:after,
-.page-id-490 .pseudo_search:before {
+.page-id-490 .pseudo_search:before, .post-type-archive .menubtn:before, .post-type-archive .menubtn span,
+.post-type-archive .menubtn:after,
+.post-type-archive .pseudo_search:before {
   background-color: #111517;
 }
 
