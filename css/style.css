@@ -972,62 +972,26 @@ input {
 /*========= FORSIDE slut =========*/
 /*========= OM CHANGE =========*/
 /*========= Om Intro =========*/
-.om_intro {
-  position: relative;
-}
 
-.om_intro_title {
-  width: 100%;
-  margin-top: 150px;
-}
-
-.om_intro_title h2 {
-  text-align: center;
-  width: 50%;
-  line-height: 0.9;
-  margin: auto;
-  padding: 0;
-  margin: 20px auto 20px auto;
-}
-
-.stroke_position {
-  width: 100%;
-}
-
-.stroke {
-  height: 5px;
-  width: 60px;
-  background-color: #e54c00;
-  border-radius: 4px;
-  margin: 30px auto 20px auto;
-}
-
-.intro_boxes {
-  margin: 60px auto 240px auto;
-  padding-bottom: 10px;
-  position: relative;
-}
-
-.intro_box {
-  text-decoration: none;
-  max-width: 300px;
-  padding: 55px 35px;
+.om_menu {
+  position: absolute;
+  width: 450px;
+  height: 65px;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
   background-color: #f8f8f8;
-  margin: 15px;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
-.intro_box img {
-  display: block;
+.om_menu img {
+
+  height: 20px;
   margin: 10px auto 10px auto;
 }
 
-.intro_box p {
+.om_menu h3 {
   text-align: center;
-  color: #999999;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 21px;
+  font-family: 'bebas-neue', sans-serif;
 }
 
 .intro_box:hover {
@@ -1047,10 +1011,10 @@ input {
 }
 
 .omchange_calltoaction {
-  background: #e54c00;
-  width: 45px;
-  height: 45px;
-  padding: 10px;
+  background-color: #f8f8f8;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
   border-radius: 50%;
   text-align: center;
   -webkit-transform: rotate(90deg);
@@ -1061,15 +1025,7 @@ input {
 }
 
 /*========= Intro slut =========*/
-/*========= Vores process =========*/
-.vores_process {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 140px auto;
-}
-
-/*========= Vores process slut =========*/
-/*========= Steps start =========*/
+/*========= Vores process steps start =========*/
 .om_steps {
   position: relative;
   width: 100%;
@@ -1118,14 +1074,6 @@ input {
   border-width: 1px;
   border-color: #e54c00;
   z-index: 2;
-}
-
-.om_steps:nth-last-of-type(even) {
-  margin: 0 5% 21% 30%;
-}
-
-.om_steps:nth-last-of-type(odd) {
-  margin: 0 30% 23% 5%;
 }
 
 .half {
@@ -1180,8 +1128,20 @@ input {
   color: #111517;
 }
 
-/*========= Steps slut =========*/
+/*========= Vores process steps slut =========*/
 /*========= Om Change slider =========*/
+
+.stroke_position {
+  width: 100%;
+}
+
+.stroke {
+  height: 5px;
+  width: 60px;
+  background-color: #e54c00;
+  border-radius: 4px;
+  margin: 30px auto 20px auto;
+}
 
 .carousel_om_change {
 }

@@ -5,62 +5,37 @@
   <div class="hero background_img_ydelser" style="background-image:url(<?php the_field('omchange_hero'); ?>);">
     <div class="container-fluid wrapper">
       <div class="row">
-  		  <div class="col-sm-6">
-          <div class="hero_info">
-            <div class="stroke_position_ydelser">
-              <div class="stroke_ydelser"></div>
-            </div>
-            <h1 class="h1_hero_ydelser"><?php the_field('om_hero_title'); ?></h1>
+        <div class="hero_info">
+          <div class="stroke_position_ydelser">
+            <div class="stroke_ydelser"></div>
           </div>
-  		  </div>
+          <h1><?php the_field('om_hero_title'); ?></h1>
+        </div>
   	  </div>
+      <div class="om_menu">
+        <div class="row">
+            <?php if( get_field('box_process_image') ): ?>
+          <a href="<?php the_field('box_process_link'); ?>"><img class="" src=" <?php the_field('box_process_image'); ?>" />
+          <?php endif; ?><h3><?php the_field('box_process_title'); ?></h3></a>
 
-    </div>
-  </div>
-
-  <div class="container-fluid om_intro wrapper">
-    <div class="row">
-      <div class="stroke_position">
-        <div class="stroke"></div>
-      </div>
-    </div>
-    <div class="row justify-content-center intro_boxes">
-        <?php if( have_rows('om_intro_boxes') ): ?>
-
-            <?php while( have_rows('om_intro_boxes') ): the_row();
-              // vars
-              $introimage = get_sub_field('intro_box_image');
-              $introtitle = get_sub_field('intro_box_title');
-              $introtext = get_sub_field('intro_box_text');
-              $introlink = get_sub_field('intro_box_link');
-            ?>
-        <a class="intro_box" href="<?php echo $introlink; ?>">
-        	<img src="<?php echo $introimage['url']; ?>" alt="<?php echo $introimage['alt'] ?>"/>
-          <h3><?php echo $introtitle; ?></h3>
-          <p><?php echo $introtext; ?></p>
-      	</a>
-  		<?php endwhile; ?>
-      <?php endif; ?>
-      <div class="arrow_down">
-        <?php if( get_field('call_to_action_intro') ): ?>
-      <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
-        <?php endif; ?></a>
+            <a class="intro_box" href="<?php echo $introlink; ?>">
+            	<img src="<?php echo $introimage['url']; ?>" alt="<?php echo $introimage['alt'] ?>"/>
+              <h3><?php echo $introtitle; ?></h3>
+          	</a>
+          <div class="arrow_down">
+            <?php if( get_field('call_to_action_intro') ): ?>
+          <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+            <?php endif; ?></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Vores process -->
 
-  <div class="container-fluid wrapper">
-    <div class="row">
-      <div class="vores_process">
-        <h2 ><?php the_field('vores_process_title'); ?></h2>
-        <p><?php the_field('vores_process_text'); ?></p>
-      </div>
-    </div>
 
-    <!-- Steps start -->
-    <div class="row">
+  <!-- Vores process steps start -->
+    <div class="row wrapper">
 
       <?php if( have_rows('steps_box') ): ?>
       <?php while ( have_rows('steps_box') ) : the_row();
