@@ -157,31 +157,12 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 
 
 
-/**
- * Plugin for linking multiple owl instances
- * @version 1.0.0
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
 ;(function($, window, document, undefined) {
-    /**
-     * Creates the Linked plugin.
-     * @class The Linked Plugin
-     * @param {Owl} carousel - The Owl Carousel
-     */
+
     var Linked = function(carousel) {
-        /**
-         * Reference to the core.
-         * @protected
-         * @type {Owl}
-         */
+
         this._core = carousel;
 
-        /**
-         * All event handlers.
-         * @protected
-         * @type {Object}
-         */
         this._handlers = {
             'dragged.owl.carousel changed.owl.carousel': $.proxy(function(e) {
                 if (e.namespace && this._core.settings.linked) {
@@ -195,34 +176,20 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
             }, this)
         };
 
-        // register event handlers
         this._core.$element.on(this._handlers);
 
-        // set default options
+
         this._core.options = $.extend({}, Linked.Defaults, this._core.options);
     };
 
-    /**
-     * Default options.
-     * @public
-     */
     Linked.Defaults = {
         linked: false
     };
 
-    /**
-     * Updated linked instances
-     */
     Linked.prototype.update = function(e) {
         this.toSlide( e.relatedTarget.relative(e.item.index) );
     };
 
-    /**
-     * Carry out the to.owl.carousel proxy function
-     * @param {int} index
-     * @param {int} speed
-     * @param {bool} propagate
-     */
     Linked.prototype.toSlide = function(index, speed, propagate) {
         var id = this._core.$element.attr('id'),
             linked = typeof(this._core.settings.linked) === 'string' ? this._core.settings.linked.split(',') : this._core.settings.linked;
@@ -246,10 +213,6 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
         }
     };
 
-    /**
-     * Destroys the plugin.
-     * @protected
-     */
     Linked.prototype.destroy = function() {
         var handler, property;
 
@@ -265,24 +228,17 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 
 })(window.Zepto || window.jQuery, window, document);
 
-
-$(".carousel_1").owlCarousel({
-    nav: false,
-    items: 1,
-    margin:1,
-    linked: ".carousel_2"
-});
 var sync2 = $(".carousel_2");
 $(sync2).owlCarousel({
     nav: true,
     loop:true,
-    items: 4,
+    items: 2,
     margin: 10,
-    center:true,
+    center: true,
     linked: sync2.prev()
 }).on('initialized.owl.carousel linked.to.owl.carousel', function() {
     sync2.find('.owl-item.current').removeClass('current');
-    var current = sync2.find('.owl-item.active.center').length ? sync2.find('.owl-item.active.center') : sync2.find('.owl-item.active').eq(0);
+    var current = sync2.find('.owl-item.active.center').length ? sync2.find('.owl-item.active') : sync2.find('.owl-item.active').eq(0);
     current.addClass('current');
 
 });

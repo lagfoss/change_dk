@@ -80,26 +80,39 @@ button.owl.active:active, button.owl.active:focus  {
 }
 }
 
-.owl-carousel .owl-nav .owl-prev{
-  background-image: url("arrow_left.svg") no-repeat;
-  float: left;
-  margin-top: -200px;
-  margin-left: -39px;
-  z-index: 2;
-}
-
-.owl-carousel .owl-nav .owl-next{
-  background: url('arrow_right.svg') no-repeat;
-    margin-top: -200px;
-    margin-right: -60px;
-    z-index: 2;
-    float: right;
-}
-
-
 .hello .owl-dots  {
   margin-top: 10px;
   position: absolute;
   bottom: 25%;
   margin-left: 100px;
+}
+
+
+.owl-carousel {
+margin: 50px auto;
+max-width: 100%;
+}
+
+.owl-carousel .owl-stage {
+   display: flex;
+   align-items: center;
+}
+
+.carousel_2 .current {
+border: 2px solid #639;
+box-sizing: border-box;
+}
+
+.carousel_2 .current img {
+transform-style: flat!important;
+}
+
+.carousel_2 .active.center + .active,
+.carousel_2 .active:first-child,
+.carousel_2 :not(.active) + .active {
+ height: 650px;
+}
+
+.carousel_2 .active.center {
+ height: 1px;
 }

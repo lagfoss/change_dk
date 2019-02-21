@@ -1897,27 +1897,10 @@ img.client_logo_neg {
   max-width: 430px;
 }
 
-.brand_img_slider {
-  display: flex;
-}
-
 .brand_img {
-  width: 200px;
-}
-
- .owl-stage {
-    max-height: 500px;
-    display: flex;
-    align-items: center;
-}
-.carousel_2 .current { border:2px solid #639; box-sizing:border-box }
-.carousel_2 .current img { transform-style:flat!important }
-
-.carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
-  height:150px;
-}
-.carousel_2 .active.center{
-  height:200px;
+  height: 100%;
+  width: 100%;
+  padding: 0px 20px;
 }
 
 /*========= CASES branding slut =========*/

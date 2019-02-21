@@ -256,7 +256,7 @@ Template Post Type: cases
                    <div class="brand_img_slider owl-carousel owl-theme carousel_2">
                      <?php foreach( $brandgallery as $brandgallery ): ?>
 
-                            <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
+                            <img class="brand_img item" src="<?php echo $brandgallery['url'] ; ?>"/>
 
 				            <?php endforeach; ?>
                   </div>
