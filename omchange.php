@@ -45,8 +45,8 @@
       <?php while ( have_rows('steps_box') ) : the_row();
         $stepsimage = get_sub_field('steps_img'); ?>
 
-      <a href="<?php the_sub_field('steps_link'); ?>" class="om_steps">
-        <div class="arrow_left">
+        <div class="om_steps">
+          <div class="arrow_left">
           <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
         </div>
         <div class="arrow_right">
@@ -59,18 +59,22 @@
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
       		<div id="" class="half steps_text">
-            <div class="steps_number">
-              <?php the_sub_field('steps_number'); ?>
+            <div class="row stroke_position_om">
+              <div class="stroke_om"></div>
+              <p class="steps_number">
+                <?php the_sub_field('steps_number'); ?>
+              </p>
             </div>
       			<h2><?php the_sub_field('steps_title'); ?></h2>
-      			<?php the_sub_field('steps_text'); ?>
+      			<p><?php the_sub_field('steps_text'); ?></p>
+            <a class="om_button" href="<?php the_sub_field('steps_link'); ?>"><?php the_sub_field('om_button_text'); ?> <?php if( get_sub_field('om_button_icon') ): ?>
+      			  <img class="" src="<?php the_sub_field('om_button_icon'); ?>" />
+      			<?php endif; ?></a>
       		</div>
       	</div>
-      </a>
+      </div>
       <?php endwhile; ?>
       <?php else : endif; ?>
-
-    </div>
   </div>
 
 <!-- Slider -->
@@ -87,13 +91,13 @@
       </div>
     </div>
 
-    <div class="col-12 owl-carousel owl-theme carousel_om_change">
+  <div class="col-12 owl-carousel owl-theme carousel_om_change">
 
-  <?php
-  $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
-  'order' => 'ASC', 'post_type' => 'cases');
-  $query = new WP_Query($params);
-  ?>
+    <?php
+    $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
+    'order' => 'ASC', 'post_type' => 'cases');
+    $query = new WP_Query($params);
+    ?>
         <?php if ($query->have_posts()) : ?>
             <?php while ($query->have_posts()) :
               $query->the_post(); ?>
@@ -124,9 +128,8 @@
                       <?php _e( 'No cases' ); ?>
 
                         <?php endif; ?>
-</div>
-
   </div>
+</div>
 
 <?php get_footer(); ?>
 
