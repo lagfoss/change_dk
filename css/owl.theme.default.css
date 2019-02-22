@@ -122,3 +122,9 @@ transform-style: flat!important;
 .carousel_2 .owl-stage {
   padding-top: 40px;
 }
+
+#customNav .owl-next, .owl-prev {
+  border: none;
+background: none;
+cursor: pointer;
+}

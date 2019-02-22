@@ -164,11 +164,12 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 
 
 
-
 var sync2 = $(".carousel_2");
+
 $(sync2).owlCarousel({
     nav: true,
     navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
+    navContainer: '#customNav', 
     dots: false,
     loop: true,
     items: 2,
@@ -178,7 +179,6 @@ $(sync2).owlCarousel({
     sync2.find('.owl-item.current').removeClass('current');
     var current = sync2.find('.owl-item.active.center').length ? sync2.find('.owl-item.active') : sync2.find('.owl-item.active').eq(0);
     current.addClass('current');
-
 });
 
 
