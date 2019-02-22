@@ -127,11 +127,11 @@ transform-style: flat!important;
 border: none;
 background: none;
 cursor: pointer;
-padding-left: 20px;
+padding-left: 40px;
 }
 
 .slider-counter {
   position: absolute;
-  margin-left: 40px;
+  margin-left: 70px;
   margin-top: -24px;
 }
