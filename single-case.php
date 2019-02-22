@@ -253,7 +253,7 @@ Template Post Type: cases
                     </div>
                   </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 align-items-center">
                   <div class="orange_sqaure_case"></div>
                    <div class="owl-carousel slider owl-theme carousel_2 ">
                       <?php foreach( $brandgallery as $brandgallery ): ?>
