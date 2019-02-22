@@ -103,7 +103,7 @@ button.owl.active:active, button.owl.active:focus  {
 border: 2px solid #639;
 box-sizing: border-box;
 }
- 
+
 .carousel_2 .current img {
 transform-style: flat!important;
 }

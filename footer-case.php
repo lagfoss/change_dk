@@ -160,10 +160,19 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 })(window.Zepto || window.jQuery, window, document);
 
 
-
+$('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+    if (!e.namespace)  {
+      return;
+    }
+    var carousel = e.relatedTarget;
+    $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
+  }).owlCarousel({
+    items: 2,
+    dots: false,
+    nav: true,
+  });
 
 var sync2 = $(".carousel_2");
-
 $(sync2).owlCarousel({
     nav: true,
     navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],

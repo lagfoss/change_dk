@@ -248,10 +248,10 @@ Template Post Type: cases
                     <div class="rekru_text">
                       <h2 class="h2_case"><?php echo $brandtitle; ?></h2>
                       <p><?php echo $brandtext; ?></p>
-                      <div id="customNav">
+                      <div id="customNav"></div>
+                      <div class="slider-counter">
 
-                      </div>
-
+                      </div> 
                     </div>
                   </div>
                 </div>
