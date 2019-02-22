@@ -1791,11 +1791,11 @@ margin-left: 3%;
 }
 
 .orange_sqaure_case {
-  height: 96%; 
+  height: 104%;
   width: 80%;
   right: 0;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 10px; 
   background-color: #F1E4DE;
 }
 

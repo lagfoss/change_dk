@@ -63,7 +63,7 @@
               <div class="stroke_om"></div>
               <p class="steps_number">
                 <?php the_sub_field('steps_number'); ?>
-              </p>
+              </p> 
             </div>
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<p><?php the_sub_field('steps_text'); ?></p>
