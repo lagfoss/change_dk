@@ -7,7 +7,6 @@ Template Post Type: cases
 
 <?php get_header('case'); ?>
 
-<div class="case_section">
 <?php
 
   // check if the flexible content field has rows of data
@@ -296,8 +295,6 @@ Template Post Type: cases
   endif;
 
 ?>
-
-</div>
 
 <?php get_footer('case'); ?>
 

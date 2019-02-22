@@ -226,5 +226,5 @@
 
 
   </header>
-    <section class="content_area">
+    <section class="content_area case_section">
       <!-- Header content -->
