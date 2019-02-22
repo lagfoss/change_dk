@@ -45,8 +45,8 @@
       <?php while ( have_rows('steps_box') ) : the_row();
         $stepsimage = get_sub_field('steps_img'); ?>
 
-      <a href="<?php the_sub_field('steps_link'); ?>" class="om_steps">
-        <div class="arrow_left">
+        <div class="om_steps">
+          <div class="arrow_left">
           <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
         </div>
         <div class="arrow_right">
@@ -61,19 +61,22 @@
       		<div id="" class="half steps_text">
             <div class="row stroke_position_om">
               <div class="stroke_om"></div>
-            <p class="steps_number">
-              <?php the_sub_field('steps_number'); ?>
-            </p>
+              <p class="steps_number">
+                <?php the_sub_field('steps_number'); ?>
+              </p>
             </div>
       			<h2><?php the_sub_field('steps_title'); ?></h2>
-      			<?php the_sub_field('steps_text'); ?>
+      			<p><?php the_sub_field('steps_text'); ?></p>
+            <a class="om_button" href="<?php the_field('steps_link'); ?>">
+              <?php the_field('om_button_text'); ?>
+              <?php if( get_field('om_button_icon') ): ?>
+      			  <img class="" src="<?php the_field('om_button_icon'); ?>" />
+      			<?php endif; ?></a>
       		</div>
       	</div>
-      </a>
+      </div>
       <?php endwhile; ?>
       <?php else : endif; ?>
-
-    </div>
   </div>
 
 <!-- Slider -->
