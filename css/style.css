@@ -1803,7 +1803,7 @@ margin-left: 3%;
 .case_section {
   background-color: #f2f2f2;
   margin-bottom: 600px;
-  position: relative;
+  position: relative; 
   z-index: 3;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
