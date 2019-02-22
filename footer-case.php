@@ -191,13 +191,6 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
 
 var sync2 = $(".carousel_2");
 $(sync2).owlCarousel({
-    nav: true,
-    navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
-    navContainer: '#customNav',
-    dots: false,
-    loop: true,
-    items: 2,
-    stagePadding: 80,
     linked: sync2.prev()
 }).on('initialized.owl.carousel linked.to.owl.carousel', function() {
     sync2.find('.owl-item.current').removeClass('current');
