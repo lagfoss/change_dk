@@ -107,7 +107,7 @@ $(document).ready(function() {
     nav: true,
     navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
     slideby: 1,
-    dots: false,
+    dots: true,
     items: 2,
     margin: 30,
   })
