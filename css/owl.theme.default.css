@@ -110,10 +110,15 @@ transform-style: flat!important;
 
 .carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
   height: 500px;
-
+  margin-top: -20px;
 }
-.carousel_2 .active.center{
+.carousel_2 .active.center .brand_img img{
+  margin-top: 20px;
 }
 .owl-carousel .carousel_2 .owl-item img {
   height: 100%;
+}
+
+.carousel_2 .owl-stage {
+  padding-top: 40px;
 }
