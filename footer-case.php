@@ -17,7 +17,7 @@
     <?php if ( !empty($next_post) ) {  ?>
     <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
       <a class="case_card_link" href="<?php echo get_permalink( $next_post->ID ); ?>">
-        <div class="case_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+        <div class="case_card_content" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
           <div class="">
             <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
               <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
