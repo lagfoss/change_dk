@@ -12,7 +12,7 @@
 <footer class="case_footer">
 
 <div class="row flex">
-  <div class="flex_wrapper">
+  <div class="flex_wrapper next_case">
 
     <?php $next_post = get_adjacent_post(false, '', false); ?>
     <?php if ( !empty($next_post) ) {  ?>
