@@ -67,10 +67,8 @@
             </div>
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<p><?php the_sub_field('steps_text'); ?></p>
-            <a class="om_button" href="<?php the_field('steps_link'); ?>">
-              <?php the_field('om_button_text'); ?>
-              <?php if( get_field('om_button_icon') ): ?>
-      			  <img class="" src="<?php the_field('om_button_icon'); ?>" />
+            <a class="om_button" href="<?php the_sub_field('steps_link'); ?>"><?php the_sub_field('om_button_text'); ?> <?php if( get_sub_field('om_button_icon') ): ?>
+      			  <img class="" src="<?php the_sub_field('om_button_icon'); ?>" />
       			<?php endif; ?></a>
       		</div>
       	</div>
