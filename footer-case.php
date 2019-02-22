@@ -157,7 +157,7 @@ $(sync2).owlCarousel({
     nav: true,
     dots: false,
     loop: true,
-    items: 4,
+    items: 2,
     linked: sync2.prev()
 }).on('initialized.owl.carousel linked.to.owl.carousel', function() {
     sync2.find('.owl-item.current').removeClass('current');

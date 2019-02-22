@@ -1754,10 +1754,7 @@ img.client_logo_neg {
 }
 
 .brand_img {
-  height: 10%;
-}
-
-.brand_img img {
+  height: 100%;
 }
 
 /*========= CASES branding slut =========*/

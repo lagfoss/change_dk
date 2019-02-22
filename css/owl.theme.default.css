@@ -87,11 +87,14 @@ button.owl.active:active, button.owl.active:focus  {
   margin-left: 100px;
 }
 
-.owl-carousel {
+.owl-carousel .carousel_2 {
  margin: 50px 100px;
+ width: 700px;
+ max-width: 100%;
 }
 
-.owl-carousel .owl-stage {
+.owl-carousel .carousel_2 .owl-stage {
+    max-height: 300px;
     display: flex;
     align-items: center;
 }
@@ -106,10 +109,11 @@ transform-style: flat!important;
 }
 
 .carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
-  height: 300px;
+  height: 500px;
 }
 .carousel_2 .active.center{
-  height: 300px;
+  height: 10px;
 }
-.owl-carousel .owl-item img {
+.owl-carousel .carousel_2 .owl-item img {
+  height: 100%;
 }
