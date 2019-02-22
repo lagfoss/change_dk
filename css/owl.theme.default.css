@@ -124,7 +124,14 @@ transform-style: flat!important;
 }
 
 #customNav .owl-next, .owl-prev {
-  border: none;
+border: none;
 background: none;
 cursor: pointer;
+padding-left: 20px;
+}
+
+.slider-counter {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -24px;
 }

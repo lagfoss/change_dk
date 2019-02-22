@@ -167,9 +167,13 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
     var carousel = e.relatedTarget;
     $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
   }).owlCarousel({
-    items: 2,
-    dots: false,
     nav: true,
+    navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
+    navContainer: '#customNav',
+    dots: false,
+    loop: true,
+    items: 2,
+    stagePadding: 80,
   });
 
 var sync2 = $(".carousel_2");
