@@ -975,6 +975,7 @@ input {
 
 .om_menu {
   position: absolute;
+  bottom: -30px;
   width: 450px;
   height: 65px;
   border-radius: 10px;
