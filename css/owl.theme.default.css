@@ -110,6 +110,7 @@ transform-style: flat!important;
 
 .carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
   height: 500px;
+  
 }
 .carousel_2 .active.center{
   height: 10px;

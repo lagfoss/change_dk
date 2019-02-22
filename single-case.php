@@ -255,6 +255,7 @@ Template Post Type: cases
                   </div>
                 </div>
                 <div class="col-md-7">
+                  <div class="orange_sqaure_case"></div>
                    <div class="owl-carousel slider owl-theme carousel_2 ">
                       <?php foreach( $brandgallery as $brandgallery ): ?>
                         <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
