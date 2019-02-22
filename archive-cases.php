@@ -33,11 +33,10 @@
 
       <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
         <a class="case_card_content" href="<?php the_permalink(); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-          <div class="">
+
             <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
             <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
             <?php endif; ?>
-          </div>
 
           <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
 

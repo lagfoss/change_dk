@@ -1461,7 +1461,7 @@ margin-left: 3%;
 
 .category_wrapper {
   list-style-type: none;
-
+  display: block;
       padding: 25px 5%;
 }
 
