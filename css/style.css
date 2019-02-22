@@ -983,9 +983,12 @@ input {
   background-color: #f8f8f8;
 }
 
+.om_menu a {
+  margin: 20px auto auto auto;
+}
+
 .om_menu img {
   height: 20px;
-  margin: 10px auto 10px auto;
 }
 
 .om_menu h3 {
@@ -1002,13 +1005,13 @@ input {
 
 .arrow_down {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
+  width: 35px;
+  height: 35px;
 }
 
 .omchange_calltoaction {
   background-color: #f8f8f8;
-  width: 35px;
-  height: 35px;
   padding: 5px;
   border-radius: 50%;
   text-align: center;
