@@ -15,15 +15,15 @@
       <div class="om_menu">
         <div class="row align-items-center">
             <?php if( get_field('box_process_image') ): ?>
-          <a href="<?php the_field('box_process_link'); ?>"><img class="" src=" <?php the_field('box_process_image'); ?>" />
+          <a href="<?php the_field('box_process_link'); ?>"><img class="om_menu_img" src=" <?php the_field('box_process_image'); ?>" />
           <?php endif; ?><h3><?php the_field('box_process_title'); ?></h3></a>
 
             <?php if( get_field('box_team_image') ): ?>
-          <a href="<?php the_field('box_team_link'); ?>"><img class="" src=" <?php the_field('box_team_image'); ?>" />
+          <a href="<?php the_field('box_team_link'); ?>"><img class="om_menu_img" src=" <?php the_field('box_team_image'); ?>" />
           <?php endif; ?><h3><?php the_field('box_team_title'); ?></h3></a>
 
             <?php if( get_field('box_job_image') ): ?>
-          <a href="<?php the_field('box_job_link'); ?>"><img class="" src=" <?php the_field('box_job_image'); ?>" />
+          <a href="<?php the_field('box_job_link'); ?>"><img class="om_menu_img" src=" <?php the_field('box_job_image'); ?>" />
           <?php endif; ?><h3><?php the_field('box_job_title'); ?></h3></a>
 
           <div class="arrow_down">
