@@ -51,11 +51,6 @@
 
               <?php endwhile; ?>
 
-              <?php
-              $leftarrow = "<?php echo get_template_directory_uri(); ?>/images/arrow_left.svg"
-
-               ?>
-
 
               <div class="pagination">
               <?php
@@ -78,6 +73,7 @@
 
               <?php wp_reset_postdata(); ?>
 
-
+</div>
+</div>
 
 <?php get_footer();?>

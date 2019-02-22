@@ -1176,24 +1176,14 @@ input {
   margin: 0 auto 20px auto;
 }
 
-.omchange_card_link {
-  display: table;
-  margin: 40px 20px;
-}
-
-.omchange_card_link:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
 .omchange_card_h3 {
   width: 300px;
-      position: absolute;
-      margin-top: 85px;
-      text-align: left;
-      margin-left: 8%;
-      font-size: 34px;
-      line-height: 1;
+  position: absolute;
+  margin-top: 85px;
+  text-align: left;
+  margin-left: 8%;
+  font-size: 34px;
+  line-height: 1;
 }
 
 .case_card_h2:hover {
@@ -1471,7 +1461,7 @@ margin-left: 3%;
 
 .category_wrapper {
   list-style-type: none;
-  display: block;
+
       padding: 25px 5%;
 }
 
@@ -1791,7 +1781,7 @@ margin-left: 3%;
 }
 
 .orange_sqaure_case {
-  height: 96%; 
+  height: 96%;
   width: 80%;
   right: 0;
   position: absolute;

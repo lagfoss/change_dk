@@ -11,13 +11,13 @@
 
 <footer class="case_footer">
 
-  <div class="container-fluid next_case">
+<div class="row flex">
+  <div class="flex_wrapper">
 
     <?php $next_post = get_adjacent_post(false, '', false); ?>
     <?php if ( !empty($next_post) ) {  ?>
     <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
-      <a class="case_card_content" href="<?php echo get_permalink( $next_post->ID ); ?>"
-         style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+      <a class="case_card_content" href="<?php echo get_permalink( $next_post->ID ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
             <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
               <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
             <?php endif; ?>
@@ -32,6 +32,7 @@
    </a>
    <?php } ?>
 
+  </div>
   </div>
 
   <!-- aps start -->
