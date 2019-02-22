@@ -156,22 +156,14 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 
 
 
-  $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
-      if (!e.namespace)  {
-        return;
-      }
-
-
 var sync2 = $(".carousel_2");
-var carousel = e.relatedTarget;
-$('.slider-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
-})
 $(sync2).owlCarousel({
     nav: true,
     navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
     dots: false,
     loop: true,
-    items: 1,
+    items: 2,
+    stagePadding: 80,
     linked: sync2.prev()
 }).on('initialized.owl.carousel linked.to.owl.carousel', function() {
     sync2.find('.owl-item.current').removeClass('current');
