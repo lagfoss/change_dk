@@ -41,9 +41,24 @@
           <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
 
           <div class="category_wrapper">
-          <div class="cases_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+          <div class="cases_tags">
+            <?php
+            $posttags = get_the_tags();
+            if ($posttags) {
+              foreach($posttags as $tag) {
+                echo $tag->name . ' ';
+              }
+            }
+            ?> </div>
 
-          <?php the_category(); ?>
+          <div>
+            <?php
+            foreach((get_the_category()) as $category){
+              echo $category->name."<br>";
+            }
+            ?>
+          </div>
+
 
 
           </div></a>
