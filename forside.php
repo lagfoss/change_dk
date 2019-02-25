@@ -7,7 +7,7 @@
 	<div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
 		<div class="container-fluid wrapper load-hidden">
 			<div class="row">
-		<div class="col-sm-6">
+		<div class="col-sm-7">
 		<div class="hero_info">
 			<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
@@ -19,7 +19,7 @@
 		</div>
 
 		<!-- Showreel on hero -->
-		<div class="col-sm-6">
+		<div class="col-sm-5">
 		<?php
 		if( get_field('showreel_toggle') )
 			$value = get_field('showreel_toggle');
