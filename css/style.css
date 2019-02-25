@@ -1825,10 +1825,14 @@ margin-left: 3%;
 }
 
 .footer_project_case {
-  padding: 60px 0 90px 0;
-  background-color: #e9e9e9;
+  height: 100vh;
+  padding: 20% 0 90px 0;
+  background-color: inherit;
   text-align: center;
-  margin-top: 60px;
+}
+
+.footer_project_case h2 {
+  margin-bottom: 40px;
 }
 
 .next_case {
