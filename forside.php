@@ -7,7 +7,7 @@
 	<div class="hero" style="background-image:url(<?php the_field('hero_image'); ?>);">
 		<div class="container-fluid wrapper load-hidden">
 			<div class="row">
-		<div class="col-sm-7">
+		<div class="col-sm-6">
 		<div class="hero_info">
 			<h1 class="hero_title"><?php the_field('hero_title'); ?></h1>
 			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
@@ -19,7 +19,7 @@
 		</div>
 
 		<!-- Showreel on hero -->
-		<div class="col-sm-5">
+		<div class="col-sm-6">
 		<?php
 		if( get_field('showreel_toggle') )
 			$value = get_field('showreel_toggle');
@@ -76,14 +76,15 @@
 	</div>
 
 	<!-- CASE SLIDER -->
-	<div class="wrapper"
-	<a class="cases_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('wcwd_button_icon') ): ?>
-	<img class="" src="<?php the_field('wcwd_button_icon'); ?>" />
-	<?php endif; ?></a>
+	<div class="wrapper">
 		  <div class="col-11 owl-carousel hello owl-theme">
 	    <?php
-	    $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
-	    'order' => 'ASC', 'post_type' => 'cases');
+	    $params = array(
+					 'post_type' => 'cases',
+			     'posts_per_page' => 4,
+			     'paged' => $paged,
+			     'orderby' => 'publish_date',
+			     'order' => 'DESC',);
 	    $query = new WP_Query($params);
 	    ?>
 	          <?php if ($query->have_posts()) : ?>
@@ -102,6 +103,10 @@
 
 												<div class="col-8 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>
 
+												<a class="forside_case_button" href="<?php the_permalink(); ?>">
+													<?php the_field('case_call_to_action_text') ?>
+													<img src="<?php the_field('case_call_to_action_icon') ?>" alt="">
+												</a>
 
 								</div>
 
@@ -112,6 +117,7 @@
 	                        <?php _e( 'No cases' ); ?>
 
 	                          <?php endif; ?>
+
 	</div>
 </div>
 
