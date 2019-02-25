@@ -251,12 +251,13 @@ Template Post Type: cases
                       <div id="customNav"></div>
                       <div class="slider-counter">
 
-                      </div> 
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-7 align-items-center">
                   <div class="orange_sqaure_case"></div>
+                  <div class=""> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone-empty.svg" alt=""> </div>
                    <div id="info" class="owl-carousel slider owl-theme carousel_2 ">
                       <?php foreach( $brandgallery as $brandgallery ): ?>
                         <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>

@@ -1735,11 +1735,15 @@ margin-left: 3%;
 .prev::before {
   content: "";
   background: url('.../images/arrow_left.svg');
+  width: 100%;
+  height: 100%;
 }
 
 .next::before {
   content: "";
   background: url('.../images/arrow_right.svg');
+  width: 100%;
+  height: 100%;
 }
 
 /*========= CASES some slut =========*/
@@ -1795,6 +1799,14 @@ margin-left: 3%;
   position: absolute;
   border-radius: 10px;
   background-color: #F1E4DE;
+}
+
+.iphone_wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 338px;
+  left: 33px;
+  top: 8px;
 }
 
 /*========= CASES branding slut =========*/
