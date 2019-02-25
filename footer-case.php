@@ -1,4 +1,4 @@
-<div class="footer_project">
+<div class="footer_project_case">
   <h2><?php the_field('footer_project', 'option'); ?></h2>
 <a class="footer_button" href="<?php the_field('footer_button_url', 'option'); ?>"><?php the_field('footer_button_text', 'option'); ?>
 
