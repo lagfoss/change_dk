@@ -67,9 +67,7 @@
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
 
         <div class="container-fluid">
-          <button type="button" class="close menubtn" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <a href="#" class="menu_white menubtn close"></a>
         </div>
       </div>
 

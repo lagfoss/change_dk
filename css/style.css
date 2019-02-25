@@ -301,6 +301,10 @@ nav {
   background-color: #111517;
 }
 
+.menu_white:before, .menu_white span, .menu_white:after {
+  background-color: #f2f2f2;
+}
+
 .menubtn span {
   top: 50%;
   margin-top: -2px;
