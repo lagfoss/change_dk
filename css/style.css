@@ -1162,9 +1162,6 @@ input {
   margin: 30px auto 20px auto;
 }
 
-.carousel_om_change {
-}
-
 .om_slider_title {
   text-align: center;
   width: 100%;
@@ -1382,7 +1379,7 @@ img.omchange_client_logo_neg {
 .case_card_content {
   position: relative;
   overflow: hidden;
-  margin: auto;
+  margin: 50px;
   width: 900px;
   height: 400px;
   background-size: cover !important;
@@ -1419,19 +1416,16 @@ img.omchange_client_logo_neg {
 }
 
 .client_logo_neg {
-  margin-left: 30px;
+  margin-left: 6%;
   margin-top: 30px;
-}
-
-img.client_logo_neg {
-  height: 30px;
+  height: 35px;
 }
 
 .case_card_h2 {
-width: 420px;
-position: absolute;
-margin-top: 65px;
-margin-left: 3%;
+  width: 420px;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 10%;
 }
 
 .case_card_h2:hover {
@@ -1457,8 +1451,8 @@ margin-left: 3%;
 .category_wrapper {
   list-style-type: none;
   margin-top: 150px;
+  padding: 100px 6%;
   display: block;
-  padding: 25px 5%;
   line-height: 1;
 }
 
