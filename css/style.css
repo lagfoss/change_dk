@@ -2234,19 +2234,27 @@ img.omchange_client_logo_neg {
 }
 
 /*========= Height of devices =========*/
-@media screen and (max-height: 780px) {
+@media screen and (min-height: 580px) and (max-height: 780px) {
 
   .hero_info {
-    margin-top: 250px;
+    margin-top: 200px;
+  }
+
+  .watchourshowreel {
+    margin-top: 300px;
   }
 
 }
 
 /*========= Height of devices =========*/
-@media screen and (max-height: 640px) {
+@media screen and (min-height: 580px) and (max-height: 660px) {
 
   .hero_info {
-    margin-top: 200px;
+    margin-top: 150px;
+  }
+
+  .watchourshowreel {
+    margin-top: 250px;
   }
 
   .case_hero {
@@ -2256,32 +2264,19 @@ img.omchange_client_logo_neg {
   .case_down {
     margin-top: 50px;
   }
-
 }
 
 /*========= Height of devices =========*/
-@media screen and (max-height: 580px) {
+@media screen and (min-height: 580px) and (max-height: 610px) {
 
   .hero_info {
-    margin-top: 150px;
-  }
-
-  .case_down {
-    margin-top: 25px;
+    margin-top: 120px;
   }
 }
 
 /*========= Height of devices =========*/
-@media screen and ( min-width: 770px ) and (max-height: 620px) {
+@media screen and (min-height: 580px) and (max-height: 580px) {
 
-  .watchourshowreel {
-    margin-top: 300px;
-  }
-}
-
-/*========= Height of devices =========*/
-@media screen and ( min-width: 500px ) and (max-height: 510px) {
-  
   h1 {
     font-size: 55px;
     margin-top: 25px;
@@ -2294,10 +2289,21 @@ img.omchange_client_logo_neg {
   .watchourshowreel {
     margin-top: 200px;
   }
+
+  .case_down {
+    margin-top: 25px;
+  }
 }
 
 /*========= Height of devices =========*/
-@media screen and ( min-width: 500px ) and (max-height: 395px) {
+@media screen and (min-height: 580px) and (max-height: 460px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+/*========= Height of devices =========*/
+@media screen and (min-height: 580px) and (max-height: 395px) {
   h1 {
     font-size: 40px;
   }
