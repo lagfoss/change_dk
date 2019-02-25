@@ -79,8 +79,8 @@
                       'end_size'     => 2,
                       'mid_size'     => 1,
                       'prev_next'    => true,
-                      'prev_text'    => ("<img src='$leftarrow'"),
-                      'next_image'    => ("<?php the_field('case_headline');?>"),
+                      'next_text'    => (""),
+                      'prev_text'    => (""),
                   ) );
               ?>
               </div>
