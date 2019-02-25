@@ -1524,7 +1524,7 @@ margin-left: 3%;
   background-color: white;
   text-decoration: none;
   color: inherit;
-} 
+}
 
 /*========= CASES forside slut =========*/
 /*========= CASES enkelt start =========*/
@@ -1822,6 +1822,13 @@ margin-left: 3%;
   left: 0;
   right: 0;
   z-index: 0;
+}
+
+.footer_project_case {
+  padding: 60px 0 90px 0;
+  background-color: #e9e9e9;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .next_case {
