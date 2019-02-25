@@ -1446,7 +1446,6 @@ img.omchange_client_logo_neg {
 }
 
 .case_card_h2 {
-  width: 420px;
   position: absolute;
   margin-top: 75px;
   margin-left: 10%;
@@ -2165,6 +2164,10 @@ img.omchange_client_logo_neg {
   .client_cat ul {
     display: block;
   }
+
+  .case_card_h2 {
+    font-size: 40px;
+  }
 }
 
 /*========= Small devices () =========*/
@@ -2225,6 +2228,10 @@ img.omchange_client_logo_neg {
   .square {
     width: 180px;
   }
+
+  .case_card_h2 {
+    font-size: 35px;
+  }
 }
 
 /*========= Tiny devices () =========*/
@@ -2254,6 +2261,10 @@ img.omchange_client_logo_neg {
     border-radius: 10px;
     box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
+  }
+
+  .case_card_h2 {
+    font-size: 30px;
   }
 }
 
