@@ -150,6 +150,16 @@ ScrollReveal().reveal('.SoMe_footer', { distance: '250px' });
 ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 
 
+
+
+
+
+
+
+
+
+
+
 </script>
 </body>
 

@@ -1749,15 +1749,11 @@ img.omchange_client_logo_neg {
 }
 
 .prev::before {
-  content: "";
-  background: url('.../images/arrow_left.svg');
   width: 100%;
   height: 100%;
 }
 
 .next::before {
-  content: "";
-  background: url('.../images/arrow_right.svg');
   width: 100%;
   height: 100%;
 }

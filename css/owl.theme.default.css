@@ -12,6 +12,17 @@ button.owl.active:active, button.owl.active:focus  {
    border: none;
 }
 
+
+.hello .owl-carousel .animated {
+  animation-duration: 50000000ms;
+  animation-fill-mode: both;
+}
+
+.animated {
+  animation-duration: 3s;
+  animation-delay: 10000ms;
+}
+
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
@@ -69,15 +80,13 @@ button.owl.active:active, button.owl.active:focus  {
   background: #e54c00;
 }
 
-.owl-theme .owl-nav [class*='owl-'] {
-  .owl-carousel .owl-nav .owl-prev,
-  .owl-carousel .owl-nav .owl-next,
-  .owl-carousel .owl-dot {
-    //width, height
-    width:30px;
-    height:30px;
-    ...
-}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  //width, height
+  width:30px;
+  height:30px;
+  ...
 }
 
 .hello .owl-dots  {

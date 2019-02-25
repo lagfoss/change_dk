@@ -79,8 +79,8 @@
                       'end_size'     => 2,
                       'mid_size'     => 1,
                       'prev_next'    => true,
-                      'next_text'    => (""),
-                      'prev_text'    => (""),
+                      'next_text'    => ("<img src='http://xn--kronbr-tua.dk/wp-content/themes/change_dk/images/arrow_right.svg'>"),
+                      'prev_text'    => ("<img src='http://xn--kronbr-tua.dk/wp-content/themes/change_dk/images/arrow_left.svg'>"),
                   ) );
               ?>
               </div>
