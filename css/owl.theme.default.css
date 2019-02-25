@@ -109,8 +109,10 @@ transform-style: flat!important;
 }
 
 .carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
+  content: "";
   height: 500px;
   margin-top: -20px;
+  background: url('...images/iphone-empty.svg');
 }
 .carousel_2 .active.center .brand_img img{
   margin-top: 20px;
