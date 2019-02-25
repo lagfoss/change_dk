@@ -98,6 +98,8 @@ $(document).ready(function() {
   owl.owlCarousel({
     items:1,
     nav: false,
+    navSpeed: 10000,
+    autoplay: 10000,
   })
 
   var templateDir = "<?php bloginfo('template_directory') ?>";
@@ -148,6 +150,16 @@ ScrollReveal().reveal('.footer_project', { distance: '250px' });
 ScrollReveal().reveal('.letstalk_footer', { distance: '250px' });
 ScrollReveal().reveal('.SoMe_footer', { distance: '250px' });
 ScrollReveal().reveal('.contact_footer', { distance: '250px' });
+
+
+
+
+
+
+
+
+
+
 
 
 </script>
