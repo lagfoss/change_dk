@@ -80,14 +80,13 @@ button.owl.active:active, button.owl.active:focus  {
   background: #e54c00;
 }
 
-.owl-theme .owl-nav [class*='owl-']
-  .owl-carousel .owl-nav .owl-prev,
-  .owl-carousel .owl-nav .owl-next,
-  .owl-carousel .owl-dot {
-    //width, height
-    width:30px;
-    height:30px;
-    ...
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  //width, height
+  width:30px;
+  height:30px;
+  ...
 }
 
 .hello .owl-dots  {

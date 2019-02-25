@@ -98,8 +98,6 @@ $(document).ready(function() {
   owl.owlCarousel({
     items:1,
     nav: false,
-    navSpeed: 10000,
-    autoplay: 10000,
   })
 
   var templateDir = "<?php bloginfo('template_directory') ?>";
