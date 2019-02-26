@@ -324,8 +324,20 @@ $(".wcwd_button").click(function() {
 	'slow');
 });
 
-ScrollReveal().reveal('.wrapper', { distance: '250px' });
-ScrollReveal().reveal('.logo_slider', { distance: '250px' });
-ScrollReveal().reveal('.know_us', { distance: '250px' });
+ScrollReveal().reveal('.hero_title', { distance: '250px' });
+ScrollReveal().reveal('.hero_text', { distance: '300px' });
+ScrollReveal().reveal('.hero_button', { distance: '350px' });
+ScrollReveal().reveal('.1', { distance: '350px' });
+ScrollReveal().reveal('.playcircle', { distance: '300px' });
+ScrollReveal().reveal('.watch', { distance: '350px' });
+ScrollReveal().reveal('.showreel', { distance: '350px' });
+ScrollReveal().reveal('.wrapper_cases', { distance: '400px' });
+ScrollReveal().reveal('.process_img', { distance: '300px' });
+ScrollReveal().reveal('.', { distance: '250px' });
+ScrollReveal().reveal('.', { distance: '250px' });
+ScrollReveal().reveal('.', { distance: '250px' });
+ScrollReveal().reveal('.', { distance: '250px' });
+ScrollReveal().reveal('.', { distance: '250px' });
+ScrollReveal().reveal('.', { distance: '250px' });
 
 </script>
