@@ -2233,6 +2233,10 @@ img.omchange_client_logo_neg {
     margin: 0 5% 23% 5%;
   }
 
+  .om_menu {
+    width: 380px;
+  }
+
   .nav_wrapper {
     margin-left: 50%;
   }
@@ -2303,6 +2307,11 @@ img.omchange_client_logo_neg {
     border-radius: 10px;
     box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
+  }
+
+  .om_menu {
+    width: 100%;
+    left: 0;
   }
 
   .square {
