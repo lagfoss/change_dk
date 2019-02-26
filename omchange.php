@@ -80,8 +80,8 @@
 <!-- Klient citat -->
   <div class="container-fluid wrapper">
     <div class="row client_quote">
-      <img src="<?php the_field('om_client_image'); ?>" />
-      <p><?php the_field('om_client_citat'); ?></p>
+      <img class="quote_img" src="<?php the_field('om_client_image'); ?>" />
+      <p class="quote orange">“<span class="black"><?php the_field('om_client_citat'); ?></span>”</p>
       <p class="quote_name"><?php the_field('om_client_name'); ?></p>
       <img class="quote_logo" src="<?php the_field('om_client_logo'); ?>" />
     </div>
