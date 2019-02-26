@@ -1027,6 +1027,7 @@ input {
 .arrow_down {
   position: absolute;
   bottom: -15px;
+  left: 85px;
 }
 
 .omchange_calltoaction {
@@ -1095,7 +1096,7 @@ input {
 .stroke_position_om {
   width: 100%;
   height: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .stroke_om {
@@ -1118,6 +1119,11 @@ input {
 
 .steps_text h2 {
   font-size: 83px;
+  margin-bottom: 40px;
+}
+
+.steps_text p {
+  margin-bottom: 60px;
 }
 
 .om_button {
@@ -1174,6 +1180,25 @@ input {
 }
 
 /*========= Vores process steps slut =========*/
+/*========= Om Change klient citat =========*/
+
+.client_quote {
+  max-width: 450px;
+  margin: auto;
+}
+
+.client_quote img {
+  margin: auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.client_quote p {
+  text-align: center;
+}
+
+/*========= Om Change klient citat slut =========*/
 /*========= Om Change slider =========*/
 
 .stroke_position {
