@@ -2103,7 +2103,7 @@ img.omchange_client_logo_neg {
   }
 
   .hero_info {
-    margin: 200px auto 0 auto;
+    margin: 200px auto 0 0;
   }
 
   .hero_text {
@@ -2142,8 +2142,15 @@ img.omchange_client_logo_neg {
     display: none;
   }
 
+  .steps_text h2 {
+    font-size: 11vw;
+  }
+
   .steps_img {
-    display: none;
+    width: 100%;
+  }
+  .steps_img img {
+    width: 100%;
   }
 
   .steps_text {
@@ -2223,14 +2230,6 @@ img.omchange_client_logo_neg {
     border-radius: 10px;
     box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
-  }
-
-  .om_steps:nth-last-of-type(even) {
-    margin: 0 5% 21% 5%;
-  }
-
-  .om_steps:nth-last-of-type(odd) {
-    margin: 0 5% 23% 5%;
   }
 
   .om_menu {
