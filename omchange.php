@@ -52,7 +52,7 @@
             <img src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
-      		<div id="" class="half steps_text">
+      		<div class="half steps_text">
             <div class="row stroke_position_om">
               <div class="stroke_om"></div>
               <p class="steps_number">
@@ -62,7 +62,7 @@
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<p><?php the_sub_field('steps_text'); ?></p>
             <a class="om_button" href="<?php the_sub_field('steps_link'); ?>"><?php the_sub_field('om_button_text'); ?> <?php if( get_sub_field('om_button_icon') ): ?>
-      			  <img class="" src="<?php the_sub_field('om_button_icon'); ?>" />
+      			  <img src="<?php the_sub_field('om_button_icon'); ?>" />
       			<?php endif; ?></a>
       		</div>
       	</div>
@@ -187,14 +187,24 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.hero_info', { distance: '250px' });
-ScrollReveal().reveal('.om_menu', { distance: '250px' });
-ScrollReveal().reveal('.steps_img', { distance: '250px' });
-ScrollReveal().reveal('stroke_position_om', { distance: '250px' });
-ScrollReveal().reveal('h2', { distance: '250px' });
-ScrollReveal().reveal('p', { distance: '250px' });
-ScrollReveal().reveal('a', { distance: '250px' });
-ScrollReveal().reveal('.om_button img', { distance: '250px' });
-ScrollReveal().reveal('.arrow_left', { distance: '250px' });
-ScrollReveal().reveal('.arrow_right', { distance: '250px' });
+ScrollReveal().reveal('.stroke_position_ydelser', { distance: '300px' });
+ScrollReveal().reveal('.hero_info h1', { distance: '400px' });
+ScrollReveal().reveal('.om_menu_img', { distance: '350px' });
+ScrollReveal().reveal('.om_menu a', { distance: '450px' });
+ScrollReveal().reveal('.steps_img', { distance: '300px' });
+ScrollReveal().reveal('.stroke_om', { distance: '350px' });
+ScrollReveal().reveal('.steps_number', { distance: '450px' });
+ScrollReveal().reveal('.steps_text h2', { distance: '450px' });
+ScrollReveal().reveal('.steps_text p', { distance: '500px' });
+ScrollReveal().reveal('.om_button a', { distance: '30px' });
+ScrollReveal().reveal('.om_button img', { distance: '400px' });
+ScrollReveal().reveal('.arrow_left img', { distance: '350px' });
+ScrollReveal().reveal('.arrow_right img', { distance: '350px' });
+ScrollReveal().reveal('.quote_img', { distance: '350px' });
+ScrollReveal().reveal('.quote', { distance: '400px' });
+ScrollReveal().reveal('.quote_name', { distance: '450px' });
+ScrollReveal().reveal('.quote_logo', { distance: '500px' });
+ScrollReveal().reveal('.om_slider_title', { distance: '350px' });
+ScrollReveal().reveal('.stroke_position', { distance: '450px' });
+ScrollReveal().reveal('.carousel_om_change', { distance: '550px' });
 </script>
