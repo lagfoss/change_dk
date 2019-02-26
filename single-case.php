@@ -239,7 +239,7 @@ Template Post Type: cases
 
             <div class="container-fluid">
               <div class="row brand">
-                <div class="col-md-5 d-flex justify-content-end align-items-center">
+                <div class="col-lg-5 d-flex justify-content-end align-items-center">
                   <div class="brand_content">
                     <div class="row stroke_position_case">
                       <div class="stroke_case"></div>
@@ -255,7 +255,7 @@ Template Post Type: cases
                     </div>
                   </div>
                 </div>
-                <div class="col-md-7 align-items-center">
+                <div class="col-lg-7 align-items-center">
                   <div class="orange_sqaure_case"></div>
                   <div class=""> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone-empty.svg" alt=""> </div>
                    <div id="info" class="owl-carousel slider owl-theme carousel_2 ">
