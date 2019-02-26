@@ -99,8 +99,16 @@ $(document).ready(function() {
     items:1,
     nav: false,
     navSpeed: 5000,
-
+    mouseDrag: false,
   })
+
+  $('.hello').on('translate.owl.carousel', function(event) {
+    $(this).find(".case_img").hide();
+});
+
+ $('.hello').on('translated.owl.carousel', function(event) {
+$(this).find(".case_img").fadeIn(800);
+});
 
   var templateDir = "<?php bloginfo('template_directory') ?>";
 

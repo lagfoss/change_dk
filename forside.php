@@ -93,7 +93,7 @@
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 	                  <div class="row" href="<?php the_permalink(); ?>">
-												<div class="col-4 test fadeIn">
+												<div class="col-4 test">
 												<p style="font-weight: 500;">CASE:</p>
 												<h2 class=""><?php the_field('case_headline');?></h2>
 												<div class="cat"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
