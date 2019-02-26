@@ -28,7 +28,7 @@
 
           <div class="arrow_down">
             <?php if( get_field('call_to_action_intro') ): ?>
-          <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+          <a href="#steps"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
             <?php endif; ?></a>
           </div>
         </div>
@@ -39,7 +39,7 @@
 
 
   <!-- Vores process steps start -->
-    <div class="row wrapper">
+    <div class="row wrapper" id="steps">
 
       <?php if( have_rows('steps_box') ): ?>
       <?php while ( have_rows('steps_box') ) : the_row();
