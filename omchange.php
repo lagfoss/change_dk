@@ -187,9 +187,14 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-$(".omchange_calltoaction").click(function() {
-$('html,body').animate({
-  scrollTop: $(".vores_process").offset().top - 120},
-  'slow');
-});
+ScrollReveal().reveal('.hero_info', { distance: '250px' });
+ScrollReveal().reveal('.om_menu', { distance: '250px' });
+ScrollReveal().reveal('.steps_img', { distance: '250px' });
+ScrollReveal().reveal('stroke_position_om', { distance: '250px' });
+ScrollReveal().reveal('h2', { distance: '250px' });
+ScrollReveal().reveal('p', { distance: '250px' });
+ScrollReveal().reveal('a', { distance: '250px' });
+ScrollReveal().reveal('.om_button img', { distance: '250px' });
+ScrollReveal().reveal('.arrow_left', { distance: '250px' });
+ScrollReveal().reveal('.arrow_right', { distance: '250px' });
 </script>
