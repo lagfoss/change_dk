@@ -759,6 +759,7 @@ input {
 
 .test {
   width: 450px;
+  min-height: 650px;
   z-index: 1;
   left: 80px;
 }
@@ -798,6 +799,9 @@ input {
 
 .forside_case_button {
   display: flex;
+  position: absolute;
+  top: 386px;
+  left: 21px;
   width: 200px;
   z-index: 2;
   text-decoration: none;

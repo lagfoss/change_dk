@@ -102,7 +102,6 @@
 														<?php the_field('case_call_to_action_text') ?>
 														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="">
 													</a>
-													<div id="customDots"></div>
 											</div>
 
 												<div class="col-8 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>

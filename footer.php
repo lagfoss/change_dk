@@ -96,10 +96,8 @@ $(document).ready(function() {
 
   var owl = $('.hello');
   owl.owlCarousel({
-    items:1,
+    items: 1,
     dots: true,
-    dotText: ["",""],
-    dotsContainer: '#customDots',
     nav: false,
     mouseDrag: true,
   })
