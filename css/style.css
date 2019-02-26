@@ -746,7 +746,7 @@ input {
 
 .case_img {
   width: 800px;
-  height: 600px;
+  min-height: 600px;
   background-size: cover;
   position: relative;
   overflow: hidden;
