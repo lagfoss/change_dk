@@ -798,10 +798,8 @@ input {
 
 .forside_case_button {
   display: flex;
+  width: 200px;
   z-index: 2;
-  position: absolute;
-  top: 386px;
-  left: 101px;
   text-decoration: none;
   font-weight: 500;
   padding: 15px 20px;

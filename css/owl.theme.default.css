@@ -89,13 +89,6 @@ button.owl.active:active, button.owl.active:focus  {
   ...
 }
 
-.hello .owl-dots  {
-  margin-top: 10px;
-  position: absolute;
-  bottom: 25%;
-  margin-left: 100px;
-}
-
 .owl-carousel .carousel_2 {
  margin: 50px 100px;
  width: 700px;
@@ -149,4 +142,8 @@ padding-left: 40px;
  font-size: 16px;
  font-weight: bold;
  letter-spacing: 3px;
+}
+
+#customDots {
+
 }
