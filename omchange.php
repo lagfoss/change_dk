@@ -28,7 +28,7 @@
 
           <div class="arrow_down">
             <?php if( get_field('call_to_action_intro') ): ?>
-          <a href="#"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+          <a href="#steps"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
             <?php endif; ?></a>
           </div>
         </div>
@@ -39,19 +39,13 @@
 
 
   <!-- Vores process steps start -->
-    <div class="row wrapper">
+    <div class="row wrapper" id="steps">
 
       <?php if( have_rows('steps_box') ): ?>
       <?php while ( have_rows('steps_box') ) : the_row();
         $stepsimage = get_sub_field('steps_img'); ?>
 
         <div class="om_steps">
-          <div class="arrow_left">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
-        </div>
-        <div class="arrow_right">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
-        </div>
 
         <div id="steps" class="om_steps_content">
   				<div class="half steps_img">
@@ -72,6 +66,12 @@
       			<?php endif; ?></a>
       		</div>
       	</div>
+        <div class="arrow_left">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
+        </div>
+        <div class="arrow_right">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
+        </div>
       </div>
       <?php endwhile; ?>
       <?php else : endif; ?>
@@ -187,9 +187,14 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-$(".omchange_calltoaction").click(function() {
-$('html,body').animate({
-  scrollTop: $(".vores_process").offset().top - 120},
-  'slow');
-});
+ScrollReveal().reveal('.hero_info', { distance: '250px' });
+ScrollReveal().reveal('.om_menu', { distance: '250px' });
+ScrollReveal().reveal('.steps_img', { distance: '250px' });
+ScrollReveal().reveal('stroke_position_om', { distance: '250px' });
+ScrollReveal().reveal('h2', { distance: '250px' });
+ScrollReveal().reveal('p', { distance: '250px' });
+ScrollReveal().reveal('a', { distance: '250px' });
+ScrollReveal().reveal('.om_button img', { distance: '250px' });
+ScrollReveal().reveal('.arrow_left', { distance: '250px' });
+ScrollReveal().reveal('.arrow_right', { distance: '250px' });
 </script>

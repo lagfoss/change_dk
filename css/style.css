@@ -1069,23 +1069,23 @@ input {
 .om_steps {
   position: relative;
   width: 100%;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 
 .arrow_left {
   position: absolute;
-  width: 90%;
-  margin-left: 25%;
-  margin-top: -28%;
+  width: 30%;
+  margin-left: 35%;
+  bottom: 0;
   z-index: -1;
 }
 
 .arrow_right {
   position: absolute;
-  width: 90%;
+  width: 30%;
   right: 0;
-  margin-right: 25%;
-  margin-top: -31%;
+  margin-right: 35%;
+  bottom: 0;
   z-index: -1;
 }
 
@@ -1175,15 +1175,11 @@ input {
   float: right;
 }
 
-.om_steps:nth-of-type(odd) .arrow_right {
+.om_steps:nth-of-type(odd) .arrow_left {
   display: none;
 }
 
-.om_steps:nth-of-type(even) .arrow_left {
-  display: none;
-}
-
-.om_steps:nth-of-type(1) .arrow_left {
+.om_steps:nth-of-type(even) .arrow_right {
   display: none;
 }
 
@@ -2128,7 +2124,7 @@ img.omchange_client_logo_neg {
   }
 
   .hero_info {
-    margin: 200px auto 0 auto;
+    margin: 200px auto 0 0;
   }
 
   .hero_text {
@@ -2199,8 +2195,15 @@ img.omchange_client_logo_neg {
     display: none;
   }
 
+  .steps_text h2 {
+    font-size: 11vw;
+  }
+
   .steps_img {
-    display: none;
+    width: 100%;
+  }
+  .steps_img img {
+    width: 100%;
   }
 
   .steps_text {
@@ -2300,12 +2303,8 @@ img.omchange_client_logo_neg {
     margin: 0 20px 0 20px;
   }
 
-  .om_steps:nth-last-of-type(even) {
-    margin: 0 5% 21% 5%;
-  }
-
-  .om_steps:nth-last-of-type(odd) {
-    margin: 0 5% 23% 5%;
+  .om_menu {
+    width: 380px;
   }
 
   .nav_wrapper {
@@ -2395,6 +2394,11 @@ img.omchange_client_logo_neg {
     border-radius: 10px;
     box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
     margin: 0 20px 0 20px;
+  }
+
+  .om_menu {
+    width: 100%;
+    left: 0;
   }
 
   .square {
