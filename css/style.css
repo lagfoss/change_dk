@@ -2082,11 +2082,36 @@ img.omchange_client_logo_neg {
     margin-left: 20px;
   }
 
-  .know_us_dots, .rekru_dots {
-    display: none;
+  .wrapper_cases .row {
+    justify-content: center;
+    text-align: center;
+    min-height: 850px;
   }
-  .know_us_content {
-    margin: 20px auto;
+
+  .test {
+    min-height: 300px;
+    width: 70%;
+    text-align: -webkit-center;
+    margin-right: 20%;
+  }
+
+  .cat {
+    text-align: inherit;
+  }
+
+  .case_img {
+    margin-left: 5%;
+    min-height: 390px;
+    width: 600px;
+  }
+
+  .forside_case_button {
+    position: inherit;
+  }
+
+  .hello .owl-dots {
+    position: inherit;
+    margin-left: 0px;
   }
 
   .rekru_content {
@@ -2124,6 +2149,38 @@ img.omchange_client_logo_neg {
 
   .modal {
     max-height: 400px;
+  }
+
+  .wrapper_cases .row {
+    justify-content: center;
+    text-align: center;
+    min-height: 850px;
+  }
+
+  .test {
+    min-height: 400px;
+    width: 70%;
+    text-align: -webkit-center;
+    margin-right: 20%;
+  }
+
+  .cat {
+    text-align: inherit;
+  }
+
+  .case_img {
+    margin-left: 5%;
+    min-height: 390px;
+    width: 600px;
+  }
+
+  .forside_case_button {
+    position: inherit;
+  }
+
+  .hello .owl-dots {
+    position: inherit;
+    margin-left: 0px;
   }
 
   .do_for_u {
@@ -2191,6 +2248,10 @@ img.omchange_client_logo_neg {
     margin: 20px auto 20px auto;
     float: none;
   }
+
+  .test {
+    margin-right: 30%;
+  }
 }
 
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
@@ -2208,6 +2269,20 @@ img.omchange_client_logo_neg {
   .hero_info {
     margin: 100px 0 0;
     float: left;
+  }
+
+  .wrapper_cases {
+    padding-left: 18px
+  }
+
+  .wrapper_cases .row {
+    min-height: 900px;
+  }
+
+  .case_img {
+    margin-left: 5%;
+    min-height: 200px;
+    width: 450px;
   }
 
   .logo_slider {
@@ -2280,6 +2355,23 @@ img.omchange_client_logo_neg {
 
   .nav_wrapper {
     margin-left: 40%;
+  }
+
+  .test {
+    min-height: 475px;
+    margin-right: 51%;
+  }
+
+  .test h2 {
+    font-size: 40px;
+  }
+
+  .test .cat {
+    font-size: 12px;
+  }
+
+  .case_img {
+    min-height: 350px;
   }
 
   .calltoaction_hero_ydelser {
