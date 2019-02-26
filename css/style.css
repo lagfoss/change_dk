@@ -116,6 +116,14 @@ h3 {
   color: #ffffff;
 }
 
+.black {
+  color: #111517;
+}
+
+.orange {
+  color: #e54c00;
+}
+
 a {
   color: inherit;
 }
@@ -1061,6 +1069,7 @@ input {
 .om_steps {
   position: relative;
   width: 100%;
+  margin-bottom: 150px;
 }
 
 .arrow_left {
@@ -1102,7 +1111,7 @@ input {
 .steps_img img {
   width: 90%;
   border-radius: 10px;
-  box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 8px 20px 3px rgba(0, 0, 0, 0.2);
 }
 
 .stroke_position_om {
@@ -1199,15 +1208,35 @@ input {
   margin: auto;
 }
 
-.client_quote img {
+.quote_img {
   margin: auto;
   width: 130px;
   height: 130px;
+  margin-bottom: 20px;
   border-radius: 50%;
+  box-shadow: 0 12px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
-.client_quote p {
+.client_quote {
   text-align: center;
+}
+
+.client_quote {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.quote_name {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.quote_logo {
+  height: 35px;
 }
 
 /*========= Om Change klient citat slut =========*/
