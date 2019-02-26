@@ -76,7 +76,7 @@
 	</div>
 
 	<!-- CASE SLIDER -->
-	<div class="wrapper">
+	<div class="wrapper_cases">
 		  <div class="col-11 owl-carousel hello owl-theme">
 	    <?php
 	    $params = array(

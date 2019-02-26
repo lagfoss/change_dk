@@ -107,7 +107,7 @@ $(document).ready(function() {
 });
 
  $('.hello').on('translated.owl.carousel', function(event) {
-$(this).find(".case_img").fadeIn(2000);
+$(this).find(".case_img").fadeIn(1000);
 });
 
   var templateDir = "<?php bloginfo('template_directory') ?>";

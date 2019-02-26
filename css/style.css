@@ -40,6 +40,14 @@ body {
   padding-left: 15px;
 }
 
+.wrapper_cases {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 16px;
+}
+
 .flex_wrapper {
   display: flex;
   flex-direction: column;
@@ -801,8 +809,8 @@ input {
   display: flex;
   position: absolute;
   top: 386px;
-  left: 21px;
-  width: 200px;
+  left: 20px;
+  width: 175px;
   z-index: 2;
   text-decoration: none;
   font-weight: 500;
