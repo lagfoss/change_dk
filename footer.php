@@ -96,10 +96,10 @@ $(document).ready(function() {
 
   var owl = $('.hello');
   owl.owlCarousel({
-    items:1,
+    items: 1,
+    dots: true,
     nav: false,
-    navSpeed: 5000,
-    mouseDrag: false,
+    mouseDrag: true,
   })
 
   $('.hello').on('translate.owl.carousel', function(event) {
@@ -107,7 +107,7 @@ $(document).ready(function() {
 });
 
  $('.hello').on('translated.owl.carousel', function(event) {
-$(this).find(".case_img").fadeIn(800);
+$(this).find(".case_img").fadeIn(2000);
 });
 
   var templateDir = "<?php bloginfo('template_directory') ?>";
