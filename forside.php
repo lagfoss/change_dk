@@ -88,7 +88,7 @@
 	    $query = new WP_Query($params);
 	    ?>
 	          <?php if ($query->have_posts()) : ?>
-	              <?php while ($query->have_posts()) :
+	              <?php while ($query->have_posts()) : 
 	                $query->the_post(); ?>
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -97,7 +97,7 @@
 												<p style="font-weight: 500;">CASE:</p>
 												<h2 class=""><?php the_field('case_headline');?></h2>
 												<div class="cat"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
-												<p style="width:250px">Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. <p>
+												<p class="forside_cases_text">Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. <p>
 													<a class="forside_case_button" href="<?php the_permalink(); ?>">
 														<?php the_field('case_call_to_action_text') ?>
 														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="">
