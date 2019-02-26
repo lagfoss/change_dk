@@ -1184,7 +1184,21 @@ input {
 /*========= Vores process steps slut =========*/
 /*========= Om Change klient citat =========*/
 
+.client_quote {
+  max-width: 450px;
+  margin: auto;
+}
 
+.client_quote img {
+  margin: auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.client_quote p {
+  text-align: center;
+}
 
 /*========= Om Change klient citat slut =========*/
 /*========= Om Change slider =========*/
