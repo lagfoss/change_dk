@@ -186,7 +186,19 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
     dots: false,
     loop: true,
     items: 2,
-    stagePadding: 80,
+    stagePadding: 50,
+    responsive:{
+      621: {
+        items: 2,
+        touchDrag: true,
+      },
+
+      320: {
+        items:1,
+        stagePadding: 5,
+        touchDrag: true,
+      }
+    }
   });
 
 var sync2 = $(".carousel_2");
