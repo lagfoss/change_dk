@@ -91,3 +91,11 @@
 </div>
 
 <?php get_footer();?>
+
+<script type="text/javascript">
+
+ScrollReveal().reveal('.dark', { distance: '350px' });
+ScrollReveal().reveal('.stroke', { distance: '450px' });
+ScrollReveal().reveal('.case_card_content', { distance: '650px' });
+
+</script>
