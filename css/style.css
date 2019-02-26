@@ -1545,6 +1545,22 @@ img.omchange_client_logo_neg {
 /*========= CASES forside slut =========*/
 /*========= CASES enkelt start =========*/
 
+.menubtn.close_case::before {
+  top: 4px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menubtn.close_case::after {
+  top: 4px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 .h1_case {
   font-size: 61px;
   line-height: 1;

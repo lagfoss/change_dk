@@ -342,9 +342,9 @@ $(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scroll = $(window).scrollTop();
 	if (scroll >= windowHeight - 80) {
-$(".menubtn").removeClass("menu_white");
+$(".close_case").addClass("menu_black");
     } else {
-        $(".menubtn").addClass("menu_white");
+        $(".close_case").removeClass("menu_black");
     }
 });
 
