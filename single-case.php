@@ -263,7 +263,7 @@ Template Post Type: cases
                         <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
 
                        <?php endforeach; ?>
-                  </div>
+                  </div> 
 
                 </div>
               </div>

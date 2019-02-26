@@ -1903,7 +1903,7 @@ img.omchange_client_logo_neg {
   position: absolute;
   z-index: 2;
   width: 338px;
-  left: 33px;
+  left: 4px;
   top: 8px;
 }
 
@@ -2120,6 +2120,10 @@ img.omchange_client_logo_neg {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .brand_content {
+    margin-right: 20%;
+  }
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -2259,6 +2263,10 @@ img.omchange_client_logo_neg {
 
   .test {
     margin-right: 30%;
+  }
+
+  .iphone_wrapper {
+    left: -40px;
   }
 }
 
