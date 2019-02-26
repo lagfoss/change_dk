@@ -67,7 +67,7 @@
         <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
 
         <div class="container-fluid">
-          <a href="<?php echo get_bloginfo( 'wpurl/cases' );?>" class="menubtn close_case"></a>
+          <a href="/cases" class="menubtn close_case"></a>
         </div>
       </div>
 
