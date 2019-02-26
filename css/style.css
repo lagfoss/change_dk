@@ -780,6 +780,10 @@ input {
   left: 80px;
 }
 
+.forside_cases_text {
+  width: 250px;
+}
+
 .cat {
   text-transform: uppercase;
   text-align: right;
@@ -2426,6 +2430,15 @@ img.omchange_client_logo_neg {
   .nav_wrapper {
     position: absolute;
     left: -35px;
+  }
+
+  .test {
+    margin-right: 55%;
+    min-height: 495px;
+  }
+
+  .test .forside_cases_text {
+    width: 200px;
   }
 
   .modal {
