@@ -88,7 +88,7 @@
 	    $query = new WP_Query($params);
 	    ?>
 	          <?php if ($query->have_posts()) : ?>
-	              <?php while ($query->have_posts()) : 
+	              <?php while ($query->have_posts()) :
 	                $query->the_post(); ?>
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -333,11 +333,20 @@ ScrollReveal().reveal('.watch', { distance: '350px' });
 ScrollReveal().reveal('.showreel', { distance: '350px' });
 ScrollReveal().reveal('.wrapper_cases', { distance: '400px' });
 ScrollReveal().reveal('.process_img', { distance: '300px' });
-ScrollReveal().reveal('.', { distance: '250px' });
-ScrollReveal().reveal('.', { distance: '250px' });
-ScrollReveal().reveal('.', { distance: '250px' });
-ScrollReveal().reveal('.', { distance: '250px' });
-ScrollReveal().reveal('.', { distance: '250px' });
-ScrollReveal().reveal('.', { distance: '250px' });
+ScrollReveal().reveal('h2', { distance: '400px' });
+ScrollReveal().reveal('.process_steps', { distance: '350px' });
+ScrollReveal().reveal('.process_steps_text', { distance: '350px' });
+ScrollReveal().reveal('.font-weight-normal', { distance: '400px' });
+ScrollReveal().reveal('.wcwd_img', { distance: '250px' });
+ScrollReveal().reveal('.wcwd_content h3', { distance: '300px' });
+ScrollReveal().reveal('.wcwd_content p', { distance: '350px' });
+ScrollReveal().reveal('.wcwd_button', { distance: '300px' });
+ScrollReveal().reveal('.wcwd_button img', { distance: '350px' });
+ScrollReveal().reveal('.logo_slider', { distance: '400px' });
+ScrollReveal().reveal('.know_us_dots', { distance: '250px' });
+ScrollReveal().reveal('.know_us_content h2', { distance: '300px' });
+ScrollReveal().reveal('.know_us_content p', { distance: '400px' });
+ScrollReveal().reveal('.know_button', { distance: '350px' });
+ScrollReveal().reveal('.know_button img', { distance: '450px' });
 
 </script>
