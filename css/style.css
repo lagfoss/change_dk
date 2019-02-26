@@ -1069,23 +1069,23 @@ input {
 .om_steps {
   position: relative;
   width: 100%;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 
 .arrow_left {
   position: absolute;
-  width: 90%;
-  margin-left: 25%;
-  margin-top: -28%;
+  width: 30%;
+  margin-left: 35%;
+  bottom: 0;
   z-index: -1;
 }
 
 .arrow_right {
   position: absolute;
-  width: 90%;
+  width: 30%;
   right: 0;
-  margin-right: 25%;
-  margin-top: -31%;
+  margin-right: 35%;
+  bottom: 0;
   z-index: -1;
 }
 
@@ -1175,15 +1175,11 @@ input {
   float: right;
 }
 
-.om_steps:nth-of-type(odd) .arrow_right {
+.om_steps:nth-of-type(odd) .arrow_left {
   display: none;
 }
 
-.om_steps:nth-of-type(even) .arrow_left {
-  display: none;
-}
-
-.om_steps:nth-of-type(1) .arrow_left {
+.om_steps:nth-of-type(even) .arrow_right {
   display: none;
 }
 

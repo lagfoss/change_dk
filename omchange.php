@@ -46,12 +46,6 @@
         $stepsimage = get_sub_field('steps_img'); ?>
 
         <div class="om_steps">
-          <div class="arrow_left">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
-        </div>
-        <div class="arrow_right">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
-        </div>
 
         <div id="steps" class="om_steps_content">
   				<div class="half steps_img">
@@ -72,6 +66,12 @@
       			<?php endif; ?></a>
       		</div>
       	</div>
+        <div class="arrow_left">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
+        </div>
+        <div class="arrow_right">
+          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
+        </div>
       </div>
       <?php endwhile; ?>
       <?php else : endif; ?>
