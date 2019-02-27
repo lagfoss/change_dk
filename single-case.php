@@ -184,9 +184,9 @@ Template Post Type: cases
 			         while ( have_rows('case_some_example') ) : the_row();
                   $somexamptitle = get_sub_field('case_some_example_title'); ?>
                 <div class="row case_some_ex">
-                <div class="half case_some_empty">
+                <div class="case_some_empty">
                 </div>
-                <div class="half case_some_half">
+                <div class="case_some_half">
                   <div class="row stroke_position_case">
                     <div class="stroke_case"></div>
                     <p class="pre_client"><?php echo $somexamptitle; ?></p>
