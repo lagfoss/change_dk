@@ -2108,7 +2108,11 @@ img.omchange_client_logo_neg {
   .forside_cases_header {
     text-align: center;
     width: auto;
-  }
+   }
+
+  .know_us_dots {
+    display: none;
+   }
 
   .test {
     min-height: 300px;
@@ -2230,7 +2234,7 @@ img.omchange_client_logo_neg {
     height: 30px;
   }
 
- .ydelser_dots, .strategi_dots {
+ .ydelser_dots, .strategi_dots, .rekru_dots {
     display: none;
   }
 
@@ -2275,6 +2279,16 @@ img.omchange_client_logo_neg {
 
 /*========= (620px and down) =========*/
 @media screen and (max-width: 620px) {
+
+  .case_some_half {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    float: none;
+  }
+
+  .case_some_empty {
+    display: none;
+  }
 
   .test {
     margin-right: 30%;
