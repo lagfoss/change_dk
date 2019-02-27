@@ -2143,8 +2143,8 @@ img.omchange_client_logo_neg {
   }
 
   .omchange_card_content {
-    width: 200%;
-    left: 60%;
+    width: 75%;
+    margin-left: 13%;
   }
 }
 
@@ -2270,8 +2270,8 @@ img.omchange_client_logo_neg {
   }
 
   .omchange_card_content {
-    width: 200%;
-    left: 60%;
+    width: 75%;
+    margin-left: 13%;
   }
 }
 
@@ -2362,7 +2362,12 @@ img.omchange_client_logo_neg {
   .case_card_h2 {
     font-size: 40px;
   }
-}
+
+  .omchange_card_content {
+  height: 200px;
+  }
+
+  }
 
 /*========= Small devices () =========*/
 @media screen and (max-width: 420px) {
@@ -2447,6 +2452,22 @@ img.omchange_client_logo_neg {
 
   .case_card_h2 {
     font-size: 35px;
+  }
+
+  .omchange_card_content {
+  height: 200px;
+  }
+
+  .omchange_client_logo_neg {
+
+  }
+
+  .omchange_card_h3 {
+
+  }
+
+  .omchange_card_tags {
+    
   }
 }
 
