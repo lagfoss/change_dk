@@ -2121,6 +2121,11 @@ img.omchange_client_logo_neg {
     display: none;
    }
 
+   .case_strategi_img img {
+     width: 200px;
+     height: 200px;
+   }
+
   .test {
     min-height: 300px;
     width: 70%;
@@ -2267,6 +2272,11 @@ img.omchange_client_logo_neg {
     height: 500px;
   }
 
+  .case_strategi_img img {
+    width: 150px;
+    height: 150px;
+  }
+
   .rekru_content, .brand_content {
     max-width: 100%;
   }
@@ -2298,6 +2308,11 @@ img.omchange_client_logo_neg {
 
   .test {
     margin-right: 30%;
+  }
+
+  .case_strategi_img img {
+    width: 255px;
+    height: 255px;
   }
 
   .iphone_wrapper {
