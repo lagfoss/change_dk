@@ -95,7 +95,7 @@
 	                  <div class="row" href="<?php the_permalink(); ?>">
 												<div class="col-lg-4 test">
 												<p style="font-weight: 500;">CASE:</p>
-												<h3 class="ranierenklaphat"><?php the_field('case_headline');?></h3>
+												<h3 class="forside_cases_header"><?php the_field('case_headline');?></h3>
 												<div class="cat"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
 												<p class="forside_cases_text">Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. <p>
 													<a class="forside_case_button" href="<?php the_permalink(); ?>">
