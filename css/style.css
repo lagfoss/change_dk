@@ -2146,7 +2146,7 @@ img.omchange_client_logo_neg {
   }
 
   .half_steps_img {
-    width: 100%;
+    min-width: 340px;
   }
 }
 
