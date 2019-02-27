@@ -2266,6 +2266,16 @@ img.omchange_client_logo_neg {
 /*========= (620px and down) =========*/
 @media screen and (max-width: 620px) {
 
+  .case_some_half {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    float: none;
+  }
+
+  .case_some_empty {
+    display: none;
+  }
+
   .test {
     margin-right: 30%;
   }
