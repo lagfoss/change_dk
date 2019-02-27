@@ -120,6 +120,25 @@ $(this).find(".case_img").fadeIn(1000);
     dots: false,
     items: 2,
     margin: 1,
+    responsive:{
+
+
+
+      993: {
+        items: 2,
+      },
+
+      621: {
+        items: 1,
+      },
+
+      320: {
+        items:1,
+        stagePadding: 5,
+        touchDrag: true,
+      }
+    }
+
   })
 
   var owl = $('.autowidth');

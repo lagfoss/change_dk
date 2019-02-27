@@ -106,40 +106,53 @@
   <div class="col-12 owl-carousel owl-theme carousel_om_change">
 
     <?php
-    $params = array('posts_per_page' => 4,'orderby' => 'menu_order',
-    'order' => 'ASC', 'post_type' => 'cases');
-    $query = new WP_Query($params);
-    ?>
-        <?php if ($query->have_posts()) : ?>
-            <?php while ($query->have_posts()) :
-              $query->the_post(); ?>
 
-                <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-                <div class="omchange_card_link col-3" href="<?php the_permalink(); ?>">
-                  <div class="omchange_card_content"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+      global $wp_query;
+      $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+      $args = array(
+     'post_type' => 'cases',
+     'posts_per_page' => 4,
+     'paged' => $paged,
+     'orderby' => 'publish_date',
+     'order' => 'DESC',
+      );
 
-                      <div class="">
-                      <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
-                      <img class="omchange_client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                      <?php endif; ?>
-                      </div>
+      $wp_query = new WP_Query($args);
+      while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
 
-                      <h3 class="omchange_card_h3"><?php the_field('case_headline');?></h3>
+      <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+        <a class="omchange_card_content" href="<?php the_permalink(); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
-                      <div class="omchange_category_wrapper">
-                        <div class="omchange_card_tags"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+            <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
+            <img class="omchange_client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <?php endif; ?>
 
-                        <?php the_category(); ?>
-                      </div>
-              </div></div>
+          <h2 class="omchange_card_h3"><?php the_field('case_headline');?></h2>
+
+          <div class="omchange_category_wrapper">
+          <div class="omchange_card_tags">
+            <?php
+            $posttags = get_the_tags();
+            if ($posttags) {
+              foreach($posttags as $tag) {
+                echo $tag->name . ' ';
+              }
+            }
+            ?> </div>
+
+          <div>
+            <?php
+            foreach((get_the_category()) as $category){
+              echo $category->name."<br>";
+            }
+            ?>
+          </div>
+
+
+
+          </div></a>
 
               <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>
-                  <?php else:  ?>
-
-                      <?php _e( 'No cases' ); ?>
-
-                        <?php endif; ?>
   </div>
 </div>
 

@@ -160,3 +160,15 @@ padding-left: 40px;
   float: left;
   margin: -130px 0px;
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .carousel_om_change .owl-nav .owl-next {
+    position: absolute;
+    right: 100px;
+  }
+
+  .carousel_om_change .owl-nav .owl-prev {
+    position: absolute;
+    left: 100px;
+  }
+}
