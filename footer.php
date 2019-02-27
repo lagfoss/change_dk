@@ -99,7 +99,7 @@ $(document).ready(function() {
     items: 1,
     dots: true,
     nav: false,
-    mouseDrag: false,
+    mouseDrag: true,
   })
 
   $('.hello').on('translate.owl.carousel', function(event) {

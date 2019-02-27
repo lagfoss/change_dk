@@ -103,6 +103,7 @@ h2 {
   font-size: 50px;
   line-height: 43px;
   letter-spacing: 0px;
+  opacity: 1;
 }
 
 h3 {
@@ -2061,6 +2062,14 @@ img.omchange_client_logo_neg {
   height: 30px;
   background-color: #e3e3e3;
   font-size: 13px;
+}
+
+
+/*========= Large devices (desktops/tablets, 1100px and down) =========*/
+@media screen and (max-width: 1100px) and (min-width: 993px) {
+  .iphone_wrapper {
+    left: -33px;
+  }
 }
 
 /*========= Large devices (desktops, 992px and down) =========*/
