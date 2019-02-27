@@ -129,14 +129,8 @@ $(this).find(".case_img").fadeIn(1000);
         items: 2,
       },
 
-      621: {
-        items: 1,
-      },
-
       320: {
-        items:1,
-        stagePadding: 5,
-        touchDrag: true,
+        items: 1,
       }
     }
 
