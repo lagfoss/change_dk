@@ -2071,6 +2071,13 @@ img.omchange_client_logo_neg {
   font-size: 13px;
 }
 
+/*========= Large devices (desktops/tablets, 1140px and down) =========*/
+@media screen and (max-width: 1140px) {
+  .rekru_content {
+    padding-left: 15px;
+  }
+}
+
 /*========= Large devices (desktops/tablets, 1100px and down) =========*/
 @media screen and (max-width: 1100px) and (min-width: 993px) {
   .iphone_wrapper {
@@ -2136,7 +2143,6 @@ img.omchange_client_logo_neg {
 
   .rekru_content {
     margin: auto;
-    padding-left: 15px;
     padding-right: 15px;
   }
 
