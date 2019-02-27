@@ -1317,6 +1317,7 @@ input {
   position: relative;
   overflow: hidden;
   width: 90%;
+  margin-left: 5%;
   height: 260px;
   display: flex;
   background-size: cover !important;
