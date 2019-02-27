@@ -118,8 +118,28 @@ $(this).find(".case_img").fadeIn(1000);
     navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
     slideby: 1,
     dots: false,
+    mouseDrag: false,
     items: 2,
-    margin: 1,
+    margin: 40,
+    responsive:{
+
+
+
+      993: {
+        items: 2,
+      },
+
+      621: {
+        items: 1,
+      },
+
+      320: {
+        items:1,
+        stagePadding: 5,
+        touchDrag: true,
+      }
+    }
+
   })
 
   var owl = $('.autowidth');

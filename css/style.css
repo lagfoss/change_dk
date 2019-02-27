@@ -1315,8 +1315,9 @@ input {
 .omchange_card_content {
   position: relative;
   overflow: hidden;
-  width: 515px;
-  height: 250px;
+  width: 90%;
+  margin-left: 5%;
+  height: 260px;
   display: flex;
   background-size: cover !important;
   background-repeat: no-repeat;
@@ -2140,6 +2141,11 @@ img.omchange_client_logo_neg {
   .brand_content {
     margin-right: 20%;
   }
+
+  .omchange_card_content {
+    width: 200%;
+    left: 60%;
+  }
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -2261,6 +2267,11 @@ img.omchange_client_logo_neg {
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .omchange_card_content {
+    width: 200%;
+    left: 60%;
   }
 }
 

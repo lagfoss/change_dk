@@ -151,12 +151,19 @@ padding-left: 40px;
   margin-left: 100px;
 }
 
+.carousel_om_change .owl-stage-outer {
+  text-align: center;
+}
+
 .carousel_om_change .owl-nav .owl-next {
-  float: right;
-  margin: -130px 10px;
+  position: absolute;
+  bottom: 110px;
+  right: -9px;
+
 }
 
 .carousel_om_change .owl-nav .owl-prev {
-  float: left;
-  margin: -130px 0px;
+  position: absolute;
+ bottom: 110px;
+ left: -9px;
 }
