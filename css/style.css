@@ -1841,7 +1841,7 @@ img.omchange_client_logo_neg {
 }
 
 .case_some_ex:nth-of-type(even) .case_some_empty {
-  float: right;
+  display: none;
 }
 
 .prev::before {
