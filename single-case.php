@@ -177,7 +177,7 @@ Template Post Type: cases
                 </div>
               </div>
 
-              <div class="row justify-content-center">
+              <div class="row justify-content-center d-flex">
     <?php // check if the nested repeater field has rows of data
         	if( have_rows('case_some_example') ):
 			 	       // loop through the rows of data
@@ -263,7 +263,7 @@ Template Post Type: cases
                         <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
 
                        <?php endforeach; ?>
-                  </div> 
+                  </div>
 
                 </div>
               </div>

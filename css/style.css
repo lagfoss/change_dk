@@ -1815,7 +1815,7 @@ img.omchange_client_logo_neg {
 }
 
 .case_some_ex {
-
+  display: inline-block;
 }
 
 .case_some_ex img {
@@ -1825,13 +1825,12 @@ img.omchange_client_logo_neg {
 }
 
 .case_some_ex:nth-last-of-type(even) {
-  margin: 0 0 -15% 70%;
-  float: right;
+  margin-bottom: -15%;
+  align-self: flex-end;
 }
 
 .case_some_ex:nth-last-of-type(odd) {
-  margin: 0 70% 0 0;
-  float: left;
+  align-self: flex-start;
 }
 
 .prev::before {
