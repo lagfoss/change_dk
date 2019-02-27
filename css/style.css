@@ -2144,6 +2144,10 @@ img.omchange_client_logo_neg {
     width: 75%;
     margin-left: 13%;
   }
+
+  .half_steps_img {
+    min-width: 340px;
+  }
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
