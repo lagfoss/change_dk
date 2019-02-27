@@ -45,8 +45,8 @@
             ?>
             <div class="hover col-sm-4 wcwd_content">
                 <img class="wcwd_img" src="<?php echo $image; ?>" alt="" />
-                <h3><?php echo $header; ?></h3>
-                <p><?php echo $text; ?></p>
+                <h3 class="scroll_header"><?php echo $header; ?></h3>
+                <p class="scroll_text"><?php echo $text; ?></p>
             </div>
           <?php endwhile; ?>
           <div id="ydelser_contact" class="col-sm-4 wcwd_content">
@@ -86,16 +86,6 @@
       </div>
     </div>
 
-
-      <div class="container-fluid">
-        <div class="row komme_uden_om_det">
-          <h2 class="ydelser_main_content_overskrift"> <?php the_field('ydelser_main_content_overskrift') ?> </h2>
-          <p class="ydelser_main_content_text"> <?php the_field('ydelser_main_content_text') ?> </p>
-          <div class="stroke_position">
-            <div class="stroke"></div>
-          </div>
-      	</div>
-      </div>
 <?php get_footer(); ?>
 
 <script type="text/javascript">
@@ -140,8 +130,16 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.komme_uden_om_det', { distance: '250px' });
-ScrollReveal().reveal('.wcwd_content', { distance: '250px' });
-ScrollReveal().reveal('.logo_slider', { distance: '250px' });
+ScrollReveal().reveal('.ydelser_main_content_overskrift', { distance: '250px' });
+ScrollReveal().reveal('.ydelser_main_content_text', { distance: '350px' });
+ScrollReveal().reveal('.stroke', { distance: '350px' });
+ScrollReveal().reveal('.wcwd_img', { distance: '250px' });
+ScrollReveal().reveal('.scroll_header', { distance: '300px' });
+ScrollReveal().reveal('.scroll_text', { distance: '350px' });
+ScrollReveal().reveal('.ydelser_contact', { distance: '350px' });
+ScrollReveal().reveal('.ydelser_contact', { distance: '350px' });
+
+
+
 
 </script>
