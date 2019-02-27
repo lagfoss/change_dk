@@ -160,7 +160,6 @@ header {
   color: #111517;
 }
 
-
 .SoMe div {
   margin-left: 3.5%;
   margin-right: 3.5%;
@@ -779,6 +778,15 @@ input {
   min-height: 650px;
   z-index: 1;
   left: 80px;
+}
+
+.fixmig {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 50px;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: left;
+width: 900px;
 }
 
 .forside_cases_text {
