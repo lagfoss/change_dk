@@ -2104,6 +2104,10 @@ img.omchange_client_logo_neg {
     min-height: 850px;
   }
 
+  .know_us_dots {
+    display: none;
+  }
+
   .test {
     min-height: 300px;
     width: 70%;
@@ -2224,7 +2228,7 @@ img.omchange_client_logo_neg {
     height: 30px;
   }
 
- .ydelser_dots, .strategi_dots {
+ .ydelser_dots, .strategi_dots, .rekru_dots {
     display: none;
   }
 
