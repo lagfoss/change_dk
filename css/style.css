@@ -2455,7 +2455,9 @@ img.omchange_client_logo_neg {
   }
 
   .omchange_card_content {
-  height: 150px;
+    height: 150px;
+    width: 95%;
+    margin-left: 8px;
   }
 
   img.omchange_client_logo_neg {
