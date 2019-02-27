@@ -150,3 +150,13 @@ padding-left: 40px;
   bottom: 25%;
   margin-left: 100px;
 }
+
+.carousel_om_change .owl-nav .owl-next {
+  float: right;
+  margin: -130px 10px;
+}
+
+.carousel_om_change .owl-nav .owl-prev {
+  float: left;
+  margin: -130px 0px;
+}

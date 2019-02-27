@@ -188,6 +188,17 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
     items: 2,
     stagePadding: 50,
     responsive:{
+
+      1100: {
+        items: 2,
+        stagePadding: 50,
+      },
+
+      992: {
+        items: 2,
+        stagePadding: 15,
+      },
+
       621: {
         items: 2,
         touchDrag: true,
