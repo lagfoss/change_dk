@@ -2455,19 +2455,19 @@ img.omchange_client_logo_neg {
   }
 
   .omchange_card_content {
-  height: 200px;
+  height: 150px;
   }
 
-  .omchange_client_logo_neg {
-
+  img.omchange_client_logo_neg {
+    height: 20px;
   }
 
   .omchange_card_h3 {
-
+    font-size: 25px;
   }
 
   .omchange_card_tags {
-
+    font-size: 10px;
   }
 }
 
