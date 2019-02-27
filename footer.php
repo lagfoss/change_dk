@@ -119,7 +119,7 @@ $(this).find(".case_img").fadeIn(1000);
     slideby: 1,
     dots: false,
     items: 2,
-    margin: 30,
+    margin: 1,
   })
 
   var owl = $('.autowidth');
