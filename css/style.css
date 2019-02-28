@@ -1403,6 +1403,7 @@ img.omchange_client_logo_neg {
   line-height: 1;
   margin-top: 100px;
   margin-bottom: 50px;
+  max-width: 250px;
 }
 
 .team_stroke {
@@ -1418,9 +1419,9 @@ img.omchange_client_logo_neg {
 }
 
 .team_members_half {
+  justify-content: flex-end;
   width: 50%;
   margin-bottom: -20%;
-  float: right;
 }
 
 .team_members_empty {
@@ -1429,10 +1430,34 @@ img.omchange_client_logo_neg {
 }
 
 .team_members img {
-  width: 320px;
-  height: 390px;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
+}
+
+.team_name {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 24px;
+  display: flex;
+}
+
+.left {
+  display: inline-flex;
+}
+
+.right {
+  display: inline-flex;
+}
+
+.stroke_team {
+  height: 2px;
+  display: inline-flex;
+  flex-grow: 100;
+  background-color: #e54c00;
+  border-radius: 4px;
+  margin: 12px 10px;
 }
 
 .team_members:nth-of-type(odd) .team_members_half {
@@ -1652,20 +1677,20 @@ img.omchange_client_logo_neg {
 
 .cases_button {
   text-decoration: none;
-      position: absolute;
-      font-weight: 500;
-      padding: 12px 20px;
-      margin-top: 350px;
-      margin-left: 100px;
-      background-color: inherit;
-      border-color: black;
-      width: 175px;
-      height: 55px;
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 2px;
-      border-color: #111517;
-      z-index: 2;
+  position: absolute;
+  font-weight: 500;
+  padding: 12px 20px;
+  margin-top: 350px;
+  margin-left: 100px;
+  background-color: inherit;
+  border-color: black;
+  width: 175px;
+  height: 55px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #111517;
+  z-index: 2;
  }
 
  .pagination {
@@ -2359,6 +2384,39 @@ img.omchange_client_logo_neg {
   .steps_text {
     width: 100%;
   }
+
+  .team {
+    margin-top: 200px;
+    margin-bottom: 160px
+  }
+
+  .team h2 {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .team_stroke {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .team_members_half {
+    justify-content: center;
+  }
+
+  .team_members_empty {
+    width: 50%;
+    float: left;
+  }
+
 
   .case_goal, .case_strategi, .case_some_content, .case_results {
     width: 100%;
