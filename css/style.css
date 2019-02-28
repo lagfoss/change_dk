@@ -1398,6 +1398,7 @@ img.omchange_client_logo_neg {
   line-height: 1;
   margin-top: 100px;
   margin-bottom: 50px;
+  max-width: 250px;
 }
 
 .team_stroke {
@@ -1413,10 +1414,9 @@ img.omchange_client_logo_neg {
 }
 
 .team_members_half {
+  justify-content: flex-end;
   width: 50%;
   margin-bottom: -20%;
-  float: right;
-  right: 0;
 }
 
 .team_members_empty {
@@ -1672,20 +1672,20 @@ img.omchange_client_logo_neg {
 
 .cases_button {
   text-decoration: none;
-      position: absolute;
-      font-weight: 500;
-      padding: 12px 20px;
-      margin-top: 350px;
-      margin-left: 100px;
-      background-color: inherit;
-      border-color: black;
-      width: 175px;
-      height: 55px;
-      border-radius: 5px;
-      border-style: solid;
-      border-width: 2px;
-      border-color: #111517;
-      z-index: 2;
+  position: absolute;
+  font-weight: 500;
+  padding: 12px 20px;
+  margin-top: 350px;
+  margin-left: 100px;
+  background-color: inherit;
+  border-color: black;
+  width: 175px;
+  height: 55px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #111517;
+  z-index: 2;
  }
 
  .pagination {
@@ -2379,6 +2379,39 @@ img.omchange_client_logo_neg {
   .steps_text {
     width: 100%;
   }
+
+  .team {
+    margin-top: 200px;
+    margin-bottom: 160px
+  }
+
+  .team h2 {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .team_stroke {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .team_members_half {
+    justify-content: center;
+  }
+
+  .team_members_empty {
+    width: 50%;
+    float: left;
+  }
+
 
   .case_goal, .case_strategi, .case_some_content, .case_results {
     width: 100%;

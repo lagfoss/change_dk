@@ -37,7 +37,7 @@
 </div>
 
 <div class="container-fluid wrapper team">
-  <div class="row justify-content-between" id="steps">
+  <div class="row" id="steps">
     <div class="col-md-3">
       <h2><?php the_field('team_title'); ?></h2>
       <div class="stroke_position">
@@ -52,7 +52,7 @@
   			    while ( have_rows('team_members') ) : the_row(); ?>
               <div class="row team_members">
                 <div class="team_members_empty"></div>
-                <div class="d-flex justify-content-end team_members_half">
+                <div class="d-flex team_members_half">
                   <div class="col-11">
                     <img src="<?php the_sub_field('team_img'); ?>" />
                     <div class="row team_name">
