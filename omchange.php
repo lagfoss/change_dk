@@ -140,7 +140,7 @@
             }
             ?> </div>
 
-          <div>
+          <div class="omchange_card_categories">
             <?php
             foreach((get_the_category()) as $category){
               echo $category->name."<br>";
