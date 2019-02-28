@@ -830,7 +830,7 @@ input {
 .forside_case_button {
   display: flex;
   position: absolute;
-  top: 265px;
+  top: 300px;
   left: 0px;
   width: 175px;
   z-index: 2;
@@ -1140,6 +1140,17 @@ input {
   background-color: #e54c00;
   border-radius: 5px;
   margin: 15px 20px 15px 0;
+}
+
+.stroke_position_footer {
+  width: 100%;
+  height: 32px;
+  margin-bottom: 10px;
+  margin-left: 220px;
+}
+
+#card_content_case_footer {
+  margin: 0;
 }
 
 .steps_number {
@@ -2083,6 +2094,10 @@ img.omchange_client_logo_neg {
   .rekru_content {
     padding-left: 15px;
   }
+
+  .stroke_position_footer {
+    margin-left: 10%;
+  }
 }
 
 /*========= Large devices (desktops/tablets, 1100px and down) =========*/
@@ -2175,6 +2190,10 @@ img.omchange_client_logo_neg {
   .half_steps_img {
     min-width: 340px;
   }
+
+  .stroke_position_footer {
+    margin-left: 0;
+  }
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -2212,6 +2231,10 @@ img.omchange_client_logo_neg {
     text-align: center;
     min-height: 850px;
   }
+
+  .know_us_dots {
+    display: none;
+   }
 
   .test {
     min-height: 400px;
@@ -2301,6 +2324,10 @@ img.omchange_client_logo_neg {
   .omchange_card_content {
     width: 75%;
     margin-left: 13%;
+  }
+
+  .stroke_position_footer {
+    margin-left: 0;
   }
 }
 
