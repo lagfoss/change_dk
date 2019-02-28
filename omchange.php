@@ -15,20 +15,20 @@
       <div class="om_menu">
         <div class="row align-items-center">
             <?php if( get_field('box_process_image', 'option') ): ?>
-          <a href="#steps"><img class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
+          <a href="#steps"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
           <?php endif; ?><h3><?php the_field('box_process_title', 'option'); ?></h3></a>
 
             <?php if( get_field('box_team_image', 'option') ): ?>
-          <a href="<?php the_field('box_team_link', 'option'); ?>"><img class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
+          <a href="<?php the_field('box_team_link', 'option'); ?>"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
           <?php endif; ?><h3><?php the_field('box_team_title', 'option'); ?></h3></a>
 
             <?php if( get_field('box_job_image', 'option') ): ?>
-          <a href="<?php the_field('box_job_link', 'option'); ?>"><img class="om_menu_img" src=" <?php the_field('box_job_image', 'option'); ?>" />
+          <a href="<?php the_field('box_job_link', 'option'); ?>"><img alt="job" class="om_menu_img" src=" <?php the_field('box_job_image', 'option'); ?>" />
           <?php endif; ?><h3><?php the_field('box_job_title', 'option'); ?></h3></a>
 
           <div class="om_arrow_down">
             <?php if( get_field('button_down', 'option') ): ?>
-          <a href="#steps"><img class="omchange_calltoaction" src=" <?php the_field('button_down', 'option'); ?>" />
+          <a href="#steps"><img alt="calltoaction arrow" class="omchange_calltoaction" src=" <?php the_field('button_down', 'option'); ?>" />
             <?php endif; ?></a>
           </div>
         </div>
@@ -49,7 +49,7 @@
 
         <div id="steps" class="om_steps_content">
   				<div class="half steps_img">
-            <img src="<?php echo $stepsimage['url']; ?>"
+            <img alt="steps images" src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
       		<div class="half steps_text">
@@ -62,15 +62,15 @@
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<p><?php the_sub_field('steps_text'); ?></p>
             <a class="om_button" href="<?php the_sub_field('steps_link'); ?>"><?php the_sub_field('om_button_text'); ?> <?php if( get_sub_field('om_button_icon') ): ?>
-      			  <img src="<?php the_sub_field('om_button_icon'); ?>" />
+      			  <img alt="calltoaction arrow" src="<?php the_sub_field('om_button_icon'); ?>" />
       			<?php endif; ?></a>
       		</div>
       	</div>
         <div class="arrow_left">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
+          <img alt="steps guide left" src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
         </div>
         <div class="arrow_right">
-          <img src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
+          <img alt="steps guide right" src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
         </div>
       </div>
       <?php endwhile; ?>
@@ -81,10 +81,10 @@
   <div class="container-fluid om_quote">
     <div class="row wrapper">
         <div class="client_quote">
-        <img class="quote_img" src="<?php the_field('om_client_image'); ?>" />
+        <img alt="Jonathan Bornemann" class="quote_img" src="<?php the_field('om_client_image'); ?>" />
         <p class="quote orange">“<span class="black"><?php the_field('om_client_citat'); ?></span>”</p>
         <p class="quote_name"><?php the_field('om_client_name'); ?></p>
-        <img class="quote_logo" src="<?php the_field('om_client_logo'); ?>" />
+        <img alt="house of code" class="quote_logo" src="<?php the_field('om_client_logo'); ?>" />
       </div>
     </div>
   </div>

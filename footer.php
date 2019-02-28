@@ -8,7 +8,7 @@
   <a class="footer_button" href="<?php the_field('footer_button_url', 'option'); ?>"><?php the_field('footer_button_text', 'option'); ?>
 
   <?php if( get_field('footer_button_icon', 'option') ): ?>
-  <img class="" src="<?php the_field('footer_button_icon', 'option'); ?>" />
+  <img  alt="calltoaction arrow" src="<?php the_field('footer_button_icon', 'option'); ?>" />
   <?php endif; ?></a>
   </div>
   <!-- Need a successfull project slut -->
@@ -72,7 +72,7 @@
 
 </footer>
 
-<script type="text/javascript">
+<script>
 
 $(document).ready(function() {
   $('.whitebg .logoimg').attr('src', '<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg');
@@ -178,6 +178,3 @@ ScrollReveal().reveal('.contact_footer', { distance: '250px' });
 </body>
 
 </html>
-
-
-<?php wp_footer(); ?>
