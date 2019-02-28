@@ -38,27 +38,26 @@
 
 <div class="container-fluid wrapper team">
   <div class="row" id="steps">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <h2><?php the_field('team_title'); ?></h2>
       <div class="stroke_position">
         <div class="team_stroke"></div>
       </div>
       <p class="gray"><?php the_field('team_text'); ?></p>
     </div>
-    <div class="col-md-8 team_members">
+    <div class="col-md-9">
       <?php // check if the nested repeater field has rows of data
           if( have_rows('team_members') ):
   			 	  // loop through the rows of data
   			    while ( have_rows('team_members') ) : the_row(); ?>
-              <div class="row case_some_ex">
-                <div class="case_some_empty"></div>
-                <div class="case_some_half">
+              <div class="row team_members">
+                <div class="team_members_empty"></div>
+                <div class="team_members_half">
                   <img src="<?php the_sub_field('team_img'); ?>" />
                   <div class="row stroke_position_case">
                     <p><?php the_sub_field('team_number'); ?></p>
                     <div class="stroke_case"></div>
                     <p><?php the_sub_field('team_name'); ?></p>
-                    <p class="pre_client"><?php echo $somexamptitle; ?></p>
                   </div>
                 </div>
               </div>

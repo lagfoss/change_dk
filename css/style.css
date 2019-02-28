@@ -1390,6 +1390,7 @@ img.omchange_client_logo_neg {
 
 .team {
   margin-top: 200px;
+  margin-bottom: 160px
 }
 
 .team h2 {
@@ -1405,6 +1406,36 @@ img.omchange_client_logo_neg {
   background-color: #e54c00;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.team_members {
+  width: 100%;
+}
+
+.team_members_half {
+  width: 50%;
+  margin-bottom: -20%;
+  float: right;
+}
+
+.team_members_empty {
+  width: 50%;
+  float: left;
+}
+
+.team_members img {
+  width: 320px;
+  height: 390px;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+}
+
+.team_members:nth-of-type(odd) .team_members_half {
+  float: left;
+}
+
+.team_members:nth-of-type(odd) .team_members_empty {
+  display: none;
 }
 
 /*========= TEAM slut =========*/
