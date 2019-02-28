@@ -1556,7 +1556,7 @@ img.omchange_client_logo_neg {
 
 .category_wrapper {
   list-style-type: none;
-  margin-top: 170px;
+  margin-top: 250px;
   padding-left: 6%;
   display: block;
   line-height: 1;
@@ -2115,7 +2115,7 @@ img.omchange_client_logo_neg {
   .forside_cases_header {
     text-align: center;
     width: auto;
-   }
+   } 
 
   .know_us_dots {
     display: none;
