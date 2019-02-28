@@ -70,4 +70,21 @@
   </div>
 </div>
 
+<!-- Slider med firma logoer (klienter?) -->
+  <div class="container-fluid">
+    <div class="row logo_slider">
+      <div class="col align-self-center">
+        <div class="owl-carousel owl-theme autoplay">
+          <?php
+          $images = get_field('firma_slider', 'option');
+          foreach ($images as $image):?>
+            <div>
+              <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+              </div>
+            <?php endforeach;?>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <?php get_footer(); ?>
