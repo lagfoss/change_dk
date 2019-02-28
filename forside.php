@@ -77,7 +77,7 @@
 
 	<!-- CASE SLIDER -->
 	<div class="wrapper_cases">
-		  <div class="col-11 owl-carousel hello owl-theme">
+		  <div class="col-11 owl-carousel forside_carousel_wrapper owl-theme">
 	    <?php
 	    $params = array(
 					 'post_type' => 'cases',
@@ -93,10 +93,10 @@
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 	                  <div class="row" href="<?php the_permalink(); ?>">
-												<div class="col-lg-4 test">
+												<div class="col-lg-4 forside_cases_wrapper">
 												<p style="font-weight: 500;">CASE:</p>
 												<h3 class="forside_cases_header"><?php the_field('case_headline');?></h3>
-												<div class="cat"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+												<div class="forside_cases_catergories"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
 												<p class="forside_cases_text">Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. <p>
 													<a class="forside_case_button" href="<?php the_permalink(); ?>">
 														<?php the_field('case_call_to_action_text') ?>
@@ -166,7 +166,7 @@
 					<p><?php the_field('wcwd_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd_content">
+			<div class="col-sm-4 wcwd_hover wcwd_content">
 					<?php if( get_field('brandstrategi_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('brandstrategi_img'); ?>" />
 					<?php endif; ?>
@@ -174,7 +174,7 @@
 					<p><?php the_field('brandstrategi_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd_content">
+			<div class="col-sm-4 wcwd_hover wcwd_content">
 				<?php if( get_field('kommunikationsdesign_img') ): ?>
 				<img class="wcwd_img" src="<?php the_field('kommunikationsdesign_img'); ?>" />
 				<?php endif; ?>
@@ -182,7 +182,7 @@
 				<p><?php the_field('kommunikationsdesign_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd_content">
+			<div class="col-sm-4 wcwd_hover wcwd_content">
 				<?php if( get_field('social_media_img') ): ?>
 				<img class="wcwd_img" src="<?php the_field('social_media_img'); ?>" />
 				<?php endif; ?>
@@ -190,7 +190,7 @@
 				<p><?php the_field('social_media_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd_content">
+			<div class="col-sm-4 wcwd_hover wcwd_content">
 					<?php if( get_field('pressemeddelelse_img') ): ?>
 					<img class="wcwd_img" src="<?php the_field('pressemeddelelse_img'); ?>" />
 					<?php endif; ?>
@@ -198,7 +198,7 @@
 					<p><?php the_field('pressemeddelelse_text'); ?></p>
 			</div>
 
-			<div class="col-sm-4 hover wcwd_content">
+			<div class="col-sm-4 wcwd_hover wcwd_content">
 				<?php if( get_field('kommunikationsstrategi_img') ): ?>
 				<img class="wcwd_img" src="<?php the_field('kommunikationsstrategi_img'); ?>" />
 				<?php endif; ?>
