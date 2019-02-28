@@ -36,12 +36,12 @@
   </div>
 </div>
 
-<div class="container-fluid wrapper">
+<div class="container-fluid wrapper team">
   <div class="row" id="steps">
     <div class="col-md-4">
-      <h2 class="h2_case"><?php the_field('team_title'); ?></h2>
-      <div class="row stroke_position_case">
-        <div class="stroke_case"></div>
+      <h2><?php the_field('team_title'); ?></h2>
+      <div class="stroke_position">
+        <div class="team_stroke"></div>
       </div>
       <p><?php the_field('team_text'); ?></p>
     </div>
