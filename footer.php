@@ -100,6 +100,7 @@ $(document).ready(function() {
     dots: true,
     nav: false,
     mouseDrag: true,
+    margin: 1,
   })
 
   $('.hello').on('translate.owl.carousel', function(event) {
