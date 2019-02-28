@@ -15,7 +15,7 @@
   		</div>
       <div class="col-sm-6">
         <a href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
-          <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
+          <img alt="calltoaction arrow" class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
           <?php endif; ?></a>
       </div>
   	</div>
@@ -44,7 +44,7 @@
             $text = get_sub_field('ydelser_text');
             ?>
             <div class="hover col-sm-4 wcwd_content">
-                <img class="wcwd_img" src="<?php echo $image; ?>" alt="" />
+                <img alt="ydelser billeder" class="wcwd_img" src="<?php echo $image; ?>"/>
                 <h3 class="scroll_header"><?php echo $header; ?></h3>
                 <p class="scroll_text"><?php echo $text; ?></p>
             </div>
@@ -60,7 +60,7 @@
               <a class="ydelser_button" href="<?php the_field('ydelser_contact_button_url');?>">
               <?php the_field('ydelser_contact_button_text'); ?>
               <?php if( get_field('ydelser_contact_button_arrow') ): ?>
-              <img class="1" src="<?php the_field('ydelser_contact_button_arrow'); ?>" />
+              <img alt="calltoaction arrow" src="<?php the_field('ydelser_contact_button_arrow'); ?>" />
               </a>
             <?php endif; ?>
           </div>

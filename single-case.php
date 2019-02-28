@@ -148,7 +148,7 @@ Template Post Type: cases
 			         while ( have_rows('case_strategi_box') ) : the_row(); ?>
 
                 <div class="case_strategi_img">
-                  <img src="<?php the_sub_field('case_strategi_icon'); ?>" />
+                  <img alt="strategi ikon" src="<?php the_sub_field('case_strategi_icon'); ?>" />
                 </div>
             <?php	       endwhile; ?>
 
@@ -191,7 +191,7 @@ Template Post Type: cases
                     <div class="stroke_case"></div>
                     <p class="pre_client"><?php echo $somexamptitle; ?></p>
                   </div>
-                  <img src="<?php the_sub_field('case_some_example_image'); ?>" />
+                  <img alt="social media" src="<?php the_sub_field('case_some_example_image'); ?>" />
                 </div>
                 </div>
             <?php	       endwhile; ?>
@@ -260,10 +260,10 @@ Template Post Type: cases
                 </div>
                 <div class="col-lg-7 align-items-center">
                   <div class="orange_square_case"></div>
-                  <div class=""> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone-empty.svg" alt=""> </div>
+                  <div> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone-empty.svg" alt="iphone"> </div>
                    <div id="info" class="owl-carousel slider owl-theme carousel_2 ">
                       <?php foreach( $brandgallery as $brandgallery ): ?>
-                        <img class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
+                        <img alt="brand image" class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
 
                        <?php endforeach; ?>
                   </div>
@@ -305,7 +305,7 @@ Template Post Type: cases
 <?php get_footer('case'); ?>
 
 
-<script type="text/javascript">
+<script>
 
 /* Logo transition script */
 $(window).scroll(function() {

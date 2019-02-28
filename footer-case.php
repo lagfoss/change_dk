@@ -3,7 +3,7 @@
 <a class="footer_button" href="<?php the_field('footer_button_url', 'option'); ?>"><?php the_field('footer_button_text', 'option'); ?>
 
 <?php if( get_field('footer_button_icon', 'option') ): ?>
-<img class="" src="<?php the_field('footer_button_icon', 'option'); ?>" />
+<img alt="calltoaction arrow" src="<?php the_field('footer_button_icon', 'option'); ?>" />
 <?php endif; ?></a>
 </div>
 
