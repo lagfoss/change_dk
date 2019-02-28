@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/qeh8rgu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery-3.3.1.min.js"></script>
-    </script><script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.modal.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.modal.min.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
@@ -64,7 +64,7 @@
     <nav>
       <div id="primaryNav">
          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
+        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="change logo"></a>
 
       <div class="container-fluid">
         <!-- <?php get_search_form(); ?> -->
@@ -78,7 +78,7 @@
           <div class="nav_wrapper">
 
             <a class="nav_logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-           <img class="nav_logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt=""></a>
+           <img class="nav_logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="change logo"></a>
 
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
@@ -88,7 +88,7 @@
               $value = get_field('job_available', 'option');
               ?>
               <?php  if( $value == true ) : ?>
-                <li class="nav_job"><a href="<?php the_field('job_link', 'option'); ?>"><?php the_field('job', 'option'); ?></a></li>
+                <div class="nav_job"><a href="<?php the_field('job_link', 'option'); ?>"><?php the_field('job', 'option'); ?></a></div>
               <?php else : ?>
                 <span></span>
               <?php endif; ?>
@@ -102,7 +102,7 @@
               $link = get_sub_field('some_url_nav', 'option');
               ?>
 
-              <li class="nav_some">
+              <div class="nav_some">
                 <?php if( $link ): ?>
                 <a href="<?php echo $link; ?>">
                   <?php endif; ?>
@@ -111,7 +111,7 @@
                 </a>
                 <?php endif; ?>
                 <?php echo $content; ?>
-              </li>
+              </div>
 
               <?php endwhile; ?>
             </div>
@@ -123,7 +123,7 @@
         </div>
       </div>
 
-        <script type="text/javascript">
+        <script>
 
         // Gør at header vises og forsvinder med scroll
         var header = $('.header'),

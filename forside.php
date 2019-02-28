@@ -13,7 +13,7 @@
 			<p class="hero_text white"><?php the_field('hero_text'); ?></p>
 
 			<a class="hero_button" href="<?php the_field('hero_button_url'); ?>"><?php the_field('hero_button_text'); ?> <?php if( get_field('calltoaction_arrow_right') ): ?>
-				<img class="1" src="<?php the_field('calltoaction_arrow_right'); ?>" />
+				<img alt="calltoaction arrow" src="<?php the_field('calltoaction_arrow_right'); ?>" />
 				<?php endif; ?></a>
 		</div>
 		</div>
@@ -30,7 +30,7 @@
 						<div class="col-2">
 						<a href="#modal" class="open-modal" rel="modal:open nofollow">
 							<?php if( get_field('showreel_icon') ): ?>
-							<img class="playcircle" src="<?php the_field('showreel_icon'); ?>" />
+							<img  alt="playbutton" class="playcircle" src="<?php the_field('showreel_icon'); ?>" />
 							<?php endif; ?>
 						</a>
 						</div>
@@ -59,7 +59,7 @@
 						$iframe = str_replace($src, $new_src, $iframe);
 
 						// add extra attributes to iframe html
-						$attributes = 'frameborder="0"';
+						$attributes = '';
 						$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 
 						// echo $iframe
@@ -92,7 +92,7 @@
 	                $query->the_post(); ?>
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-	                  <div class="row" href="<?php the_permalink(); ?>">
+	                  <div class="row">
 												<div class="col-lg-4 forside_cases_wrapper">
 												<p style="font-weight: 500;">CASE:</p>
 												<h3 class="forside_cases_header"><?php the_field('case_headline');?></h3>
@@ -100,7 +100,7 @@
 												<p class="forside_cases_text">Bacon ipsum dolor amet kevin buffalo landjaeger, short ribs ad lorem leberkas t-bone ullamco ut ipsum. <p>
 													<a class="forside_case_button" href="<?php the_permalink(); ?>">
 														<?php the_field('case_call_to_action_text') ?>
-														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="">
+														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="calltoaction arrow">
 													</a>
 											</div>
 
@@ -168,7 +168,7 @@
 
 			<div class="col-sm-4 wcwd_hover wcwd_content">
 					<?php if( get_field('brandstrategi_img') ): ?>
-					<img class="wcwd_img" src="<?php the_field('brandstrategi_img'); ?>" />
+					<img alt="brandstrategi" class="wcwd_img" src="<?php the_field('brandstrategi_img'); ?>" />
 					<?php endif; ?>
 					<h3><?php the_field('brandstrategi_header'); ?></h3>
 					<p><?php the_field('brandstrategi_text'); ?></p>
@@ -176,7 +176,7 @@
 
 			<div class="col-sm-4 wcwd_hover wcwd_content">
 				<?php if( get_field('kommunikationsdesign_img') ): ?>
-				<img class="wcwd_img" src="<?php the_field('kommunikationsdesign_img'); ?>" />
+				<img alt="kommunikationsdesign" class="wcwd_img" src="<?php the_field('kommunikationsdesign_img'); ?>" />
 				<?php endif; ?>
 				<h3><?php the_field('kommunikationsdesign_header'); ?></h3>
 				<p><?php the_field('kommunikationsdesign_text'); ?></p>
@@ -184,7 +184,7 @@
 
 			<div class="col-sm-4 wcwd_hover wcwd_content">
 				<?php if( get_field('social_media_img') ): ?>
-				<img class="wcwd_img" src="<?php the_field('social_media_img'); ?>" />
+				<img alt="social media" class="wcwd_img" src="<?php the_field('social_media_img'); ?>" />
 				<?php endif; ?>
 				<h3><?php the_field('social_media_header'); ?></h3>
 				<p><?php the_field('social_media_text'); ?></p>
@@ -192,7 +192,7 @@
 
 			<div class="col-sm-4 wcwd_hover wcwd_content">
 					<?php if( get_field('pressemeddelelse_img') ): ?>
-					<img class="wcwd_img" src="<?php the_field('pressemeddelelse_img'); ?>" />
+					<img alt="pressemeddelelse" class="wcwd_img" src="<?php the_field('pressemeddelelse_img'); ?>" />
 					<?php endif; ?>
 					<h3><?php the_field('pressemeddelelse_header'); ?></h3>
 					<p><?php the_field('pressemeddelelse_text'); ?></p>
@@ -200,7 +200,7 @@
 
 			<div class="col-sm-4 wcwd_hover wcwd_content">
 				<?php if( get_field('kommunikationsstrategi_img') ): ?>
-				<img class="wcwd_img" src="<?php the_field('kommunikationsstrategi_img'); ?>" />
+				<img alt="kommunikationsstrategi" class="wcwd_img" src="<?php the_field('kommunikationsstrategi_img'); ?>" />
 				<?php endif; ?>
 				<h3><?php the_field('kommunikationsstrategi_header'); ?></h3>
 				<p><?php the_field('kommunikationsstrategi_text'); ?></p>
@@ -209,7 +209,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<a class="wcwd_button" href="<?php the_field('wcwd_button_url'); ?>"><?php the_field('wcwd_button_text'); ?> <?php if( get_field('wcwd_button_icon') ): ?>
-			<img class="" src="<?php the_field('wcwd_button_icon'); ?>" />
+			<img alt="calltoaction arrow" src="<?php the_field('wcwd_button_icon'); ?>" />
 			<?php endif; ?></a>
 		</div>
 	</div>
@@ -256,7 +256,7 @@
 					<p><?php the_field('know_us_text'); ?></p>
 
 					<a class="know_button" href="<?php the_field('know_us_button_url'); ?>"><?php the_field('know_us_button_text'); ?> <?php if( get_field('know_us_button_icon') ): ?>
-					<img class="" src="<?php the_field('know_us_button_icon'); ?>" />
+					<img  alt="calltoaction arrow" src="<?php the_field('know_us_button_icon'); ?>" />
 					<?php endif; ?></a>
 			</div>
 		</div>
@@ -266,7 +266,7 @@
 <?php get_footer(); ?>
 
 
-<script type="text/javascript">
+<script>
 
 /* Logo transition script */
 $(window).scroll(function() {
@@ -350,3 +350,4 @@ ScrollReveal().reveal('.know_button', { distance: '350px' });
 ScrollReveal().reveal('.know_button img', { distance: '450px' });
 
 </script>
+ 

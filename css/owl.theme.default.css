@@ -13,7 +13,7 @@ button.owl.active:active, button.owl.active:focus  {
 }
 
 
-.hello .owl-carousel .animated {
+.forside_cases_wrapper .owl-carousel .animated {
   animation-duration: 50000000ms;
   animation-fill-mode: both;
 }
@@ -144,7 +144,7 @@ padding-left: 40px;
  letter-spacing: 3px;
 }
 
-.hello .owl-dots  {
+.forside_cases_wrapper .owl-dots  {
   margin-top: 10px;
   position: absolute;
   bottom: 25%;

@@ -35,7 +35,7 @@
         <a class="case_card_content" href="<?php the_permalink(); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
 
             <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
-            <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+            <img alt="client logo" class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
             <?php endif; ?>
 
           <h2 class="case_card_h2"><?php the_field('case_headline');?></h2>
