@@ -14,21 +14,21 @@
   	  </div>
       <div class="om_menu">
         <div class="row align-items-center">
-            <?php if( get_field('box_process_image') ): ?>
-          <a href="<?php the_field('box_process_link'); ?>"><img class="om_menu_img" src=" <?php the_field('box_process_image'); ?>" />
-          <?php endif; ?><h3><?php the_field('box_process_title'); ?></h3></a>
+            <?php if( get_field('box_process_image', 'option') ): ?>
+          <a href="#steps"><img class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
+          <?php endif; ?><h3><?php the_field('box_process_title', 'option'); ?></h3></a>
 
-            <?php if( get_field('box_team_image') ): ?>
-          <a href="<?php the_field('box_team_link'); ?>"><img class="om_menu_img" src=" <?php the_field('box_team_image'); ?>" />
-          <?php endif; ?><h3><?php the_field('box_team_title'); ?></h3></a>
+            <?php if( get_field('box_team_image', 'option') ): ?>
+          <a href="<?php the_field('box_team_link', 'option'); ?>"><img class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
+          <?php endif; ?><h3><?php the_field('box_team_title', 'option'); ?></h3></a>
 
-            <?php if( get_field('box_job_image') ): ?>
-          <a href="<?php the_field('box_job_link'); ?>"><img class="om_menu_img" src=" <?php the_field('box_job_image'); ?>" />
-          <?php endif; ?><h3><?php the_field('box_job_title'); ?></h3></a>
+            <?php if( get_field('box_job_image', 'option') ): ?>
+          <a href="<?php the_field('box_job_link', 'option'); ?>"><img class="om_menu_img" src=" <?php the_field('box_job_image', 'option'); ?>" />
+          <?php endif; ?><h3><?php the_field('box_job_title', 'option'); ?></h3></a>
 
-          <div class="arrow_down">
-            <?php if( get_field('call_to_action_intro') ): ?>
-          <a href="#steps"><img class="omchange_calltoaction" src=" <?php the_field('call_to_action_intro'); ?>" />
+          <div class="om_arrow_down">
+            <?php if( get_field('button_down', 'option') ): ?>
+          <a href="#steps"><img class="omchange_calltoaction" src=" <?php the_field('button_down', 'option'); ?>" />
             <?php endif; ?></a>
           </div>
         </div>

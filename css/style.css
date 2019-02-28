@@ -1058,10 +1058,10 @@ input {
   color: inherit;
 }
 
-.arrow_down {
+.om_arrow_down {
   position: absolute;
   bottom: -15px;
-  left: 85px;
+  left: 20%;
 }
 
 .omchange_calltoaction {
@@ -1364,10 +1364,16 @@ img.omchange_client_logo_neg {
   margin: 8% 16%;
 }
 
-
-
 /*========= OM CHANGE slut =========*/
+/*========= TEAM start =========*/
 
+.team_arrow_down {
+  position: absolute;
+  bottom: -15px;
+  left: 55%;
+}
+
+/*========= TEAM slut =========*/
 /*========= YDELSER start =========*/
 
 .background_img_ydelser {
@@ -2087,7 +2093,7 @@ img.omchange_client_logo_neg {
 }
 
 /*========= Large devices (desktops, 992px and down) =========*/
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 992px) {
   h1 {
     font-size: 83px;
   }
@@ -2217,7 +2223,7 @@ img.omchange_client_logo_neg {
   .forside_cases_header {
     text-align: center;
     width: auto;
-   } 
+   }
 
   .cat {
     text-align: inherit;
