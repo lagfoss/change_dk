@@ -14,7 +14,7 @@
         </div>
   		</div>
       <div class="col-sm-6">
-        <a class="" href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
+        <a href="#"> <?php if( get_field('calltoaction_hero_ydelser') ): ?>
           <img class="calltoaction_hero_ydelser" src="<?php the_field('calltoaction_hero_ydelser'); ?>" />
           <?php endif; ?></a>
       </div>
@@ -130,16 +130,20 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.ydelser_main_content_overskrift', { distance: '250px' });
-ScrollReveal().reveal('.ydelser_main_content_text', { distance: '350px' });
-ScrollReveal().reveal('.stroke', { distance: '350px' });
-ScrollReveal().reveal('.wcwd_img', { distance: '250px' });
-ScrollReveal().reveal('.scroll_header', { distance: '300px' });
-ScrollReveal().reveal('.scroll_text', { distance: '350px' });
-ScrollReveal().reveal('.ydelser_contact', { distance: '350px' });
-ScrollReveal().reveal('.ydelser_contact', { distance: '350px' });
-
-
-
+ScrollReveal().reveal('.stroke_position_ydelser', { distance: '450px' });
+ScrollReveal().reveal('.h1_hero_ydelser', { distance: '500px' });
+ScrollReveal().reveal('.calltoaction_hero_ydelser', { distance: '550px' });
+ScrollReveal().reveal('.ydelser_main_content_overskrift', { distance: '450px' });
+ScrollReveal().reveal('.ydelser_main_content_text', { distance: '650px' });
+ScrollReveal().reveal('.stroke', { distance: '550px' });
+ScrollReveal().reveal('.wcwd_img', { distance: '300px' });
+ScrollReveal().reveal('.scroll_header', { distance: '500px' });
+ScrollReveal().reveal('.scroll_text', { distance: '600px' });
+ScrollReveal().reveal('.ydelser_dots', { distance: '450px' });
+ScrollReveal().reveal('.stroke_ydelser', { distance: '450px' });
+ScrollReveal().reveal('h2', { distance: '450px' });
+ScrollReveal().reveal('.ydelser_button', { distance: '550px' });
+ScrollReveal().reveal('.1', { distance: '650px' });
+ScrollReveal().reveal('.logo_slider', { distance: '450px' });
 
 </script>
