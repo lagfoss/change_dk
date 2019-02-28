@@ -2115,7 +2115,7 @@ img.omchange_client_logo_neg {
   .forside_cases_header {
     text-align: center;
     width: auto;
-   } 
+   }
 
   .know_us_dots {
     display: none;
@@ -2213,6 +2213,11 @@ img.omchange_client_logo_neg {
     text-align: -webkit-center;
     margin-right: 20%;
   }
+
+  .forside_cases_header {
+    text-align: center;
+    width: auto;
+   } 
 
   .cat {
     text-align: inherit;
