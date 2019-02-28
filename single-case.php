@@ -93,7 +93,7 @@ Template Post Type: cases
               </div>
               <div class="col-sm-7 client_about">
                 <h2 class="h2_case"><?php echo $abouttitle; ?></h2>
-                <p><?php echo $about; ?></p>
+                <p class="client_text"><?php echo $about; ?></p>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ Template Post Type: cases
             <div class="wrapper">
               <div class="row case_strategi">
                 <h2 class="h2_case"><?php echo $strategititle; ?></h2>
-                <p><?php echo $strategitext; ?></p>
+                <p class="client_text"><?php echo $strategitext; ?></p>
               </div>
               <div class="row justify-content-center">
     <?php // check if the nested repeater field has rows of data
@@ -351,9 +351,17 @@ $(".close_case").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.wrapper', { distance: '250px' });
+
 ScrollReveal().reveal('.client_image', { distance: '250px' });
+ScrollReveal().reveal('.stroke_position_case', { distance: '250px' });
 ScrollReveal().reveal('.case_some_ex', { distance: '250px' });
+ScrollReveal().reveal('.case_link', { distance: '250px' });
 ScrollReveal().reveal('.rekru', { distance: '250px' });
 ScrollReveal().reveal('.brand', { distance: '250px' });
+ScrollReveal().reveal('.h2_case', { distance: '350px' });
+ScrollReveal().reveal('.client_logo', { distance: '450px' });
+ScrollReveal().reveal('.client_text', { distance: '450px' });
+ScrollReveal().reveal('.post-categories', { distance: '450px' });
+ScrollReveal().reveal('.goal_paragraf', { distance: '450px' });
+ScrollReveal().reveal('.case_strategi_img', { distance: '450px' });
 </script>
