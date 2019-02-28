@@ -1295,7 +1295,7 @@ input {
   position: absolute;
   margin-top: 85px;
   text-align: left;
-  margin-left: 8%;
+  margin-left: 10%;
   font-size: 34px;
   line-height: 1;
 }
@@ -1376,7 +1376,12 @@ input {
 
 img.omchange_client_logo_neg {
   height: 30px;
-  margin: 8% 16%;
+    margin: 6% 7%;
+}
+
+.omchange_card_categories {
+  text-align: left;
+  font-size: 12px;
 }
 
 /*========= OM CHANGE slut =========*/
@@ -2490,6 +2495,19 @@ img.omchange_client_logo_neg {
   height: 200px;
   }
 
+  .omchange_card_h3 {
+    margin-top: 70px;
+    margin-left: 10%;
+  }
+
+  .omchange_card_tags {
+    font-size: 10px;
+  }
+
+  .omchange_card_categories {
+    font-size: 10px;
+  }
+
   }
 
 /*========= Small devices () =========*/
@@ -2585,15 +2603,22 @@ img.omchange_client_logo_neg {
 
   img.omchange_client_logo_neg {
     height: 20px;
+    margin: 5% 6%;
   }
 
   .omchange_card_h3 {
     font-size: 25px;
+    margin-top: 55px;
   }
 
   .omchange_card_tags {
     font-size: 10px;
   }
+
+    .h1_case {
+      font-size: 35px;
+    }
+
 }
 
 /*========= Tiny devices () =========*/
@@ -2692,6 +2717,8 @@ img.omchange_client_logo_neg {
   .case_down {
     margin-top: 25px;
   }
+
+
 }
 
 /*========= Height of devices =========*/
