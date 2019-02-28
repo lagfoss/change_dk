@@ -43,7 +43,7 @@
       <div class="stroke_position">
         <div class="team_stroke"></div>
       </div>
-      <p><?php the_field('team_text'); ?></p>
+      <p class="gray"><?php the_field('team_text'); ?></p>
     </div>
     <div class="col-md-8 team_members">
       <?php // check if the nested repeater field has rows of data
