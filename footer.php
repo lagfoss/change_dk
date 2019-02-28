@@ -94,7 +94,7 @@ $(document).ready(function() {
       dots:false
   });
 
-  var owl = $('.hello');
+  var owl = $('.forside_carousel_wrapper');
   owl.owlCarousel({
     items: 1,
     dots: true,
@@ -103,11 +103,11 @@ $(document).ready(function() {
     margin: 1,
   })
 
-  $('.hello').on('translate.owl.carousel', function(event) {
+  $('.forside_carousel_wrapper').on('translate.owl.carousel', function(event) {
     $(this).find(".case_img").hide();
 });
 
- $('.hello').on('translated.owl.carousel', function(event) {
+ $('.forside_carousel_wrapper').on('translated.owl.carousel', function(event) {
 $(this).find(".case_img").fadeIn(1000);
 });
 
