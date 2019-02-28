@@ -122,7 +122,7 @@ Template Post Type: cases
                 </div>
                 <div class="goal_text">
                   <h2 class="h2_case"><?php echo $goaltitle; ?></h2>
-                  <p><?php echo $goaltext; ?></p>
+                  <p class="client_text"><?php echo $goaltext; ?></p>
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@ Template Post Type: cases
                 </div>
                 <div class="case_some_text">
                   <h2 class="h2_case"><?php echo $sometitle; ?></h2>
-                  <p><?php echo $sometext; ?></p>
+                  <p class="client_text"><?php echo $sometext; ?></p>
                 </div>
               </div>
 
@@ -221,7 +221,7 @@ Template Post Type: cases
                     </div>
                     <div class="rekru_text">
                       <h2 class="h2_case"><?php echo $rekrutitle; ?></h2>
-                      <p><?php echo $rekrutext; ?></p>
+                      <p class="client_text"><?php echo $rekrutext; ?></p>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ Template Post Type: cases
                     </div>
                     <div class="rekru_text">
                       <h2 class="h2_case"><?php echo $brandtitle; ?></h2>
-                      <p><?php echo $brandtext; ?></p>
+                      <p class="client_text"><?php echo $brandtext; ?></p>
                       <div id="customNav"></div>
                       <div class="slider-counter">
 
@@ -356,12 +356,9 @@ ScrollReveal().reveal('.client_image', { distance: '250px' });
 ScrollReveal().reveal('.stroke_position_case', { distance: '250px' });
 ScrollReveal().reveal('.case_some_ex', { distance: '250px' });
 ScrollReveal().reveal('.case_link', { distance: '250px' });
-ScrollReveal().reveal('.rekru', { distance: '250px' });
-ScrollReveal().reveal('.brand', { distance: '250px' });
 ScrollReveal().reveal('.h2_case', { distance: '350px' });
 ScrollReveal().reveal('.client_logo', { distance: '450px' });
-ScrollReveal().reveal('.client_text', { distance: '450px' });
+ScrollReveal().reveal('p', { distance: '450px' });
 ScrollReveal().reveal('.post-categories', { distance: '450px' });
-ScrollReveal().reveal('.goal_paragraf', { distance: '450px' });
 ScrollReveal().reveal('.case_strategi_img', { distance: '450px' });
 </script>
