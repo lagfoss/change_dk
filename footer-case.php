@@ -14,10 +14,15 @@
 <div class="row flex">
   <div class="flex_wrapper next_case">
 
+    <div class="row stroke_position_footer">
+      <div class="stroke_case"></div>
+      <p class="pre_client">NEXT CASE</p>
+    </div>
+
     <?php $next_post = get_adjacent_post(false, '', false); ?>
     <?php if ( !empty($next_post) ) {  ?>
     <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
-      <a class="case_card_content" href="<?php echo get_permalink( $next_post->ID ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+      <a id="card_content_case_footer" class="case_card_content" href="<?php echo get_permalink( $next_post->ID ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
             <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
               <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
             <?php endif; ?>
