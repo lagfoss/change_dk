@@ -2412,12 +2412,6 @@ img.omchange_client_logo_neg {
     justify-content: center;
   }
 
-  .team_members_empty {
-    width: 50%;
-    float: left;
-  }
-
-
   .case_goal, .case_strategi, .case_some_content, .case_results {
     width: 100%;
   }
@@ -2533,6 +2527,15 @@ img.omchange_client_logo_neg {
     width: 380px;
   }
 
+  .team_members_half {
+    width: 70%;
+    margin: auto;
+  }
+
+  .team_members_empty {
+    display: none;
+  }
+
   .nav_wrapper {
     margin-left: 50%;
   }
@@ -2565,8 +2568,7 @@ img.omchange_client_logo_neg {
   .omchange_card_categories {
     font-size: 10px;
   }
-
-  }
+}
 
 /*========= Small devices () =========*/
 @media screen and (max-width: 420px) {
@@ -2611,6 +2613,10 @@ img.omchange_client_logo_neg {
 
   .forside_cases_wrapper .forside_cases_catergories {
     font-size: 12px;
+  }
+
+  .team_members_half {
+    width: 90%;
   }
 
   .case_img {
