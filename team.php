@@ -37,7 +37,7 @@
 </div>
 
 <div class="container-fluid wrapper team">
-  <div class="row" id="steps">
+  <div class="row justify-content-between" id="steps">
     <div class="col-md-3">
       <h2><?php the_field('team_title'); ?></h2>
       <div class="stroke_position">
@@ -52,12 +52,14 @@
   			    while ( have_rows('team_members') ) : the_row(); ?>
               <div class="row team_members">
                 <div class="team_members_empty"></div>
-                <div class="team_members_half">
-                  <img src="<?php the_sub_field('team_img'); ?>" />
-                  <div class="row stroke_position_case">
-                    <p><?php the_sub_field('team_number'); ?></p>
-                    <div class="stroke_case"></div>
-                    <p><?php the_sub_field('team_name'); ?></p>
+                <div class="d-flex justify-content-end team_members_half">
+                  <div class="col-11">
+                    <img src="<?php the_sub_field('team_img'); ?>" />
+                    <div class="row team_name">
+                      <h3 class="left"><?php the_sub_field('team_number'); ?></h3>
+                      <div class="stroke_team"></div>
+                      <h3 class="right"><?php the_sub_field('team_name'); ?></h3>
+                    </div>
                   </div>
                 </div>
               </div>

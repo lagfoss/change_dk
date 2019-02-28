@@ -1416,6 +1416,7 @@ img.omchange_client_logo_neg {
   width: 50%;
   margin-bottom: -20%;
   float: right;
+  right: 0;
 }
 
 .team_members_empty {
@@ -1424,10 +1425,34 @@ img.omchange_client_logo_neg {
 }
 
 .team_members img {
-  width: 320px;
-  height: 390px;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
+}
+
+.team_name {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 24px;
+  display: flex;
+}
+
+.left {
+  display: inline-flex;
+}
+
+.right {
+  display: inline-flex;
+}
+
+.stroke_team {
+  height: 2px;
+  display: inline-flex;
+  flex-grow: 100;
+  background-color: #e54c00;
+  border-radius: 4px;
+  margin: 12px 10px;
 }
 
 .team_members:nth-of-type(odd) .team_members_half {
