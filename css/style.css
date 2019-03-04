@@ -2764,7 +2764,7 @@ img.omchange_client_logo_neg {
 }
 
 /*========= Height of devices =========*/
-@media screen and (min-width: 568px) and (max-height: 660px) {
+@media screen and (min-width: 768px) and (max-height: 660px) {
 
   .hero_info {
     margin-top: 150px;
