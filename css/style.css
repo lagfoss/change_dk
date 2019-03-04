@@ -1093,18 +1093,17 @@ input {
 
 .arrow_left {
   position: absolute;
-  width: 30%;
-  margin-left: 35%;
-  bottom: 0;
+  width: 20%;
+  margin-left: 40%;
+  bottom: -60px;
   z-index: -1;
 }
 
 .arrow_right {
   position: absolute;
-  width: 30%;
-  right: 0;
-  margin-right: 35%;
-  bottom: 0;
+  width: 20%;
+  margin-left: 35%;
+  bottom: -60px;
   z-index: -1;
 }
 
