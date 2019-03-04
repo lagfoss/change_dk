@@ -182,6 +182,13 @@ padding-left: 40px;
    left: 10px;
   }
 
+  .wrapper_cases .forside_carousel_wrapper .owl-dots  {
+    margin-top: 10px;
+    position: inherit;
+    bottom: 0;
+    margin-left: 0;
+  }
+
   }
 
   @media screen and (max-width: 767px) {
@@ -198,6 +205,15 @@ padding-left: 40px;
      left: 10px;
     }
 
+    .wrapper_cases .forside_carousel_wrapper .owl-dots  {
+      margin-top: 10px;
+      position: inherit;
+      bottom: 0;
+      margin-left: 0;
+    }
+
+   }
+
     @media screen and (max-width: 575px) {
       .carousel_om_change .owl-nav .owl-next {
         position: absolute;
@@ -211,8 +227,6 @@ padding-left: 40px;
        bottom: 85px;
        left: 10px;
       }
-
-
 
 }
 

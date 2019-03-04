@@ -2728,6 +2728,10 @@ img.omchange_client_logo_neg {
   .case_card_h2 {
     font-size: 30px;
   }
+
+  .wrapper_cases .row {
+    min-height: 960px;
+  }
 }
 
 /*========= Height of devices =========*/
