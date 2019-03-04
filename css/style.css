@@ -2681,6 +2681,10 @@ img.omchange_client_logo_neg {
     font-size: 10px;
   }
 
+  .omchange_category_wrapper {
+    padding: 6px 7%;
+  }
+
     .h1_case {
       font-size: 35px;
     }

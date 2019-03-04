@@ -109,6 +109,8 @@ $(document).ready(function() {
 $(this).find(".case_img").fadeIn(1000);
 });
 
+
+
   var templateDir = "<?php bloginfo('template_directory') ?>";
 
   var owl = $('.carousel_om_change');
