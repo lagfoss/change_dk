@@ -97,6 +97,8 @@ $(document).ready(function() {
     dots: true,
     nav: false,
     mouseDrag: true,
+    autoplaySpeed: 2000,
+    autoplayTimeout: 10000,
     margin: 1,
     autoplay: true,
   })
@@ -121,6 +123,7 @@ $(this).find(".case_img").fadeIn(1000);
     dots: false,
     mouseDrag: false,
     autoplay: true,
+    autoplaySpeed: 5000,
     items: 2,
     margin: 40,
     responsive:{
