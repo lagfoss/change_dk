@@ -1919,11 +1919,8 @@ img.omchange_client_logo_neg {
 }
 
 .case_some_text img {
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   width: 45px;
   height: auto;
-  padding: 5px;
 }
 
 .case_some_ex {
@@ -1932,7 +1929,7 @@ img.omchange_client_logo_neg {
 
 .case_some_half {
   width: 45%;
-  margin-bottom: -15%;
+  margin-bottom: -65%;
   float: right;
 }
 
@@ -1943,8 +1940,6 @@ img.omchange_client_logo_neg {
 
 .case_some_ex img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
 
 .case_some_ex:nth-of-type(even) .case_some_half {
