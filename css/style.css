@@ -1367,6 +1367,8 @@ input {
 
 .omchange_card_content:hover {
   box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
+  text-decoration: none;
+  color: white;
   transform: scale(0.97);
   text-decoration: none;
   -webkit-transform: scale(0.98);
@@ -2661,12 +2663,16 @@ img.omchange_client_logo_neg {
   }
 
   .omchange_card_h3 {
-    font-size: 25px;
+    font-size: 17px;
     margin-top: 55px;
   }
 
   .omchange_card_tags {
     font-size: 10px;
+  }
+
+  .omchange_category_wrapper {
+    padding: 6px 7%;
   }
 
     .h1_case {
@@ -2716,6 +2722,10 @@ img.omchange_client_logo_neg {
   .case_card_h2 {
     font-size: 30px;
   }
+
+  .wrapper_cases .row {
+    min-height: 960px;
+  }
 }
 
 /*========= Height of devices =========*/
@@ -2727,6 +2737,10 @@ img.omchange_client_logo_neg {
 
   .watchourshowreel {
     margin-top: 400px;
+  }
+
+  .omchange_category_wrapper {
+    padding: 4px 7%;
   }
 
 }
