@@ -307,7 +307,7 @@ nav {
   display: block;
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: #f2f2f2;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -326,7 +326,7 @@ nav {
 }
 
 .menubtn span {
-  top: 50%;
+  top: 53%;
   margin-top: -2px;
 }
 
@@ -1827,7 +1827,7 @@ img.omchange_client_logo_neg {
 }
 
 .client_cat ul {
-  display: flex;
+  display: block;
 }
 
 .client_cat li {
@@ -1986,7 +1986,7 @@ img.omchange_client_logo_neg {
 .rekru_video iframe,
 .rekru_video object,
 .rekru_video embed {
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }

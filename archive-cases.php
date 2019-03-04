@@ -54,7 +54,7 @@
           <div>
             <?php
             foreach((get_the_category()) as $category){
-              echo $category->name."<br>";
+              echo $category->name.", ";
             }
             ?>
           </div>

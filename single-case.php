@@ -227,7 +227,43 @@ Template Post Type: cases
                 </div>
                 <div class="col-lg-6">
                   <div class="rekru_video">
-                    <?php echo $rekruvideo; ?>
+                      <?php
+
+// get iframe HTML
+$iframe = get_sub_field('case_rekru_embed');
+
+
+// use preg_match to find iframe src
+preg_match('/src="(.+?)"/', $iframe, $matches);
+$src = $matches[1];
+
+
+// add extra params to iframe src
+$params = array(
+    'controls'    => 1,
+    'hd'        => 1,
+    'autohide'    => 0,
+    'autoplay'  => 1,
+    'mute'  => 1,
+    'showinfo' => 0,
+    'modestbranding' => 1,
+);
+
+$new_src = add_query_arg($params, $src);
+
+$iframe = str_replace($src, $new_src, $iframe);
+
+
+// add extra attributes to iframe html
+$attributes = 'frameborder="0"';
+
+$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+
+// echo $iframe
+echo $iframe;
+
+?>
                   </div>
                 </div>
               </div>

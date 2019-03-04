@@ -87,8 +87,9 @@ $(document).ready(function() {
   owl.owlCarousel({
       items:4,
       margin:10,
+      nav: true,
       autoplay:true,
-      dots:false
+      dots:false,
   });
 
   var owl = $('.forside_carousel_wrapper');
@@ -123,7 +124,7 @@ $(this).find(".case_img").fadeIn(1000);
     dots: false,
     mouseDrag: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 30000,
     items: 2,
     margin: 40,
     responsive:{
