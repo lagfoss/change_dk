@@ -77,10 +77,10 @@
       		</div>
       	</div>
         <div class="arrow_left">
-          <img alt="steps guide left" src="<?php echo get_bloginfo('template_directory'); ?>/images/step_3_arrow.svg">
+          <img alt="steps guide left" src="<?php echo get_bloginfo('template_directory'); ?>/images/stroke_om_os_1.svg">
         </div>
         <div class="arrow_right">
-          <img alt="steps guide right" src="<?php echo get_bloginfo('template_directory'); ?>/images/step_2_arrow.svg">
+          <img alt="steps guide right" src="<?php echo get_bloginfo('template_directory'); ?>/images/stroke_om_os.svg">
         </div>
       </div>
       <?php endwhile; ?>
