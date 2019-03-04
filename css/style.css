@@ -2212,7 +2212,7 @@ img.omchange_client_logo_neg {
     width: auto;
    }
 
-  .know_us_dots {
+  .know_us_dots, .rekru_dots {
     display: none;
    }
 
@@ -2311,10 +2311,6 @@ img.omchange_client_logo_neg {
     min-height: 850px;
   }
 
-  .know_us_dots {
-    display: none;
-   }
-
   .forside_cases_wrapper {
     min-height: 400px;
     width: 70%;
@@ -2360,7 +2356,7 @@ img.omchange_client_logo_neg {
     width: 100%;
   }
 
- .ydelser_dots, .strategi_dots, .rekru_dots {
+ .ydelser_dots, .strategi_dots {
     display: none;
   }
 
