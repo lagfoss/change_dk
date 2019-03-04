@@ -61,9 +61,19 @@
             </div>
       			<h2><?php the_sub_field('steps_title'); ?></h2>
       			<p><?php the_sub_field('steps_text'); ?></p>
-            <a class="om_button" href="<?php the_sub_field('steps_link'); ?>"><?php the_sub_field('om_button_text'); ?> <?php if( get_sub_field('om_button_icon') ): ?>
-      			  <img alt="calltoaction arrow" src="<?php the_sub_field('om_button_icon'); ?>" />
-      			<?php endif; ?></a>
+
+            <?php
+            if( get_field('learn_more_available'))
+              $test = get_field('learn_more_available');
+              ?>
+              <?php if( $test == true ) : ?>
+                <a class="om_button" href="<?php the_sub_field('steps_link'); ?>"><?php the_sub_field('om_button_text'); ?> <?php if( get_sub_field('om_button_icon') ): ?>
+                  <img alt="calltoaction arrow" src="<?php the_sub_field('om_button_icon'); ?>" />
+                <?php endif; ?></a>
+              <?php else : ?>
+                <span></span>
+              <?php endif; ?>
+
       		</div>
       	</div>
         <div class="arrow_left">

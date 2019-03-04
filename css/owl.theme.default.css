@@ -144,7 +144,7 @@ padding-left: 40px;
  letter-spacing: 3px;
 }
 
-.forside_cases_wrapper .owl-dots  {
+.wrapper_cases .forside_carousel_wrapper .owl-dots  {
   margin-top: 10px;
   position: absolute;
   bottom: 25%;

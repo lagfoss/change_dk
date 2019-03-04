@@ -86,11 +86,8 @@ $(document).ready(function() {
   var owl = $('.autoplay');
   owl.owlCarousel({
       items:4,
-      loop:true,
       margin:10,
       autoplay:true,
-      autoplayTimeout:4000,
-      autoplayHoverPause:true,
       dots:false
   });
 
@@ -101,6 +98,7 @@ $(document).ready(function() {
     nav: false,
     mouseDrag: true,
     margin: 1,
+    autoplay: true,
   })
 
   $('.forside_carousel_wrapper').on('translate.owl.carousel', function(event) {
@@ -120,6 +118,7 @@ $(this).find(".case_img").fadeIn(1000);
     slideby: 1,
     dots: false,
     mouseDrag: false,
+    autoplay: true,
     items: 2,
     margin: 40,
     responsive:{
@@ -128,9 +127,11 @@ $(this).find(".case_img").fadeIn(1000);
 
       993: {
         items: 2,
+        autoplay: true,
       },
 
       320: {
+        autoplay: true,
         items: 1,
       }
     }
@@ -140,6 +141,7 @@ $(this).find(".case_img").fadeIn(1000);
   var owl = $('.autowidth');
   owl.owlCarousel({
     autoWidth:true,
+    autoplay: true,
     rtl: true
 })
 
