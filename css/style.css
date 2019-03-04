@@ -970,6 +970,7 @@ input {
 .logo_slider img {
   height: 35px;
   margin: auto;
+  width: 100%;
 }
 
 /*========= Logo slider slut =========*/
@@ -2356,6 +2357,8 @@ img.omchange_client_logo_neg {
 
   .logo_slider img {
     height: 30px;
+    margin: auto;
+    width: 100%;
   }
 
  .ydelser_dots, .strategi_dots, .rekru_dots {
@@ -2506,6 +2509,8 @@ img.omchange_client_logo_neg {
 
   .logo_slider img {
     height: 20px;
+    padding: auto;
+    width: 100%;
   }
 
   .know_us_gallery img {
@@ -2724,7 +2729,7 @@ img.omchange_client_logo_neg {
   }
 
   .wrapper_cases .row {
-    min-height: 960px;
+    min-height: 990px;
   }
 }
 
