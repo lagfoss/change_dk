@@ -43,7 +43,7 @@
             $header = get_sub_field('ydelser_header');
             $text = get_sub_field('ydelser_text');
             ?>
-            <div class="hover col-sm-4 wcwd_content">
+            <div class="wcwd_hover col-sm-4 wcwd_content">
                 <img alt="ydelser billeder" class="wcwd_img" src="<?php echo $image; ?>"/>
                 <h3 class="scroll_header"><?php echo $header; ?></h3>
                 <p class="scroll_text"><?php echo $text; ?></p>
