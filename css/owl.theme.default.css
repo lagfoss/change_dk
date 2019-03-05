@@ -112,8 +112,8 @@ transform-style: flat!important;
 
 .carousel_2 .active.center + .active,.carousel_2 .active:first-child,.carousel_2 :not(.active) + .active{
   content: "";
-  height: 500px;
-  margin-top: -20px;
+  height: 605px;
+  margin-top: -60px;
   background: url('...images/iphone-empty.svg');
 }
 .carousel_2 .active.center .brand_img img{
@@ -124,14 +124,14 @@ transform-style: flat!important;
 }
 
 .carousel_2 .owl-stage {
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 #customNav .owl-next, .owl-prev {
 border: none;
 background: none;
 cursor: pointer;
-padding-left: 40px;
+padding-left: 50px;
 }
 
 .slider-counter {

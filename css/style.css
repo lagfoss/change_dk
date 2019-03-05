@@ -2010,9 +2010,9 @@ img.omchange_client_logo_neg {
 .iphone_wrapper {
   position: absolute;
   z-index: 2;
-  width: 338px;
-  left: 4px;
-  top: 8px;
+  width: 407px;
+  left: -45px;
+  top: 6px;
 }
 
 /*========= CASES branding slut =========*/
@@ -2183,9 +2183,9 @@ img.omchange_client_logo_neg {
 }
 
 /*========= Large devices (desktops/tablets, 1100px and down) =========*/
-@media screen and (max-width: 1100px) and (min-width: 993px) {
+@media screen and (max-width: 1104px) and (min-width: 993px) {
   .iphone_wrapper {
-    left: -33px;
+    left: 21px;
   }
 }
 
@@ -2267,6 +2267,10 @@ img.omchange_client_logo_neg {
   .orange_square_case {
     height: 106%;
     margin-top: -4px;
+  }
+
+  .iphone_wrapper {
+    left: -5px;
   }
 }
 
@@ -2433,6 +2437,10 @@ img.omchange_client_logo_neg {
     height: 106%;
     margin-top: -4px;
   }
+
+  .iphone_wrapper {
+    left: -10px;
+  }
 }
 
 /*========= (620px and down) =========*/
@@ -2455,10 +2463,6 @@ img.omchange_client_logo_neg {
   .case_strategi_img img {
     width: 255px;
     height: 255px;
-  }
-
-  .iphone_wrapper {
-    left: -40px;
   }
 }
 
@@ -2554,6 +2558,10 @@ img.omchange_client_logo_neg {
 
   .omchange_card_categories {
     font-size: 10px;
+  }
+
+  .iphone_wrapper {
+    left: -51px;
   }
 }
 
@@ -2673,6 +2681,18 @@ img.omchange_client_logo_neg {
     .h1_case {
       font-size: 35px;
     }
+
+  .brand_img {
+      height: 85%;
+    }
+
+  .iphone_wrapper {
+    width: 348px;
+  }
+
+  .orange_square_case {
+    height: 90%;
+  }
 
 }
 
