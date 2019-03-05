@@ -1424,6 +1424,7 @@ img.omchange_client_logo_neg {
   justify-content: flex-end;
   width: 50%;
   margin-bottom: -240px;
+  padding-left: 50px;
 }
 
 .team_members_empty {
@@ -1442,7 +1443,7 @@ img.omchange_client_logo_neg {
 .team_name {
   max-width: 320px;
   width: 90%;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-size: 24px;
   display: flex;
 }
@@ -2280,8 +2281,12 @@ img.omchange_client_logo_neg {
     left: -5px;
    }
 
+   .team_members_half {
+     padding-left: 20px;
+   }
+
   .team_name {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
 
   .case_down {
@@ -2546,8 +2551,13 @@ img.omchange_client_logo_neg {
   }
 
   .team_members_half {
-    width: 70%;
     margin: auto;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .team_members:nth-of-type(odd) .team_members_half {
+    float: none;
   }
 
   .team_members_empty {
@@ -2555,12 +2565,17 @@ img.omchange_client_logo_neg {
   }
 
   .team_members_half img {
-    width: 320px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
   }
 
   .team_name {
-    width: 320px;
+    width: 100%;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .nav_wrapper {
