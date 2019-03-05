@@ -53,7 +53,7 @@
               <div class="row team_members">
                 <div class="team_members_empty"></div>
                 <div class="d-flex team_members_half">
-                  <div class="col-11">
+                  <div class="col-12">
                     <img src="<?php the_sub_field('team_img'); ?>" />
                     <div class="row team_name">
                       <h3 class="left"><?php the_sub_field('team_number'); ?></h3>
