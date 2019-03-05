@@ -1787,7 +1787,8 @@ img.omchange_client_logo_neg {
 }
 
 .case_down {
-  margin-top: 100px;
+  margin-top: 70%;
+  margin-left: 40%;
   text-decoration: none;
   padding: 15px 20px;
   background-color: #f8f8f8;
@@ -2277,6 +2278,11 @@ img.omchange_client_logo_neg {
 
   .team_name {
     margin-bottom: 70px;
+  }
+
+  .case_down {
+      margin-top: 25px;
+      margin-left: auto;
   }
 }
 
@@ -2802,10 +2808,6 @@ img.omchange_client_logo_neg {
   .case_hero {
     padding-top: 150px;
   }
-
-  .case_down {
-    margin-top: 50px;
-  }
 }
 
 /*========= Height of devices =========*/
@@ -2818,10 +2820,6 @@ img.omchange_client_logo_neg {
 
   .hero_info {
     margin-top: 100px;
-  }
-
-  .case_down {
-    margin-top: 25px;
   }
 
 
@@ -2841,5 +2839,12 @@ img.omchange_client_logo_neg {
   }
   .hero_text {
     padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1012px) {
+  .case_down {
+    margin-top: 25px;
+    margin-left: auto;
   }
 }
