@@ -777,7 +777,6 @@ input {
   border-radius: 10px;
 }
 
-
 .forside_cases_wrapper {
   width: 450px;
   min-height: 650px;
@@ -1767,7 +1766,7 @@ img.omchange_client_logo_neg {
 /*========= CASES hero start =========*/
 
 .case_hero {
-  padding-top: 200px;
+  margin-top: 20%;
 }
 
 .stroke_position_case {
@@ -1790,8 +1789,7 @@ img.omchange_client_logo_neg {
 }
 
 .case_down {
-  margin-top: 70%;
-  margin-left: 40%;
+  margin-top: 90%;
   text-decoration: none;
   padding: 15px 20px;
   background-color: #f8f8f8;
@@ -1826,7 +1824,7 @@ img.omchange_client_logo_neg {
   box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 }
 
-.client_text {
+.client_text, .client_cat {
   font-size: 19px;
   padding-top: 20px;
 }
@@ -2843,10 +2841,6 @@ img.omchange_client_logo_neg {
 
   .watchourshowreel {
     margin-top: 280px;
-  }
-
-  .case_hero {
-    padding-top: 150px;
   }
 }
 
