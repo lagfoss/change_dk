@@ -1164,7 +1164,7 @@ input {
 
 .steps_text {
   width: 50%;
-  padding: 30px;
+  padding: 100px 30px;
 }
 
 .steps_text h2 {
@@ -2260,6 +2260,10 @@ img.omchange_client_logo_neg {
 
   .half_steps_img {
     min-width: 340px;
+  }
+
+  .steps_text {
+    padding-top: 75px;
   }
 
   .stroke_position_footer {
