@@ -104,7 +104,7 @@ $(document).ready(function() {
     autoplayTimeout: 10000,
     margin: 1,
     autoplay: true,
-  })
+  });
 
   $('.forside_carousel_wrapper').on('translate.owl.carousel', function(event) {
     $(this).find(".case_img").hide();
