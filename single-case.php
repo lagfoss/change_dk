@@ -27,22 +27,19 @@ Template Post Type: cases
 
         <div class="hero" <?php echo $hero_bg; ?>>
           <div class="container-fluid wrapper">
-              <div class="row">
-            <div class="case_hero">
-              <div class="col-md-6">
-              <div class="stroke_position_case">
-                <div class="stroke_case"></div>
-                <p class="hero_client"><?php echo $heroname; ?></p>
+            <div class="row">
+              <div class="col-md-8 case_hero">
+                <div class="stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="hero_client"><?php echo $heroname; ?></p>
+                </div>
+                <h1 class="h1_case"><?php echo $clienttitle; ?></h1>
               </div>
-              <h1 class="h1_case"><?php echo $clienttitle; ?></h1>
-            </div>
-
-          </div>
-            <div class="col-md-6">
-              <a href="#">
-                <img class="case_down" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
-              </a>
-            </div>
+              <div class="col-md-4">
+                <a href="#">
+                  <img class="case_down" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
