@@ -124,7 +124,7 @@ $(this).find(".case_img").fadeIn(1000);
     dots: false,
     mouseDrag: false,
     autoplay: true,
-    autoplaySpeed: 30000,
+    autoplayTimeout: 30000,
     items: 2,
     margin: 40,
     responsive:{
