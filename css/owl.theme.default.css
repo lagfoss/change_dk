@@ -180,6 +180,8 @@ padding-left: 50px;
  left: -9px;
 }
 
+
+
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .carousel_om_change .owl-nav .owl-next {
     position: absolute;
