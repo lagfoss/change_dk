@@ -1789,7 +1789,7 @@ img.omchange_client_logo_neg {
 }
 
 .case_down {
-  margin-top: 70%;
+  margin-top: 90%;
   text-decoration: none;
   padding: 15px 20px;
   background-color: #f8f8f8;
@@ -2832,9 +2832,6 @@ img.omchange_client_logo_neg {
     margin-top: 280px;
   }
 
-  .case_hero {
-    padding-top: 150px;
-  }
 }
 
 /*========= Height of devices =========*/
