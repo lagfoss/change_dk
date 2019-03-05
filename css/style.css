@@ -783,7 +783,7 @@ input {
   min-height: 650px;
   z-index: 1;
   left: 80px;
-} 
+}
 
 .forside_cases_header {
   font-family: 'bebas-neue', sans-serif;
@@ -2238,6 +2238,17 @@ img.omchange_client_logo_neg {
     margin-left: 5%;
     min-height: 390px;
     width: 600px;
+    animation: slide_in 3s ease;
+  }
+
+  @@keyframes slide_in {
+    from {
+      right: -800px;
+    }
+    to {
+      right: 0px;
+    }
+
   }
 
   .forside_case_button {
