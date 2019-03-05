@@ -1423,7 +1423,7 @@ img.omchange_client_logo_neg {
 .team_members_half {
   justify-content: flex-end;
   width: 50%;
-  margin-bottom: -20%;
+  margin-bottom: -165px;
 }
 
 .team_members_empty {
@@ -1433,14 +1433,16 @@ img.omchange_client_logo_neg {
 
 .team_members img {
   max-width: 320px;
+  width: 90%;
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
 .team_name {
-  width: 100%;
-  margin-bottom: 25px;
+  max-width: 320px;
+  width: 90%;
+  margin-bottom: 50px;
   font-size: 24px;
   display: flex;
 }
@@ -2268,6 +2270,10 @@ img.omchange_client_logo_neg {
     height: 106%;
     margin-top: -4px;
   }
+
+  .team_name {
+    margin-bottom: 70px;
+  }
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -2521,6 +2527,15 @@ img.omchange_client_logo_neg {
 
   .team_members_empty {
     display: none;
+  }
+
+  .team_members_half img {
+    width: 320px;
+  }
+
+  .team_name {
+    width: 320px;
+    margin-bottom: 50px;
   }
 
   .nav_wrapper {
