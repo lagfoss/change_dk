@@ -777,6 +777,32 @@ input {
   border-radius: 10px;
 }
 
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 1000px;
+}
+
+#slide {
+    position: absolute;
+    right: -800px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+    right: 0;
+     }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}
+
 .forside_cases_wrapper {
   width: 450px;
   min-height: 650px;
