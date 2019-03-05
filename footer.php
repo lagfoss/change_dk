@@ -85,10 +85,12 @@ $(document).ready(function() {
 
   var owl = $('.autoplay');
   owl.owlCarousel({
-      items:4,
+      items: 3,
       margin:10,
       nav: true,
+      navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
       autoplay:true,
+      loop: true,
       dots:false,
   });
 

@@ -222,7 +222,7 @@
 						<?php
 						$images = get_field('firma_slider', 'option');
 						foreach ($images as $image):?>
-							<div>
+							<div class="wrapper">
 								<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
 						    </div>
 					    <?php endforeach;?>
@@ -350,4 +350,3 @@ ScrollReveal().reveal('.know_button', { distance: '350px' });
 ScrollReveal().reveal('.know_button img', { distance: '450px' });
 
 </script>
- 

@@ -134,6 +134,19 @@ cursor: pointer;
 padding-left: 50px;
 }
 
+.logo_slider .owl-prev {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+
+}
+
+.logo_slider .owl-next {
+  position: absolute;
+  top: -1px;
+  right: 0px;
+}
+
 .slider-counter {
   position: absolute;
   margin-left: 79px;
