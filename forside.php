@@ -103,12 +103,9 @@
 														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="calltoaction arrow">
 													</a>
 											</div>
-											<div class="wrapper">
 
 
 												<div id="slide" class="col-lg-8 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>
-
-</div>
 								</div>
 	                <?php endwhile; ?>
 	                  <?php wp_reset_postdata(); ?>
