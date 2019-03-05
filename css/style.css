@@ -777,13 +777,6 @@ input {
   border-radius: 10px;
 }
 
-.wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 800px;
-    height: 1000px;
-}
-
 #slide {
     position: absolute;
     right: -800px;
