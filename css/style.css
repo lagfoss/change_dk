@@ -2379,15 +2379,26 @@ img.omchange_client_logo_neg {
     font-size: 11vw;
   }
 
+  .half:nth-of-type(odd), .half:nth-of-type(even),
+  .om_steps:nth-of-type(even) .steps_img, .om_steps:nth-of-type(even) .steps_text {
+    float: none;
+  }
+
+  .arrow_right, .arrow_left {
+    display: none;
+  }
+
   .steps_img {
-    width: 100%;
+    width: 80%;
   }
   .steps_img img {
     width: 100%;
+    margin: auto;
   }
 
   .steps_text {
     width: 100%;
+    padding: 30px;
   }
 
   .team {
