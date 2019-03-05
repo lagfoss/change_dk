@@ -196,29 +196,24 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
     stagePadding: 50,
     responsive:{
 
-      1105: {
+      1100: {
         items: 2,
-        stagePadding: 10,
+        stagePadding: 50,
       },
 
       992: {
-        items: 1,
-        stagePadding: 75,
+        items: 2,
+        stagePadding: 15,
       },
 
-      768: {
+      621: {
         items: 2,
         touchDrag: true,
       },
 
-      576: {
-        items: 1,
-        stagePadding: 45,
-      },
-
       320: {
-        items: 1,
-        stagePadding: 0,
+        items:1,
+        stagePadding: 5,
         touchDrag: true,
       }
     }
