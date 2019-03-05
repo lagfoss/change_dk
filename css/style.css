@@ -1423,7 +1423,7 @@ img.omchange_client_logo_neg {
 .team_members_half {
   justify-content: flex-end;
   width: 50%;
-  margin-bottom: -20%;
+  margin-bottom: -240px;
 }
 
 .team_members_empty {
@@ -1433,14 +1433,16 @@ img.omchange_client_logo_neg {
 
 .team_members img {
   max-width: 320px;
+  width: 90%;
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
 .team_name {
-  width: 100%;
-  margin-bottom: 25px;
+  max-width: 320px;
+  width: 90%;
+  margin-bottom: 50px;
   font-size: 24px;
   display: flex;
 }
@@ -2028,7 +2030,7 @@ img.omchange_client_logo_neg {
 
 .case_section {
   background-color: #f2f2f2;
-  margin-bottom: 600px;
+  margin-bottom: 100vh;
   position: relative;
   z-index: 3;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
@@ -2054,7 +2056,7 @@ img.omchange_client_logo_neg {
 }
 
 .next_case {
-  margin-bottom: 100px;
+  height: 100vh;
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
@@ -2271,6 +2273,10 @@ img.omchange_client_logo_neg {
 
   .iphone_wrapper {
     left: -5px;
+   }
+
+  .team_name {
+    margin-bottom: 70px;
   }
 }
 
@@ -2525,6 +2531,15 @@ img.omchange_client_logo_neg {
 
   .team_members_empty {
     display: none;
+  }
+
+  .team_members_half img {
+    width: 320px;
+  }
+
+  .team_name {
+    width: 320px;
+    margin-bottom: 50px;
   }
 
   .nav_wrapper {
