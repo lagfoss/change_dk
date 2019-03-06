@@ -106,17 +106,6 @@ $(document).ready(function() {
     autoplay: true,
   });
 
-  /*$('.forside_carousel_wrapper').on('translate.owl.carousel', function(event) {
-    $(this).find(".case_img").hide();
-});
-
- $('.forside_carousel_wrapper').on('translated.owl.carousel', function(event) {
-$(this).find(".case_img").fadeIn(1000);
-});*/
-
-
-
-  var templateDir = "<?php bloginfo('template_directory') ?>";
 
   var owl = $('.carousel_om_change');
   owl.owlCarousel({
