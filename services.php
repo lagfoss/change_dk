@@ -1,4 +1,4 @@
-<?php /* Template Name: Ydelser */ ?>
+<?php /* Template Name: Services */ ?>
 
 <?php get_header(); ?>
 
