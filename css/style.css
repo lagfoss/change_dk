@@ -2003,7 +2003,7 @@ img.omchange_client_logo_neg {
   left: 45%;
   opacity: .3;
   cursor: pointer;
-  transition: all 0.3s; 
+  transition: all 0.3s;
 }
 
 .start-video:hover
@@ -2118,6 +2118,8 @@ img.thumbnail
 
 .contact_intro {
   margin-top: 160px;
+  margin-left: auto;
+  padding-left: 15px;
 }
 
 .contact_intro h1 {
