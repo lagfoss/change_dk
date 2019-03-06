@@ -775,6 +775,7 @@ input {
   background-position: center !important;
   margin-bottom: 50px;
   border-radius: 10px;
+  transition-delay: 2s;
  }
 
 .forside_cases_wrapper {
