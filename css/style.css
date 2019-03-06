@@ -775,7 +775,7 @@ input {
   background-position: center !important;
   margin-bottom: 50px;
   border-radius: 10px;
-}
+ }
 
 .forside_cases_wrapper {
   width: 450px;
@@ -2236,18 +2236,7 @@ img.omchange_client_logo_neg {
     margin-left: 5%;
     min-height: 390px;
     width: 600px;
-    animation: slide_in 3s ease;
-  }
-
-  @@keyframes slide_in {
-    from {
-      right: -800px;
-    }
-    to {
-      right: 0px;
-    }
-
-  }
+ }
 
   .forside_case_button {
     position: inherit;

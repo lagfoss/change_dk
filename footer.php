@@ -106,13 +106,13 @@ $(document).ready(function() {
     autoplay: true,
   });
 
-  $('.forside_carousel_wrapper').on('translate.owl.carousel', function(event) {
+  /*$('.forside_carousel_wrapper').on('translate.owl.carousel', function(event) {
     $(this).find(".case_img").hide();
 });
 
  $('.forside_carousel_wrapper').on('translated.owl.carousel', function(event) {
 $(this).find(".case_img").fadeIn(1000);
-});
+});*/
 
 
 
