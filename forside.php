@@ -106,6 +106,8 @@
 
 
 												<div class="col-lg-8 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>
+
+
 								</div>
 	                <?php endwhile; ?>
 	                  <?php wp_reset_postdata(); ?>
