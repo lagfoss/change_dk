@@ -160,7 +160,7 @@ header {
   font-weight: 400;
 }
 
-.post-type-archive .SoMe {
+.post-type-archive .SoMe, .page-id-521 .SoMe {
   color: #111517;
 }
 
@@ -594,8 +594,9 @@ input {
 }*/
 
 .post-type-archive .menubtn:before, .post-type-archive .menubtn span,
-.post-type-archive .menubtn:after,
-.post-type-archive .pseudo_search:before {
+.post-type-archive .menubtn:after, .post-type-archive .pseudo_search:before,
+.page-id-521 .menubtn:before, .page-id-521 .menubtn span, .page-id-521 .menubtn:after,
+.page-id-521 .pseudo_search:before {
   background-color: #111517;
 }
 
@@ -2075,6 +2076,22 @@ img.omchange_client_logo_neg {
 /*========= CASES FOOTER slut =========*/
 /*========= CASES enkelt slut =========*/
 
+/*========= CONTACT start =========*/
+
+.contact_intro {
+  margin-top: 200px;
+}
+
+.contact_intro h1 {
+  font-size: 190px;
+  line-height: 0.89;
+}
+
+.contact_intro p {
+  margin-top: 100px;
+}
+
+/*========= CONTACT slut =========*/
 /*========= FOOTER =========*/
 
 .footer_project {
