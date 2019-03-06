@@ -2111,7 +2111,8 @@ img.thumbnail
 /*========= CONTACT start =========*/
 
 .contact {
-  
+  margin-left: auto;
+  padding-left: 15px;
 }
 
 .contact_intro {
@@ -2125,7 +2126,7 @@ img.thumbnail
 
 .stroke_position_contact {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .stroke_contact {
@@ -2134,11 +2135,11 @@ img.thumbnail
   float: right;
   background-color: #e54c00;
   border-radius: 5px;
-  margin: 15px 20px 15px 0;
+  margin: 0;
 }
 
 .contact_intro p {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .contact_img {
