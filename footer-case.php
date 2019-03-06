@@ -233,6 +233,12 @@ $(sync2).owlCarousel({
     current.addClass('current');
 });
 
+$(document).ready(function(){
+  $(".start-video").click(function(){
+    $(".start-video, .thumbnail_container").remove();
+  });
+});
+
 
 
 </script>
