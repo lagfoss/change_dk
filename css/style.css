@@ -2167,8 +2167,13 @@ img.thumbnail
   width: 100%;
 }
 
-.contact_form lable {
+.contact_form label {
   width: 100%;
+}
+
+.wpcf7-submit {
+  float: right;
+  max-width: 180px;
 }
 
 /*========= CONTACT slut =========*/
