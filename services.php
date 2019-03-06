@@ -5,14 +5,12 @@
   <div class="hero background_img_services" style="background-image:url(<?php the_field('background_img_services'); ?>);">
   <div class="container-fluid wrapper">
     <div class="row">
-  		<div class="col-sm-6">
-        <div class="hero_services">
-          <div class="stroke_position_services">
-            <div class="stroke_services"></div>
-          </div>
-          <h1 class="h1_hero_services"><?php the_field('h1_hero_services'); ?></h1>
+  		<div class="col-sm-6 hero_services">
+        <div class="stroke_position_services">
+          <div class="stroke_services"></div>
         </div>
-  		</div>
+        <h1 class="h1_hero_services"><?php the_field('h1_hero_services'); ?></h1>
+      </div>
       <div class="col-sm-6">
         <a href="#"> <?php if( get_field('calltoaction_hero_services') ): ?>
           <img alt="calltoaction arrow" class="calltoaction_hero_services" src="<?php the_field('calltoaction_hero_services'); ?>" />
