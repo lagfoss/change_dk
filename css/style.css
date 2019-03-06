@@ -1630,11 +1630,12 @@ img.omchange_client_logo_neg {
   transform: scale(0.97);
   text-decoration: none;
   color: #f2f2f2;
+  max-width: 897px;
+  min-height: 397px;
   -webkit-transform: scale(0.98);
   -moz-transform: scale(0.98);
   -o-transform: scale(0.98);
 }
-
 .client_logo_neg {
   margin-left: 6%;
   margin-top: 30px;
@@ -1994,6 +1995,37 @@ img.omchange_client_logo_neg {
   height: 350px;
   border-radius: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+}
+
+.start-video {
+  position: absolute;
+  top: 39%;
+  padding: 12px;
+  left: 45%;
+  opacity: .3;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.start-video:hover
+{
+    opacity: 1;
+    -webkit-filter: brightness (1);
+}
+
+div.thumbnail_container
+{
+  position: absolute;
+  width: 620px;
+  left: 0px;
+  height: 351px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+img.thumbnail
+{
+    opacity: 0.5;
 }
 
 /*========= CASES rekrutering slut =========*/

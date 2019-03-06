@@ -215,7 +215,9 @@ Template Post Type: cases
             $prerekru = get_sub_field('case_pre_rekrutering');
             $rekrutitle = get_sub_field('case_rekru_title');
             $rekrutext = get_sub_field('case_rekru_text');
-            $rekruvideo = get_sub_field('case_rekru_embed'); ?>
+            $rekruvideo = get_sub_field('case_rekru_embed');
+            $yt_thumbnail = get_sub_field('yt_thumbnail');
+            $yt_play_button = get_sub_field('yt_play_button');?>
 
             <div class="container-fluid">
               <div class="row rekru">
@@ -235,6 +237,11 @@ Template Post Type: cases
                 </div>
                 <div class="col-lg-6">
                   <div class="rekru_video">
+                    <div id="player"></div>
+                    <div id="thumbnail_container" class="thumbnail_container">
+                        <img src="<?php echo $yt_thumbnail ?>" class="thumbnail" id="thumbnail" />
+                    </div>
+                    <a class="start-video"><img width="64" src="<?php echo ('$yt_play_button') ?>" ></a>
                       <?php
 
 // get iframe HTML
@@ -251,7 +258,7 @@ $params = array(
     'controls'    => 1,
     'hd'        => 1,
     'autohide'    => 0,
-    'autoplay'  => 1,
+    'autoplay'  => 0,
     'mute'  => 1,
     'loop'  => 1,
     'rel' => 0,
