@@ -2,12 +2,12 @@
 
 <?php get_header(); ?>
 
-  <div class="hero background_img_ydelser" style="background-image:url(<?php the_field('omchange_hero'); ?>);">
+  <div class="hero background_img_services" style="background-image:url(<?php the_field('omchange_hero'); ?>);">
     <div class="container-fluid wrapper">
       <div class="row">
         <div class="hero_info">
-          <div class="stroke_position_ydelser">
-            <div class="stroke_ydelser"></div>
+          <div class="stroke_position_services">
+            <div class="stroke_services"></div>
           </div>
           <h1><?php the_field('om_hero_title'); ?></h1>
         </div>
@@ -210,7 +210,7 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.stroke_position_ydelser', { distance: '300px' });
+ScrollReveal().reveal('.stroke_position_services', { distance: '300px' });
 ScrollReveal().reveal('.hero_info h1', { distance: '400px' });
 ScrollReveal().reveal('.om_menu_img', { distance: '350px' });
 ScrollReveal().reveal('.om_menu a', { distance: '450px' });

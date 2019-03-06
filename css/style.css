@@ -160,7 +160,7 @@ header {
   font-weight: 400;
 }
 
-.post-type-archive .SoMe {
+.post-type-archive .SoMe, .page-id-521 .SoMe {
   color: #111517;
 }
 
@@ -438,7 +438,7 @@ nav {
 
 /*========= Nav slut =========*/
 /*========= Search form =========*/
-.search_form {
+/*.search_form {
   position: absolute;
   z-index: 1000;
   height: 20px;
@@ -540,11 +540,9 @@ input {
   transition-delay: 0.4s;
 }
 
-
 .pseudo_searchclose:after {
   background-color: #f2f2f2;
 }
-
 
 .active_searchclose:after {
   background-color: #111517;
@@ -593,11 +591,12 @@ input {
   -webkit-transform: translate(-100%, 0%);
   -ms-transform: translate(-100%, 0%);
   transform: translate(-100%, 0%);
-}
+}*/
 
 .post-type-archive .menubtn:before, .post-type-archive .menubtn span,
-.post-type-archive .menubtn:after,
-.post-type-archive .pseudo_search:before {
+.post-type-archive .menubtn:after, .post-type-archive .pseudo_search:before,
+.page-id-521 .menubtn:before, .page-id-521 .menubtn span, .page-id-521 .menubtn:after,
+.page-id-521 .pseudo_search:before {
   background-color: #111517;
 }
 
@@ -2109,6 +2108,36 @@ img.thumbnail
 /*========= CASES FOOTER slut =========*/
 /*========= CASES enkelt slut =========*/
 
+/*========= CONTACT start =========*/
+
+.contact_intro {
+  margin-top: 160px;
+}
+
+.contact_intro h1 {
+  font-size: 190px;
+  line-height: 0.89;
+}
+
+.stroke_position_contact {
+  width: 100%;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+.stroke_contact {
+  height: 2px;
+  width: 30px;
+  background-color: #e54c00;
+  border-radius: 5px;
+  margin: 15px 20px 15px 0;
+}
+
+.contact_intro p {
+  margin-top: 100px;
+}
+
+/*========= CONTACT slut =========*/
 /*========= FOOTER =========*/
 
 .footer_project {
