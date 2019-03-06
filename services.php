@@ -6,7 +6,7 @@
   <div class="container-fluid wrapper">
     <div class="row">
   		<div class="col-sm-6">
-        <div class="hero_info">
+        <div class="hero_services">
           <div class="stroke_position_ydelser">
             <div class="stroke_ydelser"></div>
           </div>

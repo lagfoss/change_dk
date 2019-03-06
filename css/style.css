@@ -1475,7 +1475,7 @@ img.omchange_client_logo_neg {
 }
 
 /*========= TEAM slut =========*/
-/*========= YDELSER start =========*/
+/*========= SERVICES start =========*/
 
 .background_img_ydelser {
   position: relative;
@@ -1489,6 +1489,10 @@ img.omchange_client_logo_neg {
   background-position: center;
   background-size: cover;
   border-radius: 0px 0px 30px 0px
+}
+
+.hero_services {
+
 }
 
 .stroke_position_ydelser {
