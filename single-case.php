@@ -404,13 +404,13 @@ $(".close_case").addClass("menu_black");
 });
 
 
-ScrollReveal().reveal('.client_image', { distance: '250px' });
-ScrollReveal().reveal('.stroke_position_case', { distance: '250px' });
-ScrollReveal().reveal('.case_some_ex', { distance: '250px' });
-ScrollReveal().reveal('.case_link', { distance: '250px' });
-ScrollReveal().reveal('.h2_case', { distance: '350px' });
-ScrollReveal().reveal('.client_logo', { distance: '450px' });
-ScrollReveal().reveal('p', { distance: '450px' });
-ScrollReveal().reveal('.post-categories', { distance: '450px' });
-ScrollReveal().reveal('.case_strategi_img', { distance: '450px' });
+ScrollReveal().reveal('.client_image', { distance: '250px', opacity: 0.5 });
+ScrollReveal().reveal('.stroke_position_case', { distance: '250px', opacity: 0.5 });
+ScrollReveal().reveal('.case_some_ex', { distance: '250px', opacity: 0.5 });
+ScrollReveal().reveal('.case_link', { distance: '250px', opacity: 0.5 });
+ScrollReveal().reveal('.h2_case', { distance: '350px', opacity: 0.5 });
+ScrollReveal().reveal('.client_logo', { distance: '450px', opacity: 0.5 });
+ScrollReveal().reveal('p', { distance: '450px', opacity: 0.5 });
+ScrollReveal().reveal('.post-categories', { distance: '450px', opacity: 0.5 });
+ScrollReveal().reveal('.case_strategi_img', { distance: '450px', opacity: 0.5 });
 </script>

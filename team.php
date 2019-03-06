@@ -131,15 +131,15 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.stroke_position_services', { distance: '300px' });
-ScrollReveal().reveal('.hero_info h1', { distance: '400px' });
-ScrollReveal().reveal('.om_menu_img', { distance: '350px' });
-ScrollReveal().reveal('.om_menu a', { distance: '450px' });
-ScrollReveal().reveal('.team h2', { distance: '450px' });
-ScrollReveal().reveal('.team_stroke', { distance: '550px' });
-ScrollReveal().reveal('.gray', { distance: '550px' });
-ScrollReveal().reveal('.team_members_half img', { distance: '500px' });
-ScrollReveal().reveal('.team_name h3', { distance: '550px' });
-ScrollReveal().reveal('.stroke_team', { distance: '500px' });
-ScrollReveal().reveal('.logo_slider', { distance: '550px' });
+ScrollReveal().reveal('.stroke_position_services', { distance: '300px', opacity: 0.5 });
+ScrollReveal().reveal('.hero_info h1', { distance: '400px', opacity: 0.5 });
+ScrollReveal().reveal('.om_menu_img', { distance: '350px', opacity: 0.5 });
+ScrollReveal().reveal('.om_menu a', { distance: '450px', opacity: 0.5 });
+ScrollReveal().reveal('.team h2', { distance: '450px', opacity: 0.5 });
+ScrollReveal().reveal('.team_stroke', { distance: '550px', opacity: 0.5 });
+ScrollReveal().reveal('.gray', { distance: '550px', opacity: 0.5 });
+ScrollReveal().reveal('.team_members_half img', { distance: '500px', opacity: 0.5 });
+ScrollReveal().reveal('.team_name h3', { distance: '550px', opacity: 0.5 });
+ScrollReveal().reveal('.stroke_team', { distance: '500px', opacity: 0.5 });
+ScrollReveal().reveal('.logo_slider', { distance: '550px', opacity: 0.5 });
 </script>

@@ -69,9 +69,9 @@ $(document).ready(function() {
 });
 
 
-ScrollReveal().reveal('.letstalk_footer', { distance: '250px' });
-ScrollReveal().reveal('.SoMe_footer', { distance: '250px' });
-ScrollReveal().reveal('.contact_footer', { distance: '250px' });
+ScrollReveal().reveal('.letstalk_footer', { distance: '250px', opacity: 0.5 });
+ScrollReveal().reveal('.SoMe_footer', { distance: '250px', opacity: 0.5 });
+ScrollReveal().reveal('.contact_footer', { distance: '250px', opacity: 0.5 });
 
 </script>
 </body>

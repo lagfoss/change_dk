@@ -94,9 +94,9 @@
 
 <script type="text/javascript">
 
-ScrollReveal().reveal('.dark', { distance: '350px' });
-ScrollReveal().reveal('.stroke', { distance: '450px' });
-ScrollReveal().reveal('.case_card_content', { distance: '650px' });
-ScrollReveal().reveal('.pagination', { distance: '450px' });
+ScrollReveal().reveal('.dark', { distance: '350px', opacity: 0.5 });
+ScrollReveal().reveal('.stroke', { distance: '450px', opacity: 0.5 });
+ScrollReveal().reveal('.case_card_content', { distance: '650px', opacity: 0.5 });
+ScrollReveal().reveal('.pagination', { distance: '450px', opacity: 0.5 });
 
 </script>
