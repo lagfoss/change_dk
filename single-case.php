@@ -237,11 +237,10 @@ Template Post Type: cases
                 </div>
                 <div class="col-lg-6">
                   <div class="rekru_video">
-                    <div id="player"></div>
                     <div id="thumbnail_container" class="thumbnail_container">
-                        <img src="<?php echo $yt_thumbnail ?>" class="thumbnail" id="thumbnail" />
+                        <img src="<?php echo $yt_thumbnail ?>" class="thumbnail" id="thumbnail">
                     </div>
-                    <a class="start-video"><img width="64" src="<?php echo ('$yt_play_button') ?>" ></a>
+                    <a class="start-video"><img width="64" src="<?php echo $yt_play_button ?>" ></a>
                       <?php
 
 // get iframe HTML

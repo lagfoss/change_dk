@@ -1984,7 +1984,7 @@ img.omchange_client_logo_neg {
 }
 
 .rekru_video {
-  padding: 10px;
+  padding: 0px 35px;
 }
 
 .rekru_video iframe,
@@ -2003,7 +2003,7 @@ img.omchange_client_logo_neg {
   left: 45%;
   opacity: .3;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s; 
 }
 
 .start-video:hover
@@ -2015,11 +2015,12 @@ img.omchange_client_logo_neg {
 div.thumbnail_container
 {
   position: absolute;
-  width: 620px;
-  left: 0px;
-  height: 351px;
-  overflow: hidden;
-  background-color: #000;
+      width: 99%;
+      left: 0px;
+      height: 352px;
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: #000;
 }
 
 img.thumbnail
