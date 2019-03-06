@@ -2112,14 +2112,14 @@ img.thumbnail
 /*========= CONTACT start =========*/
 
 .contact {
-  margin-left: auto;
-  padding-left: 15px;
+
 }
 
 .contact_intro {
   margin-top: 160px;
   margin-left: auto;
   padding-left: 15px;
+  max-width: 570px;
 }
 
 .contact_intro h1 {
