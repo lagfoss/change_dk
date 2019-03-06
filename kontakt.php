@@ -7,6 +7,9 @@
     <div class="row wrapper">
       <div class="col-6-md contact_intro">
         <h1 class="black"><?php the_field('contact_title'); ?></h1>
+        <div class="stroke_position_contact">
+          <div class="stroke_contact"></div>
+        </div>
         <p class="gray"><?php the_field('contact_text'); ?></p>
       </div>
       <div class="col-6-md contact_img">

@@ -2079,12 +2079,26 @@ img.omchange_client_logo_neg {
 /*========= CONTACT start =========*/
 
 .contact_intro {
-  margin-top: 200px;
+  margin-top: 160px;
 }
 
 .contact_intro h1 {
   font-size: 190px;
   line-height: 0.89;
+}
+
+.stroke_position_contact {
+  width: 100%;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+.stroke_contact {
+  height: 2px;
+  width: 30px;
+  background-color: #e54c00;
+  border-radius: 5px;
+  margin: 15px 20px 15px 0;
 }
 
 .contact_intro p {
