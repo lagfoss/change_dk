@@ -1476,9 +1476,9 @@ img.omchange_client_logo_neg {
 }
 
 /*========= TEAM slut =========*/
-/*========= YDELSER start =========*/
+/*========= SERVICES start =========*/
 
-.background_img_ydelser {
+.background_img_services {
   position: relative;
   top: 0;
   margin-top: 0;
@@ -1492,11 +1492,15 @@ img.omchange_client_logo_neg {
   border-radius: 0px 0px 30px 0px
 }
 
-.stroke_position_ydelser {
+.hero_services {
+  margin-top: 285px;
+}
+
+.stroke_position_services {
   width: 100%;
 }
 
-.stroke_ydelser {
+.stroke_services {
   height: 2px;
   width: 30px;
   background-color: #e54c00;
@@ -1504,14 +1508,14 @@ img.omchange_client_logo_neg {
   margin: 30px 1px;
 }
 
-.h1_hero_ydelser {
+.h1_hero_services {
   font-size: 61px;
   max-width: 100%;
   max-height: 20%;
   line-height: 0.88;
 }
 
-.calltoaction_hero_ydelser {
+.calltoaction_hero_services {
   position: absolute;
   top: 82%;
   margin-left: 35%;
@@ -1532,7 +1536,7 @@ img.omchange_client_logo_neg {
   display: block;
 }
 
-.ydelser_main_content_text {
+.services_main_content_text {
   font-weight: 300;
   max-width: 435px;
   color: #999999;
@@ -1547,12 +1551,12 @@ img.omchange_client_logo_neg {
   margin-bottom: 30px;
 }
 
-#ydelser_contact {
+#services_contact {
   position: relative;
   padding: 0px 30px;
 }
 
-.ydelser_dots {
+.services_dots {
   position: absolute;
   width: 17%;
   height: 19%;
@@ -1562,7 +1566,7 @@ img.omchange_client_logo_neg {
   z-index: -1;
 }
 
-.ydelser_button {
+.services_button {
   text-decoration: none;
   font-weight: 500;
   padding: 15px 25px;
@@ -1576,7 +1580,7 @@ img.omchange_client_logo_neg {
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
-.ydelser_button:hover{
+.services_button:hover{
   text-decoration: none;
   color: white;
   padding: 14px 24px;
@@ -1587,7 +1591,7 @@ img.omchange_client_logo_neg {
   -o-transform: scale(0.98);
 }
 
-/*========= YDELSER slut =========*/
+/*========= services slut =========*/
 
 /*========= CASES forside start =========*/
 
@@ -2378,7 +2382,7 @@ img.omchange_client_logo_neg {
     width: 100%;
   }
 
- .ydelser_dots, .strategi_dots {
+ .services_dots, .strategi_dots {
     display: none;
   }
 
@@ -2671,15 +2675,15 @@ img.omchange_client_logo_neg {
     min-height: 350px;
   }
 
-  .calltoaction_hero_ydelser {
+  .calltoaction_hero_services {
     margin-left: 0;
   }
 
-  .ydelser_main_content_text {
+  .services_main_content_text {
     width: 100%;
   }
 
-  .background_img_ydelser {
+  .background_img_services {
     height: 510px;
   }
 
