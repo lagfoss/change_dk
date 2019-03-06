@@ -2680,6 +2680,10 @@ img.omchange_client_logo_neg {
     margin-left: 0;
   }
 
+  .hero_services {
+    margin-top: 150px;
+  }
+
   .services_main_content_text {
     width: 100%;
   }
