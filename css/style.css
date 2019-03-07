@@ -2168,7 +2168,7 @@ img.thumbnail
 
 .contact_carousel {
   margin-top: 160px;
-  margin-left: 15%;
+  left: 15%;
 }
 
 .contact_gallery {
@@ -2210,18 +2210,16 @@ img.thumbnail
 }
 
 .contact_address {
-  margin-top: 100px;
+  margin-left: 18%;
 }
 
 .contact_address h2 {
   margin-bottom: 35px;
-  margin-left: 18%;
 }
 
 .contact_address p {
   line-height: 1;
   margin-top: 25px;
-  margin-left: 18%;
 }
 
 .contact_address a:hover {
