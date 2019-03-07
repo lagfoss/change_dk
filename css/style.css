@@ -1008,6 +1008,7 @@ input {
 
 .know_us_content {
   max-width: 400px;
+  padding-left: 15px;
 }
 
 .know_us_content p {
@@ -2209,18 +2210,16 @@ img.thumbnail
 }
 
 .contact_address {
-  margin-top: 100px;
+  margin-left: 18%;
 }
 
 .contact_address h2 {
   margin-bottom: 35px;
-  margin-left: 18%;
 }
 
 .contact_address p {
   line-height: 1;
   margin-top: 25px;
-  margin-left: 18%;
 }
 
 .contact_address a:hover {
@@ -2449,10 +2448,6 @@ img.thumbnail
     margin-bottom: 90px;
   }
 
-  .case_down {
-      margin-top: 25px;
-      margin-left: auto;
-  }
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -2591,6 +2586,11 @@ img.thumbnail
 
   .team_members_half {
     justify-content: center;
+  }
+
+  .case_down {
+      margin-top: 25px;
+      margin-left: auto;
   }
 
   .case_goal, .case_strategi, .case_some_content, .case_results {
@@ -3025,12 +3025,5 @@ img.thumbnail
   }
   .hero_text {
     padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 993px) and (max-width: 1012px) {
-  .case_down {
-    margin-top: 25px;
-    margin-left: auto;
   }
 }
