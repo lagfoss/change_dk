@@ -51,6 +51,9 @@
   <div class="container-fluid contact_map">
     <div class="contact_map_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
     </div>
+    <div class="stroke_position_contact_map">
+      <div class="stroke_contact_map"></div>
+    </div>
     <?php
 
       $location = get_field('contact_map');
