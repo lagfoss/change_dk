@@ -15,6 +15,16 @@
       <div class="col-md-6 contact_img">
         <div class="pink_square">
         </div>
+        <!-- Image carousel -->
+				<div class="owl-carousel owl-theme contact_carousel">
+					<?php
+						$images = get_field('contact_gallery');
+						foreach ($images as $image):?>
+					<div class="contact_gallery">
+						<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	    		</div>
+    			<?php endforeach;?>
+				</div>
       </div>
 	  </div>
   </div>
