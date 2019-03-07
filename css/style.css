@@ -2191,6 +2191,7 @@ img.thumbnail
 
 .contact_form input, .contact_form textarea {
   border-radius: 10px;
+  margin-bottom: 30px;
   padding: 20px 15px;
   width: 100%;
   border-width: 0;
@@ -2198,6 +2199,10 @@ img.thumbnail
 
 .contact_form label {
   width: 100%;
+}
+
+.your-name input {
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
 
 .wpcf7-submit {
@@ -2208,6 +2213,7 @@ img.thumbnail
   font-weight: 500;
   border-width: 0;
   cursor: pointer;
+  margin-bottom: 0;
 }
 
 .contact_address {
