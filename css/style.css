@@ -142,8 +142,7 @@ button:focus
 /*========= HEADER =========*/
 header {
   z-index: 100;
-  top: 35px;
-  width: 100%
+  width: 100%;
 }
 
 /*========= Sociale medier og tekst i toppen =========*/
@@ -618,6 +617,10 @@ input {
 .out_black2 {
   border-color: #111517;
   color: #111517;
+}
+
+.out_white {
+  background-color: #f1f1f1;
 }
 
 .display_no {

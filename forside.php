@@ -296,6 +296,16 @@ $(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scroll = $(window).scrollTop();
 	if (scroll >= windowHeight - 80) {
+$(".test").addClass("out_white");
+    } else {
+        $(".test").removeClass("out_white");
+    } 
+});
+
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
 $(".search").addClass("search_black");
     } else {
         $(".search").removeClass("search_black");
