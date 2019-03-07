@@ -2584,7 +2584,7 @@ img.thumbnail
     width: 100%;
   }
 
- .services_dots, .strategi_dots {
+ .services_dots, .strategi_dots, .contact_map_dots {
     display: none;
   }
 
