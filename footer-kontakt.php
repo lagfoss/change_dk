@@ -74,7 +74,7 @@ $(".owl-carousel").owlCarousel();
 
 var owl = $('.contact_carousel');
 owl.owlCarousel({
-  autoplay: true,
+  
   items: 1,
   dots: false,
   nav: true,

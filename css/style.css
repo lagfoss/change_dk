@@ -2156,7 +2156,7 @@ img.thumbnail
 .pink_square {
   position: absolute;
   height: 1000px;
-  width: 50%;
+  width: 70%;
   -webkit-border-bottom-left-radius: 30px;
   -moz-border-radius-bottomleft: 30px;
   border-bottom-left-radius: 30px;
@@ -2178,7 +2178,6 @@ img.thumbnail
   width: 360px;
   border-radius: 10px;
   box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
-  margin: 0 20px 0 20px;
 }
 
 /*========= CONTACT intro slut =========*/
@@ -2213,6 +2212,21 @@ img.thumbnail
   margin-top: 100px;
 }
 
+.contact_address h2 {
+  margin-bottom: 35px;
+  margin-left: 18%;
+}
+
+.contact_address p {
+  line-height: 1;
+  margin-top: 25px;
+  margin-left: 18%;
+}
+
+.contact_address a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*========= CONTACT form slut =========*/
 /*========= CONTACT slut =========*/
@@ -2442,7 +2456,7 @@ img.thumbnail
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 11vw;
   }
