@@ -85,7 +85,7 @@ $(document).ready(function() {
 
   var owl = $('.autoplay');
   owl.owlCarousel({
-      items: 3,
+      items: 4,
       margin:10,
       nav: true,
       navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],

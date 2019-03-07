@@ -57,10 +57,11 @@
     </div>
   </div>
   <!-- Content calendar og Sociale medier slut -->
-
-  <header class="position-fixed header">
+  <header class="position-fixed header test">
 
     <!-- Menu/Nav start -->
+
+
     <nav>
       <div id="primaryNav">
          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
@@ -137,7 +138,7 @@
 
           // normalize treshold range
           treshold = (treshold+diff>headerHeight) ? headerHeight : treshold+diff;
-          treshold = (treshold < 0) ? -35 : treshold;
+          treshold = (treshold < 0) ? -23 : treshold;
 
           header.css('top', (-treshold)+'px');
 
