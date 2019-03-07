@@ -49,7 +49,12 @@
 
   </div>
   <div class="container-fluid contact_map">
-    <div class="contact_map_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+    <div class="row">
+      <div class="col-6 contact_map_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+      </div>
+      <div class="col-6 stroke_position_contact_map">
+        <div class="stroke_contact_map"></div>
+      </div>
     </div>
     <?php
 
