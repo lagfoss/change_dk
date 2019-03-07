@@ -180,6 +180,43 @@ padding-left: 50px;
  left: -9px;
 }
 
+.contact_carousel .owl-nav {
+  position: absolute;
+  left: 340px;
+  top: 225px; 
+}
+
+.contact_carousel .owl-nav button.owl-prev  {
+  display: block;
+}
+
+.contact_carousel .owl-nav button.owl-next  {
+  display: block;
+  margin-top: 30px;
+}
+
+.contact_carousel .owl-prev img{
+  text-decoration: none;
+  padding: 12px;
+  background-color: #f8f8f8;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.contact_carousel .owl-next img{
+  text-decoration: none;
+  padding: 12px;
+  background-color: #f8f8f8;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.contact_carousel .owl-theme .owl-nav {
+  position: absolute;
+}
+
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .carousel_om_change .owl-nav .owl-next {
     position: absolute;

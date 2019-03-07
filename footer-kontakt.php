@@ -74,10 +74,12 @@ $(".owl-carousel").owlCarousel();
 
 var owl = $('.contact_carousel');
 owl.owlCarousel({
-  
+
   items: 1,
+  margin: 0,
   dots: false,
   nav: true,
+  navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"], 
 })
 
 ScrollReveal().reveal('.letstalk_footer', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
