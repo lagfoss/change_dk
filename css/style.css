@@ -2239,9 +2239,22 @@ img.thumbnail
 .contact_map_dots {
   position: absolute;
   height: 30px;
-  width: 40%;
-  top: -30px;
-  left: 155px;
+  width: 90%;
+  top: -25px;
+}
+
+.stroke_position_contact_map {
+  width: 100%;
+  top: 0;
+  left: 8%;
+}
+
+.stroke_contact_map {
+  height: 5px;
+  width: 100px;
+  background-color: #e54c00;
+  border-radius: 5px;
+  margin: 0;
 }
 
 .acf-map {
