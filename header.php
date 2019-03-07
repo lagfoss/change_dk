@@ -127,7 +127,7 @@
         <script>
 
         // Gør at header vises og forsvinder med scroll
-        var header = $('.header'),
+        var header = $('header'),
         headerHeight = header.height(),
         treshold = 0,
         lastScroll = 0;
@@ -138,9 +138,9 @@
 
           // normalize treshold range
           treshold = (treshold+diff>headerHeight) ? headerHeight : treshold+diff;
-          treshold = (treshold < 0) ? -23 : treshold;
+          treshold = (treshold < 0) ? -0 : treshold;
 
-          header.css('top', (-treshold)+'px');
+          header.css('margin-top', (-treshold)+'px');
 
           lastScroll = newScroll;
         });
