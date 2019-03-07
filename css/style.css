@@ -2163,7 +2163,7 @@ img.thumbnail
 
 .contact_form input, .contact_form textarea {
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px 15px;
   width: 100%;
 }
 
@@ -2174,6 +2174,11 @@ img.thumbnail
 .wpcf7-submit {
   float: right;
   max-width: 180px;
+  background-color: #e54c00;
+  color: #f2f2f2;
+  font-weight: 500;
+  border-width: 0;
+  cursor: pointer;
 }
 
 /*========= CONTACT slut =========*/
