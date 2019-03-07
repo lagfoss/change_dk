@@ -20,7 +20,12 @@
   </div>
   <div class="container-fluid">
     <div class="row wrapper">
-        <?php echo do_shortcode("[contact-form-7 id=1061 title=Contact form 1]") ; ?>
+      <div class="col-md-6 contact_form">
+        <?php echo do_shortcode("[contact-form-7 id=1061]") ; ?>
+      </div>
+      <div class="col-md-6 contact_address">
+
+      </div>
     </div>
 
   </div>

@@ -2112,14 +2112,14 @@ img.thumbnail
 /*========= CONTACT start =========*/
 
 .contact {
-  margin-left: auto;
-  padding-left: 15px;
+
 }
 
 .contact_intro {
   margin-top: 160px;
   margin-left: auto;
   padding-left: 15px;
+  max-width: 570px;
 }
 
 .contact_intro h1 {
@@ -2159,6 +2159,21 @@ img.thumbnail
   background-color: #f0eae8;
   right: 0;
   top: 0;
+}
+
+.contact_form input, .contact_form textarea {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.contact_form label {
+  width: 100%;
+}
+
+.wpcf7-submit {
+  float: right;
+  max-width: 180px;
 }
 
 /*========= CONTACT slut =========*/
