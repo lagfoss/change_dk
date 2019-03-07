@@ -52,6 +52,14 @@ Template Post Type: cases
           $clientname = get_sub_field('case_client_name');
           $clientservice = get_sub_field('case_client_service'); ?>
 
+    <?php elseif( get_row_layout() == 'case_client_info' ):
+          $clienturl = get_sub_field('case_client_url');
+          $clienturltext = get_sub_field('case_client_url_text');
+          $clientcontact = get_sub_field('case_contact');
+          $clientcontacttext = get_sub_field('case_contact_text');
+          $abouttitle = get_sub_field('case_about_client_title');
+          $about = get_sub_field('case_about_client'); ?>
+
 
           <div class="container-fluid case_client">
             <div class="row wrapper">
@@ -64,45 +72,29 @@ Template Post Type: cases
                   <img class="client_logo" src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/>
                   <p class="client_text"><?php echo $clientname; ?></p>
                 </div>
-              </div>
-              <div class="col-md-7">
-                <div class="row stroke_position_case">
-                  <div class="stroke_case"></div>
-                  <p class="pre_client"><?php echo $clientservice; ?></p>
-                </div>
-                <div class="client_cat">
-                  <?php
-                    foreach((get_the_category($post->ID)) as $category){
-                      echo $category->name.", ";
-                    }
-                  ?>
-                </div>
-              </div>
-            </div>
-          </div>
-
-  <?php elseif( get_row_layout() == 'case_client_info' ):
-
-        	$clienturl = get_sub_field('case_client_url');
-          $clienturltext = get_sub_field('case_client_url_text');
-          $clientcontact = get_sub_field('case_contact');
-          $clientcontacttext = get_sub_field('case_contact_text');
-          $abouttitle = get_sub_field('case_about_client_title');
-          $about = get_sub_field('case_about_client'); ?>
-
-          <div class="container-fluid wrapper client_info">
-            <div class="row">
-              <div class="col-sm-5">
                 <div class="row">
-                  <a href="<?php echo $clienturl; ?>" class="case_link" target="_blank"><?php echo $clienturltext; ?></a>
-                </div>
-                <div class="row">
-                  <a href="mailto:<?php echo $clientcontact; ?>" class="case_link"><?php echo $clientcontacttext; ?></a>
-                </div>
+                <a href="<?php echo $clienturl; ?>" class="case_link" target="_blank"><?php echo $clienturltext; ?></a>
               </div>
-              <div class="col-sm-7 client_about">
+              <div class="row">
+                <a href="mailto:<?php echo $clientcontact; ?>" class="case_link"><?php echo $clientcontacttext; ?></a>
+              </div>
+              <div class="row stroke_position_case">
+                <div class="stroke_case"></div>
+                <p class="pre_client"><?php echo $clientservice; ?></p>
+              </div>
+              <div class="client_cat">
+                <?php
+                  foreach((get_the_category($post->ID)) as $category){
+                    echo $category->name.", ";
+                  }
+                ?>
+              </div>
+
+              </div>
+              <div class="col-md-7 client_about">
                 <h2 class="h2_case"><?php echo $abouttitle; ?></h2>
                 <p class="client_text"><?php echo $about; ?></p>
+
               </div>
             </div>
           </div>
