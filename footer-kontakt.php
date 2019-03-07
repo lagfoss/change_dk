@@ -68,6 +68,17 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function(){
+$(".owl-carousel").owlCarousel();
+});
+
+var owl = $('.contact_carousel');
+owl.owlCarousel({
+  autoplay: true,
+  items: 1,
+  dots: false,
+  nav: true,
+})
 
 ScrollReveal().reveal('.letstalk_footer', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
 ScrollReveal().reveal('.SoMe_footer', { distance: '250px', easing: 'ease-in-out', duration: 1000 });

@@ -180,14 +180,11 @@ padding-left: 50px;
  left: -9px;
 }
 
-
-
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .carousel_om_change .owl-nav .owl-next {
     position: absolute;
     bottom: 110px;
     right: 10px;
-
   }
 
   .carousel_om_change .owl-nav .owl-prev {
@@ -210,7 +207,6 @@ padding-left: 50px;
       position: absolute;
       bottom: 110px;
       right: 10px;
-
     }
 
     .carousel_om_change .owl-nav .owl-prev {

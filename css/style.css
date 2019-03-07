@@ -2110,6 +2110,7 @@ img.thumbnail
 /*========= CASES enkelt slut =========*/
 
 /*========= CONTACT start =========*/
+/*========= CONTACT intro start =========*/
 
 .contact {
 
@@ -2161,6 +2162,29 @@ img.thumbnail
   top: 0;
 }
 
+.contact_carousel {
+  margin-top: 160px;
+  margin-left: 15%;
+}
+
+.contact_gallery {
+  padding: 20px 10px 30px 10px;
+}
+
+.contact_gallery img {
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 20px 0 20px;
+}
+
+/*========= CONTACT intro slut =========*/
+/*========= CONTACT form start =========*/
+
+.contact_form {
+  margin-top: 100px;
+}
+
 .contact_form input, .contact_form textarea {
   border-radius: 10px;
   padding: 20px 15px;
@@ -2182,6 +2206,12 @@ img.thumbnail
   cursor: pointer;
 }
 
+.contact_address {
+  margin-top: 100px;
+}
+
+
+/*========= CONTACT form slut =========*/
 /*========= CONTACT slut =========*/
 /*========= FOOTER =========*/
 

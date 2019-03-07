@@ -312,22 +312,9 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-$(".hero_button").click(function() {
-	$('html,body').animate({
-	scrollTop: $(".case").offset().top - 100},
-	'slow');
-});
-
-$(".wcwd_button").click(function() {
-	$('html,body').animate({
-	scrollTop: $(".FooterProject").offset().top - 10},
-	'slow');
-});
-
 ScrollReveal().reveal('.hero_title', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
 ScrollReveal().reveal('.hero_text', { distance: '300px',easing   : 'ease-in-out', duration: 1000  });
 ScrollReveal().reveal('.hero_button', { distance: '350px',easing   : 'ease-in-out', duration: 1000 });
-ScrollReveal().reveal('.1', { distance: '350px',easing   : 'ease-in-out', duration: 1000 });
 ScrollReveal().reveal('.playcircle', { distance: '300px',easing   : 'ease-in-out', duration: 1000 });
 ScrollReveal().reveal('.watch', { distance: '350px',easing   : 'ease-in-out', duration: 1000 });
 ScrollReveal().reveal('.showreel', { distance: '350px',easing   : 'ease-in-out', duration: 1000 });
