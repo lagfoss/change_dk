@@ -142,7 +142,7 @@ button:focus
 /*========= HEADER =========*/
 header {
   z-index: 100;
-  top: 20px;
+  top: 35px;
   width: 100%
 }
 
@@ -237,7 +237,7 @@ nav {
 /*========= Nav start =========*/
 .nav_logo {
   position: fixed;
-  top: 58px;
+  top: 72px;
   left: 3.5%;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
@@ -607,7 +607,7 @@ input {
 
 .pos_fix {
   position: fixed;
-  top: 62px;
+  top: 77px;
 }
 
 .out_black {
@@ -2734,7 +2734,7 @@ img.thumbnail
   }
 
   .nav_logo {
-    top: 58px;
+    top: 73px;
   }
 
   .hero_info {
