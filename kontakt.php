@@ -5,14 +5,14 @@
 
   <div class="container-fluid">
     <div class="row contact">
-      <div class="col-md-6 contact_intro">
+      <div class="col-md-6 contact_intro col-md-push-6">
         <h1 class="black"><?php the_field('contact_title'); ?></h1>
         <div class="stroke_position_contact">
           <div class="stroke_contact"></div>
         </div>
         <p class="gray"><?php the_field('contact_text'); ?></p>
       </div>
-      <div class="col-md-6 contact_img">
+      <div class="col-md-6 contact_img col-md-pull-6">
         <div class="pink_square">
         </div>
         <!-- Image carousel -->

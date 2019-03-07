@@ -2176,7 +2176,6 @@ img.thumbnail
 }
 
 .contact_gallery img {
-  height: 560px;
   width: 360px;
   border-radius: 10px;
   box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
@@ -2478,7 +2477,6 @@ img.thumbnail
   }
 
   .contact_gallery img {
-    height: 475px;
     width: 295px;
   }
 
@@ -2666,6 +2664,10 @@ img.thumbnail
 
   .iphone_wrapper {
     left: -10px;
+  }
+
+  .contact {
+  flex-direction: column-reverse;
   }
 }
 

@@ -79,7 +79,24 @@ owl.owlCarousel({
   margin: 0,
   dots: false,
   nav: true,
-  navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"], 
+  navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
+  responsive:{
+    993: {
+      items: 1,
+      autoplay: false,
+    },
+
+    769: {
+      nav: true,
+      autoplay: false,
+    },
+
+    320: {
+      autoplay: true,
+      nav: false,
+      items: 1,
+    },
+  }
 })
 
 (function($) {
