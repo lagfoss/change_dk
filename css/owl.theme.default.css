@@ -182,8 +182,8 @@ padding-left: 50px;
 
 .contact_carousel .owl-nav {
   position: absolute;
-  left: 340px;
-  top: 225px; 
+  left: 426px;
+  top: 225px;
 }
 
 .contact_carousel .owl-nav button.owl-prev  {
@@ -235,6 +235,21 @@ padding-left: 50px;
     position: inherit;
     bottom: 0;
     margin-left: 0;
+  }
+
+  .contact_carousel .owl-nav {
+    left: 334px;
+    top: 185px;
+  }
+
+  .contact_carousel .owl-next img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact_carousel .owl-prev img{
+    width: 40px;
+    height: 40px;
   }
 
   }
