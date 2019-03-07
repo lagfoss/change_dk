@@ -142,6 +142,7 @@ button:focus
 /*========= HEADER =========*/
 header {
   z-index: 100;
+  top: 35px;
   width: 100%;
 }
 

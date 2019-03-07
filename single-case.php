@@ -36,9 +36,10 @@ Template Post Type: cases
                 <h1 class="h1_case"><?php echo $clienttitle; ?></h1>
               </div>
               <div class="col-md-4">
+                <!--
                 <a href="#">
                   <img class="case_down" src="<?php echo $herobutton['url']; ?>" alt="<?php echo $herobutton['alt'] ?>" />
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
