@@ -102,12 +102,12 @@ $(document).ready(function() {
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('anm7w6fdv44n');
 
-ScrollReveal().reveal('.footer_project', { distance: '250px', opacity: 0.5 });
-ScrollReveal().reveal('.letstalk_footer', { distance: '250px', opacity: 0.5 });
-ScrollReveal().reveal('.SoMe_footer', { distance: '250px', opacity: 0.5 });
-ScrollReveal().reveal('.contact_footer', { distance: '250px', opacity: 0.5 });
-ScrollReveal().reveal('.footer_single_case', { distance: '250px', opacity: 0.5 });
-ScrollReveal().reveal('.footer_button', { distance: '350px', opacity: 0.5 });
+ScrollReveal().reveal('.footer_project', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
+ScrollReveal().reveal('.letstalk_footer', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
+ScrollReveal().reveal('.SoMe_footer', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
+ScrollReveal().reveal('.contact_footer', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
+ScrollReveal().reveal('.footer_single_case', { distance: '250px', easing: 'ease-in-out', duration: 1000 });
+ScrollReveal().reveal('.footer_button', { distance: '350px', easing: 'ease-in-out', duration: 1000 });
 
 ;(function($, window, document, undefined) {
 
