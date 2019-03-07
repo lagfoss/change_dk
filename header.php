@@ -139,9 +139,9 @@
 
           // normalize treshold range
           treshold = (treshold+diff>headerHeight) ? headerHeight : treshold+diff;
-          treshold = (treshold < 0) ? -0 : treshold;
+          treshold = (treshold < 0) ? -35 : treshold;
 
-          header.css('margin-top', (-treshold)+'px');
+          header.css('top', (-treshold)+'px');
 
           lastScroll = newScroll;
         });
