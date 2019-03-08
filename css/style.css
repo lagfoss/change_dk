@@ -2262,7 +2262,6 @@ img.thumbnail
 .stroke_position_contact_map {
   width: 100%;
   top: 0;
-  left: 8%;
 }
 
 .stroke_contact_map {
@@ -2270,7 +2269,7 @@ img.thumbnail
   width: 100px;
   background-color: #e54c00;
   border-radius: 5px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .acf-map {
