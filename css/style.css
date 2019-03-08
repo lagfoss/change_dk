@@ -779,6 +779,7 @@ input {
   margin-bottom: 50px;
   border-radius: 10px;
   transition-delay: 2s;
+  box-shadow: -8px 5px 3px 4px rgba(0, 0, 0, 0.14);
  }
 
 
