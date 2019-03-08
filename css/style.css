@@ -2054,7 +2054,7 @@ img.thumbnail
 /*========= CASES branding start =========*/
 
 .brand {
-  margin-bottom: 160px; 
+  margin-bottom: 160px;
 }
 
 .brand_content {
@@ -2201,10 +2201,6 @@ img.thumbnail
   width: 360px;
   border-radius: 10px;
   box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
-}
-
-input[type="submit"] {
-    background: url('http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/arrow_right.svg') center center;
 }
 
 /*========= CONTACT intro slut =========*/
