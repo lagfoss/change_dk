@@ -230,32 +230,43 @@ Template Post Type: cases
                 </div>
                 <div class="col-lg-6">
                   <div class="rekru_video">
-                      <?php
+                    <div id="thumbnail_container" class="thumbnail_container">
+                    <img src="<?php echo $yt_thumbnail ?>" class="thumbnail" id="thumbnail"></div>
+                   <a class="start-video"><img width="64" src="<?php echo $yt_play_button ?>" ></a>
+                  <?php
+                   // get iframe HTML
+                   $iframe = get_sub_field('case_rekru_embed');
+                   // use preg_match to find iframe src
+                   preg_match('/src="(.+?)"/', $iframe, $matches);
+                   $src = $matches[1];
 
-// get iframe HTML
-$iframe = get_sub_field('case_rekru_embed'); ?>
 
-<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
-<div class="video_wrapper video_wrapper_full js-videoWrapper">
-<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/lq2SF0-8QKk"></iframe>
-<button class="videoPoster js-videoPoster"></button>
-</div>
+                   // add extra params to iframe src
+                   $params = array(
+                       'controls'    => 1,
+                       'hd'        => 1,
+                       'autohide'    => 0,
+                       'autoplay'  => 0,
+                       'mute'  => 1,
+                       'loop'  => 1,
+                       'rel' => 0,
+                       'showinfo' => 0,
+                       'modestbranding' => 1,
+                   );
 
-<script type="text/javascript">
-$(document).on('click','.js-videoPoster',function(e) {
-e.preventDefault();
-var poster = $(this);
-var wrapper = poster.closest('.js-videoWrapper');
-videoPlay(wrapper);
-});
+                   $new_src = add_query_arg($params, $src);
 
-function videoPlay(wrapper) {
-var iframe = wrapper.find('.js-videoIframe');
-var src = iframe.data('src');
-wrapper.addClass('videoWrapperActive');
-iframe.attr('src',src);
-}
-</script>
+                   $iframe = str_replace($src, $new_src, $iframe);
+
+
+                   // add extra attributes to iframe html
+                   $attributes = 'frameborder="0"';
+
+                   $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                   // echo $iframe
+echo $iframe;
+                   ?>
 
 
                   </div>
