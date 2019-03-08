@@ -1949,6 +1949,10 @@ img.omchange_client_logo_neg {
   padding-left: 12%;
 }
 
+.case_some_half .stroke_position_case, .case_some_half p {
+  margin-bottom: 0;
+}
+
 .case_some_ex {
   width: 100%;
 }
@@ -1966,6 +1970,7 @@ img.omchange_client_logo_neg {
 
 .case_some_ex img {
   width: 100%;
+  margin-left: -14%;
 }
 
 .case_some_ex:nth-of-type(even) .case_some_half {
@@ -1982,6 +1987,7 @@ img.omchange_client_logo_neg {
 
 .rekru {
   position: relative;
+  margin-bottom: 150px;
 }
 
 .rekru_content {
@@ -2400,6 +2406,12 @@ input[type="submit"] {
   background-color: #e3e3e3;
   font-size: 13px;
 }
+
+@-moz-document url-prefix() {
+    .logo_slider .owl-prev img, .logo_slider .owl-next img {
+      height: 15px;
+    }
+  }
 
 /*========= Large devices (desktops/tablets, 1140px and down) =========*/
 @media screen and (max-width: 1140px) {
