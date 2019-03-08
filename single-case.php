@@ -166,8 +166,8 @@ Template Post Type: cases
           $sometext = get_sub_field('case_some_text'); ?>
 
           <div class="container-fluid">
-            <div class="wrapper case_some">
-              <div class="row case_some_content">
+            <div class="case_some">
+              <div class="row wrapper case_some_content">
                 <div class="row stroke_position_case">
                   <div class="stroke_case"></div>
                   <p class="pre_client"><?php echo $presome; ?></p>
@@ -178,7 +178,7 @@ Template Post Type: cases
                 </div>
               </div>
 
-              <div class="row justify-content-center">
+              <div class="row case_some_wrapper">
     <?php // check if the nested repeater field has rows of data
         	if( have_rows('case_some_example') ):
 			 	       // loop through the rows of data
@@ -236,8 +236,6 @@ Template Post Type: cases
                   <?php
                    // get iframe HTML
                    $iframe = get_sub_field('case_rekru_embed');
-
-
                    // use preg_match to find iframe src
                    preg_match('/src="(.+?)"/', $iframe, $matches);
                    $src = $matches[1];

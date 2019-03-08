@@ -1940,6 +1940,13 @@ img.omchange_client_logo_neg {
   height: auto;
 }
 
+.case_some_wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-left: 12%;
+}
+
 .case_some_ex {
   width: 100%;
 }
@@ -1960,7 +1967,7 @@ img.omchange_client_logo_neg {
 }
 
 .case_some_ex:nth-of-type(even) .case_some_half {
-  margin-bottom: 0;
+  margin-bottom: -80px;
   float: left;
 }
 
@@ -1998,7 +2005,7 @@ img.omchange_client_logo_neg {
 .rekru_video object,
 .rekru_video embed {
   width: 100%;
-  height: 350px; 
+  height: 350px;
   border-radius: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
@@ -2718,6 +2725,10 @@ img.thumbnail
 
 /*========= (620px and down) =========*/
 @media screen and (max-width: 620px) {
+
+  .case_some_wrapper {
+    padding-left: 16%;
+  }
 
   .case_some_half {
     width: 80%;
