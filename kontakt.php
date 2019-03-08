@@ -5,7 +5,7 @@
 
   <div class="container-fluid">
     <div class="row contact">
-      <div class="col-md-6 contact_intro col-md-push-6">
+      <div class="col-md-5 contact_intro col-md-push-6">
         <h1 class="black"><?php the_field('contact_title'); ?></h1>
         <div class="stroke_position_contact">
           <div class="stroke_contact"></div>
