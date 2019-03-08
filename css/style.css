@@ -1950,6 +1950,10 @@ img.omchange_client_logo_neg {
   float: right;
 }
 
+.case_some_half .stroke_position_case, .case_some_half p {
+  margin-bottom: 0;
+}
+
 .case_some_empty {
   width: 55%;
   float: left;
@@ -1957,10 +1961,11 @@ img.omchange_client_logo_neg {
 
 .case_some_ex img {
   width: 100%;
+  margin-left: -14%;
 }
 
 .case_some_ex:nth-of-type(even) .case_some_half {
-  margin-bottom: 0;
+  margin-bottom: -65px;
   float: left;
 }
 
