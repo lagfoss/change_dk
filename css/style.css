@@ -1940,6 +1940,13 @@ img.omchange_client_logo_neg {
   height: auto;
 }
 
+.case_some_wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-left: 12%;
+}
+
 .case_some_ex {
   width: 100%;
 }
@@ -2034,7 +2041,7 @@ body {
 }
 
 .videoPoster {
-    position: absolute; 
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -2813,6 +2820,10 @@ img.thumbnail
 
 /*========= (620px and down) =========*/
 @media screen and (max-width: 620px) {
+
+  .case_some_wrapper {
+    padding-left: 16%;
+  }
 
   .case_some_half {
     width: 80%;
