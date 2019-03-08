@@ -1593,6 +1593,10 @@ img.omchange_client_logo_neg {
   -o-transform: scale(0.98);
 }
 
+.service_footer {
+  margin-top: -122px;
+}
+
 /*========= services slut =========*/
 
 /*========= CASES forside start =========*/
