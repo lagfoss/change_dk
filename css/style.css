@@ -2399,6 +2399,12 @@ img.thumbnail
   font-size: 13px;
 }
 
+@-moz-document url-prefix() {
+    .logo_slider .owl-prev img, .logo_slider .owl-next img {
+      height: 15px;
+    }
+  }
+
 /*========= Large devices (desktops/tablets, 1140px and down) =========*/
 @media screen and (max-width: 1140px) {
   .rekru_content {
