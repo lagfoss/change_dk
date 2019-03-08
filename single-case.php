@@ -178,7 +178,7 @@ Template Post Type: cases
                 </div>
               </div>
 
-              <div class="row justify-content-center">
+              <div class="row">
     <?php // check if the nested repeater field has rows of data
         	if( have_rows('case_some_example') ):
 			 	       // loop through the rows of data
