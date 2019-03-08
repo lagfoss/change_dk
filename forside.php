@@ -97,7 +97,7 @@
 												<p style="font-weight: 500;">CASE:</p>
 												<h3 class="forside_cases_header"><?php the_field('case_headline');?></h3>
 												<div class="forside_cases_catergories"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
-												<p class="forside_cases_text"> <p>
+												<p class="forside_cases_text"><?php the_field('forside_case_text');?><p>
 													<a class="forside_case_button" href="<?php the_permalink(); ?>">
 														<?php the_field('case_call_to_action_text') ?>
 														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="calltoaction arrow">
