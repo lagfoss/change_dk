@@ -236,19 +236,6 @@
 		<div class="row know_us align-items-center">
 			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
 	    </div>
-			<div class="col-lg-7">
-
-				<!-- Image carousel -->
-				<div class="col-11 owl-carousel owl-theme autowidth">
-					<?php
-						$images = get_field('know_us_gallery');
-						foreach ($images as $image):?>
-					<div class="know_us_gallery">
-						<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-	    		</div>
-    			<?php endforeach;?>
-				</div>
-			</div>
 
 			<!-- Know us text -->
 			<div class="col-lg-5 know_us_content">
@@ -258,6 +245,19 @@
 					<a class="know_button" href="<?php the_field('know_us_button_url'); ?>"><?php the_field('know_us_button_text'); ?> <?php if( get_field('know_us_button_icon') ): ?>
 					<img  alt="calltoaction arrow" src="<?php the_field('know_us_button_icon'); ?>" />
 					<?php endif; ?></a>
+			</div>
+
+			<div class="col-lg-7">
+				<!-- Image carousel -->
+				<div class="col-12 owl-carousel owl-theme autowidth">
+					<?php
+						$images = get_field('know_us_gallery');
+						foreach ($images as $image):?>
+					<div class="know_us_gallery">
+						<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+	    		</div>
+    			<?php endforeach;?>
+				</div>
 			</div>
 		</div>
 	</div>

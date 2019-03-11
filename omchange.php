@@ -5,7 +5,7 @@
   <div class="hero background_img_services" style="background-image:url(<?php the_field('omchange_hero'); ?>);">
     <div class="container-fluid wrapper">
       <div class="row">
-        <div class="hero_info">
+        <div class="omchange_hero_info">
           <div class="stroke_position_services">
             <div class="stroke_services"></div>
           </div>

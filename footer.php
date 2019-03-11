@@ -88,6 +88,7 @@ $(document).ready(function() {
       nav: true,
       navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
       autoplay:true,
+      autoplayTimeout: 13000,
       loop: true,
       dots:false,
   });
@@ -137,7 +138,8 @@ $(document).ready(function() {
   owl.owlCarousel({
     autoWidth:true,
     autoplay: true,
-    rtl: true
+    autoplayTimeout: 10000,
+    rtl: false,
 })
 
 
