@@ -62,7 +62,7 @@ body {
 }
 
 .cases_wrap {
-  padding: 220px 0px 120px 0px;
+  padding: 220px 0px 50px 0px;
 }
 
 .cases_wrap h1 {
@@ -1053,6 +1053,7 @@ input {
 
 .om_menu a {
   margin: 20px auto auto auto;
+  cursor: pointer;
 }
 
 .om_menu_img {
@@ -1605,10 +1606,12 @@ img.omchange_client_logo_neg {
 .case_card_content {
   position: relative;
   overflow: hidden;
-  margin: 50px;
+  margin: 60px;
   width: 100%;
   max-width: 900px;
+  background-color: black;
   min-height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center !important;

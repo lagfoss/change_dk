@@ -15,11 +15,11 @@
       <div class="om_menu">
         <div class="row align-items-center">
             <?php if( get_field('box_process_image', 'option') ): ?>
-          <a href="#steps"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
+          <a class="scrollProcess"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
           <?php endif; ?><h3><?php the_field('box_process_title', 'option'); ?></h3></a>
 
             <?php if( get_field('box_team_image', 'option') ): ?>
-          <a href="#team"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
+          <a class="scrollTeam"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
           <?php endif; ?><h3><?php the_field('box_team_title', 'option'); ?></h3></a>
 
 
@@ -216,6 +216,16 @@
           $(".menubtn").removeClass("menu_black");
       }
   });
+
+  $('.scrollProcess').on('click', function(event){
+      event.preventDefault();
+      $('html, body').stop().animate({scrollTop: $('#steps').offset().top}, 300);
+ });
+
+ $('.scrollTeam').on('click', function(event){
+      event.preventDefault();
+      $('html, body').stop().animate({scrollTop: $('#team').offset().top}, 300);
+ });
 
   ScrollReveal().reveal('.stroke_position_services', { distance: '300px', easing: 'ease-in-out', duration: 700});
   ScrollReveal().reveal('.hero_info h1', { distance: '400px', easing: 'ease-in-out', duration: 700});
