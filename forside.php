@@ -93,7 +93,7 @@
 
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 	                  <div class="row">
-												<div class="col-lg-4 forside_cases_wrapper">
+												<div class="col-lg-5 forside_cases_wrapper">
 												<p style="font-weight: 500;">CASE:</p>
 												<h3 class="forside_cases_header"><?php the_field('case_headline');?></h3>
 												<div class="forside_cases_catergories"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
@@ -103,7 +103,7 @@
 														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="calltoaction arrow">
 													</a>
 											</div>
-												<div class="col-lg-8 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>
+												<div class="col-lg-7 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>
 
 
 								</div>

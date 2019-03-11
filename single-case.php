@@ -70,14 +70,8 @@ Template Post Type: cases
                 </div>
                 <div class="row">
                   <img class="client_logo" src="<?php echo $clientlogo['url']; ?>" alt="<?php echo $clientlogo['alt'] ?>"/>
-                  <p class="client_text"><?php echo $clientname; ?></p>
+                  <a href="<?php echo $clienturl; ?>" class="case_link" target="_blank"><?php echo $clienturltext; ?></a>
                 </div>
-                <div class="row">
-                <a href="<?php echo $clienturl; ?>" class="case_link" target="_blank"><?php echo $clienturltext; ?></a>
-              </div>
-              <div class="row">
-                <a href="mailto:<?php echo $clientcontact; ?>" class="case_link"><?php echo $clientcontacttext; ?></a>
-              </div>
               <div class="row stroke_position_case">
                 <div class="stroke_case"></div>
                 <p class="pre_client"><?php echo $clientservice; ?></p>
@@ -212,7 +206,7 @@ Template Post Type: cases
             $yt_thumbnail = get_sub_field('yt_thumbnail');
             $yt_play_button = get_sub_field('yt_play_button');?>
 
-            <div class="container-fluid">
+            <div class="container-fluid rekru_wrapper">
               <div class="row rekru">
                 <div class="rekru_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
                 </div>

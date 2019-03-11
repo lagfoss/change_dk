@@ -86,7 +86,7 @@ h1.big {
 
 h1 {
   font-family: 'bebas-neue', sans-serif;
-  font-size: 83px;
+  font-size: 73px;
   color: white;
 }
 
@@ -619,11 +619,11 @@ input {
   border-color: #111517;
   color: #111517;
 }
-
+/*
 .out_white {
   background-color: #f1f1f1;
 }
-
+*/
 .display_no {
   display: none;
 }
@@ -646,7 +646,7 @@ input {
 }
 
 .hero_info {
-  margin-top: 300px;
+  margin-top: 60%;
 }
 
 .hero_title {
@@ -768,8 +768,8 @@ input {
 }
 
 .case_img {
-  width: 800px;
-  min-height: 600px;
+  width: 600px;
+  min-height: 400px;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -787,20 +787,19 @@ input {
   width: 450px;
   min-height: 650px;
   z-index: 1;
-  left: 80px;
 }
 
 .forside_cases_header {
   font-family: 'bebas-neue', sans-serif;
-  font-size: 50px;
+  font-size: 41px;
   line-height: 43px;
   letter-spacing: 0px;
   text-align: left;
-  width: 900px;
+  width: 100%;
 }
 
 .forside_cases_text {
-  width: 250px;
+  width: 100%;
   padding-right: 30px;
 }
 
@@ -840,10 +839,7 @@ input {
 
 .forside_case_button {
   display: flex;
-  position: absolute;
-  top: 300px;
-  left: 0px;
-  width: 175px;
+  width: 150px;
   z-index: 2;
   text-decoration: none;
   font-weight: 500;
@@ -854,6 +850,10 @@ input {
   border-style: solid;
   border-width: 1px;
   border-color: #111517;
+}
+
+.forside_case_button img {
+  padding-left: 10px;
 }
 
 .forside_case_button:hover {
@@ -907,7 +907,7 @@ input {
 
 
 .do_for_u {
-  margin: 300px auto 100px auto;
+  margin: 100px auto 100px auto;
 }
 
 .wcwd_content {
@@ -1868,8 +1868,9 @@ img.omchange_client_logo_neg {
 .case_link {
   font-size: 17px;
   border-bottom: 1px solid #111517;
+  margin-top: 15px;
   padding-bottom: 3px;
-  margin-bottom: 40px;
+  height: 100%;
 }
 
 .case_link:hover {
@@ -1881,10 +1882,10 @@ img.omchange_client_logo_neg {
 /*========= CASES image start =========*/
 
 .client_image {
-  height: 700px;
+  height: 60vh;
   overflow: hidden;
   background-position: center;
-  margin: 0 0 150px 0;
+  margin: 0 0 60px 0;
 }
 
 /*========= CASES image slut =========*/
@@ -1892,14 +1893,17 @@ img.omchange_client_logo_neg {
 
 .goal_line {
   border-bottom: solid 2px #e3e3e3;
-  padding-bottom: 200px;
-  margin-bottom: 180px;
 }
 
 .case_goal, .case_strategi, .case_some_content, .case_results {
   width: 60%;
   margin: auto;
+  padding: 60px 0 60px 0;
 }
+
+ .brand, .rekru_wrapper {
+     padding: 60px 0 60px 0;
+ }
 
 /*========= CASES goal slut =========*/
 /*========= CASES strategi start =========*/
@@ -1987,7 +1991,7 @@ img.omchange_client_logo_neg {
 
 .rekru {
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 30px;
 }
 
 .rekru_content {
@@ -2048,14 +2052,11 @@ div.thumbnail_container
 img.thumbnail
 {
     opacity: 0.5;
+    height: 100%;
 }
 
 /*========= CASES rekrutering slut =========*/
 /*========= CASES branding start =========*/
-
-.brand {
-  margin-bottom: 160px;
-}
 
 .brand_content {
   max-width: 430px;
@@ -2399,9 +2400,10 @@ img.thumbnail
 }
 
 .cvr {
-  height: 30px;
+  height: 50px;
   background-color: #e3e3e3;
-  font-size: 13px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 @-moz-document url-prefix() {
@@ -2675,10 +2677,6 @@ img.thumbnail
 
   .case_goal, .case_strategi, .case_some_content, .case_results {
     width: 100%;
-  }
-
-  .client_image {
-    height: 500px;
   }
 
   .case_strategi_img img {

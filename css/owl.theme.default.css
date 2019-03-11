@@ -160,8 +160,7 @@ padding-left: 50px;
 .wrapper_cases .forside_carousel_wrapper .owl-dots  {
   margin-top: 10px;
   position: absolute;
-  bottom: 25%;
-  margin-left: 75px;
+  bottom: 20%;
 }
 
 .carousel_om_change .owl-stage-outer {
@@ -184,7 +183,7 @@ padding-left: 50px;
   position: absolute;
   left: 426px;
   top: 100px;
-} 
+}
 
 .contact_carousel .owl-nav button.owl-prev  {
   display: block;
