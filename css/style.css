@@ -619,11 +619,11 @@ input {
   border-color: #111517;
   color: #111517;
 }
-/*
+
 .out_white {
   background-color: #f1f1f1;
 }
-*/
+
 .display_no {
   display: none;
 }
@@ -809,7 +809,7 @@ input {
 
 .forside_cases_catergories {
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -1660,6 +1660,7 @@ img.omchange_client_logo_neg {
   position: absolute;
   margin-top: 75px;
   margin-left: 10%;
+  max-width: 450px;
 }
 
 .case_card_h2:hover {
