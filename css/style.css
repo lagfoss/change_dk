@@ -2081,7 +2081,7 @@ img.thumbnail
   position: absolute;
   z-index: 2;
   width: 407px;
-  left: -41px;
+  left: -51px;
   top: 6px;
 }
 
@@ -2424,11 +2424,6 @@ img.thumbnail
 }
 
 /*========= Large devices (desktops/tablets, 1100px and down) =========*/
-@media screen and (max-width: 1104px) and (min-width: 993px) {
-  .iphone_wrapper {
-    left: 21px;
-  }
-}
 
 /*========= Large devices (desktops, 992px and down) =========*/
 @media screen and (max-width: 992px) {
@@ -2513,10 +2508,6 @@ img.thumbnail
     height: 106%;
     margin-top: -4px;
   }
-
-  .iphone_wrapper {
-    left: -5px;
-   }
 
    .team_members_half {
      padding-left: 20px;
@@ -2708,10 +2699,6 @@ img.thumbnail
     margin-top: -4px;
   }
 
-  .iphone_wrapper {
-    left: -10px;
-  }
-
   .contact {
   flex-direction: column-reverse;
   }
@@ -2877,10 +2864,6 @@ img.thumbnail
 
   .omchange_card_categories {
     font-size: 10px;
-  }
-
-  .iphone_wrapper {
-    left: -51px;
   }
 }
 

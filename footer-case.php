@@ -192,13 +192,15 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
     navContainer: '#customNav',
     dots: false,
     loop: true,
-    items: 2,
-    stagePadding: 50,
+    autoplay: true,
+    autoplayTimeout: 15000,
+    items: 1,
+    stagePadding: 0,
     responsive:{
 
       1105: {
-        items: 2,
-        stagePadding: 15,
+        items: 1,
+        stagePadding: 0,
       },
 
       992: {
@@ -207,18 +209,18 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
       },
 
       771: {
-        items: 2,
+        items: 1,
         touchDrag: true,
       },
 
       576: {
         items: 1,
-        stagePadding: 45,
+        stagePadding: 0,
       },
 
       320: {
         items:1,
-        stagePadding: 5,
+        stagePadding: 0,
         touchDrag: true,
       }
     }
