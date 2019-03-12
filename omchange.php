@@ -146,9 +146,9 @@
                       <img class="" src="<?php the_sub_field('team_img'); ?>" />
                       <div class="team_img_overlay">
                         <div class="team_img_text">
-                          <p><?php the_sub_field('team_mail') ?></p>
-                          <p><?php the_sub_field('team_phone_number') ?></p>
-                          <p><?php the_sub_field('team_title') ?></p>
+                          <div class="team_overlay_content"><?php the_sub_field('team_title') ?></div>
+                          <div class="team_overlay_content"><img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/mail.svg" alt=""> <?php the_sub_field('team_mail') ?></div>
+                          <div class="team_overlay_content"><img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/phone.svg" alt=""> <?php the_sub_field('team_phone_number') ?></div>
                         </div>
                       </div>
                       </div>

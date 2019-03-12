@@ -646,7 +646,7 @@ input {
 }
 
 .hero_info {
-  margin-top: 50%;
+  margin-top: 40%;
 }
 
 .omchange_hero_info {
@@ -1462,6 +1462,19 @@ img.omchange_client_logo_neg {
   display: flex;
 }
 
+.team_overlay_content {
+  display: flex;
+  width: 100%;
+  font-size: 22px;
+  font-family: 'bebas-neue', sans-serif;
+}
+
+.team_overlay_content img {
+  width: 17px;
+  height: 17px;
+  margin: 4px;
+}
+
 .left {
   display: inline-flex;
 }
@@ -1521,8 +1534,9 @@ img.omchange_client_logo_neg {
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 82%;
+  left: 38%;
+  max-width: 290px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1692,6 +1706,7 @@ img.omchange_client_logo_neg {
   color: white;
   text-decoration: none;
   box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
+  transition: all 500ms;
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -2281,7 +2296,10 @@ img.thumbnail
 }
 
 .your-name input {
-  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+}
+
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
+    box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
 
 .wpcf7-submit {
@@ -2513,7 +2531,6 @@ img.thumbnail
     min-height: 300px;
     width: 70%;
     text-align: -webkit-center;
-    margin-right: 20%;
   }
 
   .forside_cases_catergories {
@@ -2521,7 +2538,7 @@ img.thumbnail
   }
 
   .case_img {
-    margin-left: 5%;
+    margin-left: 10%;
     min-height: 390px;
     width: 600px;
  }
@@ -2620,7 +2637,6 @@ img.thumbnail
     min-height: 400px;
     width: 70%;
     text-align: -webkit-center;
-    margin-right: 20%;
   }
 
   .forside_cases_header {
@@ -2633,7 +2649,7 @@ img.thumbnail
   }
 
   .case_img {
-    margin-left: 5%;
+    margin-left: 10%;
     min-height: 390px;
     width: 600px;
   }
@@ -2797,10 +2813,6 @@ img.thumbnail
 
   .case_some_empty {
     display: none;
-  }
-
-  .forside_cases_wrapper {
-    margin-right: 30%;
   }
 
   .case_strategi_img img {
