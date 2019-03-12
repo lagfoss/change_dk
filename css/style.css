@@ -622,8 +622,8 @@ input {
 /*
 .out_white {
   background-color: #f1f1f1;
-}
-*/
+} */
+
 .display_no {
   display: none;
 }
@@ -1278,8 +1278,10 @@ input {
 
 .quote_logo {
   margin: auto;
-  height: 35px;
-  margin-bottom: 150px;
+  height: 105px;
+  margin-bottom: 100px;
+  }
+
 }
 
 /*========= Om Change klient citat slut =========*/
@@ -1706,7 +1708,7 @@ img.omchange_client_logo_neg {
   color: white;
   text-decoration: none;
   box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
-  transition: all 500ms;
+  transition: all 200ms ease;
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -2272,6 +2274,7 @@ img.thumbnail
 
 .contact_gallery img {
   width: 360px;
+  height: 560px;
   border-radius: 10px;
   box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.2);
 }
@@ -2533,12 +2536,16 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     text-align: -webkit-center;
   }
 
+  .forside_case_text {
+    padding-right: 0px;
+  }
+
   .forside_cases_catergories {
     text-align: inherit;
   }
 
   .case_img {
-    margin-left: 10%;
+    margin-left: 5%;
     min-height: 390px;
     width: 600px;
  }
@@ -2649,7 +2656,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .case_img {
-    margin-left: 10%;
+    margin-left: 7%;
     min-height: 390px;
     width: 600px;
   }
@@ -2975,7 +2982,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .forside_cases_wrapper {
     min-height: 475px;
-    margin-right: 51%;
   }
 
   .forside_cases_wrapper h2 {
@@ -3002,8 +3008,16 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-top: 150px;
   }
 
+  .h1_hero_services {
+  font-size: 43px;
+  }
+
+  .services_main_content_overskrift {
+    font-size: 35px;
+  }
+
   .services_main_content_text {
-    width: 100%;
+    width: 95%;
   }
 
   .background_img_services {
@@ -3012,6 +3026,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .know_us {
     text-align: center;
+  }
+
+  .know_us_content {
+    padding-left: 0px;
   }
 
   .know_us_gallery img {
@@ -3095,7 +3113,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .forside_cases_wrapper {
-    margin-right: 55%;
     min-height: 495px;
   }
 

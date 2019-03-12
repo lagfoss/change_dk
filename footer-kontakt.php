@@ -77,9 +77,11 @@ owl.owlCarousel({
 
   items: 1,
   margin: 0,
+  padding: 0,
   dots: false,
   nav: true,
   navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
+
   responsive:{
     993: {
       items: 1,

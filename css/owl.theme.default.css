@@ -237,6 +237,7 @@ padding-left: 50px;
   }
 
   .contact_carousel .owl-nav {
+    position: absolute;
     left: 334px;
     top: 185px;
   }
@@ -277,16 +278,20 @@ padding-left: 50px;
 
     @media screen and (max-width: 575px) {
       .carousel_om_change .owl-nav .owl-next {
-        position: absolute;
-        bottom: 85px;
-        right: 10px;
+          position: absolute;
+          bottom: 85px;
+          right: 10px;
 
       }
 
       .carousel_om_change .owl-nav .owl-prev {
-        position: absolute;
+      position: absolute;
        bottom: 85px;
        left: 10px;
+      }
+
+      .logo_slider .owl-nav .owl-next, .logo_slider .owl-nav .owl-prev {
+        display: none;
       }
 
 }
