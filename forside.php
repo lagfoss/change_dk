@@ -160,11 +160,11 @@
 
 	<!-- Section med hvad vi gøre -->
 	<div class="container-fluid do_for_u wrapper">
+		<div class="wcwd_intro wcwd_content">
+				<h2><?php the_field('wcwd_header'); ?></h2>
+				<p><?php the_field('wcwd_text'); ?></p>
+		</div>
 		<div class="row justify-content-center align-items-center">
-			<div class="col-sm-4 wcwd_intro wcwd_content">
-					<h2><?php the_field('wcwd_header'); ?></h2>
-					<p><?php the_field('wcwd_text'); ?></p>
-			</div>
 
 			<div class="col-sm-4 wcwd_hover wcwd_content">
 					<?php if( get_field('brandstrategi_img') ): ?>
@@ -204,6 +204,14 @@
 				<?php endif; ?>
 				<h3><?php the_field('kommunikationsstrategi_header'); ?></h3>
 				<p><?php the_field('kommunikationsstrategi_text'); ?></p>
+			</div>
+
+			<div class="col-sm-4 wcwd_hover wcwd_content">
+				<?php if( get_field('socialemedier_img') ): ?>
+				<img alt="socialmedia" class="wcwd_img" src="<?php the_field('socialemedier_img'); ?>" />
+				<?php endif; ?>
+				<h3><?php the_field('socialemedier_header'); ?></h3>
+				<p><?php the_field('socialemedier_text'); ?></p>
 			</div>
 
 		</div>

@@ -619,11 +619,11 @@ input {
   border-color: #111517;
   color: #111517;
 }
-
+/*
 .out_white {
   background-color: #f1f1f1;
 }
-
+*/
 .display_no {
   display: none;
 }
@@ -923,6 +923,9 @@ input {
 
 .wcwd_intro {
   padding: 40px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: -webkit-center;
 }
 
 .wcwd_intro h2 {
@@ -1484,6 +1487,50 @@ img.omchange_client_logo_neg {
   display: none;
 }
 
+.team_img_container {
+  position: relative;
+  max-width: 320px;
+}
+
+.team_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team_img_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97.3%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e54c00;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.team_img_container:hover .team_img_overlay {
+  opacity: 0.8;
+}
+
+.team_img_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
 /*========= TEAM slut =========*/
 /*========= SERVICES start =========*/
 
@@ -1640,16 +1687,17 @@ img.omchange_client_logo_neg {
 }
 
 .case_card_content:hover {
-  box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
-  transform: scale(0.97);
+  max-width: 899px;
+  min-height: 399px;
+  color: white;
   text-decoration: none;
-  color: #f2f2f2;
-  max-width: 897px;
-  min-height: 397px;
-  -webkit-transform: scale(0.98);
-  -moz-transform: scale(0.98);
-  -o-transform: scale(0.98);
+  box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
 }
+
 .client_logo_neg {
   margin-left: 6%;
   margin-top: 30px;
@@ -2837,8 +2885,12 @@ img.thumbnail
   .team_name {
     width: 100%;
     margin-bottom: 50px;
-    margin-left: auto;
     margin-right: auto;
+  }
+
+  .team_img_overlay {
+    height: 100%;
+    width: 100%;
   }
 
   .nav_wrapper {
@@ -2873,6 +2925,8 @@ img.thumbnail
   .omchange_card_categories {
     font-size: 10px;
   }
+
+
 }
 
 /*========= Small devices () =========*/

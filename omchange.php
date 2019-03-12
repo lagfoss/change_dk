@@ -142,7 +142,17 @@
                   <div class="team_members_empty"></div>
                   <div class="d-flex team_members_half">
                     <div class="col-12">
-                      <img src="<?php the_sub_field('team_img'); ?>" />
+                      <div class="team_img_container">
+                      <img class="" src="<?php the_sub_field('team_img'); ?>" />
+                      <div class="team_img_overlay">
+                        <div class="team_img_text">
+                          <p><?php the_sub_field('team_mail') ?></p>
+                          <p><?php the_sub_field('team_phone_number') ?></p>
+                          <p><?php the_sub_field('team_title') ?></p>
+                        </div>
+                      </div>
+                      </div>
+
                       <div class="row team_name">
                         <h3 class="left"><?php the_sub_field('team_number'); ?></h3>
                         <div class="stroke_team"></div>
