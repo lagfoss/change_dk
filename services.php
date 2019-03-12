@@ -48,10 +48,14 @@
                 <p class="scroll_text"><?php echo $text; ?></p>
             </div>
           <?php endwhile; ?>
+
+          <!--
           <div id="services_contact" class="col-sm-4 wcwd_content">
             <div class="services_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
 
             </div>
+
+
             <div class="stroke_position_services">
               <div class="stroke_services"></div>
             </div>
@@ -62,7 +66,7 @@
               <img alt="calltoaction arrow" src="<?php the_field('services_contact_button_arrow'); ?>" />
               </a>
             <?php endif; ?>
-          </div>
+          </div> -->
         <?php endif; ?>
 
     </div>
@@ -85,7 +89,7 @@
       </div>
     </div>
 
-<?php get_footer(services); ?>
+<?php get_footer(); ?>
 
 <script type="text/javascript">
 
