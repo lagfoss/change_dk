@@ -1450,18 +1450,34 @@ img.omchange_client_logo_neg {
 
 .team_members img {
   max-width: 320px;
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
-.team_name {
+.team_img_container {
+  position: relative;
   max-width: 320px;
-  width: 90%;
-  margin-bottom: 60px;
-  font-size: 24px;
-  display: flex;
+}
+
+.team_img_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97.3%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e54c00;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.team_img_container:hover .team_img_overlay {
+  opacity: 0.8;
 }
 
 .team_overlay_content {
@@ -1477,12 +1493,33 @@ img.omchange_client_logo_neg {
   margin: 4px;
 }
 
+.team_img_text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 82%;
+  left: 38%;
+  max-width: 290px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .left {
   display: inline-flex;
 }
 
 .right {
   display: inline-flex;
+}
+
+.team_name {
+  max-width: 320px;
+  width: 100%;
+  margin-bottom: 75px;
+  font-size: 24px;
+  display: flex;
 }
 
 .stroke_team {
@@ -1501,51 +1538,6 @@ img.omchange_client_logo_neg {
 .team_members:nth-of-type(odd) .team_members_empty {
   display: none;
 }
-
-.team_img_container {
-  position: relative;
-  max-width: 320px;
-}
-
-.team_img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.team_img_overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 97.3%;
-  width: 90%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #e54c00;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.team_img_container:hover .team_img_overlay {
-  opacity: 0.8;
-}
-
-.team_img_text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 82%;
-  left: 38%;
-  max-width: 290px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
 
 /*========= TEAM slut =========*/
 /*========= SERVICES start =========*/
@@ -2484,6 +2476,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   font-weight: 400;
 }
 
+/*========= FIREFOX =========*/
 @-moz-document url-prefix() {
     .logo_slider .owl-prev img, .logo_slider .owl-next img {
       height: 15px;
