@@ -1452,7 +1452,6 @@ img.omchange_client_logo_neg {
   max-width: 320px;
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 10px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
@@ -1467,7 +1466,7 @@ img.omchange_client_logo_neg {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 97.3%;
+  height: 100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -1518,6 +1517,7 @@ img.omchange_client_logo_neg {
 .team_name {
   max-width: 320px;
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 75px;
   font-size: 24px;
   display: flex;
