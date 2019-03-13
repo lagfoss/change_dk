@@ -1500,9 +1500,10 @@ img.omchange_client_logo_neg {
   top: 82%;
   left: 38%;
   max-width: 290px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 90%;
+  -webkit-transform: translate(-40%, -50%);
+  -ms-transform: translate(-40%, -50%);
+  transform: translate(-40%, -50%);
   text-align: center;
 }
 
@@ -2887,17 +2888,16 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     display: none;
   }
 
-  .team_members_half img {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+  .team_img_container {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .team_name {
     width: 100%;
     margin-bottom: 50px;
     margin-right: auto;
+    margin-left: auto;
   }
 
   .team_img_overlay {
