@@ -68,6 +68,14 @@ $(document).ready(function() {
 
 });
 
+$(function() {
+  if($(window).width() <= 768) {
+    $("logoimg").each(function() {
+      $(this).attr("src", $(this).attr("src").replace("<?php echo get_bloginfo('template_directory'); ?>images/logo.svg", "<?php echo get_bloginfo('template_directory'); ?>images/logo_neg.svg"));
+    });
+  }
+});
+
 $(document).ready(function(){
 $(".owl-carousel").owlCarousel();
 });
