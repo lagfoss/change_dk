@@ -21,7 +21,7 @@
 						$images = get_field('contact_gallery');
 						foreach ($images as $image):?>
 					<div class="contact_gallery">
-						<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 	    		</div>
     			<?php endforeach;?>
 				</div>

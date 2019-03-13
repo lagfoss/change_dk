@@ -262,7 +262,7 @@
 						$images = get_field('know_us_gallery');
 						foreach ($images as $image):?>
 					<div class="know_us_gallery">
-						<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 	    		</div>
     			<?php endforeach;?>
 				</div>
