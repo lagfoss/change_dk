@@ -2788,6 +2788,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     background-color: #f2f2f2;
   }
 
+  .header_contact .menu_black:before, .header_contact .menu_black span, .header_contact .menu_black:after {
+    background-color: #111517;
+  }
+
   .contact {
   flex-direction: column-reverse;
   }
