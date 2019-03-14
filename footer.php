@@ -14,7 +14,10 @@
   <!-- Need a successfull project slut -->
 
   <!-- lets talk start -->
-
+  <div class="letstalk_footer">
+    <p><?php the_field('footer_lets_talk', 'option'); ?></p>
+    <h2><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></h2>
+  </div>
   <!-- lets talk slut -->
 
   <!-- sociale medier footer start -->
@@ -45,14 +48,13 @@
     <?php endif; ?>
   </div>
   </div>
-  </div>
+  </div> 
   <!-- sociale medier footer slut -->
 
   <!-- kontakt information footer start -->
 
   <div class="container-fluid contact_footer">
    <h3><a href="mailto:<?php the_field('footer_mail', 'option'); ?>" class="footer_mail"><?php the_field('footer_mail', 'option'); ?></a></h3>
-   <h3><a href="tel:<?php the_field('phone_number', 'option'); ?>" class="footer_mail"><?php the_field('phone_number', 'option'); ?></a></h3>
     <a href="<?php the_field('google_maps_link', 'option'); ?>" class="footer_address"><?php the_field('footer_address', 'option'); ?></a>
 
   </div>
@@ -62,7 +64,7 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center cvr">
-      <div class="align-self-center">Change ApS &#9474; CVR: 37197351</div>
+      <div class="align-self-center">Change Aps &#9474; CVR: 37197351</div>
     </div>
   </div>
   <!-- aps slut -->
@@ -88,7 +90,6 @@ $(document).ready(function() {
       nav: true,
       navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
       autoplay:true,
-      autoplayTimeout: 13000,
       loop: true,
       dots:false,
   });
@@ -98,12 +99,11 @@ $(document).ready(function() {
     items: 1,
     dots: true,
     nav: false,
-    mouseDrag: false,
-    touchDrag: true,
+    mouseDrag: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 10000,
     margin: 1,
-    autoplay: false,
+    autoplay: true,
   });
 
 
@@ -139,8 +139,7 @@ $(document).ready(function() {
   owl.owlCarousel({
     autoWidth:true,
     autoplay: true,
-    autoplayTimeout: 10000,
-    rtl: false,
+    rtl: true
 })
 
 
