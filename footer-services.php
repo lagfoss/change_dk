@@ -2,6 +2,18 @@
 
 <footer class="service_footer">
 
+  <!-- Need a successfull project start -->
+
+  <div class="footer_project">
+    <h2><?php the_field('footer_project', 'option'); ?></h2>
+    <a class="footer_button" href="<?php the_field('footer_button_url', 'option'); ?>"><?php the_field('footer_button_text', 'option'); ?>
+
+    <?php if( get_field('footer_button_icon', 'option') ): ?>
+      <img  alt="calltoaction arrow" src="<?php the_field('footer_button_icon', 'option'); ?>" />
+    <?php endif; ?></a>
+  </div>
+  <!-- Need a successfull project slut -->
+
   <!-- sociale medier footer start -->
 
   <div class="container-fluid">
@@ -36,8 +48,8 @@
   <!-- kontakt information footer start -->
 
   <div class="container-fluid contact_footer">
-   <h3><a href="mailto:<?php the_field('footer_mail', 'option'); ?>" class="footer_mail"><?php the_field('footer_mail', 'option'); ?></a></h3>
-      <h3><a href="tel:<?php the_field('phone_number', 'option'); ?>" class="footer_mail"><?php the_field('phone_number', 'option'); ?></a></h3>
+    <h3><a href="mailto:<?php the_field('footer_mail', 'option'); ?>" class="footer_mail"><?php the_field('footer_mail', 'option'); ?></a></h3>
+    <h3><a href="tel:<?php the_field('phone_number', 'option'); ?>" class="footer_mail"><?php the_field('phone_number', 'option'); ?></a></h3>
     <a href="<?php the_field('google_maps_link', 'option'); ?>" class="footer_address"><?php the_field('footer_address', 'option'); ?></a>
 
   </div>
@@ -47,7 +59,7 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center cvr">
-      <div class="align-self-center">Change Aps &#9474; CVR: 37197351</div>
+      <div class="align-self-center">Change ApS &#9474; CVR: 37197351</div>
     </div>
   </div>
   <!-- aps slut -->

@@ -89,7 +89,7 @@
       </div>
     </div>
 
-<?php get_footer(); ?>
+<?php get_footer(services); ?>
 
 <script type="text/javascript">
 
