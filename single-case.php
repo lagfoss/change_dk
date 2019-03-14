@@ -129,7 +129,7 @@ Template Post Type: cases
           $strategitext = get_sub_field('case_strategi_text'); ?>
 
           <div class="container-fluid strategi_line">
-            <div class="strategi_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+            <div class="strategi_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot.png');">
             </div>
             <div class="wrapper">
               <div class="row case_strategi">
@@ -208,7 +208,7 @@ Template Post Type: cases
 
             <div class="container-fluid rekru_wrapper">
               <div class="row rekru">
-                <div class="rekru_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+                <div class="rekru_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot.png');">
                 </div>
                 <div class="col-lg-6 d-flex justify-content-end align-items-center">
                   <div class="rekru_content">
