@@ -3151,23 +3151,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 }
 
 /*========= Height of devices =========*/
-@media screen and (min-width: 992px) and (min-height: 661px) and (max-height: 780px) {
-
-  .hero_info {
-    margin-top: 300px;
-  }
-
-  .watchourshowreel {
-    margin-top: 400px;
-  }
-
-  .omchange_category_wrapper {
-    padding: 4px 7%;
-  }
-
-}
-
-/*========= Height of devices =========*/
 @media screen and (min-width: 768px) and (max-width: 991px) and (max-height: 780px) {
 
   .hero_info {
@@ -3177,23 +3160,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .watchourshowreel {
     margin-top: 270px;
   }
-
 }
 
 /*========= Height of devices =========*/
-@media screen and (min-width: 768px) and (max-height: 660px) {
-
-  .hero_info {
-    margin-top: 150px;
-  }
-
-  .watchourshowreel {
-    margin-top: 280px;
-  }
-}
-
-/*========= Height of devices =========*/
-@media screen and (min-width: 568px) and (max-height: 665px) {
+@media screen and (min-width: 568px) and (max-height: 685px) {
 
   h1 {
     font-size: 55px;
@@ -3203,8 +3173,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .hero_info {
     margin-top: 100px;
   }
-
-
 }
 
 /*========= Height of devices =========*/
