@@ -67,11 +67,6 @@
 
 <script type="text/javascript">
 
-$(document).ready(function() {
-  $('.whitebg .logoimg').attr('src', '<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg');
-
-});
-
   $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
   });

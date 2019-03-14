@@ -19,6 +19,7 @@
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
   <?php wp_head(); ?>
 
@@ -26,7 +27,7 @@
 
 <body>
   <!-- Content calendar og Sociale medier start -->
-  <div class="container-fluid pre_header">
+  <div class="container-fluid pre_header header_contact">
     <div class="row justify-content-between SoMe">
       <div class="col-sm-6-float-left align-self-center">
           <?php the_field('header_text', 'option'); ?>
@@ -57,7 +58,7 @@
     </div>
   </div>
   <!-- Content calendar og Sociale medier slut -->
-  <header class="position-fixed header">
+  <header class="position-fixed header header_contact">
 
     <!-- Menu/Nav start -->
 
@@ -65,7 +66,9 @@
     <nav>
       <div id="primaryNav">
          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="change logo"></a>
+           <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="change logo">
+           <img class="logoimg2" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="change logo">
+        </a>
 
       <div class="container-fluid">
         <!-- <?php get_search_form(); ?> -->
@@ -195,7 +198,7 @@
            //Skifter mellem forskellige classes ved at trykke på menu knappen
            $(".menubtn").click(function() {
              $('.menubtn').toggleClass('pos_fix');
-             /*$('.search_form').toggleClass('pos_fix');
+            /* $('.search_form').toggleClass('pos_fix');
              $('.input').toggleClass('out_black');*/
              $('.pre_header').toggleClass('display_no');
 
@@ -219,7 +222,7 @@
                  search.removeClass('active_searchclose');
                  search.addClass('pseudo_searchclose');
                }
-             }).slideDown(10);*/
+             }).slideDown(10); */
            });
 
         </script>

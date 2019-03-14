@@ -1,7 +1,6 @@
 <?php /* Template Name: Kontakt */ ?>
 
-<?php get_header(); ?>
-<body <?php body_class(whitebg); ?>>
+<?php get_header(kontakt); ?>
 
   <div class="container-fluid">
     <div class="row contact">

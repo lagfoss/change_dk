@@ -160,7 +160,7 @@ header {
   font-weight: 400;
 }
 
-.post-type-archive .SoMe, .page-id-521 .SoMe {
+.post-type-archive .SoMe, .header_contact .SoMe {
   color: #111517;
 }
 
@@ -593,8 +593,8 @@ input {
 
 .post-type-archive .menubtn:before, .post-type-archive .menubtn span,
 .post-type-archive .menubtn:after, .post-type-archive .pseudo_search:before,
-.page-id-521 .menubtn:before, .page-id-521 .menubtn span, .page-id-521 .menubtn:after,
-.page-id-521 .pseudo_search:before {
+.header_contact .menubtn:before, .header_contact .menubtn span, .header_contact .menubtn:after,
+.header_contact.pseudo_search:before {
   background-color: #111517;
 }
 
@@ -2205,8 +2205,8 @@ img.thumbnail
 /*========= CONTACT start =========*/
 /*========= CONTACT intro start =========*/
 
-.contact {
-
+.header_contact .logoimg {
+  display: none;
 }
 
 .contact_intro {
@@ -2769,6 +2769,23 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .orange_square_case {
     height: 106%;
     margin-top: -4px;
+  }
+
+  .header_contact .logoimg {
+    display: block;
+  }
+
+  .header_contact .logoimg2 {
+    display: none;
+  }
+
+  .header_contact .SoMe {
+    color: #f2f2f2;
+  }
+
+  .header_contact .menubtn:before, .header_contact .menubtn span, .header_contact .menubtn:after,
+  .header_contact .pseudo_search:before {
+    background-color: #f2f2f2;
   }
 
   .contact {
