@@ -53,7 +53,7 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center cvr">
-      <div class="align-self-center">Change Aps &#9474; CVR: 37197351</div>
+      <div class="align-self-center">Change ApS &#9474; CVR: 37197351</div>
     </div>
   </div>
   <!-- aps slut -->
