@@ -194,7 +194,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="stroke_position">
+      <div class="stroke_position_om">
         <div class="stroke"></div>
       </div>
     </div>
