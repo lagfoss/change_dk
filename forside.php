@@ -242,7 +242,7 @@
 	<!-- Image carousel and get to know us -->
 	<div class="container-fluid">
 		<div class="row know_us align-items-center">
-			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
+			<div class="know_us_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.svg');">
 	    </div>
 
 			<!-- Know us text -->
