@@ -372,17 +372,15 @@ nav {
 }
 
 .nav_address {
-  font-family: Montserrat;
-  font-size: 10px;
-  padding-top: 15px;
+  margin-top: 20px;
 }
 
-.nav_address p {
+.nav_address a {
   font-size: 16px;
   text-decoration: none;
 }
 
-.nav_address:hover {
+.nav_address a:hover {
   text-decoration: none;
   color: inherit;
 }

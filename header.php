@@ -118,9 +118,10 @@
               <?php endwhile; ?>
             </div>
             <?php endif; ?>
-            <p><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></p>
-            <a href="<?php the_field('google_maps_link', 'option'); ?>" class="nav_address"><?php the_field('nav_address', 'option'); ?></a>
-
+            <div class="nav_address">
+              <a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a>
+              <a href="<?php the_field('google_maps_link', 'option'); ?>"><?php the_field('nav_address', 'option'); ?></a>
+            </div>  
           </div>
         </div>
         </div>
