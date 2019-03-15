@@ -71,6 +71,7 @@
 
 /* Logo transition script */
 $(document).scroll(function() {
+  if (matchMedia('only screen and (max-width: 768px)').matches)
   scroll_pos = $(this).scrollTop();
                 if(scroll_pos > 320) {
 
@@ -122,7 +123,7 @@ owl.owlCarousel({
   dots: false,
   nav: true,
   navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
- 
+
   responsive:{
     993: {
       items: 1,
