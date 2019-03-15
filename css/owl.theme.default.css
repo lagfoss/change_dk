@@ -136,14 +136,14 @@ padding-left: 50px;
 
 .logo_slider .owl-prev {
   position: absolute;
-  top: -1px;
+  top: 30px;
   left: 0px;
 
 }
 
 .logo_slider .owl-next {
   position: absolute;
-  top: -1px;
+  top: 30px;
   right: 0px;
 }
 
