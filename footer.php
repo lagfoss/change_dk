@@ -103,11 +103,13 @@ $(document).ready(function() {
     items: 1,
     dots: true,
     nav: false,
-    mouseDrag: true,
+    mouseDrag: false,
+    touchDrag: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 10000,
     margin: 1,
     autoplay: true,
+
   });
 
 
