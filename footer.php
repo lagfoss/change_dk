@@ -85,6 +85,17 @@ $(document).ready(function() {
       autoplay:true,
       loop: true,
       dots:false,
+
+      responsive: {
+
+        575: {
+        items: 4,
+        },
+
+        320: {
+        items: 3,
+        },
+      }
   });
 
   var owl = $('.forside_carousel_wrapper');
