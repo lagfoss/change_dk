@@ -1015,7 +1015,7 @@ input {
 }
 
 .know_us_content {
-  max-width: 400px;
+  max-width: 455px;
   margin-left: auto;
   padding-left: 15px;
 }
@@ -2524,6 +2524,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
    }
 
    .know_us_content {
+     max-width: 550px;
      margin-right: auto;
      padding-right: 15px
    }
