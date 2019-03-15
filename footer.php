@@ -85,17 +85,6 @@ $(document).ready(function() {
       autoplay:true,
       loop: true,
       dots:false,
-
-      responsive: {
-
-        575: {
-        items: 4,
-        },
-
-        320: {
-        items: 3,
-        },
-      }
   });
 
   var owl = $('.forside_carousel_wrapper');
@@ -103,13 +92,11 @@ $(document).ready(function() {
     items: 1,
     dots: true,
     nav: false,
-    mouseDrag: false,
-    touchDrag: true,
+    mouseDrag: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 10000,
     margin: 1,
     autoplay: true,
-
   });
 
 
