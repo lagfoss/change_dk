@@ -71,6 +71,7 @@
 
 /* Logo transition script */
 $(document).scroll(function() {
+  if (matchMedia('only screen and (max-width: 768px)').matches)
   scroll_pos = $(this).scrollTop();
                 if(scroll_pos > 320) {
 
