@@ -160,7 +160,7 @@
 
 	<!-- Section med hvad vi gøre -->
 	<div class="container-fluid do_for_u wrapper">
-		<div class="wcwd_intro wcwd_content">
+		<div class="wcwd_intro">
 				<h2><?php the_field('wcwd_header'); ?></h2>
 				<p><?php the_field('wcwd_text'); ?></p>
 		</div>

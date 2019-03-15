@@ -909,7 +909,13 @@ input {
 
 
 .do_for_u {
-  margin: 100px auto 100px auto;
+  margin: 200px auto 100px auto;
+}
+
+.wcwd_intro {
+  max-width: 450px;
+  text-align: center;
+  margin: auto;
 }
 
 .wcwd_content {
@@ -917,17 +923,6 @@ input {
   padding: 20px;
   max-width: 320px;
   min-height: 300px;
-}
-
-.wcwd_intro {
-  padding: 40px 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: -webkit-center;
-}
-
-.wcwd_intro h2 {
-  max-width: 270px;
 }
 
 .wcwd_hover:hover {
@@ -1263,7 +1258,7 @@ input {
 
 .client_quote {
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .quote_name {
@@ -1470,20 +1465,18 @@ img.omchange_client_logo_neg {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #e54c00;
+  background-image: linear-gradient(to bottom, rgba(229, 76, 0, 0.5), rgba(229, 76, 0, 1));
   border-radius: 10px;
   cursor: pointer;
 }
 
 .team_img_container:hover .team_img_overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .team_overlay_content {
   display: flex;
   width: 100%;
-  font-size: 22px;
-  font-family: 'bebas-neue', sans-serif;
 }
 
 .team_overlay_content img {
@@ -1494,7 +1487,7 @@ img.omchange_client_logo_neg {
 
 .team_img_text {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   top: 82%;
   left: 38%;
