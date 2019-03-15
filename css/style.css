@@ -2683,7 +2683,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .logo_slider img {
     margin: auto;
     width: 90%;
-  } 
+  }
 
  .services_dots, .strategi_dots, .contact_map_dots {
     display: none;
