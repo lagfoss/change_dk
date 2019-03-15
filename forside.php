@@ -103,7 +103,7 @@
 														<img src="<?php the_field('case_call_to_action_icon') ?>" alt="calltoaction arrow">
 													</a>
 											</div>
-												<div class="col-lg-7 case_img"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></div>
+												<a class="col-lg-7 case_img" href="<?php the_permalink(); ?>"  style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;"></a>
 
 
 								</div>
@@ -122,7 +122,7 @@
 	<div class="container-fluid wrapper">
 		<div class="row">
 
-			<div class="col-md-6 process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
+			<div href="<?php the_permalink(); ?>" class="col-md-6 process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
 			</div>
 
 			<div class="col-md-6">
