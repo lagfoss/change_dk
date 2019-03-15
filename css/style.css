@@ -1015,8 +1015,9 @@ input {
 }
 
 .know_us_content {
-  max-width: 100%;
-  padding-left: 18%;
+  max-width: 400px;
+  margin-left: auto;
+  padding-left: 15px;
 }
 
 .know_us_content p {
@@ -2518,6 +2519,15 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     display: none;
    }
 
+   .know_us {
+     text-align: center;
+   }
+
+   .know_us_content {
+     margin-right: auto;
+     padding-right: 15px
+   }
+
    .case_strategi_img img {
      width: 150px;
      height: 150px;
@@ -3036,14 +3046,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .background_img_services {
     height: 510px;
-  }
-
-  .know_us {
-    text-align: center;
-  }
-
-  .know_us_content {
-    padding-left: 0px;
   }
 
   .know_us_gallery img {

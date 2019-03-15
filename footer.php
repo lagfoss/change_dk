@@ -13,15 +13,7 @@
   </div>
   <!-- Need a successfull project slut -->
 
-  <!-- lets talk start -->
-  <div class="letstalk_footer">
-    <p><?php the_field('footer_lets_talk', 'option'); ?></p>
-    <h2><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></h2>
-  </div>
-  <!-- lets talk slut -->
-
   <!-- sociale medier footer start -->
-
   <div class="container-fluid">
     <div class="row SoMe_footer">
       <div class="col align-self-center">
@@ -55,6 +47,7 @@
 
   <div class="container-fluid contact_footer">
    <h3><a href="mailto:<?php the_field('footer_mail', 'option'); ?>" class="footer_mail"><?php the_field('footer_mail', 'option'); ?></a></h3>
+   <h3><a href="tel:<?php the_field('phone_number', 'option'); ?>" class="footer_mail"><?php the_field('phone_number', 'option'); ?></a></h3>
     <a href="<?php the_field('google_maps_link', 'option'); ?>" class="footer_address"><?php the_field('footer_address', 'option'); ?></a>
 
   </div>
@@ -64,7 +57,7 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center cvr">
-      <div class="align-self-center">Change Aps &#9474; CVR: 37197351</div>
+      <div class="align-self-center">Change ApS &#9474; CVR: 37197351</div>
     </div>
   </div>
   <!-- aps slut -->

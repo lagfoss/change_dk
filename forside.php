@@ -257,7 +257,7 @@
 
 			<div class="col-lg-7">
 				<!-- Image carousel -->
-				<div class="col-12 owl-carousel owl-theme autowidth">
+				<div class="owl-carousel owl-theme autowidth">
 					<?php
 						$images = get_field('know_us_gallery');
 						foreach ($images as $image):?>
