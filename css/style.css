@@ -2815,6 +2815,8 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .contact_gallery img {
     width: 100%;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .contact_gallery {
