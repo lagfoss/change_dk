@@ -2263,13 +2263,15 @@ img.thumbnail
 .contact_gallery {
   padding: 20px 10px 30px 10px;
   margin-left: 15%;
+  width: 360px;
+  height: 560px;
 }
 
 .contact_gallery img {
-  width: 360px;
-  height: 560px;
+  display: block;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 20px 60px 120px 0 rgba(0, 0, 0, 0.3;
+  box-shadow: 20px 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
 /*========= CONTACT intro slut =========*/
