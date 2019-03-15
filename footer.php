@@ -48,7 +48,7 @@
     <?php endif; ?>
   </div>
   </div>
-  </div> 
+  </div>
   <!-- sociale medier footer slut -->
 
   <!-- kontakt information footer start -->
@@ -139,7 +139,6 @@ $(document).ready(function() {
   owl.owlCarousel({
     autoWidth:true,
     autoplay: true,
-    rtl: true
 })
 
 
