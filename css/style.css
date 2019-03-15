@@ -2263,13 +2263,15 @@ img.thumbnail
 .contact_gallery {
   padding: 20px 10px 30px 10px;
   margin-left: 15%;
+  width: 360px;
+  height: 560px;
 }
 
 .contact_gallery img {
-  width: 360px;
-  height: 560px;
+  display: block;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 20px 60px 120px 0 rgba(0, 0, 0, 0.3;
+  box-shadow: 20px 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
 /*========= CONTACT intro slut =========*/
@@ -2394,7 +2396,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   background-color: #e54c00;
   border-radius: 5px;
   border-style: solid;
-  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.15);
 }
 
 .footer_button:hover {
@@ -2600,10 +2602,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .team_name {
     margin-bottom: 90px;
-  }
-
-  .contact_gallery img {
-    width: 295px;
   }
 
 }
