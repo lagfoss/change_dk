@@ -2890,7 +2890,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .logo_slider img {
-    height: 20px;
+    height: 45px;
     padding: auto;
     width: 100%;
   }
