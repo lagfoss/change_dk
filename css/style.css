@@ -49,6 +49,14 @@ body {
   padding-bottom: 10%;
 }
 
+.wrapper_contact {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .flex_wrapper {
   display: flex;
   flex-direction: column;
@@ -2182,9 +2190,6 @@ img.thumbnail
 
 .contact_intro {
   margin-top: 160px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
   max-width: 500px;
 }
 
@@ -2608,6 +2613,14 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     min-height: 850px;
   }
 
+  .wrapper_contact {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-right: 0px;
+  padding-left: 0px;
+  }
+
   .forside_cases_wrapper {
     min-height: 400px;
     width: 70%;
@@ -2790,6 +2803,8 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .contact_intro {
     margin-top: -120px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -2923,6 +2938,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .omchange_card_categories {
     font-size: 10px;
+  }
+
+  .contact_intro h1.big {
+    font-size: 25vw;
   }
 
 

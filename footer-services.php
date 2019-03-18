@@ -82,6 +82,19 @@
       autoplay:true,
       loop: true,
       dots:false,
+      responsive:{
+      771: {
+        items: 4,
+      },
+
+      420: {
+        items: 3,
+      },
+
+      320: {
+        items: 2,
+      },
+    }
   });
 
 "use strict";
