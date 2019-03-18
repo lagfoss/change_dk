@@ -63,10 +63,6 @@ body {
 
 .cases_wrap {
   padding: 220px 0px 50px 0px;
-}
-
-.cases_wrap h1 {
-  max-width: 585px;
   text-align: center;
 }
 
@@ -81,21 +77,12 @@ h1.big {
   font-size: 140px;
   line-height: 120px;
   letter-spacing: 0px;
-  color: white;
 }
 
 h1 {
   font-family: 'bebas-neue', sans-serif;
   font-size: 73px;
   color: white;
-}
-
-h1.dark {
-  font-family: 'bebas-neue', sans-serif;
-  font-size: 83px;
-  line-height: 73px;
-  letter-spacing: 0px;
-  color: #111517;
 }
 
 h2 {
@@ -919,11 +906,6 @@ input {
   margin: auto;
 }
 
-.wcwd_intro h2 {
-  font-size: 61px;
-  line-height: 60px;
-}
-
 .wcwd_content {
   margin: 10px;
   padding: 20px;
@@ -1578,13 +1560,6 @@ img.omchange_client_logo_neg {
   margin: 30px 1px;
 }
 
-.h1_hero_services {
-  font-size: 73px;
-  max-width: 100%;
-  max-height: 20%;
-  line-height: 0.88;
-}
-
 .calltoaction_hero_services {
   position: absolute;
   top: 82%;
@@ -1830,17 +1805,6 @@ img.omchange_client_logo_neg {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
-
-.h1_case {
-  font-size: 61px;
-  line-height: 1;
-  color: #f2f2f2;
-}
-
-.h2_case {
-  font-size: 41px;
-  margin-bottom: 15px;
 }
 
 .client_about p, .goal_text p, .case_strategi p, .case_some_text p,
@@ -2219,11 +2183,6 @@ img.thumbnail
   margin-top: 160px;
   margin-left: auto;
   padding-left: 15px;
-}
-
-.contact_intro h1 {
-  font-size: 190px;
-  line-height: 0.89;
 }
 
 .stroke_position_contact {
@@ -3035,10 +2994,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-top: 150px;
   }
 
-  .h1_hero_services {
-  font-size: 43px;
-  }
-
   .services_main_content_overskrift {
     font-size: 35px;
   }
@@ -3091,10 +3046,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .omchange_category_wrapper {
     padding: 6px 7%;
   }
-
-    .h1_case {
-      font-size: 35px;
-    }
 
   .brand_img {
       height: 85%;

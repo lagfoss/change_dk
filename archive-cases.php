@@ -4,7 +4,7 @@
 <div class="row">
   <div class="wrapper cases_wrap">
     <div class="col">
-      <h1 class="dark "><?php the_field('cases_hero_h1', 'option');?></h1>
+      <h1 class="black"><?php the_field('cases_hero_h1', 'option');?></h1>
       <div class="stroke"></div>
     </div>
   </div>
@@ -94,7 +94,7 @@
 
 <script type="text/javascript">
 
-ScrollReveal().reveal('.dark', { distance: '350px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.black', { distance: '350px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.stroke', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.case_card_content', { distance: '650px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.pagination', { distance: '450px', easing: 'ease-in-out', duration: 700 });
