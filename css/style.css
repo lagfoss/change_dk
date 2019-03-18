@@ -77,7 +77,6 @@ h1.big {
   font-size: 140px;
   line-height: 120px;
   letter-spacing: 0px;
-  color: white;
 }
 
 h1 {
@@ -1808,17 +1807,6 @@ img.omchange_client_logo_neg {
   transform: rotate(-45deg);
 }
 
-.h1_case {
-  font-size: 61px;
-  line-height: 1;
-  color: #f2f2f2;
-}
-
-.h2_case {
-  font-size: 41px;
-  margin-bottom: 15px;
-}
-
 .client_about p, .goal_text p, .case_strategi p, .case_some_text p,
 .rekru_text p, .results_text p {
   color: #999999;
@@ -3006,10 +2994,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-top: 150px;
   }
 
-  .h1_hero_services {
-  font-size: 43px;
-  }
-
   .services_main_content_overskrift {
     font-size: 35px;
   }
@@ -3062,10 +3046,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .omchange_category_wrapper {
     padding: 6px 7%;
   }
-
-    .h1_case {
-      font-size: 35px;
-    }
 
   .brand_img {
       height: 85%;
