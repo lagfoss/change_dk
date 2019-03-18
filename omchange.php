@@ -89,10 +89,10 @@
       		</div>
       	</div>
         <div class="arrow_left">
-          <img alt="steps guide left" src="<?php echo get_bloginfo('template_directory'); ?>/images/stroke_om_os_1.svg">
+          <img alt="steps guide left" src="<?php echo get_bloginfo('template_directory'); ?>/images/orange_stroke_left.svg">
         </div>
         <div class="arrow_right">
-          <img alt="steps guide right" src="<?php echo get_bloginfo('template_directory'); ?>/images/stroke_om_os.svg">
+          <img alt="steps guide right" src="<?php echo get_bloginfo('template_directory'); ?>/images/orange_stroke_right.svg">
         </div>
       </div>
       <?php endwhile; ?>
