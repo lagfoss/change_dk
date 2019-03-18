@@ -134,7 +134,7 @@ owl.owlCarousel({
     },
 
     769: {
-      nav: true,
+      nav: false,
       autoplay: true,
     },
 
