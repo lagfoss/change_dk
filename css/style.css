@@ -1149,9 +1149,9 @@ input {
 
 .stroke_position_footer {
   width: 100%;
+  max-width: 900px;
   height: 32px;
   margin-bottom: 10px;
-  margin-left: 220px;
 }
 
 #card_content_case_footer {
@@ -2455,9 +2455,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     padding-left: 15px;
   }
 
-  .stroke_position_footer {
-    margin-left: 10%;
-  }
 }
 
 /*========= Large devices (desktops/tablets, 1100px and down) =========*/
@@ -2548,10 +2545,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .steps_text {
     padding-top: 60px;
-  }
-
-  .stroke_position_footer {
-    margin-left: 0;
   }
 
   .orange_square_case {
@@ -2732,10 +2725,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .omchange_card_content {
     width: 75%;
     margin-left: 13%;
-  }
-
-  .stroke_position_footer {
-    margin-left: 0;
   }
 
   .orange_square_case {
