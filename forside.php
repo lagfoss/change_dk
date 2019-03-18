@@ -231,7 +231,7 @@
 					$images = get_field('firma_slider', 'option');
 					foreach ($images as $image):?>
 						<div>
-							<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+							<img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
 							</div>
 						<?php endforeach;?>
 				</div>
