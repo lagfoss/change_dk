@@ -5,7 +5,7 @@
   <div class="container-fluid">
     <div class="row contact">
       <div class="col-md-6 contact_intro">
-        <h1 class="black"><?php the_field('contact_title'); ?></h1>
+        <h1 class="big black"><?php the_field('contact_title'); ?></h1>
         <div class="stroke_position_contact">
           <div class="stroke_contact"></div>
         </div>
@@ -25,7 +25,7 @@
     			<?php endforeach;?>
 				</div>
       </div>
-	  </div> 
+	  </div>
   </div>
   <div class="container-fluid">
     <div class="row wrapper">
