@@ -1475,7 +1475,6 @@ img.omchange_client_logo_neg {
   transition: .5s ease;
   background-image: linear-gradient(to bottom, rgba(229, 76, 0, 0.5), rgba(229, 76, 0, 1));
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .team_img_container:hover .team_img_overlay {
@@ -1489,7 +1488,7 @@ img.omchange_client_logo_neg {
 
 .team_overlay_content:hover {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .team_overlay_content img {
