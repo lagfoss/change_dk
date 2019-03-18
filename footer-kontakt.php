@@ -120,19 +120,22 @@ owl.owlCarousel({
   items: 1,
   margin: 0,
   padding: 0,
+  mouseDrag: false,
   dots: false,
-  nav: true,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 10000,
   navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
 
   responsive:{
     993: {
       items: 1,
-      autoplay: false,
+      autoplay: true,
     },
 
     769: {
       nav: true,
-      autoplay: false,
+      autoplay: true,
     },
 
     320: {
