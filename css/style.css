@@ -75,20 +75,21 @@ body {
 h1.big {
   font-family: 'bebas-neue', sans-serif;
   font-size: 140px;
-  line-height: 120px;
+  line-height: 0.88;
   letter-spacing: 0px;
 }
 
 h1 {
   font-family: 'bebas-neue', sans-serif;
   font-size: 73px;
+  line-height: 0.88;
   color: white;
 }
 
 h2 {
   font-family: 'bebas-neue', sans-serif;
   font-size: 50px;
-  line-height: 43px;
+  line-height: 0.88;
   letter-spacing: 0px;
 }
 
@@ -96,7 +97,7 @@ h3 {
   font-family: 'bebas-neue', sans-serif;
   font-size: 28px;
   text-align: center;
-  line-height: 24px;
+  line-height: 0.88;
   letter-spacing: 0;
 }
 
@@ -782,7 +783,7 @@ input {
 .forside_cases_header {
   font-family: 'bebas-neue', sans-serif;
   font-size: 41px;
-  line-height: 43px;
+  line-height: 0.88;
   letter-spacing: 0px;
   text-align: left;
   width: 100%;
@@ -3086,47 +3087,5 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .wrapper_cases .row {
     min-height: 990px;
-  }
-}
-
-/*========= Height of devices =========*/
-@media screen and (min-width: 768px) and (max-width: 991px) and (max-height: 780px) {
-
-  .hero_info {
-    margin-top: 180px;
-  }
-
-  .watchourshowreel {
-    margin-top: 270px;
-  }
-}
-
-/*========= Height of devices =========*/
-@media screen and (min-width: 568px) and (max-height: 685px) {
-
-  h1 {
-    font-size: 55px;
-    margin-top: 25px;
-  }
-
-  .hero_info {
-    margin-top: 100px;
-  }
-}
-
-/*========= Height of devices =========*/
-@media screen and (min-width: 568px) and (max-height: 500px) {
-  h1 {
-    font-size: 45px;
-  }
-}
-
-/*========= Height of devices =========*/
-@media screen and (min-width: 568px) and (max-height: 425px) {
-  h1 {
-    font-size: 40px;
-  }
-  .hero_text {
-    padding-bottom: 0;
   }
 }
