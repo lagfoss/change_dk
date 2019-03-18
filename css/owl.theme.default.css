@@ -170,13 +170,13 @@ padding-left: 50px;
 
 .carousel_om_change .owl-nav .owl-next {
   position: absolute;
-  bottom: 110px;
+  bottom: 150px;
   right: -9px;
 }
 
 .carousel_om_change .owl-nav .owl-prev {
   position: absolute;
- bottom: 110px;
+ bottom: 150px;
  left: -9px;
 }
 
@@ -224,13 +224,13 @@ padding-left: 50px;
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .carousel_om_change .owl-nav .owl-next {
     position: absolute;
-    bottom: 110px;
+    bottom: 150px;
     right: 10px;
   }
 
   .carousel_om_change .owl-nav .owl-prev {
     position: absolute;
-   bottom: 110px;
+   bottom: 150px;
    left: 10px;
   }
 
@@ -262,13 +262,13 @@ padding-left: 50px;
   @media screen and (max-width: 767px) {
     .carousel_om_change .owl-nav .owl-next {
       position: absolute;
-      bottom: 110px;
+      bottom: 150px;
       right: 10px;
     }
 
     .carousel_om_change .owl-nav .owl-prev {
       position: absolute;
-     bottom: 110px;
+     bottom: 150px;
      left: 10px;
     }
 
@@ -288,14 +288,14 @@ padding-left: 50px;
     @media screen and (max-width: 575px) {
       .carousel_om_change .owl-nav .owl-next {
           position: absolute;
-          bottom: 85px;
+          bottom: 175px;
           right: 10px;
 
       }
 
       .carousel_om_change .owl-nav .owl-prev {
       position: absolute;
-       bottom: 85px;
+       bottom: 175px;
        left: 10px;
       }
 
