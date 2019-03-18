@@ -195,7 +195,7 @@ $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
 
       992: {
         items: 1,
-        stagePadding: 75,
+        stagePadding: 0,
       },
 
       771: {

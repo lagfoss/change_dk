@@ -777,6 +777,7 @@ input {
   width: 450px;
   min-height: 650px;
   z-index: 1;
+  padding-left: 35px;
 }
 
 .forside_cases_header {
@@ -1000,6 +1001,7 @@ input {
 .know_us_content {
   max-width: 455px;
   margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
 }
 
@@ -1034,6 +1036,7 @@ input {
 .om_menu {
   position: absolute;
   bottom: -30px;
+  margin-left: 30px;
   width: 450px;
   height: 65px;
   border-radius: 10px;
@@ -1467,6 +1470,11 @@ img.omchange_client_logo_neg {
   width: 100%;
 }
 
+.team_overlay_content:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .team_overlay_content img {
   width: 17px;
   height: 17px;
@@ -1552,11 +1560,6 @@ img.omchange_client_logo_neg {
   background-color: #e54c00;
   border-radius: 4px;
   margin: 30px 1px;
-}
-
-.h1_hero_services {
-  max-width: 100%;
-  max-height: 20%;
 }
 
 .calltoaction_hero_services {
@@ -1884,7 +1887,7 @@ img.omchange_client_logo_neg {
 }
 
 .client_text, .client_cat {
-  font-size: 19px;
+  font-size: 16px;
   padding-top: 20px;
   max-width: 240px;
 
@@ -2126,9 +2129,9 @@ img.thumbnail
 .iphone_wrapper {
   position: absolute;
   z-index: 2;
-  width: 407px;
-  left: -51px;
-  top: 6px;
+  width: 409px;
+  left: -57px;
+  top: 5px;
 }
 
 /*========= CASES branding slut =========*/
@@ -2193,12 +2196,6 @@ img.thumbnail
   margin-top: 160px;
   margin-left: auto;
   padding-left: 15px;
-  max-width: 570px;
-}
-
-.contact_intro h1 {
-  font-size: 190px;
-  line-height: 0.89;
 }
 
 .stroke_position_contact {
@@ -2249,6 +2246,7 @@ img.thumbnail
 .contact_gallery img {
   display: block;
   width: 100%;
+  height: 560px;
   border-radius: 10px;
   box-shadow: 20px 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
@@ -2880,6 +2878,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .om_menu {
     width: 380px;
+    margin-left: 0px;
   }
 
   .team_members_half {
