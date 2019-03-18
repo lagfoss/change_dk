@@ -631,16 +631,16 @@ input {
   background-size: cover;
 }
 
+.hero h1 {
+  text-shadow: 0 2px 0 #111517;
+}
+
 .hero_info {
-  margin-top: 40%;
+  margin-top: 25vh;
 }
 
 .omchange_hero_info {
-  margin-top: 23%;
-}
-
-.hero_title {
-  text-shadow: 0 2px 0 #111517;
+  margin-top: 25vh;
 }
 
 .hero_text {
