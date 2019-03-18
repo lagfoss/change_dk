@@ -9,7 +9,7 @@
         <div class="stroke_position_services">
           <div class="stroke_services"></div>
         </div>
-        <h1 class="h1_hero_services"><?php the_field('h1_hero_services'); ?></h1>
+        <h1><?php the_field('h1_hero_services'); ?></h1>
       </div>
       <div class="col-sm-6">
         <!--
@@ -134,7 +134,7 @@ $(".menubtn").addClass("menu_black");
 });
 
 ScrollReveal().reveal('.stroke_position_services', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.h1_hero_services', { distance: '500px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('h1', { distance: '500px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.calltoaction_hero_services', { distance: '550px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.services_main_content_overskrift', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.services_main_content_text', { distance: '650px', easing: 'ease-in-out', duration: 700 });

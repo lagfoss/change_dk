@@ -33,7 +33,7 @@ Template Post Type: cases
                   <div class="stroke_case"></div>
                   <p class="hero_client"><?php echo $heroname; ?></p>
                 </div>
-                <h1 class="h1_case"><?php echo $clienttitle; ?></h1>
+                <h1><?php echo $clienttitle; ?></h1>
               </div>
               <div class="col-md-4">
                 <!--
@@ -86,7 +86,7 @@ Template Post Type: cases
 
               </div>
               <div class="col-md-7 client_about">
-                <h2 class="h2_case"><?php echo $abouttitle; ?></h2>
+                <h2><?php echo $abouttitle; ?></h2>
                 <p class="client_text"><?php echo $about; ?></p>
 
               </div>
@@ -116,7 +116,7 @@ Template Post Type: cases
                   <p class="pre_client"><?php echo $pregoal; ?></p>
                 </div>
                 <div class="goal_text">
-                  <h2 class="h2_case"><?php echo $goaltitle; ?></h2>
+                  <h2><?php echo $goaltitle; ?></h2>
                   <p><?php echo $goaltext; ?></p>
                 </div>
               </div>
