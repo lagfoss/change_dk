@@ -1482,6 +1482,11 @@ img.omchange_client_logo_neg {
   width: 100%;
 }
 
+.team_overlay_content:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .team_overlay_content img {
   width: 17px;
   height: 17px;
