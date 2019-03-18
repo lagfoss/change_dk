@@ -1954,11 +1954,11 @@ img.omchange_client_logo_neg {
 
 .strategi_dots {
   position: absolute;
-  width: 38%;
-  height: 32%;
+  width: 34%;
+  height: 20%;
   background-repeat: repeat;
-  left: 31%;
-  top: 51%;
+  left: 33%;
+  bottom: 14%;
   z-index: -1;
 }
 
