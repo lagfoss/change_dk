@@ -111,6 +111,12 @@
     </div>
   </div>
 
+  <?php
+  $title = get_field('team_title_icon');
+  $phone = get_field('team_phone_icon');
+  $mail = get_field('team_mail_icon');
+  ?>
+
   <div class="container-fluid wrapper team">
     <div class="row" id="team">
       <div class="col-md-3">
@@ -133,9 +139,9 @@
                       <img class="" src="<?php the_sub_field('team_img'); ?>" />
                       <div class="team_img_overlay">
                         <div class="team_img_text">
-                          <div class="team_overlay_content"><img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/user.svg" alt=""> <?php the_sub_field('team_title') ?></div>
-                          <a class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/mail.svg" alt=""> <?php the_sub_field('team_mail') ?></a>
-                          <a class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/phone.svg" alt=""> <?php the_sub_field('team_phone_number') ?></a>
+                          <div class="team_overlay_content"><img src="<?php echo $title ?>" alt=""> <?php the_sub_field('team_title') ?></div>
+                          <a class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img src="<?php echo $mail ?>" alt=""> <?php the_sub_field('team_mail') ?></a>
+                          <a class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img src="<?php echo $phone ?>" alt=""> <?php the_sub_field('team_phone_number') ?></a>
                         </div>
                       </div>
                       </div>
