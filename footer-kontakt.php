@@ -118,7 +118,7 @@ var owl = $('.contact_carousel');
 owl.owlCarousel({
 
   items: 1,
-  margin: 0,
+  margin: 100,
   padding: 0,
   mouseDrag: false,
   dots: false,

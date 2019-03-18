@@ -4,6 +4,7 @@
 
   <div class="container-fluid">
     <div class="row contact">
+      <div class="pink_square"></div>
       <div class="col-md-6 contact_intro col-md-push-6">
         <h1 class="big black"><?php the_field('contact_title'); ?></h1>
         <div class="stroke_position_contact">
@@ -12,8 +13,6 @@
         <p class="gray"><?php the_field('contact_text'); ?></p>
       </div>
       <div class="col-md-6 contact_img col-md-pull-6">
-        <div class="pink_square">
-        </div>
         <!-- Image carousel -->
 				<div class="owl-carousel owl-theme contact_carousel">
 					<?php
@@ -24,7 +23,7 @@
 	    		</div>
     			<?php endforeach;?>
 				</div>
-      </div>
+      </div> 
 	  </div>
   </div>
   <div class="container-fluid">

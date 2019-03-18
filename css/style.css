@@ -2183,7 +2183,9 @@ img.thumbnail
 .contact_intro {
   margin-top: 160px;
   margin-left: auto;
-  padding-left: 15px;
+  margin-right: auto;
+  padding-left: 30px;
+  max-width: 500px;
 }
 
 .stroke_position_contact {
@@ -2211,7 +2213,7 @@ img.thumbnail
 .pink_square {
   position: absolute;
   height: 1000px;
-  width: 70%;
+  width: 33%;
   -webkit-border-bottom-left-radius: 30px;
   -moz-border-radius-bottomleft: 30px;
   border-bottom-left-radius: 30px;
@@ -2559,6 +2561,14 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .team_name {
     margin-bottom: 90px;
+  }
+
+  .contact_gallery {
+    margin-left: 10%;
+  }
+
+  .contact_gallery img {
+    width: 90%;
   }
 
 }
