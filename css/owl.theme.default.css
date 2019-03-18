@@ -180,6 +180,10 @@ padding-left: 50px;
  left: -9px;
 }
 
+.carousel_om_change .owl-stage {
+  height: 300px;
+}
+
 .contact_carousel .owl-nav {
   position: absolute;
   left: 426px;
