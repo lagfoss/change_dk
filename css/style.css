@@ -2682,6 +2682,12 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     display: none;
   }
 
+  .om_menu {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
   .steps_text h2 {
     font-size: 11vw;
   }
@@ -2696,7 +2702,8 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .steps_img {
-    width: 80%;
+    width: 100%;
+    max-width: 500px;
   }
   .steps_img img {
     width: 100%;
@@ -2886,8 +2893,9 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .om_menu {
-    width: 380px;
-    margin-left: 0px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .team_members_half {
@@ -3059,7 +3067,8 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .om_menu {
     width: 100%;
-    left: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .om_menu h3 {
