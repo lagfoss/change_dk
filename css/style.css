@@ -1476,7 +1476,6 @@ img.omchange_client_logo_neg {
 .team_overlay_content {
   display: flex;
   width: 100%;
-  font-size: 17px;
 }
 
 .team_overlay_content:hover {
@@ -1496,7 +1495,7 @@ img.omchange_client_logo_neg {
   top: 82%;
   left: 38%;
   max-width: 290px;
-  width: 90%;
+  width: 95%;
   -webkit-transform: translate(-40%, -50%);
   -ms-transform: translate(-40%, -50%);
   transform: translate(-40%, -50%);
@@ -3075,10 +3074,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-right: 0;
   }
 
-  .om_menu h3 {
-    font-size: 16px;
-  }
-
   .square {
     width: 180px;
   }
@@ -3123,10 +3118,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .orange_square_case {
     height: 90%;
-  }
-
-  .team_overlay_content {
-    font-size: 14px;
   }
 
 }
