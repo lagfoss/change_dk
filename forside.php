@@ -121,28 +121,25 @@
 	<!-- Process steps -->
 	<div class="container-fluid wrapper">
 		<div class="row">
-
-			<div href="<?php the_permalink(); ?>" class="col-md-6 process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
+			<div class="process_intro">
+					<h2><?php the_field('process_title'); ?></h2>
+					<p><?php the_field('process_intro'); ?></p>
 			</div>
 
-			<div class="col-md-6">
-				<h2><?php the_field('process_title'); ?></h2>
+			<div class="row">
 				<?php if( have_rows('process') ): ?>
 
 					<?php while( have_rows('process') ): the_row();
 						// vars
-						$processnumber = get_sub_field('process_number');
+						$processnumber = get_sub_field('process_img');
 						$processtitle = get_sub_field('process_single_title');
 						$procestext = get_sub_field('process_text');
 					?>
 				<div class="row ourprocess">
-					<div class="col-1 process_steps">
-						<div class="inner">
+					<div class="row">
 							<?php echo $processnumber; ?>
-							<div class="dash"></div>
-						</div>
 					</div>
-    			<div class="col-10 font-weight-bold process_steps_text">
+    			<div class="row font-weight-bold process_steps_text">
       			<?php echo $processtitle; ?>
       			<div class="row">
         			<div class="font-weight-normal"><?php echo $procestext; ?></div>
