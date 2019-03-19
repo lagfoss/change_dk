@@ -1953,7 +1953,7 @@ img.omchange_client_logo_neg {
 }
 
  .brand, .rekru_wrapper {
-     margin: 50px auto 50px auto;
+     margin: 120px auto 120px auto;
  }
 
 /*========= CASES goal slut =========*/
@@ -2042,7 +2042,7 @@ img.omchange_client_logo_neg {
 
 .rekru {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .rekru_content {
@@ -2119,7 +2119,7 @@ img.thumbnail
 }
 
 .orange_square_case {
-  height: 125%;
+  height: 122%;
   width: 80%;
   margin-top: -60px;
   right: 0;
@@ -2478,6 +2478,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .watch, .showreel {
     margin-left: 20px;
+  }
+
+  .hero {
+    margin-bottom: 60px;
   }
 
   .wrapper_cases .row {
@@ -3052,6 +3056,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .om_menu {
     width: 100%;
     left: 0;
+  }
+
+  .om_menu h3 {
+    font-size: 16px;
   }
 
   .square {
