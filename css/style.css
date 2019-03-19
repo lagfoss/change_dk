@@ -776,7 +776,6 @@ input {
   box-shadow: -15px 15px 20px -5px rgba(0, 0, 0, 0.12);
  }
 
-
 .forside_cases_wrapper {
   width: 450px;
   min-height: 650px;
@@ -791,6 +790,10 @@ input {
   letter-spacing: 0px;
   text-align: left;
   width: 100%;
+}
+
+.forside_case_client {
+  font-weight: 700;
 }
 
 .forside_cases_text {
@@ -2864,7 +2867,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   h1 {
     font-size: 12vw;
   }
-  
+
   .SoMe {
     height: 51px;
     text-align: center;

@@ -94,7 +94,7 @@
 	                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 	                  <div class="row">
 												<div class="col-lg-5 forside_cases_wrapper">
-												<p style="font-weight: 500;">CASE: <?php the_field('forside_klient_navn');?></p>
+												<p class="forside_case_client">CASE: <?php the_field('forside_klient_navn');?></p>
 												<h3 class="forside_cases_header"><?php the_field('case_headline');?></h3>
 												<div class="forside_cases_catergories"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
 												<p class="forside_cases_text"><?php the_field('forside_case_text');?><p>
