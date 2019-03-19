@@ -126,11 +126,7 @@
 					<p><?php the_field('process_intro'); ?></p>
 			</div>
 
-			<div href="<?php the_permalink(); ?>" class="process_img" style="background-image:url(<?php the_field('process_image'); ?>);">
-			</div>
-
 			<div class="row">
-				<h2></h2>
 				<?php if( have_rows('process') ): ?>
 
 					<?php while( have_rows('process') ): the_row();
