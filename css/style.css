@@ -2862,6 +2862,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     display: block;
   }
 
+  .menu-item a {
+    font-size: 35px;
+  }
+
   .header_some_icon {
     margin: auto 20px auto 20px
   }
