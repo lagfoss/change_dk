@@ -1146,7 +1146,7 @@ input {
 .stroke_position_om {
   width: 100%;
   height: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .stroke_om {
@@ -1180,7 +1180,6 @@ input {
 }
 
 .steps_text h2 {
-  font-size: 83px;
   margin-bottom: 40px;
 }
 
@@ -2568,6 +2567,14 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     padding-top: 60px;
   }
 
+  .stroke_position_om {
+    margin-bottom: 15px;
+  }
+
+  .steps_text h2 {
+    margin-bottom: 20px;
+  }
+
   .orange_square_case {
     height: 106%;
     margin-top: -4px;
@@ -2685,10 +2692,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-  }
-
-  .steps_text h2 {
-    font-size: 11vw;
   }
 
   .half:nth-of-type(odd), .half:nth-of-type(even),
