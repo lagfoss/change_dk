@@ -2319,15 +2319,16 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 .stroke_position_contact_map {
   width: 100%;
-  top: 0;
+  position: relative;
 }
 
 .stroke_contact_map {
+  position: absolute;
   height: 5px;
   width: 100px;
+  bottom: -150px;
   background-color: #e54c00;
   border-radius: 5px;
-  margin: 0 auto;
 }
 
 .acf-map {

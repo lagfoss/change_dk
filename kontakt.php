@@ -42,6 +42,9 @@
             <?php the_field('footer_mail', 'option'); ?></a>
         </p>
         </div>
+        <div class="col-md-6 stroke_position_contact_map">
+          <div class="stroke_contact_map"></div>
+        </div>
       </div>
     </div>
 
@@ -51,9 +54,6 @@
       <div class="col-md-6">
       <div class="contact_map_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot.png');">
       </div>
-      </div>
-      <div class="col-md-6 stroke_position_contact_map">
-        <div class="stroke_contact_map"></div>
       </div>
     </div>
     <?php
