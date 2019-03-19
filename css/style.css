@@ -2318,7 +2318,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 }
 
 .stroke_position_contact_map {
-  width: 100%;
+  width: 30%;
   margin-left: -30%;
   position: relative;
 }
