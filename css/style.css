@@ -1825,6 +1825,11 @@ img.omchange_client_logo_neg {
   color: #999999;
 }
 
+.client_about h2, .goal_text h2, .case_strategi h2, .case_some_text h2,
+.rekru_text h2, .results_text h2 {
+  font-size: 41px;
+}
+
 /*========= CASES hero start =========*/
 
 .case_hero {
