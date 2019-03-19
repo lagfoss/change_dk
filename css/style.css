@@ -1476,6 +1476,7 @@ img.omchange_client_logo_neg {
 .team_overlay_content {
   display: flex;
   width: 100%;
+  font-size: 17px;
 }
 
 .team_overlay_content:hover {
@@ -3072,7 +3073,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .omchange_card_h3 {
-    font-size: 17px;
+    font-size: 25px;
     margin-top: 55px;
   }
 
@@ -3098,6 +3099,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     height: 90%;
   }
 
+  .team_overlay_content {
+    font-size: 14px;
+  }
+
 }
 
 /*========= Tiny devices () =========*/
@@ -3114,7 +3119,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .forside_cases_wrapper {
-    min-height: 495px;
+    min-height: 300px;
   }
 
   .modal {
