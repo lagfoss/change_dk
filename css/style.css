@@ -959,7 +959,6 @@ input {
   padding: 15px;
 }
 
-
 /*========= Hvad kan vi gøre for dig? Sektion slut =========*/
 
 /*========= Logo slider =========*/
@@ -2637,11 +2636,11 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .wrapper_contact {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1140px;
-  padding-right: 0px;
-  padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .forside_cases_wrapper {
@@ -2832,9 +2831,16 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .contact_intro {
-    margin-top: -120px;
+    max-width: 500px;
+    margin: -120px auto 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .contact_form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
