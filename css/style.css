@@ -3002,6 +3002,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     font-size: 40px;
   }
 
+  .forside_cases_text {
+    font-size: 12px;
+  }
+
   .forside_cases_wrapper .forside_cases_catergories {
     font-size: 12px;
   }
