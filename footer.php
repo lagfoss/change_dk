@@ -88,7 +88,7 @@ $(document).ready(function() {
 
       responsive:{
 
-        771: {
+        992: {
           items: 4,
         },
 
