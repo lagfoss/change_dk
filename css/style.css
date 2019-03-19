@@ -1816,6 +1816,10 @@ img.omchange_client_logo_neg {
   transform: rotate(-45deg);
 }
 
+.client_about {
+  padding-top: 20px;
+}
+
 .client_about p, .goal_text p, .case_strategi p, .case_some_text p,
 .rekru_text p, .results_text p {
   color: #999999;
@@ -1885,6 +1889,7 @@ img.omchange_client_logo_neg {
 .client_text, .client_cat {
   font-size: 16px;
   padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 240px;
 
 }
@@ -1942,12 +1947,11 @@ img.omchange_client_logo_neg {
 
 .case_goal, .case_strategi, .case_some_content, .case_results {
   width: 60%;
-  margin: auto;
-  padding: 60px 0 60px 0;
+  margin: 50px auto 50px auto;
 }
 
  .brand, .rekru_wrapper {
-     padding: 60px 0 60px 0;
+     margin: 50px auto 50px auto;
  }
 
 /*========= CASES goal slut =========*/
@@ -2944,6 +2948,18 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     font-size: 25vw;
   }
 
+  .forside_cases_wrapper {
+    padding-left: 0px;
+  }
+
+  .forside_cases_text {
+    padding-right: 0px;
+  }
+
+  .forside_cases_header {
+    font-size: 35px;
+  }
+
 
 }
 
@@ -2982,8 +2998,16 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     min-height: 475px;
   }
 
+  .forside_cases_header {
+    font-size: 25px;
+  }
+
   .forside_cases_wrapper h2 {
     font-size: 40px;
+  }
+
+  .forside_cases_text {
+    font-size: 12px;
   }
 
   .forside_cases_wrapper .forside_cases_catergories {
@@ -3064,7 +3088,9 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     }
 
   .iphone_wrapper {
-    width: 348px;
+    width: 347px;
+    left: -47px;
+    top: 7px;
   }
 
   .orange_square_case {
