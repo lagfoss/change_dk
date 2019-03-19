@@ -12,37 +12,35 @@
           <h1><?php the_field('om_hero_title'); ?></h1>
         </div>
   	  </div>
-      <div class="om_menu">
-        <div class="row align-items-center">
+      <div class="om_menu_wrapper">
+        <div class="om_menu">
+          <div class="row align-items-center">
             <?php if( get_field('box_process_image', 'option') ): ?>
-          <a class="scrollProcess"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
-          <?php endif; ?><h3><?php the_field('box_process_title', 'option'); ?></h3></a>
+            <a class="scrollProcess"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
+            <?php endif; ?><h3><?php the_field('box_process_title', 'option'); ?></h3></a>
 
             <?php if( get_field('box_team_image', 'option') ): ?>
-          <a class="scrollTeam"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
-          <?php endif; ?><h3><?php the_field('box_team_title', 'option'); ?></h3></a>
+            <a class="scrollTeam"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
+            <?php endif; ?><h3><?php the_field('box_team_title', 'option'); ?></h3></a>
 
+            <?php
+            if( get_field('job_submenu_toggle', 'option') )
+              $value = get_field('job_submenu_toggle', 'option');
+              ?>
+              <?php  if( $value == true ) : ?>
+                <?php if( get_field('box_job_image', 'option') ): ?>
+              <a href="<?php the_field('box_job_link', 'option'); ?>"><img alt="job" class="om_menu_img" src=" <?php the_field('box_job_image', 'option'); ?>" />
+              <?php endif; ?><h3><?php the_field('box_job_title', 'option'); ?></h3></a>
+              <?php else : ?>
+                <span></span>
+              <?php endif; ?>
 
-          <?php
-          if( get_field('job_submenu_toggle', 'option') )
-            $value = get_field('job_submenu_toggle', 'option');
-            ?>
-            <?php  if( $value == true ) : ?>
-              <?php if( get_field('box_job_image', 'option') ): ?>
-            <a href="<?php the_field('box_job_link', 'option'); ?>"><img alt="job" class="om_menu_img" src=" <?php the_field('box_job_image', 'option'); ?>" />
-            <?php endif; ?><h3><?php the_field('box_job_title', 'option'); ?></h3></a>
-            <?php else : ?>
-              <span></span>
-            <?php endif; ?>
-
-
-
-
-        <!--  <div class="om_arrow_down">
-            <?php if( get_field('button_down', 'option') ): ?>
-          <a href="#steps"><img alt="calltoaction arrow" class="omchange_calltoaction" src=" <?php the_field('button_down', 'option'); ?>" />
-            <?php endif; ?></a>
-          </div> -->
+      <!--  <div class="om_arrow_down">
+              <?php if( get_field('button_down', 'option') ): ?>
+                <a href="#steps"><img alt="calltoaction arrow" class="omchange_calltoaction" src=" <?php the_field('button_down', 'option'); ?>" />
+              <?php endif; ?></a>
+            </div> -->
+          </div>
         </div>
       </div>
     </div>
