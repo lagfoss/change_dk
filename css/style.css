@@ -3018,6 +3018,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-left: 40%;
   }
 
+  .nav_some_wrapper {
+    margin-top: 15px;
+  }
+
   .forside_cases_wrapper {
     min-height: 475px;
   }
