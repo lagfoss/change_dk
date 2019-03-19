@@ -32,7 +32,7 @@ body {
   color: #111517;
 }
 
-.wrapper {
+.wrapper, .om_menu_wrapper {
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
@@ -2688,10 +2688,14 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     display: none;
   }
 
+  .om_menu_wrapper {
+    padding: 0;
+  }
+
   .om_menu {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   .half:nth-of-type(odd), .half:nth-of-type(even),
@@ -2856,6 +2860,11 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
 @media screen and (max-width: 575px) {
+
+  h1 {
+    font-size: 12vw;
+  }
+  
   .SoMe {
     height: 51px;
     text-align: center;
@@ -2991,6 +3000,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 @media screen and (max-width: 420px) {
   h1 {
     margin-top: 25px;
+    font-size: 15vw;
   }
 
   header {
