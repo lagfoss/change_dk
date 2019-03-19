@@ -2944,6 +2944,18 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     font-size: 25vw;
   }
 
+  .forside_cases_wrapper {
+    padding-left: 0px;
+  }
+
+  .forside_cases_text {
+    padding-right: 0px;
+  }
+
+  .forside_cases_header {
+    font-size: 35px;
+  }
+
 
 }
 
@@ -2980,6 +2992,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .forside_cases_wrapper {
     min-height: 475px;
+  }
+
+  .forside_cases_header {
+    font-size: 25px;
   }
 
   .forside_cases_wrapper h2 {
