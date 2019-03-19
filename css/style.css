@@ -2860,6 +2860,11 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
 @media screen and (max-width: 575px) {
+
+  h1 {
+    font-size: 12vw;
+  }
+  
   .SoMe {
     height: 51px;
     text-align: center;
@@ -2995,6 +3000,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 @media screen and (max-width: 420px) {
   h1 {
     margin-top: 25px;
+    font-size: 15vw;
   }
 
   header {
