@@ -2828,6 +2828,17 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     padding-right: 15px;
   }
 
+  .contact_address {
+    margin-right: 20px;
+    margin-left: 0%;
+  }
+
+  .contact_address_wrapper {
+    justify-content: flex-end;
+    max-width: 500px;
+    margin: auto;
+}
+
   .contact_form {
     max-width: 500px;
     margin-left: auto;

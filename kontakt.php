@@ -31,7 +31,7 @@
       <div class="col-md-6 contact_form">
         <?php echo do_shortcode("[contact-form-7 id=1061]") ; ?>
       </div>
-      <div class="col-md-6 d-flex align-items-end">
+      <div class="col-md-6 d-flex align-items-end contact_adresse">
         <div class="contact_address">
         <h2><?php the_field('contact_city'); ?></h2>
         <p class="gray"><?php the_field('contact_address'); ?></p>
