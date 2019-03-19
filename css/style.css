@@ -2836,6 +2836,17 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .contact_address {
+    margin-right: 20px;
+    margin-left: 0%;
+  }
+
+  .contact_adresse {
+    justify-content: flex-end;
+    max-width: 500px;
+    margin: auto;
+  }
 }
 
 /*========= (620px and down) =========*/
