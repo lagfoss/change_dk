@@ -122,7 +122,6 @@ $(document).ready(function() {
     mouseDrag: true,
     autoplay: false,
     loop: false,
-    mouseDrag: false,
   });
 
 
