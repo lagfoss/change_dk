@@ -2158,10 +2158,6 @@ img.thumbnail
 /*========= CASES branding slut =========*/
 /*========= CASES results start =========*/
 
-.case_results {
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
 
 /*========= CASES results slut =========*/
 /*========= CASES FOOTER start =========*/
@@ -2183,8 +2179,8 @@ img.thumbnail
 }
 
 .footer_project_case {
-  height: 100vh;
-  padding: 20% 0 90px 0;
+  height: 85vh;
+  padding: 15% 0 90px 0;
   background-color: inherit;
   text-align: center;
 }
