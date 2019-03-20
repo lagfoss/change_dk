@@ -49,6 +49,13 @@ body {
   padding-bottom: 10%;
 }
 
+.wrapper_process {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-bottom: 10%;
+}
+
 .wrapper_contact {
   margin-right: auto;
   margin-left: auto;
@@ -890,6 +897,26 @@ input {
 
 .process_steps_text {
   margin-left: 20px;
+}
+
+.process_caroussel_img {
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    transition-delay: 2s;
+}
+
+.process_wrapper {
+  height: 500px;
+}
+
+.process_text_wrapper {
+  height: 300px;
 }
 
 /*========= Hvad kan vi gøre for dig? Sektion =========*/

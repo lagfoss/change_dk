@@ -89,6 +89,29 @@ button.owl.active:active, button.owl.active:focus  {
   ...
 }
 
+.owl-carousel .proces_caroussel {
+ margin: 50px 100px;
+ width: 700px;
+ max-width: 100%;
+}
+
+.owl-carousel .proces_caroussel {
+ margin: 50px 100px;
+ width: 700px;
+ max-width: 100%;
+}
+
+.owl-carousel .proces_caroussel {
+ margin: 50px 100px;
+ max-width: 100%; 
+}
+
+.owl-carousel .proces_caroussel .owl-stage {
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
 .owl-carousel .carousel_2 {
  margin: 50px 100px;
  width: 700px;

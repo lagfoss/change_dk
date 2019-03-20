@@ -114,6 +114,17 @@ $(document).ready(function() {
     autoplay: true,
   });
 
+  var owl = $('.process_carousel_wrapper');
+  owl.owlCarousel({
+    items: 3,
+    dots: false,
+    nav: false,
+    mouseDrag: true,
+    autoplay: false,
+    loop: false,
+    mouseDrag: false,
+  });
+
 
   var owl = $('.carousel_om_change');
   owl.owlCarousel({

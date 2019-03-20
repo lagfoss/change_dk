@@ -125,31 +125,31 @@
 					<h2><?php the_field('process_title'); ?></h2>
 					<p><?php the_field('process_intro'); ?></p>
 			</div>
+				<div class="wrapper_process">
+						<div class="col-12 owl-carousel process_carousel_wrapper owl-theme">
+						<?php if( have_rows('process') ): ?>
 
-			<div class="row">
-				<?php if( have_rows('process') ): ?>
+							<?php while( have_rows('process') ): the_row();
+								// vars
+								$processimg =	 get_sub_field('process_img');
+								$processtitle = get_sub_field('process_single_title');
+								$procestext = get_sub_field('process_text');
+							?>
 
-					<?php while( have_rows('process') ): the_row();
-						// vars
-						$processnumber = get_sub_field('process_img');
-						$processtitle = get_sub_field('process_single_title');
-						$procestext = get_sub_field('process_text');
-					?>
-				<div class="row ourprocess">
-					<div class="row">
-							<?php echo $processnumber; ?>
-					</div>
-    			<div class="row font-weight-bold process_steps_text">
-      			<?php echo $processtitle; ?>
-      			<div class="row">
-        			<div class="font-weight-normal"><?php echo $procestext; ?></div>
-      			</div>
-    			</div>
+							<div class="row process_wrapper">
+							<img class="process_caroussel_img" src="<?php echo $processimg; ?>" alt="">
+							<div class="process_text_wrapper">
+							<?php echo $processtitle; ?>
+							<div class="">
+							<div class=""><?php echo $procestext; ?></div>
+							</div>
+							</div>
+							</div> 
+								<?php endwhile; ?>
+								<?php else:  ?>
+								<?php endif; ?>
 
 				</div>
-			<?php endwhile; ?>
-			<?php endif; ?>
-
 			</div>
 
 		</div>
