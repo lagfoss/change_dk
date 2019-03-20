@@ -6,7 +6,7 @@
     <div class="row wrapper_contact contact">
       <div class="pink_square"></div>
       <div class="col-md-6 contact_intro col-md-push-6">
-        <h1 class="black"><?php the_field('contact_title'); ?></h1>
+        <h1 class="big black"><?php the_field('contact_title'); ?></h1>
         <div class="stroke_position_contact">
           <div class="stroke_contact"></div>
         </div>
