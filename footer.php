@@ -116,7 +116,8 @@ $(document).ready(function() {
 
   var owl = $('.process_carousel_wrapper');
   owl.owlCarousel({
-    items: 3,
+    items: 1,
+    margin: 150,
     dots: false,
     nav: false,
     mouseDrag: true,

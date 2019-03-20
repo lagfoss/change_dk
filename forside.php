@@ -139,11 +139,9 @@
 							<div class="">
 								<img class="process_caroussel_img" src="<?php echo $processimg; ?>" alt="">
 
-							<div class="">
-							<?php echo $processtitle; ?>
-							<div class="">
+							<div class="process_text_wrapper">
+								<?php echo $processtitle; ?>
 							<div class=""><?php echo $procestext; ?></div>
-							</div>
 							</div>
 							</div>
 								<?php endwhile; ?>

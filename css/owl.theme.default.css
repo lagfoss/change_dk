@@ -94,9 +94,17 @@ button.owl.active:active, button.owl.active:focus  {
 }
 
 .process_carousel_wrapper .owl-item {
-  width: 960px;
   margin: 0 auto;
 }
+
+.process_carousel_wrapper .owl-stage {
+}
+
+.owl-carousel .process_carousel_wrapper .owl-stage {
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+   }
 
 .owl-carousel .carousel_2 {
  margin: 50px 100px;
@@ -231,6 +239,10 @@ padding-left: 50px;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
+  .process_carousel_wrapper .owl-stage {
+    width: 750px;
+  }
+
   .carousel_om_change .owl-nav .owl-next {
     position: absolute;
     right: 10px;
@@ -265,7 +277,7 @@ padding-left: 50px;
   }
 
   .process_carousel_wrapper .owl-item {
-    width: 650px; 
+    width: 650px;
     margin: 50px auto;
   }
 }

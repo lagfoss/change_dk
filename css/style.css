@@ -900,14 +900,14 @@ input {
 }
 
 .process_caroussel_img {
-  width: 100%; 
-}
-
-.process_wrapper {
+  width: 400px;
 }
 
 .process_text_wrapper {
-  height: 300px;
+    width: 400px;
+}
+
+.process_wrapper {
 }
 
 /*========= Hvad kan vi gøre for dig? Sektion =========*/
