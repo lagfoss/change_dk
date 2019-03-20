@@ -2,13 +2,6 @@
 
 <footer>
 
-  <!-- lets talk start -->
-  <div class="letstalk_footer">
-    <p><?php the_field('footer_lets_talk', 'option'); ?></p>
-    <h2><a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></h2>
-  </div>
-  <!-- lets talk slut -->
-
   <!-- sociale medier footer start -->
 
   <div class="container-fluid">

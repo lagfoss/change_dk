@@ -2246,10 +2246,6 @@ img.thumbnail
 /*========= CONTACT intro slut =========*/
 /*========= CONTACT form start =========*/
 
-.contact_form {
-  margin-top: 100px;
-}
-
 .contact_form input, .contact_form textarea {
   border-radius: 10px;
   margin-bottom: 30px;
@@ -2446,7 +2442,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 .cvr {
   height: 50px;
   background-color: #e3e3e3;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -2873,6 +2869,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   h1 {
     font-size: 12vw;
+  }
+
+  .cvr {
+    font-size: 15px;
   }
 
   .SoMe {
