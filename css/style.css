@@ -89,7 +89,7 @@ body {
 /*========= FONTS =========*/
 h1.big {
   font-family: 'bebas-neue', sans-serif;
-  font-size: 140px;
+  font-size: 120px;
   line-height: 0.88;
   letter-spacing: 0px;
 }
@@ -2244,14 +2244,14 @@ img.thumbnail
 }
 
 .contact_carousel {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .contact_gallery {
-  padding: 20px 10px 30px 10px;
+  padding: 35px 10px 30px 10px;
   margin-left: 15%;
   width: 360px;
-  height: 560px;
+  height: 650px;
 }
 
 .contact_gallery img {
@@ -2263,6 +2263,10 @@ img.thumbnail
 
 /*========= CONTACT intro slut =========*/
 /*========= CONTACT form start =========*/
+
+.contact_form {
+  margin-top: -30px;
+}
 
 .contact_form input, .contact_form textarea {
   border-radius: 10px;
