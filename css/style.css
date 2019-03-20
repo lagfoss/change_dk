@@ -900,19 +900,10 @@ input {
 }
 
 .process_caroussel_img {
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    background-size: cover !important;
-    background-repeat: no-repeat;
-    background-position: center !important;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    transition-delay: 2s;
+  width: 100%; 
 }
 
 .process_wrapper {
-  height: 500px;
 }
 
 .process_text_wrapper {

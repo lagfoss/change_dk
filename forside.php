@@ -126,7 +126,7 @@
 					<p><?php the_field('process_intro'); ?></p>
 			</div>
 				<div class="wrapper_process">
-						<div class="col-12 owl-carousel process_carousel_wrapper owl-theme">
+						<div class="owl-carousel process_carousel_wrapper owl-theme">
 						<?php if( have_rows('process') ): ?>
 
 							<?php while( have_rows('process') ): the_row();
@@ -136,15 +136,16 @@
 								$procestext = get_sub_field('process_text');
 							?>
 
-							<div class="row process_wrapper">
-							<img class="process_caroussel_img" src="<?php echo $processimg; ?>" alt="">
-							<div class="process_text_wrapper">
+							<div class="">
+								<img class="process_caroussel_img" src="<?php echo $processimg; ?>" alt="">
+
+							<div class="">
 							<?php echo $processtitle; ?>
 							<div class="">
 							<div class=""><?php echo $procestext; ?></div>
 							</div>
 							</div>
-							</div> 
+							</div>
 								<?php endwhile; ?>
 								<?php else:  ?>
 								<?php endif; ?>
