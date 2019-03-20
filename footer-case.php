@@ -16,7 +16,7 @@
 
     <div class="row stroke_position_footer">
       <div class="stroke_case"></div>
-      <p class="pre_client">NEXT CASE</p>
+      <p class="pre_client">NÆSTE CASE</p>
     </div>
 
     <?php $next_post = get_adjacent_post(false, '', false); ?>
