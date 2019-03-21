@@ -175,7 +175,6 @@ $(document).ready(function() {
     autoplay: true,
 })
 
-
 "use strict";
 
 !function() {
@@ -197,6 +196,7 @@ $(document).ready(function() {
       i.parentNode.insertBefore(o, i);
     };
   }
+
 }();
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('anm7w6fdv44n');
