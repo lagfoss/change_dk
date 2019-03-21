@@ -77,6 +77,7 @@ Template Post Type: cases
                 <p class="pre_client"><?php echo $clientservice; ?></p>
               </div>
               <div class="client_cat">
+
                 <?php
                   foreach((get_the_category($post->ID)) as $category){
                     echo $category->name.", ";
