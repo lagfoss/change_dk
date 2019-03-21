@@ -2876,6 +2876,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     font-size: 12vw;
   }
 
+  .footer_project {
+    margin-top: -70px;
+  }
+
   .cvr {
     font-size: 15px;
   }
@@ -2909,7 +2913,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .logo_slider {
-    padding: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
   }
 
   .logo_slider img {
@@ -2998,6 +3002,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .forside_cases_wrapper {
     padding-left: 0px;
+    min-height: 50px;
   }
 
   .forside_cases_text {
@@ -3008,6 +3013,24 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     font-size: 35px;
   }
 
+  .process_intro {
+    margin: 40px auto 40px auto;
+  }
+
+  .wcwd_intro h2 {
+    padding: 0 20px;
+  }
+
+  .wcwd_content {
+    margin: 0px 10px;
+    padding: 0px 20px;
+    max-width: 320px;
+    min-height: 0px;
+  }
+
+  .wcwd_button {
+    margin-top: 30px;
+  }
 
 }
 
@@ -3047,9 +3070,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-top: 15px;
   }
 
-  .forside_cases_wrapper {
-    min-height: 475px;
-  }
 
   .forside_cases_header {
     font-size: 25px;
@@ -3169,10 +3189,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .nav_wrapper {
     position: absolute;
     left: -35px;
-  }
-
-  .forside_cases_wrapper {
-    min-height: 300px;
   }
 
   .modal {
