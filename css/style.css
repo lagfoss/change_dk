@@ -1074,12 +1074,6 @@ input {
   color: inherit;
 }
 
-.om_arrow_down {
-  position: absolute;
-  bottom: -15px;
-  left: 20%;
-}
-
 .omchange_calltoaction {
   background-color: #f8f8f8;
   padding: 10px;

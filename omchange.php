@@ -15,31 +15,25 @@
       <div class="om_menu_wrapper">
         <div class="om_menu">
           <div class="row align-items-center">
-            <?php if( get_field('box_process_image', 'option') ): ?>
-            <a class="scrollProcess"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image', 'option'); ?>" />
-            <?php endif; ?><h3><?php the_field('box_process_title', 'option'); ?></h3></a>
+            <?php if( get_field('box_process_image') ): ?>
+            <a class="scrollProcess"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image'); ?>" />
+            <?php endif; ?><h3><?php the_field('box_process_title'); ?></h3></a>
 
-            <?php if( get_field('box_team_image', 'option') ): ?>
-            <a class="scrollTeam"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image', 'option'); ?>" />
-            <?php endif; ?><h3><?php the_field('box_team_title', 'option'); ?></h3></a>
+            <?php if( get_field('box_team_image') ): ?>
+            <a class="scrollTeam"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image'); ?>" />
+            <?php endif; ?><h3><?php the_field('box_team_title'); ?></h3></a>
 
             <?php
-            if( get_field('job_submenu_toggle', 'option') )
-              $value = get_field('job_submenu_toggle', 'option');
+            if( get_field('job_submenu_toggle') )
+              $value = get_field('job_submenu_toggle');
               ?>
               <?php  if( $value == true ) : ?>
-                <?php if( get_field('box_job_image', 'option') ): ?>
-              <a href="<?php the_field('box_job_link', 'option'); ?>"><img alt="job" class="om_menu_img" src=" <?php the_field('box_job_image', 'option'); ?>" />
-              <?php endif; ?><h3><?php the_field('box_job_title', 'option'); ?></h3></a>
+                <?php if( get_field('box_job_image') ): ?>
+              <a href="<?php the_field('box_job_link'); ?>"><img alt="job" class="om_menu_img" src=" <?php the_field('box_job_image'); ?>" />
+              <?php endif; ?><h3><?php the_field('box_job_title'); ?></h3></a>
               <?php else : ?>
                 <span></span>
               <?php endif; ?>
-
-      <!--  <div class="om_arrow_down">
-              <?php if( get_field('button_down', 'option') ): ?>
-                <a href="#steps"><img alt="calltoaction arrow" class="omchange_calltoaction" src=" <?php the_field('button_down', 'option'); ?>" />
-              <?php endif; ?></a>
-            </div> -->
           </div>
         </div>
       </div>
