@@ -2,20 +2,16 @@
 
 <?php get_header(); ?>
 
-  <div class="hero background_img_services" style="background-image:url(<?php the_field('background_img_services'); ?>);">
+  <div class="hero background_img_services" style="background-image:url(<?php the_field('calender_hero_image'); ?>);">
   <div class="container-fluid wrapper">
     <div class="row">
   		<div class="col-sm-6 hero_services">
         <div class="stroke_position_services">
           <div class="stroke_services"></div>
         </div>
-        <h1><?php the_field('h1_hero_services'); ?></h1>
+        <h1><?php the_field('calender_hero_title'); ?></h1>
       </div>
       <div class="col-sm-6">
-        <!--
-        <a href="#"> <?php if( get_field('calltoaction_hero_services') ): ?>
-          <img alt="calltoaction arrow" class="calltoaction_hero_services" src="<?php the_field('calltoaction_hero_services'); ?>" />
-        <?php endif; ?></a> -->
       </div>
   	</div>
 
@@ -30,6 +26,7 @@
       <div class="stroke_position">
         <div class="stroke"></div>
       </div>
+      <?php echo do_shortcode("[email-download download_id=”1553” contact_form_id=”1552”]") ; ?>
   	</div>
   </div>
 
