@@ -107,7 +107,8 @@ $(document).ready(function() {
     items: 1,
     dots: true,
     nav: false,
-    mouseDrag: true,
+    mouseDrag: false,
+    touchdrag: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 10000,
     margin: 1,
@@ -122,8 +123,6 @@ $(document).ready(function() {
     mouseDrag: false,
     autoplay: false,
     responsive:{
-
-
 
       768: {
         items: 3,
