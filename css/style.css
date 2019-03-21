@@ -2213,6 +2213,7 @@ img.thumbnail
 
 .contact_intro p {
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .contact_img {
@@ -2361,6 +2362,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 .footer_project h2 {
   margin-bottom: 55px;
+  padding: 0px 15px;
 }
 
 .footer_button {
@@ -2801,6 +2803,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   flex-direction: column-reverse;
   }
 
+  .om_steps_content {
+  flex-direction: column-reverse;
+  }
+
   .pink_square {
      display: none;
   }
@@ -2833,12 +2839,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-right: 20px;
     margin-left: 0%;
   }
-
-  .contact_address_wrapper {
-    justify-content: flex-end;
-    max-width: 500px;
-    margin: auto;
-}
 
   .contact_form {
     max-width: 500px;
@@ -3031,6 +3031,34 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .wcwd_button {
     margin-top: 30px;
+  }
+
+  .case_card_content {
+    margin: 25px;
+  }
+
+  .team, .team h2 {
+    margin-top: 0px;
+  }
+
+  .team {
+    margin-bottom: 40px;
+  }
+
+  .stroke_position_om {
+    margin-bottom: 45px;
+  }
+
+  .logo_slider {
+    margin: 0px auto 80px auto;
+  }
+
+  .contact_map {
+    margin-top: 50px;
+  }
+
+  .stroke_contact_map {
+    bottom: -50px;
   }
 
 }
