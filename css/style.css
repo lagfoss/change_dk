@@ -46,7 +46,7 @@ body {
   max-width: 1140px;
   padding-right: 15px;
   padding-left: 16px;
-  padding-bottom: 10%;
+  padding-bottom: 6%;
 }
 
 .wrapper_contact {
@@ -864,7 +864,7 @@ input {
 .process_intro {
   max-width: 650px;
   text-align: center;
-  margin: auto;
+  margin: auto auto 40px auto;
 }
 
 .process_image {
@@ -903,7 +903,7 @@ input {
 
 
 .do_for_u {
-  margin: 200px auto 100px auto;
+  margin: 10px auto 100px auto;
 }
 
 .wcwd_intro {
@@ -1290,7 +1290,7 @@ input {
 .om_slider_title {
   text-align: center;
   width: 100%;
-  margin: 0 auto 20px auto;
+  margin:0 auto -10px auto;
 }
 
 .omchange_card_h3 {
@@ -1820,6 +1820,14 @@ img.omchange_client_logo_neg {
   font-size: 41px;
 }
 
+.rekru_text {
+  width: 380px;
+  text-align: -webkit-left;
+  margin-right: 10px;
+
+}
+
+
 /*========= CASES hero start =========*/
 
 .case_hero {
@@ -1911,6 +1919,7 @@ img.omchange_client_logo_neg {
 /*========= CASES about client start =========*/
 
 .case_link {
+  font-size: 16px;
   border-bottom: 1px solid #111517;
   margin-top: 15px;
   padding-bottom: 3px;
@@ -2660,10 +2669,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-left: 0px;
   }
 
-  .do_for_u {
-    margin: 100px auto 100px auto;
-  }
-
   .logo_slider {
     padding: 50px 0 50px 0;
   }
@@ -3146,6 +3151,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .orange_square_case {
     height: 90%;
+  }
+
+  .rekru_text {
+    width: 300px;
   }
 
 }

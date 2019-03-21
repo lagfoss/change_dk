@@ -88,7 +88,7 @@ Template Post Type: cases
               </div>
               <div class="col-md-7 client_about">
                 <h2><?php echo $abouttitle; ?></h2>
-                <p class="client_text"><?php echo $about; ?></p>
+                <p class=""><?php echo $about; ?></p>
 
               </div>
             </div>
@@ -225,9 +225,9 @@ Template Post Type: cases
                 </div>
                 <div class="col-lg-6">
                   <div class="rekru_video">
-                <!--    <div id="thumbnail_container" class="thumbnail_container">
+                  <div id="thumbnail_container" class="thumbnail_container">
                     <img src="<?php echo $yt_thumbnail ?>" class="thumbnail" id="thumbnail"></div>
-                   <a class="start-video"><img width="64" src="<?php echo $yt_play_button ?>" ></a> -->
+                   <a class="start-video"><img width="64" src="<?php echo $yt_play_button ?>" ></a>
                   <?php
                    // get iframe HTML
                    $iframe = get_sub_field('case_rekru_embed');
@@ -286,7 +286,7 @@ echo $iframe;
                     </div>
                     <div class="rekru_text">
                       <h2 class="h2_case"><?php echo $brandtitle; ?></h2>
-                      <p class="client_text"><?php echo $brandtext; ?></p>
+                      <p class=""><?php echo $brandtext; ?></p>
                       <div id="customNav"></div>
                       <div class="slider-counter">
 
