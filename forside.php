@@ -119,40 +119,35 @@
 </div>
 
 	<!-- Process steps -->
-	<div class="container-fluid wrapper">
+	<div class="container-fluid wrapper_process">
+		<div class="process_intro">
+		<h2><?php the_field('process_title'); ?></h2>
+		<p><?php the_field('process_intro'); ?></p>
+</div>
+		  <div class="col-12 owl-carousel process_carousel_wrapper owl-theme">
+
+		<?php if( have_rows('process') ): ?>
+
+	<?php while( have_rows('process') ): the_row();
+		// vars
+		$processimg =	 get_sub_field('process_img');
+		$processtitle = get_sub_field('process_single_title');
+		$procestext = get_sub_field('process_text');
+	?>
+
 		<div class="row">
-			<div class="process_intro">
-					<h2><?php the_field('process_title'); ?></h2>
-					<p><?php the_field('process_intro'); ?></p>
-			</div>
-				<div class="wrapper_process">
-						<div class="owl-carousel process_carousel_wrapper owl-theme">
-						<?php if( have_rows('process') ): ?>
-
-							<?php while( have_rows('process') ): the_row();
-								// vars
-								$processimg =	 get_sub_field('process_img');
-								$processtitle = get_sub_field('process_single_title');
-								$procestext = get_sub_field('process_text');
-							?>
-
-							<div class="">
-								<img class="process_caroussel_img" src="<?php echo $processimg; ?>" alt="">
-
-							<div class="process_text_wrapper">
-								<?php echo $processtitle; ?>
-							<div class=""><?php echo $procestext; ?></div>
-							</div>
-							</div>
-								<?php endwhile; ?>
-								<?php else:  ?>
-								<?php endif; ?>
-
-				</div>
+			<img class="col-lg-12 process_image" src="<?php echo $processimg; ?>">
+			<div class="process_text_wrapper">
+				<h3 class=""><?php echo $processtitle; ?></h3>
+				<p><?php echo $procestext; ?></p> 
 			</div>
 
 		</div>
+	<?php endwhile; ?>
+<?php endif; ?>
 	</div>
+		</div>
+			</div>
 
 	<!-- Section med hvad vi gøre -->
 	<div class="container-fluid do_for_u wrapper">
