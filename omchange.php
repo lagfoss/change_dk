@@ -52,11 +52,11 @@
         <div class="om_steps">
 
         <div id="steps" class="om_steps_content">
-  				<div class="half steps_img">
+  				<div class="half steps_img col-lg-6 col-md-push-6">
             <img alt="steps images" src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
-      		<div class="half steps_text">
+      		<div class="half steps_text col-lg-6 col-md-pull-6">
             <div class="row stroke_position_om">
               <div class="stroke_om"></div>
               <p class="steps_number">
