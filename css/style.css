@@ -49,13 +49,6 @@ body {
   padding-bottom: 10%;
 }
 
-.wrapper_process {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1140px;
-  padding-bottom: 10%;
-}
-
 .wrapper_contact {
   margin-right: auto;
   margin-left: auto;
@@ -874,15 +867,14 @@ input {
   margin: auto;
 }
 
-.process_img {
-  background-position: center;
-  background-size: contain;
+.process_image {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover !important;
   background-repeat: no-repeat;
-  background-clip: content-box;
-  padding: 10px;
-  min-height: 350px;
-  width: 100%;
-}
+  background-position: center !important;
+ }
 
 .process_steps {
   font-family: 'bebas-neue', sans-serif;
@@ -891,23 +883,20 @@ input {
   color: #e54c00;
 }
 
-.ourprocess {
-  margin-top: 30px;
-}
-
-.process_steps_text {
-  margin-left: 20px;
-}
-
-.process_caroussel_img {
-  width: 400px;
-}
-
 .process_text_wrapper {
-    width: 400px;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
 }
 
-.process_wrapper {
+.wrapper_process {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 16px;
+  padding-bottom: 10%;
 }
 
 /*========= Hvad kan vi gøre for dig? Sektion =========*/
