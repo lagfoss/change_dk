@@ -1911,7 +1911,6 @@ img.omchange_client_logo_neg {
 /*========= CASES about client start =========*/
 
 .case_link {
-  font-size: 17px;
   border-bottom: 1px solid #111517;
   margin-top: 15px;
   padding-bottom: 3px;
@@ -1988,6 +1987,7 @@ img.omchange_client_logo_neg {
 .case_some_text img {
   width: 45px;
   height: auto;
+  margin-top: 20px;
 }
 
 .case_some_wrapper {
