@@ -2283,6 +2283,14 @@ img.thumbnail
     max-width: 500px;
   }
 
+  .download_wrapper {
+    margin-top: 5px;
+  }
+
+  .preview_wrapper {
+    margin-top: 40px;
+  }
+
   .preview_wrapper ol {
   list-style: none;
   counter-reset: my-awesome-counter;

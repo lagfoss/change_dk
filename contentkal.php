@@ -21,7 +21,7 @@
 
   <div class="container-fluid wrapper_content">
     <div class="row">
-      <div class="col-md-6 preview_wrapper">
+      <div class="col-md-6 download_wrapper">
         <h2><?php the_field('content_calendar_header'); ?></h2>
         <div class="stroke_position">
           <div class="content_calendar_stroke"></div>
