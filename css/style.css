@@ -2279,6 +2279,10 @@ img.thumbnail
     margin: 30px auto 30px 0;
   }
 
+  .content_calendar_text {
+    max-width: 500px;
+  }
+
   .preview_wrapper ol {
   list-style: none;
   counter-reset: my-awesome-counter;

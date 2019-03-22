@@ -21,12 +21,12 @@
 
   <div class="container-fluid wrapper_content">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 preview_wrapper">
         <h2><?php the_field('content_calendar_header'); ?></h2>
         <div class="stroke_position">
           <div class="content_calendar_stroke"></div>
         </div>
-        <p class="gray"><?php the_field('content_calendar_content'); ?></p>
+        <p class="gray content_calendar_text"><?php the_field('content_calendar_content'); ?></p>
       </div>
 
 
@@ -44,7 +44,7 @@
     $calendarimg = get_field('content_calendar_preview_calendar_image');
     $previewheader = get_field('content_calendar_preview_header');
     $previewtext = get_field('content_calendar_preview_text');
-     ?> 
+     ?>
 
   <div class="container-fluid wrapper_content">
     <div class="row">
@@ -55,7 +55,10 @@
 
       <div class="col-md-6 preview_wrapper">
         <h2><?php echo $previewheader; ?></h2>
-        <div class="gray"><?php echo $previewtext; ?></div>
+        <div class="stroke_position">
+          <div class="content_calendar_stroke"></div>
+        </div>
+        <div class="gray content_calendar_text"><?php echo $previewtext; ?></div>
       </div>
 
     </div>
