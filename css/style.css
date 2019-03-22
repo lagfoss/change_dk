@@ -2296,6 +2296,13 @@ img.thumbnail
     font-weight: bold;
 }
 
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border: 2px solid #e54c00;
+    width: 65%;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
 /*========= Content kalender slut =========*/
 
 
