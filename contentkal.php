@@ -19,8 +19,19 @@
 </div>
 
 
-  <div class="container-fluid">
-    <div class="row komme_uden_om_det">
+  <div class="container-fluid wrapper">
+    <div class="row">
+      <div class="col-md-6">
+        <h2><?php the_field('content_calendar_header'); ?></h2>
+        <div class="stroke_position">
+          <div class="stroke"></div>
+        </div>
+        <p><?php the_field('content_calendar_content'); ?></p>
+      </div>
+
+
+
+    <div class="col-md-6 komme_uden_om_det">
       <h2 class="services_main_content_overskrift"> <?php the_field('services_main_content_overskrift') ?> </h2>
       <p class="services_main_content_text"> <?php the_field('services_main_content_text') ?> </p>
       <div class="stroke_position">
@@ -29,6 +40,7 @@
       <?php echo do_shortcode("[email-download download_id=1553 contact_form_id=1552]") ; ?>
   	</div>
   </div>
+    </div>
 
   <div class="container-fluid wrapper">
     <div class="row justify-content-center buttons_wrapper">
