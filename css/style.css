@@ -2251,6 +2251,22 @@ img.thumbnail
   box-shadow: 20px 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
+
+/*========= Content kalender start =========*/
+  .content_calendar_computer {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .content_calendar_preview {
+    width: 200px;
+  }
+
+/*========= Content kalender slut =========*/
+
+
+
+
 /*========= CONTACT intro slut =========*/
 /*========= CONTACT form start =========*/
 
@@ -2258,7 +2274,7 @@ img.thumbnail
   margin-top: -30px;
 }
 
-.contact_form input, .contact_form textarea {
+.contact_form input, .contact_form textarea, .your-name input, .your-email input {
   border-radius: 10px;
   margin-bottom: 30px;
   padding: 20px 15px;

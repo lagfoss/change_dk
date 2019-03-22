@@ -53,13 +53,13 @@
   <div class="container-fluid wrapper">
     <div class="row">
       <div class="col-md-6">
-        <img src="<?php echo $computerimg; ?>" alt="">
-        <img src="<?php echo $calendarimg; ?>" alt="">
+        <img class="content_calendar_computer" src="<?php echo $computerimg; ?>" alt="">
+        <img class="content_calendar_preview" src="<?php echo $calendarimg; ?>" alt="">
       </div>
 
       <div class="col-md-6">
         <h2><?php echo $previewheader; ?></h2>
-        <p><?php echo $previewtext; ?></p>
+        <p><?php echo $previewtext; ?></p> 
       </div>
 
     </div>
