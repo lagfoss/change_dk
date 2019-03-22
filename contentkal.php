@@ -85,15 +85,6 @@
 
 <script type="text/javascript">
 
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-		if ( '1552' == event.detail.contactFormId) {
-			var inputs = event.detail.inputs;
-			var urs = inputs[2].value;
-			window.location.href=urs;
-			setTimeout(function(){ location.reload(); }, 3000);
-		}
-	}, false );
-
 /* Logo transition script */
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
