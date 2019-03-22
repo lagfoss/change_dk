@@ -2279,6 +2279,19 @@ img.thumbnail
     margin: 30px auto 30px 0;
   }
 
+  .preview_wrapper ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  }
+  .preview_wrapper ol li {
+    counter-increment: my-awesome-counter;
+  }
+  .preview_wrapper ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: #e54c00;
+    font-weight: bold;
+}
+
 /*========= Content kalender slut =========*/
 
 
@@ -2886,6 +2899,11 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .content_calendar_computer {
+    padding-right: 0px;
+  }
+
 }
 
 /*========= (620px and down) =========*/
