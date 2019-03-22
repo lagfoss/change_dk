@@ -19,24 +19,21 @@
 </div>
 
 
-  <div class="container-fluid wrapper">
+  <div class="container-fluid wrapper_content">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 preview_wrapper">
         <h2><?php the_field('content_calendar_header'); ?></h2>
         <div class="stroke_position">
-          <div class="stroke"></div>
+          <div class="content_calendar_stroke"></div>
         </div>
-        <p><?php the_field('content_calendar_content'); ?></p>
+        <p class="gray content_calendar_text"><?php the_field('content_calendar_content'); ?></p>
       </div>
 
 
 
-    <div class="col-md-6 komme_uden_om_det">
+    <div class="contact_form col-md-6 ">
       <h2 class="services_main_content_overskrift"> <?php the_field('services_main_content_overskrift') ?> </h2>
       <p class="services_main_content_text"> <?php the_field('services_main_content_text') ?> </p>
-      <div class="stroke_position">
-        <div class="stroke"></div>
-      </div>
       <?php echo do_shortcode("[contact-form-7 id=1552]") ; ?>
   	</div>
   </div>
@@ -49,16 +46,19 @@
     $previewtext = get_field('content_calendar_preview_text');
      ?>
 
-  <div class="container-fluid wrapper">
+  <div class="container-fluid wrapper_content">
     <div class="row">
       <div class="col-md-6">
-        <img src="<?php echo $computerimg; ?>" alt="">
-        <img src="<?php echo $calendarimg; ?>" alt="">
+        <img class="content_calendar_computer" src="<?php echo $computerimg; ?>" alt="">
+        <img class="content_calendar_preview" src="<?php echo $calendarimg; ?>" alt="">
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 preview_wrapper">
         <h2><?php echo $previewheader; ?></h2>
-        <p><?php echo $previewtext; ?></p>
+        <div class="stroke_position">
+          <div class="content_calendar_stroke"></div>
+        </div>
+        <div class="gray content_calendar_text"><?php echo $previewtext; ?></div>
       </div>
 
     </div>
