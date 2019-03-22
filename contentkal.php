@@ -42,41 +42,25 @@
   </div>
     </div>
 
+    <?php
+    $computerimg = get_field('content_calendar_preview_computer_image');
+    $calendarimg = get_field('content_calendar_preview_calendar_image');
+    $previewheader = get_field('content_calendar_preview_header');
+    $previewtext = get_field('content_calendar_preview_text');
+     ?>
+
+
   <div class="container-fluid wrapper">
-    <div class="row justify-content-center buttons_wrapper">
-        <?php if( have_rows('services_buttons') ): ?>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="<?php echo $computerimg; ?>" alt="">
+        <img src="<?php echo $calendarimg; ?>" alt="">
+      </div>
 
-          <?php while( have_rows('services_buttons') ): the_row();
-            $image = get_sub_field('services_img');
-            $header = get_sub_field('services_header');
-            $text = get_sub_field('services_text');
-            ?>
-            <div class="wcwd_hover col-sm-4 wcwd_content">
-                <img alt="services billeder" class="wcwd_img" src="<?php echo $image; ?>"/>
-                <h3 class="scroll_header"><?php echo $header; ?></h3>
-                <p class="scroll_text"><?php echo $text; ?></p>
-            </div>
-          <?php endwhile; ?>
-
-          <!--
-          <div id="services_contact" class="col-sm-4 wcwd_content">
-            <div class="services_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
-
-            </div>
-
-
-            <div class="stroke_position_services">
-              <div class="stroke_services"></div>
-            </div>
-            <h2><?php the_field('services_contact_button_header')  ?></h2>
-              <a class="services_button" href="<?php the_field('services_contact_button_url');?>">
-              <?php the_field('services_contact_button_text'); ?>
-              <?php if( get_field('services_contact_button_arrow') ): ?>
-              <img alt="calltoaction arrow" src="<?php the_field('services_contact_button_arrow'); ?>" />
-              </a>
-            <?php endif; ?>
-          </div> -->
-        <?php endif; ?>
+      <div class="col-md-6">
+        <h2><?php echo $previewheader; ?></h2>
+        <p><?php echo $previewtext; ?></p>
+      </div>
 
     </div>
   </div>
