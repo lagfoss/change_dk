@@ -26,7 +26,7 @@
       <div class="stroke_position">
         <div class="stroke"></div>
       </div>
-      <?php echo do_shortcode("[email-download download_id=1553 contact_form_id=1552]") ; ?>
+      <?php echo do_shortcode("[contact-form-7 id=1552]") ; ?>
   	</div>
   </div>
 
