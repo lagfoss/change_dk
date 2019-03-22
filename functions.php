@@ -198,4 +198,17 @@ function yoast_primary_cat_as_first_cat($categories) {
 }
 add_filter( 'get_the_categories', 'yoast_primary_cat_as_first_cat' );
 
+function add_this_script_footer(){ ?>
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+		if ( '1552' == event.detail.contactFormId) {
+			var inputs = event.detail.inputs;
+			var urs = inputs[2].value;
+			window.location.href=urs;
+			setTimeout(function(){ location.reload(); }, 3000);
+		}
+	}, false );
+</script>
+<?php } add_action('wp_footer', 'add_this_script_footer');
+
 ?>

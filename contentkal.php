@@ -37,7 +37,7 @@
       <div class="stroke_position">
         <div class="stroke"></div>
       </div>
-      <?php echo do_shortcode("[email-download download_id=1553 contact_form_id=1552]") ; ?>
+      <?php echo do_shortcode("[contact-form-7 id=1552]") ; ?>
   	</div>
   </div>
     </div>
@@ -48,7 +48,6 @@
     $previewheader = get_field('content_calendar_preview_header');
     $previewtext = get_field('content_calendar_preview_text');
      ?>
-
 
   <div class="container-fluid wrapper">
     <div class="row">
@@ -85,6 +84,15 @@
 <?php get_footer(services); ?>
 
 <script type="text/javascript">
+
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+		if ( '1552' == event.detail.contactFormId) {
+			var inputs = event.detail.inputs;
+			var urs = inputs[2].value;
+			window.location.href=urs;
+			setTimeout(function(){ location.reload(); }, 3000);
+		}
+	}, false );
 
 /* Logo transition script */
 $(document).scroll(function() {
