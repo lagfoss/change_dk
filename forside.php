@@ -142,7 +142,7 @@
 			<img class="process_arrow_right" src="<?php echo $procesarrow; ?>" alt="">
 			<div class="process_text_wrapper">
 				<h3 class=""><?php echo $processtitle; ?></h3>
-				<p><?php echo $procestext; ?></p>
+				<p><?php echo $procestext; ?></p> 
 			</div>
 
 		</div>
