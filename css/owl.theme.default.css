@@ -166,13 +166,13 @@ button.owl.active:active, button.owl.active:focus {
 .logo_slider .owl-prev {
   position: absolute;
   top: 30px;
-  left: 0px;
+  left: 20px;
 }
 
 .logo_slider .owl-next {
   position: absolute;
   top: 30px;
-  right: 0px;
+  right: 20px;
 }
 
 .slider-counter {

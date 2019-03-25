@@ -922,6 +922,7 @@ input {
   margin-left: auto;
   max-width: 1140px;
   padding-bottom: 10%;
+  margin-top: 80px;
 }
 
 /*========= Hvad kan vi gøre for dig? Sektion =========*/
@@ -2137,10 +2138,10 @@ img.thumbnail {
 
 .iphone_wrapper {
   position: absolute;
-  z-index: 2;
-  width: 409px;
-  left: -57px;
-  top: 5px;
+      z-index: 2;
+      width: 307px;
+      left: -13px;
+      top: 6px;
 }
 
 /*========= CASES branding slut =========*/
@@ -3241,9 +3242,9 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .iphone_wrapper {
-    width: 347px;
-    left: -47px;
-    top: 7px;
+    width: 261px;
+    left: -11px;
+    top: 8px;
   }
 
   .orange_square_case {

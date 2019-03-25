@@ -134,7 +134,7 @@ $(document).ready(function() {
       320: {
         items: 1,
         autoplay: false,
-        loop: true,
+        loop: false,
         touchdrag: true,
       }
     }

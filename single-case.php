@@ -296,7 +296,7 @@ echo $iframe;
                 </div>
                 <div class="col-lg-7 align-items-center">
                   <div class="orange_square_case"></div>
-                  <div> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone-empty.svg" alt="iphone"> </div>
+                  <div> <img class="iphone_wrapper" src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/iphone.svg" alt="iphone"> </div>
                    <div id="info" class="owl-carousel slider owl-theme carousel_2 ">
                       <?php foreach( $brandgallery as $brandgallery ): ?>
                         <img alt="brand image" class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
