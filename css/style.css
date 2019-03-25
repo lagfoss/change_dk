@@ -30,6 +30,7 @@ body {
   line-height: 26px;
   letter-spacing: 0px;
   color: #111517;
+  text-rendering: geometricPrecision;
 }
 
 .wrapper, .om_menu_wrapper, .contact_address_wrapper {
@@ -674,11 +675,13 @@ input {
   border-width: 2px;
   text-align: center;
   color: #ffffff;
+  transition: all .3s ease-in-out0s!important;
 }
 
 .hero_button:hover {
   color: #fff;
   text-decoration: none;
+  background-color: #e54c00;
 }
 
 .watchourshowreel {
@@ -894,7 +897,7 @@ input {
  .process_arrow_right {
    position: absolute;
  }
- 
+
 
 .process_steps {
   font-family: 'bebas-neue', sans-serif;
@@ -928,7 +931,7 @@ input {
 .wcwd_intro {
   max-width: 650px;
   text-align: center;
-  margin: auto;
+  margin: auto auto 70px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -965,7 +968,6 @@ input {
   margin-top: 60px;
   background-color: inherit;
   border-color: black;
-  width: 185px;
   height: 60px;
   border-radius: 5px;
   border-style: solid;
@@ -2464,12 +2466,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 .footer_button:hover {
   text-decoration: none;
   color: white;
-  padding: 14px 64px;
-  box-shadow: 0px 6px 12px -5px rgba(0, 0, 0, 0.50);
-  transform: scale(0.97);
-  -webkit-transform: scale(0.98);
-  -moz-transform: scale(0.98);
-  -o-transform: scale(0.98);
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.50);
 }
 
 .letstalk_footer {
@@ -2537,7 +2534,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 .cvr {
   height: 50px;
   background-color: #e3e3e3;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -2971,10 +2968,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .footer_project {
     margin-top: 60px;
-  }
-
-  .cvr {
-    font-size: 15px;
   }
 
   .SoMe {
