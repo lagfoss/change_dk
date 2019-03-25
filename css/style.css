@@ -894,7 +894,7 @@ input {
    position: relative;
   top: -231px;
   left: -46px;
- } 
+ }
 
  .process_arrow_right {
    position: relative;
@@ -2616,7 +2616,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .case_img {
     margin-left: 5%;
-    max-height: 420px;
  }
 
   .forside_case_button {
@@ -2998,7 +2997,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .case_img {
     margin-left: 5%;
-    max-height: 300px;
     width: 450px;
   }
 
