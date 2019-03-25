@@ -772,14 +772,13 @@ input {
 
 .case_img {
   width: 600px;
-  min-height: 400px;
+  max-height: 460px;
   background-size: cover;
   position: relative;
   overflow: hidden;
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center !important;
-  margin-bottom: 50px;
   border-radius: 10px;
   transition-delay: 2s;
   box-shadow: -15px 15px 20px -5px rgba(0, 0, 0, 0.12);
@@ -787,8 +786,8 @@ input {
 
 .forside_cases_wrapper {
   width: 450px;
-  min-height: 650px;
   z-index: 1;
+  padding-top: 35px;
   padding-left: 35px;
 }
 
@@ -807,7 +806,7 @@ input {
 
 .forside_cases_text {
   width: 100%;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 .forside_cases_catergories {
@@ -845,8 +844,7 @@ input {
 }
 
 .forside_case_button {
-  display: flex;
-  width: 150px;
+  display: inline-flex;
   z-index: 2;
   text-decoration: none;
   font-weight: 500;
@@ -874,6 +872,10 @@ input {
   max-width: 650px;
   text-align: center;
   margin: auto auto 40px auto;
+}
+
+.process_intro h2 {
+  margin-bottom: 20px;
 }
 
 .process_image {
@@ -927,6 +929,13 @@ input {
   max-width: 650px;
   text-align: center;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wcwd_intro p {
+  max-width: 460px;
 }
 
 .wcwd_content {
@@ -2606,8 +2615,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .case_img {
     margin-left: 5%;
-    min-height: 390px;
-    width: 600px;
+    max-height: 420px;
  }
 
   .forside_case_button {
@@ -2732,8 +2740,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .case_img {
     margin-left: 7%;
-    min-height: 390px;
-    width: 600px;
   }
 
   .forside_case_button {
@@ -2995,7 +3001,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .case_img {
     margin-left: 5%;
-    min-height: 200px;
+    max-height: 300px;
     width: 450px;
   }
 
@@ -3215,7 +3221,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .case_img {
-    min-height: 350px;
+    max-height: 350px;
   }
 
   .calltoaction_hero_services {
