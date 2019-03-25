@@ -2123,7 +2123,7 @@ div.thumbnail_container
 img.thumbnail
 {
     opacity: 0.5;
-    height: 100%;
+    width: 100%;
 }
 
 /*========= CASES rekrutering slut =========*/
