@@ -19,7 +19,7 @@ html {
 }
 
 html.sr .load-hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 body {
@@ -139,8 +139,7 @@ a {
   color: inherit;
 }
 
-button:focus
- {
+button:focus {
   outline: 0;
 }
 
@@ -405,8 +404,8 @@ nav {
 }
 
 .nav_some img {
-  width:20px;
-  height:20px;
+  width: 20px;
+  height: 20px;
 }
 
 .nav_wrapper {
@@ -596,7 +595,6 @@ input {
   -ms-transform: translate(-100%, 0%);
   transform: translate(-100%, 0%);
 }*/
-
 .post-type-archive .menubtn:before, .post-type-archive .menubtn span,
 .post-type-archive .menubtn:after, .post-type-archive .pseudo_search:before,
 .header_contact .menubtn:before, .header_contact .menubtn span, .header_contact .menubtn:after,
@@ -623,11 +621,11 @@ input {
   border-color: #111517;
   color: #111517;
 }
+
 /*
 .out_white {
   background-color: #f1f1f1;
 } */
-
 .display_no {
   display: none;
 }
@@ -675,7 +673,7 @@ input {
   border-width: 2px;
   text-align: center;
   color: #ffffff;
-  transition: all .3s ease-in-out0s!important;
+  transition: all .3s ease-in-out0s !important;
 }
 
 .hero_button:hover {
@@ -711,11 +709,11 @@ input {
 .modal iframe,
 .modal object,
 .modal embed {
-	position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
   padding: 20px;
 }
 
@@ -785,7 +783,7 @@ input {
   border-radius: 10px;
   transition-delay: 2s;
   box-shadow: -15px 15px 20px -5px rgba(0, 0, 0, 0.12);
- }
+}
 
 .forside_cases_wrapper {
   width: 450px;
@@ -824,7 +822,7 @@ input {
 
 .forside_cases_catergories a:hover {
   color: inherit;
-  text-decoration:  none;
+  text-decoration: none;
 }
 
 .case_button {
@@ -870,7 +868,6 @@ input {
 }
 
 /*========= Process sektion =========*/
-
 .process_intro {
   max-width: 650px;
   text-align: center;
@@ -888,20 +885,19 @@ input {
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center !important;
- }
+}
 
- .process_arrow_left {
-   position: relative;
+.process_arrow_left {
+  position: relative;
   top: -231px;
   left: -46px;
- } 
+}
 
- .process_arrow_right {
-   position: relative;
-   top: -231px;
-   right: -249px;
- }
-
+.process_arrow_right {
+  position: relative;
+  top: -231px;
+  right: -249px;
+}
 
 .process_steps {
   font-family: 'bebas-neue', sans-serif;
@@ -911,23 +907,21 @@ input {
 }
 
 .process_text_wrapper {
-    max-width: 310px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 7px;
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px;
+  text-align: center;
 }
 
 .wrapper_process {
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
-  padding-right: 15px;
-  padding-left: 16px;
   padding-bottom: 10%;
 }
+
 /*========= Hvad kan vi gøre for dig? Sektion =========*/
-
-
 .do_for_u {
   margin: 10px auto 100px auto;
 }
@@ -990,7 +984,6 @@ input {
 }
 
 /*========= Hvad kan vi gøre for dig? Sektion slut =========*/
-
 /*========= Logo slider =========*/
 .logo_slider {
   border-top: solid 2px #e3e3e3;
@@ -1069,7 +1062,6 @@ input {
 /*========= FORSIDE slut =========*/
 /*========= OM CHANGE =========*/
 /*========= Om Intro =========*/
-
 .omchange_hero_info {
   margin-top: 300px;
 }
@@ -1260,7 +1252,6 @@ input {
 
 /*========= Vores process steps slut =========*/
 /*========= Om Change klient citat =========*/
-
 .om_quote {
   border-bottom: solid 2px #e3e3e3;
   margin-bottom: 150px;
@@ -1300,13 +1291,11 @@ input {
   margin: auto;
   height: 105px;
   margin-bottom: 100px;
-  }
-
+}
 }
 
 /*========= Om Change klient citat slut =========*/
 /*========= Om Change slider =========*/
-
 .stroke_position {
   width: 100%;
 }
@@ -1322,7 +1311,7 @@ input {
 .om_slider_title {
   text-align: center;
   width: 100%;
-  margin:0 auto -10px auto;
+  margin: 0 auto -10px auto;
 }
 
 .omchange_card_h3 {
@@ -1351,7 +1340,7 @@ input {
 .omchange_category_wrapper {
   list-style-type: none;
   display: block;
-      padding: 25px 7%;
+  padding: 25px 7%;
 }
 
 .omchange_category_wrapper a:hover {
@@ -1414,7 +1403,7 @@ input {
 
 img.omchange_client_logo_neg {
   height: 30px;
-    margin: 6% 7%;
+  margin: 6% 7%;
 }
 
 .omchange_card_categories {
@@ -1424,7 +1413,6 @@ img.omchange_client_logo_neg {
 
 /*========= OM CHANGE slut =========*/
 /*========= TEAM start =========*/
-
 .team_arrow_down {
   position: absolute;
   bottom: -15px;
@@ -1562,7 +1550,6 @@ img.omchange_client_logo_neg {
 
 /*========= TEAM slut =========*/
 /*========= SERVICES start =========*/
-
 .background_img_services {
   position: relative;
   top: 0;
@@ -1656,7 +1643,7 @@ img.omchange_client_logo_neg {
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
-.services_button:hover{
+.services_button:hover {
   text-decoration: none;
   color: white;
   padding: 14px 24px;
@@ -1672,9 +1659,7 @@ img.omchange_client_logo_neg {
 }
 
 /*========= services slut =========*/
-
 /*========= CASES forside start =========*/
-
 .case_card_content {
   position: relative;
   overflow: hidden;
@@ -1788,30 +1773,30 @@ img.omchange_client_logo_neg {
   border-width: 2px;
   border-color: #111517;
   z-index: 2;
- }
+}
 
- .pagination {
-   color: #e54c00;
-   padding: 10px;
- }
+.pagination {
+  color: #e54c00;
+  padding: 10px;
+}
 
- .page-numbers.current {
-   color: #e54c00;
-   background-color: white;
-   padding: 20px 30px;
-   margin: 10px;
-   border: solid 1px;
-   border-radius: 10px;
- }
+.page-numbers.current {
+  color: #e54c00;
+  background-color: white;
+  padding: 20px 30px;
+  margin: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+}
 
- .page-numbers {
-   color: #999999;
-   background-color: white;
-   padding: 20px 30px;
-   margin: 10px;
-   border: solid 1px;
-   border-radius: 10px;
- }
+.page-numbers {
+  color: #999999;
+  background-color: white;
+  padding: 20px 30px;
+  margin: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+}
 
 .page-numbers:hover {
   background-color: white;
@@ -1821,7 +1806,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES forside slut =========*/
 /*========= CASES enkelt start =========*/
-
 .menubtn.close_case::before {
   top: 4px;
   -moz-transform: rotate(45deg);
@@ -1856,12 +1840,9 @@ img.omchange_client_logo_neg {
   width: 380px;
   text-align: -webkit-left;
   margin-right: 10px;
-
 }
 
-
 /*========= CASES hero start =========*/
-
 .case_hero {
   margin-top: 30vh;
 }
@@ -1898,7 +1879,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES hero slut =========*/
 /*========= CASES client start =========*/
-
 .case_client {
   border-bottom: solid 2px #e3e3e3;
   padding-bottom: 100px;
@@ -1926,7 +1906,6 @@ img.omchange_client_logo_neg {
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 240px;
-
 }
 
 .client_cat ul {
@@ -1949,7 +1928,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES client slut =========*/
 /*========= CASES about client start =========*/
-
 .case_link {
   font-size: 16px;
   border-bottom: 1px solid #111517;
@@ -1965,7 +1943,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES about client slut =========*/
 /*========= CASES image start =========*/
-
 .client_image {
   height: 60vh;
   overflow: hidden;
@@ -1975,7 +1952,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES image slut =========*/
 /*========= CASES goal start =========*/
-
 .goal_line {
   border-bottom: solid 2px #e3e3e3;
 }
@@ -1985,13 +1961,12 @@ img.omchange_client_logo_neg {
   margin: 50px auto 50px auto;
 }
 
- .brand, .rekru_wrapper {
-     margin: 120px auto 120px auto;
- }
+.brand, .rekru_wrapper {
+  margin: 120px auto 120px auto;
+}
 
 /*========= CASES goal slut =========*/
 /*========= CASES strategi start =========*/
-
 .strategi_line {
   position: relative;
   border-bottom: solid 2px #e3e3e3;
@@ -2020,7 +1995,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES strategi slut =========*/
 /*========= CASES some start =========*/
-
 .case_some {
   margin-bottom: 200px;
 }
@@ -2073,7 +2047,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES some slut =========*/
 /*========= CASES rekrutering start =========*/
-
 .rekru {
   position: relative;
   margin-bottom: 60px;
@@ -2117,32 +2090,28 @@ img.omchange_client_logo_neg {
   transition: all 0.3s;
 }
 
-.start-video:hover
-{
-    opacity: 1;
-    -webkit-filter: brightness (1);
+.start-video:hover {
+  opacity: 1;
+  -webkit-filter: brightness (1);
 }
 
-div.thumbnail_container
-{
+div.thumbnail_container {
   position: absolute;
-      width: 99%;
-      left: 0px;
-      height: 352px;
-      overflow: hidden;
-      border-radius: 10px;
-      background-color: #000;
+  width: 99%;
+  left: 0px;
+  height: 352px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #000;
 }
 
-img.thumbnail
-{
-    opacity: 0.5;
-    width: 100%;
+img.thumbnail {
+  opacity: 0.5;
+  width: 100%;
 }
 
 /*========= CASES rekrutering slut =========*/
 /*========= CASES branding start =========*/
-
 .brand_content {
   max-width: 430px;
 }
@@ -2172,11 +2141,8 @@ img.thumbnail
 
 /*========= CASES branding slut =========*/
 /*========= CASES results start =========*/
-
-
 /*========= CASES results slut =========*/
 /*========= CASES FOOTER start =========*/
-
 .case_section {
   background-color: #f2f2f2;
   margin-bottom: 100vh;
@@ -2212,15 +2178,12 @@ img.thumbnail
   max-width: 1140px;
   padding-right: 15px;
   padding-left: 15px;
-
 }
 
 /*========= CASES FOOTER slut =========*/
 /*========= CASES enkelt slut =========*/
-
 /*========= CONTACT start =========*/
 /*========= CONTACT intro start =========*/
-
 .header_contact .logoimg {
   display: none;
 }
@@ -2283,48 +2246,49 @@ img.thumbnail
   box-shadow: 20px 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
 
-
 /*========= Content kalender start =========*/
-  .content_calendar_computer {
-    width: 100%;
-    padding-right: 40px;
-  }
+.content_calendar_computer {
+  width: 100%;
+  padding-right: 40px;
+}
 
-  .content_calendar_preview {
-    width: 200px;
-  }
+.content_calendar_preview {
+  width: 200px;
+}
 
-  .content_calendar_stroke {
-    height: 5px;
-    width: 60px;
-    background-color: #e54c00;
-    border-radius: 4px;
-    margin: 30px auto 30px 0;
-  }
+.content_calendar_stroke {
+  height: 5px;
+  width: 60px;
+  background-color: #e54c00;
+  border-radius: 4px;
+  margin: 30px auto 30px 0;
+}
 
-  .content_calendar_text {
-    max-width: 500px;
-  }
+.content_calendar_text {
+  max-width: 500px;
+}
 
-  .download_wrapper {
-    margin-top: 5px;
-  }
+.download_wrapper {
+  margin-top: 5px;
+}
 
-  .preview_wrapper {
-    margin-top: 40px;
-  }
+.preview_wrapper {
+  margin-top: 40px;
+}
 
-  .preview_wrapper ol {
+.preview_wrapper ol {
   list-style: none;
   counter-reset: my-awesome-counter;
-  }
-  .preview_wrapper ol li {
-    counter-increment: my-awesome-counter;
-  }
-  .preview_wrapper ol li::before {
-    content: counter(my-awesome-counter) ". ";
-    color: #e54c00;
-    font-weight: bold;
+}
+
+.preview_wrapper ol li {
+  counter-increment: my-awesome-counter;
+}
+
+.preview_wrapper ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #e54c00;
+  font-weight: bold;
 }
 
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
@@ -2335,13 +2299,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 /*========= Content kalender slut =========*/
-
-
-
-
 /*========= CONTACT intro slut =========*/
 /*========= CONTACT form start =========*/
-
 .contact_form {
   margin-top: -30px;
 }
@@ -2358,11 +2317,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   width: 100%;
 }
 
-.your-name input {
-}
+.your-name input {}
 
 input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
-    box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.15);
 }
 
 .wpcf7-submit {
@@ -2396,7 +2354,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 /*========= CONTACT form slut =========*/
 /*========= CONTACT map start =========*/
-
 .contact_map {
   position: relative;
   margin-top: 150px;
@@ -2426,22 +2383,20 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 }
 
 .acf-map {
-	width: 100%;
-	height: 520px;
-	border: #e3e3e3 solid 1px;
-	margin: 0;
+  width: 100%;
+  height: 520px;
+  border: #e3e3e3 solid 1px;
+  margin: 0;
 }
 
 /* fixes potential theme css conflict */
 .acf-map img {
-   max-width: inherit !important;
+  max-width: inherit !important;
 }
-
 
 /*========= CONTACT map slut =========*/
 /*========= CONTACT slut =========*/
 /*========= FOOTER =========*/
-
 .footer_project {
   padding: 60px 0 90px 0;
   background-color: #e9e9e9;
@@ -2544,24 +2499,21 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 /*========= FIREFOX =========*/
 @-moz-document url-prefix() {
-    .logo_slider .owl-prev img, .logo_slider .owl-next img {
-      height: 15px;
-    }
+  .logo_slider .owl-prev img, .logo_slider .owl-next img {
+    height: 15px;
   }
+}
 
 /*========= Large devices (desktops/tablets, 1140px and down) =========*/
 @media screen and (max-width: 1140px) {
   .rekru_content {
     padding-left: 15px;
   }
-
 }
 
 /*========= Large devices (desktops/tablets, 1100px and down) =========*/
-
 /*========= Large devices (desktops, 992px and down) =========*/
 @media screen and (max-width: 992px) {
-
   .watch, .showreel {
     margin-left: 20px;
   }
@@ -2579,26 +2531,26 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .forside_cases_header {
     text-align: center;
     width: auto;
-   }
+  }
 
   .know_us_dots, .rekru_dots {
     display: none;
-   }
+  }
 
-   .know_us {
-     text-align: center;
-   }
+  .know_us {
+    text-align: center;
+  }
 
-   .know_us_content {
-     max-width: 600px;
-     margin-right: auto;
-     padding-right: 15px
-   }
+  .know_us_content {
+    max-width: 600px;
+    margin-right: auto;
+    padding-right: 15px
+  }
 
-   .case_strategi_img img {
-     width: 150px;
-     height: 150px;
-   }
+  .case_strategi_img img {
+    width: 150px;
+    height: 150px;
+  }
 
   .forside_cases_wrapper {
     min-height: 300px;
@@ -2617,7 +2569,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .case_img {
     margin-left: 5%;
     max-height: 420px;
- }
+  }
 
   .forside_case_button {
     position: inherit;
@@ -2663,9 +2615,9 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     margin-top: -4px;
   }
 
-   .team_members_half {
-     padding-left: 20px;
-   }
+  .team_members_half {
+    padding-left: 20px;
+  }
 
   .team_name {
     margin-bottom: 90px;
@@ -2678,7 +2630,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .contact_gallery img {
     width: 90%;
   }
-
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -2733,7 +2684,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .forside_cases_header {
     text-align: center;
     width: auto;
-   }
+  }
 
   .forside_cases_catergories {
     text-align: inherit;
@@ -2761,7 +2712,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     width: 90%;
   }
 
- .services_dots, .strategi_dots, .contact_map_dots {
+  .services_dots, .strategi_dots, .contact_map_dots {
     display: none;
   }
 
@@ -2788,6 +2739,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     width: 100%;
     max-width: 500px;
   }
+
   .steps_img img {
     width: 100%;
     margin: auto;
@@ -2826,8 +2778,8 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .case_down {
-      margin-top: 25px;
-      margin-left: auto;
+    margin-top: 25px;
+    margin-left: auto;
   }
 
   .case_goal, .case_strategi, .case_some_content, .case_results {
@@ -2881,15 +2833,15 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .contact {
-  flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .om_steps_content {
-  flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .pink_square {
-     display: none;
+    display: none;
   }
 
   .contact_img {
@@ -2937,12 +2889,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .content_calendar_computer {
     padding-right: 0px;
   }
-
 }
 
 /*========= (620px and down) =========*/
 @media screen and (max-width: 620px) {
-
   .case_some_wrapper {
     padding-left: 16%;
   }
@@ -2965,7 +2915,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 /*========= Bootstrap col-sm lægger sig under hinanden, f.eks. hero på forsiden (575px and down) =========*/
 @media screen and (max-width: 575px) {
-
   h1 {
     font-size: 12vw;
   }
@@ -3071,7 +3020,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .omchange_card_content {
-  height: 200px;
+    height: 200px;
   }
 
   .omchange_card_h3 {
@@ -3142,6 +3091,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .stroke_position_om {
     margin-bottom: 45px;
   }
+
   .contact_map {
     margin-top: 50px;
   }
@@ -3149,7 +3099,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .stroke_contact_map {
     bottom: -50px;
   }
-
 }
 
 /*========= Small devices () =========*/
@@ -3189,13 +3138,12 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .nav_some {
-  padding:2px 25px 10px 0px;
+    padding: 2px 25px 10px 0px;
   }
 
   .nav_address a {
     font-size: 13px;
   }
-
 
   .forside_cases_header {
     font-size: 25px;
@@ -3285,8 +3233,8 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .brand_img {
-      height: 85%;
-    }
+    height: 85%;
+  }
 
   .iphone_wrapper {
     width: 347px;
@@ -3301,12 +3249,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .rekru_text {
     width: 300px;
   }
-
 }
 
 /*========= Tiny devices () =========*/
 @media screen and (max-width: 360px) {
-
   .SoMe {
     text-align: center;
     display: block;
@@ -3332,4 +3278,56 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .wrapper_cases .row {
     min-height: 990px;
   }
+}
+
+/*======== NIKOLAJ SLIDER PROCESS ============*/
+.slider_arrows {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.process_image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center !important;
+}
+
+.process_carousel_wrapper .owl-item .row.flex_display .slider_arrows::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: calc(50% - 40px);
+  z-index: 99;
+  left: -40px;
+  background-image: url(http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/arrow_process.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row.flex_display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.process_carousel_wrapper .owl-item:last-child .row.flex_display .slider_arrows::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: calc(50% - 40px);
+  z-index: 99;
+  right: -40px;
+  background-image: url(http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/arrow_process.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -133,7 +133,7 @@ $(document).ready(function() {
 
       320: {
         items: 1,
-        autoplay: true,
+        autoplay: false,
         loop: true,
         touchdrag: true,
       }
