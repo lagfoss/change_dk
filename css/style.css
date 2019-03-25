@@ -888,13 +888,17 @@ input {
  }
 
  .process_arrow_left {
-   position: absolute;
+   position: relative;
+  top: -231px;
+  left: -46px;
  }
 
  .process_arrow_right {
-   position: absolute;
+   position: relative;
+   top: -231px;
+   right: -249px;
  }
- 
+
 
 .process_steps {
   font-family: 'bebas-neue', sans-serif;
