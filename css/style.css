@@ -137,6 +137,7 @@ h3 {
 
 a {
   color: inherit;
+  outline: none !important;
 }
 
 button:focus {
@@ -622,10 +623,12 @@ input {
   color: #111517;
 }
 
-/*
+
 .out_white {
   background-color: #f1f1f1;
-} */
+  top: 0px;
+  transition: 0.4s;
+}
 .display_no {
   display: none;
 }
@@ -1844,7 +1847,7 @@ img.omchange_client_logo_neg {
 
 /*========= CASES hero start =========*/
 .case_hero {
-  margin-top: 30vh;
+  margin-top: 40vh;
 }
 
 .stroke_position_case {
@@ -2108,6 +2111,7 @@ div.thumbnail_container {
 img.thumbnail {
   opacity: 0.5;
   width: 100%;
+  height: 100%;
 }
 
 /*========= CASES rekrutering slut =========*/

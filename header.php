@@ -119,7 +119,7 @@
             <?php endif; ?>
             <div class="nav_address">
               <a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a>
-              <a href="<?php the_field('google_maps_link', 'option'); ?>"><?php the_field('nav_address', 'option'); ?></a>
+              <a target="_blank" href="<?php the_field('google_maps_link', 'option'); ?>"><?php the_field('nav_address', 'option'); ?></a>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
         <script>
 
         // Gør at header vises og forsvinder med scroll
-        var header = $('header'),
+  /*      var header = $('header'),
         headerHeight = header.height(),
         treshold = 0,
         lastScroll = 0;
@@ -145,8 +145,7 @@
           header.css('top', (-treshold)+'px');
 
           lastScroll = newScroll;
-        });
-
+        }); */
 
         /* Åben/luk menu navigation  */
           function openNav() {
