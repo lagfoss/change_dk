@@ -133,13 +133,16 @@
 		$processimg =	 get_sub_field('process_img');
 		$processtitle = get_sub_field('process_single_title');
 		$procestext = get_sub_field('process_text');
+		$procesarrow = get_sub_field('process_arrow');
 	?>
 
 		<div class="row">
-			<img class="col-lg-12 process_image" src="<?php echo $processimg; ?>">
+			<img class="process_image" src="<?php echo $processimg; ?>">
+			<img class="process_arrow_left" src="<?php echo $procesarrow; ?>" alt="">
+			<img class="process_arrow_right" src="<?php echo $procesarrow; ?>" alt="">
 			<div class="process_text_wrapper">
 				<h3 class=""><?php echo $processtitle; ?></h3>
-				<p><?php echo $procestext; ?></p> 
+				<p><?php echo $procestext; ?></p>
 			</div>
 
 		</div>

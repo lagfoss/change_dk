@@ -877,13 +877,22 @@ input {
 }
 
 .process_image {
-  height: 100%;
+  width: 100%;
   position: relative;
   overflow: hidden;
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center !important;
  }
+
+ .process_arrow_left {
+   position: absolute;
+ }
+
+ .process_arrow_right {
+   position: absolute;
+ }
+ 
 
 .process_steps {
   font-family: 'bebas-neue', sans-serif;
@@ -907,7 +916,6 @@ input {
   padding-left: 16px;
   padding-bottom: 10%;
 }
-
 /*========= Hvad kan vi gøre for dig? Sektion =========*/
 
 
