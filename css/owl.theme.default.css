@@ -98,6 +98,7 @@ button.owl.active:active, button.owl.active:focus  {
 }
 
 .process_carousel_wrapper .owl-stage {
+  margin-top: 80px;
 }
 
 .owl-carousel .process_carousel_wrapper .owl-stage {
