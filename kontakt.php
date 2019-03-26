@@ -70,3 +70,17 @@
   </div>
 
 <?php get_footer(kontakt); ?>
+
+<script>
+
+  ScrollReveal().reveal('.contact_intro h1', { distance: '350px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.stroke_position_contact', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.contact_intro p', { distance: '550px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.contact_form', { distance: '850px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.contact_address h2', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.contact_address p', { distance: '650px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.stroke_position_contact_map', { distance: '550px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.contact_map_dots', { distance: '550px', easing: 'ease-in-out', duration: 700 });
+  ScrollReveal().reveal('.acf-map', { distance: '650px', easing: 'ease-in-out', duration: 700 });
+
+</script>
