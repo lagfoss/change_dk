@@ -202,7 +202,6 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('anm7w6fdv44n');
 
 ScrollReveal().reveal('.footer_project', { distance: '250px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.letstalk_footer', { distance: '250px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.SoMe_footer', { distance: '250px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.contact_footer', { distance: '250px', easing: 'ease-in-out', duration: 700 });
 

@@ -1594,22 +1594,6 @@ img.omchange_client_logo_neg {
   margin: 30px 1px;
 }
 
-.calltoaction_hero_services {
-  position: absolute;
-  top: 82%;
-  margin-left: 35%;
-  text-decoration: none;
-  padding: 15px 20px;
-  background-color: #ffffff;
-  border-color: #ffffff;
-  width: 58px;
-  height: 60px;
-  border-radius: 10px;
-  text-align: center;
-  color: #ffffff;
-  transform: rotate(90deg);
-}
-
 .komme_uden_om_det {
   text-align: center;
   display: block;
@@ -3182,10 +3166,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .case_img {
     max-height: 350px;
-  }
-
-  .calltoaction_hero_services {
-    margin-left: 0;
   }
 
   .services_main_content_overskrift {
