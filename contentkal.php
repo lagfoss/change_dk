@@ -28,15 +28,11 @@
         </div>
         <p class="gray content_calendar_text"><?php the_field('content_calendar_content'); ?></p>
       </div>
-
-
-
-    <div class="contact_form col-md-6 ">
-
-      <?php echo do_shortcode("[contact-form-7 id=1552]") ; ?>
-  	</div>
-  </div>
+      <div class="contact_form col-md-6 ">
+        <?php echo do_shortcode("[contact-form-7 id=1552]") ; ?>
+  	  </div>
     </div>
+  </div>
 
     <?php
     $computerimg = get_field('content_calendar_preview_computer_image');
@@ -140,5 +136,9 @@ ScrollReveal().reveal('.download_wrapper h2', { distance: '650px', easing: 'ease
 ScrollReveal().reveal('.stroke_position', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.download_wrapper p', { distance: '650px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.contact_form', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.content_calendar_computer', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.preview_wrapper h2', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.content_calendar_text', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.logo_slider', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 
 </script>
