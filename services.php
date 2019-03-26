@@ -115,6 +115,16 @@ $(".input").addClass("out_black2");
     }
 });
 
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 120) {
+$(".header").addClass("out_white");
+    } else {
+        $(".header").removeClass("out_white");
+    }
+});
+
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
                 if(scroll_pos > 620) {
