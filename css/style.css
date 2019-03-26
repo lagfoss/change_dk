@@ -676,7 +676,9 @@ input {
   border-width: 2px;
   text-align: center;
   color: #ffffff;
-  transition: all .3s ease-in-out0s !important;
+  transition: all .3s ease-in-out 0s !important;
+  transition: all .3s ease-in-out 0s !important;
+  transition: all .3s ease-in-out 0s !important;
 }
 
 .hero_button:hover {
