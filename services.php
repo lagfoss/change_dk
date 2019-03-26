@@ -118,7 +118,7 @@ $(".input").addClass("out_black2");
 $(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 120) {
+	if (scroll >= windowHeight - 140) {
 $(".header").addClass("out_white");
     } else {
         $(".header").removeClass("out_white");

@@ -282,7 +282,7 @@ $(".menubtn").addClass("menu_black");
 $(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+	if (scroll >= windowHeight - 140) {
 $(".header").addClass("out_white");
     } else {
         $(".header").removeClass("out_white");
