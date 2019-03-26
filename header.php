@@ -196,7 +196,7 @@
              $('.menubtn').toggleClass('pos_fix');
              /*$('.search_form').toggleClass('pos_fix');
              $('.input').toggleClass('out_black');*/
-             $('.pre_header').toggleClass('display_no');
+             $('.pre_header').toggleClass('display_no'); 
 
             /* //Skifter farve på :before & :after i search
              $('.search').slideUp(10, function() {

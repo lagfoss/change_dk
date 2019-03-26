@@ -94,6 +94,16 @@
 
 <script type="text/javascript">
 
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 680) {
+$(".header").addClass("out_white");
+    } else {
+        $(".header").removeClass("out_white");
+    }
+});
+
 ScrollReveal().reveal('.black', { distance: '350px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.stroke', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.case_card_content', { distance: '650px', easing: 'ease-in-out', duration: 700 });

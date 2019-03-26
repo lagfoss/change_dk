@@ -132,7 +132,7 @@
         <script>
 
         // Gør at header vises og forsvinder med scroll
-        var header = $('header'),
+    /*    var header = $('header'),
         headerHeight = header.height(),
         treshold = 0,
         lastScroll = 0;
@@ -148,7 +148,7 @@
           header.css('top', (-treshold)+'px');
 
           lastScroll = newScroll;
-        });
+        }); */
 
 
         /* Åben/luk menu navigation  */
@@ -169,6 +169,16 @@
           closeNav();
           $('.menubtn').on('click', function(){
           $(this).toggleClass('close','menubtn');
+          });
+
+          $(window).scroll(function() {
+          	var windowHeight = $(window).height();
+          	var scroll = $(window).scrollTop();
+          	if (scroll >= windowHeight - 700) {
+          $(".header").addClass("out_white");
+              } else {
+                  $(".header").removeClass("out_white");
+              }
           });
 
           /*//Search animation

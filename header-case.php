@@ -74,6 +74,7 @@
         <script type="text/javascript">
 
         // Gør at header vises og forsvinder med scroll
+        /*
         var header = $('.header'),
         headerHeight = header.height(),
         treshold = 0,
@@ -90,7 +91,7 @@
           header.css('top', (-treshold)+'px');
 
           lastScroll = newScroll;
-        });
+        }); */
 
         </script>
       </div>

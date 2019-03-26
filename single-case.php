@@ -344,6 +344,7 @@ echo $iframe;
 <script>
 
 /* Logo transition script */
+
 $(window).scroll(function() {
 	var windowHeight = $(window).height();
 	var scroll = $(window).scrollTop();
@@ -387,6 +388,15 @@ $(".close_case").addClass("menu_black");
     }
 });
 
+$(window).scroll(function() {
+	var windowHeight = $(window).height();
+	var scroll = $(window).scrollTop();
+	if (scroll >= windowHeight - 80) {
+$(".header").addClass("out_white");
+    } else {
+        $(".header").removeClass("out_white");
+    }
+});
 
 ScrollReveal().reveal('.client_image', { distance: '250px', easing: 'ease-in-out', duration: 700});
 ScrollReveal().reveal('.stroke_position_case', { distance: '250px', easing: 'ease-in-out', duration: 700});
