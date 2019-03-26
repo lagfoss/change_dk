@@ -628,7 +628,17 @@ input {
   background-color: #f1f1f1;
   top: 0px;
   transition: 0.4s;
+  padding-bottom: 5px;
 }
+
+.out_white .pos_fix {
+  top: 40px;
+}
+
+.out_white .nav_logo {
+  top: 37px;
+}
+
 .display_no {
   display: none;
 }
