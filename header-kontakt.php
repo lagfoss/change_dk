@@ -174,7 +174,7 @@
           $(window).scroll(function() {
           	var windowHeight = $(window).height();
           	var scroll = $(window).scrollTop();
-          	if (scroll >= windowHeight - 700) {
+          	if (scroll >= windowHeight - 420) {
           $(".header").addClass("out_white");
               } else {
                   $(".header").removeClass("out_white");
