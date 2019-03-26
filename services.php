@@ -5,17 +5,11 @@
   <div class="hero background_img_services" style="background-image:url(<?php the_field('background_img_services'); ?>);">
   <div class="container-fluid wrapper">
     <div class="row">
-  		<div class="col-sm-6 hero_services">
+  		<div class="hero_services">
         <div class="stroke_position_services">
           <div class="stroke_services"></div>
         </div>
         <h1><?php the_field('h1_hero_services'); ?></h1>
-      </div>
-      <div class="col-sm-6">
-        <!--
-        <a href="#"> <?php if( get_field('calltoaction_hero_services') ): ?>
-          <img alt="calltoaction arrow" class="calltoaction_hero_services" src="<?php the_field('calltoaction_hero_services'); ?>" />
-        <?php endif; ?></a> -->
       </div>
   	</div>
 
@@ -49,24 +43,6 @@
             </div>
           <?php endwhile; ?>
 
-          <!--
-          <div id="services_contact" class="col-sm-4 wcwd_content">
-            <div class="services_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot_grid.png');">
-
-            </div>
-
-
-            <div class="stroke_position_services">
-              <div class="stroke_services"></div>
-            </div>
-            <h2><?php the_field('services_contact_button_header')  ?></h2>
-              <a class="services_button" href="<?php the_field('services_contact_button_url');?>">
-              <?php the_field('services_contact_button_text'); ?>
-              <?php if( get_field('services_contact_button_arrow') ): ?>
-              <img alt="calltoaction arrow" src="<?php the_field('services_contact_button_arrow'); ?>" />
-              </a>
-            <?php endif; ?>
-          </div> -->
         <?php endif; ?>
 
     </div>
@@ -145,18 +121,12 @@ $(".menubtn").addClass("menu_black");
 
 ScrollReveal().reveal('.stroke_position_services', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('h1', { distance: '500px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.calltoaction_hero_services', { distance: '550px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.services_main_content_overskrift', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.services_main_content_text', { distance: '650px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.stroke', { distance: '550px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.wcwd_img', { distance: '300px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.scroll_header', { distance: '500px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.scroll_text', { distance: '600px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.services_dots', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.stroke_services', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('h2', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.services_button', { distance: '550px', easing: 'ease-in-out', duration: 1000 });
-ScrollReveal().reveal('.1', { distance: '650px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.logo_slider', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 
 </script>
