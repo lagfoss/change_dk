@@ -626,21 +626,21 @@ input {
 
 .out_white {
   background-color: #f2f2f2;
-  top: 0px;
+  top: -10px;
+  height: 80px;
   -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     transition: all 0.4s ease;
-  padding-bottom: 5px;
 }
 
 .out_white .pos_fix {
-  top: 40px;
+  top: 31px;
 }
 
 .out_white .nav_logo {
-  top: 37px;
+  top: 28px;
 }
 
 .display_no {
