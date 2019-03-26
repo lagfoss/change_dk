@@ -300,20 +300,9 @@ $('.scrollTeam').on('click', function(event){
 });
 
 ScrollReveal().reveal('.stroke_position_services', { distance: '300px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.hero_info h1', { distance: '400px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.om_menu_img', { distance: '350px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.om_menu a', { distance: '450px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.team h2', { distance: '450px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.team_stroke', { distance: '550px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.gray', { distance: '550px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.team_members_half img', { distance: '500px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.team_name h3', { distance: '550px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.stroke_team', { distance: '500px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.logo_slider', { distance: '550px', easing: 'ease-in-out', duration: 700});
-ScrollReveal().reveal('.stroke_position_services', { distance: '300px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.hero_info h1', { distance: '400px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.om_menu_img', { distance: '350px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.om_menu a', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.omchange_hero_info h1', { distance: '400px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.om_menu', { distance: '450px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.om_menu a', { distance: '550px', easing: 'ease-in-out', duration: 700});
 ScrollReveal().reveal('.steps_img', { distance: '300px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.stroke_om', { distance: '350px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.steps_number', { distance: '450px', easing: 'ease-in-out', duration: 700 });
@@ -327,6 +316,13 @@ ScrollReveal().reveal('.quote_img', { distance: '350px', easing: 'ease-in-out', 
 ScrollReveal().reveal('.quote', { distance: '400px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.quote_name', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.quote_logo', { distance: '500px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.team h2', { distance: '450px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.team_stroke', { distance: '550px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.gray', { distance: '550px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.team_members_half img', { distance: '500px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.team_name h3', { distance: '550px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.stroke_team', { distance: '500px', easing: 'ease-in-out', duration: 700});
+ScrollReveal().reveal('.logo_slider', { distance: '550px', easing: 'ease-in-out', duration: 700});
 ScrollReveal().reveal('.om_slider_title', { distance: '350px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.stroke_position', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.carousel_om_change', { distance: '550px', easing: 'ease-in-out', duration: 700 });
