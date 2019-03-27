@@ -285,10 +285,9 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 140) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 620) {
 $(".header").addClass("out_white");
     } else {
         $(".header").removeClass("out_white");
