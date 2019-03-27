@@ -2250,10 +2250,11 @@ img.thumbnail {
 .contact_gallery img {
   display: block;
   max-width: 420px;
+  width: 100%;
   margin: auto;
   max-height: 650px;
   border-radius: 10px;
-  box-shadow: 20px 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 15px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*========= CONTACT intro slut =========*/
@@ -2660,8 +2661,12 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-bottom: 90px;
   }
 
-  .contact_gallery {
-    margin-left: 10%;
+  .pink_square {
+    height: 800px;
+  }
+
+  .contact_carousel {
+    margin-top: 100px;
   }
 
   .contact_gallery img {
