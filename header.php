@@ -3,7 +3,7 @@
 <head>
 <title><?php bloginfo(); ?></title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-touch-fullscreen" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -196,7 +196,7 @@
              $('.menubtn').toggleClass('pos_fix');
              /*$('.search_form').toggleClass('pos_fix');
              $('.input').toggleClass('out_black');*/
-             $('.pre_header').toggleClass('display_no'); 
+             $('.pre_header').toggleClass('display_no');
 
             /* //Skifter farve på :before & :after i search
              $('.search').slideUp(10, function() {
