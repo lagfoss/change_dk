@@ -77,7 +77,7 @@
 
 	<!-- CASE SLIDER -->
 	<div class="wrapper_cases">
-		  <div class="col-11 owl-carousel forside_carousel_wrapper owl-theme">
+		  <div class="col-12 owl-carousel forside_carousel_wrapper owl-theme">
 	    <?php
 	    $params = array(
 					 'post_type' => 'cases',

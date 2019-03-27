@@ -47,7 +47,7 @@ body {
   max-width: 1140px;
   padding-right: 15px;
   padding-left: 16px;
-  padding-bottom: 6%;
+  margin-bottom: 120px;
 }
 
 .wrapper_content {
@@ -793,8 +793,9 @@ input {
 }
 
 .case_img {
-  width: 600px;
-  max-height: 460px;
+  max-height: 450px;
+  max-width: 600px;
+  margin: 0 auto;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -809,8 +810,9 @@ input {
 .forside_cases_wrapper {
   max-width: 500px;
   z-index: 1;
-  padding-top: 35px;
+  margin: 0 auto;
   padding-left: 35px;
+  padding-top: 35px;
 }
 
 .forside_cases_header {
@@ -870,7 +872,7 @@ input {
   z-index: 2;
   text-decoration: none;
   font-weight: 500;
-  padding: 15px 20px;
+  padding: 15px 30px;
   background-color: inherit;
   border-color: black;
   border-radius: 5px;
@@ -2315,9 +2317,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .contact_form input, .contact_form textarea, .your-name input, .your-email input {
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 20px 15px;
-  width: 100%;
+  max-width: 440px;
   border-width: 0;
 }
 
@@ -2535,8 +2537,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .wrapper_cases .row {
-    justify-content: center;
-    text-align: center;
+    justify-content: inherit;
+    text-align: inherit;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .forside_cases_header {
@@ -2570,7 +2574,7 @@ text-align: -webkit-center;
 
   .forside_cases_wrapper {
     min-height: 300px;
-    width: 100%;
+    padding-left: 0px;
     text-align: -webkit-center;
   }
 
@@ -2584,8 +2588,8 @@ text-align: -webkit-center;
   }
 
   .case_img {
-    margin-left: 5%;
     min-height: 400px;
+
   }
 
   .forside_case_button {
@@ -2681,7 +2685,6 @@ text-align: -webkit-center;
   .wrapper_cases .row {
     justify-content: center;
     text-align: center;
-    min-height: 800px;
   }
 
   .wrapper_contact {
@@ -2693,8 +2696,6 @@ text-align: -webkit-center;
   }
 
   .forside_cases_wrapper {
-    max-height: 0px;
-    width: 70%;
     text-align: -webkit-center;
   }
 
@@ -2705,10 +2706,6 @@ text-align: -webkit-center;
 
   .forside_cases_catergories {
     text-align: inherit;
-  }
-
-  .case_img {
-    margin-left: 7%;
   }
 
   .forside_case_button {
@@ -2962,16 +2959,6 @@ text-align: -webkit-center;
     padding-left: 18px
   }
 
-  .wrapper_cases .row {
-    min-height: 700px;
-  }
-
-  .case_img {
-    margin-left: 5%;
-    width: 450px;
-    min-height: 200px;
-  }
-
   .logo_slider {
     padding: 30px 0 30px 0;
     margin: 0px auto 120px auto;
@@ -3059,10 +3046,6 @@ text-align: -webkit-center;
 
   .contact_intro h1.big {
     font-size: 25vw;
-  }
-
-  .forside_cases_wrapper {
-    padding-left: 0px;
   }
 
   .forside_cases_text {
@@ -3183,10 +3166,6 @@ text-align: -webkit-center;
 
   .team_members_half {
     width: 90%;
-  }
-
-  .case_img {
-    max-height: 350px;
   }
 
   .services_main_content_overskrift {
