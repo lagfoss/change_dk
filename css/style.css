@@ -2589,6 +2589,15 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     padding-bottom: 0px;
   }
 
+  .pr_wrapper {
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  .orange_square_case {
+    display: none;
+  }
+
   .case_img {
     min-height: 400px;
 
@@ -2653,6 +2662,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .contact_gallery img {
     width: 90%;
   }
+
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -3114,6 +3124,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .contact_form textarea {
     max-width: 300px;
   }
+
+  .pr_wrapper {
+    margin: 0 auto;
+    width: 69%;
+  }
 }
 
 /*========= Small devices () =========*/
@@ -3250,6 +3265,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .rekru_text {
     width: 300px;
+  }
+
+  .pr_wrapper {
+    margin: 0;
+    width: 100%;
   }
 }
 
