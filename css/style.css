@@ -1383,8 +1383,6 @@ input {
 }
 
 .omchange_card_tags {
-  font-family: Montserrat;
-  font-size: 14px;
   font-weight: 600;
   line-height: 1.14;
   text-align: left;
@@ -1395,7 +1393,7 @@ input {
   overflow: hidden;
   width: 90%;
   margin-left: 5%;
-  height: 260px;
+  min-height: 260px;
   display: flex;
   background-size: cover !important;
   background-repeat: no-repeat;
@@ -1423,11 +1421,11 @@ input {
   box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.12);
   text-decoration: none;
   color: white;
-  transform: scale(0.97);
+  transform: scale(0.99);
   text-decoration: none;
-  -webkit-transform: scale(0.98);
-  -moz-transform: scale(0.98);
-  -o-transform: scale(0.98);
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -o-transform: scale(0.99);
 }
 
 img.omchange_client_logo_neg {
@@ -1437,7 +1435,7 @@ img.omchange_client_logo_neg {
 
 .omchange_card_categories {
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /*========= OM CHANGE slut =========*/
@@ -3037,21 +3035,17 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     font-size: 40px;
   }
 
-  .omchange_card_content {
-    height: 200px;
-  }
-
   .omchange_card_h3 {
     margin-top: 70px;
     margin-left: 10%;
   }
 
   .omchange_card_tags {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .omchange_card_categories {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .contact_intro h1.big {
@@ -3210,7 +3204,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   }
 
   .omchange_card_content {
-    height: 150px;
     width: 95%;
     margin-left: 8px;
   }
@@ -3223,10 +3216,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   .omchange_card_h3 {
     font-size: 25px;
     margin-top: 55px;
-  }
-
-  .omchange_card_tags {
-    font-size: 10px;
   }
 
   .omchange_category_wrapper {
