@@ -2253,7 +2253,7 @@ img.thumbnail {
   margin: auto;
   max-height: 650px;
   border-radius: 10px;
-  box-shadow: 20px 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 15px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*========= CONTACT intro slut =========*/
