@@ -97,17 +97,13 @@ button.owl.active:active, button.owl.active:focus {
 }
 
 .process_carousel_wrapper .owl-stage {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .owl-carousel .process_carousel_wrapper .owl-stage {
   max-height: 300px;
   display: flex;
   align-items: center;
-}
-
-.process_carousel_wrapper .owl-stage-outer {
-  overflow: visible !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -163,16 +159,20 @@ button.owl.active:active, button.owl.active:focus {
   padding-left: 50px;
 }
 
+.logo_slider .owl-carousel .owl-item img {
+  padding: 0 45px;
+}
+
 .logo_slider .owl-prev {
   position: absolute;
   top: 30px;
-  left: 20px;
+  left: 15px;
 }
 
 .logo_slider .owl-next {
   position: absolute;
   top: 30px;
-  right: 20px;
+  right: 15px;
 }
 
 .slider-counter {
@@ -267,7 +267,7 @@ button.owl.active:active, button.owl.active:focus {
     margin-top: 10px;
     position: inherit;
     bottom: 0;
-    margin-left: 0;
+    padding-left: 0;
   }
 
   .contact_carousel .owl-nav {
