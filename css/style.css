@@ -2260,6 +2260,7 @@ img.thumbnail {
 /*========= CONTACT form start =========*/
 .contact_form {
   margin-top: -90px;
+  max-width: 440px;
 }
 
 .contact_form input, .contact_form textarea {
@@ -2272,7 +2273,6 @@ img.thumbnail {
 
 .contact_form textarea {
   height: 150px;
-  width: 411px;
 }
 
 input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
