@@ -2669,10 +2669,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-top: 100px;
   }
 
-  .contact_gallery img {
-    width: 90%;
-  }
-
 }
 
 /*========= Medium devices (tablets, 768px and down) =========*/
@@ -2923,9 +2919,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .contact_gallery img {
     width: 100%;
     max-width: inherit;
-    max-height: inherit;
     border-radius: 0;
     box-shadow: none;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 
   .contact_gallery {
