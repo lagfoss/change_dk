@@ -53,11 +53,17 @@
 
         <div id="steps" class="om_steps_content">
   				<div class="half steps_img">
+            <div class="row stroke_position_om mobile">
+              <div class="stroke_om"></div>
+              <p class="steps_number">
+                <?php the_sub_field('steps_number'); ?>
+              </p>
+            </div>
             <img alt="steps images" src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
       		<div class="half steps_text">
-            <div class="row stroke_position_om">
+            <div class="row stroke_position_om desktop">
               <div class="stroke_om"></div>
               <p class="steps_number">
                 <?php the_sub_field('steps_number'); ?>
@@ -179,7 +185,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="stroke_position_om">
+      <div class="stroke_position_om_case">
         <div class="stroke"></div>
       </div>
     </div>
