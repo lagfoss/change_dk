@@ -106,6 +106,7 @@ h1 {
 
 h2 {
   font-family: 'bebas-neue', sans-serif;
+  margin-bottom: 20px;
   font-size: 50px;
   line-height: 0.88;
   letter-spacing: 0px;
@@ -114,6 +115,7 @@ h2 {
 h3 {
   font-family: 'bebas-neue', sans-serif;
   font-size: 28px;
+  margin-bottom: 10px;
   text-align: center;
   line-height: 0.88;
   letter-spacing: 0;
@@ -805,7 +807,7 @@ input {
 }
 
 .forside_cases_wrapper {
-  width: 450px;
+  max-width: 500px;
   z-index: 1;
   padding-top: 35px;
   padding-left: 35px;
@@ -825,8 +827,8 @@ input {
 }
 
 .forside_cases_text {
-  width: 100%;
-  padding-right: 50px;
+  max-width: 500px;
+  margin-bottom: 30px;
 }
 
 .forside_cases_catergories {
@@ -949,7 +951,7 @@ input {
 .wcwd_intro {
   max-width: 650px;
   text-align: center;
-  margin: auto auto 70px auto;
+  margin: auto auto 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1052,6 +1054,7 @@ input {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
+  padding-right: 30px;
   padding-bottom: 60px;
 }
 
@@ -2425,6 +2428,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   border-radius: 5px;
   border-style: solid;
   box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.15);
+  transition: all .3s ease-in-out 0s !important;
+  transition: all .3s ease-in-out 0s !important;
+  transition: all .3s ease-in-out 0s !important;
+
 }
 
 .footer_button:hover {
@@ -2556,9 +2563,14 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
     height: 150px;
   }
 
+  .wrapper_cases {
+    justify-content: center;
+text-align: -webkit-center;
+  }
+
   .forside_cases_wrapper {
     min-height: 300px;
-    width: 70%;
+    width: 100%;
     text-align: -webkit-center;
   }
 
@@ -2568,6 +2580,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
   .forside_cases_catergories {
     text-align: inherit;
+    padding-bottom: 0px;
   }
 
   .case_img {
