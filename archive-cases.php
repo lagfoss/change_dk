@@ -106,6 +106,7 @@ $(".header").addClass("out_white");
 
 ScrollReveal().reveal('.black', { distance: '350px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.stroke', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.flex_wrapper', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.case_card_content', { distance: '650px', easing: 'ease-in-out', duration: 700 });
 ScrollReveal().reveal('.pagination', { distance: '450px', easing: 'ease-in-out', duration: 700 });
 

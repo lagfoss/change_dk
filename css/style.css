@@ -80,7 +80,7 @@ body {
 }
 
 .cases_wrap {
-  padding: 220px 0px 50px 0px;
+  padding: 180px 0px 30px 0px;
   text-align: center;
 }
 
@@ -1031,7 +1031,7 @@ input {
 .know_us_dots {
   position: absolute;
   width: 45%;
-  height: 95%;
+  height: 94%;
   background-repeat: repeat;
   right: 0;
   top: -1%;
@@ -1328,7 +1328,7 @@ input {
   width: 60px;
   background-color: #e54c00;
   border-radius: 4px;
-  margin: 30px auto 70px auto;
+  margin: 30px auto 20px auto;
 }
 
 .om_slider_title {
