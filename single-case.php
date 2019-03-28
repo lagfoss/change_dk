@@ -337,7 +337,7 @@ echo $iframe;
                   $fontexamples = get_sub_field('font_examples'); ?>
 
                   <div class="container-fluid">
-                    <div class="row wrapper font_design">
+                    <div class="wrapper font_design">
                       <div class="row stroke_position_case">
                         <div class="stroke_case"></div>
                         <p class="pre_client"><?php echo $fonttext; ?></p>
