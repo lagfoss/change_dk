@@ -129,15 +129,15 @@ $(".header").addClass("out_white");
     }
 });
 
-ScrollReveal().reveal('.stroke_position_services', { distance: '350px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.hero_services h1', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.download_wrapper h2', { distance: '650px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.stroke_position', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.download_wrapper p', { distance: '650px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.contact_form', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.content_calendar_computer', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.preview_wrapper h2', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.content_calendar_text', { distance: '450px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.logo_slider', { distance: '450px', easing: 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.stroke_position_services', { distance: '350px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.hero_services h1', { distance: '450px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.download_wrapper h2', { distance: '650px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.stroke_position', { distance: '450px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.download_wrapper p', { distance: '650px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.contact_form', { distance: '450px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.content_calendar_computer', { distance: '450px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.preview_wrapper h2', { distance: '450px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.content_calendar_text', { distance: '450px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.logo_slider', { distance: '450px', easing: 'ease-in-out', duration: 900 });
 
 </script>
