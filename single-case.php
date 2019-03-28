@@ -314,6 +314,24 @@ echo $iframe;
               </div>
             </div>
 
+    <?php elseif( get_row_layout() == 'logo_design' ):
+            $logotext = get_sub_field('logo_stroke_text'); ?>
+
+            <div class="container-fluid">
+              <div class="row wrapper logo_design">
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $logotext; ?></p>
+                </div>
+                <div class="logo_ex">
+                  <img alt="Logo" src="<?php the_sub_field('logo_img'); ?>" />
+                </div>
+                <div class="logo_opbyg">
+                  <img alt="Logo opbygning" src="<?php the_sub_field('logo_opbygning'); ?>" />
+                </div>
+              </div>
+            </div>
+
     <?php elseif( get_row_layout() == 'case_results' ):
 
             $resultitle = get_sub_field('case_results_title');
