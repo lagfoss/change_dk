@@ -366,6 +366,20 @@ echo $iframe;
                         <p class="pre_client"><?php echo $colortext; ?></p>
                       </div>
                       <div class="">
+                        <?php // check if the nested repeater field has rows of data
+                            	if( have_rows('color_examples') ):
+                    			 	       // loop through the rows of data
+                    			         while ( have_rows('color_examples') ) : the_row();
+                                      $colorname = get_sub_field('color_name');
+                                      $colorhex = get_sub_field('color_hex'); ?>
+                                    <div class="color_examples">
+                                      <div class="color_color" style="background-color:<?php the_sub_field('color_picker'); ?>"></div>
+                                      <p class="color_name"><?php echo $colorname; ?></p>
+                                      <p class="color_hex"><?php echo $colorhex; ?></p>
+                                    </div>
+                                <?php	       endwhile; ?>
+
+                                  <?php	  endif; ?>
 
                       </div>
                     </div>
