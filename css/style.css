@@ -2186,7 +2186,40 @@ img.thumbnail {
   box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px #e3e3e3;
   margin: 50px auto 90px auto;
+}
 
+.color_wrapper {
+  display: flex;
+  margin: 50px auto 100px auto;
+}
+
+.color_examples {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  box-shadow: 12px 24px 48px -10px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+}
+
+.color_color {
+  height: 120px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.color_name {
+  font-size: 23px;
+  font-family: 'bebas-neue', sans-serif;
+  padding: 15px 20px 0 20px;
+  margin: 0;
+}
+
+.color_hex {
+  font-size: 14px;
+  padding: 0 20px 20px 20px;
+  margin: 0;
 }
 
 /*========= CASES design slut =========*/
