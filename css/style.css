@@ -2187,9 +2187,16 @@ img.thumbnail {
   margin: 50px auto 90px auto;
 }
 
+.color_wrapper {
+  display: flex;
+  margin: 50px auto 100px auto;
+}
+
 .color_examples {
   width: 200px;
   height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 20px;
   box-shadow: 12px 24px 48px -10px rgba(0, 0, 0, 0.15);
   background-color: #f8f8f8;

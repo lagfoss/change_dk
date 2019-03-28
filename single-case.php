@@ -365,7 +365,7 @@ echo $iframe;
                         <div class="stroke_case"></div>
                         <p class="pre_client"><?php echo $colortext; ?></p>
                       </div>
-                      <div class="">
+                      <div class="color_wrapper">
                         <?php // check if the nested repeater field has rows of data
                             	if( have_rows('color_examples') ):
                     			 	       // loop through the rows of data
