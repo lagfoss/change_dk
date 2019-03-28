@@ -2168,6 +2168,10 @@ img.thumbnail {
   box-shadow: 6px 12px 23px -5px rgba(0, 0, 0, 0.2);
 }
 
+.font_examples {
+  display: flex; 
+}
+
 /*========= CASES design slut =========*/
 /*========= CASES results start =========*/
 /*========= CASES results slut =========*/

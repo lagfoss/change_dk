@@ -333,7 +333,8 @@ echo $iframe;
             </div>
 
           <?php elseif( get_row_layout() == 'font' ):
-                  $fonttext = get_sub_field('font_stroke_text'); ?>
+                  $fonttext = get_sub_field('font_stroke_text');
+                  $fontexamples = get_sub_field('font_examples'); ?>
 
                   <div class="container-fluid">
                     <div class="row wrapper font_design">
@@ -341,8 +342,16 @@ echo $iframe;
                         <div class="stroke_case"></div>
                         <p class="pre_client"><?php echo $fonttext; ?></p>
                       </div>
-                      <div class="">
+                      <div class="font_examples col-md-12">
+                        <?php
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        if( $fontexamples ): ?>
+                        <?php foreach( $fontexamples as $image ): ?>
+                            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
 
+                        <?php endforeach; ?>
+
+                <?php endif; ?>
                       </div>
                     </div>
                   </div>
