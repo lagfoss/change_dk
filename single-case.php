@@ -371,6 +371,21 @@ echo $iframe;
                     </div>
                   </div>
 
+    <?php elseif( get_row_layout() == 'design_examples' ):
+            $designtext = get_sub_field('design_stroke_text'); ?>
+
+            <div class="container-fluid">
+              <div class="row wrapper design_ex">
+                <div class="row stroke_position_case">
+                  <div class="stroke_case"></div>
+                  <p class="pre_client"><?php echo $designtext; ?></p>
+                </div>
+                <div class="design_img">
+                  <img alt="Design examples" src="<?php the_sub_field('design_img'); ?>" />
+                </div>
+              </div>
+            </div>
+
     <?php elseif( get_row_layout() == 'case_results' ):
 
             $resultitle = get_sub_field('case_results_title');
