@@ -324,20 +324,20 @@ $(".menubtn").addClass("menu_black");
     }
 });
 
-ScrollReveal().reveal('.hero_title', { distance: '250px', easing: 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.hero_text', { distance: '300px',easing   : 'ease-in-out', duration: 700  });
-ScrollReveal().reveal('.hero_button', { distance: '350px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.playcircle', { distance: '300px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.watch', { distance: '350px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.showreel', { distance: '350px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.wrapper_cases', { distance: '400px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.process_intro', { distance: '300px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.flex_display', { distance: '350px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.wcwd_intro', { distance: '250px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.wcwd_content', { distance: '350px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.wcwd_button', { distance: '300px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.logo_slider', { distance: '400px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.know_us_dots', { distance: '250px',easing   : 'ease-in-out', duration: 700 });
-ScrollReveal().reveal('.know_us', { distance: '350px',easing   : 'ease-in-out', duration: 700 });
+ScrollReveal().reveal('.hero_title', { distance: '250px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.hero_text', { distance: '300px',easing   : 'ease-in-out', duration: 900  });
+ScrollReveal().reveal('.hero_button', { distance: '350px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.playcircle', { distance: '300px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.watch', { distance: '350px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.showreel', { distance: '350px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.wrapper_cases', { distance: '400px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.process_intro', { distance: '300px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.flex_display', { distance: '350px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.wcwd_intro', { distance: '250px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.wcwd_content', { distance: '350px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.wcwd_button', { distance: '300px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.logo_slider', { distance: '400px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.know_us_dots', { distance: '250px',easing   : 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.know_us', { distance: '350px',easing   : 'ease-in-out', duration: 900 });
 
 </script>
