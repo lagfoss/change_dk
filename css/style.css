@@ -2163,7 +2163,7 @@ img.thumbnail {
 .logo_opbyg img {
   display: block;
   max-height: 100px;
-  margin: 50px auto 40px auto;
+  margin: 50px auto 100px auto;
   border-radius: 20px;
   box-shadow: 6px 12px 23px -5px rgba(0, 0, 0, 0.2);
 }
@@ -2171,6 +2171,7 @@ img.thumbnail {
 .font_examples {
   margin: auto;
   text-align: center;
+  margin: 0 0 100px 0;
  }
 
  .font_examples img {
