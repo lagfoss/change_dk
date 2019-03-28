@@ -2172,6 +2172,14 @@ img.thumbnail {
   display: flex;
  }
 
+ .font_examples img {
+   width: 100%;
+    height: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 10px;
+ }
+
 .design_img img {
   width: 100%;
   box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.2);

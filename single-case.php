@@ -342,7 +342,7 @@ echo $iframe;
                         <div class="stroke_case"></div>
                         <p class="pre_client"><?php echo $fonttext; ?></p>
                       </div>
-                      <div class="font_examples col-md-12">
+                      <div class="font_examples">
                         <?php
                         $size = 'full'; // (thumbnail, medium, large, full or custom size)
                         if( $fontexamples ): ?>
