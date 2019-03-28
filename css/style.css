@@ -2169,7 +2169,15 @@ img.thumbnail {
 }
 
 .font_examples {
-  display: flex;
+  margin: auto;
+  text-align: center;
+ }
+
+ .font_examples img {
+   display: inline-flex;
+   max-width: 360px;
+   padding: 30px;
+   margin: 0 auto;
  }
 
 .design_img img {
@@ -3192,6 +3200,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .pr_wrapper {
     margin: 0 auto;
     width: 69%;
+  }
+
+  .font_examples img {
+    max-width: 200px;
   }
 }
 
