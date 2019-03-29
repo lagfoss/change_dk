@@ -2338,17 +2338,18 @@ img.thumbnail {
 /*========= CONTACT form start =========*/
 .contact_form {
   margin-top: -90px;
+  max-width: 440px;
 }
 
 .wpcf7-form-control-wrap your-subject {
-  max-width: 440px;
+  width: 100%;
 }
 
 .contact_form input, .contact_form textarea {
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 20px 15px;
-  max-width: 440px;
+  width: 100%;
   border-width: 0;
 }
 
@@ -2363,7 +2364,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 .wpcf7-submit {
   float: right;
-  width: 150px;
+  max-width: 150px;
   background-color: #e54c00;
   color: #f2f2f2;
   font-weight: 500;
@@ -3025,7 +3026,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .contact_form {
-    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3226,14 +3226,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .stroke_contact_map {
     bottom: -50px;
-  }
-
-  .contact_form input {
-    max-width: 300px;
-  }
-
-  .contact_form textarea {
-    max-width: 300px;
   }
 
   .pr_wrapper {
