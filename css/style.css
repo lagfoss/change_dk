@@ -2156,6 +2156,10 @@ img.thumbnail {
   display: block;
 }
 
+.logo_ex img {
+  width: 100%;
+}
+
 .logo_opbyg {
   width: 100%;
 }
