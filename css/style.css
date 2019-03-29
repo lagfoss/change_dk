@@ -2408,7 +2408,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 
 .stroke_position_contact_map {
   width: 30%;
-  margin-left: -30%;
+  left: -20%;
   position: relative;
 }
 
@@ -3021,8 +3021,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .contact_address {
-    margin-right: 20px;
-    margin-left: 0%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 440px;
   }
 
   .contact_form {
