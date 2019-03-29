@@ -48,7 +48,38 @@
        </div>
        </div>
    </a>
-   <?php } ?>
+   <?php }
+
+   else {  ?>
+     <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(650), 'full' );?>
+       <a id="card_content_case_footer" class="case_card_content" href="<?php echo get_permalink( 650 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+             <?php $image = get_field('client_logo_neg', 650); if( !empty($image) ): ?>
+               <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+             <?php endif; ?>
+
+        <h2 class="case_card_h2"><?php the_field('case_headline', 650);?></h2>
+        <div class="category_wrapper">
+        <div class="cases_tags">
+          <?php
+          $posttags = get_the_tags(650);
+          if ($posttags) {
+            foreach($posttags as $tag) {
+              echo $tag->name . ' ';
+            }
+          }
+          ?> </div>
+
+        <div>
+          <?php
+          foreach((get_the_category(650)) as $category){
+            echo $category->name.", ";
+          }
+          ?>
+        </div>
+        </div>
+    </a>   <?php  } ?>
+
+
 
   </div>
   </div>

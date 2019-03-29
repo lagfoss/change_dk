@@ -326,9 +326,6 @@ echo $iframe;
                 <div class="logo_ex">
                   <img alt="Logo" src="<?php the_sub_field('logo_img'); ?>" />
                 </div>
-                <div class="logo_opbyg">
-                  <img alt="Logo opbygning" src="<?php the_sub_field('logo_opbygning'); ?>" />
-                </div>
               </div>
             </div>
 
