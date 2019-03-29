@@ -343,15 +343,7 @@ echo $iframe;
                         <p class="pre_client"><?php echo $fonttext; ?></p>
                       </div>
                       <div class="font_examples">
-                        <?php
-                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                        if( $fontexamples ): ?>
-                        <?php foreach( $fontexamples as $image ): ?>
-                            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-
-                        <?php endforeach; ?>
-
-                <?php endif; ?>
+                        <img src="<?php echo $fontexamples ?>" alt="">
                       </div>
                     </div>
                   </div>

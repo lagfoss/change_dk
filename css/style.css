@@ -2156,6 +2156,10 @@ img.thumbnail {
   display: block;
 }
 
+.logo_ex img {
+  width: 100%;
+}
+
 .logo_opbyg {
   width: 100%;
 }
@@ -2176,7 +2180,7 @@ img.thumbnail {
 
  .font_examples img {
    display: inline-flex;
-   max-width: 360px;
+   width: 100%;
    padding: 30px;
    margin: 0 auto;
  }
