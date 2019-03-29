@@ -3239,7 +3239,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .font_examples img {
-    max-width: 200px;
+    padding: 0;
   }
 }
 
