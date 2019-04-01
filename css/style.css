@@ -1959,7 +1959,7 @@ img.omchange_client_logo_neg {
 
 /*========= CASES image slut =========*/
 /*========= CASES goal start =========*/
-.goal_line {
+.separation_line {
   border-bottom: solid 2px #e3e3e3;
 }
 
@@ -1974,9 +1974,8 @@ img.omchange_client_logo_neg {
 
 /*========= CASES goal slut =========*/
 /*========= CASES strategi start =========*/
-.strategi_line {
+.strategi {
   position: relative;
-  border-bottom: solid 2px #e3e3e3;
   padding-bottom: 145px;
 }
 
@@ -2918,7 +2917,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-bottom: 100px;
   }
 
-  .strategi_line {
+  .strategi {
     padding-bottom: 70px;
   }
 

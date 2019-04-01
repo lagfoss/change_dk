@@ -115,7 +115,7 @@ Template Post Type: cases
           $texttitle = get_sub_field('case_text_title');
           $texttext = get_sub_field('case_text_text'); ?>
 
-          <div class="container-fluid goal_line">
+          <div class="container-fluid">
             <div class="row wrapper">
               <div class="case_text">
                 <div class="row stroke_position_case">
@@ -135,7 +135,7 @@ Template Post Type: cases
         	$strategititle = get_sub_field('case_strategi_title');
           $strategitext = get_sub_field('case_strategi_text'); ?>
 
-          <div class="container-fluid strategi_line">
+          <div class="container-fluid strategi">
             <div class="strategi_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot.png');">
             </div>
             <div class="wrapper">
@@ -389,6 +389,12 @@ echo $iframe;
               </div>
             </div>
 
+    <?php elseif( get_row_layout() == 'separation_line' ): ?>
+
+            <div class="container-fluid">
+              <div class="row separation_line"></div>
+            </div>
+
     <?php elseif( get_row_layout() == 'case_results' ):
 
             $resultitle = get_sub_field('case_results_title');
@@ -483,7 +489,7 @@ ScrollReveal().reveal('.stroke_position_case', { distance: '250px', easing: 'eas
 ScrollReveal().reveal('.case_hero h1', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_client', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.client_image', { distance: '250px', easing: 'ease-in-out', duration: 900});
-ScrollReveal().reveal('.goal_line', { distance: '250px', easing: 'ease-in-out', duration: 900});
+ScrollReveal().reveal('.separation_line', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_strategi', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.strategi_dots', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_strategi_img', { distance: '250px', easing: 'ease-in-out', duration: 900});
