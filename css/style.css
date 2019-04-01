@@ -30,7 +30,7 @@ body {
   line-height: 26px;
   letter-spacing: 0px;
   color: #111517;
-  text-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
 }
 
 .wrapper, .om_menu_wrapper, .contact_address_wrapper {
