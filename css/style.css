@@ -2120,6 +2120,7 @@ img.thumbnail {
 /*========= CASES branding start =========*/
 .brand_content {
   max-width: 430px;
+  margin-right: 165px
 }
 
 .brand_img {
@@ -2609,6 +2610,12 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .rekru_content {
     padding-left: 15px;
   }
+
+  .brand_content {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 15px;
+  }
 }
 
 /*========= Large devices (desktops/tablets, 1100px and down) =========*/
@@ -2697,18 +2704,22 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .rekru_content {
+    max-width: 60%;
     margin: auto;
     padding-right: 15px;
     margin-bottom: 35px;
   }
 
   .rekru_text {
+    width: 100%;
     margin-right: 0px;
     margin-bottom: 35px;
   }
 
   .brand_content {
-    margin-right: 20%;
+    max-width: 60%;
+    margin: auto;
+    padding-right: 15px;
   }
 
   .omchange_card_content {
