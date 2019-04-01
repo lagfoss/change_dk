@@ -1,11 +1,19 @@
-<?php /*Template Name: Single*/?>
-
-<?php get_header(); ?>
-<h1>HVIS DU KAN SE DET HER VIRKER SKIDTET!!!!!!!!!!</h1>
-
 <?php get_header();?>
+<body <?php body_class(whitebg); ?>>
 
-    <h1>HVIS DU KAN SE DET HER VIRKER SKIDTET!!!!!!!!!!</h1>
+<div class="row">
+  <div class="wrapper cases_wrap">
+    <div class="col">
+      <h1 class="black"><?php the_field('cases_hero_h1', 'option');?></h1>
+      <div class="stroke"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row flex">
+  <div class="flex_wrapper">
+
+    <h1>Mojn då</h1>
 
 
     <?php
@@ -20,10 +28,6 @@
 
       $wp_query = new WP_Query($args);
       while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
-
-      <h1>HVIS DU KAN SE DET HER VIRKER SKIDTET!!!!!!!!!!</h1>
-
-
 
         <div class="wrapper">
           <div class="col-md-5">
@@ -40,7 +44,5 @@
           </div>
         </div>
 
-      <?php endwhile; ?>
-      <?php wp_reset_postdata(); ?>
 
-<?php get_footer(); ?>
+      <?php wp_reset_postdata(); ?>

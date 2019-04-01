@@ -29,7 +29,7 @@
       );
 
       $wp_query = new WP_Query($args);
-      while ( $loop->have_posts() ) : $loop->the_post();  ?>
+      while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
 
       <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
         <a class="case_card_content" href="<?php the_permalink(); ?>" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo $backgroundImg[0]; ?>') no-repeat">
