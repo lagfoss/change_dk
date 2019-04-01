@@ -1969,7 +1969,7 @@ img.omchange_client_logo_neg {
 }
 
 .brand, .rekru_wrapper {
-  margin: 120px auto 120px auto;
+  margin: 120px auto 180px auto;
 }
 
 /*========= CASES goal slut =========*/
@@ -2055,7 +2055,7 @@ img.omchange_client_logo_neg {
 /*========= CASES rekrutering start =========*/
 .rekru {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 160px;
 }
 
 .rekru_content {
@@ -2109,11 +2109,12 @@ div.thumbnail_container {
   overflow: hidden;
   border-radius: 10px;
   background-color: #000;
+  text-align: center;
 }
 
 img.thumbnail {
   opacity: 0.5;
-  width: 100%;
+  max-width: 700px;
   height: 100%;
 }
 

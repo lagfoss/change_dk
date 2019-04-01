@@ -284,7 +284,7 @@ echo $iframe;
 
             <div class="container-fluid">
               <div class="row brand">
-                <div class="col-lg-5 d-flex justify-content-end align-items-center">
+                <div class="col-lg-6 d-flex justify-content-end align-items-center">
                   <div class="brand_content">
                     <div class="row stroke_position_case">
                       <div class="stroke_case"></div>
@@ -300,7 +300,7 @@ echo $iframe;
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-7 pr_wrapper align-items-center">
+                <div class="col-lg-6 pr_wrapper align-items-center">
                   <div class="orange_square_case"></div>
                   <div> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone_new.svg" alt="iphone"> </div>
                    <div id="info" class="owl-carousel slider owl-theme carousel_2 ">
