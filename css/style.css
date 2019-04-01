@@ -1833,13 +1833,13 @@ img.omchange_client_logo_neg {
   padding-top: 20px;
 }
 
-.client_about p, .case_text_area p, .case_strategi p, .case_some_text p,
-.rekru_text p, .results_text p {
+.client_about p, .case_text_area p, .case_strategi p, .rekru_text p,
+.results_text p {
   color: #999999;
 }
 
-.client_about h2, .case_text_area h2, .case_strategi h2, .case_some_text h2,
-.rekru_text h2, .results_text h2 {
+.client_about h2, .case_text_area h2, .case_strategi h2, .rekru_text h2,
+.results_text h2 {
   font-size: 41px;
 }
 
@@ -1963,7 +1963,7 @@ img.omchange_client_logo_neg {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.case_text, .case_strategi, .case_some_content, .case_results {
+.case_text, .case_strategi, .case_results {
   width: 60%;
   margin: 50px auto 50px auto;
 }
@@ -2004,7 +2004,7 @@ img.omchange_client_logo_neg {
   margin-bottom: 200px;
 }
 
-.case_some_text img {
+.case_text_area img {
   height: auto;
   margin-top: 20px;
 }
@@ -2909,7 +2909,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     padding: 0 0 35px 0;
   }
 
-  .case_text, .case_strategi, .case_some_content, .case_results {
+  .case_text, .case_strategi, .case_results {
     margin: 35px auto 35px auto;
   }
 
@@ -2934,7 +2934,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-left: auto;
   }
 
-  .case_text, .case_strategi, .case_some_content, .case_results {
+  .case_text, .case_strategi, .case_results {
     width: 100%;
   }
 

@@ -160,24 +160,10 @@ Template Post Type: cases
             </div>
           </div>
 
-  <?php elseif( get_row_layout() == 'case_social_media' ):
-
-          $presome = get_sub_field('case_pre_some');
-          $sometitle = get_sub_field('case_some_title');
-          $sometext = get_sub_field('case_some_text'); ?>
+  <?php elseif( get_row_layout() == 'case_social_media' ): ?>
 
           <div class="container-fluid">
             <div class="case_some">
-              <div class="row wrapper case_some_content">
-                <div class="row stroke_position_case">
-                  <div class="stroke_case"></div>
-                  <p class="pre_client"><?php echo $presome; ?></p>
-                </div>
-                <div class="case_some_text">
-                  <h2 class="h2_case"><?php echo $sometitle; ?></h2>
-                  <p><?php echo $sometext; ?></p>
-                </div>
-              </div>
 
               <div class="row case_some_wrapper">
     <?php // check if the nested repeater field has rows of data
@@ -493,7 +479,7 @@ ScrollReveal().reveal('.separation_line', { distance: '250px', easing: 'ease-in-
 ScrollReveal().reveal('.case_strategi', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.strategi_dots', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_strategi_img', { distance: '250px', easing: 'ease-in-out', duration: 900});
-ScrollReveal().reveal('.case_some_content', { distance: '250px', easing: 'ease-in-out', duration: 900});
+ScrollReveal().reveal('.case_text_area', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_some_half', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.rekru_wrapper', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.brand', { distance: '250px', easing: 'ease-in-out', duration: 900});
