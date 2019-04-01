@@ -28,7 +28,7 @@
         </div>
         <p class="gray content_calendar_text"><?php the_field('content_calendar_content'); ?></p>
       </div>
-      <div class="contact_form col-md-6 ">
+      <div class="contact_form col-md-6 download">
         <?php echo do_shortcode("[contact-form-7 id=1552]") ; ?>
   	  </div>
     </div>

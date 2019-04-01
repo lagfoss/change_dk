@@ -2462,6 +2462,10 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
   margin-top: 5px;
 }
 
+.download {
+  margin-top: 0;
+}
+
 .preview_wrapper {
   margin-top: 40px;
 }
