@@ -109,22 +109,22 @@ Template Post Type: cases
 
           <div class="container-fluid client_image" <?php echo $clienti_bg; ?>></div>
 
-  <?php elseif( get_row_layout() == 'case_goal' ):
+  <?php elseif( get_row_layout() == 'case_text' ):
 
-        	$pregoal = get_sub_field('case_pre_goal');
-          $goaltitle = get_sub_field('case_goal_title');
-          $goaltext = get_sub_field('case_goal_text'); ?>
+        	$stroketext = get_sub_field('case_stroke_text');
+          $texttitle = get_sub_field('case_text_title');
+          $texttext = get_sub_field('case_text_text'); ?>
 
           <div class="container-fluid goal_line">
             <div class="row wrapper">
-              <div class="case_goal">
+              <div class="case_text">
                 <div class="row stroke_position_case">
                   <div class="stroke_case"></div>
-                  <p class="pre_client"><?php echo $pregoal; ?></p>
+                  <p class="pre_client"><?php echo $stroketext; ?></p>
                 </div>
-                <div class="goal_text">
-                  <h2><?php echo $goaltitle; ?></h2>
-                  <p><?php echo $goaltext; ?></p>
+                <div class="case_text_area">
+                  <h2><?php echo $texttitle; ?></h2>
+                  <p><?php echo $texttext; ?></p>
                 </div>
               </div>
             </div>
