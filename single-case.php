@@ -115,7 +115,7 @@ Template Post Type: cases
           $texttitle = get_sub_field('case_text_title');
           $texttext = get_sub_field('case_text_text'); ?>
 
-          <div class="container-fluid goal_line">
+          <div class="container-fluid">
             <div class="row wrapper">
               <div class="case_text">
                 <div class="row stroke_position_case">
@@ -135,7 +135,7 @@ Template Post Type: cases
         	$strategititle = get_sub_field('case_strategi_title');
           $strategitext = get_sub_field('case_strategi_text'); ?>
 
-          <div class="container-fluid strategi_line">
+          <div class="container-fluid strategi">
             <div class="strategi_dots" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/dot.png');">
             </div>
             <div class="wrapper">
@@ -160,24 +160,10 @@ Template Post Type: cases
             </div>
           </div>
 
-  <?php elseif( get_row_layout() == 'case_social_media' ):
-
-          $presome = get_sub_field('case_pre_some');
-          $sometitle = get_sub_field('case_some_title');
-          $sometext = get_sub_field('case_some_text'); ?>
+  <?php elseif( get_row_layout() == 'case_social_media' ): ?>
 
           <div class="container-fluid">
             <div class="case_some">
-              <div class="row wrapper case_some_content">
-                <div class="row stroke_position_case">
-                  <div class="stroke_case"></div>
-                  <p class="pre_client"><?php echo $presome; ?></p>
-                </div>
-                <div class="case_some_text">
-                  <h2 class="h2_case"><?php echo $sometitle; ?></h2>
-                  <p><?php echo $sometext; ?></p>
-                </div>
-              </div>
 
               <div class="row case_some_wrapper">
     <?php // check if the nested repeater field has rows of data
@@ -389,6 +375,12 @@ echo $iframe;
               </div>
             </div>
 
+    <?php elseif( get_row_layout() == 'separation_line' ): ?>
+
+            <div class="container-fluid">
+              <div class="row separation_line"></div>
+            </div>
+
     <?php elseif( get_row_layout() == 'case_results' ):
 
             $resultitle = get_sub_field('case_results_title');
@@ -483,11 +475,11 @@ ScrollReveal().reveal('.stroke_position_case', { distance: '250px', easing: 'eas
 ScrollReveal().reveal('.case_hero h1', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_client', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.client_image', { distance: '250px', easing: 'ease-in-out', duration: 900});
-ScrollReveal().reveal('.goal_line', { distance: '250px', easing: 'ease-in-out', duration: 900});
+ScrollReveal().reveal('.separation_line', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_strategi', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.strategi_dots', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_strategi_img', { distance: '250px', easing: 'ease-in-out', duration: 900});
-ScrollReveal().reveal('.case_some_content', { distance: '250px', easing: 'ease-in-out', duration: 900});
+ScrollReveal().reveal('.case_text_area', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_some_half', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.rekru_wrapper', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.brand', { distance: '250px', easing: 'ease-in-out', duration: 900});
