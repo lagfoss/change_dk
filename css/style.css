@@ -2706,6 +2706,17 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-bottom: 35px;
   }
 
+  .rekru_video {
+    width: 60%;
+    margin: auto;
+    padding: 0;
+  }
+
+  div.thumbnail_container {
+    width: 60%;
+    left: auto;
+  }
+
   .rekru_text {
     width: 100%;
     margin-right: 0px;
@@ -2930,6 +2941,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .brand, .rekru_wrapper {
     margin: 35px auto 35px auto;
+  }
+
+  .rekru_video, div.thumbnail_container {
+    width: 80%;
   }
 
   .team_members_half {
@@ -3236,6 +3251,17 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .pr_wrapper {
     margin: 0 auto;
     width: 69%;
+  }
+
+  .rekru_video {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  div.thumbnail_container {
+    width: 100%;
+    left: 0;
   }
 
   .font_examples img {
