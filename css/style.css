@@ -2058,7 +2058,7 @@ img.omchange_client_logo_neg {
 
 .rekru_content {
   max-width: 515px;
-  margin-right: 40px;
+  margin-right: 165px
 }
 
 .rekru_dots {
@@ -2607,11 +2607,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 /*========= Large devices (desktops/tablets, 1140px and down) =========*/
 @media screen and (max-width: 1140px) {
-  .rekru_content {
-    padding-left: 15px;
-  }
-
-  .brand_content {
+  .rekru_content, .brand_content {
     margin-left: 0;
     margin-right: auto;
     padding-left: 15px;
@@ -2956,12 +2952,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .rekru_content, .brand_content {
     max-width: 100%;
-  }
-
-  .brand_content {
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .omchange_card_content {
