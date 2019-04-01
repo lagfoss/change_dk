@@ -3455,35 +3455,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background-position: center !important;
 }
 
-.process_carousel_wrapper .owl-item .row.flex_display .slider_arrows::before {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: calc(50% - 40px);
-  z-index: 99;
-  left: -40px;
-  background-image: url(http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/arrow_process.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .row.flex_display {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.process_carousel_wrapper .owl-item:last-child .row.flex_display .slider_arrows::after {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: calc(50% - 40px);
-  z-index: 99;
-  right: -40px;
-  background-image: url(http://xn--kronbr-tua.dk/wp-content/uploads/2019/03/arrow_process.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
