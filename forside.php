@@ -271,10 +271,9 @@
 <script>
 
 /* Logo transition script */
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
 
 	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
 } else {
@@ -284,43 +283,30 @@ $(window).scroll(function() {
 
 });
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
 $(".input").addClass("out_black2");
     } else {
         $(".input").removeClass("out_black2");
     }
 });
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
-$(".header").addClass("out_white");
-    } else {
-        $(".header").removeClass("out_white");
-    }
-});
-
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
-$(".search").addClass("search_black");
-    } else {
-        $(".search").removeClass("search_black");
-    }
-});
-
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
 $(".menubtn").addClass("menu_black");
     } else {
         $(".menubtn").removeClass("menu_black");
+    }
+});
+
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
+$(".header").addClass("out_white");
+    } else {
+        $(".header").removeClass("out_white");
     }
 });
 
