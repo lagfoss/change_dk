@@ -2172,6 +2172,10 @@ img.thumbnail {
 /*========= CASES branding slut =========*/
 /*========= CASES design start =========*/
 
+.logo_design {
+  margin: 70px auto;
+}
+
 .logo_ex {
   max-width: 600px;
   width: 100%;
