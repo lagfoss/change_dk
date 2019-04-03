@@ -218,7 +218,7 @@ function d4p_32752_completly_disable_block_editor($use_block_editor) {
 
 function my_acf_init() {
 
-	acf_update_setting('google_api_key', 'AIzaSyD7fTv32UljF99OfR5Wl_DQVfluX-NZX2s');
+	acf_update_setting('google_api_key', 'AIzaSyALj8kKpc9WhnsSUFEkYvnz96sMKG5hvUw');
 }
 
 add_action('acf/init', 'my_acf_init');

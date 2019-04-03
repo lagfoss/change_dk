@@ -58,7 +58,7 @@
     </div>
 
     <div class="acf-map">
-	     <?php echo do_shortcode("[wpgmza id=1]") ; ?>
+	     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2265.2671592411302!2d10.38604231559358!3d55.4056910261771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d2001c05ee5b7%3A0x9b6cec66bcaafc61!2sChange+%7C+PR+%26+Kommunikation+%7C+Bureau+4.0!5e0!3m2!1sda!2sdk!4v1554291492329!5m2!1sda!2sdk" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
      </div>
 
 
