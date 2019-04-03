@@ -48,6 +48,7 @@ body {
   padding-right: 15px;
   padding-left: 16px;
   margin-bottom: 120px;
+  margin-top: 120px;
 }
 
 .wrapper_content {
@@ -950,12 +951,13 @@ input {
   margin-left: auto;
   max-width: 1140px;
   padding-bottom: 10%;
-  margin-top: 80px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 /*========= Hvad kan vi gøre for dig? Sektion =========*/
 .do_for_u {
-  margin: 10px auto 100px auto;
+  margin: 120px auto 120px auto;
 }
 
 .wcwd_intro {
@@ -996,7 +998,7 @@ input {
   text-decoration: none;
   font-weight: 500;
   padding: 15px 25px;
-  margin-top: 60px;
+  margin-top: 40px;
   background-color: inherit;
   border-color: black;
   height: 60px;
@@ -1022,7 +1024,7 @@ input {
   border-top: solid 2px #e3e3e3;
   border-bottom: solid 2px #e3e3e3;
   margin: 60px auto 120px auto;
-  padding: 80px 0 80px 0;
+  padding: 120px 0 120px 0;
 }
 
 .logo_slider img {
@@ -1035,7 +1037,7 @@ input {
 /*========= Logo slider slut =========*/
 /*========= Know us med gallery =========*/
 .know_us {
-  margin: 60px auto 100px auto;
+  margin: 120px auto 120px auto;
   position: relative;
 }
 
@@ -1463,7 +1465,7 @@ img.omchange_client_logo_neg {
 
 .team {
   margin-top: 200px;
-  margin-bottom: 320px
+  margin-bottom: 260px
 }
 
 .team h2 {
@@ -1634,7 +1636,7 @@ img.omchange_client_logo_neg {
 }
 
 .buttons_wrapper {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .buttons_wrapper h2 {
