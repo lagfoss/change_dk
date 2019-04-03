@@ -62,6 +62,18 @@ Template Post Type: team
              <?php }
 
              else {  ?>
+               <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
+
+
+
+                 <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
+                       <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
+                         <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                       <?php endif; ?>
+
+              </a>
+              <p class="team_next_employee_text">NÆSTE</p>
+
    <?php  } ?>
 
 
