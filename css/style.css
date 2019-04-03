@@ -2346,7 +2346,7 @@ img.thumbnail {
 
 .contact_carousel {
   margin-top: 60px;
-  right: 0;
+  right: -110px;
 }
 
 .contact_gallery {
@@ -2804,7 +2804,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .contact_carousel {
-    margin-top: 100px;
+    margin-top: 135px;
+    right: 0;
   }
 
 }
