@@ -1693,7 +1693,7 @@ img.omchange_client_logo_neg {
   .team_next_employee_content {
       position: absolute;
       overflow: hidden;
-      left: -30px;
+      left: 10px;
       bottom: 15px;
       z-index: 10;
       width: 160px;
@@ -1734,7 +1734,7 @@ img.omchange_client_logo_neg {
   font-family: 'bebas-neue', sans-serif;
   bottom: 45px;
   z-index: 11;
-  right: 85px;
+  right: 45px;
   max-width: 30px;
 }
 
