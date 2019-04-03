@@ -11,7 +11,7 @@ Template Post Type: team
         <div class="wrapper_single_team">
           <div class="row">
 
-          <div class="col-md-4 team_single_left">
+          <div class="col-md-3 team_single_left">
             <div class="single_team_info">
 
 
@@ -38,8 +38,10 @@ Template Post Type: team
           </div>
 </div>
 
-          <div class="col-md-8 team_single_right">
+          <div class="col-md-6 team_single_right">
             <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
+          </div>
+          <div class="col-md-3">
             <div class="flex_wrapper_team team_next_employee">
               <div class="test">
               <?php $next_post = get_adjacent_post(false, '', false); ?>
