@@ -56,7 +56,7 @@ Template Post Type: team
                       <?php endif; ?>
 
              </a>
-             <p class="team_next_employee_text">NÆSTE <br> Anders Jacobsen</p>
+             <p class="team_next_employee_text">NÆSTE</p>
              </div>
 
              <?php }
