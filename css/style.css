@@ -807,6 +807,8 @@ input {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  background-color: rgba(17, 21, 23, 0.6) !important;
+  background-blend-mode: darken;
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center !important;
@@ -1410,6 +1412,8 @@ input {
   margin-left: 5%;
   min-height: 260px;
   display: flex;
+  background-color: rgba(17, 21, 23, 0.6) !important;
+  background-blend-mode: darken;
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: center !important;
@@ -1699,6 +1703,8 @@ img.omchange_client_logo_neg {
   max-width: 900px;
   background-color: black;
   min-height: 400px;
+  background-color: rgba(17, 21, 23, 0.6) !important;
+  background-blend-mode: darken;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover !important;
   background-repeat: no-repeat;
