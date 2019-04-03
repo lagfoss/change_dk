@@ -93,6 +93,64 @@ function my_class_names( $classes ) {
     return $classes;
 }
 
+
+// Register a custom post type called "Team".
+// @see get_post_type_labels() for label keys.
+function my_team() {
+   $labels = array(
+       'name'                  => _x( 'Team', 'Post type general name', 'textdomain' ),
+       'singular_name'         => _x( 'Team', 'Post type singular name', 'textdomain' ),
+       'menu_name'             => _x( 'Team', 'Admin Menu text', 'textdomain' ),
+       'name_admin_bar'        => _x( 'Team', 'Add New on Toolbar', 'textdomain' ),
+       'add_new'               => __( 'Add New', 'textdomain' ),
+       'add_new_item'          => __( 'Add New Team Member', 'textdomain' ),
+       'new_item'              => __( 'New Team Member', 'textdomain' ),
+       'edit_item'             => __( 'Edit Team Member', 'textdomain' ),
+       'view_item'             => __( 'View Team Member', 'textdomain' ),
+       'all_items'             => __( 'All Team Members', 'textdomain' ),
+       'search_items'          => __( 'Search Team Members', 'textdomain' ),
+       'parent_item_colon'     => __( 'Parent Team Members:', 'textdomain' ),
+       'not_found'             => __( 'No Team Member found.', 'textdomain' ),
+       'not_found_in_trash'    => __( 'No Team Member found in Trash.', 'textdomain' ),
+       'featured_image'        => _x( 'Team Members Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
+       'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+       'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+       'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
+       'archives'              => _x( 'Team Members archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
+       'insert_into_item'      => _x( 'Insert into Team Members', 'Overrides the “Insert into post”/“Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
+       'uploaded_to_this_item' => _x( 'Uploaded to this Team Members', 'Overrides the “Uploaded to this post”/“Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
+       'filter_items_list'     => _x( 'Filter Team Members list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/“Filter pages list”. Added in 4.4', 'textdomain' ),
+       'items_list_navigation' => _x( 'Team Members list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/“Pages list navigation”. Added in 4.4', 'textdomain' ),
+       'items_list'            => _x( 'Team Members list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/“Pages list”. Added in 4.4', 'textdomain' ),
+   );
+
+   $args = array(
+      'labels'             => $labels,
+      'public'             => true,
+      'publicly_queryable' => true,
+      'show_ui'            => true,
+      'show_in_menu'       => true,
+      'query_var'          => true,
+      'rewrite'            => array( 'slug' => 'team' ),
+      'capability_type'    => 'page',
+      'has_archive'        => true,
+      'hierarchical'       => false,
+      'orderby'            => 'date',
+      'order'              => 'desc',
+      'menu_position'      => null,
+      'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+                'taxonomies' => array( 'post_tag', 'category' ),
+   );
+
+register_post_type( 'team', $args );
+
+}
+
+add_action( 'init', 'my_team' );
+
+
+
+
 // Register a custom post type called "case".
 // @see get_post_type_labels() for label keys.
 
@@ -150,61 +208,6 @@ add_action( 'init', 'my_cases' );
 
 
 
-// Register a custom post type called "Team".
-// @see get_post_type_labels() for label keys.
-function my_team_members() {
-   $labels = array(
-       'name'                  => _x( 'Team', 'Post type general name', 'textdomain' ),
-       'singular_name'         => _x( 'Team', 'Post type singular name', 'textdomain' ),
-       'menu_name'             => _x( 'Team', 'Admin Menu text', 'textdomain' ),
-       'name_admin_bar'        => _x( 'Team', 'Add New on Toolbar', 'textdomain' ),
-       'add_new'               => __( 'Add New', 'textdomain' ),
-       'add_new_item'          => __( 'Add New Team Member', 'textdomain' ),
-       'new_item'              => __( 'New Team Member', 'textdomain' ),
-       'edit_item'             => __( 'Edit Team Member', 'textdomain' ),
-       'view_item'             => __( 'View Team Member', 'textdomain' ),
-       'all_items'             => __( 'All Team Members', 'textdomain' ),
-       'search_items'          => __( 'Search Team Members', 'textdomain' ),
-       'parent_item_colon'     => __( 'Parent Team Members:', 'textdomain' ),
-       'not_found'             => __( 'No Team Member found.', 'textdomain' ),
-       'not_found_in_trash'    => __( 'No Team Member found in Trash.', 'textdomain' ),
-       'featured_image'        => _x( 'Team Members Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
-       'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-       'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-       'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'textdomain' ),
-       'archives'              => _x( 'Team Members archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
-       'insert_into_item'      => _x( 'Insert into Team Members', 'Overrides the “Insert into post”/“Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'textdomain' ),
-       'uploaded_to_this_item' => _x( 'Uploaded to this Team Members', 'Overrides the “Uploaded to this post”/“Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'textdomain' ),
-       'filter_items_list'     => _x( 'Filter Team Members list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/“Filter pages list”. Added in 4.4', 'textdomain' ),
-       'items_list_navigation' => _x( 'Team Members list navigation', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/“Pages list navigation”. Added in 4.4', 'textdomain' ),
-       'items_list'            => _x( 'Team Members list', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/“Pages list”. Added in 4.4', 'textdomain' ),
-   );
-
-   $args = array(
-      'labels'             => $labels,
-      'public'             => true,
-      'publicly_queryable' => true,
-      'show_ui'            => true,
-      'show_in_menu'       => true,
-      'query_var'          => true,
-      'rewrite'            => array( 'slug' => 'team' ),
-      'capability_type'    => 'page',
-      'has_archive'        => true,
-      'hierarchical'       => false,
-      'orderby'            => 'date',
-      'order'              => 'desc',
-      'menu_position'      => null,
-      'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
-                'taxonomies' => array( 'post_tag', 'category' ),
-   );
-
-register_post_type( 'team', $args );
-
-}
-
-add_action( 'init', 'my_team_members' );
-
-
 
 
 add_filter('use_block_editor_for_post_type', 'd4p_32752_completly_disable_block_editor');
@@ -215,7 +218,7 @@ function d4p_32752_completly_disable_block_editor($use_block_editor) {
 
 function my_acf_init() {
 
-	acf_update_setting('google_api_key', 'AIzaSyALj8kKpc9WhnsSUFEkYvnz96sMKG5hvUw');
+	acf_update_setting('google_api_key', 'AIzaSyD7fTv32UljF99OfR5Wl_DQVfluX-NZX2s');
 }
 
 add_action('acf/init', 'my_acf_init');
