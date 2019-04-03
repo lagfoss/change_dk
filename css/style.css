@@ -1594,6 +1594,104 @@ img.omchange_client_logo_neg {
 }
 
 /*========= TEAM slut =========*/
+
+/*========= SINGLE TEAM start =========*/
+
+.wrapper_single_team {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1040px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 45px;
+}
+
+.single_team_info {
+}
+
+.single_team_name {
+  font-size: 139px;
+  color: black;
+  margin-top: 50px;
+  min-width: 400px;
+}
+
+.single_team_title {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 25px;
+  color: #e54c00;
+}
+
+.single_team_text {
+  font-size: 16px;
+  max-width: 325px;
+}
+
+.single_team_phone, .single_team_mail {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 23px;
+  display: block;
+  line-height: 1.5;
+}
+
+.single_team_phone:hover, .single_team_mail:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.single_team_image {
+  height: 94vh;
+}
+
+.single_team_some_icon {
+  width: 40px;
+  height: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+.team_single_left {
+  z-index: 10;
+}
+
+.team_single_right {
+  z-index: 1;
+  display: flex;
+}
+
+.team_next_employee_content {
+    position: absolute;
+    overflow: hidden;
+    right: 10px;
+    width: 160px;
+    background-color: black;
+    min-height: 160px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+}
+
+.flex_wrapper_team {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 1140px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.team_next_employee_text {
+  position: absolute;
+  margin-left: 65px;
+  margin-top: -100px;
+  font-family: 'bebas-neue', sans-serif;
+  min-width: 150px;
+}
+
+/*========= SINGLE TEAM start =========*/
+
 /*========= SERVICES start =========*/
 .background_img_services {
   position: relative;
@@ -1627,7 +1725,7 @@ img.omchange_client_logo_neg {
   text-align: center;
   display: block;
 }
-
+ 
 .services_main_content_text {
   font-weight: 300;
   max-width: 435px;
