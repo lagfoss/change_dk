@@ -1532,6 +1532,7 @@ img.omchange_client_logo_neg {
 .team_overlay_content {
   display: flex;
   width: 100%;
+  margin-bottom: 1px;
 }
 
 .team_overlay_content:hover {
@@ -1544,6 +1545,7 @@ img.omchange_client_logo_neg {
   height: 17px;
   margin: 4px;
 }
+
 
 .team_img_text {
   color: white;
@@ -1603,14 +1605,27 @@ img.omchange_client_logo_neg {
   padding-left: 15px;
 }
 
+.tablet {
+  display: none;
+}
+
+
 .single_team_info {
+  margin-top: 125px;
+  margin-left: -10px;
 }
 
 .single_team_name {
-  font-size: 139px;
+  font-size: 100px;
   color: black;
   margin-top: 50px;
   min-width: 400px;
+}
+
+.mobile .single_team_name {
+  font-size: 69px;
+  max-width: 300px;
+  min-width: 0px;
 }
 
 .single_team_title {
@@ -1621,7 +1636,7 @@ img.omchange_client_logo_neg {
 
 .single_team_text {
   font-size: 16px;
-  max-width: 325px;
+  max-width: 300px;
 }
 
 .single_team_phone, .single_team_mail {
@@ -1637,7 +1652,18 @@ img.omchange_client_logo_neg {
 }
 
 .single_team_image {
+  height: 100%;
+  width: 100%;
+}
+
+.tablet .single_team_image {
   height: 100vh;
+  width: auto;
+}
+
+.mobile .single_team_image {
+  height: 100%;
+  width: 100%;
 }
 
 .single_team_some_icon {
@@ -1657,12 +1683,12 @@ img.omchange_client_logo_neg {
 }
 
 .team_next_employee_content {
-  position: absolute;
+display: flex;
       overflow: hidden;
       left: 5px;
       bottom: 15px;
       z-index: 10;
-      width: 160px;
+      min-width: 160px;
       background-color: black;
       min-height: 160px;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -1684,7 +1710,11 @@ img.omchange_client_logo_neg {
       -o-transition-timing-function: cubic-bezier(0.675, 0.000, 0.265, 1.005);
       transition-timing-function: cubic-bezier(0.675, 0.000, 0.265, 1.005);
   }
-  
+
+  .mobile .team_next_employee_content {
+    left: 15px;
+  }
+
 .flex_wrapper_team {
   display: flex;
   flex-direction: column;
@@ -1695,14 +1725,39 @@ img.omchange_client_logo_neg {
   width: 100%;
 }
 
-.team_next_employee_text {
+.next_employee_wrapper {
+  display: flex;
   position: absolute;
-  font-family: 'bebas-neue', sans-serif;
-  bottom: 45px;
-  z-index: 11;
-  right: 45px;
-  max-width: 30px;
+  bottom: 20px;
+  right: 15px;
 }
+
+.team_next_employee_wrapper {
+  margin-top: 10px;
+margin-left: 10px;
+}
+
+.team_next_employee_wrapper p {
+  margin-bottom: 3px;
+}
+
+.team_next_employee_next {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  z-index: 11;
+}
+
+.team_next_employee_name {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 25px;
+  z-index: 11;
+}
+
+.tablet .next_employee_wrapper, .mobile .next_employee_wrapper {
+  position: inherit;
+  margin-top: 30px;
+}
+
 
 /*========= SINGLE TEAM start =========*/
 
@@ -2770,6 +2825,14 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-left: 20px;
   }
 
+  .tablet {
+    display: flex;
+  }
+
+  .desktop_single_team {
+    display: none;
+  }
+
   .hero {
     margin-bottom: 60px;
   }
@@ -3028,6 +3091,14 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .desktop {
+    display: none;
+  }
+
+  .desktop_single_team {
+    display: none;
+  }
+
+  .tablet {
     display: none;
   }
 

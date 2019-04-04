@@ -133,17 +133,17 @@
                   <div class="team_members_empty"></div>
                   <div class="d-flex team_members_half">
                     <div class="col-12">
-                      <div class="team_img_container">
-                      <img class="" src="<?php the_sub_field('team_img'); ?>" />
-                      <div class="team_img_overlay">
-                        <div class="team_img_text">
-                          <div class="team_overlay_content"><img src="<?php echo $title ?>" alt=""> <?php the_sub_field('team_title') ?></div>
-                          <a class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img src="<?php echo $mail ?>" alt=""> <?php the_sub_field('team_mail') ?></a>
-                          <a class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img src="<?php echo $phone ?>" alt=""> <?php the_sub_field('team_phone_number') ?></a>
-                        </div>
-                      </div>
-                      </div>
+                      <div href="<?php the_sub_field('team_url'); ?>"  class="team_img_container">
+                    <a href="<?php the_sub_field('team_url'); ?>" ><img  class="" src="<?php the_sub_field('team_img'); ?>" /></a>
+                      <a href="<?php the_sub_field('team_url'); ?>" class="team_img_overlay">
 
+                        <div class="team_img_text">
+                          <p class="team_overlay_content" href="<?php the_sub_field('team_url'); ?>"><img src="<?php echo $title ?>" alt=""> <?php the_sub_field('team_title') ?></p>
+                          <p class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img src="<?php echo $mail ?>" alt=""> <?php the_sub_field('team_mail') ?></p>
+                          <p class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img src="<?php echo $phone ?>" alt=""> <?php the_sub_field('team_phone_number') ?></p>
+                        </div>
+                      </a>
+                      </div>
                       <div class="row team_name">
                         <h3 class="left"><?php the_sub_field('team_number'); ?></h3>
                         <div class="stroke_team"></div>
@@ -257,10 +257,21 @@ $(document).scroll(function() {
 }
 
 });
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+} else {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+}
+
+});
 
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 620) {
+                if(scroll_pos > 80) {
 $(".input").addClass("out_black2");
     } else {
         $(".input").removeClass("out_black2");
@@ -269,16 +280,7 @@ $(".input").addClass("out_black2");
 
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 620) {
-$(".search").addClass("search_black");
-    } else {
-        $(".search").removeClass("search_black");
-    }
-});
-
-$(document).scroll(function() {
-  scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 620) {
+                if(scroll_pos > 80) {
 $(".menubtn").addClass("menu_black");
     } else {
         $(".menubtn").removeClass("menu_black");
@@ -287,7 +289,7 @@ $(".menubtn").addClass("menu_black");
 
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 620) {
+                if(scroll_pos > 80) {
 $(".header").addClass("out_white");
     } else {
         $(".header").removeClass("out_white");

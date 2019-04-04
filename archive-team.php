@@ -1,39 +1,27 @@
-<?php get_header();?>
+<?php get_header(); ?>
+<?php get_header_image(); ?>
 
-    <h1>HVIS DU KAN SE DET HER VIRKER SKIDTET!!!!!!!!!!</h1>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-    <?php
-
-      global $wp_query;
-      $args = array(
-     'post_type' => 'team',
-     'posts_per_page' => 10,
-     'orderby' => 'publish_date',
-     'order' => 'DESC',
-      );
-
-      $wp_query = new WP_Query($args);
-      while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
-
-      <h1>HVIS DU KAN SE DET HER VIRKER SKIDTET!!!!!!!!!!</h1>
+<?php
+  if ( has_post_thumbnail() ) {
+    the_post_thumbnail();
+  }
+?>
 
 
 
-        <div class="wrapper">
-          <div class="col-md-5">
-            <h2><?php get_field('team_single_name') ?></h2>
-            <p><?php get_field('team_single_title') ?></p>
-            <p><?php get_field('team_single_text') ?></p>
-            <p><?php get_field('team_single_phone') ?></p>
-            <p><?php get_field('team_single_mail') ?></p>
-            <?php get_field('team_single_some') ?>
-          </div>
+<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-          <div class="col-md-7">
-            <img src="<?php get_field('team_single_img') ?>" alt="">
-          </div>
-        </div>
 
-      <?php endwhile; ?>
-      <?php wp_reset_postdata(); ?>
+<?php the_content(); ?>
+
+<?php endwhile; else : ?>
+
+<p>Der blev ikke fundet noget indhold</p>
+
+<?php endif;?>
+
+
+<?php get_footer(); ?>
