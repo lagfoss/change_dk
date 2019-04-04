@@ -93,6 +93,8 @@ Template Post Type: team
 
         </div>
 
+      </div>
+
         <div class="wrapper_single_team tablet">
           <div class="row">
 
@@ -168,8 +170,9 @@ Template Post Type: team
 
           </div>
 </div>
+</div>
 
-          <div class="col-md-6 team_single_right">
+          <div class="col-md-9 team_single_right">
             <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
           </div>
 </div>
@@ -266,5 +269,5 @@ Template Post Type: team
 $(document).ready(function() {
   $('.whitebg .logoimg').attr('src', '<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg');
 
-});
+
 </script>

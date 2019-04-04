@@ -75,10 +75,21 @@ $(document).scroll(function() {
 }
 
 });
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+} else {
+
+	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+}
+
+});
 
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 320) {
+                if(scroll_pos > 80) {
 $(".input").addClass("out_black2");
     } else {
         $(".input").removeClass("out_black2");
@@ -87,19 +98,19 @@ $(".input").addClass("out_black2");
 
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 320) {
-$(".search").addClass("search_black");
+                if(scroll_pos > 80) {
+$(".menubtn").addClass("menu_black");
     } else {
-        $(".search").removeClass("search_black");
+        $(".menubtn").removeClass("menu_black");
     }
 });
 
 $(document).scroll(function() {
   scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 320) {
-$(".menubtn").addClass("menu_black");
+                if(scroll_pos > 80) {
+$(".header").addClass("out_white");
     } else {
-        $(".menubtn").removeClass("menu_black");
+        $(".header").removeClass("out_white");
     }
 });
 
