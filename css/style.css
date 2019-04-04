@@ -1603,6 +1603,7 @@ img.omchange_client_logo_neg {
   padding-left: 15px;
 }
 
+
 .single_team_info {
 }
 
@@ -1613,6 +1614,12 @@ img.omchange_client_logo_neg {
   min-width: 400px;
 }
 
+.mobile .single_team_name {
+  font-size: 69px;
+  max-width: 300px;
+  min-width: 0px;
+}
+
 .single_team_title {
   font-family: 'bebas-neue', sans-serif;
   font-size: 25px;
@@ -1621,7 +1628,7 @@ img.omchange_client_logo_neg {
 
 .single_team_text {
   font-size: 16px;
-  max-width: 325px;
+  max-width: 300px;
 }
 
 .single_team_phone, .single_team_mail {
@@ -1638,6 +1645,11 @@ img.omchange_client_logo_neg {
 
 .single_team_image {
   height: 100vh;
+}
+
+.mobile .single_team_image {
+  height: 100%;
+  width: 100%;
 }
 
 .single_team_some_icon {
@@ -1684,7 +1696,11 @@ img.omchange_client_logo_neg {
       -o-transition-timing-function: cubic-bezier(0.675, 0.000, 0.265, 1.005);
       transition-timing-function: cubic-bezier(0.675, 0.000, 0.265, 1.005);
   }
-  
+
+  .mobile .team_next_employee_content {
+    left: 15px;
+  }
+
 .flex_wrapper_team {
   display: flex;
   flex-direction: column;
@@ -1702,6 +1718,14 @@ img.omchange_client_logo_neg {
   z-index: 11;
   right: 45px;
   max-width: 30px;
+}
+
+.mobile .test {
+  height: 140px;
+}
+
+.mobile .team_next_employee_text {
+  left: 185px;
 }
 
 /*========= SINGLE TEAM start =========*/
