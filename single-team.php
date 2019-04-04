@@ -56,7 +56,12 @@ Template Post Type: team
                       <?php endif; ?>
 
              </a>
-             <p class="team_next_employee_text">NÆSTE</p>
+             <div class="team_next_employee_wrapper">
+                       <p class="team_next_employee_next">NÆSTE:</p>
+                       <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
+                  	<img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+             </div>
+
              </div>
 
              <?php }
@@ -72,7 +77,11 @@ Template Post Type: team
                        <?php endif; ?>
 
               </a>
-              <p class="team_next_employee_text">NÆSTE</p>
+              <div class="team_next_employee_wrapper">
+                        <p class="team_next_employee_next">NÆSTE:</p>
+                        <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
+                     <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+              </div>
 
    <?php  } ?>
 
@@ -125,7 +134,11 @@ Template Post Type: team
                       <?php endif; ?>
 
              </a>
-             <p class="team_next_employee_text">NÆSTE</p>
+             <div class="team_next_employee_wrapper">
+                       <p class="team_next_employee_next">NÆSTE:</p>
+                       <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
+                   <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+             </div>
              </div>
 
              <?php }
@@ -141,7 +154,11 @@ Template Post Type: team
                        <?php endif; ?>
 
               </a>
-              <p class="team_next_employee_text">NÆSTE</p>
+              <div class="team_next_employee_wrapper">
+                        <p class="team_next_employee_next">NÆSTE:</p>
+                        <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
+                     <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+              </div>
 
    <?php  } ?>
 
@@ -203,7 +220,11 @@ Template Post Type: team
                     <?php endif; ?>
 
            </a>
-           <p class="team_next_employee_text">NÆSTE</p>
+           <div class="team_next_employee_wrapper">
+                     <p class="team_next_employee_next">NÆSTE:</p>
+                     <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
+                 <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+           </div>
            </div>
 
            <?php }
@@ -219,7 +240,11 @@ Template Post Type: team
                      <?php endif; ?>
 
             </a>
-            <p class="team_next_employee_text">NÆSTE</p>
+            <div class="team_next_employee_wrapper">
+                      <p class="team_next_employee_next">NÆSTE:</p>
+                      <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
+                   <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+            </div>
 
  <?php  } ?>
 

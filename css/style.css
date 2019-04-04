@@ -1722,11 +1722,25 @@ display: flex;
   right: 15px;
 }
 
-.team_next_employee_text {
-  font-family: 'bebas-neue', sans-serif;
+.team_next_employee_wrapper {
+  margin-top: 10px;
+margin-left: 10px;
+}
+
+.team_next_employee_wrapper p {
+  margin-bottom: 3px;
+}
+
+.team_next_employee_next {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
   z-index: 11;
-  margin-left: 5px;
-  min-width: 50px;
+}
+
+.team_next_employee_name {
+  font-family: 'bebas-neue', sans-serif;
+  font-size: 25px;
+  z-index: 11;
 }
 
 .tablet .next_employee_wrapper, .mobile .next_employee_wrapper {
