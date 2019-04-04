@@ -1532,6 +1532,7 @@ img.omchange_client_logo_neg {
 .team_overlay_content {
   display: flex;
   width: 100%;
+  margin-bottom: 1px;
 }
 
 .team_overlay_content:hover {
@@ -1544,6 +1545,7 @@ img.omchange_client_logo_neg {
   height: 17px;
   margin: 4px;
 }
+
 
 .team_img_text {
   color: white;
