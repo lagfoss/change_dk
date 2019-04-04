@@ -32,7 +32,7 @@
       while ($wp_query->have_posts()) : $wp_query->the_post();  ?>
 
       <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-        <a class="case_card_content" href="<?php the_permalink(); ?>" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo $backgroundImg[0]; ?>') no-repeat">
+        <a class="case_card_content" href="<?php the_permalink(); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat">
 
             <?php $image = get_field('client_logo_neg'); if( !empty($image) ): ?>
             <img alt="client logo" class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
