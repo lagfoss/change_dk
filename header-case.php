@@ -61,21 +61,77 @@
   <header class="position-fixed header">
 
     <!-- Menu/Nav start -->
+
+
     <nav>
       <div id="primaryNav">
          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt=""></a>
+        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="change logo"></a>
 
-        <div class="container-fluid">
-          <a href="/cases" class="menubtn close_case"></a>
+      <div class="container-fluid">
+        <!-- <?php get_search_form(); ?> -->
+
+        <div id="cf_onclick" class="menubtn">
+          <span></span>
+        </div>
+
+        <div id="popUpNav" class="overlay" >
+          <div class="overlay_content">
+          <div class="nav_wrapper">
+
+            <a class="nav_logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
+           <img class="nav_logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="change logo"></a>
+
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
+            <!-- Job link til/fra -->
+            <?php
+            if( get_field('job_available', 'option') )
+              $value = get_field('job_available', 'option');
+              ?>
+              <?php  if( $value == true ) : ?>
+                <div class="nav_job"><a href="<?php the_field('job_link', 'option'); ?>"><?php the_field('job', 'option'); ?></a></div>
+              <?php else : ?>
+                <span></span>
+              <?php endif; ?>
+
+            <!-- Social media link -->
+            <?php if( have_rows('nav_some', 'option') ): ?>
+            <div class="row nav_some_wrapper">
+              <?php while( have_rows('nav_some', 'option') ): the_row();
+                // vars
+              $image = get_sub_field('some_icons_nav', 'option');
+              $link = get_sub_field('some_url_nav', 'option');
+              ?>
+
+              <div class="nav_some">
+                <?php if( $link ): ?>
+                <a href="<?php echo $link; ?>">
+                  <?php endif; ?>
+                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                  <?php if( $link ): ?>
+                </a>
+                <?php endif; ?>
+                <?php echo $content; ?>
+              </div>
+
+              <?php endwhile; ?>
+            </div>
+            <?php endif; ?>
+            <div class="nav_address">
+              <a href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a>
+              <a target="_blank" href="<?php the_field('google_maps_link', 'option'); ?>"><?php the_field('nav_address', 'option'); ?></a>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
 
-        <script type="text/javascript">
+        <script>
+
 
         // Gør at header vises og forsvinder med scroll
-        /*
-        var header = $('.header'),
+  /*      var header = $('header'),
         headerHeight = header.height(),
         treshold = 0,
         lastScroll = 0;
@@ -86,17 +142,94 @@
 
           // normalize treshold range
           treshold = (treshold+diff>headerHeight) ? headerHeight : treshold+diff;
-          treshold = (treshold < 0) ? -20 : treshold;
+          treshold = (treshold < 0) ? -35 : treshold;
 
           header.css('top', (-treshold)+'px');
 
           lastScroll = newScroll;
         }); */
 
+        /* Åben/luk menu navigation  */
+          function openNav() {
+          menubtn.classList.add("is-active");
+          document.getElementById("popUpNav").style.width = "100%";
+          }
+
+          function closeNav() {
+            menubtn.classList.remove("is-active");
+            document.getElementById("popUpNav").style.width = "0%";
+          }
+
+          var menubtn = document.querySelector(".menubtn");
+          menubtn.addEventListener('click', () => menubtn.classList.contains('is-active') ? closeNav() : openNav());
+
+          /* Burger menu animation  */
+          closeNav();
+          $('.menubtn').on('click', function(){
+          $(this).toggleClass('close','menubtn');
+          });
+
+          /*//Search animation
+          function expand() {
+            $(".search").toggleClass("searchclose", "pseudo_searchclose");
+            $(".input").toggleClass("square");
+            if ($('.search').hasClass('searchclose', 'pseudo_searchclose')) {
+              $('input').focus();
+            } else {
+              $('input').blur();
+            }
+          }
+          $('button').on('click', expand);*/
+
+          $(function(){
+            $('a').each(function() {
+              if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('current');
+              }
+            });
+          });
+
+          $("#cf_onclick").click(function() {
+          $('.nav_logo').toggleClass('nav_logo-active');
+           });
+
+           //Skifter mellem forskellige classes ved at trykke på menu knappen
+           $(".menubtn").click(function() {
+             $('.menubtn').toggleClass('pos_fix');
+             /*$('.search_form').toggleClass('pos_fix');
+             $('.input').toggleClass('out_black');*/
+             $('.pre_header').toggleClass('display_no');
+
+            /* //Skifter farve på :before & :after i search
+             $('.search').slideUp(10, function() {
+               var search = $(this);
+               if(search.hasClass('pseudo_search')) {
+                 search.removeClass('pseudo_search');
+                 search.addClass('active_search');
+               } else {
+                 search.removeClass('active_search');
+                 search.addClass('pseudo_search');
+               }
+             }).slideDown(10);
+             $('.searchclose').slideUp(10, function() {
+               var search = $(this);
+               if(search.hasClass('pseudo_searchclose')) {
+                 search.removeClass('pseudo_searchclose');
+                 search.addClass('active_searchclose');
+               } else {
+                 search.removeClass('active_searchclose');
+                 search.addClass('pseudo_searchclose');
+               }
+             }).slideDown(10);*/
+           });
+
+
+
         </script>
       </div>
     </nav>
         <!-- Menu/Nav slut -->
+
 
 
   </header>

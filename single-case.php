@@ -418,10 +418,10 @@ echo $iframe;
 
 /* Logo transition script */
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+/* Logo transition script */
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
 
 	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
 } else {
@@ -431,45 +431,33 @@ $(window).scroll(function() {
 
 });
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
 $(".input").addClass("out_black2");
     } else {
         $(".input").removeClass("out_black2");
     }
 });
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
-$(".search").addClass("search_black");
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
+$(".menubtn").addClass("menu_black");
     } else {
-        $(".search").removeClass("search_black");
+        $(".menubtn").removeClass("menu_black");
     }
 });
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
-$(".close_case").addClass("menu_black");
-    } else {
-        $(".close_case").removeClass("menu_black");
-    }
-});
-
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
 $(".header").addClass("out_white");
     } else {
         $(".header").removeClass("out_white");
     }
 });
+
 
 ScrollReveal().reveal('.stroke_position_case', { distance: '250px', easing: 'ease-in-out', duration: 900});
 ScrollReveal().reveal('.case_hero h1', { distance: '250px', easing: 'ease-in-out', duration: 900});
