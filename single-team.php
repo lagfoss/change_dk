@@ -18,8 +18,8 @@ Template Post Type: team
             <h1 class="single_team_name"><?php the_field('team_single_name') ?></h1>
             <p class="single_team_title"><?php the_field('team_single_title') ?></p>
             <p class="single_team_text"><?php the_field('team_single_text') ?></p>
-            <a href="<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
-            <a href="<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
+            <a href="tel:<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
+            <a href="mailto:<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
 
             <?php if( have_rows('team_single_some') ): ?>
             <?php while( have_rows('team_single_some') ): the_row();
@@ -38,10 +38,10 @@ Template Post Type: team
           </div>
 </div>
 
-          <div class="col-md-6 team_single_right">
+          <div class="col-md-7 team_single_right">
             <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="flex_wrapper_team team_next_employee">
               <div class="next_employee_wrapper">
               <?php $next_post = get_adjacent_post(false, '', false); ?>
@@ -105,8 +105,8 @@ Template Post Type: team
             <h1 class="single_team_name"><?php the_field('team_single_name') ?></h1>
             <p class="single_team_title"><?php the_field('team_single_title') ?></p>
             <p class="single_team_text"><?php the_field('team_single_text') ?></p>
-            <a href="<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
-            <a href="<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
+            <a href="tel:<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
+            <a href="mailto:<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
 
             <?php if( have_rows('team_single_some') ): ?>
             <?php while( have_rows('team_single_some') ): the_row();
@@ -170,7 +170,6 @@ Template Post Type: team
 
           </div>
 </div>
-</div>
 
           <div class="col-md-9 team_single_right">
             <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
@@ -193,8 +192,8 @@ Template Post Type: team
             <h1 class="single_team_name"><?php the_field('team_single_name') ?></h1>
             <p class="single_team_title"><?php the_field('team_single_title') ?></p>
             <p class="single_team_text"><?php the_field('team_single_text') ?></p>
-            <a href="<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
-            <a href="<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
+            <a href="tel:<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
+            <a href="mailto:<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
 
             <?php if( have_rows('team_single_some') ): ?>
             <?php while( have_rows('team_single_some') ): the_row();

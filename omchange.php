@@ -133,17 +133,16 @@
                   <div class="team_members_empty"></div>
                   <div class="d-flex team_members_half">
                     <div class="col-12">
-                      <div class="team_img_container">
-                      <img class="" src="<?php the_sub_field('team_img'); ?>" />
-                      <div class="team_img_overlay">
+                      <div href="<?php the_sub_field('team_url'); ?>"  class="team_img_container">
+                    <a href="<?php the_sub_field('team_url'); ?>" ><img  class="" src="<?php the_sub_field('team_img'); ?>" /></a>
+                      <a href="<?php the_sub_field('team_url'); ?>" class="team_img_overlay">
 
                         <div class="team_img_text">
-                          <a class="team_overlay_content" href="<?php the_sub_field('team_url'); ?>"><img src="<?php echo $title ?>" alt=""> <?php the_sub_field('team_title') ?></a>
-                          <a class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img src="<?php echo $mail ?>" alt=""> <?php the_sub_field('team_mail') ?></a>
-                          <a class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img src="<?php echo $phone ?>" alt=""> <?php the_sub_field('team_phone_number') ?></a>
+                          <p class="team_overlay_content" href="<?php the_sub_field('team_url'); ?>"><img src="<?php echo $title ?>" alt=""> <?php the_sub_field('team_title') ?></p>
+                          <p class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img src="<?php echo $mail ?>" alt=""> <?php the_sub_field('team_mail') ?></p>
+                          <p class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img src="<?php echo $phone ?>" alt=""> <?php the_sub_field('team_phone_number') ?></p>
                         </div>
-
-                      </div>
+                      </a>
                       </div>
                       <div class="row team_name">
                         <h3 class="left"><?php the_sub_field('team_number'); ?></h3>

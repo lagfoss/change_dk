@@ -1609,10 +1609,12 @@ img.omchange_client_logo_neg {
 
 
 .single_team_info {
+  margin-top: 125px;
+  margin-left: -10px;
 }
 
 .single_team_name {
-  font-size: 139px;
+  font-size: 100px;
   color: black;
   margin-top: 50px;
   min-width: 400px;
@@ -1648,7 +1650,13 @@ img.omchange_client_logo_neg {
 }
 
 .single_team_image {
+  height: 100%;
+  width: 100%;
+}
+
+.tablet .single_team_image {
   height: 100vh;
+  width: auto;
 }
 
 .mobile .single_team_image {
