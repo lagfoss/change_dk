@@ -79,7 +79,7 @@ Template Post Type: cases
               <div class="client_cat">
 
                 <?php
-                $categories = get_the_category();
+                $categories = get_the_category('');
                 $separator = ' ';
                 $output = '';
                 if ( ! empty( $categories ) ) {

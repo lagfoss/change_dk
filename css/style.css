@@ -1612,10 +1612,10 @@ img.omchange_client_logo_neg {
 }
 
 .single_team_name {
-  font-size: 100px;
-  color: black;
-  margin-top: 50px;
-  min-width: 400px;
+  font-size: 69px;
+      color: black;
+      margin-top: 50px;
+      max-width: 260px;
 }
 
 .mobile .single_team_name {
@@ -1653,8 +1653,8 @@ img.omchange_client_logo_neg {
 }
 
 .tablet .single_team_image {
-  height: 100vh;
-  width: auto;
+height: 100%;
+width: 100%;
 }
 
 .mobile .single_team_image {
@@ -1805,6 +1805,11 @@ img.omchange_client_logo_neg {
 
 .desktop_single_team_next_employee_wrapper {
   right: 75px;
+}
+
+.team_next_employee_wrapper:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 
@@ -3274,6 +3279,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .contact_address {
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     width: 440px;
@@ -3303,6 +3309,19 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-top: 0px;
     margin-left: 10%;
   }
+
+  .team_img_overlay, .team_img_container:hover .team_img_overlay, .team_overlay_content, .team_overlay_content:hover,.team_overlay_content img, .team_img_text {
+    display: none;
+  }
+
+  .contact_intro p {
+    padding-top: 25px;
+  }
+
+  .stroke_contact_map, .stroke_position_contact {
+    display: none;
+  }
+
 }
 
 /*========= (620px and down) =========*/
@@ -3649,7 +3668,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .iphone_wrapper {
     width: 261px;
-    left: -11px;
+    left: 33px;
     top: 8px;
   }
 
@@ -3663,6 +3682,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .pr_wrapper {
     margin: 0;
+    padding-left: 45px;
     width: 100%;
   }
 }
@@ -3716,4 +3736,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: inherit !important;
 }

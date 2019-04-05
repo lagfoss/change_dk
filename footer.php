@@ -117,16 +117,13 @@ $(document).ready(function() {
 
   var owl = $('.process_carousel_wrapper');
   owl.owlCarousel({
-    items: 3,
     dots: false,
     nav: false,
     mouseDrag: false,
-    autoplay: false,
     responsive:{
 
       768: {
         items: 3,
-        autoplay: false,
         loop: false,
         touchdrag:false,
       },
