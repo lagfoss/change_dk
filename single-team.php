@@ -100,6 +100,7 @@ Template Post Type: team
 
           <div class="flex_wrapper_team team_next_employee">
             <div class="next_employee_wrapper">
+              <div class="orange_filter"></div>
               <?php $next_post = get_adjacent_post(false, '', false); ?>
               <?php if ( !empty($next_post) ) {  ?>
               <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
@@ -162,6 +163,7 @@ Template Post Type: team
 
         <div class="flex_wrapper_team team_next_employee">
           <div class="next_employee_wrapper">
+            <div class="orange_filter"></div>
             <?php $next_post = get_adjacent_post(false, '', false); ?>
             <?php if ( !empty($next_post) ) {  ?>
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
