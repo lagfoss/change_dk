@@ -1653,8 +1653,8 @@ img.omchange_client_logo_neg {
 }
 
 .tablet .single_team_image {
-  height: 100vh;
-  width: auto;
+height: 100%;
+width: 100%;
 }
 
 .mobile .single_team_image {
@@ -1805,6 +1805,11 @@ img.omchange_client_logo_neg {
 
 .desktop_single_team_next_employee_wrapper {
   right: 75px;
+}
+
+.team_next_employee_wrapper:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 
