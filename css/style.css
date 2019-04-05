@@ -1788,7 +1788,7 @@ img.omchange_client_logo_neg {
 .monile .orange_filter {
   width: 160px;
   height: 160px;
-} 
+}
 
 .mobile .employee_img {
   width: 160px;
@@ -2068,10 +2068,6 @@ img.omchange_client_logo_neg {
   transform: rotate(-45deg);
 }
 
-.client_about {
-  padding-top: 20px;
-}
-
 .client_about p, .case_text_area p, .case_strategi p, .rekru_text p,
 .results_text p {
   color: #999999;
@@ -2090,7 +2086,7 @@ img.omchange_client_logo_neg {
 
 /*========= CASES hero start =========*/
 
-.case_client, .client_image, .case_text, .strategi, .case_some, .logo_design,
+.case_client, .case_text, .strategi, .case_some, .logo_design,
 .font_design, .color_design, .design_ex, .rekru_wrapper, .brand, .case_results {
   margin: 70px auto;
 }
@@ -2131,10 +2127,6 @@ img.omchange_client_logo_neg {
 
 /*========= CASES hero slut =========*/
 /*========= CASES client start =========*/
-.case_client {
-  border-bottom: solid 2px #e3e3e3;
-  padding-bottom: 100px;
-}
 
 .pre_client {
   margin-top: 3px;
@@ -2154,20 +2146,8 @@ img.omchange_client_logo_neg {
   -webkit-box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 }
 
-.client_text, .client_cat {
-  font-size: 16px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 240px;
-}
-
-.client_cat ul {
-  display: block;
-}
-
-.client_cat li {
-  margin-right: 10px;
-  margin-top: 20px;
+.client_cat {
+  max-width: 300px;
 }
 
 .client_cat a {
@@ -2200,7 +2180,6 @@ img.omchange_client_logo_neg {
   height: 60vh;
   overflow: hidden;
   background-position: center;
-  padding: 0 0 60px 0;
 }
 
 /*========= CASES image slut =========*/
@@ -2211,18 +2190,21 @@ img.omchange_client_logo_neg {
 
 .case_text, .case_strategi, .case_results {
   width: 60%;
-  margin: 50px auto 50px auto;
 }
 
-.brand, .rekru_wrapper {
-  margin: 120px auto 180px auto;
+.case_strategi {
+  margin: auto;
+}
+
+ .rekru_wrapper {
+  margin: 105px auto 140px auto;
 }
 
 /*========= CASES goal slut =========*/
 /*========= CASES strategi start =========*/
 .strategi {
   position: relative;
-  padding-bottom: 145px;
+  padding-bottom: 70px;
 }
 
 .strategi_dots {
@@ -2231,7 +2213,7 @@ img.omchange_client_logo_neg {
   height: 20%;
   background-repeat: repeat;
   left: 33%;
-  bottom: 14%;
+  bottom: 0;
   z-index: -1;
 }
 
@@ -2300,7 +2282,6 @@ img.omchange_client_logo_neg {
 /*========= CASES rekrutering start =========*/
 .rekru {
   position: relative;
-  margin-bottom: 160px;
 }
 
 .rekru_content {
@@ -2314,7 +2295,7 @@ img.omchange_client_logo_neg {
   height: 120%;
   background-repeat: repeat;
   right: 0;
-  top: -11%;
+  top: -35px;
   z-index: -1;
 }
 
@@ -2377,9 +2358,9 @@ img.thumbnail {
 }
 
 .orange_square_case {
-  height: 122%;
+  height: 750px;
   width: 80%;
-  margin-top: -60px;
+  top: -50px;
   right: 0;
   position: absolute;
   border-radius: 10px;
@@ -3191,30 +3172,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     text-align: center;
   }
 
-  .case_client {
-    padding-bottom: 35px;
-  }
-
-  .client_image {
-    padding: 0 0 35px 0;
-  }
-
-  .case_text, .case_strategi, .case_results {
-    margin: 35px auto 35px auto;
-  }
-
-  .case_some {
-    margin-bottom: 100px;
-  }
-
-  .strategi {
-    padding-bottom: 70px;
-  }
-
-  .brand, .rekru_wrapper {
-    margin: 35px auto 35px auto;
-  }
-
   .rekru_video, div.thumbnail_container {
     width: 80%;
   }
@@ -3452,14 +3409,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .nav_wrapper {
     margin-left: 50%;
-  }
-
-  .case_client {
-    padding-bottom: 100px;
-  }
-
-  .client_cat ul {
-    display: block;
   }
 
   .case_card_h2 {
