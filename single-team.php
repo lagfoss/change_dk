@@ -41,14 +41,12 @@ Template Post Type: team
       <div class="col-md-2">
         <div class="flex_wrapper_team team_next_employee">
           <div class="next_employee_wrapper">
+            <div class="orange_filter"></div>
             <?php $next_post = get_adjacent_post(false, '', false); ?>
             <?php if ( !empty($next_post) ) {  ?>
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
 
             <a class="team_next_employee_content" href="<?php echo get_permalink( $next_post->ID ); ?>" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
-              <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
-                <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-              <?php endif; ?>
             </a>
           </div>
           <div class="team_next_employee_wrapper">
@@ -63,9 +61,6 @@ Template Post Type: team
          <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
 
         <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-           <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
-             <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-           <?php endif; ?>
         </a>
         <div class="team_next_employee_wrapper">
           <p class="team_next_employee_next">NÆSTE:</p>
@@ -110,9 +105,6 @@ Template Post Type: team
               <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
 
               <a class="team_next_employee_content" href="<?php echo get_permalink( $next_post->ID ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-                <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
-                  <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                <?php endif; ?>
               </a>
               <div class="team_next_employee_wrapper">
                 <p class="team_next_employee_next">NÆSTE:</p>
@@ -125,9 +117,6 @@ Template Post Type: team
             else {  ?>
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
             <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-               <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
-                 <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-               <?php endif; ?>
             </a>
             <div class="team_next_employee_wrapper">
               <p class="team_next_employee_next">NÆSTE:</p>
@@ -178,9 +167,6 @@ Template Post Type: team
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
 
             <a class="team_next_employee_content" href="<?php echo get_permalink( $next_post->ID ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-              <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
-                <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-              <?php endif; ?>
             </a>
             <div class="team_next_employee_wrapper">
               <p class="team_next_employee_next">NÆSTE:</p>
@@ -193,10 +179,7 @@ Template Post Type: team
 
           else {  ?>
            <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
-          <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;  ">
-            <?php $image = get_field('client_logo_neg', $next_post->ID); if( !empty($image) ): ?>
-              <img class="client_logo_neg" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-            <?php endif; ?>
+          <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; ">
           </a>
           <div class="team_next_employee_wrapper">
             <p class="team_next_employee_next">NÆSTE:</p>
