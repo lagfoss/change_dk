@@ -2091,7 +2091,7 @@ width: 100%;
 
 /*========= CASES hero start =========*/
 
-.case_client, .case_text, .strategi, .case_some, .logo_design,
+.case_client, .case_text, .strategi, .logo_design,
 .font_design, .color_design, .design_ex, .rekru_wrapper, .brand, .case_results {
   margin: 70px auto;
 }
@@ -2235,6 +2235,10 @@ width: 100%;
 
 /*========= CASES strategi slut =========*/
 /*========= CASES some start =========*/
+
+.case_some {
+  margin: 0 auto 70px auto;
+}
 
 .case_text_area img {
   height: auto;
@@ -2414,7 +2418,7 @@ img.thumbnail {
   box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px #e3e3e3;
-  margin: 50px auto 90px auto;
+  margin: 30px auto 70px auto;
 }
 
 .design_img img {
@@ -2425,7 +2429,7 @@ img.thumbnail {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  margin: 30px auto 80px auto;
+  margin: 30px auto 30px auto;
 }
 
 .color_examples {
@@ -2946,6 +2950,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-left: 0px;
   }
 
+  .rekru_wrapper {
+    margin: 70px auto;
+  }
+
   .rekru_content {
     max-width: 60%;
     margin: auto;
@@ -3191,6 +3199,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .case_down {
     margin-top: 25px;
     margin-left: auto;
+  }
+
+  .client_cat {
+    margin-bottom: 30px;
   }
 
   .case_text, .case_strategi, .case_results {
@@ -3654,10 +3666,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .omchange_category_wrapper {
     padding: 6px 7%;
-  }
-
-  .client_cat {
-    padding-top: 0;
   }
 
   .brand_img {
