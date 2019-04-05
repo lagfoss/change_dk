@@ -1691,6 +1691,14 @@ img.omchange_client_logo_neg {
   border-radius: 20px;
 }
 
+.employee_img {
+  width: 100%;
+  height: auto;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center !important;
+}
+
 .team_next_employee_content {
   display: flex;
   overflow: hidden;
@@ -1699,9 +1707,6 @@ img.omchange_client_logo_neg {
   z-index: 10;
   min-width: 160px;
   min-height: 160px;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: center !important;
   border-radius: 20px;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.25);
