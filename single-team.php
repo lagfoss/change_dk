@@ -140,13 +140,13 @@ Template Post Type: team
 
           <?php  } ?>
 
-      </div>
-    </div>
-  </div>
 
+      </div>
       <div class="col-md-9 team_single_right">
         <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
       </div>
+    </div>
+
     </div>
   </div>
 </div>
