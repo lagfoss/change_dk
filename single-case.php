@@ -80,7 +80,8 @@ Template Post Type: cases
 
                 <?php
                 $categories = get_the_category('');
-                $separator = ' ';
+                $separator = '
+                 ';
                 $output = '';
                 if ( ! empty( $categories ) ) {
                   foreach( $categories as $category ) {

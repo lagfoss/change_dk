@@ -62,16 +62,16 @@ Template Post Type: team
         <?php }
          else {  ?>
            <div class="flex_wrapper_team team_next_employee">
-             <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>">
+             <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1791 ); ?>">
                <div class="orange_filter"></div>
-               <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
+               <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1791), 'full' );?>
 
                <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
                </div>
              </a>
-             <a href="<?php echo get_permalink( 1750 ); ?>" class="team_next_employee_wrapper">
+             <a href="<?php echo get_permalink( 1791 ); ?>" class="team_next_employee_wrapper">
                <p class="team_next_employee_next">NÆSTE:</p>
-               <p class="team_next_employee_name"><?php the_field('team_single_name', 1750) ?></p>
+               <p class="team_next_employee_name"><?php the_field('team_single_name', 1791) ?></p>
                <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
              </a>
            </div>
@@ -138,16 +138,16 @@ Template Post Type: team
       <?php }
        else {  ?>
          <div class="flex_wrapper_team team_next_employee">
-           <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>">
+           <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1791 ); ?>">
              <div class="orange_filter"></div>
-             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
+             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1791), 'full' );?>
 
              <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
              </div>
            </a>
-           <a href="<?php echo get_permalink( 1750 ); ?>" class="team_next_employee_wrapper">
+           <a href="<?php echo get_permalink( 1791 ); ?>" class="team_next_employee_wrapper">
              <p class="team_next_employee_next">NÆSTE:</p>
-             <p class="team_next_employee_name"><?php the_field('team_single_name', 1750) ?></p>
+             <p class="team_next_employee_name"><?php the_field('team_single_name', 1791) ?></p>
              <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
            </a>
          </div>
@@ -209,16 +209,16 @@ Template Post Type: team
 
           else {  ?>
             <div class="flex_wrapper_team team_next_employee">
-              <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>">
+              <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1791 ); ?>">
                 <div class="orange_filter"></div>
-                <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
+                <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1791), 'full' );?>
 
                 <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
                 </div>
               </a>
-              <a href="<?php echo get_permalink( 1750 ); ?>" class="team_next_employee_wrapper">
+              <a href="<?php echo get_permalink( 1791 ); ?>" class="team_next_employee_wrapper">
                 <p class="team_next_employee_next">NÆSTE:</p>
-                <p class="team_next_employee_name"><?php the_field('team_single_name', 1750) ?></p>
+                <p class="team_next_employee_name"><?php the_field('team_single_name', 1791) ?></p>
                 <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
               </a>
             </div>
