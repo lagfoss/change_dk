@@ -1306,6 +1306,8 @@ input {
   max-width: 450px;
   margin: auto;
   text-align: center;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .quote_img {
@@ -1316,11 +1318,6 @@ input {
   border-radius: 50%;
   box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.3);
-}
-
-.client_quote {
-  font-size: 17px;
-  font-weight: 500;
 }
 
 .quote_name {
@@ -1337,7 +1334,6 @@ input {
   margin: auto;
   height: 105px;
   margin-bottom: 100px;
-}
 }
 
 /*========= Om Change klient citat slut =========*/
@@ -2093,6 +2089,12 @@ img.omchange_client_logo_neg {
 }
 
 /*========= CASES hero start =========*/
+
+.case_client, .client_image, .case_text, .strategi, .case_some, .logo_design,
+.font_design, .color_design, .design_ex, .rekru_wrapper, .brand, .case_results {
+  margin: 70px auto;
+}
+
 .case_hero {
   margin-top: 40vh;
 }
@@ -2395,14 +2397,10 @@ img.thumbnail {
 /*========= CASES branding slut =========*/
 /*========= CASES design start =========*/
 
-.logo_design {
-  margin: 70px auto;
-}
-
 .logo_ex {
   max-width: 600px;
   width: 100%;
-  margin: 50px auto 100px auto;
+  margin: 0 auto 0 auto;
   display: block;
 }
 
@@ -2417,7 +2415,7 @@ img.thumbnail {
 .font_examples {
   margin: auto;
   text-align: center;
-  margin: 0 0 100px 0;
+  margin: 0 auto 0 auto;
  }
 
  .font_examples img {
@@ -3410,9 +3408,13 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     padding-left: 18px
   }
 
+  .service_footer {
+    margin-top: -70px;
+  }
+
   .logo_slider {
     padding: 30px 0 30px 0;
-    margin: 0px auto 120px auto;
+    margin: 0px auto 70px auto;
   }
 
   .logo_slider img {
@@ -3535,7 +3537,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .team {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .contact_map {
@@ -3658,6 +3660,23 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-right: 0;
   }
 
+  .om_quote {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .client_quote {
+    font-size: 12px;
+  }
+
+  .quote_logo {
+    margin-bottom: 30px;
+  }
+
+  .team h2 {
+    margin-bottom: 20px;
+  }
+
   .square {
     width: 180px;
   }
@@ -3683,6 +3702,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .omchange_category_wrapper {
     padding: 6px 7%;
+  }
+
+  .client_cat {
+    padding-top: 0;
   }
 
   .brand_img {
