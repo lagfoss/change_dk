@@ -3223,6 +3223,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .team_members_half {
     justify-content: center;
   }
+ 
+  .orange_filter {
+    height: 160px;
+    width: 160px;
+  }
 
   .case_down {
     margin-top: 25px;

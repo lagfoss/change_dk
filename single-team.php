@@ -40,10 +40,10 @@ Template Post Type: team
 
       <div class="col-md-2 desktop_single_team_next_employee_wrapper">
         <div class="flex_wrapper_team team_next_employee">
+          <?php $next_post = get_adjacent_post(false, '', false); ?>
+          <?php if ( !empty($next_post) ) {  ?>
           <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( $next_post->ID ); ?>">
             <div class="orange_filter"></div>
-            <?php $next_post = get_adjacent_post(false, '', false); ?>
-            <?php if ( !empty($next_post) ) {  ?>
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
 
             <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
@@ -58,21 +58,27 @@ Template Post Type: team
 
         <?php }
          else {  ?>
-         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
+           <div class="flex_wrapper_team team_next_employee">
+             <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>">
+               <div class="orange_filter"></div>
+               <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
 
-        <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-        </a>
-        <div class="team_next_employee_wrapper">
-          <p class="team_next_employee_next">NÆSTE:</p>
-          <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
-          <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
-        </div>
+               <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
+               </div>
+             </a>
+             <div class="team_next_employee_wrapper">
+               <p class="team_next_employee_next">NÆSTE:</p>
+               <p class="team_next_employee_name"><?php the_field('team_single_name', 1750) ?></p>
+               <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+             </div>
+           </div>
 
         <?php  } ?>
 
       </div>
     </div>
   </div>
+</div>
 
   <div class="wrapper_single_team tablet">
     <div class="row">
@@ -99,10 +105,10 @@ Template Post Type: team
           <?php endif; ?>
 
           <div class="flex_wrapper_team team_next_employee">
+            <?php $next_post = get_adjacent_post(false, '', false); ?>
+            <?php if ( !empty($next_post) ) {  ?>
             <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( $next_post->ID ); ?>">
               <div class="orange_filter"></div>
-              <?php $next_post = get_adjacent_post(false, '', false); ?>
-              <?php if ( !empty($next_post) ) {  ?>
               <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
 
               <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
@@ -114,26 +120,36 @@ Template Post Type: team
               <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
             </div>
           </div>
-
+          </div>
             <?php }
             else {  ?>
-            <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
-            <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat;">
-            </a>
-            <div class="team_next_employee_wrapper">
-              <p class="team_next_employee_next">NÆSTE:</p>
-              <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
-              <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
-            </div>
+              <div class="flex_wrapper_team team_next_employee">
+                <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>">
+                  <div class="orange_filter"></div>
+                  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
+
+                  <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
+                  </div>
+                </a>
+                <div class="team_next_employee_wrapper">
+                  <p class="team_next_employee_next">NÆSTE:</p>
+                  <p class="team_next_employee_name"><?php the_field('team_single_name', 1750) ?></p>
+                  <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+                </div>
+              </div>
 
           <?php  } ?>
-        </div>
+
       </div>
+    </div>
+  </div>
+
       <div class="col-md-9 team_single_right">
         <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
       </div>
     </div>
   </div>
+</div>
 
   <div class="mobile">
     <div class="row">
@@ -162,10 +178,10 @@ Template Post Type: team
         </div>
 
         <div class="flex_wrapper_team team_next_employee">
+          <?php $next_post = get_adjacent_post(false, '', false); ?>
+          <?php if ( !empty($next_post) ) {  ?>
           <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( $next_post->ID ); ?>">
             <div class="orange_filter"></div>
-            <?php $next_post = get_adjacent_post(false, '', false); ?>
-            <?php if ( !empty($next_post) ) {  ?>
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($next_post->ID), 'full' );?>
 
             <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
@@ -181,14 +197,20 @@ Template Post Type: team
           <?php }
 
           else {  ?>
-           <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
-          <a class="team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; ">
-          </a>
-          <div class="team_next_employee_wrapper">
-            <p class="team_next_employee_next">NÆSTE:</p>
-            <p class="team_next_employee_name"><?php the_field('team_single_name', $next_post->ID) ?></p>
-            <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
-          </div>
+            <div class="flex_wrapper_team team_next_employee">
+              <a class="next_employee_wrapper team_next_employee_content" href="<?php echo get_permalink( 1750 ); ?>">
+                <div class="orange_filter"></div>
+                <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(1750), 'full' );?>
+
+                <div class="employee_img" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
+                </div>
+              </a>
+              <div class="team_next_employee_wrapper">
+                <p class="team_next_employee_next">NÆSTE:</p>
+                <p class="team_next_employee_name"><?php the_field('team_single_name', 1750) ?></p>
+                <img alt="calltoaction arrow" src="<?php the_field('team_single_arrow'); ?>" />
+              </div>
+            </div>
 
           <?php  } ?>
       </div>
