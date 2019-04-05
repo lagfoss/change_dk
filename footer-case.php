@@ -69,7 +69,7 @@
           }
           ?> </div>
 
-        <div>
+        <div class="category_name_wrapper">
           <?php
           foreach((get_the_category(650)) as $category){
             echo $category->name.", ";
