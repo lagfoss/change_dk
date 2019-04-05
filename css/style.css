@@ -2237,7 +2237,7 @@ width: 100%;
 /*========= CASES some start =========*/
 
 .case_some {
-  margin: 0 auto 70px auto;
+  margin: 0 auto 90px auto;
 }
 
 .case_text_area img {
@@ -3201,12 +3201,25 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-left: auto;
   }
 
+  .case_client, .case_text, .strategi, .logo_design,
+  .font_design, .color_design, .design_ex, .rekru_wrapper, .case_results {
+    margin: 50px auto;
+  }
+
+  .brand {
+    margin: 50px auto 0 auto;
+  }
+
   .client_cat {
     margin-bottom: 30px;
   }
 
   .case_text, .case_strategi, .case_results {
     width: 100%;
+  }
+
+  .strategi {
+    padding-bottom: 40px;
   }
 
   .case_strategi_img img {
