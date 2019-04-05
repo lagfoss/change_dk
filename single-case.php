@@ -79,8 +79,8 @@ Template Post Type: cases
               <div class="client_cat">
 
                 <?php
-                $categories = get_the_category();
-                $separator = ' ';
+                $categories = get_the_category('');
+                $separator = '<br>';
                 $output = '';
                 if ( ! empty( $categories ) ) {
                   foreach( $categories as $category ) {
