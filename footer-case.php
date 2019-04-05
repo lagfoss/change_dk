@@ -42,7 +42,7 @@
        <div>
          <?php
          foreach((get_the_category($next_post->ID)) as $category){
-           echo $category->name.",";
+           echo $category->name.", ";
          }
          ?>
        </div>
