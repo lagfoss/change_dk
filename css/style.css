@@ -1766,6 +1766,47 @@ img.omchange_client_logo_neg {
   margin-top: 30px;
 }
 
+.tablet .flex_wrapper_team {
+  width: 160px;
+}
+
+.tablet .orange_filter {
+  width: 160px;
+  height: 160px;
+}
+
+.tablet .employee_img {
+  width: 160px;
+  height: 160px;
+}
+
+.mobile .flex_wrapper_team {
+  width: 160px;
+  margin: auto;
+}
+
+.monile .orange_filter {
+  width: 160px;
+  height: 160px;
+} 
+
+.mobile .employee_img {
+  width: 160px;
+  height: 160px;
+}
+
+.desktop_single_team .team_next_employee_wrapper {
+  margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 42px;
+    left: 165px;
+}
+
+.desktop_single_team_next_employee_wrapper {
+  right: 75px;
+}
+
 
 /*========= SINGLE TEAM start =========*/
 
@@ -3182,6 +3223,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     justify-content: center;
   }
 
+  .orange_filter {
+    height: 160px;
+    width: 160px;
+  }
+
   .case_down {
     margin-top: 25px;
     margin-left: auto;
@@ -3294,6 +3340,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .contact_form {
     margin-top: 0px;
+  }
+
+  .single_team_info {
+    margin-top: 0px;
+    margin-left: 10%;
   }
 }
 
