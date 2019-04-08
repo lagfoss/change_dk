@@ -226,18 +226,7 @@
            });
 
            /* Logo transition script */
-           $(document).scroll(function() {
-             if (matchMedia('only screen and (max-width: 768px)').matches)
-             scroll_pos = $(this).scrollTop();
-                           if(scroll_pos > 80) {
 
-           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
-           } else {
-
-           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
-           }
-
-           });
            $(document).scroll(function() {
              scroll_pos = $(this).scrollTop();
                            if(scroll_pos > 80) {
@@ -281,6 +270,18 @@
            $(".owl-carousel").owlCarousel();
            });
 
+           $(document).scroll(function() {
+             if (matchMedia('only screen and (max-width: 768px)').matches)
+             scroll_pos = $(this).scrollTop();
+                           if(scroll_pos > 80) {
+
+           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+           } else {
+
+           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+           }
+
+           });
         </script>
       </div>
     </nav>
