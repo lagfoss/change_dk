@@ -23,12 +23,18 @@ Template Post Type: team
           <?php if( have_rows('team_single_some') ): ?>
           <?php while( have_rows('team_single_some') ): the_row();
           $image = get_sub_field('team_single_some_img');
-          $link = get_sub_field('team_single_some_link');?>
+          $link = get_sub_field('team_single_some_link');
+          $name = get_sub_field('team_single_some_name');
+
+          ?>
 
             <?php if( $link ): ?>
               <a href="<?php echo $link; ?>">
               <?php endif; ?>
-                <img class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?></a>
+              <div class="single_team_some_wrapper">
+                 <img href="<?php echo $link; ?>" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
+                <p class="single_team_some_text"><?php echo $name; ?> </p> </a>
+              </div>
               <?php endif; ?>
 
             <?php endwhile; ?>
