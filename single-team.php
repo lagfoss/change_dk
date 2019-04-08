@@ -43,8 +43,8 @@ Template Post Type: team
         </div>
       </div>
 
-      <div class="col-md-7 team_single_right">
-        <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
+      <div class="col-md-7 team_single_right" style="background: url(<?php the_field('team_single_img') ?> ) no-repeat;;" alt="">
+
       </div>
 
       <div class="col-md-2 desktop_single_team_next_employee_wrapper">
