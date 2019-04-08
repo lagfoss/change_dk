@@ -171,16 +171,6 @@
           $(this).toggleClass('close','menubtn');
           });
 
-          $(window).scroll(function() {
-          	var windowHeight = $(window).height();
-          	var scroll = $(window).scrollTop();
-          	if (scroll >= windowHeight - 420) {
-          $(".header").addClass("out_white");
-              } else {
-                  $(".header").removeClass("out_white");
-              }
-          });
-
           /*//Search animation
           function expand() {
             $(".search").toggleClass("searchclose", "pseudo_searchclose");
