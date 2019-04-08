@@ -169,7 +169,7 @@ Template Post Type: team
 
   <div class="mobile">
     <div class="row">
-      <div class="col-md-6 team_single_right">
+      <div class="col-md-6 ">
         <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
       </div>
       <div class="col-md-6 wrapper_single_team team_single_left">
