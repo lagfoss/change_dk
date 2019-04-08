@@ -1835,7 +1835,7 @@ height: 100vh;
 
 .mobile .flex_wrapper_team {
   width: 160px;
-  margin: auto;
+  margin-left: 10%;
 }
 
 .monile .orange_filter {
