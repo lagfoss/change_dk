@@ -2124,7 +2124,7 @@ width: 100%;
 /*========= CASES hero start =========*/
 
 .case_client, .case_text, .strategi, .logo_design,
-.font_design, .color_design, .design_ex, .rekru_wrapper, .brand, .case_results {
+.font_design, .color_design, .design_ex, .rekru_wrapper, .case_results {
   margin: 70px auto;
 }
 
@@ -2386,6 +2386,10 @@ img.thumbnail {
 
 /*========= CASES rekrutering slut =========*/
 /*========= CASES branding start =========*/
+.brand {
+  margin: 70px auto 0 auto;
+}
+
 .brand_content {
   max-width: 430px;
   margin-right: 165px
