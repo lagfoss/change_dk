@@ -1681,8 +1681,7 @@ img.omchange_client_logo_neg {
 }
 
 .tablet .single_team_image {
-height: 100%;
-width: 100%;
+height: 100vh;
 }
 
 .mobile .single_team_image {
