@@ -19,7 +19,7 @@
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/owl.carousel.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/javascript.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALj8kKpc9WhnsSUFEkYvnz96sMKG5hvUw"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7fTv32UljF99OfR5Wl_DQVfluX-NZX2s"></script>
 
   <?php wp_head(); ?>
 
@@ -233,6 +233,62 @@
                  search.addClass('pseudo_searchclose');
                }
              }).slideDown(10); */
+           });
+
+           /* Logo transition script */
+           $(document).scroll(function() {
+             if (matchMedia('only screen and (max-width: 768px)').matches)
+             scroll_pos = $(this).scrollTop();
+                           if(scroll_pos > 80) {
+
+           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+           } else {
+
+           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+           }
+
+           });
+           $(document).scroll(function() {
+             scroll_pos = $(this).scrollTop();
+                           if(scroll_pos > 80) {
+
+           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg'>");
+           } else {
+
+           	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
+           }
+
+           });
+
+           $(document).scroll(function() {
+             scroll_pos = $(this).scrollTop();
+                           if(scroll_pos > 80) {
+           $(".input").addClass("out_black2");
+               } else {
+                   $(".input").removeClass("out_black2");
+               }
+           });
+
+           $(document).scroll(function() {
+             scroll_pos = $(this).scrollTop();
+                           if(scroll_pos > 80) {
+           $(".menubtn").addClass("menu_black");
+               } else {
+                   $(".menubtn").removeClass("menu_black");
+               }
+           });
+
+           $(document).scroll(function() {
+             scroll_pos = $(this).scrollTop();
+                           if(scroll_pos > 80) {
+           $(".header").addClass("out_white");
+               } else {
+                   $(".header").removeClass("out_white");
+               }
+           });
+
+           $(document).ready(function(){
+           $(".owl-carousel").owlCarousel();
            });
 
         </script>
