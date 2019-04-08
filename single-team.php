@@ -43,8 +43,7 @@ Template Post Type: team
         </div>
       </div>
 
-      <div class="col-md-7 team_single_right">
-        <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
+      <div class="col-md-7 team_single_right" style="background: url(<?php the_field('team_single_img') ?> ) no-repeat;;" alt="">
       </div>
 
       <div class="col-md-2 desktop_single_team_next_employee_wrapper">
@@ -95,7 +94,7 @@ Template Post Type: team
 
 <div class="wrapper_single_team tablet">
   <div class="row">
-    <div class="col-md-4 team_single_left">
+    <div class="col-md-12 team_single_left">
       <div class="single_team_info">
         <h1 class="single_team_name"><?php the_field('team_single_name') ?></h1>
         <p class="single_team_title"><?php the_field('team_single_title') ?></p>
@@ -155,9 +154,8 @@ Template Post Type: team
 
       </div>
     </div>
-
-    <div class="col-md-8 team_single_right">
-      <img class="single_team_image" src="<?php the_field('team_single_img') ?>" alt="">
+</div>
+    <div class="col-md-8 team_single_right" style="background: url(<?php the_field('team_single_img') ?> ) no-repeat;;" alt="">
     </div>
 
 
