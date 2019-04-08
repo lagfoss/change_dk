@@ -16,34 +16,51 @@
   </div>
 </div>
 
-
   <div class="container-fluid">
-    <div class="row komme_uden_om_det">
-      <h2 class="services_main_content_overskrift"> <?php the_field('services_main_content_overskrift') ?> </h2>
-      <p class="services_main_content_text"> <?php the_field('services_main_content_text') ?> </p>
-      <div class="stroke_position">
-        <div class="stroke"></div>
-      </div>
-  	</div>
-  </div>
+    <div class="row">
+        <?php if( have_rows('services_content') ): ?>
 
-  <div class="container-fluid wrapper">
-    <div class="row justify-content-center buttons_wrapper">
-        <?php if( have_rows('services_buttons') ): ?>
+          <?php while( have_rows('services_content') ): the_row();
 
-          <?php while( have_rows('services_buttons') ): the_row();
-            $image = get_sub_field('services_img');
-            $header = get_sub_field('services_header');
-            $text = get_sub_field('services_text');
-            ?>
-            <div class="wcwd_hover col-sm-4 wcwd_content">
-                <img alt="services billeder" class="wcwd_img" src="<?php echo $image; ?>"/>
-                <h3 class="scroll_header"><?php echo $header; ?></h3>
-                <p class="scroll_text"><?php echo $text; ?></p>
-            </div>
-          <?php endwhile; ?>
+              // check if the flexible content field has rows of data
+              if( have_rows('flexible_services') ):
 
-        <?php endif; ?>
+                 // loop through the rows of data
+                while ( have_rows('flexible_services') ) : the_row();
+
+                if( get_row_layout() == 'text_content' ):
+                    $title = get_sub_field('title');
+                    $text = get_sub_field('text');
+
+                elseif( get_row_layout() == 'popup_1column' ):
+                    if( have_rows('1_column') ):
+                    while ( have_rows('1_column') ) : the_row();
+                      $popup1col = get_sub_field('popup_title1');
+                    endwhile;
+                    endif;
+
+                elseif( get_row_layout() == 'popup_2column' ):
+                    $popup2col = get_sub_field('popup_title2');
+
+                elseif( get_row_layout() == 'image_wrapper' ):
+                    $imgwrap = get_sub_field('img_w_wrapper');
+
+                elseif( get_row_layout() == 'image_no_wrap' ):
+                    $imgnowrap = get_sub_field('img_no_wrapper'); ?>
+
+                  <?php endif;
+                                        endwhile;
+                                    else :
+                                        // no layouts found
+                                    endif; ?>
+                            <?php endwhile; ?>
+                    <?php endif; //if( get_sub_field('files') ): ?>
+
+                      <div class="hvorerdu">
+                        <h2> <?php echo $title; ?></h2>
+                      <p><?php echo $text; ?></p>
+                      <p><?php echo $popup1col; ?></p>
+                      </div>
 
     </div>
   </div>
