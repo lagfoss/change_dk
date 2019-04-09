@@ -1922,10 +1922,12 @@ img.omchange_client_logo_neg {
 
 .services:nth-of-type(even) .img_w_wrapper {
   order: 2;
+  border-top-left-radius: 30px;
 }
 
 .services:nth-of-type(odd) .img_w_wrapper {
   order: 1;
+  border-top-right-radius: 30px;
 }
 
 .services:nth-of-type(even) .services_content {
