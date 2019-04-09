@@ -17,8 +17,8 @@ Template Post Type: team
           <h1 class="single_team_name"><?php the_field('team_single_name') ?></h1>
           <p class="single_team_title"><?php the_field('team_single_title') ?></p>
           <p class="single_team_text"><?php the_field('team_single_text') ?></p>
-          <a href="tel:<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
-          <a href="mailto:<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
+          <a href="tel:<?php the_field('team_single_phone') ?>" target="_blank" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
+          <a href="mailto:<?php the_field('team_single_mail') ?>" target="_blank" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
 
           <?php if( have_rows('team_single_some') ): ?>
           <?php while( have_rows('team_single_some') ): the_row();
@@ -29,10 +29,10 @@ Template Post Type: team
           ?>
 
             <?php if( $link ): ?>
-              <a href="<?php echo $link; ?>">
+              <a href="<?php echo $link; ?>" target="_blank">
               <?php endif; ?>
               <div class="single_team_some_wrapper">
-                 <img href="<?php echo $link; ?>" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
+                 <img href="<?php echo $link; ?>" target="_blank" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
                 <p class="single_team_some_text"><?php echo $name; ?> </p> </a>
               </div>
               <?php endif; ?>
@@ -99,8 +99,8 @@ Template Post Type: team
         <h1 class="single_team_name"><?php the_field('team_single_name') ?></h1>
         <p class="single_team_title"><?php the_field('team_single_title') ?></p>
         <p class="single_team_text"><?php the_field('team_single_text') ?></p>
-        <a href="tel:<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
-        <a href="mailto:<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
+        <a href="tel:<?php the_field('team_single_phone') ?>" target="_blank" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
+        <a href="mailto:<?php the_field('team_single_mail') ?>" target="_blank" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
 
         <?php if( have_rows('team_single_some') ): ?>
         <?php while( have_rows('team_single_some') ): the_row();
@@ -109,10 +109,10 @@ Template Post Type: team
         $name = get_sub_field('team_single_some_name');?>
 
         <?php if( $link ): ?>
-          <a href="<?php echo $link; ?>">
+          <a href="<?php echo $link; ?>" target="_blank">
           <?php endif; ?>
           <div class="single_team_some_wrapper">
-             <img href="<?php echo $link; ?>" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
+             <img href="<?php echo $link; ?>" target="_blank" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
             <p class="single_team_some_text"><?php echo $name; ?> </p> </a>
           </div>
           <?php endif; ?>
@@ -181,8 +181,8 @@ Template Post Type: team
           <h1 class="single_team_name"><?php the_field('team_single_name') ?></h1>
           <p class="single_team_title"><?php the_field('team_single_title') ?></p>
           <p class="single_team_text"><?php the_field('team_single_text') ?></p>
-          <a href="tel:<?php the_field('team_single_phone') ?>" class="single_team_phone"><?php the_field('team_single_phone') ?></a>
-          <a href="mailto:<?php the_field('team_single_mail') ?>" class="single_team_mail"><?php the_field('team_single_mail') ?></a>
+          <a href="tel:<?php the_field('team_single_phone') ?>" class="single_team_phone" target="_blank"><?php the_field('team_single_phone') ?></a>
+          <a href="mailto:<?php the_field('team_single_mail') ?>" class="single_team_mail" target="_blank"><?php the_field('team_single_mail') ?></a>
 
           <?php if( have_rows('team_single_some') ): ?>
           <?php while( have_rows('team_single_some') ): the_row();
@@ -190,10 +190,10 @@ Template Post Type: team
           $link = get_sub_field('team_single_some_link');
           $name = get_sub_field('team_single_some_name');?>
           <?php if( $link ): ?>
-            <a href="<?php echo $link; ?>">
+            <a href="<?php echo $link; ?>" target="_blank">
             <?php endif; ?>
             <div class="single_team_some_wrapper">
-               <img href="<?php echo $link; ?>" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
+               <img href="<?php echo $link; ?>" target="_blank" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
               <p class="single_team_some_text"><?php echo $name; ?> </p> </a>
             </div>
             <?php endif; ?>
