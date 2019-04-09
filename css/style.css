@@ -1875,7 +1875,7 @@ img.omchange_client_logo_neg {
 /*========= NY SERVICES start =========*/
 .services {
   width: 100%;
-  margin: 120px auto;
+  padding: 120px;
 }
 
 .services_content {
