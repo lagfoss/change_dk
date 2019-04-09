@@ -31,7 +31,7 @@
                   $title = get_sub_field('title');
                   $text = get_sub_field('text');
               elseif( get_row_layout() == 'popup_1column' ): ?>
-
+<!-- Text with 1 column -->
       <div class="services_content">
                   <h2> <?php echo $title; ?></h2>
                   <p><?php echo $text; ?></p>
@@ -44,7 +44,7 @@
         <?php endwhile;
               endif; ?>
       </div>
-
+<!-- Text with 2 columns -->
     <?php  elseif( get_row_layout() == 'popup_2column' ): ?>
       <div class="services_content">
                   <h2> <?php echo $title; ?></h2>
@@ -57,10 +57,11 @@
             <?php endwhile;
             endif; ?>
 </div>
+<!-- Image with wrapper -->
         <?php elseif( get_row_layout() == 'image_wrapper' ):
                 $imgwrap = get_sub_field('img_w_wrapper'); ?>
                 <img class="img_w_wrapper" src="<?php echo $imgwrap; ?>" />
-
+<!-- Image with no wrapper -->
         <?php elseif( get_row_layout() == 'image_no_wrap' ):
                 $imgnowrap = get_sub_field('img_no_wrapper'); ?>
                 <img class="" src="<?php echo $imgnowrap; ?>" />
