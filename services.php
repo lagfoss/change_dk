@@ -20,38 +20,36 @@
       <?php while( have_rows('services_content') ): the_row(); ?>
 
     <div class="row services">
-      <div class="pink_square_services"></div>
 
       <?php // check if the flexible content field has rows of data
             if( have_rows('flexible_services') ):
- 
+
               // loop through the rows of data
               while ( have_rows('flexible_services') ) : the_row();
 
               if( get_row_layout() == 'text_content' ):
                   $title = get_sub_field('title');
-                  $text = get_sub_field('text'); ?>
+                  $text = get_sub_field('text');
+              elseif( get_row_layout() == 'popup_1column' ): ?>
 
       <div class="services_content">
-
                   <h2> <?php echo $title; ?></h2>
                   <p><?php echo $text; ?></p>
-                  </div>
-          <?php elseif( get_row_layout() == 'popup_1column' ):
-                if( have_rows('1_column') ):
-                while ( have_rows('1_column') ) : the_row();
-                  $popup1col = get_sub_field('popup_title1'); ?>
-                  <a href="#" class="col_one_content">- <?php echo $popup1col; ?></a>
 
-              <?php endwhile;
-                endif; ?>
+                  <?php if( have_rows('1_column') ):
+                      while ( have_rows('1_column') ) : the_row();
+                        $popup1col = get_sub_field('popup_title1'); ?>
+                        <a href="#" class="col_one_content">- <?php echo $popup1col; ?></a>
 
+        <?php endwhile;
+              endif; ?>
+      </div>
 
           <?php  elseif( get_row_layout() == 'popup_2column' ):
               if( have_rows('2_column') ):
               while ( have_rows('2_column') ) : the_row();
-                $popup1col = get_sub_field('popup_title2'); ?>
-                <a href="#" class="col_one_content">- <?php echo $popup1col; ?></a>
+                $popup2col = get_sub_field('popup_title2'); ?>
+                <a href="#" class="col_one_content">- <?php echo $popup2col; ?></a>
 
             <?php endwhile;
             endif; ?>
