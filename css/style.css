@@ -1570,7 +1570,6 @@ img.omchange_client_logo_neg {
   margin: 4px;
 }
 
-
 .team_img_text {
   color: white;
   position: absolute;
@@ -1884,9 +1883,25 @@ img.omchange_client_logo_neg {
 
 .img_w_wrapper {
   width: 465px;
-   height: 580px;
-   box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
-   border-radius: 10px;
+  height: 580px;
+  box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.img_w_wrapper:nth-of-type(odd) {
+  float: left;
+}
+
+.img_w_wrapper:nth-of-type(even) {
+  float: right;
+}
+
+.services_content:nth-of-type(odd) {
+  float: right;
+}
+
+.services_content:nth-of-type(even) {
+  float: left;
 }
 
 /*========= NY SERVICES slut =========*/
