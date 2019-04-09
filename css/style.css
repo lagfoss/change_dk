@@ -1909,19 +1909,19 @@ img.omchange_client_logo_neg {
 }
 
 .services:nth-of-type(even) .img_w_wrapper {
-  float: left;
+  order: 1;
 }
 
 .services:nth-of-type(odd) .img_w_wrapper {
-  float: right;
+  order: 2;
 }
 
 .services:nth-of-type(even) .services_content {
-  float: right;
+  order: 2;
 }
 
 .services:nth-of-type(odd) .services_content {
-  float: left;
+  order: 1;
 }
 
 /*========= NY SERVICES slut =========*/

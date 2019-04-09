@@ -36,15 +36,16 @@
 
                   <h2> <?php echo $title; ?></h2>
                   <p><?php echo $text; ?></p>
-
+                  </div>
           <?php elseif( get_row_layout() == 'popup_1column' ):
                 if( have_rows('1_column') ):
                 while ( have_rows('1_column') ) : the_row();
                   $popup1col = get_sub_field('popup_title1'); ?>
                   <a href="#" class="col_one_content">- <?php echo $popup1col; ?></a>
+
               <?php endwhile;
                 endif; ?>
-      </div>
+
 
           <?php  elseif( get_row_layout() == 'popup_2column' ):
               if( have_rows('2_column') ):
@@ -72,7 +73,7 @@
     </div>
 
                 <?php endwhile; ?>
-          <?php endif; //if( get_sub_field('files') ): ?>
+          <?php endif; ?>
   </div>
 
   <!-- Slider med firma logoer (klienter?) -->
