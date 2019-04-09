@@ -3,108 +3,93 @@
 <?php get_header(); ?>
 
   <div class="hero background_img_services" style="background-image:url(<?php the_field('background_img_services'); ?>);">
-  <div class="container-fluid wrapper">
-    <div class="row">
-  		<div class="hero_services">
-        <div class="stroke_position_services">
-          <div class="stroke_services"></div>
+    <div class="container-fluid wrapper">
+      <div class="row">
+  		  <div class="hero_services">
+          <div class="stroke_position_services">
+            <div class="stroke_services"></div>
+          </div>
+          <h1><?php the_field('h1_hero_services'); ?></h1>
         </div>
-        <h1><?php the_field('h1_hero_services'); ?></h1>
-      </div>
-  	</div>
-
+  	  </div>
+    </div>
   </div>
-</div>
 
   <div class="container-fluid">
-        <?php if( have_rows('services_content') ): ?>
+      <?php if( have_rows('services_content') ): ?>
+      <?php while( have_rows('services_content') ): the_row(); ?>
 
-          <?php while( have_rows('services_content') ): the_row();
-          ?>
-            <div class="row hvorerdu">
+    <div class="row services">
 
+      <?php // check if the flexible content field has rows of data
+            if( have_rows('flexible_services') ):
 
+              // loop through the rows of data
+              while ( have_rows('flexible_services') ) : the_row();
 
+              if( get_row_layout() == 'text_content' ):
+                  $title = get_sub_field('title');
+                  $text = get_sub_field('text'); ?>
 
-            <?php
+      <div class="services_content">
 
-              // check if the flexible content field has rows of data
-              if( have_rows('flexible_services') ):
-
-                 // loop through the rows of data
-                while ( have_rows('flexible_services') ) : the_row();
-
-
-
-                if( get_row_layout() == 'text_content' ):
-                    $title = get_sub_field('title');
-                    $text = get_sub_field('text'); ?>
-                    <h2> <?php echo $title; ?></h2>
+                  <h2> <?php echo $title; ?></h2>
                   <p><?php echo $text; ?></p>
-            <?php
-                elseif( get_row_layout() == 'popup_1column' ):
-                    if( have_rows('1_column') ):
-                    while ( have_rows('1_column') ) : the_row();
-                      $popup1col = get_sub_field('popup_title1'); ?>
-                    <p><?php echo $popup1col; ?></p>
-                  <?php endwhile;
-                    endif;
 
-                elseif( get_row_layout() == 'popup_2column' ):
-                    if( have_rows('2_column') ):
-                    while ( have_rows('2_column') ) : the_row();
-                      $popup1col = get_sub_field('popup_title2'); ?>
-                    <p><?php echo $popup1col; ?></p>
-
-                  <?php endwhile;
+          <?php elseif( get_row_layout() == 'popup_1column' ):
+                if( have_rows('1_column') ):
+                while ( have_rows('1_column') ) : the_row();
+                  $popup1col = get_sub_field('popup_title1'); ?>
+                  <p><?php echo $popup1col; ?></p>
+              <?php endwhile;
                 endif; ?>
+      </div>
 
+          <?php  elseif( get_row_layout() == 'popup_2column' ):
+              if( have_rows('2_column') ):
+              while ( have_rows('2_column') ) : the_row();
+                $popup1col = get_sub_field('popup_title2'); ?>
+                <p><?php echo $popup1col; ?></p>
 
+            <?php endwhile;
+            endif; ?>
 
+        <?php elseif( get_row_layout() == 'image_wrapper' ):
+                $imgwrap = get_sub_field('img_w_wrapper'); ?>
+                <img class="img_w_wrapper" src="<?php echo $imgwrap; ?>" />
 
-                <?php
-                elseif( get_row_layout() == 'image_wrapper' ):
-                    $imgwrap = get_sub_field('img_w_wrapper'); ?>
-                    <img class="img_w_wrapper" src="<?php echo $imgwrap; ?>" />
+        <?php elseif( get_row_layout() == 'image_no_wrap' ):
+                $imgnowrap = get_sub_field('img_no_wrapper'); ?>
+                <img class="" src="<?php echo $imgnowrap; ?>" />
 
-            <?php
-                elseif( get_row_layout() == 'image_no_wrap' ):
-                    $imgnowrap = get_sub_field('img_no_wrapper'); ?>
+              <?php endif;
+            endwhile; ?>
 
-                    <img class="" src="<?php echo $imgnowrap; ?>" />
+          <?php else :
+            // no layouts found
+                endif; ?>
+    </div>
 
-
-                  <?php endif;
-                endwhile; ?>
-
-                <?php
-                                    else :
-                                        // no layouts found
-                                    endif; ?>
-
-</div>
-                            <?php endwhile; ?>
-
-                    <?php endif; //if( get_sub_field('files') ): ?>
-
+                <?php endwhile; ?>
+          <?php endif; //if( get_sub_field('files') ): ?>
   </div>
 
   <!-- Slider med firma logoer (klienter?) -->
-    <div class="container-fluid">
-      <div class="row logo_slider">
-        <div class="col align-self-center">
-          <div class="owl-carousel owl-theme autoplay">
-            <?php
-            $images = get_field('firma_slider', 'option');
-            foreach ($images as $image):?>
-              <div>
-                <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                </div>
-              <?php endforeach;?>
+  <div class="container-fluid">
+    <div class="row logo_slider">
+      <div class="col align-self-center">
+        <div class="owl-carousel owl-theme autoplay">
+          <?php
+          $images = get_field('firma_slider', 'option');
+          foreach ($images as $image):?>
+          <div>
+            <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
           </div>
+          <?php endforeach;?>
         </div>
       </div>
     </div>
+  </div>
 
 <?php get_footer(services); ?>
 

@@ -1874,15 +1874,19 @@ img.omchange_client_logo_neg {
 /*========= SINGLE TEAM start =========*/
 
 /*========= NY SERVICES start =========*/
+.services {
+  width: 100%;
+}
+
+.services_content {
+    width: 30%;
+}
+
 .img_w_wrapper {
   width: 465px;
    height: 580px;
    box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
    border-radius: 10px;
-}
-
-.hvorerdu {
-
 }
 
 /*========= NY SERVICES slut =========*/
