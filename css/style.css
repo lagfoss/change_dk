@@ -1906,7 +1906,12 @@ img.omchange_client_logo_neg {
 
 .col_one_content {
   display: block;
-  line-height: 2.31rem;
+  line-height: 2.30;
+}
+
+.col_one_content {
+  color: #999999;
+  text-decoration: underline;
 }
 
 .col_one_content:hover {
@@ -1914,8 +1919,7 @@ img.omchange_client_logo_neg {
 }
 
 .img_w_wrapper {
-  width: 465px;
-  height: 580px;
+  max-width: 460px;
   box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
