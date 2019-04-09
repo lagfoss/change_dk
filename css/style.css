@@ -306,6 +306,10 @@ nav {
   opacity: 1;
 }
 
+.close::before, .close::after {
+  background-color: #111517 !important;
+}
+
 .close:not(:disabled):not(.disabled):hover {
   opacity: 1;
 }
@@ -3390,7 +3394,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .header_contact .menu_black:before, .header_contact .menu_black span, .header_contact .menu_black:after {
-    background-color: #111517;
+    background-color: #111517 ;
   }
 
   .contact {
