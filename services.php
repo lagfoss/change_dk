@@ -62,13 +62,21 @@
                             <?php endwhile; ?>
                     <?php endif; //if( get_sub_field('files') ): ?>
 
-                      <div class="hvorerdu">
-                        <h2> <?php echo $title; ?></h2>
-                      <p><?php echo $text; ?></p>
-                      <img class="" src="<?php echo $imgwrap; ?>" />
-                      <img class="" src="<?php echo $imgnowrap; ?>" />
-                      </div>
 
+
+
+                      <div class="hvorerdu">
+                        <div class="col-md-6">
+                          <div class="img_w_wrapper">
+                                <img class="" src="<?php echo $imgwrap; ?>" />
+                          </div>
+                    <img class="" src="<?php echo $imgnowrap; ?>" />
+                    </div>
+                          <div class="col-md-6">
+                        <h2> <?php echo $title; ?></h2>
+                        <p><?php echo $text; ?></p>
+                        </div>
+                      </div>
     </div>
   </div>
 
