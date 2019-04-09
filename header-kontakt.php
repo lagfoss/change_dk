@@ -281,6 +281,16 @@
            	$(".logo").html("<img src='<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg'>");
            }
 
+           $(document).scroll(function() {
+             scroll_pos = $(this).scrollTop();
+                           if(scroll_pos > 0) {
+           $(".close span").addClass("menu_black");
+               } else {
+                   $(".close span").removeClass("menu_black");
+               }
+           });
+
+
            });
         </script>
       </div>

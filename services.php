@@ -27,7 +27,7 @@
 
               // loop through the rows of data
               while ( have_rows('flexible_services') ) : the_row();
-
+ 
               if( get_row_layout() == 'text_content' ):
                   $title = get_sub_field('title');
                   $text = get_sub_field('text');
