@@ -15,11 +15,12 @@
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid wrapper">
       <?php if( have_rows('services_content') ): ?>
       <?php while( have_rows('services_content') ): the_row(); ?>
 
     <div class="row services">
+      <div class="pink_square_services"></div>
 
       <?php // check if the flexible content field has rows of data
             if( have_rows('flexible_services') ):
