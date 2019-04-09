@@ -1899,19 +1899,19 @@ img.omchange_client_logo_neg {
   border-radius: 10px;
 }
 
-.img_w_wrapper:nth-of-type(odd) {
+.services:nth-of-type(even) .img_w_wrapper {
   float: left;
 }
 
-.img_w_wrapper:nth-of-type(even) {
+.services:nth-of-type(odd) .img_w_wrapper {
   float: right;
 }
 
-.services_content:nth-of-type(odd) {
+.services:nth-of-type(even) .services_content {
   float: right;
 }
 
-.services_content:nth-of-type(even) {
+.services:nth-of-type(odd) .services_content {
   float: left;
 }
 
