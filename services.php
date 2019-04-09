@@ -30,7 +30,8 @@
               if( get_row_layout() == 'text_content' ):
                   $title = get_sub_field('title');
                   $text = get_sub_field('text');
-              elseif( get_row_layout() == 'popup_1column' ): ?>
+              elseif( get_row_layout() == 'popup_1column' ):
+              elseif( get_row_layout() == 'popup_2column' ):?>
 
       <div class="services_content">
                   <h2> <?php echo $title; ?></h2>
@@ -43,16 +44,15 @@
 
         <?php endwhile;
               endif; ?>
-      </div>
 
-          <?php  elseif( get_row_layout() == 'popup_2column' ):
-              if( have_rows('2_column') ):
+          <?php if( have_rows('2_column') ):
               while ( have_rows('2_column') ) : the_row();
                 $popup2col = get_sub_field('popup_title2'); ?>
                 <a href="#" class="col_one_content">- <?php echo $popup2col; ?></a>
 
             <?php endwhile;
             endif; ?>
+          </div>
 
         <?php elseif( get_row_layout() == 'image_wrapper' ):
                 $imgwrap = get_sub_field('img_w_wrapper'); ?>
