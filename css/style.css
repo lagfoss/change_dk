@@ -1875,10 +1875,21 @@ img.omchange_client_logo_neg {
 /*========= NY SERVICES start =========*/
 .services {
   width: 100%;
+  margin: 120px auto;
 }
 
 .services_content {
-    width: 30%;
+    width: 40%;
+    margin: auto;
+}
+
+.col_one_content {
+  display: block;
+  line-height: 2.31rem;
+}
+
+.col_one_content:hover {
+  color: #e54c00;
 }
 
 .img_w_wrapper {
