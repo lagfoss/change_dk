@@ -35,12 +35,18 @@
                 elseif( get_row_layout() == 'popup_1column' ):
                     if( have_rows('1_column') ):
                     while ( have_rows('1_column') ) : the_row();
-                      $popup1col = get_sub_field('popup_title1');
-                    endwhile;
+                      $popup1col = get_sub_field('popup_title1'); ?>
+                    <p><?php echo $popup1col; ?></p>
+                  <?php endwhile;
                     endif;
 
                 elseif( get_row_layout() == 'popup_2column' ):
-                    $popup2col = get_sub_field('popup_title2');
+                    if( have_rows('2_column') ):
+                    while ( have_rows('2_column') ) : the_row();
+                      $popup1col = get_sub_field('popup_title2'); ?>
+                    <p><?php echo $popup1col; ?></p>
+                  <?php endwhile;
+                    endif;
 
                 elseif( get_row_layout() == 'image_wrapper' ):
                     $imgwrap = get_sub_field('img_w_wrapper');
@@ -59,7 +65,8 @@
                       <div class="hvorerdu">
                         <h2> <?php echo $title; ?></h2>
                       <p><?php echo $text; ?></p>
-                      <p><?php echo $popup1col; ?></p>
+                      <img class="" src="<?php echo $imgwrap; ?>" />
+                      <img class="" src="<?php echo $imgnowrap; ?>" />
                       </div>
 
     </div>
