@@ -1876,17 +1876,29 @@ img.omchange_client_logo_neg {
 /*========= NY SERVICES start =========*/
 .services {
   width: 100%;
+  margin: 120px auto;
 }
 
 .services_content {
-    width: 30%;
+    width: 40%;
+    margin: auto;
+}
+
+.col_one_content {
+  display: block;
+  line-height: 2.31rem;
+}
+
+.col_one_content:hover {
+  color: #e54c00;
 }
 
 .img_w_wrapper {
   width: 465px;
-   height: 580px;
-   box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
-   border-radius: 10px;
+  height: 580px;
+  margin: auto;
+  box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
 /*========= NY SERVICES slut =========*/

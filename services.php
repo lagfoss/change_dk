@@ -40,7 +40,7 @@
                 if( have_rows('1_column') ):
                 while ( have_rows('1_column') ) : the_row();
                   $popup1col = get_sub_field('popup_title1'); ?>
-                  <p><?php echo $popup1col; ?></p>
+                  <a href="#" class="col_one_content">- <?php echo $popup1col; ?></a>
               <?php endwhile;
                 endif; ?>
       </div>
