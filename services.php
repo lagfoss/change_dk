@@ -21,6 +21,9 @@
         <?php if( have_rows('services_content') ): ?>
 
           <?php while( have_rows('services_content') ): the_row();
+          ?>
+            <div class="hvorerdu">
+            <?php
 
               // check if the flexible content field has rows of data
               if( have_rows('flexible_services') ):
@@ -28,10 +31,14 @@
                  // loop through the rows of data
                 while ( have_rows('flexible_services') ) : the_row();
 
+
+
                 if( get_row_layout() == 'text_content' ):
                     $title = get_sub_field('title');
-                    $text = get_sub_field('text');
-
+                    $text = get_sub_field('text'); ?>
+                    <h2> <?php echo $title; ?></h2>
+                  <p><?php echo $text; ?></p>
+            <?php
                 elseif( get_row_layout() == 'popup_1column' ):
                     if( have_rows('1_column') ):
                     while ( have_rows('1_column') ) : the_row();
@@ -49,25 +56,26 @@
                     endif;
 
                 elseif( get_row_layout() == 'image_wrapper' ):
-                    $imgwrap = get_sub_field('img_w_wrapper');
+                    $imgwrap = get_sub_field('img_w_wrapper'); ?>
+                    <img class="" src="<?php echo $imgwrap; ?>" />
 
+            <?php
                 elseif( get_row_layout() == 'image_no_wrap' ):
                     $imgnowrap = get_sub_field('img_no_wrapper'); ?>
+
+                    <img class="" src="<?php echo $imgnowrap; ?>" />
+
 
                   <?php endif;
                                         endwhile;
                                     else :
                                         // no layouts found
                                     endif; ?>
+</div>
                             <?php endwhile; ?>
+
                     <?php endif; //if( get_sub_field('files') ): ?>
 
-                      <div class="hvorerdu">
-                        <h2> <?php echo $title; ?></h2>
-                      <p><?php echo $text; ?></p>
-                      <img class="" src="<?php echo $imgwrap; ?>" />
-                      <img class="" src="<?php echo $imgnowrap; ?>" />
-                      </div>
 
     </div>
   </div>
