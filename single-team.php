@@ -105,7 +105,8 @@ Template Post Type: team
         <?php if( have_rows('team_single_some') ): ?>
         <?php while( have_rows('team_single_some') ): the_row();
         $image = get_sub_field('team_single_some_img');
-        $link = get_sub_field('team_single_some_link');?>
+        $link = get_sub_field('team_single_some_link');
+        $name = get_sub_field('team_single_some_name');?>
 
         <?php if( $link ): ?>
           <a href="<?php echo $link; ?>">
@@ -186,7 +187,8 @@ Template Post Type: team
           <?php if( have_rows('team_single_some') ): ?>
           <?php while( have_rows('team_single_some') ): the_row();
           $image = get_sub_field('team_single_some_img');
-          $link = get_sub_field('team_single_some_link');?>
+          $link = get_sub_field('team_single_some_link');
+          $name = get_sub_field('team_single_some_name');?>
           <?php if( $link ): ?>
             <a href="<?php echo $link; ?>">
             <?php endif; ?>
