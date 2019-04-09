@@ -1878,6 +1878,15 @@ img.omchange_client_logo_neg {
   padding: 120px;
 }
 
+.pink_square_services {
+  height: 400px;
+  width: 80%;
+  position: absolute;
+  background-color: #f0eae8;
+  opacity: 0.5;
+  border-radius: 50px;
+}
+
 .services_content {
     width: 40%;
     margin: auto;

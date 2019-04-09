@@ -20,10 +20,11 @@
       <?php while( have_rows('services_content') ): the_row(); ?>
 
     <div class="row services">
+      <div class="pink_square_services"></div>
 
       <?php // check if the flexible content field has rows of data
             if( have_rows('flexible_services') ):
-
+ 
               // loop through the rows of data
               while ( have_rows('flexible_services') ) : the_row();
 
