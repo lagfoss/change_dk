@@ -17,12 +17,15 @@
 </div>
 
   <div class="container-fluid">
-    <div class="row">
         <?php if( have_rows('services_content') ): ?>
 
           <?php while( have_rows('services_content') ): the_row();
           ?>
-            <div class="hvorerdu">
+            <div class="row hvorerdu">
+
+
+
+
             <?php
 
               // check if the flexible content field has rows of data
@@ -52,12 +55,17 @@
                     while ( have_rows('2_column') ) : the_row();
                       $popup1col = get_sub_field('popup_title2'); ?>
                     <p><?php echo $popup1col; ?></p>
-                  <?php endwhile;
-                    endif;
 
+                  <?php endwhile;
+                endif; ?>
+
+
+
+
+                <?php
                 elseif( get_row_layout() == 'image_wrapper' ):
                     $imgwrap = get_sub_field('img_w_wrapper'); ?>
-                    <img class="" src="<?php echo $imgwrap; ?>" />
+                    <img class="img_w_wrapper" src="<?php echo $imgwrap; ?>" />
 
             <?php
                 elseif( get_row_layout() == 'image_no_wrap' ):
@@ -67,18 +75,18 @@
 
 
                   <?php endif;
-                                        endwhile;
+                endwhile; ?>
+
+                <?php
                                     else :
                                         // no layouts found
                                     endif; ?>
+
 </div>
                             <?php endwhile; ?>
 
                     <?php endif; //if( get_sub_field('files') ): ?>
 
-
-
-    </div>
   </div>
 
   <!-- Slider med firma logoer (klienter?) -->
