@@ -71,7 +71,7 @@
     </div>
 
                 <?php endwhile; ?>
-          <?php endif; //if( get_sub_field('files') ): ?>
+          <?php endif; ?>
   </div>
 
   <!-- Slider med firma logoer (klienter?) -->
