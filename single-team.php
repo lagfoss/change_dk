@@ -107,14 +107,17 @@ Template Post Type: team
         $image = get_sub_field('team_single_some_img');
         $link = get_sub_field('team_single_some_link');?>
 
-          <?php if( $link ): ?>
-            <a href="<?php echo $link; ?>">
-            <?php endif; ?>
-              <img class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?></a>
-            <?php endif; ?>
-
-          <?php endwhile; ?>
+        <?php if( $link ): ?>
+          <a href="<?php echo $link; ?>">
           <?php endif; ?>
+          <div class="single_team_some_wrapper">
+             <img href="<?php echo $link; ?>" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
+            <p class="single_team_some_text"><?php echo $name; ?> </p> </a>
+          </div>
+          <?php endif; ?>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
 
           <div class="flex_wrapper_team team_next_employee">
             <?php $next_post = get_adjacent_post(false, '', false); ?>
@@ -186,9 +189,13 @@ Template Post Type: team
           $link = get_sub_field('team_single_some_link');?>
           <?php if( $link ): ?>
             <a href="<?php echo $link; ?>">
-          <?php endif; ?>
-            <img class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?></a>
-          <?php endif; ?>
+            <?php endif; ?>
+            <div class="single_team_some_wrapper">
+               <img href="<?php echo $link; ?>" class="single_team_some_icon" src="<?php echo $image; ?>" /><?php if( $link ): ?>
+              <p class="single_team_some_text"><?php echo $name; ?> </p> </a>
+            </div>
+            <?php endif; ?>
+
           <?php endwhile; ?>
           <?php endif; ?>
         </div>
