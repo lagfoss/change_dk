@@ -3550,18 +3550,22 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .services:nth-of-type(even) .img_no_wrapper {
     order: 1;
+    position: inherit;
   }
 
   .services:nth-of-type(odd) .img_no_wrapper {
     order: 1;
+    position: inherit;
   }
 
   .services:nth-of-type(even) .services_content {
     order: 2;
+    margin-left: auto;
   }
 
   .services:nth-of-type(odd) .services_content {
     order: 2;
+    margin-right: auto;
   }
 
   .img_no_wrapper {
