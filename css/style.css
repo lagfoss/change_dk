@@ -3567,6 +3567,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin-right: auto;
   }
 
+  .img_no_wrapper {
+    width: auto;
+  }
+
 }
 
 /*========= (620px and down) =========*/
