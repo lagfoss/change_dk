@@ -730,6 +730,22 @@ input {
   overflow: hidden;
 }
 
+.modal_services {
+  position: relative;
+  max-width: 400px;
+  max-height: 300px;
+  min-width: 40%;
+  min-height: 35%;
+  background-color: #f2f2f2;
+  box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.modal_services h2 {
+  margin-top: 40px;
+}
+
 .modal a.close-modal {
   top: 2px;
   right: 2px;
@@ -2364,6 +2380,11 @@ a.col_two_content:hover {
   height: 60vh;
   overflow: hidden;
   background-position: center;
+}
+
+.case_image_banner {
+  width: 100%;
+  margin: 120px 0;
 }
 
 /*========= CASES image slut =========*/

@@ -110,6 +110,12 @@ Template Post Type: cases
 
           <div class="container-fluid client_image" <?php echo $clienti_bg; ?>></div>
 
+
+  <?php elseif( get_row_layout() == 'case_client_banner' ):
+  	$clientimagebanner = get_sub_field('case_image_banner'); ?>
+    <img class="container-fluid case_image_banner" src="<?php echo $clientimagebanner; ?>">
+
+
   <?php elseif( get_row_layout() == 'case_text' ):
 
         	$stroketext = get_sub_field('case_stroke_text');

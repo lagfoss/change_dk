@@ -39,12 +39,19 @@
 
                   <?php if( have_rows('1_column') ):
                       while ( have_rows('1_column') ) : the_row();
-                        $popup1col = get_sub_field('popup_title1'); ?>
-                        <a href="#" class="col_one_content">- <?php echo $popup1col; ?></a>
+                        $popup1col = get_sub_field('popup_title1');
+                        $popup1content = get_sub_field('pop_up_content_1'); ?>
+                        <a href="#modal1" class="open-modal col_one_content" rel="modal:open nofollow">- <?php echo $popup1col; ?></a>
 
         <?php endwhile;
               endif; ?>
       </div>
+
+      <div id="modal1" class="modal_services" style="display:none;">
+        <h2><?php echo $popup1col; ?></h2>
+        <p> <?php echo $popup1content; ?> </p>
+      </div>
+
 <!-- Text with 2 columns -->
     <?php  elseif( get_row_layout() == 'popup_2column' ): ?>
       <div class="services_content">
@@ -52,11 +59,17 @@
                   <p><?php echo $text; ?></p>
               <?php if( have_rows('2_column') ):
               while ( have_rows('2_column') ) : the_row();
-                $popup2col = get_sub_field('popup_title2'); ?>
-                <a href="#" class="col_two_content">- <?php echo $popup2col; ?></a>
+                $popup2col = get_sub_field('popup_title2');
+                $popup2content = get_sub_field('pop_up_content_2'); ?>
+                <a href="#modal2" class="open-modal col_two_content" rel="modal:open nofollow">- <?php echo $popup2col; ?></a>
 
             <?php endwhile;
             endif; ?>
+
+            <div id="modal2" class="modal_services" style="display:none;">
+              <h2><?php echo $popup2col; ?></h2>
+              <p><?php echo $popup2content ?> </p>
+            </div>
 </div>
 <!-- Image with wrapper -->
         <?php elseif( get_row_layout() == 'image_wrapper' ):
@@ -65,7 +78,9 @@
 <!-- Image with no wrapper -->
         <?php elseif( get_row_layout() == 'image_no_wrap' ):
                 $imgnowrap = get_sub_field('img_no_wrapper'); ?>
+
                 <img class="img_no_wrapper" src="<?php echo $imgnowrap; ?>" />
+
 
               <?php endif;
             endwhile; ?>
