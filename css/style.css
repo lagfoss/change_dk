@@ -1932,13 +1932,13 @@ a.col_two_content {
 }
 
 a.col_two_content:hover {
-  color: #e54c00; 
+  color: #e54c00;
   text-decoration: underline;
 }
 
 .img_w_wrapper {
   max-width: 460px;
-  max-height: -webkit-fill-available;
+  max-height: 560px;
   box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
