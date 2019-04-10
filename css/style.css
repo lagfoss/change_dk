@@ -1940,7 +1940,7 @@ a.col_two_content:hover {
 .img_w_wrapper {
   margin-top: auto;
   margin-bottom: auto;
-  max-width: 460px;
+  max-width: 443px;
   max-height: 560px;
   box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -3525,6 +3525,38 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   .stroke_contact_map, .stroke_position_contact {
     display: none;
+  }
+
+  .services {
+    justify-content: center;
+  }
+
+  .services:nth-of-type(even) .img_w_wrapper {
+    order: 1;
+    border-top-left-radius: 30px;
+  }
+
+  .services:nth-of-type(odd) .img_w_wrapper {
+    order: 1;
+    border-top-right-radius: 30px;
+  }
+
+  .services:nth-of-type(even) .img_no_wrapper {
+    order: 1;
+    right: 0;
+  }
+
+  .services:nth-of-type(odd) .img_no_wrapper {
+    order: 1;
+    left: 0;
+  }
+
+  .services:nth-of-type(even) .services_content {
+    order: 2;
+  }
+
+  .services:nth-of-type(odd) .services_content {
+    order: 2;
   }
 
 }
