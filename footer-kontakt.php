@@ -71,6 +71,7 @@ owl.owlCarousel({
   mouseDrag: false,
   dots: false,
   nav: false,
+  loop: false,
   autoplay: true,
   autoplayTimeout: 10000,
   navText: ["<img src='<?php echo get_template_directory_uri() ?>/images/arrow_left.svg'>","<img src='<?php echo get_template_directory_uri() ?>/images/arrow_right.svg'>"],
@@ -79,7 +80,6 @@ owl.owlCarousel({
     993: {
       items: 1,
       autoplay: true,
-      loop: true,
     },
 
     769: {
@@ -90,7 +90,6 @@ owl.owlCarousel({
     320: {
       autoplay: true,
       nav: false,
-      loop: false,
       items: 1,
     },
   }
