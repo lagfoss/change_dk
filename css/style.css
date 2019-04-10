@@ -1922,8 +1922,23 @@ img.omchange_client_logo_neg {
   color: #e54c00;
 }
 
+a.col_two_content {
+  column-count: 2;
+  display: -webkit-inline-box;
+  min-width: 160px;
+  line-height: 2.3;
+  color: #999999;
+  text-decoration: underline;
+}
+
+a.col_two_content:hover {
+  color: #e54c00; 
+  text-decoration: underline;
+}
+
 .img_w_wrapper {
   max-width: 460px;
+  max-height: -webkit-fill-available;
   box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }

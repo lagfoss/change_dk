@@ -27,7 +27,7 @@
 
               // loop through the rows of data
               while ( have_rows('flexible_services') ) : the_row();
- 
+
               if( get_row_layout() == 'text_content' ):
                   $title = get_sub_field('title');
                   $text = get_sub_field('text');
@@ -53,7 +53,7 @@
               <?php if( have_rows('2_column') ):
               while ( have_rows('2_column') ) : the_row();
                 $popup2col = get_sub_field('popup_title2'); ?>
-                <a href="#" class="col_one_content">- <?php echo $popup2col; ?></a>
+                <a href="#" class="col_two_content">- <?php echo $popup2col; ?></a>
 
             <?php endwhile;
             endif; ?>
@@ -65,7 +65,7 @@
 <!-- Image with no wrapper -->
         <?php elseif( get_row_layout() == 'image_no_wrap' ):
                 $imgnowrap = get_sub_field('img_no_wrapper'); ?>
-                <img class="" src="<?php echo $imgnowrap; ?>" />
+                <img class="" src="<?php echo $imgnowrap; ?>" /> 
 
               <?php endif;
             endwhile; ?>
