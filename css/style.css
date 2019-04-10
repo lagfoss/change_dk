@@ -1943,6 +1943,10 @@ a.col_two_content:hover {
   border-radius: 10px;
 }
 
+.img_no_wrapper {
+  width: 50%;
+}
+
 .services:nth-of-type(even) .img_w_wrapper {
   order: 2;
   border-top-left-radius: 30px;
@@ -1951,6 +1955,16 @@ a.col_two_content:hover {
 .services:nth-of-type(odd) .img_w_wrapper {
   order: 1;
   border-top-right-radius: 30px;
+}
+
+.services:nth-of-type(even) .img_no_wrapper {
+  order: 2;
+  right: 0;
+}
+
+.services:nth-of-type(odd) .img_no_wrapper {
+  order: 1;
+  left: 0;
 }
 
 .services:nth-of-type(even) .services_content {
@@ -3421,7 +3435,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .header_contact .menu_black:before, .header_contact .menu_black span, .header_contact .menu_black:after {
-    background-color: #111517 ;
+    background-color: #111517;
   }
 
   .contact {

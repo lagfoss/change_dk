@@ -65,7 +65,7 @@
 <!-- Image with no wrapper -->
         <?php elseif( get_row_layout() == 'image_no_wrap' ):
                 $imgnowrap = get_sub_field('img_no_wrapper'); ?>
-                <img class="" src="<?php echo $imgnowrap; ?>" /> 
+                <img class="img_no_wrapper" src="<?php echo $imgnowrap; ?>" />
 
               <?php endif;
             endwhile; ?>
