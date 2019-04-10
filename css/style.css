@@ -1989,7 +1989,7 @@ a.col_two_content:hover {
   left: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}
+} 
 
 .services:nth-of-type(even) .services_content {
   order: 1;

@@ -36,20 +36,21 @@
       <div class="services_content">
                   <h2> <?php echo $title; ?></h2>
                   <p><?php echo $text; ?></p>
-
+                  <div id="modal1" class="modal_services" style="display:none;">
+                    <h2><?php echo $popup1col; ?></h2>
+                    <p> <?php echo $popup1content; ?> </p>
+                  </div>
                   <?php if( have_rows('1_column') ):
                       while ( have_rows('1_column') ) : the_row();
                         $popup1col = get_sub_field('popup_title1');
                         $popup1content = get_sub_field('pop_up_content_1'); ?>
                         <a href="#modal1" class="open-modal col_one_content" rel="modal:open nofollow">- <?php echo $popup1col; ?></a>
-
         <?php endwhile;
               endif; ?>
-      </div>
-
-      <div id="modal1" class="modal_services" style="display:none;">
-        <h2><?php echo $popup1col; ?></h2>
-        <p> <?php echo $popup1content; ?> </p>
+              <div id="modal1" class="modal_services" style="display:none;">
+                <h2><?php echo $popup1col; ?></h2>
+                <p> <?php echo $popup1content; ?> </p>
+              </div>
       </div>
 
 <!-- Text with 2 columns -->
@@ -62,7 +63,6 @@
                 $popup2col = get_sub_field('popup_title2');
                 $popup2content = get_sub_field('pop_up_content_2'); ?>
                 <a href="#modal2" class="open-modal col_two_content" rel="modal:open nofollow">- <?php echo $popup2col; ?></a>
-
             <?php endwhile;
             endif; ?>
 
@@ -71,6 +71,8 @@
               <p><?php echo $popup2content ?> </p>
             </div>
 </div>
+
+
 <!-- Image with wrapper -->
         <?php elseif( get_row_layout() == 'image_wrapper' ):
                 $imgwrap = get_sub_field('img_w_wrapper'); ?>
@@ -92,6 +94,7 @@
 
                 <?php endwhile; ?>
           <?php endif; ?>
+
   </div>
 
   <!-- Slider med firma logoer (klienter?) -->
