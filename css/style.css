@@ -2860,13 +2860,12 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea
 /*========= CONTACT slut =========*/
 
 /*========= CONTENT KALENDER start =========*/
-.content_calendar_computer {
-  width: 100%;
-  padding-right: 40px;
-}
 
 .content_calendar_preview {
-  width: 200px;
+  width: 90%;
+  border-radius: 10px;
+  margin: 50px 10px 0 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
 }
 
 .content_calendar_stroke {
@@ -3510,8 +3509,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     padding-right: 15px;
   }
 
-  .content_calendar_computer {
-    padding-right: 0px;
+  .content_calendar_preview {
+    margin: 0 5% 0 5%;
   }
 
   .contact_form {
