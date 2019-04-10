@@ -35,7 +35,6 @@
   </div>
 
     <?php
-    $computerimg = get_field('content_calendar_preview_computer_image');
     $calendarimg = get_field('content_calendar_preview_calendar_image');
     $previewheader = get_field('content_calendar_preview_header');
     $previewtext = get_field('content_calendar_preview_text');
@@ -43,8 +42,7 @@
 
   <div class="container-fluid wrapper_content">
     <div class="row">
-      <div class="col-md-6">
-        <img class="content_calendar_computer" src="<?php echo $computerimg; ?>" alt="">
+      <div class="col-md-6 preview_wrapper">
         <img class="content_calendar_preview" src="<?php echo $calendarimg; ?>" alt="">
       </div>
 
