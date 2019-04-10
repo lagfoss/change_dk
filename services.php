@@ -158,12 +158,10 @@ $(".header").addClass("out_white");
 
 ScrollReveal().reveal('.stroke_position_services', { distance: '450px', easing: 'ease-in-out', duration: 900 });
 ScrollReveal().reveal('h1', { distance: '500px', easing: 'ease-in-out', duration: 900 });
-ScrollReveal().reveal('.services_main_content_overskrift', { distance: '450px', easing: 'ease-in-out', duration: 900 });
-ScrollReveal().reveal('.services_main_content_text', { distance: '650px', easing: 'ease-in-out', duration: 900 });
-ScrollReveal().reveal('.stroke', { distance: '550px', easing: 'ease-in-out', duration: 900 });
-ScrollReveal().reveal('.wcwd_img', { distance: '300px', easing: 'ease-in-out', duration: 900 });
-ScrollReveal().reveal('.scroll_header', { distance: '500px', easing: 'ease-in-out', duration: 900 });
-ScrollReveal().reveal('.scroll_text', { distance: '600px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.pink_square_services', { distance: '450px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.services_content', { distance: '650px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.img_w_wrapper', { distance: '550px', easing: 'ease-in-out', duration: 900 });
+ScrollReveal().reveal('.img_no_wrapper', { distance: '550px', easing: 'ease-in-out', duration: 900 });
 ScrollReveal().reveal('.logo_slider', { distance: '450px', easing: 'ease-in-out', duration: 900 });
 
 </script>
