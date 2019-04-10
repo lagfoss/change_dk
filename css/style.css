@@ -3564,6 +3564,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     order: 2;
   }
 
+  .img_no_wrapper {
+    width: auto;
+  }
+
 }
 
 /*========= (620px and down) =========*/
