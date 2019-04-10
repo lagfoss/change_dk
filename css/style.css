@@ -3802,6 +3802,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .services_content {
   min-width: 285px;
+  text-align: left;
 }
 
 .services_content h2 {

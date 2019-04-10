@@ -79,6 +79,7 @@ owl.owlCarousel({
     993: {
       items: 1,
       autoplay: true,
+      loop: true,
     },
 
     769: {
@@ -89,6 +90,7 @@ owl.owlCarousel({
     320: {
       autoplay: true,
       nav: false,
+      loop: false,
       items: 1,
     },
   }
