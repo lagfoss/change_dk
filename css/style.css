@@ -3568,9 +3568,16 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .img_no_wrapper {
-    width: auto; 
+    width: auto;
   }
 
+  .services_content {
+    margin-top: 30px;
+  }
+
+  .pink_square_services {
+    display: none;
+  }
 }
 
 /*========= (620px and down) =========*/
@@ -3781,6 +3788,28 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .category_wrapper {
   margin-top: 135px;
+}
+
+.services {
+  display: block;
+  text-align: center;
+}
+
+.img_w_wrapper {
+  align-items: center;
+  max-width: 290px;
+}
+
+.services_content {
+  min-width: 285px;
+}
+
+.services_content h2 {
+  font-size: 43px;
+}
+
+.img_no_wrapper {
+  max-height: 310px;
 }
 
 }
