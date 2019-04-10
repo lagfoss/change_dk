@@ -1889,10 +1889,11 @@ img.omchange_client_logo_neg {
 .services {
   width: 100%;
   margin: 60px auto;
+  min-height: 600px;
 }
 
 .pink_square_services {
-  height: 600px;
+  min-height: 600px;
   width: 80%;
   position: absolute;
   left: 0;
@@ -1937,6 +1938,8 @@ a.col_two_content:hover {
 }
 
 .img_w_wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
   max-width: 460px;
   max-height: 560px;
   box-shadow: -12px 24px 48px -10px rgba(0, 0, 0, 0.15);
