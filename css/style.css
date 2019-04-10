@@ -1974,6 +1974,7 @@ a.col_two_content:hover {
 
 .services:nth-of-type(even) .services_content {
   order: 1;
+  margin-left: 10%;
 }
 
 .services:nth-of-type(odd) .services_content {
