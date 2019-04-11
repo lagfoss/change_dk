@@ -94,10 +94,9 @@
 
 <script type="text/javascript">
 
-$(window).scroll(function() {
-	var windowHeight = $(window).height();
-	var scroll = $(window).scrollTop();
-	if (scroll >= windowHeight - 80) {
+$(document).scroll(function() {
+  scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 80) {
 $(".header").addClass("out_white");
     } else {
         $(".header").removeClass("out_white");
