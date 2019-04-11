@@ -31,6 +31,8 @@
               if( get_row_layout() == 'text_content' ):
                   $title = get_sub_field('title');
                   $text = get_sub_field('text');
+                  $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true);
+
               elseif( get_row_layout() == 'popup_1column' ): ?>
 <!-- Text with 1 column -->
       <div class="services_content">
@@ -80,12 +82,12 @@
 <!-- Image with wrapper -->
         <?php elseif( get_row_layout() == 'image_wrapper' ):
                 $imgwrap = get_sub_field('img_w_wrapper'); ?>
-                <img class="img_w_wrapper" src="<?php echo $imgwrap; ?>" />
+                <img class="img_w_wrapper" src="<?php echo $imgwrap; ?>" alt="<?php echo $alt_text; ?>" />
 <!-- Image with no wrapper -->
         <?php elseif( get_row_layout() == 'image_no_wrap' ):
                 $imgnowrap = get_sub_field('img_no_wrapper'); ?>
 
-                <img class="img_no_wrapper" src="<?php echo $imgnowrap; ?>" />
+                <img class="img_no_wrapper" alt="<?php echo $alt_text; ?>" src="<?php echo $imgnowrap; ?>" />
 
 
               <?php endif;

@@ -1,6 +1,8 @@
 <?php /* Template Name: Om Change */ ?>
 
 <?php get_header(); ?>
+<?php $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true); ?>
+
 
   <div class="hero background_img_services" style="background-image:url(<?php the_field('omchange_hero'); ?>);">
     <div class="container-fluid">
@@ -16,11 +18,11 @@
         <div class="om_menu">
           <div class="row align-items-center">
             <?php if( get_field('box_process_image') ): ?>
-            <a class="scrollProcess"><img alt="process" class="om_menu_img" src=" <?php the_field('box_process_image'); ?>" />
+            <a class="scrollProcess"><img alt="<?php echo $alt_text; ?>" class="om_menu_img" src=" <?php the_field('box_process_image'); ?>" />
             <?php endif; ?><h3><?php the_field('box_process_title'); ?></h3></a>
 
             <?php if( get_field('box_team_image') ): ?>
-            <a class="scrollTeam"><img alt="team" class="om_menu_img" src=" <?php the_field('box_team_image'); ?>" />
+            <a class="scrollTeam"><img alt="<?php echo $alt_text; ?>" class="om_menu_img" src=" <?php the_field('box_team_image'); ?>" />
             <?php endif; ?><h3><?php the_field('box_team_title'); ?></h3></a>
 
             <?php
@@ -29,7 +31,7 @@
               ?>
               <?php  if( $value == true ) : ?>
                 <?php if( get_field('box_job_image') ): ?>
-              <a href="<?php the_field('box_job_link'); ?>"><img alt="job" class="om_menu_img" src=" <?php the_field('box_job_image'); ?>" />
+              <a href="<?php the_field('box_job_link'); ?>"><img alt="<?php echo $alt_text; ?>" class="om_menu_img" src=" <?php the_field('box_job_image'); ?>" />
               <?php endif; ?><h3><?php the_field('box_job_title'); ?></h3></a>
               <?php else : ?>
                 <span></span>
@@ -59,7 +61,7 @@
                 <?php the_sub_field('steps_number'); ?>
               </p>
             </div>
-            <img alt="steps images" src="<?php echo $stepsimage['url']; ?>"
+            <img alt="<?php echo $alt_text; ?>" src="<?php echo $stepsimage['url']; ?>"
               alt="<?php echo $stepsimage['alt'] ?>"/>
       		</div>
       		<div class="half steps_text">
@@ -78,7 +80,7 @@
               ?>
               <?php if( $test == true ) : ?>
                 <a class="om_button" href="<?php the_sub_field('steps_link'); ?>"><?php the_sub_field('om_button_text'); ?> <?php if( get_sub_field('om_button_icon') ): ?>
-                  <img alt="calltoaction arrow" src="<?php the_sub_field('om_button_icon'); ?>" />
+                  <img alt="<?php echo $alt_text; ?>" src="<?php the_sub_field('om_button_icon'); ?>" />
                 <?php endif; ?></a>
               <?php else : ?>
                 <span></span>
@@ -87,10 +89,10 @@
       		</div>
       	</div>
         <div class="arrow_left">
-          <img alt="steps guide left" src="<?php echo get_bloginfo('template_directory'); ?>/images/orange_stroke_left.svg">
+          <img alt="<?php echo $alt_text; ?>" src="<?php echo get_bloginfo('template_directory'); ?>/images/orange_stroke_left.svg">
         </div>
         <div class="arrow_right">
-          <img alt="steps guide right" src="<?php echo get_bloginfo('template_directory'); ?>/images/orange_stroke_right.svg">
+          <img alt="<?php echo $alt_text; ?>" src="<?php echo get_bloginfo('template_directory'); ?>/images/orange_stroke_right.svg">
         </div>
       </div>
       <?php endwhile; ?>
@@ -101,10 +103,10 @@
   <div class="container-fluid om_quote">
     <div class="row wrapper">
         <div class="client_quote">
-        <img alt="Jonathan Bornemann" class="quote_img" src="<?php the_field('om_client_image'); ?>" />
+        <img alt="<?php echo $alt_text; ?>" class="quote_img" src="<?php the_field('om_client_image'); ?>" />
         <p class="quote orange">“<span class="black"><?php the_field('om_client_citat'); ?></span>”</p>
         <p class="quote_name"><?php the_field('om_client_name'); ?></p>
-        <img alt="house of code" class="quote_logo" src="<?php the_field('om_client_logo'); ?>" />
+        <img alt="<?php echo $alt_text; ?>" class="quote_logo" src="<?php the_field('om_client_logo'); ?>" />
       </div>
     </div>
   </div>
@@ -134,13 +136,13 @@
                   <div class="d-flex team_members_half">
                     <div class="col-12">
                       <div href="<?php the_sub_field('team_url'); ?>"  class="team_img_container">
-                    <a href="<?php the_sub_field('team_url'); ?>" ><img  class="" src="<?php the_sub_field('team_img'); ?>" /></a>
+                    <a href="<?php the_sub_field('team_url'); ?>" ><img alt="<?php echo $alt_text; ?>" class="" src="<?php the_sub_field('team_img'); ?>" /></a>
                       <a href="<?php the_sub_field('team_url'); ?>" class="team_img_overlay">
 
                         <div class="team_img_text">
-                          <p class="team_overlay_content" href="<?php the_sub_field('team_url'); ?>"><img src="<?php echo $title ?>" alt=""> <?php the_sub_field('team_title') ?></p>
-                          <p class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img src="<?php echo $mail ?>" alt=""> <?php the_sub_field('team_mail') ?></p>
-                          <p class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img src="<?php echo $phone ?>" alt=""> <?php the_sub_field('team_phone_number') ?></p>
+                          <p class="team_overlay_content" href="<?php the_sub_field('team_url'); ?>"><img alt="<?php echo $alt_text; ?>" src="<?php echo $title ?>" alt=""> <?php the_sub_field('team_title') ?></p>
+                          <p class="team_overlay_content" href="mailto:<?php the_sub_field('team_mail') ?>"><img alt="<?php echo $alt_text; ?>" src="<?php echo $mail ?>" alt=""> <?php the_sub_field('team_mail') ?></p>
+                          <p class="team_overlay_content" href="tel:<?php the_sub_field('team_phone_number') ?>"><img alt="<?php echo $alt_text; ?>" src="<?php echo $phone ?>" alt=""> <?php the_sub_field('team_phone_number') ?></p>
                         </div>
                       </a>
                       </div>

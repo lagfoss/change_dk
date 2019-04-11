@@ -65,7 +65,7 @@
     <nav>
       <div id="primaryNav">
          <a class="navbar-brand logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="change logo"></a>
+        <img class="logoimg" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo_neg.svg" alt="<?php echo $alt_text; ?>"></a>
 
       <div class="container-fluid">
         <!-- <?php get_search_form(); ?> -->
@@ -79,7 +79,7 @@
           <div class="nav_wrapper">
 
             <a class="nav_logo" href="<?php echo get_bloginfo( 'wpurl' );?>">
-           <img class="nav_logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="change logo"></a>
+           <img class="nav_logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/logo.svg" alt="<?php echo $alt_text; ?>"></a>
 
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 

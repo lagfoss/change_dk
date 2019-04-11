@@ -6,6 +6,7 @@ Template Post Type: cases
 ?>
 
 <?php get_header('case'); ?>
+<?php $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true); ?>
 
 <?php
 
@@ -113,7 +114,7 @@ Template Post Type: cases
 
   <?php elseif( get_row_layout() == 'case_client_banner' ):
   	$clientimagebanner = get_sub_field('case_image_banner'); ?>
-    <img class="container-fluid case_image_banner" src="<?php echo $clientimagebanner; ?>">
+    <img class="container-fluid case_image_banner" src="<?php echo $clientimagebanner; ?>" alt="<?php echo $alt_text; ?>">
 
 
   <?php elseif( get_row_layout() == 'case_text' ):
@@ -157,7 +158,7 @@ Template Post Type: cases
 			         while ( have_rows('case_strategi_box') ) : the_row(); ?>
 
                 <div class="case_strategi_img">
-                  <img alt="strategi ikon" src="<?php the_sub_field('case_strategi_icon'); ?>" />
+                  <img alt="<?php echo $alt_text; ?>" src="<?php the_sub_field('case_strategi_icon'); ?>" />
                 </div>
             <?php	       endwhile; ?>
 
@@ -186,7 +187,7 @@ Template Post Type: cases
                     <div class="stroke_case"></div>
                     <p class="pre_client"><?php echo $somexamptitle; ?></p>
                   </div>
-                  <img alt="social media" src="<?php the_sub_field('case_some_example_image'); ?>" />
+                  <img alt="<?php echo $alt_text; ?>" src="<?php the_sub_field('case_some_example_image'); ?>" />
                 </div>
                 </div>
             <?php	       endwhile; ?>
@@ -225,8 +226,8 @@ Template Post Type: cases
                 <div class="col-lg-6">
                   <div class="rekru_video">
                   <div id="thumbnail_container" class="thumbnail_container">
-                    <img src="<?php echo $yt_thumbnail ?>" class="thumbnail" id="thumbnail"></div>
-                   <a class="start-video"><img width="64" src="<?php echo $yt_play_button ?>" ></a>
+                    <img src="<?php echo $yt_thumbnail ?>" class="thumbnail" alt="<?php echo $alt_text; ?>" id="thumbnail"></div>
+                   <a class="start-video"><img width="64" alt="<?php echo $alt_text; ?>" src="<?php echo $yt_play_button ?>" ></a>
                   <?php
                    // get iframe HTML
                    $iframe = get_sub_field('case_rekru_embed');
@@ -295,10 +296,10 @@ echo $iframe;
                 </div>
                 <div class="col-lg-6 pr_wrapper align-items-center">
                   <div class="orange_square_case"></div>
-                  <div> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone_new.svg" alt="iphone"> </div>
+                  <div> <img class="iphone_wrapper" src="<?php echo get_bloginfo('template_directory'); ?>/images/iphone_new.svg" alt="<?php echo $alt_text; ?>"> </div>
                    <div id="info" class="owl-carousel slider owl-theme carousel_2 ">
                       <?php foreach( $brandgallery as $brandgallery ): ?>
-                        <img alt="brand image" class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
+                        <img alt="<?php echo $alt_text; ?>" class="brand_img" src="<?php echo $brandgallery['url'] ; ?>"/>
 
                        <?php endforeach; ?>
                   </div>
@@ -333,7 +334,7 @@ echo $iframe;
                         <p class="pre_client"><?php echo $fonttext; ?></p>
                       </div>
                       <div class="font_examples">
-                        <img src="<?php echo $fontexamples ?>" alt="">
+                        <img src="<?php echo $fontexamples ?>" alt="<?php echo $alt_text; ?>">
                       </div>
                     </div>
                   </div>
@@ -377,7 +378,7 @@ echo $iframe;
                   <p class="pre_client"><?php echo $designtext; ?></p>
                 </div>
                 <div class="design_img">
-                  <img alt="Design examples" src="<?php the_sub_field('design_img'); ?>" />
+                  <img alt="<?php echo $alt_text; ?>" src="<?php the_sub_field('design_img'); ?>" />
                 </div>
               </div>
             </div>
