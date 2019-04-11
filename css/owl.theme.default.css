@@ -325,6 +325,10 @@ button.owl.active:active, button.owl.active:focus {
   .logo_slider .owl-nav .owl-next, .logo_slider .owl-nav .owl-prev {
     display: none;
   }
+
+  .logo_slider .owl-carousel .owl-item img {
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 420px) {
