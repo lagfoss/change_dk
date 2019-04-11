@@ -1990,7 +1990,7 @@ a.col_two_content:hover {
   left: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-} 
+}
 
 .services:nth-of-type(even) .services_content {
   order: 1;
@@ -3593,7 +3593,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   }
 
   .img_no_wrapper {
-    width: auto;
+    width: 90%;
+    border-radius: 10px;
   }
 
   .services_content {
