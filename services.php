@@ -36,21 +36,19 @@
       <div class="services_content">
                   <h2> <?php echo $title; ?></h2>
                   <p><?php echo $text; ?></p>
-                  <div id="modal1" class="modal_services" style="display:none;">
-                    <h2><?php echo $popup1col; ?></h2>
-                    <p> <?php echo $popup1content; ?> </p>
-                  </div>
+
                   <?php if( have_rows('1_column') ):
                       while ( have_rows('1_column') ) : the_row();
-                        $popup1col = get_sub_field('popup_title1');
+                        $popup1col = get_sub_field('popup_title1'); $i=1;
                         $popup1content = get_sub_field('pop_up_content_1'); ?>
-                        <a href="#modal1" class="open-modal col_one_content" rel="modal:open nofollow">- <?php echo $popup1col; ?></a>
+                        <a href="#<?php the_ID(); ?>" class="open-modal col_one_content" rel="modal:open nofollow">- <?php echo $popup1col; ?></a>
+
+                        <div id="myModal" class="modal_services" style="display:none;">
+                          <p> <?php echo $popup1content; ?> </p>
+                        </div>
         <?php endwhile;
               endif; ?>
-              <div id="modal1" class="modal_services" style="display:none;">
-                <h2><?php echo $popup1col; ?></h2>
-                <p> <?php echo $popup1content; ?> </p>
-              </div>
+
       </div>
 
 <!-- Text with 2 columns -->
@@ -58,18 +56,21 @@
       <div class="services_content">
                   <h2> <?php echo $title; ?></h2>
                   <p><?php echo $text; ?></p>
-              <?php if( have_rows('2_column') ):
-              while ( have_rows('2_column') ) : the_row();
+              <?php if( have_rows('2_column') ): ?>
+            <?php  while ( have_rows('2_column') ) : the_row();
                 $popup2col = get_sub_field('popup_title2');
-                $popup2content = get_sub_field('pop_up_content_2'); ?>
-                <a href="#modal2" class="open-modal col_two_content" rel="modal:open nofollow">- <?php echo $popup2col; ?></a>
+                $popup2content = get_sub_field('pop_up_content_2');
+                $id = get_sub_field('id'); ?>
+
+                <a href="#<?php echo $id; ?>" class="open-modal col_two_content" rel="modal:open nofollow">- <?php echo $popup2col; ?></a>
+
+
+                <div id="<?php echo $id; ?>" class="modal_services" style="display:none;">
+                  <p><?php echo $popup2content ?> </p>
+                </div>
             <?php endwhile;
             endif; ?>
 
-            <div id="modal2" class="modal_services" style="display:none;">
-              <h2><?php echo $popup2col; ?></h2>
-              <p><?php echo $popup2content ?> </p>
-            </div>
 </div>
 
 
