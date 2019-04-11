@@ -2942,6 +2942,46 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 /*========= CONTENT KALENDER slut =========*/
 
+/* Easter egg */
+
+.easter_egg_wrapper {
+  padding-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.easter_egg_h1 {
+  color: black;
+}
+
+.easter_egg_img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px -10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.easter_egg_link {
+  padding-top: 50px;
+  display: block;
+  color: black;
+  font-size: 31px;
+  text-decoration: underline;
+}
+
+.easter_egg_link:hover {
+  color: black;
+    text-decoration: underline;
+}
+
 /*========= FOOTER =========*/
 .footer_project {
   padding: 60px 0 90px 0;
@@ -3760,7 +3800,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     margin: 60px auto 60px auto;
   }
 
-  .case_card_content {
+    .case_card_content {
     margin: 25px;
   }
 
@@ -3808,6 +3848,10 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   min-height: 275px;
 }
 
+.case_card_content:hover {
+  min-height: 274px;
+}
+
 .case_card_h2 {
   margin-top: 15px;
 }
@@ -3837,6 +3881,18 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 .img_no_wrapper {
   max-height: 310px;
+}
+
+.modal_services h2 {
+  font-size: 35px;
+}
+
+.modal_services p {
+  font-size: 14px;
+}
+
+.modal {
+  max-height: 325px;
 }
 
 }
@@ -4009,10 +4065,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   .nav_wrapper {
     position: absolute;
     left: -35px;
-  }
-
-  .modal {
-    max-height: 300px;
   }
 
   .know_us_gallery img {

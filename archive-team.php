@@ -1,27 +1,14 @@
 <?php get_header(); ?>
-<?php get_header_image(); ?>
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<body <?php body_class(whitebg); ?>>
 
 
-<?php
-  if ( has_post_thumbnail() ) {
-    the_post_thumbnail();
-  }
-?>
+<div class="easter_egg_wrapper">
+<h1 class="easter_egg_h1">Glædelig påske</h1>
+<p>og der er gået FÅR i den</p>
+<img class="easter_egg_img" src="http://xn--kronbr-tua.dk/wp-content/uploads/2019/01/S6300951.jpg" alt="">
 
-
-
-<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-
-<?php the_content(); ?>
-
-<?php endwhile; else : ?>
-
-<p>Der blev ikke fundet noget indhold</p>
-
-<?php endif;?>
+<a class="easter_egg_link" href="http://kronbær.dk"> TILBAGE TIL FORSIDEN</a>
+</div>
 
 
 <?php get_footer(); ?>
