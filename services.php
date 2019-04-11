@@ -39,12 +39,14 @@
 
                   <?php if( have_rows('1_column') ):
                       while ( have_rows('1_column') ) : the_row();
-                        $popup1col = get_sub_field('popup_title1'); $i=1;
-                        $popup1content = get_sub_field('pop_up_content_1'); ?>
-                        <a href="#<?php the_ID(); ?>" class="open-modal col_one_content" rel="modal:open nofollow">- <?php echo $popup1col; ?></a>
+                        $popup1col = get_sub_field('popup_title1');
+                        $popup1content = get_sub_field('pop_up_content1');
+                        $id1 = get_sub_field('id1'); ?>
+                        <a href="#<?php echo $id1; ?>" class="open-modal col_one_content" rel="modal:open nofollow">- <?php echo $popup1col; ?></a>
 
-                        <div id="myModal" class="modal_services" style="display:none;">
-                          <p> <?php echo $popup1content; ?> </p>
+                        <div id="<?php echo $id1; ?>" class="modal_services" style="display:none;">
+                          <h2><?php echo $popup1col ?></h2>
+                          <p> <?php echo $popup1content ?></p>
                         </div>
         <?php endwhile;
               endif; ?>
@@ -60,12 +62,12 @@
             <?php  while ( have_rows('2_column') ) : the_row();
                 $popup2col = get_sub_field('popup_title2');
                 $popup2content = get_sub_field('pop_up_content_2');
-                $id = get_sub_field('id'); ?>
+                $id2 = get_sub_field('id2'); ?>
 
-                <a href="#<?php echo $id; ?>" class="open-modal col_two_content" rel="modal:open nofollow">- <?php echo $popup2col; ?></a>
+                <a href="#<?php echo $id2; ?>" class="open-modal col_two_content" rel="modal:open nofollow">- <?php echo $popup2col; ?></a>
 
 
-                <div id="<?php echo $id; ?>" class="modal_services" style="display:none;">
+                <div id="<?php echo $id2; ?>" class="modal_services" style="display:none;">
                   <h2><?php echo $popup2col ?></h2>
                   <p><?php echo $popup2content ?> </p>
                 </div>
