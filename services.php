@@ -66,6 +66,7 @@
 
 
                 <div id="<?php echo $id; ?>" class="modal_services" style="display:none;">
+                  <h2><?php echo $popup2col ?></h2>
                   <p><?php echo $popup2content ?> </p>
                 </div>
             <?php endwhile;
